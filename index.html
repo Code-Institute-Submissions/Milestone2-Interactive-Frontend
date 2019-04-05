@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,109 @@
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
     <title>memorygame</title>
 </head>
-<body>
+
+<body class="vhalign">
+
+    <div class="container-fluid testframe1" id="outershell">
+        <div class="row">
+            <div class="col-xs-12 testframe2 vhalign">
+                <p class="headline">The memorygame</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 testframe2">
+                <div id="controlPanelWrapper">
+                    <div id="buttonfield">
+                        <div class="btn btn-primary btn-lg" data-toggle="modal" data-target="#howToModal" id="howToBtn">How to play</div>
+                        <div class="btn btn-primary btn-lg" data-toggle="modal" data-target="#enterPlayersModal" id="enterPlayersBtn">Re-enter players</div>
+                        <div class="btn btn-primary btn-lg" id="field3x3Btn">3x3</div>
+                        <div class="btn btn-primary btn-lg" id="field4x4Btn">4x4</div>
+                        <div class="btn btn-primary btn-lg" id="field6x6Btn">6x6</div>
+                        <div class="btn btn-primary btn-lg" id="startBtn">start</div>
+                        <div class="btn btn-primary btn-lg" id="stopBtn">stop</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 testframe2 vhalign">
+                <div class="playerStats">
+                    <span id="namePlayer1">Player1:</span>
+                </div>
+            </div>
+            
+            <div class="col-xs-3 testframe2 vhalign">
+                <div class="playerStats">
+                    <span id="scorePlayer1">0 points</span>
+                </div>
+            </div>
+            
+            <div class="col-xs-3 testframe2 vhalign">
+                <div class="playerStats">
+                    <span id="namePlayer2">Player2:</span>
+                </div>
+            </div>
+            
+             <div class="col-xs-3 testframe2 vhalign">
+                <div class="playerStats">
+                    <span id="scorePlayer2">0 points</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 testframe3"><div id="playfield"></div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="howToModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Got it!</button>
     
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="enterPlayersModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
     
-    
-    
-     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-            <script type="text/javascript" src="assets/js/game.js"></script>
-    
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/memorygame.js"></script>
+
 </body>
+
 </html>

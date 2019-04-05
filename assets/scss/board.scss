@@ -1,0 +1,116 @@
+/*playfield structures*/
+
+%greenBorder {
+    border: 2px solid lightgreen;
+    border-radius: 15px;
+}
+
+
+
+#outershell {
+    /*    outer frame, wrapper of board */
+    width: 90vw;
+    height: 90vh;
+}
+
+
+#controlPanelWrapper {
+    /*wrapper of  controlpanel*/
+    min-height: 60%;
+    @extend %vhalign;
+}
+
+#fieldWrapper {
+    height: 80%;
+    @extend %vhalign;
+}
+
+
+#buttonfield    {
+    
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+#howToBtn {
+    width: 150px;
+    height: 25px;
+    @extend %greenBorder;
+    @extend %vhalign;
+}
+
+
+#enterPlayersBtn {
+    width: 150px;
+    height: 25px;
+    @extend %greenBorder;
+    @extend %vhalign;
+}
+
+
+%fieldSizeBtn {
+    width: 100px;
+    height: 25px;
+}
+
+#field3x3Btn {
+    @extend %greenBorder;
+    @extend %fieldSizeBtn;
+    @extend %vhalign;
+}
+
+#field4x4Btn {
+    @extend %greenBorder;
+    @extend %fieldSizeBtn;
+    @extend %vhalign;
+}
+
+#field6x6Btn {
+    @extend %greenBorder;
+    @extend %fieldSizeBtn;
+    @extend %vhalign;
+}
+
+
+#startBtn {
+    width: 150px;
+    height: 25px;
+    @extend %greenBorder;
+    @extend %vhalign;
+}
+
+#stopBtn {
+    width: 150px;
+    height: 25px;
+    @extend %greenBorder;
+    @extend %vhalign;
+}
+
+
+.playerStats    {
+    display: inline-block;
+    
+    
+}
+
+#namePlayer1 {
+    text-align: left;
+    
+}
+
+#scorePlayer1   {
+    text-align: right;
+}
+
+
+#namePlayer2 {
+    
+}
+
+#scorePlayer2   {
+    
+}

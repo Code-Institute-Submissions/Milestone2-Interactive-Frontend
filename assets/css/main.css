@@ -1,0 +1,92 @@
+/*playfield structures*/
+#howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn {
+  border: 2px solid lightgreen;
+  border-radius: 15px; }
+
+#outershell {
+  /*    outer frame, wrapper of board */
+  width: 90vw;
+  height: 90vh; }
+
+#controlPanelWrapper {
+  /*wrapper of  controlpanel*/
+  min-height: 60%; }
+
+#fieldWrapper {
+  height: 80%; }
+
+#buttonfield {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  flex-wrap: wrap; }
+
+#howToBtn {
+  width: 150px;
+  height: 25px; }
+
+#enterPlayersBtn {
+  width: 150px;
+  height: 25px; }
+
+#field3x3Btn, #field4x4Btn, #field6x6Btn {
+  width: 100px;
+  height: 25px; }
+
+#startBtn {
+  width: 150px;
+  height: 25px; }
+
+#stopBtn {
+  width: 150px;
+  height: 25px; }
+
+.playerStats {
+  display: inline-block; }
+
+#namePlayer1 {
+  text-align: left; }
+
+#scorePlayer1 {
+  text-align: right; }
+
+.headline {
+  font-size: 2em;
+  font-family: "Dosis", sans-serif; }
+
+.vhalign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.valign {
+  display: flex;
+  align-items: center; }
+
+#controlPanelWrapper, #fieldWrapper, #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.testframe1 {
+  border: 2px solid darkred;
+  border-radius: 25px; }
+
+.testframe2 {
+  border: 2px solid grey;
+  border-radius: 25px; }
+
+.testframe3 {
+  border: 2px solid lightblue;
+  border-radius: 25px; }
+
+body {
+  background-color: #1f3d7a;
+  height: 100vh;
+  width: 100vw;
+  color: beige; }
+
+/*# sourceMappingURL=main.css.map */
