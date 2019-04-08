@@ -48,5 +48,10 @@ $(document).ready(function() {
     });
 
 
+// when clicking any .cardshell class, class showMe is added to clicked card,which makes it turn / show. 
+ $(document).on('click', '.cardshell', function() {
+        $(this).addClass("showMe");
+    });
+
 
 });
