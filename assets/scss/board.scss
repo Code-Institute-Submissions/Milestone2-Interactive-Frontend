@@ -5,55 +5,62 @@
     border-radius: 15px;
 }
 
+%margin {
+    margin: 2px;
+}
 
+%padding14 {
+    padding: 14px;
+}
 
 #outershell {
     /*    outer frame, wrapper of board */
-    width: 90vw;
-    height: 90vh;
+    width: 98vw;
 }
-
 
 #controlPanelWrapper {
     /*wrapper of  controlpanel*/
-    min-height: 60%;
     @extend %vhalign;
 }
 
 #fieldWrapper {
     height: 80%;
-    @extend %vhalign;
 }
 
-
-#buttonfield    {
-    
-    height: 90px;
+#buttonfield {
+    padding: 5px;
+    width: 380px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     align-content: space-around;
     flex-wrap: wrap;
+    @extend %DosisFont;
 }
-
 
 #howToBtn {
-    width: 150px;
+    width: 48%;
     height: 25px;
     @extend %greenBorder;
     @extend %vhalign;
+    @extend %margin;
+    @extend %padding14;
+    @extend %DosisFont;
 }
 
-
 #enterPlayersBtn {
-    width: 150px;
+    width: 48%;
     height: 25px;
     @extend %greenBorder;
     @extend %vhalign;
+    @extend %margin;
+    @extend %padding14;
+    @extend %DosisFont;
 }
 
 
 %fieldSizeBtn {
-    width: 100px;
+    width: 31.33%;
     height: 25px;
 }
 
@@ -61,56 +68,74 @@
     @extend %greenBorder;
     @extend %fieldSizeBtn;
     @extend %vhalign;
+    @extend %margin;
+    @extend %padding14;
+    @extend %DosisFont;
 }
 
 #field4x4Btn {
     @extend %greenBorder;
     @extend %fieldSizeBtn;
     @extend %vhalign;
+    @extend %margin;
+    @extend %padding14;
+    @extend %DosisFont;
 }
 
 #field6x6Btn {
     @extend %greenBorder;
     @extend %fieldSizeBtn;
     @extend %vhalign;
+    @extend %margin;
+    @extend %padding14;
+    @extend %DosisFont;
 }
 
-
 #startBtn {
-    width: 150px;
+    width: 48%;
     height: 25px;
     @extend %greenBorder;
     @extend %vhalign;
+    @extend %margin;
+    @extend %padding14;
+    @extend %DosisFont;
 }
 
 #stopBtn {
-    width: 150px;
+    width: 48%;
     height: 25px;
     @extend %greenBorder;
     @extend %vhalign;
+    @extend %margin;
+    @extend %padding14;
+    @extend %DosisFont;
 }
 
-
-.playerStats    {
-    display: inline-block;
-    
-    
+.selectedSize {
+    background-color: darkred;
 }
 
-#namePlayer1 {
-    text-align: left;
-    
+.playStatsWrapper {
+    @extend %vhalign;
+    width: 380px;
 }
 
-#scorePlayer1   {
-    text-align: right;
+.playerStats {
+    width: 50%;
+    height: 25px;
+    @extend %vhalign;
+    @extend %DosisFont;
+    @extend %padding14;
 }
 
+#namePlayer1 {}
 
-#namePlayer2 {
-    
-}
+#scorePlayer1 {}
 
-#scorePlayer2   {
-    
+#namePlayer2 {}
+
+#scorePlayer2 {}
+
+.row {
+    margin-bottom: 10px;
 }

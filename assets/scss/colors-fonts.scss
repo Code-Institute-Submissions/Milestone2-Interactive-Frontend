@@ -1,12 +1,25 @@
 $bg-body: #34393F;
 
 .headline {
-    
+
     font: {
-     size: 2em;   
-    family: "Dosis", sans-serif;
-        
+        size: 2em;
+        family: "Dosis", sans-serif;
     }
-    
-    
+    padding: {
+        left: 5px;
+        right: 5px;
+    }
+    margin-top: 10px;
+}
+
+.modal-font {
+    font-family: "Dosis", sans-serif;
+    color: black;
+}
+
+
+%DosisFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
 }
