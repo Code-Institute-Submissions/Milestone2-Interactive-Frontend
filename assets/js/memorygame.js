@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     function fieldInit(num) {
         var playFieldSize = num;
+        if (num==9) {$("#field3x3Btn").addClass("selectedSize");} // indicator for selected size
         $("#playfield").empty(); // deleting all elements from playfield container
         for (var i = 0; i < playFieldSize; i++) {
             $("#playfield").append("<div class='cardshell'></div>");
