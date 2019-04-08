@@ -139,3 +139,48 @@
 .row {
     margin-bottom: 10px;
 }
+
+
+.cardshell {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transform: rotateY(0);
+    transition: transform .6s ease-in-out;
+    @extend %margin;
+}
+
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    background-color: orange;
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    @extend %vhalign;
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(1px);
+    background-color: #34393F;
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    @extend %vhalign;
+}
+
+#playfield {
+    @extend %vhalign;
+
+}
+
+.showMe {
+    transform: rotateY(180deg);
+}
+
+.hideMe {
+    transform: rotateY(0);
+}
