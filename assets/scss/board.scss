@@ -16,6 +16,10 @@
 #outershell {
     /*    outer frame, wrapper of board */
     width: 98vw;
+    height: 98vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
 
 #controlPanelWrapper {
@@ -23,14 +27,10 @@
     @extend %vhalign;
 }
 
-#fieldWrapper {
-    height: 80%;
-}
-
 #buttonfield {
     padding: 5px;
-    width: 380px;
-    height: 120px;
+    max-width: 380px;
+    height: 20vh;
     display: flex;
     justify-content: space-between;
     align-content: space-around;
@@ -57,7 +57,6 @@
     @extend %padding14;
     @extend %DosisFont;
 }
-
 
 %fieldSizeBtn {
     width: 31.33%;
@@ -118,6 +117,11 @@
 .playStatsWrapper {
     @extend %vhalign;
     width: 380px;
+    margin: {
+        top: 5px;
+        bottom: 5px;
+    }
+    
 }
 
 .playerStats {
@@ -136,36 +140,46 @@
 
 #scorePlayer2 {}
 
-.row {
-    margin-bottom: 10px;
+
+#fieldWrapper {
+    @extend %vhalign;
+
+
 }
 
+#playfield {
+    /*@extend %vhalign;*/
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 60vh;
+    height: 60vh;
+    @extend %margin;
+}
 
 .cardshell {
     position: relative;
-    width: 50px;
+    /*width: 50px;
     height: 50px;
+    */
+    width: 32%;
+    height: 32%;
     transform-style: preserve-3d;
     transform: rotateY(0);
     transition: transform .6s ease-in-out;
     @extend %margin;
 }
 
-.dummycardshell {
+#dummycardshell {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 31.33%;
+    height: 31.33%;
     transform-style: preserve-3d;
     transform: rotateY(0);
     transition: transform .6s ease-in-out;
     @extend %margin;
-}
-
-.dummyfront {
-    background-color: darkorchid;
-    border: 2px solid lightgreen;
-    border-radius: 10px;
-    @extend %vhalign;
 }
 
 
@@ -181,6 +195,7 @@
     border-radius: 10px;
     @extend %vhalign;
 }
+
 .back {
     transform: rotateY(180deg) translateZ(1px);
     background-color: #34393F;
@@ -189,29 +204,17 @@
     @extend %vhalign;
 }
 
-#playfield {
-    @extend %vhalign;
-    transition: opacity .5s ease-in-out;
-
-}
-
 .showMe {
     transform: rotateY(180deg);
 }
 
 .display {
-    
     opacity: 1;
 }
 
 .invisible {
-  
     opacity: 0;
 }
-
-
-
-
 
 /*
 .display {
@@ -224,4 +227,3 @@
     opacity: 0;
 }
 */
-

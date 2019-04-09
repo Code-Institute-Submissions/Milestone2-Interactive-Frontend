@@ -2,30 +2,51 @@
 
 $(document).ready(function() {
 
+    function fadeOut() {
+        $("#playfield").css("opacity", "0.0");
+    }
+
+    function fadeIn() {
+        $("#playfield").css("opacity", "1.0");
+    }
+
     function fieldInit(num) {
         var playFieldSize = num;
-        if (playFieldSize == 9) { $("#field3x3Btn").addClass("selectedSize"); } // indicator for selected size
-        $("#playfield").css("opacity", "0.0");
         $("#playfield").empty(); // deleting all elements from playfield container
-        for (var i = 1; i <= playFieldSize; i++) {
-            if (playFieldSize == 9 && i == 5) {
-                $("#playfield").append("<div class='dummycardshell'></div>");
-                $(".dummycardshell").append("<div class='card dummyfront vhalign'>X</div>");
+        for (var i = 0; i < playFieldSize; i++) {
+            if (playFieldSize == 9 && i == 4) {
+                $("#playfield").append("<div id='dummycardshell'></div>");
             }
-            $("#playfield").append("<div class='cardshell'></div>");
-
+            else {
+                $("#playfield").append("<div class='cardshell'></div>");
+            }
         }
         $(".cardshell").append("<div class='card front vhalign'>?</div>");
         $(".cardshell").append("<div class='card back vhalign'>Hi</div>");
-        $("#playfield").css("opacity", "1.0");
+        if (playFieldSize == 9) { $("#field3x3Btn").addClass("selectedSize"); } // indicator for selected size
+        if (playFieldSize == 16) {
+            $(".cardshell").css("width","23.7%");
+            $(".cardshell").css("height","23.7%");
+        }
+         if (playFieldSize == 36) {
+             $(".cardshell").css("width","15.5%");
+             $(".cardshell").css("height","15.5%");
+         }
+          
     }
 
     fieldInit(9); // generating playfield of 3x3 per default 
 
+    /*setTimeout(function () {
+        joe.style.opacity = 1
+      }, 100)
+      */
+
+
     // click actions for playfield size buttons
 
     $("#field3x3Btn").click(function() {
-        
+
         $("#field3x3Btn").addClass("selectedSize"); // indicator for selected size
         $("#field4x4Btn").removeClass("selectedSize"); // removing selected size indicator class
         $("#field6x6Btn").removeClass("selectedSize"); // removing selected size indicator class
@@ -53,8 +74,8 @@ $(document).ready(function() {
 
     $("#startBtn").click(function() {
         $("#playfield").css("opacity", "1.0");
-        $("#scorePlayer1").text("0"); //for restarting game set playerscores to zero
-        $("#scorePlayer2").text("0"); //for restarting game set playerscores to zero
+        $("#scorePlayer1").text("0 points"); //for restarting game set playerscores to zero
+        $("#scorePlayer2").text("0 points"); //for restarting game set playerscores to zero
     });
 
     $("#stopBtn").click(function() {
