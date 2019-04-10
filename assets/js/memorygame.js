@@ -42,12 +42,20 @@ $(document).ready(function() {
         fieldInit(9); // initalizing fieldsize 3x3 cards
     });
 
-    $("#field4x4Btn").click(function() {
+    
+    $(document).on('click touchstart', '#field4x4Btn', function() {
         $("#field3x3Btn").removeClass("selectedSize"); // removing selected size indicator class
         $("#field4x4Btn").addClass("selectedSize"); // indicator for selected size
         $("#field6x6Btn").removeClass("selectedSize"); // removing selected size indicator class
         fieldInit(16); // initalizing fieldsize 4x4 cards
     });
+    
+    /* $("#field4x4Btn").click(function() {
+        $("#field3x3Btn").removeClass("selectedSize"); // removing selected size indicator class
+        $("#field4x4Btn").addClass("selectedSize"); // indicator for selected size
+        $("#field6x6Btn").removeClass("selectedSize"); // removing selected size indicator class
+        fieldInit(16); // initalizing fieldsize 4x4 cards
+    });*/
 
     $("#field6x6Btn").click(function() {
         $("#field3x3Btn").removeClass("selectedSize"); // removing selected size indicator class
@@ -62,10 +70,7 @@ $(document).ready(function() {
         $(this).addClass("showMe");
     });
     
-    
-   
-    
-    
+
     
 
     $("#startBtn").click(function() {

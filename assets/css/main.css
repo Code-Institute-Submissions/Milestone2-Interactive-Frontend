@@ -1,3 +1,20 @@
+.headline {
+  width: 80%;
+  max-width: 310px;
+  font-size: 1.8em;
+  font-family: "Dosis", sans-serif;
+  margin-top: 10px;
+  text-align: center; }
+
+.modal-font {
+  font-family: "Dosis", sans-serif;
+  color: black; }
+
+#buttonfield, #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn, .playerStats {
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  font-weight: 200; }
+
 /*playfield structures*/
 #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn {
   border: 2px solid lightgreen;
@@ -41,10 +58,13 @@
   flex-wrap: wrap; }
 
 #howToBtn {
-  width: 48%; }
+  width: 48%;
+  background-color: #FFFF00;
+  color: #34393F; }
 
 #enterPlayersBtn {
-  width: 48%; }
+  width: 48%;
+  background-color: #0066FF; }
 
 #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn {
   height: 20px; }
@@ -53,10 +73,12 @@
   width: 31.33%; }
 
 #startBtn {
-  width: 48%; }
+  width: 48%;
+  background-color: #00cc00; }
 
 #stopBtn {
-  width: 48%; }
+  width: 48%;
+  background-color: #e60000; }
 
 .selectedSize {
   background-color: darkred; }
@@ -76,21 +98,21 @@
   align-content: space-around;
   flex-wrap: wrap;
   transition: opacity .5s ease-in-out;
-  width: 85vw;
-  height: 85vw; }
+  width: 88vw;
+  height: 88vw; }
 
 .cardshell {
   position: relative;
-  width: 31.33%;
-  height: 31.33%;
+  width: 31.8%;
+  height: 31.8%;
   transform-style: preserve-3d;
   transform: rotateY(0);
   transition: transform .6s ease-in-out; }
 
 #dummycardshell {
   position: relative;
-  width: 31.33%;
-  height: 31.33%;
+  width: 31.8%;
+  height: 31.8%;
   transform-style: preserve-3d;
   transform: rotateY(0);
   transition: transform .6s ease-in-out; }
@@ -130,22 +152,6 @@
     opacity: 0;
 }
 */
-.headline {
-  width: 80%;
-  max-width: 310px;
-  font-size: 1.8em;
-  font-family: "Dosis", sans-serif;
-  margin-top: 10px;
-  text-align: center; }
-
-.modal-font {
-  font-family: "Dosis", sans-serif;
-  color: black; }
-
-#buttonfield, #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn, .playerStats {
-  font-family: "Dosis", sans-serif;
-  font-size: 16px; }
-
 .vhalign {
   display: flex;
   justify-content: center;

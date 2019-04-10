@@ -30,7 +30,7 @@
     }
 }
 
-%padding14 {
+%padding12 {
     padding: 12px;
 }
 
@@ -63,8 +63,10 @@
     @extend %height-controlBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding14;
+    @extend %padding12;
     @extend %DosisFont;
+    background-color: $bg-howToBtn;
+    color: $bg-body;
 }
 
 #enterPlayersBtn {
@@ -73,8 +75,10 @@
     @extend %height-controlBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding14;
+    @extend %padding12;
     @extend %DosisFont;
+    background-color: $bg-enterplayersBtn;
+
 }
 
 %height-controlBtn {
@@ -91,7 +95,7 @@
     @extend %width-fieldSizeBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding14;
+    @extend %padding12;
     @extend %DosisFont;
 }
 
@@ -101,7 +105,7 @@
     @extend %width-fieldSizeBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding14;
+    @extend %padding12;
     @extend %DosisFont;
 }
 
@@ -111,7 +115,7 @@
     @extend %width-fieldSizeBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding14;
+    @extend %padding12;
     @extend %DosisFont;
 }
 
@@ -121,8 +125,9 @@
     @extend %height-controlBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding14;
+    @extend %padding12;
     @extend %DosisFont;
+    background-color: $bg-startBtn;
 }
 
 #stopBtn {
@@ -131,8 +136,10 @@
     @extend %height-controlBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding14;
+    @extend %padding12;
     @extend %DosisFont;
+    background-color: $bg-stopBtn;
+
 }
 
 .selectedSize {
@@ -146,7 +153,6 @@
         top: 5px;
         bottom: 5px;
     }
-
 }
 
 .playerStats {
@@ -154,7 +160,7 @@
     height: 25px;
     @extend %vhalign;
     @extend %DosisFont;
-    @extend %padding14;
+    @extend %padding12;
 }
 
 #namePlayer1 {}
@@ -178,15 +184,15 @@
     align-content: space-around;
     flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
-    width: 85vw;
-    height: 85vw;
+    width: 88vw;
+    height: 88vw;
     @extend %marginPlayfield;
 }
 
 .cardshell {
     position: relative;
-    width: 31.33%;
-    height: 31.33%;
+    width: 31.8%;
+    height: 31.8%;
     transform-style: preserve-3d;
     transform: rotateY(0);
     transition: transform .6s ease-in-out;
@@ -194,8 +200,8 @@
 
 #dummycardshell {
     position: relative;
-    width: 31.33%;
-    height: 31.33%;
+    width: 31.8%;
+    height: 31.8%;
     transform-style: preserve-3d;
     transform: rotateY(0);
     transition: transform .6s ease-in-out;
