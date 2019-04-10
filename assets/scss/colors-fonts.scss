@@ -1,7 +1,8 @@
 $bg-body: #34393F;
 
 .headline {
-
+width: 80%;
+max-width: 310px;
     font: {
         size: 1.8em;
         family: "Dosis", sans-serif;
@@ -11,13 +12,14 @@ $bg-body: #34393F;
         right: 5px;
     }
     margin-top: 10px;
+    text-align: center;
+    height: 8vh;
 }
 
 .modal-font {
     font-family: "Dosis", sans-serif;
     color: black;
 }
-
 
 %DosisFont {
     font-family: "Dosis", sans-serif;

@@ -2,14 +2,6 @@
 
 $(document).ready(function() {
 
-    function fadeOut() {
-        $("#playfield").css("opacity", "0.0");
-    }
-
-    function fadeIn() {
-        $("#playfield").css("opacity", "1.0");
-    }
-
     function fieldInit(num) {
         var playFieldSize = num;
         $("#playfield").empty(); // deleting all elements from playfield container
@@ -32,7 +24,6 @@ $(document).ready(function() {
              $(".cardshell").css("width","15.5%");
              $(".cardshell").css("height","15.5%");
          }
-          
     }
 
     fieldInit(9); // generating playfield of 3x3 per default 
@@ -41,12 +32,10 @@ $(document).ready(function() {
         joe.style.opacity = 1
       }, 100)
       */
-
-
+      
     // click actions for playfield size buttons
 
     $("#field3x3Btn").click(function() {
-
         $("#field3x3Btn").addClass("selectedSize"); // indicator for selected size
         $("#field4x4Btn").removeClass("selectedSize"); // removing selected size indicator class
         $("#field6x6Btn").removeClass("selectedSize"); // removing selected size indicator class

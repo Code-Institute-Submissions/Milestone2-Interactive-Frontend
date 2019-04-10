@@ -3,16 +3,28 @@
   border: 2px solid lightgreen;
   border-radius: 15px; }
 
-#howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn, #playfield, .cardshell, #dummycardshell {
-  margin: 2px; }
+#playfield {
+  margin-top: 2px;
+  margin-left: 0px;
+  margin-right: 2px;
+  margin-bottom: 2px; }
+
+#fieldWrapper {
+  margin-top: 2px;
+  margin-bottom: 8px; }
+
+#howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn {
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 2px; }
 
 #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn, .playerStats {
-  padding: 14px; }
+  padding: 12px; }
 
 #outershell {
   /*    outer frame, wrapper of board */
   width: 98vw;
-  height: 98vh;
   margin-top: 10px;
   margin-bottom: 10px; }
 
@@ -22,31 +34,29 @@
 #buttonfield {
   padding: 5px;
   max-width: 380px;
-  height: 20vh;
+  height: 105px;
   display: flex;
   justify-content: space-between;
   align-content: space-around;
   flex-wrap: wrap; }
 
 #howToBtn {
-  width: 48%;
-  height: 25px; }
+  width: 48%; }
 
 #enterPlayersBtn {
-  width: 48%;
-  height: 25px; }
+  width: 48%; }
+
+#howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn {
+  height: 20px; }
 
 #field3x3Btn, #field4x4Btn, #field6x6Btn {
-  width: 31.33%;
-  height: 25px; }
+  width: 31.33%; }
 
 #startBtn {
-  width: 48%;
-  height: 25px; }
+  width: 48%; }
 
 #stopBtn {
-  width: 48%;
-  height: 25px; }
+  width: 48%; }
 
 .selectedSize {
   background-color: darkred; }
@@ -61,22 +71,18 @@
   height: 25px; }
 
 #playfield {
-  /*@extend %vhalign;*/
   display: flex;
   justify-content: space-around;
   align-content: space-around;
   flex-wrap: wrap;
   transition: opacity .5s ease-in-out;
-  width: 60vh;
-  height: 60vh; }
+  width: 85vw;
+  height: 85vw; }
 
 .cardshell {
   position: relative;
-  /*width: 50px;
-  height: 50px;
-  */
-  width: 32%;
-  height: 32%;
+  width: 31.33%;
+  height: 31.33%;
   transform-style: preserve-3d;
   transform: rotateY(0);
   transition: transform .6s ease-in-out; }
@@ -119,18 +125,21 @@
     transition: opacity 0.5s ease-in-out;
     opacity: 1;
 }
-
 .invisible {
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
 }
 */
 .headline {
+  width: 80%;
+  max-width: 310px;
   font-size: 1.8em;
   font-family: "Dosis", sans-serif;
   padding-left: 5px;
   padding-right: 5px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  text-align: center;
+  height: 8vh; }
 
 .modal-font {
   font-family: "Dosis", sans-serif;
