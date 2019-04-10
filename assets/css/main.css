@@ -98,8 +98,8 @@
   align-content: space-around;
   flex-wrap: wrap;
   transition: opacity .5s ease-in-out;
-  width: 88vw;
-  height: 88vw; }
+  width: 87vw;
+  height: 87vw; }
 
 .cardshell {
   position: relative;

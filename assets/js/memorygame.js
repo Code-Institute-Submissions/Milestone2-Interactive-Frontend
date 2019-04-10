@@ -17,12 +17,10 @@ $(document).ready(function() {
         $(".cardshell").append("<div class='card back vhalign'>Hi</div>");
         if (playFieldSize == 9) { $("#field3x3Btn").addClass("selectedSize"); } // indicator for selected size
         if (playFieldSize == 16) {
-            $(".cardshell").css("width", "23.7%");
-            $(".cardshell").css("height", "23.7%");
+            $(".cardshell").css("width", "23.7%").css("height", "23.7%");
         }
         if (playFieldSize == 36) {
-            $(".cardshell").css("width", "15.5%");
-            $(".cardshell").css("height", "15.5%");
+            $(".cardshell").css("width", "15.5%").css("height", "15.5%");
         }
     }
 

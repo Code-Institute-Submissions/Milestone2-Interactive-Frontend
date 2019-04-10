@@ -77,8 +77,7 @@
     @extend %marginBtn;
     @extend %padding12;
     @extend %DosisFont;
-    background-color: $bg-enterplayersBtn;
-
+    background-color: $bg-enterPlayersBtn;
 }
 
 %height-controlBtn {
@@ -139,7 +138,6 @@
     @extend %padding12;
     @extend %DosisFont;
     background-color: $bg-stopBtn;
-
 }
 
 .selectedSize {
@@ -175,7 +173,6 @@
 #fieldWrapper {
     @extend %vhalign;
     @extend %marginPlayfieldWrapper;
-
 }
 
 #playfield {
@@ -184,8 +181,8 @@
     align-content: space-around;
     flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
-    width: 88vw;
-    height: 88vw;
+    width: 87vw;
+    height: 87vw;
     @extend %marginPlayfield;
 }
 
