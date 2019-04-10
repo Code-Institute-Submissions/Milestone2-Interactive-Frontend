@@ -57,9 +57,16 @@ $(document).ready(function() {
     });
 
     // when clicking any .cardshell class, class showMe is added to clicked card,which makes it turn / show. 
-    $(document).on('click', '.cardshell', function() {
+    
+    $(document).on('click touchstart', '.cardshell', function() {
         $(this).addClass("showMe");
     });
+    
+    
+   
+    
+    
+    
 
     $("#startBtn").click(function() {
         $("#playfield").css("opacity", "1.0");

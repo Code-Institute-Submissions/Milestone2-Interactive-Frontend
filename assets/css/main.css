@@ -135,11 +135,8 @@
   max-width: 310px;
   font-size: 1.8em;
   font-family: "Dosis", sans-serif;
-  padding-left: 5px;
-  padding-right: 5px;
   margin-top: 10px;
-  text-align: center;
-  height: 8vh; }
+  text-align: center; }
 
 .modal-font {
   font-family: "Dosis", sans-serif;
