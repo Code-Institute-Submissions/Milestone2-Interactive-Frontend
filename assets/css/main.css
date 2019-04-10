@@ -15,6 +15,34 @@
   font-size: 16px;
   font-weight: 200; }
 
+.vhalign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.valign {
+  display: flex;
+  align-items: center; }
+
+#controlPanelWrapper, #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn, .playStatsWrapper, .playerStats, #fieldWrapper, .front, .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.testframe1 {
+  border: 2px solid darkred;
+  border-radius: 15px; }
+
+.testframe2 {
+  border: 2px solid grey;
+  border-radius: 15px; }
+
+.testframe3 {
+  border: 2px solid lightblue;
+  border-radius: 15px; }
+
 /*playfield structures*/
 #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn {
   border: 2px solid lightgreen;
@@ -75,6 +103,12 @@
 #field3x3Btn {
   cursor: pointer; }
 
+#field4x4Btn {
+  cursor: pointer; }
+
+#field6x6Btn {
+  cursor: pointer; }
+
 #startBtn {
   width: 48%;
   background-color: #00cc00; }
@@ -85,6 +119,9 @@
 
 .selectedSize {
   background-color: darkred; }
+
+.bg-fieldSizeBtn {
+  background-color: #8a00e6; }
 
 .playStatsWrapper {
   width: 380px;
@@ -155,34 +192,6 @@
     opacity: 0;
 }
 */
-.vhalign {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-
-.valign {
-  display: flex;
-  align-items: center; }
-
-#controlPanelWrapper, #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn, .playStatsWrapper, .playerStats, #fieldWrapper, .front, .back {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-
-.testframe1 {
-  border: 2px solid darkred;
-  border-radius: 15px; }
-
-.testframe2 {
-  border: 2px solid grey;
-  border-radius: 15px; }
-
-.testframe3 {
-  border: 2px solid lightblue;
-  border-radius: 15px; }
-
 body {
   background-color: #1f3d7a;
   color: beige; }

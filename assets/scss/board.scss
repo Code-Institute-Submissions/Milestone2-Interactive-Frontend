@@ -107,6 +107,7 @@
     @extend %marginBtn;
     @extend %padding12;
     @extend %DosisFont;
+    cursor: pointer;
 }
 
 #field6x6Btn {
@@ -117,6 +118,7 @@
     @extend %marginBtn;
     @extend %padding12;
     @extend %DosisFont;
+    cursor: pointer;
 }
 
 #startBtn {
@@ -143,6 +145,10 @@
 
 .selectedSize {
     background-color: darkred;
+}
+
+.bg-fieldSizeBtn {
+    background-color: #8a00e6;
 }
 
 .playStatsWrapper {
