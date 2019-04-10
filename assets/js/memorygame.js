@@ -17,13 +17,13 @@ $(document).ready(function() {
         $(".cardshell").append("<div class='card back vhalign'>Hi</div>");
         if (playFieldSize == 9) { $("#field3x3Btn").addClass("selectedSize"); } // indicator for selected size
         if (playFieldSize == 16) {
-            $(".cardshell").css("width","23.7%");
-            $(".cardshell").css("height","23.7%");
+            $(".cardshell").css("width", "23.7%");
+            $(".cardshell").css("height", "23.7%");
         }
-         if (playFieldSize == 36) {
-             $(".cardshell").css("width","15.5%");
-             $(".cardshell").css("height","15.5%");
-         }
+        if (playFieldSize == 36) {
+            $(".cardshell").css("width", "15.5%");
+            $(".cardshell").css("height", "15.5%");
+        }
     }
 
     fieldInit(9); // generating playfield of 3x3 per default 
@@ -32,7 +32,7 @@ $(document).ready(function() {
         joe.style.opacity = 1
       }, 100)
       */
-      
+
     // click actions for playfield size buttons
 
     $("#field3x3Btn").click(function() {
@@ -42,20 +42,13 @@ $(document).ready(function() {
         fieldInit(9); // initalizing fieldsize 3x3 cards
     });
 
-    
-    $(document).on('click touchstart', '#field4x4Btn', function() {
+
+    $("#field4x4Btn").click(function() {
         $("#field3x3Btn").removeClass("selectedSize"); // removing selected size indicator class
         $("#field4x4Btn").addClass("selectedSize"); // indicator for selected size
         $("#field6x6Btn").removeClass("selectedSize"); // removing selected size indicator class
         fieldInit(16); // initalizing fieldsize 4x4 cards
     });
-    
-    /* $("#field4x4Btn").click(function() {
-        $("#field3x3Btn").removeClass("selectedSize"); // removing selected size indicator class
-        $("#field4x4Btn").addClass("selectedSize"); // indicator for selected size
-        $("#field6x6Btn").removeClass("selectedSize"); // removing selected size indicator class
-        fieldInit(16); // initalizing fieldsize 4x4 cards
-    });*/
 
     $("#field6x6Btn").click(function() {
         $("#field3x3Btn").removeClass("selectedSize"); // removing selected size indicator class
@@ -65,13 +58,13 @@ $(document).ready(function() {
     });
 
     // when clicking any .cardshell class, class showMe is added to clicked card,which makes it turn / show. 
-    
+
     $(document).on('click touchstart', '.cardshell', function() {
         $(this).addClass("showMe");
     });
-    
 
-    
+
+
 
     $("#startBtn").click(function() {
         $("#playfield").css("opacity", "1.0");
