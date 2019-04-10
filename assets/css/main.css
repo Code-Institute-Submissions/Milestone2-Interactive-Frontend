@@ -72,6 +72,9 @@
 #field3x3Btn, #field4x4Btn, #field6x6Btn {
   width: 31.33%; }
 
+#field3x3Btn {
+  cursor: pointer; }
+
 #startBtn {
   width: 48%;
   background-color: #00cc00; }
