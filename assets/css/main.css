@@ -1,5 +1,5 @@
 .headline {
-  width: 80%;
+  width: 90%;
   max-width: 310px;
   font-size: 1.8em;
   font-family: "Dosis", sans-serif;
@@ -21,15 +21,15 @@
   align-items: center;
   flex-wrap: wrap; }
 
-.valign {
-  display: flex;
-  align-items: center; }
-
 #controlPanelWrapper, #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn, .playStatsWrapper, .playerStats, #fieldWrapper, .front, .back {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
+
+.valign {
+  display: flex;
+  align-items: center; }
 
 .testframe1 {
   border: 2px solid darkred;
@@ -194,6 +194,7 @@
 */
 body {
   background-color: #1f3d7a;
-  color: beige; }
+  color: beige;
+  height: 90vh; }
 
 /*# sourceMappingURL=main.css.map */
