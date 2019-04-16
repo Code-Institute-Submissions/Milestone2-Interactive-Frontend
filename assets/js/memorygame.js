@@ -15,6 +15,10 @@ $(document).ready(function() {
         $("#field16Btn").addClass("btnlocked").off("click");
         $("#field36Btn").addClass("btnlocked").off("click");
         $("#startBtn").addClass("btnlocked").off("click");
+        // stopBtn conditions are complementary to startBtn, thats why defined in makeBtnInactive
+         $("#stopBtn").removeClass("btnlocked").on('click', function() {
+            makeBtnActive();
+        });
     }
 
     function makeBtnActive() {
@@ -47,15 +51,15 @@ $(document).ready(function() {
             $("#scorePlayer2").text("0 points"); //for restarting game set playerscores to zero
             makeBtnInactive();
         });
+        
+        $("#stopBtn").addClass("btnlocked").off("click");
     }
 
 
     function gameEngine() {
         while (gameStarted) {
-
         }
     }
-
 
     function fieldInit(num) {
         var playFieldSize = num;
@@ -105,7 +109,6 @@ $(document).ready(function() {
         fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
     });
 
-
     $("#field16Btn").on('click', function() {
         $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field16Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
@@ -129,15 +132,10 @@ $(document).ready(function() {
     $("#startBtn").click(function() {
         $("#scorePlayer1").text("0 points"); //for restarting game set playerscores to zero
         $("#scorePlayer2").text("0 points"); //for restarting game set playerscores to zero
+
+       
         makeBtnInactive();
     });
-
-    $("#stopBtn").click(function() {
-
-        makeBtnActive();
-
-    });
-
 });
 
 /*
