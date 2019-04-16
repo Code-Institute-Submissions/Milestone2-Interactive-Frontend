@@ -10,7 +10,7 @@ $(document).ready(function() {
     let gameStarted = false; // indicator if game is in progress or not.
 
     function makeBtnInactive() {
-        $("#enterPlayersBtn").addClass("btnlocked").off("click");
+        $("#enterPlayersBtn").addClass("btnlocked").attr("data-toggle", "");
         $("#field8Btn").addClass("btnlocked").off("click");
         $("#field16Btn").addClass("btnlocked").off("click");
         $("#field36Btn").addClass("btnlocked").off("click");
@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     function makeBtnActive() {
 
-        $("#enterPlayersBtn").removeClass("btnlocked").attr("id", "enterPlayersBtn");
+        $("#enterPlayersBtn").removeClass("btnlocked").attr("data-toggle", "modal");
 
         $("#field8Btn").removeClass("btnlocked").on('click', function() {
             $("#field8Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
