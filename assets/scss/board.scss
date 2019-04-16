@@ -37,8 +37,8 @@
 #outershell {
     /*    outer frame, wrapper of board */
     width: 98vw;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /*margin-top: 10px;
+    margin-bottom: 10px;*/
 }
 
 #controlPanelWrapper {
@@ -49,7 +49,7 @@
 #buttonfield {
     padding: 5px;
     max-width: 380px;
-    height: 105px;
+    height: 125px;
     display: flex;
     justify-content: space-between;
     align-content: space-around;
@@ -70,6 +70,9 @@
 }
 
 #enterPlayersBtn {
+}
+
+.enterPlayersBtn {
     width: 48%;
     @extend %greenBorder;
     @extend %height-controlBtn;
@@ -80,15 +83,19 @@
     background-color: $bg-enterPlayersBtn;
 }
 
+
 %height-controlBtn {
-    height: 20px;
+    height: 35px;
 }
 
 %width-fieldSizeBtn {
     width: 31.33%;
 }
 
-#field3x3Btn {
+#field8Btn {
+}
+
+.field8Btn {
     @extend %greenBorder;
     @extend %height-controlBtn;
     @extend %width-fieldSizeBtn;
@@ -99,7 +106,11 @@
     cursor: pointer;
 }
 
-#field4x4Btn {
+
+#field16Btn {
+}
+
+.field16Btn {
     @extend %greenBorder;
     @extend %height-controlBtn;
     @extend %width-fieldSizeBtn;
@@ -110,7 +121,10 @@
     cursor: pointer;
 }
 
-#field6x6Btn {
+#field36Btn {
+}
+
+.field36Btn {
     @extend %greenBorder;
     @extend %height-controlBtn;
     @extend %width-fieldSizeBtn;
@@ -122,6 +136,9 @@
 }
 
 #startBtn {
+}
+
+.startBtn {
     width: 48%;
     @extend %greenBorder;
     @extend %height-controlBtn;
@@ -133,7 +150,7 @@
 }
 
 #stopBtn {
-    width: 48%;
+     width: 48%;
     @extend %greenBorder;
     @extend %height-controlBtn;
     @extend %vhalign;
@@ -143,12 +160,16 @@
     background-color: $bg-stopBtn;
 }
 
+.btnlocked {
+    opacity: 0.5;
+}
+
 .selectedSize {
     background-color: darkred;
 }
 
 .bg-fieldSizeBtn {
-    background-color: #8a00e6;
+    background-color: #666699;
 }
 
 .playStatsWrapper {
@@ -195,8 +216,8 @@
 
 .cardshell {
     position: relative;
-    width: 31.8%;
-    height: 31.8%;
+    width: 32%;
+    height: 32%;
     transform-style: preserve-3d;
     transform: rotateY(0);
     transition: transform .6s ease-in-out;
@@ -204,8 +225,8 @@
 
 #dummycardshell {
     position: relative;
-    width: 31.8%;
-    height: 31.8%;
+    width: 32%;
+    height: 32%;
     transform-style: preserve-3d;
     transform: rotateY(0);
     transition: transform .6s ease-in-out;

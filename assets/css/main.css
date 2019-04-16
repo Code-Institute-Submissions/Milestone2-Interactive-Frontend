@@ -6,14 +6,28 @@
   margin-top: 10px;
   text-align: center; }
 
-.modal-font {
+.modal-font, .modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn, .playerStats {
   font-family: "Dosis", sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+  color: beige; }
+
+.modal-font {
   color: black; }
 
-#buttonfield, #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn, .playerStats {
-  font-family: "Dosis", sans-serif;
-  font-size: 16px;
-  font-weight: 200; }
+.modal-font-head-howTo {
+  color: black;
+  font-size: 24px;
+  border: 2px solid lightgreen;
+  border-radius: 15px;
+  background-color: #FFFF00; }
+
+.modal-font-head-register {
+  color: black;
+  font-size: 24px;
+  border: 2px solid lightgreen;
+  border-radius: 15px;
+  background-color: #0066FF; }
 
 .vhalign {
   display: flex;
@@ -21,7 +35,7 @@
   align-items: center;
   flex-wrap: wrap; }
 
-#controlPanelWrapper, #howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn, .playStatsWrapper, .playerStats, #fieldWrapper, .front, .back {
+#controlPanelWrapper, #howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn, .playStatsWrapper, .playerStats, #fieldWrapper, .front, .back {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +44,11 @@
 .valign {
   display: flex;
   align-items: center; }
+
+.halign {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .testframe1 {
   border: 2px solid darkred;
@@ -44,7 +63,7 @@
   border-radius: 15px; }
 
 /*playfield structures*/
-#howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn {
+#howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn {
   border: 2px solid lightgreen;
   border-radius: 15px; }
 
@@ -58,20 +77,20 @@
   margin-top: 2px;
   margin-bottom: 8px; }
 
-#howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn {
+#howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn {
   margin-top: 2px;
   margin-left: 2px;
   margin-right: 2px;
   margin-bottom: 2px; }
 
-#howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn, .playerStats {
+#howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn, .playerStats {
   padding: 12px; }
 
 #outershell {
   /*    outer frame, wrapper of board */
   width: 98vw;
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  /*margin-top: 10px;
+  margin-bottom: 10px;*/ }
 
 #controlPanelWrapper {
   /*wrapper of  controlpanel*/ }
@@ -79,7 +98,7 @@
 #buttonfield {
   padding: 5px;
   max-width: 380px;
-  height: 105px;
+  height: 125px;
   display: flex;
   justify-content: space-between;
   align-content: space-around;
@@ -90,26 +109,26 @@
   background-color: #FFFF00;
   color: #34393F; }
 
-#enterPlayersBtn {
+.enterPlayersBtn {
   width: 48%;
   background-color: #0066FF; }
 
-#howToBtn, #enterPlayersBtn, #field3x3Btn, #field4x4Btn, #field6x6Btn, #startBtn, #stopBtn {
-  height: 20px; }
+#howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn {
+  height: 35px; }
 
-#field3x3Btn, #field4x4Btn, #field6x6Btn {
+.field8Btn, .field16Btn, .field36Btn {
   width: 31.33%; }
 
-#field3x3Btn {
+.field8Btn {
   cursor: pointer; }
 
-#field4x4Btn {
+.field16Btn {
   cursor: pointer; }
 
-#field6x6Btn {
+.field36Btn {
   cursor: pointer; }
 
-#startBtn {
+.startBtn {
   width: 48%;
   background-color: #00cc00; }
 
@@ -117,11 +136,14 @@
   width: 48%;
   background-color: #e60000; }
 
+.btnlocked {
+  opacity: 0.5; }
+
 .selectedSize {
   background-color: darkred; }
 
 .bg-fieldSizeBtn {
-  background-color: #8a00e6; }
+  background-color: #666699; }
 
 .playStatsWrapper {
   width: 380px;
@@ -143,16 +165,16 @@
 
 .cardshell {
   position: relative;
-  width: 31.8%;
-  height: 31.8%;
+  width: 32%;
+  height: 32%;
   transform-style: preserve-3d;
   transform: rotateY(0);
   transition: transform .6s ease-in-out; }
 
 #dummycardshell {
   position: relative;
-  width: 31.8%;
-  height: 31.8%;
+  width: 32%;
+  height: 32%;
   transform-style: preserve-3d;
   transform: rotateY(0);
   transition: transform .6s ease-in-out; }

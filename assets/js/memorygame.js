@@ -1,6 +1,42 @@
 /*global $*/
 
 $(document).ready(function() {
+    
+    // predefined array with 18 pairs of cards = 36 cards max. Array will be cut to meet smaller fieldsizes.
+
+    let masterCardArray=['.card1', '.card1', '.card2', '.card2', '.card3', '.card3', '.card4', '.card4', '.card5', '.card5', '.card6', '.card6', '.card7', '.card7', '.card8', '.card8', '.card9', '.card9', '.card10', '.card10', '.card11', '.card11', '.card12', '.card12', '.card13', '.card13', '.card14', '.card14', '.card15', '.card15', '.card16', '.card16', '.card17', '.card17', '.card18', '.card18'];
+    let currentCardArray=[];
+    let takenCards=[];
+    let gameStarted= false; // indicator if game is in progress or not.
+    
+    function makeBtnInactive() {
+       
+       $("#enterPlayersBtn").addClass("btnlocked").attr("id","enterPlayersBtn-locked");
+       $("#field8Btn").addClass("btnlocked").attr("id","field8Btn-locked");
+            $("#field16Btn").addClass("btnlocked").attr("id","field16Btn-locked");
+            $("#field36Btn").addClass("btnlocked").attr("id","field36Btn-locked");
+        $("#startBtn").addClass("btnlocked").attr("id","startBtn-locked");
+    }
+    
+    function makeBtnActive() {
+       
+       $("#enterPlayersBtn-locked").removeClass("btnlocked").attr("id","enterPlayersBtn");
+       $("#field8Btn-locked").removeClass("btnlocked").attr("id","field8Btn");
+            $("#field16Btn-locked").removeClass("btnlocked").attr("id","field16Btn");
+            $("#field36Btn-locked").removeClass("btnlocked").attr("id","field36Btn");
+        $("#startBtn-locked").removeClass("btnlocked").attr("id","startBtn");
+    }
+    
+    
+    function gameEngine () {
+        while (gameStarted)
+        {
+            
+        }
+    }
+    
+    
+    
 
     function fieldInit(num) {
         var playFieldSize = num;
@@ -19,12 +55,12 @@ $(document).ready(function() {
             $("#field8Btn").addClass("selectedSize");
             $("#field16Btn").addClass("bg-fieldSizeBtn");
             $("#field36Btn").addClass("bg-fieldSizeBtn");
-        } // indicator for selected size
+        } // setting indicator for selected size
         if (playFieldSize == 16) {
             $(".cardshell").css("width", "23.7%").css("height", "23.7%");
         }
         if (playFieldSize == 36) {
-            $(".cardshell").css("width", "15.5%").css("height", "15.5%");
+            $(".cardshell").css("width", "15.4%").css("height", "15.4%");
         }
         /*$("#playfield").fadeIn("slow");
         $("#playfield").animate({opacity: '1.0'},"fast");*/
@@ -43,11 +79,11 @@ $(document).ready(function() {
 
     // click actions for playfield size buttons
 
-    $("#field8Btn").click(function() {
+    $("#field8Btn").on('click', function() {
         $("#field8Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
         $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-        fieldInit(9); // initalizing fieldsize 3x3 cards
+        fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
     });
 
 
@@ -55,14 +91,14 @@ $(document).ready(function() {
         $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field16Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
         $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-        fieldInit(16); // initalizing fieldsize 4x4 cards
+        fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
     });
 
     $("#field36Btn").click(function() {
         $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field36Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
-        fieldInit(36); // initalizing fieldsize 6x6 cards
+        fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
     });
 
     // when clicking any .cardshell class, class showMe is added to clicked card,which makes it turn / show. 
@@ -72,14 +108,22 @@ $(document).ready(function() {
     });
 
     $("#startBtn").click(function() {
-        $("#playfield").animate({ opacity: '1.0' }, "fast");
         $("#scorePlayer1").text("0 points"); //for restarting game set playerscores to zero
         $("#scorePlayer2").text("0 points"); //for restarting game set playerscores to zero
+    makeBtnInactive();
+        
+        
     });
 
     $("#stopBtn").click(function() {
-        /*  */
-        $("#playfield").css("opacity", "0.0");
+        
+        makeBtnActive();
+        
     });
 
 });
+
+/*
+// var fruits.splice(0, 1);        // Removes the first element of fruits
+*/
+

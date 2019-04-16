@@ -33,11 +33,11 @@
                 <div id="controlPanelWrapper">
                     <div class="testframe2" id="buttonfield">
                         <div class="btn btn-primary btn-lg" data-toggle="modal" data-target="#howToModal" id="howToBtn">How to play</div>
-                        <div class="btn btn-primary btn-lg" data-toggle="modal" data-target="#enterPlayersModal" id="enterPlayersBtn">Register players</div>
-                        <div class="" id="field8Btn">3x3</div>
-                        <div class="" id="field16Btn">4x4</div>
-                        <div class="" id="field36Btn">6x6</div>
-                        <div class="btn btn-primary btn-lg" id="startBtn">start</div>
+                        <div class="btn btn-primary btn-lg enterPlayersBtn" data-toggle="modal" data-target="#enterPlayersModal" id="enterPlayersBtn">Register players</div>
+                        <div class="field8Btn" id="field8Btn">8 cards</div>
+                        <div class="field16Btn" id="field16Btn">16 cards</div>
+                        <div class="field36Btn" id="field36Btn">36 cards</div>
+                        <div class="btn btn-primary btn-lg startBtn" id="startBtn">start</div>
                         <div class="btn btn-primary btn-lg" id="stopBtn">stop</div>
                     </div>
                 </div>
@@ -83,17 +83,27 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title modal-font" id="myModalLabel">How to play this game</h4>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                    <h4 class="modal-title modal-font-head-howTo halign" id="myModalLabel">How to play this game</h4>
                 </div>
                 <div class="modal-body vhalign">
-                    <p class="modal-font-head">How to play this game</p>
-                     <p class="modal-font">This game is intended to train your memory skills. It is being played by two players.
-                     - Please register two players via the button "Register players".
-                     - Select then the size of playfield. By default, it is set to 8 pairs
-                     </p>
-                    
-                    
+                    <ul class="modal-font">
+                        <li>
+                            <p class="modal-font">This game is intended to train your memory skills. It is being played by two players.</p>
+                        </li>
+                        <li>
+                            <p class="modal-font">Please register two players via the button "Register players".</p>
+                        </li>
+                        <li>
+                            <p class="modal-font">Select then the size of playfield and hit the start button. By default, it is set to 8 cards. You might also want to try fieldsizes of 16 or 36 cards.</p>
+                        </li>
+                        <li>
+                            <p class="modal-font">Each player tries to find the maximum amount of pairs. To do so, each player clicks two cards per round. If you succeeded and have found a match, the same player can continue and try next. If no pair was found, the other player is next.</p>
+                        </li>
+                        <li>
+                            <p class="modal-font">The players who has found the most pairs, wins the game.</p>
+                        </li>
+                    </ul>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Got it!</button>
@@ -107,11 +117,11 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title modal-font" id="myModalLabel">Register players</h4>
+                   <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                    <h4 class="modal-title modal-font-head-register halign" id="myModalLabel">Register players</h4>
                 </div>
                 <div class="modal-body">
-                    <p class="modal-font-head">Please enter player details</p>
+                    <p class="modal-font">Please enter player details</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
