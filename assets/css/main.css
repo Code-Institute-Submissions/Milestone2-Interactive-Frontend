@@ -6,7 +6,7 @@
   margin-top: 10px;
   text-align: center; }
 
-.modal-font, .modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn, .playerStats {
+.modal-font, .modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, .enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats {
   font-family: "Dosis", sans-serif;
   font-size: 17px;
   font-weight: 200;
@@ -35,7 +35,7 @@
   align-items: center;
   flex-wrap: wrap; }
 
-#controlPanelWrapper, #howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn, .playStatsWrapper, .playerStats, #fieldWrapper, .front, .back {
+#controlPanelWrapper, #howToBtn, .enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playStatsWrapper, .playerStats, #fieldWrapper, .front, .back {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +63,7 @@
   border-radius: 15px; }
 
 /*playfield structures*/
-#howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn {
+#howToBtn, .enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn {
   border: 2px solid lightgreen;
   border-radius: 15px; }
 
@@ -77,13 +77,13 @@
   margin-top: 2px;
   margin-bottom: 8px; }
 
-#howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn {
+#howToBtn, .enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn {
   margin-top: 2px;
   margin-left: 2px;
   margin-right: 2px;
   margin-bottom: 2px; }
 
-#howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn, .playerStats {
+#howToBtn, .enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats {
   padding: 12px; }
 
 #outershell {
@@ -113,22 +113,22 @@
   width: 48%;
   background-color: #0066FF; }
 
-#howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, #stopBtn {
+#howToBtn, .enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn {
   height: 35px; }
 
-.field8Btn, .field16Btn, .field36Btn {
+#field8Btn, #field16Btn, #field36Btn {
   width: 31.33%; }
 
-.field8Btn {
+#field8Btn {
   cursor: pointer; }
 
-.field16Btn {
+#field16Btn {
   cursor: pointer; }
 
-.field36Btn {
+#field36Btn {
   cursor: pointer; }
 
-.startBtn {
+#startBtn {
   width: 48%;
   background-color: #00cc00; }
 

@@ -33,11 +33,11 @@
                 <div id="controlPanelWrapper">
                     <div class="testframe2" id="buttonfield">
                         <div class="btn btn-primary btn-lg" data-toggle="modal" data-target="#howToModal" id="howToBtn">How to play</div>
-                        <div class="btn btn-primary btn-lg enterPlayersBtn" data-toggle="modal" data-target="#enterPlayersModal" id="enterPlayersBtn">Register players</div>
-                        <div class="field8Btn" id="field8Btn">8 cards</div>
-                        <div class="field16Btn" id="field16Btn">16 cards</div>
-                        <div class="field36Btn" id="field36Btn">36 cards</div>
-                        <div class="btn btn-primary btn-lg startBtn" id="startBtn">start</div>
+                        <div class="btn btn-primary btn-lg" data-toggle="modal" data-target="#enterPlayersModal" id="enterPlayersBtn">Register players</div>
+                        <div class="" id="field8Btn">8 cards</div>
+                        <div class="" id="field16Btn">16 cards</div>
+                        <div class="" id="field36Btn">36 cards</div>
+                        <div class="btn btn-primary btn-lg" id="startBtn">start</div>
                         <div class="btn btn-primary btn-lg" id="stopBtn">stop</div>
                     </div>
                 </div>
@@ -98,7 +98,8 @@
                             <p class="modal-font">Select then the size of playfield and hit the start button. By default, it is set to 8 cards. You might also want to try fieldsizes of 16 or 36 cards.</p>
                         </li>
                         <li>
-                            <p class="modal-font">Each player tries to find the maximum amount of pairs. To do so, each player clicks two cards per round. If you succeeded and have found a match, the same player can continue and try next. If no pair was found, the other player is next.</p>
+                            <p class="modal-font">Each player tries to find the maximum amount of pairs. To do so, each player clicks two cards per round. If you succeeded and have found a match, the same player can continue and try next. If no pair was found, the other player
+                                is next.</p>
                         </li>
                         <li>
                             <p class="modal-font">The players who has found the most pairs, wins the game.</p>
@@ -117,15 +118,25 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                   <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
                     <h4 class="modal-title modal-font-head-register halign" id="myModalLabel">Register players</h4>
                 </div>
                 <div class="modal-body">
                     <p class="modal-font">Please enter player details</p>
+                    <form>
+                        <div class="form-group">
+                            <label class="modal-font" for="namePlayer1">Player 1's name</label>
+                            <input type="text" class="form-control" id="namePlayer1" placeholder="Player 1's name">
+                        </div>
+                        <div class="form-group">
+                            <label class="modal-font" for="namePlayer2">Player 2's name</label>
+                            <input type="text" class="form-control" id="namePlayer2" placeholder="Player 2's name">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
-
                 </div>
             </div>
         </div>

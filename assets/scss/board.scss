@@ -92,10 +92,8 @@
     width: 31.33%;
 }
 
-#field8Btn {
-}
 
-.field8Btn {
+#field8Btn {
     @extend %greenBorder;
     @extend %height-controlBtn;
     @extend %width-fieldSizeBtn;
@@ -108,9 +106,6 @@
 
 
 #field16Btn {
-}
-
-.field16Btn {
     @extend %greenBorder;
     @extend %height-controlBtn;
     @extend %width-fieldSizeBtn;
@@ -122,9 +117,6 @@
 }
 
 #field36Btn {
-}
-
-.field36Btn {
     @extend %greenBorder;
     @extend %height-controlBtn;
     @extend %width-fieldSizeBtn;
@@ -136,9 +128,6 @@
 }
 
 #startBtn {
-}
-
-.startBtn {
     width: 48%;
     @extend %greenBorder;
     @extend %height-controlBtn;
