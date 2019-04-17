@@ -137,7 +137,7 @@
   background-color: #e60000; }
 
 .btnlocked {
-  opacity: 0.5; }
+  opacity: 0.3; }
 
 .selectedSize {
   background-color: darkred; }
@@ -214,6 +214,9 @@
     opacity: 0;
 }
 */
+#howToModal, #enterPlayersModal {
+  transform: translateZ(1px); }
+
 body {
   background-color: #1f3d7a;
   color: beige;

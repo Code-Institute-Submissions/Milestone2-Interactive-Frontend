@@ -147,7 +147,7 @@
 }
 
 .btnlocked {
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .selectedSize {
@@ -175,13 +175,13 @@
     @extend %padding12;
 }
 
-#namePlayer1 {}
+.namePlayer1 {}
 
-#scorePlayer1 {}
+.scorePlayer1 {}
 
-#namePlayer2 {}
+.namePlayer2 {}
 
-#scorePlayer2 {}
+.scorePlayer2 {}
 
 
 #fieldWrapper {
@@ -207,6 +207,7 @@
     transform-style: preserve-3d;
     transform: rotateY(0);
     transition: transform .6s ease-in-out;
+
 }
 
 #dummycardshell {
@@ -223,6 +224,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+
 }
 
 .front {
@@ -262,3 +264,9 @@
     opacity: 0;
 }
 */
+
+// modal apprearance occur below the turned cards, so a correction in Z pos is necessary. Z-index did not bring remedy.
+
+#howToModal, #enterPlayersModal {
+    transform: translateZ(1px);
+}
