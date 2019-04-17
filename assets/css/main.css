@@ -1,3 +1,6 @@
+body {
+  background-color: #1f3d7a; }
+
 .headline {
   width: 90%;
   max-width: 310px;
@@ -9,7 +12,7 @@
 .modal-font, .modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats {
   font-family: "Dosis", sans-serif;
   font-size: 17px;
-  font-weight: 200;
+  font-weight: 400;
   color: beige; }
 
 .modal-font {
@@ -217,8 +220,16 @@
 #howToModal, #enterPlayersModal {
   transform: translateZ(1px); }
 
+.card-1 {
+  background-image: url(1); }
+
+.card-2 {
+  background-image: url(2); }
+
+.card-3 {
+  background-image: url(3); }
+
 body {
-  background-color: #1f3d7a;
   color: beige;
   height: 90vh; }
 

@@ -270,3 +270,14 @@
 #howToModal, #enterPlayersModal {
     transform: translateZ(1px);
 }
+
+
+
+
+$class-name: "card";
+
+
+
+@for $i from 1 through 3 {
+   .card-#{$i} {background-image: url(#{$i});  }
+}

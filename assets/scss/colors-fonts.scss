@@ -5,6 +5,12 @@ $bg-fieldSizeBtn: #666699;
 $bg-startBtn: #00cc00;
 $bg-stopBtn: #e60000;
 
+
+body {
+background-color: #1f3d7a;
+}
+
+
 .headline {
 width: 90%;
 max-width: 310px;
@@ -20,16 +26,14 @@ max-width: 310px;
 %DosisFont {
     font-family: "Dosis", sans-serif;
     font-size: 17px;
-    font-weight: 200;
+    font-weight: 400;
     color: beige;
-    
 }
 
 .modal-font {
     @extend %DosisFont;
     color: black;
 }
-
 
 .modal-font-head-howTo {
    @extend %DosisFont;
