@@ -66,6 +66,10 @@ body {
   border-radius: 15px; }
 
 /*playfield structures*/
+body {
+  color: beige;
+  height: 90vh; }
+
 #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn {
   border: 2px solid lightgreen;
   border-radius: 15px; }
@@ -86,7 +90,7 @@ body {
   margin-right: 2px;
   margin-bottom: 2px; }
 
-#howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats {
+#howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn {
   padding: 12px; }
 
 #outershell {
@@ -157,6 +161,12 @@ body {
   width: 50%;
   height: 25px; }
 
+.playerStatsPaddingLeft {
+  padding-left: 3px; }
+
+.playerStatsPaddingRight {
+  padding-right: 3px; }
+
 #playfield {
   display: flex;
   justify-content: space-around;
@@ -201,6 +211,13 @@ body {
 .showMe {
   transform: rotateY(180deg); }
 
+li {
+  width: 80vw;
+  padding-right: 25px; }
+
+ul {
+  list-style: none; }
+
 .display {
   opacity: 1; }
 
@@ -221,16 +238,57 @@ body {
   transform: translateZ(1px); }
 
 .card-1 {
-  background-image: url(1); }
+  background-image: url(assets/images/cards/card-1.jpg); }
 
 .card-2 {
-  background-image: url(2); }
+  background-image: url(assets/images/cards/card-2.jpg); }
 
 .card-3 {
-  background-image: url(3); }
+  background-image: url(assets/images/cards/card-3.jpg); }
 
-body {
-  color: beige;
-  height: 90vh; }
+.card-4 {
+  background-image: url(assets/images/cards/card-4.jpg); }
+
+.card-5 {
+  background-image: url(assets/images/cards/card-5.jpg); }
+
+.card-6 {
+  background-image: url(assets/images/cards/card-6.jpg); }
+
+.card-7 {
+  background-image: url(assets/images/cards/card-7.jpg); }
+
+.card-8 {
+  background-image: url(assets/images/cards/card-8.jpg); }
+
+.card-9 {
+  background-image: url(assets/images/cards/card-9.jpg); }
+
+.card-10 {
+  background-image: url(assets/images/cards/card-10.jpg); }
+
+.card-11 {
+  background-image: url(assets/images/cards/card-11.jpg); }
+
+.card-12 {
+  background-image: url(assets/images/cards/card-12.jpg); }
+
+.card-13 {
+  background-image: url(assets/images/cards/card-13.jpg); }
+
+.card-14 {
+  background-image: url(assets/images/cards/card-14.jpg); }
+
+.card-15 {
+  background-image: url(assets/images/cards/card-15.jpg); }
+
+.card-16 {
+  background-image: url(assets/images/cards/card-16.jpg); }
+
+.card-17 {
+  background-image: url(assets/images/cards/card-17.jpg); }
+
+.card-18 {
+  background-image: url(assets/images/cards/card-18.jpg); }
 
 /*# sourceMappingURL=main.css.map */

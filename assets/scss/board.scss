@@ -1,5 +1,10 @@
 /*playfield structures*/
 
+body {
+    color: beige;
+    height: 90vh;
+}
+
 %greenBorder {
     border: 2px solid lightgreen;
     border-radius: 15px;
@@ -172,8 +177,18 @@
     height: 25px;
     @extend %vhalign;
     @extend %DosisFont;
-    @extend %padding12;
 }
+
+.playerStatsPaddingLeft {
+    padding-left: 3px;
+}
+
+.playerStatsPaddingRight {
+    padding-right: 3px;
+}
+
+
+
 
 .namePlayer1 {}
 
@@ -246,6 +261,16 @@
     transform: rotateY(180deg);
 }
 
+li {
+    width: 80vw;
+    padding-right: 25px;
+}
+
+ul {
+    list-style: none;
+}
+
+
 .display {
     opacity: 1;
 }
@@ -272,12 +297,6 @@
 }
 
 
-
-
-$class-name: "card";
-
-
-
-@for $i from 1 through 3 {
-   .card-#{$i} {background-image: url(#{$i});  }
+@for $i from 1 through 18 {
+   .card-#{$i} {background-image: url(assets/images/cards/card-#{$i}.jpg);  }
 }
