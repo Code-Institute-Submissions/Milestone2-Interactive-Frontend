@@ -1,21 +1,23 @@
 /*global $*/
-let masterCardArray = ['card-1', 'card-1', 'card-2', 'card-2', 'card-3', 'card-3', 'card-4', 'card-4', 'card-5', 'card-5', 'card-6', 'card-6', 'card-7', 'card-7', 'card-8', 'card-8', 'card-9', 'card-9', 'card-10', 'card-10', 'card-11', 'card-11', 'card-12', 'card-12', 'card-13', 'card-13', 'card-14', 'card-14', 'card-15', 'card-15', 'card-16', 'card-16', 'card-17', 'card-17', 'card-18', 'card-18'];
-let currentCardArray = [];
-let takenCards = [];
-let pairsFound = 0;
-let gameStarted = false; // indicator if game is in progress.
-let scorePlayer1 = 0;
-let scorePlayer2 = 0;
 
 $(document).ready(function() {
 
     // let , var declarations
+
     // predefined array with 18 pairs of cards = 36 cards max. Array will be cut to meet smaller fieldsizes.
+    let masterCardArray = ['card-1', 'card-1', 'card-2', 'card-2', 'card-3', 'card-3', 'card-4', 'card-4', 'card-5', 'card-5', 'card-6', 'card-6', 'card-7', 'card-7', 'card-8', 'card-8', 'card-9', 'card-9', 'card-10', 'card-10', 'card-11', 'card-11', 'card-12', 'card-12', 'card-13', 'card-13', 'card-14', 'card-14', 'card-15', 'card-15', 'card-16', 'card-16', 'card-17', 'card-17', 'card-18', 'card-18'];
+    let currentCardArray = [];
+    let takenCards = [];
+    let pairsFound = 0;
+    let gameStarted = false; // indicator if game is in progress.
+    let scorePlayer1 = 0;
+    let scorePlayer2 = 0;
+
+
 
     // implementations of functions
 
-    function startGame() {
-    }
+    function startGame() {}
 
     function makeBtnInactive() {
         $("#enterPlayersBtn").addClass("btnlocked").attr("data-toggle", "");
@@ -196,5 +198,3 @@ $("#playfield").fadeIn("slow", function(){
 $("#playfield").fadeIn("slow");
       
 */
-
-

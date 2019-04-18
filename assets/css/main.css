@@ -9,7 +9,7 @@ body {
   margin-top: 10px;
   text-align: center; }
 
-.modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats1, .playerStats2 {
+.modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats1, .playerStats2, #popup-whoseturn {
   font-family: "Dosis", sans-serif;
   font-size: 19px;
   font-weight: 400;
@@ -83,7 +83,8 @@ body {
 /*playfield structures*/
 body {
   color: beige;
-  height: 95vh; }
+  height: 92vh;
+  margin-top: 15px; }
 
 #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn {
   border: 2px solid lightgreen;
@@ -91,8 +92,6 @@ body {
 
 #playfield {
   margin-top: 2px;
-  margin-left: 2px;
-  margin-right: 2px;
   margin-bottom: 2px; }
 
 #fieldWrapper {
@@ -168,35 +167,34 @@ body {
   background-color: #666699; }
 
 .playStatsWrapper {
-  width: 380px;
+  width: 382px;
   margin-top: 5px;
   margin-bottom: 5px;
+  border-radius: 15px;
   overflow: hidden; }
 
 .playerStats1 {
   width: 50%;
   height: 25px;
+  padding: 4px;
   background-color: grey;
   border-right: 1px solid #34393F; }
 
 .playerStats2 {
   width: 50%;
   height: 25px;
+  padding: 4px;
   background-color: grey;
   border-left: 1px solid #34393F; }
 
-.namePlayer1, .namePlayer2 {
-  padding-bottom: 2px;
-  margin: 2px; }
-
-.scorePlayer1, .scorePlayer2 {
-  padding-left: 3px;
-  padding-bottom: 2px;
-  margin: 2px; }
+.scorePlayer1,
+.scorePlayer2 {
+  padding-left: 3px; }
 
 .checkmark {
   color: lightgreen;
   font-size: 20px;
+  font-weight: 400;
   padding-left: 10px; }
 
 #playfield {
@@ -248,9 +246,7 @@ ul {
   list-style: none; }
 
 .row {
-  padding: 0;
-  margin-left: -20px;
-  margin-right: -20px; }
+  padding: 0; }
 
 .display {
   opacity: 1; }
@@ -258,7 +254,8 @@ ul {
 .invisible {
   opacity: 0; }
 
-#howToModal, #enterPlayersModal {
+#howToModal,
+#enterPlayersModal {
   transform: translateZ(1px); }
 
 .card-1 {
