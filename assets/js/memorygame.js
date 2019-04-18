@@ -177,8 +177,24 @@ setTimeout(function () {
     $("#playfield").css("opacity", "0.0");
   }, 2000);
   
+
+
+$("#playfield").fadeIn("slow", function(){
+    
+    // code here to be executed after fadeIn is done?
+    
+});
+
+
+
+
+
+
+
   $("#playfield").fadeOut("slow");
   $("#playfield").animate({opacity: '0.0'},"fast");
 $("#playfield").fadeIn("slow");
       
 */
+
+
