@@ -14,7 +14,6 @@ $(document).ready(function() {
     let scorePlayer2 = 0;
 
 
-
     // implementations of functions
 
     function startGame() {}
@@ -92,7 +91,6 @@ $(document).ready(function() {
         }
     }
 
-
     // generating playfield
 
     function fieldInit(num) {
@@ -124,7 +122,7 @@ $(document).ready(function() {
         }
     }
 
-    fieldInit(9); // generating playfield of 3x3 per default 
+    fieldInit(9); // generating playfield of 3x3 per default on startup
 
     // click actions for playfield size buttons
 
@@ -158,7 +156,7 @@ $(document).ready(function() {
         gameStarted = true;
     });
 
-    // when clicking any .cardshell class, class showMe is added to clicked card,which makes it turn / show. 
+    // when clicking any .cardshell class, class showMe is added to clicked card, which makes it turn / show. 
 
     $(document).on("click touchstart", ".cardshell", function() {
         $(this).addClass("showMe");
@@ -174,23 +172,16 @@ $(document).ready(function() {
 /*
 css effects to check.
 
-
 setTimeout(function () {
     $("#playfield").css("opacity", "0.0");
   }, 2000);
   
-
 
 $("#playfield").fadeIn("slow", function(){
     
     // code here to be executed after fadeIn is done?
     
 });
-
-
-
-
-
 
 
   $("#playfield").fadeOut("slow");

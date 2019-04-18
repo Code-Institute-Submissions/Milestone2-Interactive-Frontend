@@ -2,8 +2,7 @@
 
 body {
     color: beige;
-    height: 92vh;
-    margin-top: 15px;
+    height: 89vh;
 }
 
 %greenBorder {
@@ -41,8 +40,8 @@ body {
 #outershell {
     /*    outer frame, wrapper of board */
     width: 98vw;
-    /*margin-top: 10px;
-    margin-bottom: 10px;*/
+    margin-top: 12px;
+    margin-bottom: 2px;
 }
 
 #controlPanelWrapper {
@@ -59,6 +58,7 @@ body {
     align-content: space-around;
     flex-wrap: wrap;
     @extend %DosisFont;
+    
 }
 
 #howToBtn {
@@ -173,7 +173,7 @@ body {
 
 .playerStats1 {
     width: 50%;
-    height: 25px;
+    height: 30px;
     padding: 4px;
     @extend %vhalign;
     @extend %DosisFont;
@@ -183,7 +183,7 @@ body {
 
 .playerStats2 {
     width: 50%;
-    height: 25px;
+    height: 30px;
     padding: 4px;
     @extend %vhalign;
     @extend %DosisFont;
@@ -196,14 +196,15 @@ body {
 
 .scorePlayer1,
 .scorePlayer2 {
-    padding-left: 3px;
+    @extend %halign;
+    width: 45px;
 }
 
 .checkmark {
     color: lightgreen;
     font-size: 20px;
     font-weight: 400;
-    padding-left: 10px;
+    padding-top: 5px;
 }
 
 #fieldWrapper {
@@ -221,6 +222,8 @@ body {
     height: 87vw;
     @extend %marginPlayfield;
     z-index: -1; // set to disable playfield while game is initially not yet started
+
+    
 }
 
 .cardshell {
