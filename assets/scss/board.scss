@@ -187,9 +187,6 @@ body {
     padding-right: 3px;
 }
 
-
-
-
 .namePlayer1 {}
 
 .scorePlayer1 {}
@@ -213,6 +210,7 @@ body {
     width: 87vw;
     height: 87vw;
     @extend %marginPlayfield;
+    z-index: -1; // set to disable playfield while game is initially not yet started
 }
 
 .cardshell {

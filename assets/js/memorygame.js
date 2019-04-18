@@ -26,6 +26,7 @@ $(document).ready(function() {
         $("#stopBtn").removeClass("btnlocked").on('click', function() {
             makeBtnActive();
             $("body").css('background-color', '#1f3d7a');
+            $("#playfield").css('z-index', '-1');
             gameStarted = false;
         });
     }
@@ -59,6 +60,7 @@ $(document).ready(function() {
         $("#startBtn").removeClass("btnlocked").click(function() {
             $("#scorePlayer1").text("0 pts"); //for restarting game set playerscores to zero
             $("#scorePlayer2").text("0 pts"); //for restarting game set playerscores to zero
+            $("#playfield").css('z-index', '1');
             makeBtnInactive();
         });
 
@@ -139,8 +141,8 @@ $(document).ready(function() {
     });
 
     $('#saveBtn').on('click', function() {
-        $('.namePlayer1').text($('#nameFieldPlayer1').val()+' :');
-        $('.namePlayer2').text($('#nameFieldPlayer2').val()+' :');
+        $('.namePlayer1').text($('#nameFieldPlayer1').val() + ' :');
+        $('.namePlayer2').text($('#nameFieldPlayer2').val() + ' :');
     });
 
 });
@@ -153,15 +155,15 @@ $(document).ready(function() {
 */
 
 
-    /*setTimeout(function () {
-        $("#playfield").css("opacity", "0.0");
-      }, 2000);
-      
-      $("#playfield").fadeOut("slow");
-      $("#playfield").animate({opacity: '0.0'},"fast");
-      
-      */
+/*setTimeout(function () {
+    $("#playfield").css("opacity", "0.0");
+  }, 2000);
+  
+  $("#playfield").fadeOut("slow");
+  $("#playfield").animate({opacity: '0.0'},"fast");
+  
+  */
 
 
- /*$("#playfield").fadeIn("slow");
-        $("#playfield").animate({opacity: '1.0'},"fast");*/
+/*$("#playfield").fadeIn("slow");
+       $("#playfield").animate({opacity: '1.0'},"fast");*/
