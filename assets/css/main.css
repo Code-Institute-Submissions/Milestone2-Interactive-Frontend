@@ -9,13 +9,16 @@ body {
   margin-top: 10px;
   text-align: center; }
 
-.modal-font, .modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats {
+.modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats {
   font-family: "Dosis", sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
   color: beige; }
 
 .modal-font {
+  font-family: "Dosis", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
   color: black; }
 
 .modal-font-head-howTo {
@@ -31,6 +34,12 @@ body {
   border: 2px solid lightgreen;
   border-radius: 15px;
   background-color: #0066FF; }
+
+.front-font {
+  font-family: "Dosis", sans-serif;
+  font-size: 3.5em;
+  font-weight: 400;
+  color: #34393F; }
 
 .vhalign {
   display: flex;

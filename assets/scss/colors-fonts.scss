@@ -25,13 +25,15 @@ max-width: 310px;
 
 %DosisFont {
     font-family: "Dosis", sans-serif;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 400;
     color: beige;
 }
 
 .modal-font {
-    @extend %DosisFont;
+     font-family: "Dosis", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
     color: black;
 }
 
@@ -52,4 +54,11 @@ max-width: 310px;
     border: 2px solid lightgreen;
     border-radius: 15px;
     background-color: $bg-enterPlayersBtn;
+}
+
+.front-font {
+    font-family: "Dosis", sans-serif;
+    font-size: 3.5em;
+    font-weight: 400;
+    color: #34393F;
 }

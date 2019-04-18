@@ -104,8 +104,8 @@ $(document).ready(function() {
                 $("#playfield").append("<div class='cardshell'></div>");
             }
         }
-        $(".cardshell").append("<div class='card front'>?</div>");
-        $(".cardshell").append("<div class='card back'>Hi</div>");
+        $(".cardshell").append("<div class='card front front-font'>?</div>");
+        $(".cardshell").append("<div class='card back'></div>");
         if (playFieldSize == 9) {
             $("#field8Btn").addClass("selectedSize");
             $("#field16Btn").addClass("bg-fieldSizeBtn");
