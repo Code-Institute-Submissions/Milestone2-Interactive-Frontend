@@ -36,7 +36,7 @@ body {
 }
 
 %padding12 {
-    padding: 12px;
+    padding: 10px;
 }
 
 #outershell {
@@ -277,16 +277,7 @@ ul {
     opacity: 0;
 }
 
-/*
-.display {
-    transition: opacity 0.5s ease-in-out;
-    opacity: 1;
-}
-.invisible {
-    transition: opacity 0.5s ease-in-out;
-    opacity: 0;
-}
-*/
+
 
 // modal apprearance occur below the turned cards, so a correction in Z pos is necessary. Z-index did not bring remedy.
 
@@ -295,6 +286,10 @@ ul {
 }
 
 
+// generating card classes
+
 @for $i from 1 through 18 {
    .card-#{$i} {background-image: url(assets/images/cards/card-#{$i}.jpg);  }
 }
+
+

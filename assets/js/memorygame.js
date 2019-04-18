@@ -1,20 +1,28 @@
 /*global $*/
-var gameStarted = false;
+let masterCardArray = ['.card-1', '.card-1', '.card-2', '.card-2', '.card-3', '.card-3', '.card-4', '.card-4', '.card-5', '.card-5', '.card-6', '.card-6', '.card-7', '.card-7', '.card-8', '.card-8', '.card-9', '.card-9', '.card-10', '.card-10', '.card-11', '.card-11', '.card-12', '.card-12', '.card-13', '.card-13', '.card-14', '.card-14', '.card-15', '.card-15', '.card-16', '.card-16', '.card-17', '.card-17', '.card-18', '.card-18'];
+let currentCardArray = [];
+let takenCards = [];
+let pairsFound = 0;
+let gameStarted = false; // indicator if game is in progress.
+let scorePlayer1 = 0;
+let scorePlayer2 = 0;
+
+
+
+
+
 $(document).ready(function() {
 
 
     // let , var declarations
     // predefined array with 18 pairs of cards = 36 cards max. Array will be cut to meet smaller fieldsizes.
 
-    let masterCardArray = ['.card-1', '.card-1', '.card-2', '.card-2', '.card-3', '.card-3', '.card-4', '.card-4', '.card-5', '.card-5', '.card-6', '.card-6', '.card-7', '.card-7', '.card-8', '.card-8', '.card-9', '.card-9', '.card-10', '.card-10', '.card-11', '.card-11', '.card-12', '.card-12', '.card-13', '.card-13', '.card-14', '.card-14', '.card-15', '.card-15', '.card-16', '.card-16', '.card-17', '.card-17', '.card-18', '.card-18'];
-    let currentCardArray = [];
-    let takenCards = [];
-    let pairsFound = 0;
-    let gameStarted = false; // indicator if game is in progress.
-    let scorePlayer1 = 0;
-    let scorePlayer2 = 0;
 
     // implementations of functions
+
+    function startGame() {
+
+    }
 
     function makeBtnInactive() {
         $("#enterPlayersBtn").addClass("btnlocked").attr("data-toggle", "");
@@ -67,13 +75,51 @@ $(document).ready(function() {
         $("#stopBtn").addClass("btnlocked").off("click"); // stop button functionality removed and dimmed state when game stopped.
     }
 
-    function gameEngine() {
-        while (gameStarted) {
-            //  for (var i=0; i<1; i++) {}
-            $("body").css('background-color', 'lightgreen');
+
+
+    function prepAndDeliverCardArray(num) {
+
+        var playFieldSize2 = num;
+        currentCardArray = masterCardArray.concat(); // copying master array
+
+        if (playFieldSize2 == 9) {
+            playFieldSize2 = 8;
+            currentCardArray.splice(playFieldSize2, 28);
+            $('#diagdisplay').text(currentCardArray);
+
         }
+
+        else if (playFieldSize2 == 16) {
+            currentCardArray.splice(playFieldSize2, 20);
+
+            $('#diagdisplay').text(currentCardArray);
+        }
+            currentCardArray.sort(function(a, b){return 0.5 - Math.random()});
+            
+            
+                
+                /*
+                
+                 for (let i=0; i<currentCardArray.length; i++) {
+                     
+                 }
+                
+               $(".cardshell").each(function(){
+                  
+                   $(this).addClass(currentCardArray[i]);
+               });
+                 }
+               */
+          
+            $('#diagdisplay').text(currentCardArray);
+
+    
+
+        // currentCardArray.sort.(function(a, b){return 0.5 - Math.random()});
     }
 
+
+    // generating playfield
 
     function fieldInit(num) {
         var playFieldSize = num;
@@ -92,13 +138,20 @@ $(document).ready(function() {
             $("#field8Btn").addClass("selectedSize");
             $("#field16Btn").addClass("bg-fieldSizeBtn");
             $("#field36Btn").addClass("bg-fieldSizeBtn");
+            prepAndDeliverCardArray(playFieldSize);
         } // setting indicator for selected size
         if (playFieldSize == 16) {
             $(".cardshell").css("width", "23.7%").css("height", "23.7%");
+            prepAndDeliverCardArray(playFieldSize);
         }
         if (playFieldSize == 36) {
             $(".cardshell").css("width", "15.4%").css("height", "15.4%");
+            prepAndDeliverCardArray(playFieldSize);
+
         }
+
+
+
     }
 
     fieldInit(9); // generating playfield of 3x3 per default 
@@ -130,6 +183,7 @@ $(document).ready(function() {
     $("#startBtn").on('click', function() {
         $("#scorePlayer1").text("0 points"); //for restarting game set playerscores to zero
         $("#scorePlayer2").text("0 points"); //for restarting game set playerscores to zero
+        $("#playfield").css('z-index', '1'); // playfield is enabled by moving above fieldWrapper 
         makeBtnInactive();
         gameStarted = true;
     });
@@ -151,7 +205,7 @@ $(document).ready(function() {
 // var fruits.splice(0, 1);        // Removes the first element of fruits
 // $("#playfield").animate({opacity: '0.0'},"fast");
 // hide function
-// disable function
+// points.sort(function(a, b){return 0.5 - Math.random()});
 */
 
 

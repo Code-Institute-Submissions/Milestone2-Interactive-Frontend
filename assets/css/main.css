@@ -91,7 +91,7 @@ body {
   margin-bottom: 2px; }
 
 #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn {
-  padding: 12px; }
+  padding: 10px; }
 
 #outershell {
   /*    outer frame, wrapper of board */
@@ -225,16 +225,6 @@ ul {
 .invisible {
   opacity: 0; }
 
-/*
-.display {
-    transition: opacity 0.5s ease-in-out;
-    opacity: 1;
-}
-.invisible {
-    transition: opacity 0.5s ease-in-out;
-    opacity: 0;
-}
-*/
 #howToModal, #enterPlayersModal {
   transform: translateZ(1px); }
 
