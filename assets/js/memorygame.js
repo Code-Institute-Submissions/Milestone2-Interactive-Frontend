@@ -12,7 +12,7 @@ $(document).ready(function() {
     let gameStarted = false; // indicator if game is in progress.
     let scorePlayer1 = 0;
     let scorePlayer2 = 0;
-
+    $('#saveBtn').attr("data-dismiss", "");
 
     // implementations of functions
 
@@ -91,6 +91,13 @@ $(document).ready(function() {
         }
     }
 
+    function resetCounters() {
+        scorePlayer1 = 0; //set playerscores to zero
+        scorePlayer2 = 0; //set playerscores to zero
+        $(".scorePlayer1").text(scorePlayer1); // assign reset value to fields
+        $(".scorePlayer2").text(scorePlayer2); // assign reset value to fields
+    }
+
     // generating playfield
 
     function fieldInit(num) {
@@ -131,6 +138,8 @@ $(document).ready(function() {
         $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
+        resetCounters();
+
     });
 
     $("#field16Btn").on('click', function() {
@@ -139,6 +148,7 @@ $(document).ready(function() {
         $("#field16Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
         $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
+        resetCounters();
     });
 
     $("#field36Btn").on('click', function() {
@@ -146,11 +156,10 @@ $(document).ready(function() {
         $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field36Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
         fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
+        resetCounters();
     });
 
     $("#startBtn").on('click', function() {
-        $("#scorePlayer1").text("0 points"); //for restarting game set playerscores to zero
-        $("#scorePlayer2").text("0 points"); //for restarting game set playerscores to zero
         $("#playfield").css('z-index', '1'); // playfield is enabled by moving above fieldWrapper 
         makeBtnInactive();
         gameStarted = true;
@@ -163,8 +172,21 @@ $(document).ready(function() {
     });
 
     $('#saveBtn').on('click', function() {
-        $('.namePlayer1').text($('#nameFieldPlayer1').val() + ' :');
-        $('.namePlayer2').text($('#nameFieldPlayer2').val() + ' :');
+
+
+        if ($('#nameFieldPlayer1').val().length == 0 && $('#nameFieldPlayer2').val().length == 0) {
+
+            alert('Please fill in your name.');
+        }
+        else {
+
+            $('#saveBtn').attr("data-dismiss", "modal");
+
+
+
+            $('.namePlayer1').text($('#nameFieldPlayer1').val() + ' :');
+            $('.namePlayer2').text($('#nameFieldPlayer2').val() + ' :');
+        }
     });
 
 });
@@ -189,3 +211,6 @@ $("#playfield").fadeIn("slow", function(){
 $("#playfield").fadeIn("slow");
       
 */
+
+
+// $('.playerStats2).css('background-color', 'red'); set to red when active

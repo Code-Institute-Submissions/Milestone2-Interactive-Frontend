@@ -25,7 +25,8 @@ body {
   font-family: "Dosis", sans-serif;
   font-size: 17px;
   font-weight: 400;
-  color: black; }
+  color: black;
+  line-height: 1.4; }
 
 .modal-font-head-howTo {
   color: black;
@@ -46,6 +47,10 @@ body {
   font-size: 3.5em;
   font-weight: 400;
   color: #34393F; }
+
+.havefun {
+  color: red;
+  text-align: center; }
 
 .vhalign {
   display: flex;
@@ -194,11 +199,17 @@ body {
 
 .scorePlayer1,
 .scorePlayer2 {
-  width: 45px; }
+  width: 40px; }
 
-.checkmark {
+.checkmarkPlayer1 {
   color: lightgreen;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  padding-top: 5px; }
+
+.checkmarkPlayer2 {
+  color: #0066cc;
+  font-size: 22px;
   font-weight: 400;
   padding-top: 5px; }
 
@@ -334,5 +345,8 @@ ul {
 .card-18 {
   background-image: url(/assets/images/cards/card-18.jpg);
   background-size: cover; }
+
+#popup-whoseturn {
+  color: darkred; }
 
 /*# sourceMappingURL=main.css.map */

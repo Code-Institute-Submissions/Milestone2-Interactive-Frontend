@@ -58,7 +58,6 @@ body {
     align-content: space-around;
     flex-wrap: wrap;
     @extend %DosisFont;
-    
 }
 
 #howToBtn {
@@ -83,7 +82,6 @@ body {
     @extend %DosisFont;
     background-color: $bg-enterPlayersBtn;
 }
-
 
 %height-controlBtn {
     height: 35px;
@@ -197,15 +195,25 @@ body {
 .scorePlayer1,
 .scorePlayer2 {
     @extend %halign;
-    width: 45px;
+    width: 40px;
 }
 
-.checkmark {
+.checkmarkPlayer1 {
     color: lightgreen;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     padding-top: 5px;
 }
+
+.checkmarkPlayer2 {
+    color: #0066cc;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+
+
 
 #fieldWrapper {
     @extend %vhalign;
@@ -307,5 +315,6 @@ ul {
 
 #popup-whoseturn {
     @extend %DosisFont;
+    color: darkred;
     
 }

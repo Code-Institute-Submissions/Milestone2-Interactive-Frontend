@@ -23,9 +23,9 @@
             <div class="hidden-xs col-sm-3 col-md-3 col-lg-3 vhalign">
                 <div class="playStatsWrapper">
                     <div class="playerStats1 playerStatsFont">
-                        <div class="namePlayer1">Player 1 :</div>
+                        <div class="namePlayer1">Player 1:</div>
                         <div class="scorePlayer1">0</div>
-                        <div class="checkmark-div">
+                        <div class="">
                             <span class="checkmark glyphicon glyphicon-ok-sign"></span>
                         </div>
                     </div>
@@ -49,9 +49,9 @@
             <div class="hidden-xs col-sm-3 col-md-3 col-lg-3 vhalign">
                 <div class="playStatsWrapper">
                     <div class="playerStats2 playerStatsFont">
-                        <div class="namePlayer2">Player 2 :</div>
+                        <div class="namePlayer2">Player 2:</div>
                         <div class="scorePlayer2">0</div>
-                        <div class="checkmark-div">
+                        <div class="">
                             <span class="checkmark glyphicon glyphicon-ok-sign"></span>
                         </div>
                     </div>
@@ -63,18 +63,18 @@
             <div class="col-xs-12 hidden-sm hidden-md hidden-lg vhalign">
                 <div class="playStatsWrapper testframe2">
                     <div class="playerStats1 playerStatsFont">
-                        <div class="namePlayer1">Player 1 :</div>
-                        <div class="scorePlayer1">0</div>
-                        <div class="checkmark-div">
-                            <span class="checkmark glyphicon glyphicon-ok-sign"></span>
+                        <div class="namePlayer1">Player 1:</div>
+                        <div class="scorePlayer1">12</div>
+                        <div class="">
+                            <span class="checkmarkPlayer1 glyphicon glyphicon-ok-sign"></span>
                         </div>
                     </div>
 
                     <div class="playerStats2 playerStatsFont">
-                        <div class="namePlayer2">Player 2 :</div>
-                        <div class="scorePlayer2">0</div>
-                        <div class="checkmark-div">
-                            <span class="checkmark glyphicon glyphicon-ok-sign"></span>
+                        <div class="namePlayer2">Player 2:</div>
+                        <div class="scorePlayer2">12</div>
+                        <div class="">
+                            <span class="checkmarkPlayer2 glyphicon glyphicon-ok-sign"></span>
                         </div>
                     </div>
                 </div>
@@ -111,10 +111,11 @@
                         </li>
                         <li>
                             <p class="modal-font">Each player tries to find the maximum amount of pairs. To do so, each player clicks two cards per round. If you succeeded and have found a match, the same player can continue and try next. If no pair was found, the other player
-                                is next.</p>
+                                is next. The players who has found the most pairs, wins the game.</p>
                         </li>
-                        <li>
-                            <p class="modal-font">The players who has found the most pairs, wins the game.</p>
+                         <li>
+                            <p class="modal-font">To start over a game, stop the current game first.</p>
+                            <p class="havefun">Have fun!</p>
                         </li>
                     </ul>
                 </div>
@@ -124,8 +125,6 @@
             </div>
         </div>
     </div>
-
-
 
     <!-- Modal for entering player details -->
     <div class="modal fade" id="enterPlayersModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -155,7 +154,6 @@
         </div>
     </div>
 
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/memorygame.js"></script>
@@ -163,3 +161,8 @@
 </body>
 
 </html>
+
+
+<!-- $('#enterPlayersModal').attr("data-toggle", "");
+$('#enterPlayersModal').attr("data-toggle", "modal");
+-->
