@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 
-    // let , var declarations
+    // let , var declarations, initial conditions on startup
 
     // predefined array with 18 pairs of cards = 36 cards max. Array will be cut to meet smaller fieldsizes.
     let masterCardArray = ['card-1', 'card-1', 'card-2', 'card-2', 'card-3', 'card-3', 'card-4', 'card-4', 'card-5', 'card-5', 'card-6', 'card-6', 'card-7', 'card-7', 'card-8', 'card-8', 'card-9', 'card-9', 'card-10', 'card-10', 'card-11', 'card-11', 'card-12', 'card-12', 'card-13', 'card-13', 'card-14', 'card-14', 'card-15', 'card-15', 'card-16', 'card-16', 'card-17', 'card-17', 'card-18', 'card-18'];
@@ -130,6 +130,9 @@ $(document).ready(function() {
     }
 
     fieldInit(9); // generating playfield of 3x3 per default on startup
+    $('#enterPlayersModal').modal('show'); // registration modal on startup
+
+
 
     // click actions for playfield size buttons
 
@@ -173,22 +176,19 @@ $(document).ready(function() {
 
     $('#saveBtn').on('click', function() {
 
-
-        if ($('#nameFieldPlayer1').val().length == 0 && $('#nameFieldPlayer2').val().length == 0) {
-
-            alert('Please fill in your name.');
+        if ($('#nameFieldPlayer1').val().length == 0 || $('#nameFieldPlayer2').val().length == 0) {
+            alert('Please fill in names in both fields.');
+        }
+        else if  ($('#nameFieldPlayer1').val().length > 10 || $('#nameFieldPlayer2').val().length > 10) {
+             alert('Please fill in names with no more than 10 characters');
+             
         }
         else {
-
-            $('#saveBtn').attr("data-dismiss", "modal");
-
-
-
+            $('#saveBtn').attr("data-dismiss", "modal"); // assigning back .attr('data-dismiss','modal') to make modal close. 
             $('.namePlayer1').text($('#nameFieldPlayer1').val() + ' :');
             $('.namePlayer2').text($('#nameFieldPlayer2').val() + ' :');
         }
     });
-
 });
 
 /*
