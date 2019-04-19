@@ -199,7 +199,7 @@ body {
 
 .scorePlayer1,
 .scorePlayer2 {
-  width: 40px; }
+  width: 20px; }
 
 .checkmarkPlayer1 {
   color: lightgreen;
@@ -220,8 +220,7 @@ body {
   flex-wrap: wrap;
   transition: opacity .5s ease-in-out;
   width: 87vw;
-  height: 87vw;
-  z-index: -1; }
+  height: 87vw; }
 
 .cardshell {
   position: relative;
@@ -258,11 +257,9 @@ li {
   width: 80vw;
   padding-right: 25px; }
 
-ul {
-  list-style: none; }
-
 .row {
-  padding: 0; }
+  margin-right: -15px;
+  margin-left: -15px; }
 
 .display {
   opacity: 1; }
@@ -347,6 +344,12 @@ ul {
   background-size: cover; }
 
 #popup-whoseturn {
-  color: darkred; }
+  color: darkred;
+  background-color: #34393F;
+  transform: translateY(-400px);
+  transition: transform 0.8s ease-in-out; }
+
+.popshow {
+  transform: translateY(0px); }
 
 /*# sourceMappingURL=main.css.map */

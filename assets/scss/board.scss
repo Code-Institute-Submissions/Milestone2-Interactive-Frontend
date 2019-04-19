@@ -195,7 +195,7 @@ body {
 .scorePlayer1,
 .scorePlayer2 {
     @extend %halign;
-    width: 40px;
+    width: 20px;
 }
 
 .checkmarkPlayer1 {
@@ -229,9 +229,6 @@ body {
     width: 87vw;
     height: 87vw;
     @extend %marginPlayfield;
-    z-index: -1; // set to disable playfield while game is initially not yet started
-
-    
 }
 
 .cardshell {
@@ -281,12 +278,9 @@ li {
     padding-right: 25px;
 }
 
-ul {
-    list-style: none;
-}
-
 .row {
-    padding: 0;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .display {
@@ -316,5 +310,12 @@ ul {
 #popup-whoseturn {
     @extend %DosisFont;
     color: darkred;
+    background-color: #34393F;
+    transform:  translateY(-400px);
+    transition: transform 0.8s ease-in-out;
+}
+
+.popshow {
     
+    transform: translateY(0px);
 }
