@@ -18,7 +18,28 @@ $(document).ready(function() {
 
     function startGame() {}
 
+    function make_field8BtnVisActive() {
+        $("#field8Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
+        $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
+        $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
+    }
+
+    function make_field16BtnVisActive() {
+        $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
+        $("#field16Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
+        $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
+    }
+
+    function make_field36BtnVisActive() {
+        $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
+        $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
+        $("#field36Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
+    }
+
     function makeBtnInactive() {
+
+        // apply btnlocked class to all buttons but how to button and stopbutton
+        // also remove the click event to make inactive.
         $("#enterPlayersBtn").addClass("btnlocked").attr("data-toggle", "");
         $("#field8Btn").addClass("btnlocked").off('touchend click');
         $("#field16Btn").addClass("btnlocked").off('touchend click');
@@ -41,31 +62,28 @@ $(document).ready(function() {
 
         // ... for 8-card playfield button
         $("#field8Btn").removeClass("btnlocked").on('touchend click', function() {
-            $("#field8Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
-            $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-            $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
+            make_field8BtnVisActive();
             fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
+            resetCounters();
         });
 
         // ... for 16-card playfield button
         $("#field16Btn").removeClass("btnlocked").on('touchend click', function() {
-            $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-            $("#field16Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
-            $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
+            make_field16BtnVisActive();
             fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
+            resetCounters();
         });
 
         // ... for 36-card playfield button
         $("#field36Btn").removeClass("btnlocked").on('touchend click', function() {
-            $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-            $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-            $("#field36Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
+            make_field36BtnVisActive();
             fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
+            resetCounters();
         });
 
         // start button
         $("#startBtn").on('touchend click', function() {
-            makeBtnInactive(); // calling function to make buttons haptically and visually inactive
+            makeBtnInactive(); // calling function to make buttons visually and haptically inactive
             gameStarted = true;
             $(document).on('touchend click', '.cardshell', function() {
                 $(this).addClass("showMe");
@@ -110,6 +128,38 @@ $(document).ready(function() {
     // function for generating playfield
     function fieldInit(num) {
         var playFieldSize = num;
+        $('#playfield').css('opacity', '0.0'); // playfield is first put to invisibility and after waittime of 1s, the playfield is generated in background
+        setTimeout(function() {
+            $("#playfield").empty(); // deleting all elements from playfield container
+            for (var i = 0; i < playFieldSize; i++) {
+                if (playFieldSize == 9 && i == 4) {
+                    $("#playfield").append("<div id='dummycardshell'></div>");
+                }
+                else {
+                    $("#playfield").append("<div class='cardshell'></div>");
+                }
+            }
+            $(".cardshell").append("<div class='card front front-font'>?</div>");
+            $(".cardshell").append("<div class='card back'></div>");
+            if (playFieldSize == 9) {
+                prepAndDeliverCardArray(playFieldSize);
+            } // setting indicator for selected size
+            if (playFieldSize == 16) {
+                $(".cardshell").css("width", "23.7%").css("height", "23.7%");
+                prepAndDeliverCardArray(playFieldSize);
+            }
+            if (playFieldSize == 36) {
+                $(".cardshell").css("width", "15.4%").css("height", "15.4%");
+                prepAndDeliverCardArray(playFieldSize);
+            }
+        }, 800);
+        setTimeout(function() { // playfield is made visible again
+            $('#playfield').css('opacity', '1.0');
+        }, 800);
+
+        /*
+        
+        
         $("#playfield").empty(); // deleting all elements from playfield container
         for (var i = 0; i < playFieldSize; i++) {
             if (playFieldSize == 9 && i == 4) {
@@ -122,9 +172,6 @@ $(document).ready(function() {
         $(".cardshell").append("<div class='card front front-font'>?</div>");
         $(".cardshell").append("<div class='card back'></div>");
         if (playFieldSize == 9) {
-            $("#field8Btn").addClass("selectedSize");
-            $("#field16Btn").addClass("bg-fieldSizeBtn");
-            $("#field36Btn").addClass("bg-fieldSizeBtn");
             prepAndDeliverCardArray(playFieldSize);
         } // setting indicator for selected size
         if (playFieldSize == 16) {
@@ -135,44 +182,75 @@ $(document).ready(function() {
             $(".cardshell").css("width", "15.4%").css("height", "15.4%");
             prepAndDeliverCardArray(playFieldSize);
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        $("#playfield").empty(); // deleting all elements from playfield container
+        for (var i = 0; i < playFieldSize; i++) {
+            if (playFieldSize == 9 && i == 4) {
+                $("#playfield").append("<div id='dummycardshell'></div>");
+            }
+            else {
+                $("#playfield").append("<div class='cardshell'></div>");
+            }
+        }
+        $(".cardshell").append("<div class='card front front-font'>?</div>");
+        $(".cardshell").append("<div class='card back'></div>");
+        if (playFieldSize == 9) {
+            prepAndDeliverCardArray(playFieldSize);
+        } // setting indicator for selected size
+        if (playFieldSize == 16) {
+            $(".cardshell").css("width", "23.7%").css("height", "23.7%");
+            prepAndDeliverCardArray(playFieldSize);
+        }
+        if (playFieldSize == 36) {
+            $(".cardshell").css("width", "15.4%").css("height", "15.4%");
+            prepAndDeliverCardArray(playFieldSize);
+        }
+        */
     }
 
     // code executed on startup:
     fieldInit(9); // generating playfield of 3x3 per default on startup
+    make_field8BtnVisActive(); // make 8card button visually active
     $('#enterPlayersModal').modal('show'); // registration modal on startup
 
     // click actions for ...
 
     // ... for 8-card playfield button
     $("#field8Btn").on('touchend click', function() {
-        $("#field8Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
-        $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-        $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
+        make_field8BtnVisActive();
         fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
         resetCounters();
     });
 
     // ... for 16-card playfield button
     $("#field16Btn").on('touchend click', function() {
-        $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-        $("#field16Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
-        $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
+        make_field16BtnVisActive();
         fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
         resetCounters();
     });
 
     // ... for 36-card playfield button
     $("#field36Btn").on('touchend click', function() {
-        $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-        $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-        $("#field36Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
+        make_field36BtnVisActive();
         fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
         resetCounters();
     });
 
     // ... for start button
     $("#startBtn").on('touchend click', function() {
-        makeBtnInactive();
+        makeBtnInactive(); // calling function to make buttons visually and haptically inactive
         gameStarted = true;
         $(document).on('touchend click', '.cardshell', function() {
             $(this).addClass("showMe");
@@ -182,35 +260,51 @@ $(document).ready(function() {
 
     // ... for save button button on registration modal
     $('#saveBtn').on('touchend click', function() {
+
+        //should either field have string length of 0 then user will be informed with alert popup
         if ($('#nameFieldPlayer1').val().length == 0 || $('#nameFieldPlayer2').val().length == 0) {
             alert('Please fill in names in both fields.');
         }
+        //should either field have string length of >8 then user will be informed with alert popup
         else if ($('#nameFieldPlayer1').val().length > 8 || $('#nameFieldPlayer2').val().length > 8) {
             alert('Please fill in names with no more than 8 characters.');
         }
+        // in any other case, save button functionality is assigned back and string values of textinput fields written to HTML elements
         else {
             $('#saveBtn').attr("data-dismiss", "modal"); // assigning back .attr('data-dismiss','modal') to make modal closure possible. 
             $('.namePlayer1').text($('#nameFieldPlayer1').val() + ': ');
             $('.namePlayer2').text($('#nameFieldPlayer2').val() + ': ');
         }
     });
-    
-    
-    
 });
+
 
 /*
 css effects to check.
 
+
+fade out procedure:
+
+ $("#playfield").css("opacity", "0.0");
+ 
 setTimeout(function () {
-    $("#playfield").css("opacity", "0.0");
+    // rest of commands executed after timer is up.
   }, 2000);
   
+
+fade in procedure
+
+
+setTimeout(function () {
+    $("#playfield").css("opacity", "1.0");
+  }, 2000);
+
+
+
 
 $("#playfield").fadeIn("slow", function(){
     
     // code here to be executed after fadeIn is done?
-    
 });
 
 
@@ -222,6 +316,3 @@ $("#playfield").fadeIn("slow");
 
 
 // $('.playerStats2).css('background-color', 'red'); set to red when active
-
-
-// css().ready() test
