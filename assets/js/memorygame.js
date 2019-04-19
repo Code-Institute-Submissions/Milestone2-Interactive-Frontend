@@ -9,7 +9,7 @@ $(document).ready(function() {
     let currentCardArray = [];
     let takenCards = [];
     let pairsFound = 0;
-    let gameStarted = false; // indicator if game is in progress.
+    // let gameStarted = false; // indicator if game is in progress.
     let scorePlayer1 = 0;
     let scorePlayer2 = 0;
     $('#saveBtn').attr("data-dismiss", "");
@@ -25,7 +25,7 @@ $(document).ready(function() {
         $("#field36Btn").addClass("btnlocked").off("click");
         $("#startBtn").addClass("btnlocked").off("click");
         // stopBtn becomes active (unlocked) and needs to have on click definition
-        $("#stopBtn").removeClass("btnlocked").on('click', function() {
+        $("#stopBtn").removeClass("btnlocked").on('click touchstart', function() {
             makeBtnActive();
             $("body").css('background-color', '#1f3d7a');
             $("#playfield").css('z-index', '-1');
@@ -38,28 +38,28 @@ $(document).ready(function() {
 
         $("#enterPlayersBtn").removeClass("btnlocked").attr("data-toggle", "modal"); // make register button work again by adding back data-toggle=modal
 
-        $("#field8Btn").removeClass("btnlocked").on('click', function() {
+        $("#field8Btn").removeClass("btnlocked").on('click touchstart', function() {
             $("#field8Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
             $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
             $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
             fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
         });
 
-        $("#field16Btn").removeClass("btnlocked").on('click', function() {
+        $("#field16Btn").removeClass("btnlocked").on('click touchstart', function() {
             $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
             $("#field16Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
             $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
             fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
         });
 
-        $("#field36Btn").removeClass("btnlocked").click(function() {
+        $("#field36Btn").removeClass("btnlocked").on('click touchstart', function() {
             $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
             $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
             $("#field36Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
             fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
         });
 
-        $("#startBtn").removeClass("btnlocked").click(function() {
+        $("#startBtn").removeClass("btnlocked").on('click touchstart', function() {
             $("#scorePlayer1").text("0 pts"); //for restarting game set playerscores to zero
             $("#scorePlayer2").text("0 pts"); //for restarting game set playerscores to zero
             $("#playfield").css('z-index', '1');
@@ -72,21 +72,21 @@ $(document).ready(function() {
     function prepAndDeliverCardArray(num) {
 
         var playFieldSize2 = num;
-        currentCardArray = masterCardArray.concat(); // copying master array
+        currentCardArray = masterCardArray.concat(); // copying master array to working array
         let playFieldCardArray = $(".back").toArray();
 
         if (playFieldSize2 == 9) {
             playFieldSize2 = 8;
-            currentCardArray.splice(playFieldSize2, 28);
+            currentCardArray.splice(playFieldSize2, 28); // reduce working array to first 8 cards
         }
 
         else if (playFieldSize2 == 16) {
-            currentCardArray.splice(playFieldSize2, 20);
+            currentCardArray.splice(playFieldSize2, 20); // reduce working array to first 16 cards
         }
 
-        currentCardArray.sort(function(a, b) { return 0.5 - Math.random() });
+        currentCardArray.sort(function(a, b) { return 0.5 - Math.random() }); // shuffle of card array
 
-        for (let i = 0; i < playFieldCardArray.length; i++) {
+        for (let i = 0; i < playFieldCardArray.length; i++) { // assigning 
             $(playFieldCardArray[i]).addClass(currentCardArray[i]);
         }
     }
@@ -98,7 +98,7 @@ $(document).ready(function() {
         $(".scorePlayer2").text(scorePlayer2); // assign reset value to fields
     }
 
-    // generating playfield
+    // function for generating playfield
 
     function fieldInit(num) {
         var playFieldSize = num;
@@ -129,6 +129,9 @@ $(document).ready(function() {
         }
     }
 
+
+    // generating playfield
+
     fieldInit(9); // generating playfield of 3x3 per default on startup
     $('#enterPlayersModal').modal('show'); // registration modal on startup
 
@@ -136,17 +139,15 @@ $(document).ready(function() {
 
     // click actions for playfield size buttons
 
-    $("#field8Btn").on('click', function() {
+    $("#field8Btn").on('click touchstart', function() {
         $("#field8Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
         $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
         resetCounters();
-
     });
 
-    $("#field16Btn").on('click', function() {
-
+    $("#field16Btn").on('click touchstart', function() {
         $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field16Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
         $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
@@ -154,7 +155,7 @@ $(document).ready(function() {
         resetCounters();
     });
 
-    $("#field36Btn").on('click', function() {
+    $("#field36Btn").on('click touchstart', function() {
         $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field36Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
@@ -162,7 +163,7 @@ $(document).ready(function() {
         resetCounters();
     });
 
-    $("#startBtn").on('click', function() {
+    $("#startBtn").on('click touchstart', function() {
         $("#playfield").css('z-index', '1'); // playfield is enabled by moving above fieldWrapper 
         makeBtnInactive();
         gameStarted = true;
@@ -174,17 +175,15 @@ $(document).ready(function() {
         $(this).addClass("showMe");
     });
 
-    $('#saveBtn').on('click', function() {
-
+    $('#saveBtn').on('click touchstart', function() {
         if ($('#nameFieldPlayer1').val().length == 0 || $('#nameFieldPlayer2').val().length == 0) {
             alert('Please fill in names in both fields.');
         }
         else if  ($('#nameFieldPlayer1').val().length > 10 || $('#nameFieldPlayer2').val().length > 10) {
-             alert('Please fill in names with no more than 10 characters');
-             
+             alert('Please fill in names with no more than 10 characters.');
         }
         else {
-            $('#saveBtn').attr("data-dismiss", "modal"); // assigning back .attr('data-dismiss','modal') to make modal close. 
+            $('#saveBtn').attr("data-dismiss", "modal"); // assigning back .attr('data-dismiss','modal') to make modal closure possible. 
             $('.namePlayer1').text($('#nameFieldPlayer1').val() + ' :');
             $('.namePlayer2').text($('#nameFieldPlayer2').val() + ' :');
         }
