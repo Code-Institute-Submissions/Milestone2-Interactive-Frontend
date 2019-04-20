@@ -21,36 +21,44 @@ $(document).ready(function() {
     }
 
     function checkForMatch() {
-        // if ($('.showMe').length % 2 == 0) {
-        
-        // chk for match
-        
-        //   setTimeout(function() {
-        //     $(".cardshell").removeClass('showMe');
-        //    }, 1500);
+        if ($('.showMe').length % 2 == 0) {
+
+            // chk for match
+
+            //   setTimeout(function() {
+            //     $(".cardshell").removeClass('showMe');
+            //    }, 1500);
 
 
+        }
+        //}
+        // else if ($('.showMe').length == 2) {
+
+        //check for match by class comparison
+
+        // if match, then player color assignment, popup 'match'
+        // and increase points
+
+        // addClass (playerColorToCard 
+        // if no match, .remove('showMe');
+        // lastPlayer=nextplayer2
+        // whoIsNext(lastPlayer);
+
+        //   $(".cardshell").removeClass('showMe');
+        // }
     }
-    //}
-    // else if ($('.showMe').length == 2) {
-
-    //check for match by class comparison
-
-    // if match, then player color assignment, popup 'match'
-    // and increase points
-
-    // addClass (playerColorToCard 
-    // if no match, .remove('showMe');
-    // lastPlayer=nextplayer2
-
-    //   $(".cardshell").removeClass('showMe');
-    // }
-
-
 
     function whoIsNext(string) {
-        $('#popup-whoseturn').text(string + "is next!").addClass("popshow");
-        $('.playerStats1').css('background-color', 'red'); // set to red when active
+
+        var test = string;
+        $('#popup-whoseturn').text(test + "is next!").addClass("popshow");
+
+        if (lastPlayer == $('.namePlayer1').text()) {
+            $('.playerStats1').css('background-color', 'red'); // set to red when active
+        } {
+            $('.playerStats2').css('background-color', 'red');
+        }
+
         setTimeout(function() {
             $('#whoseNext').removeClass("popshow");
         }, 1400);
@@ -229,12 +237,12 @@ $(document).ready(function() {
     // ... for start button
     $("#startBtn").on('touchstart click', function() {
         makeBtnInactive(); // calling function to make buttons visually and haptically inactive
-        gameStarted = true;
         $(document).on('touchstart click', '.cardshell', function() { //enabling playfield by defining click rule to make them react.
             $(this).addClass("showMe");
             checkForMatch();
         });
-        startGame();
+        gameStarted = true;
+        whoIsNext(lastPlayer);
     });
 
     // ... for save button button on registration modal
@@ -253,8 +261,6 @@ $(document).ready(function() {
             $('#saveBtn').attr("data-dismiss", "modal"); // assigning back .attr('data-dismiss','modal') to make modal closure possible. 
             $('.namePlayer1').text($('#nameFieldPlayer1').val() + ': ');
             $('.namePlayer2').text($('#nameFieldPlayer2').val() + ': ');
-            $('#nameFieldPlayer1').blur();
-            $('#nameFieldPlayer2').blur();
         }
     });
 });
