@@ -212,6 +212,20 @@ body {
     padding-top: 5px;
 }
 
+.checkmarkPlayer1Big {
+    color: lightgreen;
+    font-size: 26px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.checkmarkPlayer2Big {
+    color: #0066cc;
+    font-size: 26px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
 #fieldWrapper {
     @extend %vhalign;
     @extend %marginPlayfieldWrapper;
@@ -280,19 +294,54 @@ li {
     margin-left: -15px;
 }
 
-.display {
-    opacity: 1;
-}
-
-.invisible {
-    opacity: 0;
-}
 
 
 // modal apprearance occur below the turned cards, so a correction in Z pos is necessary. Z-index did not bring remedy.
 #howToModal,
 #enterPlayersModal {
     transform: translateZ(1px);
+}
+
+
+.popupMatch {
+    
+    position: absolute;
+    @extend %DosisFont;
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    transform: translateY(0px) translateZ(10px);
+    transition: transform 1.4s ease-in-out;
+    
+}
+
+.popupNoMatch {
+    
+    position: absolute;
+    @extend %DosisFont;
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    transform: translateY(0px) translateZ(10px);
+    transition: transform 1.4s ease-in-out;
+    
+}
+
+.popupNext {
+    
+    position: absolute;
+    @extend %DosisFont;
+    left: 200px;
+    width: 100px;
+    height: 100px;
+    color: beige;
+    background-color: lightblue;
+    transform:  translateY(0px) translateZ(10px);
+    transition: transform 1.4s ease-in-out;
+}
+
+.popshow {
+    transform: translateY(-400px);
 }
 
 
@@ -305,15 +354,8 @@ li {
 }
 
 
-#whoseNext {
-    position: absolute;
-    @extend %DosisFont;
-    color: darkred;
-    background-color: #34393F;
-    transform:  translateY(-400px);
-    transition: transform 1.4s ease-in-out;
-}
 
-.popshow {
-    transform: translateY(100px);
+#TSdisplay {
+    font-size: 14px;
+    color: beige;
 }

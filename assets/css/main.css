@@ -9,7 +9,7 @@ body {
   margin-top: 10px;
   text-align: center; }
 
-.modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats1, .playerStats2, #whoseNext {
+.modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats1, .playerStats2, .popupMatch, .popupNoMatch, .popupNext {
   font-family: "Dosis", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -213,6 +213,18 @@ body {
   font-weight: 400;
   padding-top: 5px; }
 
+.checkmarkPlayer1Big {
+  color: lightgreen;
+  font-size: 26px;
+  font-weight: 400;
+  padding-top: 5px; }
+
+.checkmarkPlayer2Big {
+  color: #0066cc;
+  font-size: 26px;
+  font-weight: 400;
+  padding-top: 5px; }
+
 #playfield {
   display: flex;
   justify-content: space-around;
@@ -261,15 +273,38 @@ li {
   margin-right: -15px;
   margin-left: -15px; }
 
-.display {
-  opacity: 1; }
-
-.invisible {
-  opacity: 0; }
-
 #howToModal,
 #enterPlayersModal {
   transform: translateZ(1px); }
+
+.popupMatch {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: darkgreen;
+  transform: translateY(0px) translateZ(10px);
+  transition: transform 1.4s ease-in-out; }
+
+.popupNoMatch {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: darkred;
+  transform: translateY(0px) translateZ(10px);
+  transition: transform 1.4s ease-in-out; }
+
+.popupNext {
+  position: absolute;
+  left: 200px;
+  width: 100px;
+  height: 100px;
+  color: beige;
+  background-color: lightblue;
+  transform: translateY(0px) translateZ(10px);
+  transition: transform 1.4s ease-in-out; }
+
+.popshow {
+  transform: translateY(-400px); }
 
 .card-1 {
   background-image: url(/assets/images/cards/card-1.jpg);
@@ -343,14 +378,8 @@ li {
   background-image: url(/assets/images/cards/card-18.jpg);
   background-size: cover; }
 
-#whoseNext {
-  position: absolute;
-  color: darkred;
-  background-color: #34393F;
-  transform: translateY(-400px);
-  transition: transform 1.4s ease-in-out; }
-
-.popshow {
-  transform: translateY(100px); }
+#TSdisplay {
+  font-size: 14px;
+  color: beige; }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,61 +7,94 @@ $(document).ready(function() {
     // predefined array with 18 pairs of cards = 36 cards max. Array will be cut to meet smaller fieldsizes.
     let masterCardArray = ['card-1', 'card-1', 'card-2', 'card-2', 'card-3', 'card-3', 'card-4', 'card-4', 'card-5', 'card-5', 'card-6', 'card-6', 'card-7', 'card-7', 'card-8', 'card-8', 'card-9', 'card-9', 'card-10', 'card-10', 'card-11', 'card-11', 'card-12', 'card-12', 'card-13', 'card-13', 'card-14', 'card-14', 'card-15', 'card-15', 'card-16', 'card-16', 'card-17', 'card-17', 'card-18', 'card-18'];
     let currentCardArray = [];
-    let lastPlayer = $('.namePlayer1').text();
-    let gameStarted = false; // indicator if game is in progress.
+    var lastPlayer = "Player1";
+    var takenCards = [];
     let scorePlayer1 = 0;
     let scorePlayer2 = 0;
     $('#saveBtn').attr("data-dismiss", ""); // removing data-dismiss attribute for registration modal on field validation
 
     // implementations of functions
 
-    function startGame() {
-        gameStarted = true;
-        whoIsNext(lastPlayer);
-    }
-
     function checkForMatch() {
-        if ($('.showMe').length % 2 == 0) {
+
+        if ($('.taken .back').length == 2) {
+
+            var takenCard1, takenCard2;
+            takenCard1 = $('.taken .back').eq(0);
+            takenCard2 = $('.taken .back').eq(1);
+            var classesCard1 = takenCard1.attr("class");
+            var classesCard2 = takenCard2.attr("class");
 
             // chk for match
+            if (classesCard1 == classesCard2) {
+                // popup 'match'
+                popupMatch();
+                // popup to vanish after timeout function has been run out 
+                setTimeout(function() {
+                    $('.popupMatch').removeClass("popshow");
+                }, 2000);
+                // assign player's color to indicate win
+                if (lastPlayer == "Player1") {
+                    $('.taken').append("<span class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign'></span>");
+                    scorePlayer1 = scorePlayer1 + 1;
+                    $('.scorePlayer1').text(scorePlayer1);
 
-            //   setTimeout(function() {
-            //     $(".cardshell").removeClass('showMe');
-            //    }, 1500);
+                }
+                else if (lastPlayer == "Player2") {
+                    $('.taken').append("<span class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></span>");
+                    scorePlayer2 = scorePlayer2 + 1;
+                    $('.scorePlayer2').text(scorePlayer2);
+                }
 
+                // remove taken
+                $('.cardshell').removeClass('taken');
+                whoIsNext();
+            }
+            else if (classesCard1 != classesCard2) {
 
+                //popup no match
+                popupNoMatch();
+                if (lastPlayer == "Player1") {
+                    lastPlayer = "Player2";
+                    whoIsNext();
+                    $(".taken").removeClass('showMe taken');
+                }
+                else if (lastPlayer == "Player2") {
+                    lastPlayer = "Player1";
+                    whoIsNext();
+                    $(".taken").removeClass('showMe taken');
+                }
+            }
         }
-        //}
-        // else if ($('.showMe').length == 2) {
-
-        //check for match by class comparison
-
-        // if match, then player color assignment, popup 'match'
-        // and increase points
-
-        // addClass (playerColorToCard 
-        // if no match, .remove('showMe');
-        // lastPlayer=nextplayer2
-        // whoIsNext(lastPlayer);
-
-        //   $(".cardshell").removeClass('showMe');
-        // }
     }
 
-    function whoIsNext(string) {
-
-        var test = string;
-        $('#popup-whoseturn').text(test + "is next!").addClass("popshow");
-
-        if (lastPlayer == $('.namePlayer1').text()) {
+    function whoIsNext() {
+        $('.popupNext').text(lastPlayer + " is next!").addClass("popshow");
+        if (lastPlayer == "Player1") {
             $('.playerStats1').css('background-color', 'red'); // set to red when active
-        } {
-            $('.playerStats2').css('background-color', 'red');
+            $('.playerStats2').css('background-color', 'grey'); // set other player to grey
         }
-
+        else if (lastPlayer == "Player2") {
+            $('.playerStats2').css('background-color', 'red');
+            $('.playerStats1').css('background-color', 'grey');
+        }
         setTimeout(function() {
-            $('#whoseNext').removeClass("popshow");
-        }, 1400);
+            $('.popupNext').removeClass("popshow");
+        }, 2000);
+    }
+
+    function popupMatch() {
+        $('.popupMatch').addClass('popshow');
+        setTimeout(function() {
+            $('.popupMatch').removeClass("popshow");
+        }, 2000);
+    }
+
+    function popupNoMatch() {
+        $('.popupNoMatch').addClass('popshow');
+        setTimeout(function() {
+            $('.popupNoMatch').removeClass("popshow");
+        }, 2000);
     }
 
     function make_field8BtnVisActive() {
@@ -95,7 +128,6 @@ $(document).ready(function() {
         $("#stopBtn").removeClass("btnlocked").on('touchstart click', function() {
             makeBtnActive();
             $("#startBtn").removeClass("btnlocked");
-            gameStarted = false;
             $(document).off('touchstart click', '.cardshell'); // to make playfield not react to clicks / touches while stopped
         });
     }
@@ -130,11 +162,11 @@ $(document).ready(function() {
         // start button
         $("#startBtn").on('touchstart click', function() {
             makeBtnInactive(); // calling function to make buttons visually and haptically inactive
-            startGame();
             $(document).on('touchstart click', '.cardshell', function() {
-                $(this).addClass("showMe");
+                $(this).addClass("showMe taken");
                 checkForMatch();
             });
+            whoIsNext(lastPlayer);
         });
 
         // stop button
@@ -165,7 +197,9 @@ $(document).ready(function() {
 
     // function for counter reset on game startup
     function resetCounters() {
-        pairsFound = 0; // internal counter, reflecting game progress
+        lastPlayer = "Player1";
+        $('.playerStats1').css('background-color', 'red'); // set to red when active
+        $('.playerStats2').css('background-color', 'grey'); // set other player to grey
         scorePlayer1 = 0; //set playerscores to zero
         scorePlayer2 = 0; //set playerscores to zero
         $(".scorePlayer1").text(scorePlayer1); // assign reset value to fields
@@ -238,10 +272,9 @@ $(document).ready(function() {
     $("#startBtn").on('touchstart click', function() {
         makeBtnInactive(); // calling function to make buttons visually and haptically inactive
         $(document).on('touchstart click', '.cardshell', function() { //enabling playfield by defining click rule to make them react.
-            $(this).addClass("showMe");
+            $(this).addClass("showMe taken");
             checkForMatch();
         });
-        gameStarted = true;
         whoIsNext(lastPlayer);
     });
 
@@ -300,6 +333,3 @@ $("#playfield").fadeIn("slow", function(){
 $("#playfield").fadeIn("slow");
       
 */
-
-
-// $('.playerStats2).css('background-color', 'red'); set to red when active
