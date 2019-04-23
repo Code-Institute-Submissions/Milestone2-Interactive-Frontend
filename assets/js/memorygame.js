@@ -18,8 +18,8 @@ $(document).ready(function() {
         if ($('.taken .back').length == 2) {
             $(document).off('touchstart click', '.cardshell'); // to make playfield not react to clicks / touches while stopped
             var takenCard1, takenCard2;
-            takenCard1 = $('.taken .back').eq(0);
-            takenCard2 = $('.taken .back').eq(1);
+            takenCard1 = $('.taken .back').eq(0); //extracting element with index '0' from $('.taken .back')
+            takenCard2 = $('.taken .back').eq(1); //extracting element with index '1' from $('.taken .back')
             var classesCard1 = takenCard1.attr("class");
             var classesCard2 = takenCard2.attr("class");
 
