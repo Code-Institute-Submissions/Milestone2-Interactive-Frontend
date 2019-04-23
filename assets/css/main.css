@@ -52,10 +52,10 @@ body {
   color: red;
   text-align: center; }
 
-.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
+.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted, .popupPlayer1Won, .popupPlayer2Won {
   font-family: "Dosis", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
   color: beige; }
 
 .vhalign {
@@ -283,7 +283,7 @@ li {
 #enterPlayersModal {
   transform: translateZ(1px); }
 
-.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
+.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted, .popupPlayer1Won, .popupPlayer2Won {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -294,29 +294,43 @@ li {
   background-color: darkgreen;
   opacity: 0.0;
   z-index: -1;
-  transform: translateY(0px) translateZ(-10px);
+  transform: translateZ(-10px);
   transition: opacity 1s ease-in-out; }
 
 .popupNoMatch {
   background-color: darkred;
   opacity: 0.0;
   z-index: -1;
-  transform: translateY(0px) translateZ(-10px);
+  transform: translateZ(-10px);
   transition: opacity 1s ease-in-out; }
 
 .popupNext {
-  color: beige;
+  color: grey;
   background-color: lightblue;
   opacity: 0.0;
   z-index: -1;
-  transform: translateY(0px) translateZ(-10px);
-  transition: opacity 1s ease-in-out 2.5s; }
+  transform: translateZ(-10px);
+  transition: opacity 1s ease-in-out; }
 
 .popupGameCompleted {
   background-color: grey;
   opacity: 0.0;
   z-index: -1;
-  transform: translateY(0px) translateZ(-10px);
+  transform: translateZ(-10px);
+  transition: opacity 1s ease-in-out; }
+
+.popupPlayer1Won {
+  background-color: grey;
+  opacity: 0.0;
+  z-index: -1;
+  transform: translateZ(-10px);
+  transition: opacity 1s ease-in-out; }
+
+.popupPlayer2Won {
+  background-color: grey;
+  opacity: 0.0;
+  z-index: -1;
+  transform: translateZ(-10px);
   transition: opacity 1s ease-in-out; }
 
 .card1 {
