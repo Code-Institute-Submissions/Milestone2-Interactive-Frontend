@@ -337,6 +337,16 @@ li {
     transition: opacity 1s ease-in-out 2.5s;
 }
 
+.popupGameCompleted {
+    @extend %popup;
+    background-color: grey;
+    opacity: 0.0;
+    z-index: -1;
+    transform: translateY(0px) translateZ(-10px);
+    transition: opacity 1s ease-in-out;
+}
+
+
 // generating card classes
 @for $i from 1 through 18 {
     .card-#{$i} {

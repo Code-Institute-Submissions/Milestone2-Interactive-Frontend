@@ -8,7 +8,6 @@ $(document).ready(function() {
     let masterCardArray = ['card-1', 'card-1', 'card-2', 'card-2', 'card-3', 'card-3', 'card-4', 'card-4', 'card-5', 'card-5', 'card-6', 'card-6', 'card-7', 'card-7', 'card-8', 'card-8', 'card-9', 'card-9', 'card-10', 'card-10', 'card-11', 'card-11', 'card-12', 'card-12', 'card-13', 'card-13', 'card-14', 'card-14', 'card-15', 'card-15', 'card-16', 'card-16', 'card-17', 'card-17', 'card-18', 'card-18'];
     let currentCardArray = [];
     var lastPlayer = "Player1";
-    var takenCards = [];
     let scorePlayer1 = 0;
     let scorePlayer2 = 0;
     $('#saveBtn').attr("data-dismiss", ""); // removing data-dismiss attribute for registration modal on field validation
@@ -18,6 +17,11 @@ $(document).ready(function() {
     function checkForMatch() {
 
         if ($('.taken .back').length == 2) {
+          $(document).off('touchstart click', '.cardshell'); // to make playfield not react to clicks / touches while stopped
+
+
+
+
 
             var takenCard1, takenCard2;
             takenCard1 = $('.taken .back').eq(0);
@@ -27,10 +31,8 @@ $(document).ready(function() {
 
             // chk for match
             if (classesCard1 == classesCard2) {
-               
-                setTimeout(function() {
-                    
-                     // popup 'match'
+
+                // popup 'match'
                 popupMatch();
                 // assign player's color to indicate win
                 if (lastPlayer == "Player1") {
@@ -43,17 +45,20 @@ $(document).ready(function() {
                     scorePlayer2 = scorePlayer2 + 1;
                     $('.scorePlayer2').text(scorePlayer2);
                 }
-              $('.taken').addClass('dummycardshell').removeClass('cardshell');
-                
-                // remove taken
+
+                /// TOCHK!
+                $('.taken').addClass('dummycardshell').removeClass('cardshell');
+                $(document).off('touchstart click', '.taken~.dummycardshell');
+                // remove taken class
+                $('.dummycardshell').removeClass('taken');
                 $('.cardshell').removeClass('taken');
-                
+                // if ($('.showMe').length == $('.card').length) {
+                //    gameCompleted();
+                //}
+                //else {
+
                 whoIsNext();
-            
-        }, 1000);
-               
-               
-               
+                //    }
             }
             else if (classesCard1 != classesCard2) {
 
@@ -72,8 +77,37 @@ $(document).ready(function() {
                     }
                 }, 1000);
             }
+
+           setTimeout(function() {
+                $(document).on('touchstart click', '.cardshell', function() { //re-enable clicks on cards
+                    $(this).addClass("showMe taken");
+                    checkForMatch();
+                });
+            }, 1000);
+            
         }
     }
+
+
+    function gameCompleted() {
+
+        $('.popupGameCompleted').css("transform", "translateZ(10px)").css("opacity", "1.0");
+        if (scorePlayer1 > scorePlayer2) {
+            $('.popupGameCompleted').text("Game Completed!" + $('#nameFieldPlayer1').val() + " has won!");
+        }
+
+        else if (scorePlayer2 > scorePlayer1) {
+            $('.popupGameCompleted').text("Game Completed!" + $('#nameFieldPlayer2').val() + " has won!");
+        }
+
+        makeBtnActive();
+        $("#startBtn").removeClass("btnlocked");
+        $(document).off('touchstart click', '.cardshell'); // to make playfield not react to clicks / touches while stopped
+
+
+    }
+
+
 
     function whoIsNext() {
         if (lastPlayer == "Player1") {
@@ -86,12 +120,12 @@ $(document).ready(function() {
             $('.playerStats1').css('background-color', 'grey');
             $('.popupNext').text($('#nameFieldPlayer2').val());
         }
- $('.popupNext').css("opacity", "1.0");
-       // $('.popupNext').css("transform", "translateZ(10px)");
+        $('.popupNext').css("opacity", "1.0");
+        // $('.popupNext').css("transform", "translateZ(10px)");
         // setTimeout(function() {
-            
-    //    }, 1000);
-        
+
+        //    }, 1000);
+
         setTimeout(function() {
             $('.popupNext').css("opacity", "0.0");
         }, 1000);
@@ -302,7 +336,7 @@ $(document).ready(function() {
             $(this).addClass("showMe taken");
             checkForMatch();
         });
-        whoIsNext(lastPlayer);
+        whoIsNext();
     });
 
     // ... for save button button on registration modal

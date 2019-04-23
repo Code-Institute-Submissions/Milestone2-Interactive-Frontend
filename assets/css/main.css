@@ -52,7 +52,7 @@ body {
   color: red;
   text-align: center; }
 
-.popupMatch, .popupNoMatch, .popupNext {
+.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
   font-family: "Dosis", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -283,7 +283,7 @@ li {
 #enterPlayersModal {
   transform: translateZ(1px); }
 
-.popupMatch, .popupNoMatch, .popupNext {
+.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -311,6 +311,13 @@ li {
   z-index: -1;
   transform: translateY(0px) translateZ(-10px);
   transition: opacity 1s ease-in-out 2.5s; }
+
+.popupGameCompleted {
+  background-color: grey;
+  opacity: 0.0;
+  z-index: -1;
+  transform: translateY(0px) translateZ(-10px);
+  transition: opacity 1s ease-in-out; }
 
 .card-1 {
   background-image: url(/assets/images/cards/card-1.jpg);
