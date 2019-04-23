@@ -45,7 +45,7 @@ $(document).ready(function() {
                         // remove taken class
                         $('.dummycardshell').removeClass('taken');
                         $('.cardshell').removeClass('taken');
-                        if ($('.showMe').length == $('.card').length) {
+                        if ($('.showMe').length == $('.front').length) {
                             gameCompleted();
                         }
                         else {
@@ -211,6 +211,7 @@ $(document).ready(function() {
 
         // start button
         $("#startBtn").on('touchstart click', function() {
+         //    $('.popupGameCompleted').css('opacity','0');
             makeBtnInactive(); // calling function to make buttons visually and haptically inactive
             $(document).on('touchstart click', '.cardshell', function() {
                 $(this).addClass("showMe taken");
