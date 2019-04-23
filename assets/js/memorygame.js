@@ -44,13 +44,13 @@ $(document).ready(function() {
                         // $(document).off('touchstart click', '.taken~.dummycardshell');
                         // remove taken class
                         $('.dummycardshell').removeClass('taken');
-                        // $('.cardshell').removeClass('taken');
-                        // if ($('.showMe').length == $('.card').length) {
-                        //    gameCompleted();
-                        //}
-                        //else {
-                        whoIsNext();
-                        //    }
+                        $('.cardshell').removeClass('taken');
+                        if ($('.showMe').length == $('.card').length) {
+                            gameCompleted();
+                        }
+                        else {
+                            whoIsNext();
+                        }
                     }, 2000);
                 }, 500);
             }
