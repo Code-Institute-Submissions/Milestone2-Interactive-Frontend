@@ -15,14 +15,8 @@ $(document).ready(function() {
     // implementations of functions
 
     function checkForMatch() {
-
         if ($('.taken .back').length == 2) {
-          $(document).off('touchstart click', '.cardshell'); // to make playfield not react to clicks / touches while stopped
-
-
-
-
-
+            $(document).off('touchstart click', '.cardshell'); // to make playfield not react to clicks / touches while stopped
             var takenCard1, takenCard2;
             takenCard1 = $('.taken .back').eq(0);
             takenCard2 = $('.taken .back').eq(1);
@@ -31,60 +25,59 @@ $(document).ready(function() {
 
             // chk for match
             if (classesCard1 == classesCard2) {
-
-                // popup 'match'
-                popupMatch();
-                // assign player's color to indicate win
-                if (lastPlayer == "Player1") {
-                    $('.taken .back').append("<span class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign'></span>");
-                    scorePlayer1 = scorePlayer1 + 1;
-                    $('.scorePlayer1').text(scorePlayer1);
-                }
-                else if (lastPlayer == "Player2") {
-                    $('.taken .back').append("<span class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></span>");
-                    scorePlayer2 = scorePlayer2 + 1;
-                    $('.scorePlayer2').text(scorePlayer2);
-                }
-
-                /// TOCHK!
-                $('.taken').addClass('dummycardshell').removeClass('cardshell');
-                $(document).off('touchstart click', '.taken~.dummycardshell');
-                // remove taken class
-                $('.dummycardshell').removeClass('taken');
-                $('.cardshell').removeClass('taken');
-                // if ($('.showMe').length == $('.card').length) {
-                //    gameCompleted();
-                //}
-                //else {
-
-                whoIsNext();
-                //    }
+                setTimeout(function() {
+                    // popup 'match'
+                    popupMatch();
+                    setTimeout(function() {
+                        // assign player's color to indicate win
+                        if (lastPlayer == "Player1") {
+                            $('.taken .back').append("<span class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign'></span>");
+                            scorePlayer1 = scorePlayer1 + 1;
+                            $('.scorePlayer1').text(scorePlayer1);
+                        }
+                        else if (lastPlayer == "Player2") {
+                            $('.taken .back').append("<span class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></span>");
+                            scorePlayer2 = scorePlayer2 + 1;
+                            $('.scorePlayer2').text(scorePlayer2);
+                        }
+                        $('.taken').addClass('dummycardshell').removeClass('cardshell');
+                        // $(document).off('touchstart click', '.taken~.dummycardshell');
+                        // remove taken class
+                        $('.dummycardshell').removeClass('taken');
+                        // $('.cardshell').removeClass('taken');
+                        // if ($('.showMe').length == $('.card').length) {
+                        //    gameCompleted();
+                        //}
+                        //else {
+                        whoIsNext();
+                        //    }
+                    }, 2000);
+                }, 500);
             }
             else if (classesCard1 != classesCard2) {
-
-                setTimeout(function() { // delay of 1000ms to be able to see shown cards
+                setTimeout(function() {
                     //popup no match
                     popupNoMatch();
-                    if (lastPlayer == "Player1") {
-                        lastPlayer = "Player2";
-                        whoIsNext();
+                    setTimeout(function() { // delay of 1500ms to be able to see shown cards
                         $(".taken").removeClass('showMe taken');
-                    }
-                    else if (lastPlayer == "Player2") {
-                        lastPlayer = "Player1";
-                        whoIsNext();
-                        $(".taken").removeClass('showMe taken');
-                    }
-                }, 1000);
+                        if (lastPlayer == "Player1") {
+                            lastPlayer = "Player2";
+                        }
+                        else if (lastPlayer == "Player2") {
+                            lastPlayer = "Player1";
+                        }
+                        setTimeout(function() {
+                            whoIsNext();
+                        }, 750); // makes whoIsNext checkup little more delayed 
+                    }, 1500);
+                }, 500); // wait until cards have fully turned 
             }
-
-           setTimeout(function() {
+            setTimeout(function() {
                 $(document).on('touchstart click', '.cardshell', function() { //re-enable clicks on cards
                     $(this).addClass("showMe taken");
                     checkForMatch();
                 });
             }, 1000);
-            
         }
     }
 
@@ -106,8 +99,6 @@ $(document).ready(function() {
 
 
     }
-
-
 
     function whoIsNext() {
         if (lastPlayer == "Player1") {
@@ -138,7 +129,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             $('.popupMatch').css("opacity", "0.0");
-        }, 2000);
+        }, 1200);
         setTimeout(function() {
             $('.popupMatch').css("transform", "translateZ(-10px)");
         }, 3000);
@@ -150,7 +141,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
             $('.popupNoMatch').css("opacity", "0.0");
-        }, 2000);
+        }, 1200);
         setTimeout(function() {
             $('.popupNoMatch').css("transform", "translateZ(-10px)");
         }, 3000);
