@@ -9,7 +9,7 @@ body {
   margin-top: 10px;
   text-align: center; }
 
-.modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats1, .playerStats2, .popupMatch, .popupNoMatch, .popupNext {
+.modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats1, .playerStats2 {
   font-family: "Dosis", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -51,6 +51,12 @@ body {
 .havefun {
   color: red;
   text-align: center; }
+
+.popupMatch, .popupNoMatch, .popupNext {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: beige; }
 
 .vhalign {
   display: flex;
@@ -215,13 +221,13 @@ body {
 
 .checkmarkPlayer1Big {
   color: lightgreen;
-  font-size: 26px;
+  font-size: 4em;
   font-weight: 400;
   padding-top: 5px; }
 
 .checkmarkPlayer2Big {
   color: #0066cc;
-  font-size: 26px;
+  font-size: 4em;
   font-weight: 400;
   padding-top: 5px; }
 
@@ -277,34 +283,34 @@ li {
 #enterPlayersModal {
   transform: translateZ(1px); }
 
-.popupMatch {
+.popupMatch, .popupNoMatch, .popupNext {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid lightblue;
+  border-radius: 15px; }
+
+.popupMatch {
   background-color: darkgreen;
-  transform: translateY(0px) translateZ(10px);
-  transition: transform 1.4s ease-in-out; }
+  opacity: 0.0;
+  z-index: -1;
+  transform: translateY(0px) translateZ(-10px);
+  transition: opacity 1s ease-in-out; }
 
 .popupNoMatch {
-  position: absolute;
-  width: 100px;
-  height: 100px;
   background-color: darkred;
-  transform: translateY(0px) translateZ(10px);
-  transition: transform 1.4s ease-in-out; }
+  opacity: 0.0;
+  z-index: -1;
+  transform: translateY(0px) translateZ(-10px);
+  transition: opacity 1s ease-in-out; }
 
 .popupNext {
-  position: absolute;
-  left: 200px;
-  width: 100px;
-  height: 100px;
   color: beige;
   background-color: lightblue;
-  transform: translateY(0px) translateZ(10px);
-  transition: transform 1.4s ease-in-out; }
-
-.popshow {
-  transform: translateY(-400px); }
+  opacity: 0.0;
+  z-index: -1;
+  transform: translateY(0px) translateZ(-10px);
+  transition: opacity 1s ease-in-out 2.5s; }
 
 .card-1 {
   background-image: url(/assets/images/cards/card-1.jpg);
@@ -377,9 +383,5 @@ li {
 .card-18 {
   background-image: url(/assets/images/cards/card-18.jpg);
   background-size: cover; }
-
-#TSdisplay {
-  font-size: 14px;
-  color: beige; }
 
 /*# sourceMappingURL=main.css.map */

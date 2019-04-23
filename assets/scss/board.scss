@@ -214,14 +214,14 @@ body {
 
 .checkmarkPlayer1Big {
     color: lightgreen;
-    font-size: 26px;
+    font-size: 4em;
     font-weight: 400;
     padding-top: 5px;
 }
 
 .checkmarkPlayer2Big {
     color: #0066cc;
-    font-size: 26px;
+    font-size: 4em;
     font-weight: 400;
     padding-top: 5px;
 }
@@ -269,8 +269,8 @@ body {
     border: 2px solid lightgreen;
     border-radius: 10px;
     @extend %vhalign;
-    
-    
+
+
 }
 
 .back {
@@ -294,56 +294,48 @@ li {
     margin-left: -15px;
 }
 
-
-
 // modal apprearance occur below the turned cards, so a correction in Z pos is necessary. Z-index did not bring remedy.
 #howToModal,
 #enterPlayersModal {
     transform: translateZ(1px);
 }
 
+%popup {
+    position: absolute;
+    @extend %popup-font;
+    width: 200px;
+    height: 200px;
+    border: 2px solid lightblue;
+    border-radius: 15px;
+}
 
 .popupMatch {
-    
-    position: absolute;
-    @extend %DosisFont;
-    width: 100px;
-    height: 100px;
+    @extend %popup;
     background-color: darkgreen;
-    transform: translateY(0px) translateZ(10px);
-    transition: transform 1.4s ease-in-out;
-    
+    opacity: 0.0;
+    z-index: -1;
+    transform: translateY(0px) translateZ(-10px);
+    transition: opacity 1s ease-in-out;
 }
 
 .popupNoMatch {
-    
-    position: absolute;
-    @extend %DosisFont;
-    width: 100px;
-    height: 100px;
+    @extend %popup;
     background-color: darkred;
-    transform: translateY(0px) translateZ(10px);
-    transition: transform 1.4s ease-in-out;
-    
+    opacity: 0.0;
+    z-index: -1;
+    transform: translateY(0px) translateZ(-10px);
+    transition: opacity 1s ease-in-out;
 }
 
 .popupNext {
-    
-    position: absolute;
-    @extend %DosisFont;
-    left: 200px;
-    width: 100px;
-    height: 100px;
+    @extend %popup;
     color: beige;
     background-color: lightblue;
-    transform:  translateY(0px) translateZ(10px);
-    transition: transform 1.4s ease-in-out;
+    opacity: 0.0;
+    z-index: -1;
+    transform: translateY(-0px) translateZ(-10px);
+    transition: opacity 1s ease-in-out 2.5s;
 }
-
-.popshow {
-    transform: translateY(-400px);
-}
-
 
 // generating card classes
 @for $i from 1 through 18 {
@@ -351,11 +343,4 @@ li {
         background-image: url(/assets/images/cards/card-#{$i}.jpg);
         background-size: cover;
     }
-}
-
-
-
-#TSdisplay {
-    font-size: 14px;
-    color: beige;
 }

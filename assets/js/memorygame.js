@@ -29,19 +29,15 @@ $(document).ready(function() {
             if (classesCard1 == classesCard2) {
                 // popup 'match'
                 popupMatch();
-                // popup to vanish after timeout function has been run out 
-                setTimeout(function() {
-                    $('.popupMatch').removeClass("popshow");
-                }, 2000);
                 // assign player's color to indicate win
                 if (lastPlayer == "Player1") {
-                    $('.taken').append("<span class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign'></span>");
+                    $('.taken .back').append("<span class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign'></span>");
                     scorePlayer1 = scorePlayer1 + 1;
                     $('.scorePlayer1').text(scorePlayer1);
 
                 }
                 else if (lastPlayer == "Player2") {
-                    $('.taken').append("<span class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></span>");
+                    $('.taken .back').append("<span class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></span>");
                     scorePlayer2 = scorePlayer2 + 1;
                     $('.scorePlayer2').text(scorePlayer2);
                 }
@@ -52,49 +48,84 @@ $(document).ready(function() {
             }
             else if (classesCard1 != classesCard2) {
 
-                //popup no match
-                popupNoMatch();
-                if (lastPlayer == "Player1") {
-                    lastPlayer = "Player2";
-                    whoIsNext();
-                    $(".taken").removeClass('showMe taken');
-                }
-                else if (lastPlayer == "Player2") {
-                    lastPlayer = "Player1";
-                    whoIsNext();
-                    $(".taken").removeClass('showMe taken');
-                }
+                setTimeout(function() { // delay of 1000ms to be able to see shown cards
+                    //popup no match
+                    popupNoMatch();
+                    if (lastPlayer == "Player1") {
+                        lastPlayer = "Player2";
+                        whoIsNext();
+                        $(".taken").removeClass('showMe taken');
+                    }
+                    else if (lastPlayer == "Player2") {
+                        lastPlayer = "Player1";
+                        whoIsNext();
+                        $(".taken").removeClass('showMe taken');
+                    }
+                }, 1000);
+
+                /*
+                                //popup no match
+                                popupNoMatch();
+                                if (lastPlayer == "Player1") {
+                                    lastPlayer = "Player2";
+                                    whoIsNext();
+                                    $(".taken").removeClass('showMe taken');
+                                }
+                                else if (lastPlayer == "Player2") {
+                                    lastPlayer = "Player1";
+                                    whoIsNext();
+                                    $(".taken").removeClass('showMe taken');
+                                }
+                                */
             }
         }
     }
 
     function whoIsNext() {
-        $('.popupNext').text(lastPlayer + " is next!").addClass("popshow");
         if (lastPlayer == "Player1") {
             $('.playerStats1').css('background-color', 'red'); // set to red when active
             $('.playerStats2').css('background-color', 'grey'); // set other player to grey
+            $('.popupNext').text($('#nameFieldPlayer1').val());
         }
         else if (lastPlayer == "Player2") {
             $('.playerStats2').css('background-color', 'red');
             $('.playerStats1').css('background-color', 'grey');
+            $('.popupNext').text($('#nameFieldPlayer2').val());
         }
+ $('.popupNext').css("opacity", "1.0");
+       // $('.popupNext').css("transform", "translateZ(10px)");
+        // setTimeout(function() {
+            
+    //    }, 1000);
+        
         setTimeout(function() {
-            $('.popupNext').removeClass("popshow");
-        }, 2000);
+            $('.popupNext').css("opacity", "0.0");
+        }, 1000);
     }
 
     function popupMatch() {
-        $('.popupMatch').addClass('popshow');
+
+        $('.popupMatch').css("transform", "translateZ(10px)");
+        $('.popupMatch').css("opacity", "1.0");
+
         setTimeout(function() {
-            $('.popupMatch').removeClass("popshow");
+            $('.popupMatch').css("opacity", "0.0");
         }, 2000);
+        setTimeout(function() {
+            $('.popupMatch').css("transform", "translateZ(-10px)");
+        }, 3000);
     }
 
     function popupNoMatch() {
-        $('.popupNoMatch').addClass('popshow');
+        $('.popupNoMatch').css("transform", "translateZ(10px)");
+        $('.popupNoMatch').css("opacity", "1.0");
+
         setTimeout(function() {
-            $('.popupNoMatch').removeClass("popshow");
+            $('.popupNoMatch').css("opacity", "0.0");
         }, 2000);
+        setTimeout(function() {
+            $('.popupNoMatch').css("transform", "translateZ(-10px)");
+        }, 3000);
     }
 
     function make_field8BtnVisActive() {
@@ -300,8 +331,8 @@ $(document).ready(function() {
 
 
 /*
-css effects to check.
 
+-----------
 
 fade out procedure:
 
@@ -311,7 +342,6 @@ setTimeout(function () {
     // rest of commands executed after timer is up.
   }, 2000);
   
-
 fade in procedure
 
 
@@ -320,7 +350,7 @@ setTimeout(function () {
   }, 2000);
 
 
-
+----------
 
 $("#playfield").fadeIn("slow", function(){
     
