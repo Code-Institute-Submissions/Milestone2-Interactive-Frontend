@@ -27,24 +27,33 @@ $(document).ready(function() {
 
             // chk for match
             if (classesCard1 == classesCard2) {
-                // popup 'match'
+               
+                setTimeout(function() {
+                    
+                     // popup 'match'
                 popupMatch();
                 // assign player's color to indicate win
                 if (lastPlayer == "Player1") {
                     $('.taken .back').append("<span class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign'></span>");
                     scorePlayer1 = scorePlayer1 + 1;
                     $('.scorePlayer1').text(scorePlayer1);
-
                 }
                 else if (lastPlayer == "Player2") {
                     $('.taken .back').append("<span class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></span>");
                     scorePlayer2 = scorePlayer2 + 1;
                     $('.scorePlayer2').text(scorePlayer2);
                 }
-
+              $('.taken').addClass('dummycardshell').removeClass('cardshell');
+                
                 // remove taken
                 $('.cardshell').removeClass('taken');
+                
                 whoIsNext();
+            
+        }, 1000);
+               
+               
+               
             }
             else if (classesCard1 != classesCard2) {
 
@@ -62,21 +71,6 @@ $(document).ready(function() {
                         $(".taken").removeClass('showMe taken');
                     }
                 }, 1000);
-
-                /*
-                                //popup no match
-                                popupNoMatch();
-                                if (lastPlayer == "Player1") {
-                                    lastPlayer = "Player2";
-                                    whoIsNext();
-                                    $(".taken").removeClass('showMe taken');
-                                }
-                                else if (lastPlayer == "Player2") {
-                                    lastPlayer = "Player1";
-                                    whoIsNext();
-                                    $(".taken").removeClass('showMe taken');
-                                }
-                                */
             }
         }
     }
@@ -245,7 +239,7 @@ $(document).ready(function() {
             $("#playfield").empty(); // deleting all elements from playfield container
             for (var i = 0; i < playFieldSize; i++) {
                 if (playFieldSize == 9 && i == 4) {
-                    $("#playfield").append("<div id='dummycardshell'></div>");
+                    $("#playfield").append("<div class='dummycardshell'></div>");
                 }
                 else {
                     $("#playfield").append("<div class='cardshell'></div>");
@@ -259,10 +253,12 @@ $(document).ready(function() {
             } // setting indicator for selected size
             if (playFieldSize == 16) {
                 $(".cardshell").css("width", "23.7%").css("height", "23.7%");
+                $(".dummycardshell").css("width", "23.7%").css("height", "23.7%");
                 prepAndDeliverCardArray(playFieldSize);
             }
             if (playFieldSize == 36) {
                 $(".cardshell").css("width", "15.4%").css("height", "15.4%");
+                $(".dummycardshell").css("width", "15.4%").css("height", "15.4%");
                 prepAndDeliverCardArray(playFieldSize);
             }
         }, 800);
