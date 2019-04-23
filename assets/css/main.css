@@ -52,7 +52,7 @@ body {
   color: red;
   text-align: center; }
 
-.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted, .popupPlayer1Won, .popupPlayer2Won {
+.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
   font-family: "Dosis", sans-serif;
   font-size: 24px;
   font-weight: 600;
@@ -283,10 +283,10 @@ li {
 #enterPlayersModal {
   transform: translateZ(1px); }
 
-.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted, .popupPlayer1Won, .popupPlayer2Won {
+.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
   border: 2px solid lightblue;
   border-radius: 15px; }
 
@@ -313,20 +313,6 @@ li {
   transition: opacity 1s ease-in-out; }
 
 .popupGameCompleted {
-  background-color: grey;
-  opacity: 0.0;
-  z-index: -1;
-  transform: translateZ(-10px);
-  transition: opacity 1s ease-in-out; }
-
-.popupPlayer1Won {
-  background-color: grey;
-  opacity: 0.0;
-  z-index: -1;
-  transform: translateZ(-10px);
-  transition: opacity 1s ease-in-out; }
-
-.popupPlayer2Won {
   background-color: grey;
   opacity: 0.0;
   z-index: -1;
