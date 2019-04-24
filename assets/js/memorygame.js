@@ -127,19 +127,22 @@ $(document).ready(function() {
 
     // function to provide popup 'match'
     function popupMatch() {
-        $('.popupMatch').css("transform", "translateZ(10px)");
+        $('.popupMatch').css("transform", "translateZ(100px)");
+         $('.popupNext').css("z-index", "100");
         $('.popupMatch').css("opacity", "1.0");
         setTimeout(function() {
             $('.popupMatch').css("opacity", "0.0");
         }, 1200);
         setTimeout(function() {
             $('.popupMatch').css("transform", "translateZ(-10px)");
+            $('.popupNext').css("z-index", "-1");
         }, 3000);
     }
 
     // function to provide popup 'no match'
     function popupNoMatch() {
-        $('.popupNoMatch').css("transform", "translateZ(10px)");
+        $('.popupNoMatch').css("transform", "translateZ(100px)");
+         $('.popupNext').css("z-index", "100");
         $('.popupNoMatch').css("opacity", "1.0");
 
         setTimeout(function() {
@@ -147,6 +150,7 @@ $(document).ready(function() {
         }, 1200);
         setTimeout(function() {
             $('.popupNoMatch').css("transform", "translateZ(-10px)");
+             $('.popupNext').css("z-index", "-1");
         }, 3000);
     }
 
