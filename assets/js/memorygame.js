@@ -210,7 +210,7 @@ $(document).ready(function() {
                 make_field8BtnVisActive();
                 fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
                 resetCounters();
-            }, 1000);
+            }, 500);
         });
 
         // ... for 16-card playfield button
@@ -222,7 +222,7 @@ $(document).ready(function() {
                 make_field16BtnVisActive();
                 fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
                 resetCounters();
-            }, 1000);
+            }, 500);
         });
 
         // ... for 36-card playfield button
@@ -234,7 +234,7 @@ $(document).ready(function() {
                 make_field36BtnVisActive();
                 fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
                 resetCounters();
-            }, 1000);
+            }, 500);
         });
 
         // stop button visually and technically deactivated
