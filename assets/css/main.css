@@ -281,7 +281,7 @@ li {
 
 #howToModal,
 #enterPlayersModal {
-  transform: translateZ(1px); }
+  transform: translateZ(110px); }
 
 .popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
   position: absolute;

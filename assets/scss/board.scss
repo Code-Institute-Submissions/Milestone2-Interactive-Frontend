@@ -294,7 +294,7 @@ li {
 // modal apprearance occur below the turned cards, so a correction in Z pos is necessary. Z-index did not bring remedy.
 #howToModal,
 #enterPlayersModal {
-    transform: translateZ(1px);
+    transform: translateZ(110px);
 }
 
 %popup {
