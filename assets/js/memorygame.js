@@ -102,8 +102,8 @@ $(document).ready(function() {
 
     // function to provide popup 'who is next'
     function whoIsNext() {
-        $('.popupNext').css("transform", "translateZ(20px)");
-        $('.popupNext').css("z-index", "1000");
+        $('.popupNext').css("transform", "translateZ(100px)");
+        $('.popupNext').css("z-index", "100");
         if (currentPlayer == "Player1") {
             $('.playerStats1').css('background-color', 'red'); // set to red when active
             $('.playerStats2').css('background-color', 'grey'); // set other player to grey
@@ -114,13 +114,14 @@ $(document).ready(function() {
             $('.playerStats2').css('background-color', 'red');
             $('.popupNext').text($('#nameFieldPlayer2').val() + ' is next!');
         }
+        
         $('.popupNext').css("opacity", "1.0");
         setTimeout(function() {
             $('.popupNext').css("opacity", "0.0");
         }, 1500);
         setTimeout(function() {
             $('.popupNext').css("transform", "translateZ(-10px)");
-            ('.popupNext').css("z-index", "-1");
+            $('.popupNext').css("z-index", "-1");
         }, 3000);
     }
 
