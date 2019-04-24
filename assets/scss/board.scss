@@ -268,8 +268,6 @@ body {
     border: 2px solid lightgreen;
     border-radius: 10px;
     @extend %vhalign;
-
-
 }
 
 .back {
@@ -302,8 +300,8 @@ li {
 %popup {
     position: absolute;
     @extend %popup-font;
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 80px;
     border: 2px solid lightblue;
     border-radius: 15px;
 }
@@ -313,7 +311,7 @@ li {
     background-color: darkgreen;
     opacity: 0.0;
     z-index: -1;
-    transform: translateY(0px) translateZ(-10px);
+    transform: translateZ(-10px);
     transition: opacity 1s ease-in-out;
 }
 
@@ -322,18 +320,19 @@ li {
     background-color: darkred;
     opacity: 0.0;
     z-index: -1;
-    transform: translateY(0px) translateZ(-10px);
+    transform: translateZ(-10px);
     transition: opacity 1s ease-in-out;
 }
 
 .popupNext {
     @extend %popup;
-    color: beige;
+    color: #34393F;
     background-color: lightblue;
+    border: 2px solid darkgrey;
     opacity: 0.0;
     z-index: -1;
-    transform: translateY(-0px) translateZ(-10px);
-    transition: opacity 1s ease-in-out 2.5s;
+    transform: translateZ(-10px);
+    transition: opacity 1s ease-in-out;
 }
 
 .popupGameCompleted {
@@ -341,10 +340,9 @@ li {
     background-color: grey;
     opacity: 0.0;
     z-index: -1;
-    transform: translateY(0px) translateZ(-10px);
+    transform: translateZ(-10px);
     transition: opacity 1s ease-in-out;
 }
-
 
 // generating card classes
 @for $i from 1 through 18 {

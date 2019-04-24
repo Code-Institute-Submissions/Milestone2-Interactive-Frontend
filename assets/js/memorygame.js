@@ -6,20 +6,21 @@ $(document).ready(function() {
 
     // predefined array with 18 pairs of cards = 36 cards max. Array will be cut to meet smaller fieldsizes.
     let masterCardArray = ['card1', 'card1', 'card2', 'card2', 'card3', 'card3', 'card4', 'card4', 'card5', 'card5', 'card6', 'card6', 'card7', 'card7', 'card8', 'card8', 'card9', 'card9', 'card10', 'card10', 'card11', 'card11', 'card12', 'card12', 'card13', 'card13', 'card14', 'card14', 'card15', 'card15', 'card16', 'card16', 'card17', 'card17', 'card18', 'card18'];
-    let currentCardArray = [];
-    var lastPlayer = "Player1";
-    let scorePlayer1 = 0;
-    let scorePlayer2 = 0;
+    let currentCardArray = []; // empty array as a working array, to be reduced to smaller playfield sizes
+    var currentPlayer = "Player1"; // per default player1 starts game
+    let scorePlayer1 = 0; // score on startup zero
+    let scorePlayer2 = 0; // score on startup zero
     $('#saveBtn').attr("data-dismiss", ""); // removing data-dismiss attribute for registration modal on field validation
 
     // implementations of functions
 
+    // function to check for matching cards
     function checkForMatch() {
         if ($('.taken .back').length == 2) {
             $(document).off('touchstart click', '.cardshell'); // to make playfield not react to clicks / touches while stopped
-            var takenCard1, takenCard2;
-            takenCard1 = $('.taken .back').eq(0); //extracting element with index '0' from $('.taken .back')
-            takenCard2 = $('.taken .back').eq(1); //extracting element with index '1' from $('.taken .back')
+            //var takenCard1, takenCard2;
+            var takenCard1 = $('.taken .back').eq(0); //extracting element with index '0' from $('.taken .back')
+            var takenCard2 = $('.taken .back').eq(1); //extracting element with index '1' from $('.taken .back')
             var classesCard1 = takenCard1.attr("class");
             var classesCard2 = takenCard2.attr("class");
 
@@ -28,23 +29,23 @@ $(document).ready(function() {
                 setTimeout(function() {
                     // popup 'match'
                     popupMatch();
-                    setTimeout(function() {
+                    setTimeout(function() { // delay time to wait until popupMatch is vanished
                         // assign player's color to indicate win
-                        if (lastPlayer == "Player1") {
+                        if (currentPlayer == "Player1") {
                             $('.taken .back').append("<span class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign'></span>");
                             scorePlayer1 = scorePlayer1 + 1;
                             $('.scorePlayer1').text(scorePlayer1);
                         }
-                        else if (lastPlayer == "Player2") {
+                        else if (currentPlayer == "Player2") {
                             $('.taken .back').append("<span class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></span>");
                             scorePlayer2 = scorePlayer2 + 1;
                             $('.scorePlayer2').text(scorePlayer2);
                         }
                         $('.taken').addClass('dummycardshell').removeClass('cardshell');
-                        // $(document).off('touchstart click', '.taken~.dummycardshell');
+                        // removing .cardshell class from matched cards and assigning .dummycardshell so that they will not be prepped with click assignment 
                         // remove taken class
                         $('.dummycardshell').removeClass('taken');
-                        $('.cardshell').removeClass('taken');
+                        // checkup if all cards have been turned / found by comparing amount of cards with .showMe against amount of front faces on the playfield
                         if ($('.showMe').length == $('.front').length) {
                             gameCompleted();
                         }
@@ -60,15 +61,15 @@ $(document).ready(function() {
                     popupNoMatch();
                     setTimeout(function() { // delay of 1500ms to be able to see shown cards
                         $(".taken").removeClass('showMe taken');
-                        if (lastPlayer == "Player1") {
-                            lastPlayer = "Player2";
+                        if (currentPlayer == "Player1") {
+                            currentPlayer = "Player2";
                         }
-                        else if (lastPlayer == "Player2") {
-                            lastPlayer = "Player1";
+                        else if (currentPlayer == "Player2") {
+                            currentPlayer = "Player1";
                         }
                         setTimeout(function() {
                             whoIsNext();
-                        }, 750); // makes whoIsNext checkup little more delayed 
+                        }, 500); // makes whoIsNext checkup little more delayed 
                     }, 1500);
                 }, 500); // wait until cards have fully turned 
             }
@@ -77,56 +78,56 @@ $(document).ready(function() {
                     $(this).addClass("showMe taken");
                     checkForMatch();
                 });
-            }, 1000);
+            }, 3000);
         }
     }
 
-
+    // function for displaying final result of who has won the game
     function gameCompleted() {
-
         $('.popupGameCompleted').css("transform", "translateZ(10px)").css("opacity", "1.0");
         if (scorePlayer1 > scorePlayer2) {
-            $('.popupGameCompleted').text("Game Completed!" + $('#nameFieldPlayer1').val() + " has won!");
+            $('.popupGameCompleted').text($('#nameFieldPlayer1').val() + ' has won!');
         }
-
         else if (scorePlayer2 > scorePlayer1) {
-            $('.popupGameCompleted').text("Game Completed!" + $('#nameFieldPlayer2').val() + " has won!");
+            $('.popupGameCompleted').text($('#nameFieldPlayer2').val() + ' has won!');
         }
-
+        else if (scorePlayer1 == scorePlayer2) {
+            $('.popupGameCompleted').text('Both players same points!');
+        }
         makeBtnActive();
-        $("#startBtn").removeClass("btnlocked");
-        $(document).off('touchstart click', '.cardshell'); // to make playfield not react to clicks / touches while stopped
-
-
+        $("#field8Btn").removeClass("btnlocked");
+        $("#field16Btn").removeClass("btnlocked");
+        $("#field36Btn").removeClass("btnlocked");
     }
 
+    // function to provide popup 'who is next'
     function whoIsNext() {
-        if (lastPlayer == "Player1") {
+        $('.popupNext').css("transform", "translateZ(20px)");
+        $('.popupNext').css("z-index", "1000");
+        if (currentPlayer == "Player1") {
             $('.playerStats1').css('background-color', 'red'); // set to red when active
             $('.playerStats2').css('background-color', 'grey'); // set other player to grey
-            $('.popupNext').text($('#nameFieldPlayer1').val());
+            $('.popupNext').text($('#nameFieldPlayer1').val() + ' is next!');
         }
-        else if (lastPlayer == "Player2") {
-            $('.playerStats2').css('background-color', 'red');
+        else if (currentPlayer == "Player2") {
             $('.playerStats1').css('background-color', 'grey');
-            $('.popupNext').text($('#nameFieldPlayer2').val());
+            $('.playerStats2').css('background-color', 'red');
+            $('.popupNext').text($('#nameFieldPlayer2').val() + ' is next!');
         }
         $('.popupNext').css("opacity", "1.0");
-        // $('.popupNext').css("transform", "translateZ(10px)");
-        // setTimeout(function() {
-
-        //    }, 1000);
-
         setTimeout(function() {
             $('.popupNext').css("opacity", "0.0");
-        }, 1000);
+        }, 1500);
+        setTimeout(function() {
+            $('.popupNext').css("transform", "translateZ(-10px)");
+            ('.popupNext').css("z-index", "-1");
+        }, 3000);
     }
 
+    // function to provide popup 'match'
     function popupMatch() {
-
         $('.popupMatch').css("transform", "translateZ(10px)");
         $('.popupMatch').css("opacity", "1.0");
-
         setTimeout(function() {
             $('.popupMatch').css("opacity", "0.0");
         }, 1200);
@@ -135,6 +136,7 @@ $(document).ready(function() {
         }, 3000);
     }
 
+    // function to provide popup 'no match'
     function popupNoMatch() {
         $('.popupNoMatch').css("transform", "translateZ(10px)");
         $('.popupNoMatch').css("opacity", "1.0");
@@ -147,114 +149,91 @@ $(document).ready(function() {
         }, 3000);
     }
 
+    // setting indicator on button for playfield size 8 cards
     function make_field8BtnVisActive() {
         $("#field8Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
         $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
     }
 
+    // setting indicator on button for playfield size 16 cards
     function make_field16BtnVisActive() {
         $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field16Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
         $("#field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
     }
 
+    // setting indicator on button for playfield size 36 cards
     function make_field36BtnVisActive() {
         $("#field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
         $("#field36Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
     }
 
+    // disabling buttons 
     function makeBtnInactive() {
 
-        // apply btnlocked class to all buttons but how to button and stopbutton
-        // also remove the click event to make inactive.
+        // apply btnlocked class to all buttons except 'how to' and 'stopbutton'
+        // also remove the click event to make save button inactive.
         $("#enterPlayersBtn").addClass("btnlocked").attr("data-toggle", "");
-        $("#field8Btn").addClass("btnlocked").off('touchstart click');
-        $("#field16Btn").addClass("btnlocked").off('touchstart click');
-        $("#field36Btn").addClass("btnlocked").off('touchstart click');
-        $("#startBtn").addClass("btnlocked").off('touchstart click');
+        $("#field8Btn").addClass("btnlocked").off('touchstart click'); // set dimmed state and remove click event
+        $("#field16Btn").addClass("btnlocked").off('touchstart click'); // set dimmed state and remove click event
+        $("#field36Btn").addClass("btnlocked").off('touchstart click'); // set dimmed state and remove click event
+        $("#startBtn").addClass("btnlocked").off('touchstart click'); // set dimmed state and remove click event
         // stopBtn becomes active (unlocked) and needs to have on click definition
-        $("#stopBtn").removeClass("btnlocked").on('touchstart click', function() {
-            makeBtnActive();
-            $("#startBtn").removeClass("btnlocked");
-            $(document).off('touchstart click', '.cardshell'); // to make playfield not react to clicks / touches while stopped
+        $("#stopBtn").removeClass("btnlocked").on('touchstart click', function() { // stopbutton will become visually active and has click action defined
+            makeBtnActive(); // triggering function to 
+            $("#startBtn").removeClass("btnlocked"); // removed dimmed state when clicking stop button
+            $("#field8Btn").removeClass("btnlocked"); // removed dimmed state when clicking stop button
+            $("#field16Btn").removeClass("btnlocked"); // removed dimmed state when clicking stop button
+            $("#field36Btn").removeClass("btnlocked"); // removed dimmed state when clicking stop button
+            $(document).off('touchstart click', '.cardshell'); // deactivates playfield by removing click event listener while stopped
         });
     }
 
     // function for removing dimmed button state and redefinition of on-click events for ...
     function makeBtnActive() {
-
         // ... registration modal button
         $("#enterPlayersBtn").removeClass("btnlocked").attr("data-toggle", "modal"); // make register button work again by adding back data-toggle=modal
 
         // ... for 8-card playfield button
-        $("#field8Btn").removeClass("btnlocked").on('touchstart click', function() {
-            make_field8BtnVisActive();
-            fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
-            resetCounters();
+        $("#field8Btn").on('touchstart click', function() {
+            // if game has completed before, the popupGameCompleted needs to vanish
+            $('.popupGameCompleted').css('opacity', '0');
+            setTimeout(function() {
+                $('.popupGameCompleted').css("transform", "translateZ(-10px)");
+                make_field8BtnVisActive();
+                fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
+                resetCounters();
+            }, 1000);
         });
 
         // ... for 16-card playfield button
-        $("#field16Btn").removeClass("btnlocked").on('touchstart click', function() {
-            make_field16BtnVisActive();
-            fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
-            resetCounters();
+        $("#field16Btn").on('touchstart click', function() {
+            // if game has completed before, the popupGameCompleted needs to vanish
+            $('.popupGameCompleted').css('opacity', '0');
+            setTimeout(function() {
+                $('.popupGameCompleted').css("transform", "translateZ(-10px)");
+                make_field16BtnVisActive();
+                fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
+                resetCounters();
+            }, 1000);
         });
 
         // ... for 36-card playfield button
-        $("#field36Btn").removeClass("btnlocked").on('touchstart click', function() {
-            make_field36BtnVisActive();
-            fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
-            resetCounters();
+        $("#field36Btn").on('touchstart click', function() {
+            // if game has completed before, the popupGameCompleted needs to vanish
+            $('.popupGameCompleted').css('opacity', '0');
+            setTimeout(function() {
+                $('.popupGameCompleted').css("transform", "translateZ(-10px)");
+                make_field36BtnVisActive();
+                fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
+                resetCounters();
+            }, 1000);
         });
 
-        // start button
-        $("#startBtn").on('touchstart click', function() {
-         //    $('.popupGameCompleted').css('opacity','0');
-            makeBtnInactive(); // calling function to make buttons visually and haptically inactive
-            $(document).on('touchstart click', '.cardshell', function() {
-                $(this).addClass("showMe taken");
-                checkForMatch();
-            });
-            whoIsNext(lastPlayer);
-        });
-
-        // stop button
+        // stop button visually and technically deactivated
         $("#stopBtn").addClass("btnlocked").off('touchstart click'); // stop button functionality removed and dimmed state when game stopped.
-    }
-
-    // function for preparation and delivery of playfield array 
-    function prepAndDeliverCardArray(num) {
-        var playFieldSize2 = num;
-        currentCardArray = masterCardArray.concat(); // copying master array to working array
-        let playFieldCardArray = $(".back").toArray();
-
-        if (playFieldSize2 == 9) {
-            playFieldSize2 = 8;
-            currentCardArray.splice(playFieldSize2, 28); // reduce working array to first 8 cards
-        }
-
-        else if (playFieldSize2 == 16) {
-            currentCardArray.splice(playFieldSize2, 20); // reduce working array to first 16 cards
-        }
-
-        currentCardArray.sort(function(a, b) { return 0.5 - Math.random() }); // shuffle of card array
-
-        for (let i = 0; i < playFieldCardArray.length; i++) { // assigning 
-            $(playFieldCardArray[i]).addClass(currentCardArray[i]);
-        }
-    }
-
-    // function for counter reset on game startup
-    function resetCounters() {
-        lastPlayer = "Player1";
-        $('.playerStats1').css('background-color', 'red'); // set to red when active
-        $('.playerStats2').css('background-color', 'grey'); // set other player to grey
-        scorePlayer1 = 0; //set playerscores to zero
-        scorePlayer2 = 0; //set playerscores to zero
-        $(".scorePlayer1").text(scorePlayer1); // assign reset value to fields
-        $(".scorePlayer2").text(scorePlayer2); // assign reset value to fields
     }
 
     // function for generating playfield
@@ -287,10 +266,54 @@ $(document).ready(function() {
                 $(".dummycardshell").css("width", "15.4%").css("height", "15.4%");
                 prepAndDeliverCardArray(playFieldSize);
             }
-        }, 800);
+        }, 300);
         setTimeout(function() { // playfield is made visible again
             $('#playfield').css('opacity', '1.0');
-        }, 800);
+        }, 300);
+    }
+
+    // function for preparation and delivery of playfield array 
+    function prepAndDeliverCardArray(num) {
+        var playFieldSize2 = num;
+        currentCardArray = masterCardArray.concat(); // copying master array to working array
+        let playFieldCardArray = $(".back").toArray();
+
+        if (playFieldSize2 == 9) {
+            playFieldSize2 = 8;
+            currentCardArray.splice(playFieldSize2, 28); // reduce working array to first 8 cards
+        }
+
+        else if (playFieldSize2 == 16) {
+            currentCardArray.splice(playFieldSize2, 20); // reduce working array to first 16 cards
+        }
+
+        currentCardArray.sort(function(a, b) { return 0.5 - Math.random() }); // shuffle of card array
+
+        for (let i = 0; i < playFieldCardArray.length; i++) { // assigning 
+            $(playFieldCardArray[i]).addClass(currentCardArray[i]);
+        }
+    }
+
+    // function for counter reset on game startup
+    function resetCounters() {
+        currentPlayer = "Player1";
+        $('.playerStats1').css('background-color', 'red'); // set to red when active
+        $('.playerStats2').css('background-color', 'grey'); // set other player to grey
+        scorePlayer1 = 0; //set playerscores to zero
+        scorePlayer2 = 0; //set playerscores to zero
+        $(".scorePlayer1").text(scorePlayer1); // assign reset value to fields
+        $(".scorePlayer2").text(scorePlayer2); // assign reset value to fields
+        
+         // start button
+         $("#startBtn").removeClass("btnlocked");
+        $("#startBtn").on('touchstart click', function() {
+            makeBtnInactive(); // calling function to make buttons visually and haptically inactive
+            $(document).on('touchstart click', '.cardshell', function() {
+                $(this).addClass("showMe taken");
+                checkForMatch();
+            });
+            whoIsNext();
+        });
     }
 
     // code executed on startup:
@@ -299,7 +322,6 @@ $(document).ready(function() {
     $('#enterPlayersModal').modal('show'); // registration modal on startup
 
     // click actions for ...
-
     // ... for 8-card playfield button
     $("#field8Btn").on('touchstart click', function() {
         make_field8BtnVisActive();
@@ -350,38 +372,3 @@ $(document).ready(function() {
         }
     });
 });
-
-
-/*
-
------------
-
-fade out procedure:
-
- $("#playfield").css("opacity", "0.0");
- 
-setTimeout(function () {
-    // rest of commands executed after timer is up.
-  }, 2000);
-  
-fade in procedure
-
-
-setTimeout(function () {
-    $("#playfield").css("opacity", "1.0");
-  }, 2000);
-
-
-----------
-
-$("#playfield").fadeIn("slow", function(){
-    
-    // code here to be executed after fadeIn is done?
-});
-
-
-  $("#playfield").fadeOut("slow");
-  $("#playfield").animate({opacity: '0.0'},"fast");
-$("#playfield").fadeIn("slow");
-      
-*/
