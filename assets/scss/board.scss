@@ -297,6 +297,11 @@ li {
     transform: translateZ(110px);
 }
 
+.modal-body {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 %popup {
     position: absolute;
     @extend %popup-font;

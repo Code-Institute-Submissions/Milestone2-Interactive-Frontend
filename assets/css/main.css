@@ -97,6 +97,68 @@ body {
   border: 2px solid lightblue;
   border-radius: 15px; }
 
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  body {
+    color: beige;
+    height: 89vh;
+    width: 100vw; }
+
+  #playfield {
+    margin-top: 2px;
+    margin-bottom: 2px; }
+
+  #fieldWrapper {
+    margin-top: 2px;
+    margin-bottom: 8px; }
+
+  #outershell {
+    /*    outer frame, wrapper of board */
+    width: 98vw;
+    margin-top: 12px;
+    margin-bottom: 2px; }
+
+  #playfield {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 87vw;
+    height: 87vw;
+    margin-top: 2px;
+    margin-bottom: 2px; } }
+@media screen and (min-width: 992px) and (orientation: landscape) {
+  body {
+    color: beige;
+    height: 89vh; }
+
+  #outershell {
+    /*    outer frame, wrapper of board */
+    width: 98vw;
+    margin-top: 12px;
+    margin-bottom: 2px; }
+
+  #playfield {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 30vh;
+    height: 30vh;
+    margin-top: 2px;
+    margin-bottom: 2px; } }
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+  #playfield {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 30vw;
+    height: 30vw;
+    margin-top: 2px;
+    margin-bottom: 2px; } }
 /*playfield structures*/
 body {
   color: beige;
@@ -282,6 +344,10 @@ li {
 #howToModal,
 #enterPlayersModal {
   transform: translateZ(110px); }
+
+.modal-body {
+  padding-bottom: 0;
+  margin-bottom: 0; }
 
 .popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
   position: absolute;

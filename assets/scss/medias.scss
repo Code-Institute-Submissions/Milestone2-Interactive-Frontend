@@ -1,4 +1,47 @@
-@media screen and (max-width: 767px) and (orientation:landscape) {}
+@media screen and (max-width: 767px) and (orientation:landscape) {
+
+    body {
+        color: beige;
+        height: 89vh;
+        width: 100vw;
+    }
+
+    %marginPlayfield {
+        margin: {
+            top: 2px;
+            bottom: 2px;
+        }
+    }
+
+    %marginPlayfieldWrapper {
+        margin: {
+            top: 2px;
+            bottom: 8px;
+        }
+    }
+
+    #outershell {
+        /*    outer frame, wrapper of board */
+        width: 98vw;
+        margin-top: 12px;
+        margin-bottom: 2px;
+    }
+
+    #playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 87vw;
+        height: 87vw;
+        margin: {
+            top: 2px;
+            bottom: 2px;
+        }
+    }
+
+}
 
 @media screen and (min-width: 768px) and (orientation:portrait) {}
 
@@ -6,6 +49,53 @@
 
 @media screen and (min-width: 992px) and (orientation:portrait) {}
 
+@media screen and (min-width: 992px) and (orientation:landscape) {
+    body {
+        color: beige;
+        height: 89vh;
+    }
+    #outershell {
+        /*    outer frame, wrapper of board */
+        width: 98vw;
+        margin-top: 12px;
+        margin-bottom: 2px;
+    }
+
+    #playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 30vh;
+        height: 30vh;
+        margin: {
+            top: 2px;
+            bottom: 2px;
+        }
+    }
+
+}
+
+
+
+
 @media screen and (min-width: 1200px) and (orientation:portrait) {}
 
-@media screen and (min-width: 1200px) and (orientation:landscape) {}
+@media screen and (min-width: 1200px) and (orientation:landscape) {
+    
+       #playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 30vw;
+        height: 30vw;
+        margin: {
+            top: 2px;
+            bottom: 2px;
+        }
+    }
+    
+}

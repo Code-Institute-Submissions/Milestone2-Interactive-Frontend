@@ -1,0 +1,17 @@
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  body {
+    color: beige;
+    height: 89vh;
+    width: 100vw; }
+
+  #outershell {
+    /*    outer frame, wrapper of board */
+    width: 98vw;
+    margin-top: 12px;
+    margin-bottom: 2px; } }
+@media screen and (min-width: 992px) and (orientation: landscape) {
+  body {
+    color: beige;
+    height: 89vh; } }
+
+/*# sourceMappingURL=medias.css.map */
