@@ -35,12 +35,12 @@ $(document).ready(function() {
                         if (currentPlayer == "Player1") {
                             $('.taken .back').append("<span class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign'></span>"); // put players color on card backside when match is found
                             scorePlayer1++; // increasing score
-                            $('.scorePlayer1').text(scorePlayer1); // writing score to related HTML field
+                            $('.scorePlayer1').html(scorePlayer1); // writing score to related HTML field
                         }
                         else if (currentPlayer == "Player2") {
                             $('.taken .back').append("<span class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></span>"); // put players color on card backside when match is found
                             scorePlayer2++; // increasing score
-                            $('.scorePlayer2').text(scorePlayer2); // writing score to related HTML field
+                            $('.scorePlayer2').html(scorePlayer2); // writing score to related HTML field
                         }
                         $('.taken').addClass('dummycardshell').removeClass('cardshell');
                         // removing .cardshell class from matched cards and assigning .dummycardshell so that they will not be prepped with click assignment 
@@ -92,13 +92,13 @@ $(document).ready(function() {
     // function for displaying final result of who has won the game
     function gameCompleted() {
         if (scorePlayer1 > scorePlayer2) {
-            $('.popupGameCompleted').text($('#nameFieldPlayer1').val() + ' has won!');
+            $('.popupGameCompleted').html($('#nameFieldPlayer1').val() + ' has won!');
         }
         else if (scorePlayer2 > scorePlayer1) {
-            $('.popupGameCompleted').text($('#nameFieldPlayer2').val() + ' has won!');
+            $('.popupGameCompleted').html($('#nameFieldPlayer2').val() + ' has won!');
         }
         else if (scorePlayer1 == scorePlayer2) {
-            $('.popupGameCompleted').text('Both players same points!');
+            $('.popupGameCompleted').html('Both players same points!');
         }
         $('.popupGameCompleted').css("transform", "translateZ(100px)").css("z-index", "100").css("opacity", "1.0");
 
@@ -120,13 +120,14 @@ $(document).ready(function() {
 
     // function to provide popup 'who is next'
     function whoIsNext() {
+        // moving up popup on z axis and start transition to opacity 1
         $('.popupNext').css("transform", "translateZ(100px)");
         $('.popupNext').css("z-index", "100");
         $('.popupNext').css("opacity", "1.0");
         if (firstAttemptDone == false && ThisGameOpenedBy == "Player1") {
             $('.playerStats1').css('background-color', 'red'); // set to red when active
             $('.playerStats2').css('background-color', 'grey'); // set other player to grey
-            $('.popupNext').text($('#nameFieldPlayer1').val() + ' is next!');
+            $('.popupNext').html($('#nameFieldPlayer1').val() + ' is next!');
             currentPlayer = "Player1";
             $('.popupNext').css("opacity", "1.0");
             setTimeout(function() {
@@ -141,7 +142,7 @@ $(document).ready(function() {
         else if (firstAttemptDone == false && ThisGameOpenedBy == "Player2") {
             $('.playerStats1').css('background-color', 'grey');
             $('.playerStats2').css('background-color', 'red');
-            $('.popupNext').text($('#nameFieldPlayer2').val() + ' is next!');
+            $('.popupNext').html($('#nameFieldPlayer2').val() + ' is next!');
             currentPlayer = "Player2";
             $('.popupNext').css("opacity", "1.0");
             setTimeout(function() {
@@ -157,12 +158,12 @@ $(document).ready(function() {
         {
             $('.playerStats1').css('background-color', 'red'); // set to red when active
             $('.playerStats2').css('background-color', 'grey'); // set other player to grey
-            $('.popupNext').text($('#nameFieldPlayer1').val() + ' is next!');
+            $('.popupNext').html($('#nameFieldPlayer1').val() + ' is next!');
         }
         else if (firstAttemptDone == true && currentPlayer == "Player2") {
             $('.playerStats1').css('background-color', 'grey');
             $('.playerStats2').css('background-color', 'red');
-            $('.popupNext').text($('#nameFieldPlayer2').val() + ' is next!');
+            $('.popupNext').html($('#nameFieldPlayer2').val() + ' is next!');
         }
         setTimeout(function() {
             $('.popupNext').css("opacity", "0.0");
@@ -429,8 +430,8 @@ $(document).ready(function() {
     function resetCounters() {
         scorePlayer1 = 0; //set playerscores to zero
         scorePlayer2 = 0; //set playerscores to zero
-        $(".scorePlayer1").text(scorePlayer1); // assign reset value to fields
-        $(".scorePlayer2").text(scorePlayer2); // assign reset value to fields
+        $(".scorePlayer1").html(scorePlayer1); // assign reset value to fields
+        $(".scorePlayer2").html(scorePlayer2); // assign reset value to fields
     }
 
     // code executed on startup:
@@ -484,8 +485,8 @@ $(document).ready(function() {
         // in any other case, save button functionality is assigned back and string values of textinput fields written to HTML elements
         else {
             $('#saveBtn').attr("data-dismiss", "modal"); // assigning back .attr('data-dismiss','modal') to make modal closure possible. 
-            $('.namePlayer1').text($('#nameFieldPlayer1').val() + ': ');
-            $('.namePlayer2').text($('#nameFieldPlayer2').val() + ': ');
+            $('.namePlayer1').html($('#nameFieldPlayer1').val() + ': ');
+            $('.namePlayer2').html($('#nameFieldPlayer2').val() + ': ');
         }
     });
 });
