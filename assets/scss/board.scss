@@ -347,17 +347,7 @@ li {
 // generating card classes
 @for $i from 1 through 18 {
     .card#{$i} {
-        background-image: url(../images/card#{$i}.jpg);
+        background-image: url(../images/cards/card#{$i}.jpg);
         background-size: cover;
     }
-}
-
-
-.diag    {
-    background-color: beige;
-    width: 100px;
-    height: 30px;
-    color: darkgrey;
-    
-    
 }
