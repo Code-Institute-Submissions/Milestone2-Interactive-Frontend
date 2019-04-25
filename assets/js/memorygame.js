@@ -9,11 +9,22 @@ $(document).ready(function() {
     let currentCardArray = []; // empty array as a working array, to be reduced to smaller playfield sizes
     var currentPlayer = "Player1"; // per default player1 starts 1st game, 2nd is started by Player2, and so on.
     let ThisGameOpenedBy = "Player1";
-    let firstAttemptDone = false
+    let firstAttemptDone = 0;
     let scorePlayer1 = 0; // score on startup zero
     let scorePlayer2 = 0; // score on startup zero
     $('#saveBtn').attr("data-dismiss", ""); // removing data-dismiss attribute for registration modal on field validation
     // implementations of functions
+
+//diag fields
+// $('.diag1').html('c' + currentPlayer);
+// $('.diag2').html('by' + ThisGameOpenedBy);
+// $('.diag3').html(firstAttemptDone);
+// $('.diag4').html();
+// $('.diag5').html('VS1' + scorePlayer1);
+// $('.diag6').html('FS1' + $('.scorePlayer1').html());
+// $('.diag7').html('VS2' + scorePlayer2);
+// $('.diag8').html('FS2' + $('.scorePlayer2').html());
+
 
     // function to check for matching cards
     function checkForMatch() {
@@ -36,11 +47,16 @@ $(document).ready(function() {
                             $('.taken .back').append("<span class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign'></span>"); // put players color on card backside when match is found
                             scorePlayer1++; // increasing score
                             $('.scorePlayer1').html(scorePlayer1); // writing score to related HTML field
+                            $('.diag5').html("VS1:" + scorePlayer1); // diag
+                            $('.diag6').html("FS1:" + $('.scorePlayer1').html()); // diag
+                            
                         }
                         else if (currentPlayer == "Player2") {
                             $('.taken .back').append("<span class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></span>"); // put players color on card backside when match is found
                             scorePlayer2++; // increasing score
                             $('.scorePlayer2').html(scorePlayer2); // writing score to related HTML field
+                            $('.diag7').html("VS2: " + scorePlayer2);
+                            $('.diag8').html("FS2: " + $('.scorePlayer2').html());
                         }
                         $('.taken').addClass('dummycardshell').removeClass('cardshell');
                         // removing .cardshell class from matched cards and assigning .dummycardshell so that they will not be prepped with click assignment 
@@ -74,6 +90,7 @@ $(document).ready(function() {
                         else if (currentPlayer == "Player2") { // flip players if cards do not match
                             currentPlayer = "Player1";
                         }
+                        $('.diag1').html("c" + currentPlayer);
                         setTimeout(function() {
                             whoIsNext();
                             setTimeout(function() {
@@ -91,14 +108,14 @@ $(document).ready(function() {
 
     // function for displaying final result of who has won the game
     function gameCompleted() {
-        if (scorePlayer1 > scorePlayer2) {
-            $('.popupGameCompleted').html($('#nameFieldPlayer1').val() + ' has won!');
+        if (scorePlayer1 > scorePlayer2) { // check if player1 score is higher than player2
+            $('.popupGameCompleted').html($('#nameFieldPlayer1').val() + " has won!"); // popup html text is set accordingly
         }
-        else if (scorePlayer2 > scorePlayer1) {
-            $('.popupGameCompleted').html($('#nameFieldPlayer2').val() + ' has won!');
+        else if (scorePlayer2 > scorePlayer1) { // check if player2 score is higher than player1
+            $('.popupGameCompleted').html($('#nameFieldPlayer2').val() +  " has won!"); // popup html text is set accordingly
         }
-        else if (scorePlayer1 == scorePlayer2) {
-            $('.popupGameCompleted').html('Both players same points!');
+        else if (scorePlayer1 == scorePlayer2) { // if equal score, popup html text is set accordingly 
+            $('.popupGameCompleted').html("Both players same points!");
         }
         $('.popupGameCompleted').css("transform", "translateZ(100px)").css("z-index", "100").css("opacity", "1.0");
 
@@ -110,7 +127,9 @@ $(document).ready(function() {
             else if (ThisGameOpenedBy == "Player2") {
                 ThisGameOpenedBy = "Player1";
             }
-            firstAttemptDone = false;
+            firstAttemptDone = 0; // after game is completed this value is set to 0 as indicator if new game has started. 
+            $('.diag2').html("by" + ThisGameOpenedBy);
+            $('.diag3').html(firstAttemptDone);
             $('.popupGameCompleted').css("opacity", "0.0");
             setTimeout(function() {
                 $('.popupGameCompleted').css("transform", "translateZ(-100px)").css("z-index", "-100");
@@ -123,47 +142,56 @@ $(document).ready(function() {
         // moving up popup on z axis and start transition to opacity 1
         $('.popupNext').css("transform", "translateZ(100px)");
         $('.popupNext').css("z-index", "100");
-        $('.popupNext').css("opacity", "1.0");
-        if (firstAttemptDone == false && ThisGameOpenedBy == "Player1") {
+        if (firstAttemptDone == 0 && ThisGameOpenedBy == "Player1") {
             $('.playerStats1').css('background-color', 'red'); // set to red when active
             $('.playerStats2').css('background-color', 'grey'); // set other player to grey
-            $('.popupNext').html($('#nameFieldPlayer1').val() + ' is next!');
+            $('.popupNext').html($('#nameFieldPlayer1').val() + " is next!");
             currentPlayer = "Player1";
+            $('.diag1').html("c" + currentPlayer);
             $('.popupNext').css("opacity", "1.0");
             setTimeout(function() {
                 $('.popupNext').css("opacity", "0.0");
-            }, 1500);
-            setTimeout(function() {
-                $('.popupNext').css("transform", "translateZ(-10px)");
-                $('.popupNext').css("z-index", "-1");
             }, 2500);
-            firstAttemptDone = true; // game has been started
-        }
-        else if (firstAttemptDone == false && ThisGameOpenedBy == "Player2") {
-            $('.playerStats1').css('background-color', 'grey');
-            $('.playerStats2').css('background-color', 'red');
-            $('.popupNext').html($('#nameFieldPlayer2').val() + ' is next!');
-            currentPlayer = "Player2";
-            $('.popupNext').css("opacity", "1.0");
-            setTimeout(function() {
-                $('.popupNext').css("opacity", "0.0");
-            }, 1500);
             setTimeout(function() {
                 $('.popupNext').css("transform", "translateZ(-10px)");
                 $('.popupNext').css("z-index", "-1");
-            }, 2300);
-            firstAttemptDone = true; // game has been started 
+            }, 3500);
+            firstAttemptDone = 1; // game has been started
+            $('.diag3').html(firstAttemptDone);
+        $('.diag4').html("F Player1");
+            
         }
-        else if (firstAttemptDone == true && currentPlayer == "Player1") 
-        {
+        else if (firstAttemptDone == 0 && ThisGameOpenedBy == "Player2") {
+            $('.playerStats1').css('background-color', 'grey'); // set other player to grey 
+            $('.playerStats2').css('background-color', 'red'); // set to red when active
+            $('.popupNext').html($('#nameFieldPlayer2').val() + " is next!");
+            currentPlayer = "Player2";
+            $('.diag1').html('c' + currentPlayer);
+            $('.popupNext').css("opacity", "1.0");
+            setTimeout(function() {
+                $('.popupNext').css("opacity", "0.0");
+            }, 2500);
+            setTimeout(function() {
+                $('.popupNext').css("transform", "translateZ(-10px)");
+                $('.popupNext').css("z-index", "-1");
+            }, 3500);
+            firstAttemptDone = 1; // game has been started
+            $('.diag3').html(firstAttemptDone);
+            $('.diag4').html("F Player2");
+        }
+        else if (firstAttemptDone == 1 && currentPlayer == "Player1") {
             $('.playerStats1').css('background-color', 'red'); // set to red when active
             $('.playerStats2').css('background-color', 'grey'); // set other player to grey
-            $('.popupNext').html($('#nameFieldPlayer1').val() + ' is next!');
+            $('.popupNext').html($('#nameFieldPlayer1').val() + " is next!");
+            $('.popupNext').css("opacity", "1.0");
+            $('.diag4').html("N Player1");
         }
-        else if (firstAttemptDone == true && currentPlayer == "Player2") {
+        else if (firstAttemptDone == 1 && currentPlayer == "Player2") {
             $('.playerStats1').css('background-color', 'grey');
             $('.playerStats2').css('background-color', 'red');
-            $('.popupNext').html($('#nameFieldPlayer2').val() + ' is next!');
+            $('.popupNext').html($('#nameFieldPlayer2').val() + " is next!");
+            $('.popupNext').css("opacity", "1.0");
+            $('.diag4').html("N Player2");
         }
         setTimeout(function() {
             $('.popupNext').css("opacity", "0.0");
@@ -429,15 +457,22 @@ $(document).ready(function() {
     // function for counter reset on game startup
     function resetCounters() {
         scorePlayer1 = 0; //set playerscores to zero
+        $('.diag5').html("VS1" + scorePlayer1); // diag
         scorePlayer2 = 0; //set playerscores to zero
+        $('.diag7').html("VS2" + scorePlayer2); // diag
         $(".scorePlayer1").html(scorePlayer1); // assign reset value to fields
+        $('.diag6').html("FS1" + $('.scorePlayer1').html()); // diag
         $(".scorePlayer2").html(scorePlayer2); // assign reset value to fields
+        $('.diag8').html("FS2" + $('.scorePlayer2').html());
     }
 
     // code executed on startup:
     fieldInit(9); // generating playfield of 3x3 per default on startup
     make_field8BtnVisActive(); // make 8card button visually active
     $('#enterPlayersModal').modal('show'); // registration modal on startup
+    $('.diag1').html("c" + currentPlayer);
+    $('.diag2').html("by" + ThisGameOpenedBy);
+    $('.diag3').html(firstAttemptDone);
 
     // click actions for ...
     // ... for 8-card playfield button
@@ -482,11 +517,26 @@ $(document).ready(function() {
         else if ($('#nameFieldPlayer1').val().length > 8 || $('#nameFieldPlayer2').val().length > 8) {
             alert('Please fill in names with no more than 8 characters.');
         }
+
+        else if ($('#nameFieldPlayer1').val() == $('#nameFieldPlayer2').val()) {
+            alert('Please use different names for each player.');
+        }
         // in any other case, save button functionality is assigned back and string values of textinput fields written to HTML elements
         else {
             $('#saveBtn').attr("data-dismiss", "modal"); // assigning back .attr('data-dismiss','modal') to make modal closure possible. 
-            $('.namePlayer1').html($('#nameFieldPlayer1').val() + ': ');
-            $('.namePlayer2').html($('#nameFieldPlayer2').val() + ': ');
+            $('.namePlayer1').html($('#nameFieldPlayer1').val() + ": ");
+            $('.namePlayer2').html($('#nameFieldPlayer2').val() + ": ");
         }
     });
 });
+
+
+//diag fields
+// $('.diag1').html('c' + currentPlayer);
+// $('.diag2').html('by' + ThisGameOpenedBy);
+// $('.diag3').html(firstAttemptDone);
+// $('.diag4').html();
+// $('.diag5').html('VS1' + scorePlayer1);
+// $('.diag6').html('FS1' + $('.scorePlayer1').html());
+// $('.diag7').html('VS2' + scorePlayer2);
+// $('.diag8').html('FS2' + $('.scorePlayer2').html());

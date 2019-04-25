@@ -458,18 +458,23 @@ li {
   background-image: url(../images/cards/card18.jpg);
   background-size: cover; }
 
-.diag1 {
-  display: inline-block;
-  width: 50px;
+.diagnosis {
+  width: 100%;
   height: 30px;
-  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.diag1, .diag2, .diag3, .diag4, .diag5, .diag6, .diag7, .diag8 {
+  display: inline-block;
+  width: 23%;
+  height: 30px;
   color: black; }
 
-.diag2 {
-  display: inline-block;
-  width: 50px;
-  height: 30px;
-  background-color: lightblue;
-  color: black; }
+.diag1, .diag2, .diag3, .diag4 {
+  background-color: lightblue; }
+
+.diag5, .diag6, .diag7, .diag8 {
+  background-color: grey; }
 
 /*# sourceMappingURL=main.css.map */
