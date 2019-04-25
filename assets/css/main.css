@@ -54,7 +54,7 @@ body {
 
 .popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
   font-family: "Dosis", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   color: beige; }
 
@@ -285,8 +285,8 @@ li {
 
 .popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
   position: absolute;
-  width: 170px;
-  height: 80px;
+  width: 200px;
+  height: 120px;
   border: 2px solid lightblue;
   border-radius: 15px; }
 
