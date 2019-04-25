@@ -397,10 +397,10 @@ $(document).ready(function() {
                 $(".dummycardshell").css("width", "15.4%").css("height", "15.4%");
                 prepAndDeliverCardArray(playFieldSize);
             }
-        }, 300);
+        }, 600);
         setTimeout(function() { // playfield is made visible again
             $('#playfield').css('opacity', '1.0');
-        }, 300);
+        }, 600);
     }
 
     // function for preparation and delivery of playfield array 
