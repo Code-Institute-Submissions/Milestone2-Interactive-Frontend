@@ -135,7 +135,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('.popupNext').css("transform", "translateZ(-10px)");
                 $('.popupNext').css("z-index", "-1");
-            }, 2300);
+            }, 2500);
             firstAttemptDone = true; // game has been started
         }
         else if (firstAttemptDone == false && ThisGameOpenedBy == "Player2") {
