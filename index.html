@@ -21,20 +21,46 @@
                 <p class="headline testframe2">The memorygame</p>
             </div>
         </div>
-        <div class="row">
-            <div class="hidden-xs col-sm-3 col-md-3 col-lg-3 vhalign">
-                <div class="playStatsWrapper">
-                    <div class="playerStats1 playerStatsFont">
-                        <div class="namePlayer1">Player 1:</div>
-                        <div class="scorePlayer1">0</div>
-                        <div class="">
-                            <span class="checkmark glyphicon glyphicon-ok-sign"></span>
+        <div class="row playfieldRowHeight">
+            <div class="hidden-xs col-sm-5 col-md-5 col-lg-5 vhalign playfieldRowHeight">
+                <div id="controlPanelWrapper">
+                    <div class="testframe2" id="buttonfield">
+                        <div class="btn btn-primary btn-lg" data-toggle="modal" data-target="#howToModal" id="howToBtn">How to play</div>
+                        <div class="btn btn-primary btn-lg" data-toggle="modal" data-target="#enterPlayersModal" id="enterPlayersBtn">Register players</div>
+                        <div class="" id="field8Btn">8 cards</div>
+                        <div class="" id="field16Btn">16 cards</div>
+                        <div class="" id="field36Btn">36 cards</div>
+                        <div class="btn btn-primary btn-lg" id="startBtn">start</div>
+                        <div class="btn btn-primary btn-lg btnlocked" id="stopBtn">stop</div>
+                    </div>
+                    <div class="playStatsWrapper testframe2">
+                        <div class="playerStats1 playerStatsFont">
+                            <div class="namePlayer1">Player 1:</div>
+                            <div class="scorePlayer1"></div>
+                            <div class="">
+                                <span class="checkmarkPlayer1 glyphicon glyphicon-ok-sign"></span>
+                            </div>
+                        </div>
+
+                        <div class="playerStats2 playerStatsFont">
+                            <div class="namePlayer2">Player 2</div>
+                            <div class="scorePlayer2"></div>
+                            <div class="">
+                                <span class="checkmarkPlayer2 glyphicon glyphicon-ok-sign"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="hidden-xs col-sm-7 col-md-7 col-lg-7 vhalign playfieldRowHeight">
+                <div id="fieldWrapper" class="testframe3">
+                    <div id="playfield" class="vhalign"></div>
+                </div>
+            </div>
+
+
+            <div class="col-xs-12 hidden-sm hidden-md hidden-lg vhalign">
                 <div id="controlPanelWrapper">
                     <div class="testframe2" id="buttonfield">
                         <div class="btn btn-primary btn-lg" data-toggle="modal" data-target="#howToModal" id="howToBtn">How to play</div>
@@ -48,17 +74,7 @@
                 </div>
             </div>
 
-            <div class="hidden-xs col-sm-3 col-md-3 col-lg-3 vhalign">
-                <div class="playStatsWrapper">
-                    <div class="playerStats2 playerStatsFont">
-                        <div class="namePlayer2">Player 2:</div>
-                        <div class="scorePlayer2">0</div>
-                        <div class="">
-                            <span class="checkmark glyphicon glyphicon-ok-sign"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
         <div class="row">
@@ -84,15 +100,15 @@
         </div>
 
         <div class="row playfieldRowHeight">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vhalign">
+            <div class="col-xs-12 hidden-sm hidden-md hidden-lg vhalign">
                 <div id="fieldWrapper" class="testframe3">
                     <div id="playfield" class="vhalign"></div>
                 </div>
             </div>
         </div>
     </div>
-    
-  <!--   <div class="diagnosis">
+
+    <!--   <div class="diagnosis">
             <div class="diag1"></div>
             <div class="diag2"></div>
             <div class="diag3"></div>
@@ -104,7 +120,7 @@
         </div>
 -->
 
-<!-- 
+    <!-- 
 //diag fields
 // $('.diag1').html('c' + currentPlayer);
 // $('.diag2').html('by' + ThisGameOpenedBy);
@@ -165,19 +181,19 @@
                 </div>
                 <div class="modal-body vhalign">
                     <p class="modal-font">Welcome to the memory game! Please enter player details.</p>
-                   <div class="formWrapper">
-                   
-                    <form>
-                        <div class="form-group">
-                            <label class="modal-font" for="namePlayer1">Player 1's name</label>
-                            <input type="text" class="form-control" id="nameFieldPlayer1" placeholder="Please provide Player 1's name" value="">
-                        </div>
-                        <div class="form-group">
-                            <label class="modal-font" for="namePlayer2">Player 2's name</label>
-                            <input type="text" class="form-control" id="nameFieldPlayer2" placeholder="Please provide Player 2's name" value="">
-                        </div>
-                    </form>
-                    
+                    <div class="formWrapper">
+
+                        <form>
+                            <div class="form-group">
+                                <label class="modal-font" for="namePlayer1">Player 1's name</label>
+                                <input type="text" class="form-control" id="nameFieldPlayer1" placeholder="Please provide Player 1's name" value="Player1">
+                            </div>
+                            <div class="form-group">
+                                <label class="modal-font" for="namePlayer2">Player 2's name</label>
+                                <input type="text" class="form-control" id="nameFieldPlayer2" placeholder="Please provide Player 2's name" value="Player2">
+                            </div>
+                        </form>
+
                     </div>
                 </div>
                 <div class="modal-footer">

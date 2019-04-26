@@ -1,4 +1,6 @@
-/*global $*/
+/*global $
+$(document);
+*/
 
 $(document).ready(function() {
 
