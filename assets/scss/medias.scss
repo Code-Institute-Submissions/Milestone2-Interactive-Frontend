@@ -2,101 +2,7 @@
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    body {
-        color: beige;
-        height: 15vh;
-        width: 15vw;
-    }
 
-
-    #outershell {
-        //*    outer frame, wrapper of board 
-        width: 30vw;
-        margin-top: 12px;
-        margin-bottom: 2px;
-    }
-
-    #playfield {
-        display: flex;
-        justify-content: space-around;
-        align-content: space-around;
-        flex-wrap: wrap;
-        transition: opacity .5s ease-in-out;
-        width: 40vw;
-        height: 40vw;
-        margin: {
-            top: 2px;
-            bottom: 2px;
-        }
-    }
-
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    body {
-        color: beige;
-        height: 5vh;
-        width: 5vw;
-    }
-
-
-    #outershell {
-        //*    outer frame, wrapper of board 
-        width: 50vw;
-        margin-top: 12px;
-        margin-bottom: 2px;
-    }
-
-    #playfield {
-        display: flex;
-        justify-content: space-around;
-        align-content: space-around;
-        flex-wrap: wrap;
-        transition: opacity .5s ease-in-out;
-        width: 30vw;
-        height: 20vw;
-        margin: {
-            top: 2px;
-            bottom: 2px;
-        }
-    }
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    body {
-        color: beige;
-        height: 60vh;
-        width: 60vw;
-        background-color: white;
-    }
-
-
-    #outershell {
-        //*    outer frame, wrapper of board 
-        width: 50vw;
-        margin-top: 12px;
-        margin-bottom: 2px;
-    }
-
-    #playfield {
-        display: flex;
-        justify-content: space-around;
-        align-content: space-around;
-        flex-wrap: wrap;
-        transition: opacity .5s ease-in-out;
-        width: 60vw;
-        height: 60vw;
-        margin: {
-            top: 2px;
-            bottom: 2px;
-        }
-    }
-
-}
 
 /*
 
@@ -203,11 +109,7 @@
 
 @media screen and (min-width: 1200px) and (orientation:landscape) {
 
-  
-
-
-
-
+ 
     body {
         color: beige;
         height: 98vh;

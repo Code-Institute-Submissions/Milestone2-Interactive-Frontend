@@ -37,7 +37,7 @@ body {
     padding: 10px;
 }
 
-#outershell {
+.outershell {
     /*    outer frame, wrapper of board */
     width: 98vw;
     height: 88vh;
@@ -45,12 +45,12 @@ body {
     margin-bottom: 2px;
 }
 
-#controlPanelWrapper {
+.controlPanelWrapper {
     /*wrapper of  controlpanel*/
     @extend %vhalign;
 }
 
-#buttonfield {
+.buttonfield {
     padding: 5px;
     max-width: 400px;
     height: 125px;
@@ -61,7 +61,7 @@ body {
     @extend %DosisFont;
 }
 
-#howToBtn {
+.howToBtn {
     width: 48%;
     @extend %greenBorder;
     @extend %height-controlBtn;
@@ -73,7 +73,7 @@ body {
     color: $bg-body;
 }
 
-#enterPlayersBtn {
+.enterPlayersBtn {
     width: 48%;
     @extend %greenBorder;
     @extend %height-controlBtn;
@@ -92,7 +92,7 @@ body {
     width: 31.33%;
 }
 
-#field8Btn {
+.field8Btn {
     @extend %greenBorder;
     @extend %height-controlBtn;
     @extend %width-fieldSizeBtn;
@@ -103,7 +103,7 @@ body {
     cursor: pointer;
 }
 
-#field16Btn {
+.field16Btn {
     @extend %greenBorder;
     @extend %height-controlBtn;
     @extend %width-fieldSizeBtn;
@@ -114,7 +114,7 @@ body {
     cursor: pointer;
 }
 
-#field36Btn {
+.field36Btn {
     @extend %greenBorder;
     @extend %height-controlBtn;
     @extend %width-fieldSizeBtn;
@@ -125,7 +125,7 @@ body {
     cursor: pointer;
 }
 
-#startBtn {
+.startBtn {
     width: 48%;
     @extend %greenBorder;
     @extend %height-controlBtn;
@@ -136,7 +136,7 @@ body {
     background-color: $bg-startBtn;
 }
 
-#stopBtn {
+.stopBtn {
     width: 48%;
     @extend %greenBorder;
     @extend %height-controlBtn;
@@ -193,8 +193,8 @@ body {
 .namePlayer1,
 .namePlayer2 {}
 
-.scorePlayer1,
-.scorePlayer2 {
+.scorePlayer1Field,
+.scorePlayer2Field {
     @extend %halign;
     width: 20px;
 }
@@ -227,13 +227,13 @@ body {
     padding-top: 5px;
 }
 
-#fieldWrapper {
+.fieldWrapper {
     @extend %vhalign;
     @extend %marginPlayfieldWrapper;
     width: 96vw;
 }
 
-#playfield {
+.playfield {
     display: flex;
     justify-content: space-around;
     align-content: space-around;
@@ -406,6 +406,7 @@ li {
 
 
 
+
 // test 
 
 @media screen and (min-width: 768px) and (orientation:portrait) {}
@@ -418,14 +419,14 @@ li {
         width: 100vw;
     }
 
-    #outershell {
+    .outershell {
         /*    outer frame, wrapper of board */
         width: 98vw;
         height: 97vh; // margin-top: 12px;
         // margin-bottom: 2px;
     }
 
-    #playfield {
+    .playfield {
         display: flex;
         justify-content: space-around;
         align-content: space-around;
@@ -443,7 +444,7 @@ li {
         height: 87vh;
     }
 
-    #fieldWrapper {
+    .fieldWrapper {
         width: 82vh;
         height: 82vh;
         margin: {
@@ -452,7 +453,7 @@ li {
         }
     }
 
-    #controlPanelWrapper {
+    .controlPanelWrapper {
         /*wrapper of  controlpanel*/
         margin: {
             bottom: 5px;
@@ -477,7 +478,7 @@ li {
 
 
     .playStatsWrapper {
-        width: 400px;
+        width: 100%;
         margin: {
             top: 5px;
             bottom: 5px;
@@ -529,14 +530,14 @@ li {
         width: 100vw;
     }
 
-    #outershell {
+    .outershell {
         /*    outer frame, wrapper of board */
         width: 98vw;
         height: 97vh; // margin-top: 12px;
         // margin-bottom: 2px;
     }
 
-    #playfield {
+    .playfield {
         display: flex;
         justify-content: space-around;
         align-content: space-around;
@@ -554,7 +555,7 @@ li {
         height: 87vh;
     }
 
-    #fieldWrapper {
+    .fieldWrapper {
         width: 82vh;
         height: 82vh;
         margin: {
@@ -563,7 +564,7 @@ li {
         }
     }
 
-    #controlPanelWrapper {
+    .controlPanelWrapper {
         /*wrapper of  controlpanel*/
         margin: {
             bottom: 5px;
@@ -630,7 +631,6 @@ li {
     }
 
 }
-
 
 @media screen and (min-width: 1200px) and (orientation:portrait) {}
 
@@ -642,14 +642,14 @@ li {
         width: 100vw;
     }
 
-    #outershell {
+    .outershell {
         /*    outer frame, wrapper of board */
         width: 98vw;
         height: 97vh; // margin-top: 12px;
         // margin-bottom: 2px;
     }
 
-    #playfield {
+    .playfield {
         display: flex;
         justify-content: space-around;
         align-content: space-around;
@@ -667,7 +667,7 @@ li {
         height: 87vh;
     }
 
-    #fieldWrapper {
+    .fieldWrapper {
         width: 82vh;
         height: 82vh;
         margin: {
@@ -676,7 +676,7 @@ li {
         }
     }
 
-    #controlPanelWrapper {
+    .controlPanelWrapper {
         /*wrapper of  controlpanel*/
         margin: {
             bottom: 5px;
@@ -698,7 +698,6 @@ li {
         align-content: space-around;
         flex-wrap: wrap;
     }
-
 
     .playStatsWrapper {
         width: 400px;
@@ -730,7 +729,6 @@ li {
         width: 80%;
     }
 
-
     .headline {
         width: 90%;
         max-width: 310px;
@@ -741,11 +739,7 @@ li {
         margin-top: 5px;
         text-align: center;
     }
-
-
-
 }
-
 
 
 @media screen and (min-width: 1800px) and (orientation:landscape) {}

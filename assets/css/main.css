@@ -1,72 +1,6 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  body {
-    color: beige;
-    height: 15vh;
-    width: 15vw; }
-
-  #outershell {
-    width: 30vw;
-    margin-top: 12px;
-    margin-bottom: 2px; }
-
-  #playfield {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    transition: opacity .5s ease-in-out;
-    width: 40vw;
-    height: 40vw;
-    margin-top: 2px;
-    margin-bottom: 2px; } }
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  body {
-    color: beige;
-    height: 5vh;
-    width: 5vw; }
-
-  #outershell {
-    width: 50vw;
-    margin-top: 12px;
-    margin-bottom: 2px; }
-
-  #playfield {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    transition: opacity .5s ease-in-out;
-    width: 30vw;
-    height: 20vw;
-    margin-top: 2px;
-    margin-bottom: 2px; } }
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  body {
-    color: beige;
-    height: 60vh;
-    width: 60vw;
-    background-color: white; }
-
-  #outershell {
-    width: 50vw;
-    margin-top: 12px;
-    margin-bottom: 2px; }
-
-  #playfield {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    transition: opacity .5s ease-in-out;
-    width: 60vw;
-    height: 60vw;
-    margin-top: 2px;
-    margin-bottom: 2px; } }
 /*
 
 
@@ -172,11 +106,7 @@
 
 @media screen and (min-width: 1200px) and (orientation:landscape) {
 
-  
-
-
-
-
+ 
     body {
         color: beige;
         height: 98vh;
@@ -217,7 +147,7 @@ body {
   margin-top: 5px;
   text-align: center; }
 
-.modal-font-head-howTo, .modal-font-head-register, #buttonfield, #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playerStats1, .playerStats2 {
+.modal-font-head-howTo, .modal-font-head-register, .buttonfield, .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn, .playerStats1, .playerStats2 {
   font-family: "Dosis", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -272,7 +202,7 @@ body {
   align-items: center;
   flex-wrap: wrap; }
 
-#controlPanelWrapper, #howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn, .playStatsWrapper, .playerStats1, .playerStats2, #fieldWrapper, .front, .back {
+.controlPanelWrapper, .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn, .playStatsWrapper, .playerStats1, .playerStats2, .fieldWrapper, .front, .back {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -287,8 +217,8 @@ body {
   justify-content: center;
   flex-wrap: wrap; }
 
-.scorePlayer1,
-.scorePlayer2 {
+.scorePlayer1Field,
+.scorePlayer2Field {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
@@ -310,38 +240,38 @@ body {
   color: beige;
   height: 89vh; }
 
-#howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn {
+.howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
   border: 2px solid lightgreen;
   border-radius: 15px; }
 
-#playfield {
+.playfield {
   margin-top: 2px;
   margin-bottom: 2px; }
 
-#fieldWrapper {
+.fieldWrapper {
   margin-top: 2px;
   margin-bottom: 8px; }
 
-#howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn {
+.howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
   margin-top: 2px;
   margin-left: 2px;
   margin-right: 2px;
   margin-bottom: 2px; }
 
-#howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn {
+.howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
   padding: 10px; }
 
-#outershell {
+.outershell {
   /*    outer frame, wrapper of board */
   width: 98vw;
   height: 88vh;
   margin-top: 10px;
   margin-bottom: 2px; }
 
-#controlPanelWrapper {
+.controlPanelWrapper {
   /*wrapper of  controlpanel*/ }
 
-#buttonfield {
+.buttonfield {
   padding: 5px;
   max-width: 400px;
   height: 125px;
@@ -350,35 +280,35 @@ body {
   align-content: space-around;
   flex-wrap: wrap; }
 
-#howToBtn {
+.howToBtn {
   width: 48%;
   background-color: #FFFF00;
   color: #34393F; }
 
-#enterPlayersBtn {
+.enterPlayersBtn {
   width: 48%;
   background-color: #0066FF; }
 
-#howToBtn, #enterPlayersBtn, #field8Btn, #field16Btn, #field36Btn, #startBtn, #stopBtn {
+.howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
   height: 35px; }
 
-#field8Btn, #field16Btn, #field36Btn {
+.field8Btn, .field16Btn, .field36Btn {
   width: 31.33%; }
 
-#field8Btn {
+.field8Btn {
   cursor: pointer; }
 
-#field16Btn {
+.field16Btn {
   cursor: pointer; }
 
-#field36Btn {
+.field36Btn {
   cursor: pointer; }
 
-#startBtn {
+.startBtn {
   width: 48%;
   background-color: #00cc00; }
 
-#stopBtn {
+.stopBtn {
   width: 48%;
   background-color: #e60000; }
 
@@ -412,8 +342,8 @@ body {
   background-color: grey;
   border-left: 1px solid #34393F; }
 
-.scorePlayer1,
-.scorePlayer2 {
+.scorePlayer1Field,
+.scorePlayer2Field {
   width: 20px; }
 
 .checkmarkPlayer1 {
@@ -440,10 +370,10 @@ body {
   font-weight: 300;
   padding-top: 5px; }
 
-#fieldWrapper {
+.fieldWrapper {
   width: 96vw; }
 
-#playfield {
+.playfield {
   display: flex;
   justify-content: space-around;
   align-content: space-around;
@@ -649,12 +579,12 @@ li {
     height: 98vh;
     width: 100vw; }
 
-  #outershell {
+  .outershell {
     /*    outer frame, wrapper of board */
     width: 98vw;
     height: 97vh; }
 
-  #playfield {
+  .playfield {
     display: flex;
     justify-content: space-around;
     align-content: space-around;
@@ -668,13 +598,13 @@ li {
   .playfieldRowHeight {
     height: 87vh; }
 
-  #fieldWrapper {
+  .fieldWrapper {
     width: 82vh;
     height: 82vh;
     margin-top: 2px;
     margin-bottom: 8px; }
 
-  #controlPanelWrapper {
+  .controlPanelWrapper {
     /*wrapper of  controlpanel*/
     margin-bottom: 5px; }
 
@@ -693,7 +623,7 @@ li {
     flex-wrap: wrap; }
 
   .playStatsWrapper {
-    width: 400px;
+    width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 15px;
@@ -729,12 +659,12 @@ li {
     height: 98vh;
     width: 100vw; }
 
-  #outershell {
+  .outershell {
     /*    outer frame, wrapper of board */
     width: 98vw;
     height: 97vh; }
 
-  #playfield {
+  .playfield {
     display: flex;
     justify-content: space-around;
     align-content: space-around;
@@ -748,13 +678,13 @@ li {
   .playfieldRowHeight {
     height: 87vh; }
 
-  #fieldWrapper {
+  .fieldWrapper {
     width: 82vh;
     height: 82vh;
     margin-top: 2px;
     margin-bottom: 8px; }
 
-  #controlPanelWrapper {
+  .controlPanelWrapper {
     /*wrapper of  controlpanel*/
     margin-bottom: 5px; }
 
@@ -809,12 +739,12 @@ li {
     height: 98vh;
     width: 100vw; }
 
-  #outershell {
+  .outershell {
     /*    outer frame, wrapper of board */
     width: 98vw;
     height: 97vh; }
 
-  #playfield {
+  .playfield {
     display: flex;
     justify-content: space-around;
     align-content: space-around;
@@ -828,13 +758,13 @@ li {
   .playfieldRowHeight {
     height: 87vh; }
 
-  #fieldWrapper {
+  .fieldWrapper {
     width: 82vh;
     height: 82vh;
     margin-top: 2px;
     margin-bottom: 8px; }
 
-  #controlPanelWrapper {
+  .controlPanelWrapper {
     /*wrapper of  controlpanel*/
     margin-bottom: 5px; }
 
