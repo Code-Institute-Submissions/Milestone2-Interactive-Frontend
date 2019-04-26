@@ -55,8 +55,8 @@ $(document).ready(function() {
                             $('.taken .back').append("<span class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></span>"); // put players color on card backside when match is found
                             scorePlayer2++; // increasing score
                             $('.scorePlayer2').html(scorePlayer2); // writing score to related HTML field
-                            $('.diag7').html("VS2: " + scorePlayer2);
-                            $('.diag8').html("FS2: " + $('.scorePlayer2').html());
+                            $('.diag7').html("VS2:" + scorePlayer2);
+                            $('.diag8').html("FS2:" + $('.scorePlayer2').html());
                         }
                         $('.taken').addClass('dummycardshell').removeClass('cardshell');
                         // removing .cardshell class from matched cards and assigning .dummycardshell so that they will not be prepped with click assignment 
@@ -155,7 +155,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('.popupNext').css("transform", "translateZ(-10px)");
                 $('.popupNext').css("z-index", "-1");
-            }, 3500);
+            }, 4000);
             firstAttemptDone = 1; // game has been started
             $('.diag3').html(firstAttemptDone);
         $('.diag4').html("F Player1");
@@ -457,13 +457,13 @@ $(document).ready(function() {
     // function for counter reset on game startup
     function resetCounters() {
         scorePlayer1 = 0; //set playerscores to zero
-        $('.diag5').html("VS1" + scorePlayer1); // diag
+        $('.diag5').html("VS1:" + scorePlayer1); // diag
         scorePlayer2 = 0; //set playerscores to zero
-        $('.diag7').html("VS2" + scorePlayer2); // diag
+        $('.diag7').html("VS2:" + scorePlayer2); // diag
         $(".scorePlayer1").html(scorePlayer1); // assign reset value to fields
-        $('.diag6').html("FS1" + $('.scorePlayer1').html()); // diag
+        $('.diag6').html("FS1:" + $('.scorePlayer1').html()); // diag
         $(".scorePlayer2").html(scorePlayer2); // assign reset value to fields
-        $('.diag8').html("FS2" + $('.scorePlayer2').html());
+        $('.diag8').html("FS2:" + $('.scorePlayer2').html());
     }
 
     // code executed on startup:

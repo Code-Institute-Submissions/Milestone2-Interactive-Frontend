@@ -40,7 +40,8 @@ body {
 #outershell {
     /*    outer frame, wrapper of board */
     width: 98vw;
-    margin-top: 12px;
+    height: 88vh;
+    margin-top: 10px;
     margin-bottom: 2px;
 }
 
@@ -229,6 +230,7 @@ body {
 #fieldWrapper {
     @extend %vhalign;
     @extend %marginPlayfieldWrapper;
+    width: 96vw;
 }
 
 #playfield {
@@ -237,8 +239,8 @@ body {
     align-content: space-around;
     flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
-    width: 87vw;
-    height: 87vw;
+    width: 90vw;
+    height: 90vw;
     @extend %marginPlayfield;
 }
 
@@ -287,8 +289,8 @@ li {
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -20px;
+    margin-left: -20px;
 }
 
 // modal apprearance occur below the turned cards, so a correction in Z pos is necessary. Z-index did not bring remedy.
@@ -300,6 +302,11 @@ li {
 .modal-body {
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+.formWrapper {
+    width: 80%;
+
 }
 
 %popup {
@@ -358,29 +365,534 @@ li {
 }
 
 
-.diagnosis    {
+.diagnosis {
     width: 100%;
     height: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}    
+}
 
 
-.diag1, .diag2, .diag3, .diag4, .diag5, .diag6, .diag7, .diag8    {
+.diag1,
+.diag2,
+.diag3,
+.diag4,
+.diag5,
+.diag6,
+.diag7,
+.diag8 {
     display: inline-block;
     width: 23%;
     height: 30px;
     color: black;
 }
 
-.diag1, .diag2, .diag3, .diag4 {
-     background-color: lightblue;
-    
+.diag1,
+.diag2,
+.diag3,
+.diag4 {
+    background-color: lightblue;
+
 }
 
-.diag5, .diag6, .diag7, .diag8 {
-     background-color: grey;
-    
+.diag5,
+.diag6,
+.diag7,
+.diag8 {
+    background-color: grey;
+
 }
 
+
+
+// test 
+
+@media screen and (max-width: 767px) and (orientation:landscape) {
+
+   body {
+        color: beige;
+        height: 98vh;
+        width: 100vw;
+    }
+
+    #outershell {
+        /*    outer frame, wrapper of board */
+        width: 98vw;
+        height: 97vh; // margin-top: 12px;
+        // margin-bottom: 2px;
+    }
+
+    #playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 66vh;
+        height: 66vh;
+        margin: {
+            top: 2px;
+            bottom: 2px;
+        }
+    }
+
+    #fieldWrapper {
+        width: 67vh;
+        height: 67vh;
+        margin: {
+            top: 2px;
+            bottom: 8px;
+        }
+    }
+
+    #controlPanelWrapper {
+        /*wrapper of  controlpanel*/
+        margin: {
+            bottom: 5px;
+        }
+    }
+
+    .modal-body {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .modal-dialog {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+    .playStatsWrapper {
+        width: 382px;
+        margin: {
+            top: 5px;
+            bottom: 5px;
+        }
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .playerStats1 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-right: 1px solid #34393F;
+    }
+
+    .playerStats2 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-left: 1px solid #34393F;
+    }
+
+    .formWrapper {
+        width: 80%;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 768px) and (orientation:portrait) {
+
+   
+
+}
+
+@media screen and (min-width: 768px) and (orientation:landscape) {
+
+    body {
+        color: beige;
+        height: 98vh;
+        width: 100vw;
+    }
+
+    #outershell {
+        /*    outer frame, wrapper of board */
+        width: 98vw;
+        height: 97vh; // margin-top: 12px;
+        // margin-bottom: 2px;
+    }
+
+    #playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 66vh;
+        height: 66vh;
+        margin: {
+            top: 2px;
+            bottom: 2px;
+        }
+    }
+
+    #fieldWrapper {
+        width: 67vh;
+        height: 67vh;
+        margin: {
+            top: 2px;
+            bottom: 8px;
+        }
+    }
+
+    #controlPanelWrapper {
+        /*wrapper of  controlpanel*/
+        margin: {
+            bottom: 5px;
+        }
+    }
+
+    .modal-body {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .modal-dialog {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+    .playStatsWrapper {
+        width: 382px;
+        margin: {
+            top: 5px;
+            bottom: 5px;
+        }
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .playerStats1 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-right: 1px solid #34393F;
+    }
+
+    .playerStats2 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-left: 1px solid #34393F;
+    }
+    
+    .formWrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 992px) and (orientation:portrait) {
+
+  
+}
+
+@media screen and (min-width: 992px) and (orientation:landscape) {
+    body {
+        color: beige;
+        height: 98vh;
+        width: 100vw;
+    }
+
+    #outershell {
+        /*    outer frame, wrapper of board */
+        width: 98vw;
+        height: 97vh; // margin-top: 12px;
+        // margin-bottom: 2px;
+    }
+
+    #playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 66vh;
+        height: 66vh;
+        margin: {
+            top: 2px;
+            bottom: 2px;
+        }
+    }
+
+    #fieldWrapper {
+        width: 67vh;
+        height: 67vh;
+        margin: {
+            top: 2px;
+            bottom: 8px;
+        }
+    }
+
+    #controlPanelWrapper {
+        /*wrapper of  controlpanel*/
+        margin: {
+            bottom: 5px;
+        }
+    }
+
+    .modal-body {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .modal-dialog {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+    .playStatsWrapper {
+        width: 382px;
+        margin: {
+            top: 5px;
+            bottom: 5px;
+        }
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .playerStats1 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-right: 1px solid #34393F;
+    }
+
+    .playerStats2 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-left: 1px solid #34393F;
+    }
+
+    .formWrapper {
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) and (orientation:portrait) {
+
+   
+}
+
+@media screen and (min-width: 1200px) and (orientation:landscape) {
+
+    body {
+        color: beige;
+        height: 98vh;
+        width: 100vw;
+    }
+
+    #outershell {
+        /*    outer frame, wrapper of board */
+        width: 98vw;
+        height: 97vh; // margin-top: 12px;
+        // margin-bottom: 2px;
+    }
+
+    #playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 66vh;
+        height: 66vh;
+        margin: {
+            top: 2px;
+            bottom: 2px;
+        }
+    }
+
+    #fieldWrapper {
+        width: 67vh;
+        height: 67vh;
+        margin: {
+            top: 2px;
+            bottom: 8px;
+        }
+    }
+
+    #controlPanelWrapper {
+        /*wrapper of  controlpanel*/
+        margin: {
+            bottom: 5px;
+        }
+    }
+
+    .modal-body {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .modal-dialog {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+    .playStatsWrapper {
+        width: 382px;
+        margin: {
+            top: 5px;
+            bottom: 5px;
+        }
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .playerStats1 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-right: 1px solid #34393F;
+    }
+
+    .playerStats2 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-left: 1px solid #34393F;
+    }
+
+    .formWrapper {
+        width: 80%;
+    }
+}
+
+
+
+@media screen and (min-width: 1800px) and (orientation:landscape) {
+
+    body {
+        color: beige;
+        height: 98vh;
+        width: 100vw;
+    }
+
+    #outershell {
+        /*    outer frame, wrapper of board */
+        width: 98vw;
+        height: 97vh; // margin-top: 12px;
+        // margin-bottom: 2px;
+    }
+
+    #playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 66vh;
+        height: 66vh;
+        margin: {
+            top: 2px;
+            bottom: 2px;
+        }
+    }
+
+    #fieldWrapper {
+        width: 67vh;
+        height: 67vh;
+        margin: {
+            top: 2px;
+            bottom: 8px;
+        }
+    }
+
+    #controlPanelWrapper {
+        /*wrapper of  controlpanel*/
+        margin: {
+            bottom: 5px;
+        }
+    }
+
+    .modal-body {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .modal-dialog {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+
+
+    .playStatsWrapper {
+        width: 382px;
+        margin: {
+            top: 5px;
+            bottom: 5px;
+        }
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .playerStats1 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-right: 1px solid #34393F;
+    }
+
+    .playerStats2 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-left: 1px solid #34393F;
+    }
+
+    .formWrapper {
+        width: 80%;
+    }
+}
