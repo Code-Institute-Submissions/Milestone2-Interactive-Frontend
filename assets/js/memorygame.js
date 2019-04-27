@@ -440,7 +440,7 @@ $(document).ready(function() {
     // code executed on startup:
     fieldInit(9); // generating playfield of 3x3 per default on startup
     make_field8BtnVisActive(); // make 8-card button visually active
-    $('.enterPlayersModal').modal('show'); // registration modal on startup
+    $('#enterPlayersModal').modal('show'); // registration modal on startup
     $('.diag1').html("c" + currentPlayer); // diag
     $('.diag2').html("by" + ThisGameOpenedBy); // diag
     $('.diag3').html(firstAttemptDone); // diag

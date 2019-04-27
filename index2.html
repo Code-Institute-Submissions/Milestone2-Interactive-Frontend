@@ -22,22 +22,62 @@
             </div>
         </div>
         <div class="row playfieldRowHeight">
+            <div class="hidden-xs col-sm-5 col-md-5 col-lg-5 vhalign playfieldRowHeight">
+                <div class="controlPanelWrapper">
+                    <div class="testframe2 buttonfield">
+                        <div class="btn btn-primary btn-lg howToBtn" data-toggle="modal" data-target="#howToModal">How to play</div>
+                        <div class="btn btn-primary btn-lg enterPlayersBtn" data-toggle="modal" data-target="#enterPlayersModal">Register players</div>
+                        <div class="field8Btn">8 cards</div>
+                        <div class="field16Btn">16 cards</div>
+                        <div class="field36Btn">36 cards</div>
+                        <div class="btn btn-primary btn-lg startBtn">start</div>
+                        <div class="btn btn-primary btn-lg stopBtn btnlocked">stop</div>
+                    </div>
+                    <div class="playStatsWrapper testframe2">
+                        <div class="playerStats1 playerStatsFont">
+                            <div class="namePlayer1">Player 1:</div>
+                            <div class="scorePlayer1Field"></div>
+                            <div class="">
+                                <span class="checkmarkPlayer1 glyphicon glyphicon-ok-sign"></span>
+                            </div>
+                        </div>
+
+                        <div class="playerStats2 playerStatsFont">
+                            <div class="namePlayer2">Player 2</div>
+                            <div class="scorePlayer2Field"></div>
+                            <div class="">
+                                <span class="checkmarkPlayer2 glyphicon glyphicon-ok-sign"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--
+           <div class="hidden-xs col-sm-7 col-md-7 col-lg-7 vhalign playfieldRowHeight">
+                <div class="fieldWrapper testframe3">
+                    <div class="playfield vhalign"></div>
+                </div>
+            </div>
+
+  -->
             <div class="col-xs-12 hidden-sm hidden-md hidden-lg vhalign">
                 <div class="controlPanelWrapper">
                     <div class="testframe2 buttonfield">
                         <div class="btn btn-primary btn-lg howToBtn" data-toggle="modal" data-target="#howToModal">How to play</div>
                         <div class="btn btn-primary btn-lg enterPlayersBtn" data-toggle="modal" data-target="#enterPlayersModal">Register players</div>
-                        <div class="field8Btn">4 x 2</div>
-                        <div class="field16Btn">4 x 4</div>
-                        <div class="field36Btn">6 x 6</div>
+                        <div class="field8Btn">8 cards</div>
+                        <div class="field16Btn">16 cards</div>
+                        <div class="field36Btn">36 cards</div>
                         <div class="btn btn-primary btn-lg startBtn">start</div>
                         <div class="btn btn-primary btn-lg stopBtn btnlocked">stop</div>
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="row">
             <div class="col-xs-12 hidden-sm hidden-md hidden-lg vhalign">
-                <div class="playStatsWrapper testframe2 vhalign">
+                <div class="playStatsWrapper testframe2">
                     <div class="playerStats1 playerStatsFont">
                         <div class="namePlayer1">Player 1:</div>
                         <div class="scorePlayer1Field"></div>
@@ -45,6 +85,7 @@
                             <span class="checkmarkPlayer1 glyphicon glyphicon-ok-sign"></span>
                         </div>
                     </div>
+
                     <div class="playerStats2 playerStatsFont">
                         <div class="namePlayer2">Player 2</div>
                         <div class="scorePlayer2Field"></div>
@@ -54,43 +95,17 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="hidden-xs col-sm-4 col-md-4 col-lg-4 vhalign playfieldRowHeight">
-                <div class="controlPanelWrapper">
-                    <div class="testframe2 buttonfield">
-                        <div class="btn btn-primary btn-lg howToBtn" data-toggle="modal" data-target="#howToModal">How to play</div>
-                        <div class="btn btn-primary btn-lg enterPlayersBtn" data-toggle="modal" data-target="#enterPlayersModal">Register players</div>
-                        <div class="field8Btn">4 x 2</div>
-                        <div class="field16Btn">4 x 4</div>
-                        <div class="field36Btn">6 x 6</div>
-                        <div class="btn btn-primary btn-lg startBtn">start</div>
-                        <div class="btn btn-primary btn-lg stopBtn btnlocked">stop</div>
-                    </div>
-                    <div class="playStatsWrapper vhalign testframe2">
-                        <div class="playerStats1 playerStatsFont">
-                            <div class="namePlayer1">Player1:</div>
-                            <div class="scorePlayer1Field"></div>
-                            <div class="">
-                                <span class="checkmarkPlayer1 glyphicon glyphicon-ok-sign"></span>
-                            </div>
-                        </div>
-                        <div class="playerStats2 playerStatsFont">
-                            <div class="namePlayer2">Player2:</div>
-                            <div class="scorePlayer2Field"></div>
-                            <div class="">
-                                <span class="checkmarkPlayer2 glyphicon glyphicon-ok-sign"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 playfieldRowHeight vhalign ">
-                <div class="fieldWrapper vhalign testframe3">
+        <div class="row playfieldRowHeight">
+            <div class="col-xs-12 hidden-sm hidden-md hidden-lg vhalign">
+                <div class="fieldWrapper testframe3">
                     <div class="playfield vhalign"></div>
                 </div>
             </div>
         </div>
     </div>
+
     <!--   <div class="diagnosis">
             <div class="diag1"></div>
             <div class="diag2"></div>
@@ -100,7 +115,9 @@
             <div class="diag6"></div>
             <div class="diag7"></div>
             <div class="diag8"></div>
-        </div> -->
+        </div>
+-->
+
     <!-- 
 //diag fields
 // $('.diag1').html('c' + currentPlayer);
@@ -120,7 +137,7 @@
 
     <!-- Modal for howto instructions -->
     <div class="modal fade" id="howToModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog vhalign" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title modal-font-head-howTo halign" id="myModalLabel">How to play this game</h4>
@@ -155,7 +172,7 @@
 
     <!-- Modal for entering player details -->
     <div class="modal fade" id="enterPlayersModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog vhalign" role="document">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title modal-font-head-register halign" id="myModalLabel">Register players</h4>
@@ -163,6 +180,7 @@
                 <div class="modal-body vhalign">
                     <p class="modal-font">Welcome to the memory game! Please enter player details.</p>
                     <div class="formWrapper">
+
                         <form>
                             <div class="form-group">
                                 <label class="modal-font" for="namePlayer1">Player 1's name</label>
@@ -173,6 +191,7 @@
                                 <input type="text" class="form-control" id="nameFieldPlayer2" placeholder="Please provide Player 2's name" value="Player2">
                             </div>
                         </form>
+
                     </div>
                 </div>
                 <div class="modal-footer">

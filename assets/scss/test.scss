@@ -1,0 +1,419 @@
+
+@media screen and (max-width: 767px) and (orientation:landscape) {
+
+
+    body {
+        color: beige;
+        height: 92vh;
+    }
+
+
+    .outershell {
+        /*    outer frame, wrapper of board */
+        width: 98vw;
+        height: 89vh;
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+
+    .playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 90vw;
+        height: 90vw;
+        margin: {
+        top: 2px;
+        bottom: 2px;
+    }
+    }
+
+    .playfieldRowHeight {
+        height: 87vh;
+    }
+
+    .fieldWrapper {
+
+         margin: {
+        top: 2px;
+        bottom: 2px;
+    }
+        width: 96vw;
+    }
+
+    .controlPanelWrapper {
+        /*wrapper of  controlpanel*/
+        margin: {
+            bottom: 5px;
+        }
+    }
+
+    .modal-body {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .playStatsWrapper {
+        width: 98%;
+        margin: {
+            top: 5px;
+            bottom: 5px;
+        }
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .playerStats1 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-right: 1px solid #34393F;
+    }
+
+    .playerStats2 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-left: 1px solid #34393F;
+    }
+
+    .formWrapper {
+        width: 80%;
+    }
+
+    .headline {
+        width: 90%;
+        max-width: 310px;
+        font: {
+            size: 2.5em;
+            family: "Dosis", sans-serif;
+        }
+        margin-top: 5px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation:portrait) {}
+
+@media screen and (min-width: 768px) and (orientation:landscape) {
+
+body {
+    color: beige;
+    height: 100vh;
+}
+
+   
+.outershell {
+    /*    outer frame, wrapper of board */
+    width: 98vw;
+    height: 98vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+  .playfield {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 80vh;
+    height: 80vh;
+    margin: {
+        top: 2px;
+        bottom: 2px;
+    }
+}
+
+    .playfieldRowHeight {
+        height: 86vh;
+    }
+
+  .fieldWrapper {
+   
+    margin: {
+        top: 2px;
+        bottom: 2px;
+    }
+     width: 82vh;
+    height: 82vh;
+}
+
+    .controlPanelWrapper {
+        /*wrapper of  controlpanel*/
+        margin: {
+            bottom: 5px;
+        }
+        width:100%;
+    }
+
+    .modal-body {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+  .playStatsWrapper {
+    width:100%;
+    margin: {
+        top: 5px;
+        bottom: 5px;
+    }
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+    .playerStats1 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-right: 1px solid #34393F;
+    }
+
+    .playerStats2 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-left: 1px solid #34393F;
+    }
+
+    .formWrapper {
+        width: 80%;
+    }
+
+    .headline {
+        width: 90%;
+        max-width: 310px;
+        font: {
+            size: 2.5em;
+            family: "Dosis", sans-serif;
+        }
+        margin: {
+            top: 5px;
+        // bottom: 5px;
+        }
+        
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+    
+}
+
+@media screen and (min-width: 992px) and (orientation:portrait) {}
+
+@media screen and (min-width: 992px) and (orientation:landscape) {
+    
+body {
+    color: beige;
+    height: 100vh;
+}
+
+   
+.outershell {
+    /*    outer frame, wrapper of board */
+    width: 98vw;
+    height: 98vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+  .playfield {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 82vh;
+    height: 82vh;
+    margin: {
+        top: 2px;
+        bottom: 2px;
+    }
+}
+
+    .playfieldRowHeight {
+        height: 92vh;
+    }
+
+  .fieldWrapper {
+   
+    margin: {
+        top: 2px;
+        bottom: 2px;
+    }
+     width: 84vh;
+    height: 84vh;
+}
+
+    .controlPanelWrapper {
+        /*wrapper of  controlpanel*/
+        margin: {
+            bottom: 5px;
+        }
+    }
+
+    .modal-body {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+  .playStatsWrapper {
+    width: 98%;
+    margin: {
+        top: 5px;
+        bottom: 5px;
+    }
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+    .playerStats1 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-right: 1px solid #34393F;
+    }
+
+    .playerStats2 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-left: 1px solid #34393F;
+    }
+
+    .formWrapper {
+        width: 80%;
+    }
+
+    .headline {
+        width: 90%;
+        max-width: 310px;
+        font: {
+            size: 2.5em;
+            family: "Dosis", sans-serif;
+        }
+        margin: {
+            top: 5px;
+        bottom: 5px;
+        }
+        
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) and (orientation:portrait) {}
+
+@media screen and (min-width: 1200px) and (orientation:landscape) {
+
+body {
+    color: beige;
+    height: 100vh;
+}
+
+   
+.outershell {
+    /*    outer frame, wrapper of board */
+    width: 98vw;
+    height: 98vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+  .playfield {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 82vh;
+    height: 82vh;
+    margin: {
+        top: 2px;
+        bottom: 2px;
+    }
+}
+
+    .playfieldRowHeight {
+        height: 92vh;
+    }
+
+  .fieldWrapper {
+   
+    margin: {
+        top: 2px;
+        bottom: 2px;
+    }
+     width: 84vh;
+    height: 84vh;
+}
+
+    .controlPanelWrapper {
+        /*wrapper of  controlpanel*/
+        margin: {
+            bottom: 5px;
+        }
+    }
+
+    .modal-body {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+  .playStatsWrapper {
+    width: 98%;
+    margin: {
+        top: 5px;
+        bottom: 5px;
+    }
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+    .playerStats1 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-right: 1px solid #34393F;
+    }
+
+    .playerStats2 {
+        width: 50%;
+        height: 30px;
+        padding: 4px;
+        background-color: grey;
+        border-left: 1px solid #34393F;
+    }
+
+    .formWrapper {
+        width: 80%;
+    }
+
+    .headline {
+        width: 90%;
+        max-width: 310px;
+        font: {
+            size: 2.5em;
+            family: "Dosis", sans-serif;
+        }
+        margin: {
+            top: 5px;
+        bottom: 5px;
+        }
+        
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1800px) and (orientation:landscape) {}
