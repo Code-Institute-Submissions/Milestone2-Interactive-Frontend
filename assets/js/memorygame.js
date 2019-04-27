@@ -117,7 +117,7 @@ $(document).ready(function() {
         else if (scorePlayer1 == scorePlayer2) { // if equal score, popup html text is set accordingly 
             $('.popupGameCompleted').html("Both players same points!");
         }
-        $('.popupGameCompleted').css("transform", "translateZ(100px)").css("z-index", "100").css("opacity", "1.0");
+        $('.popupGameCompleted').css("transform", "translateZ(150px)").css("z-index", "100").css("opacity", "1.0");
 
         setTimeout(function() {
             makeBtnActiveExceptStart();
@@ -132,7 +132,7 @@ $(document).ready(function() {
             $('.diag3').html(firstAttemptDone);
             $('.popupGameCompleted').css("opacity", "0.0");
             setTimeout(function() {
-                $('.popupGameCompleted').css("transform", "translateZ(-100px)").css("z-index", "-100");
+                $('.popupGameCompleted').css("transform", "translateZ(-10px)").css("z-index", "-100");
             }, 1300);
         }, 4000);
     }
@@ -140,8 +140,8 @@ $(document).ready(function() {
     // function to provide popup 'who is next'
     function whoIsNext() {
         // moving up popup on z axis and start transition to opacity 1
-        $('.popupNext').css("transform", "translateZ(100px)");
-        $('.popupNext').css("z-index", "100");
+        $('.popupNext').css("transform", "translateZ(150px)");
+        $('.popupNext').css("z-index", "150");
         if (firstAttemptDone == 0 && ThisGameOpenedBy == "Player1") {
             $('.playerStats1').css('background-color', 'red'); // set to red when active
             $('.playerStats2').css('background-color', 'grey'); // set other player to grey
@@ -204,30 +204,23 @@ $(document).ready(function() {
 
     // function to provide popup 'match'
     function popupMatch() {
-        $('.popupMatch').css("transform", "translateZ(100px)");
-        $('.popupNext').css("z-index", "100");
-        $('.popupMatch').css("opacity", "1.0");
+        $('.popupMatch').css("transform", "translateZ(150px)").css("z-index", "150").css("opacity", "1.0");
         setTimeout(function() {
             $('.popupMatch').css("opacity", "0.0");
         }, 1200);
         setTimeout(function() {
-            $('.popupMatch').css("transform", "translateZ(-10px)");
-            $('.popupNext').css("z-index", "-1");
+            $('.popupMatch').css("transform", "translateZ(-10px)").css("z-index", "-1");
         }, 3000);
     }
 
     // function to provide popup 'no match'
     function popupNoMatch() {
-        $('.popupNoMatch').css("transform", "translateZ(100px)");
-        $('.popupNext').css("z-index", "100");
-        $('.popupNoMatch').css("opacity", "1.0");
-
+        $('.popupNoMatch').css("transform", "translateZ(150px)").css("z-index", "150").css("opacity", "1.0");
         setTimeout(function() {
             $('.popupNoMatch').css("opacity", "0.0");
         }, 1200);
         setTimeout(function() {
-            $('.popupNoMatch').css("transform", "translateZ(-10px)");
-            $('.popupNext').css("z-index", "-1");
+            $('.popupNoMatch').css("transform", "translateZ(-10px)").css("z-index", "-1");
         }, 3000);
     }
 

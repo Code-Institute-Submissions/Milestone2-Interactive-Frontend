@@ -34,7 +34,7 @@ body {
 }
 
 %padding12 {
-    padding: 12px;
+    padding: 6px;
 }
 
 .outershell {
@@ -85,7 +85,7 @@ body {
 }
 
 %height-controlBtn {
-    height: 30%;
+    height: 32%;
 }
 
 %width-fieldSizeBtn {
@@ -168,12 +168,13 @@ body {
     }
     border-radius: 15px;
     overflow: hidden;
+    
 }
 
 .playerStats1 {
     width: 50%;
-    height: 30px;
-    padding: 4px;
+    height: 35px;
+    padding: 5px;
     @extend %vhalign;
     @extend %DosisFont;
     background-color: grey;
@@ -182,8 +183,8 @@ body {
 
 .playerStats2 {
     width: 50%;
-    height: 30px;
-    padding: 4px;
+    height: 35px;
+    padding: 5px;
     @extend %vhalign;
     @extend %DosisFont;
     background-color: grey;
@@ -191,7 +192,10 @@ body {
 }
 
 .namePlayer1,
-.namePlayer2 {}
+.namePlayer2 {
+   
+
+}
 
 .scorePlayer1Field,
 .scorePlayer2Field {
@@ -199,32 +203,33 @@ body {
     width: 20px;
 }
 
+
+.checkmarkDiv {
+    
+}
+
 .checkmarkPlayer1 {
     color: lightgreen;
     font-size: 22px;
     font-weight: 400;
-    padding-top: 5px;
 }
 
 .checkmarkPlayer2 {
     color: #0066cc;
     font-size: 22px;
     font-weight: 400;
-    padding-top: 5px;
 }
 
 .checkmarkPlayer1Big {
     color: lightgreen;
     font-size: 3.8em;
     font-weight: 300;
-    padding-top: 5px;
 }
 
 .checkmarkPlayer2Big {
     color: #0066cc;
     font-size: 3.8em;
     font-weight: 300;
-    padding-top: 5px;
 }
 
 .fieldWrapper {
@@ -462,7 +467,7 @@ li {
     .buttonfield {
         padding: 5px;
         width: 98%;
-        height: 100px;
+        height: 125px;
         display: flex;
         justify-content: space-between;
         align-content: space-around;
@@ -735,15 +740,8 @@ li {
         margin: {
             top: 5px; // bottom: 5px;
         }
-
         text-align: center;
     }
-
-
-
-
-
-
 }
 
 @media screen and (min-width: 992px) and (orientation:portrait) {
@@ -930,7 +928,7 @@ li {
 
     .playerStats1 {
         width: 50%;
-        height: 30px;
+        height: 35px;
         padding: 4px;
         background-color: grey;
         border-right: 1px solid #34393F;
@@ -938,7 +936,7 @@ li {
 
     .playerStats2 {
         width: 50%;
-        height: 30px;
+        height: 35px;
         padding: 4px;
         background-color: grey;
         border-left: 1px solid #34393F;
@@ -972,7 +970,6 @@ li {
         color: beige;
         height: 100vh;
     }
-
 
     .outershell {
         /*    outer frame, wrapper of board */
@@ -1022,31 +1019,60 @@ li {
         margin-bottom: 0;
     }
 
-    .playStatsWrapper {
-        width: 98%;
-        margin: {
-            top: 5px;
-            bottom: 5px;
-        }
-        border-radius: 15px;
-        overflow: hidden;
-    }
 
-    .playerStats1 {
-        width: 50%;
-        height: 30px;
-        padding: 4px;
-        background-color: grey;
-        border-right: 1px solid #34393F;
-    }
 
-    .playerStats2 {
-        width: 50%;
-        height: 30px;
-        padding: 4px;
-        background-color: grey;
-        border-left: 1px solid #34393F;
+.playStatsWrapper {
+    width: 98%;
+    margin: {
+        top: 5px;
+        bottom: 5px;
     }
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+
+.playerStats1 {
+    width: 50%;
+    height: 40px;
+    padding: 5px;
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: beige;
+    background-color: grey;
+    border-right: 1px solid #34393F;
+}
+
+.playerStats2 {
+    width: 50%;
+    height: 40px;
+    padding: 5px;
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: beige;
+    background-color: grey;
+    border-left: 1px solid #34393F;
+}
+
+.namePlayer1,
+.namePlayer2 {
+   
+
+}
+
+.scorePlayer1Field,
+.scorePlayer2Field {
+    width: 20px;
+}
+
+
+.checkmarkDiv {
+    
+}
+
+
 
     .formWrapper {
         width: 80%;

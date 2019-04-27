@@ -121,7 +121,7 @@ body {
   margin-bottom: 2px; }
 
 .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
-  padding: 12px; }
+  padding: 6px; }
 
 .outershell {
   /*    outer frame, wrapper of board */
@@ -152,7 +152,7 @@ body {
   background-color: #0066FF; }
 
 .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
-  height: 30%; }
+  height: 32%; }
 
 .field8Btn, .field16Btn, .field36Btn {
   width: 31.3%; }
@@ -192,15 +192,15 @@ body {
 
 .playerStats1 {
   width: 50%;
-  height: 30px;
-  padding: 4px;
+  height: 35px;
+  padding: 5px;
   background-color: grey;
   border-right: 1px solid #34393F; }
 
 .playerStats2 {
   width: 50%;
-  height: 30px;
-  padding: 4px;
+  height: 35px;
+  padding: 5px;
   background-color: grey;
   border-left: 1px solid #34393F; }
 
@@ -211,26 +211,22 @@ body {
 .checkmarkPlayer1 {
   color: lightgreen;
   font-size: 22px;
-  font-weight: 400;
-  padding-top: 5px; }
+  font-weight: 400; }
 
 .checkmarkPlayer2 {
   color: #0066cc;
   font-size: 22px;
-  font-weight: 400;
-  padding-top: 5px; }
+  font-weight: 400; }
 
 .checkmarkPlayer1Big {
   color: lightgreen;
   font-size: 3.8em;
-  font-weight: 300;
-  padding-top: 5px; }
+  font-weight: 300; }
 
 .checkmarkPlayer2Big {
   color: #0066cc;
   font-size: 3.8em;
-  font-weight: 300;
-  padding-top: 5px; }
+  font-weight: 300; }
 
 .fieldWrapper {
   width: 96vw; }
@@ -474,7 +470,7 @@ li {
   .buttonfield {
     padding: 5px;
     width: 98%;
-    height: 100px;
+    height: 125px;
     display: flex;
     justify-content: space-between;
     align-content: space-around;
@@ -810,14 +806,14 @@ li {
 
   .playerStats1 {
     width: 50%;
-    height: 30px;
+    height: 35px;
     padding: 4px;
     background-color: grey;
     border-right: 1px solid #34393F; }
 
   .playerStats2 {
     width: 50%;
-    height: 30px;
+    height: 35px;
     padding: 4px;
     background-color: grey;
     border-left: 1px solid #34393F; }
@@ -882,17 +878,29 @@ li {
 
   .playerStats1 {
     width: 50%;
-    height: 30px;
-    padding: 4px;
+    height: 40px;
+    padding: 5px;
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: beige;
     background-color: grey;
     border-right: 1px solid #34393F; }
 
   .playerStats2 {
     width: 50%;
-    height: 30px;
-    padding: 4px;
+    height: 40px;
+    padding: 5px;
+    font-family: "Dosis", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: beige;
     background-color: grey;
     border-left: 1px solid #34393F; }
+
+  .scorePlayer1Field,
+  .scorePlayer2Field {
+    width: 20px; }
 
   .formWrapper {
     width: 80%; }
