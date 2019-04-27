@@ -427,12 +427,12 @@ $(document).ready(function() {
 
     // function for counter reset on game startup
     function resetCounters() {
-        scorePlayer1 = 0; //set playerscores to zero
+        scorePlayer1 = 0; //set playerscores Player1 to zero
         $('.diag5').html("VS1:" + scorePlayer1); // diag
-        scorePlayer2 = 0; //set playerscores to zero
-        $('.diag7').html("VS2:" + scorePlayer2); // diag
         $(".scorePlayer1Field").html(scorePlayer1); // assign reset value to fields
         $('.diag6').html("FS1:" + $('.scorePlayer1Field').html()); // diag
+        scorePlayer2 = 0; //set playerscores Player2 to zero
+        $('.diag7').html("VS2:" + scorePlayer2); // diag
         $(".scorePlayer2Field").html(scorePlayer2); // assign reset value to fields
         $('.diag8').html("FS2:" + $('.scorePlayer2Field').html()); // diag
     }
@@ -506,7 +506,7 @@ $(document).ready(function() {
 // $('.diag1').html('c' + currentPlayer);
 // $('.diag2').html('by' + ThisGameOpenedBy);
 // $('.diag3').html(firstAttemptDone);
-// $('.diag4').html();
+// $('.diag4').html(chk for entering if statement whoIsNext);
 // $('.diag5').html('VS1' + scorePlayer1);
 // $('.diag6').html('FS1' + $('.scorePlayer1Field').html());
 // $('.diag7').html('VS2' + scorePlayer2);
