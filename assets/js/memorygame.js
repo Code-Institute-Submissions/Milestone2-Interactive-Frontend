@@ -133,7 +133,7 @@ $(document).ready(function() {
             $('.popupGameCompleted').css("opacity", "0.0");
             setTimeout(function() {
                 $('.popupGameCompleted').css("transform", "translateZ(-100px)").css("z-index", "-100");
-            }, 1000);
+            }, 1300);
         }, 4000);
     }
 
