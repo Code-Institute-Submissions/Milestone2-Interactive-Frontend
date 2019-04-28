@@ -14,30 +14,6 @@
     flex-wrap: wrap;
 }
 
-
-.valign {
-    display: flex;
-    align-items: center;
-}
-
-%valign {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.halign {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-%halign {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 .testframe1 {
     border: 2px solid darkred;
     border-radius: 15px;

@@ -3,8 +3,6 @@
 body {
     color: beige;
     height: 92vh;
-    // background-image: url(../images/bg-body-drops.jpg);
-    // background-size: cover; 
 }
 
 %greenBorder {
@@ -46,7 +44,6 @@ body {
 
 .controlPanelWrapper {
     /*wrapper of  controlpanel*/
-    @extend %vhalign;
 }
 
 .buttonfield {
@@ -57,7 +54,6 @@ body {
     justify-content: space-between;
     align-content: space-around;
     flex-wrap: wrap;
-    @extend %DosisFont;
 }
 
 .howToBtn {
@@ -152,7 +148,6 @@ body {
 }
 
 .playStatsWrapper {
-    @extend %vhalign;
     width: 98%;
     margin: {
         top: 5px;
@@ -167,8 +162,6 @@ body {
     width: 50%;
     height: 35px;
     padding: 5px;
-    @extend %vhalign;
-    @extend %DosisFont;
     background-color: grey;
     border-right: 1px solid #34393F;
 }
@@ -177,8 +170,6 @@ body {
     width: 50%;
     height: 35px;
     padding: 5px;
-    @extend %vhalign;
-    @extend %DosisFont;
     background-color: grey;
     border-left: 1px solid #34393F;
 }
@@ -188,7 +179,7 @@ body {
 
 .scorePlayer1Field,
 .scorePlayer2Field {
-    @extend %halign;
+   text-align: center;
     width: 20px;
 }
 
@@ -221,7 +212,6 @@ body {
 }
 
 .fieldWrapper {
-    @extend %vhalign;
     @extend %marginPlayfieldWrapper;
     width: 96vw;
 }
@@ -259,19 +249,16 @@ body {
 }
 
 .front {
-    background-image: url(../images/cards/front.jpg);
-    background-size: cover; 
-    //background-color: orange;
+    background-image: url(../images/cards/frontface.jpg);
+    background-size: cover; //background-color: orange;
     border: 2px solid lightgreen;
     border-radius: 10px;
-    @extend %vhalign;
 }
 
 .back {
     transform: rotateY(180deg) translateZ(1px);
     border: 2px solid lightgreen;
     border-radius: 10px;
-    @extend %vhalign;
 }
 
 .showMe {
@@ -304,17 +291,15 @@ li {
 
 }
 
-%popup {
+.popup {
     position: absolute;
-    @extend %popup-font;
-    width: 200px;
-    height: 120px;
+    width: 250px;
+    height: 150px;
     border: 2px solid lightblue;
     border-radius: 15px;
 }
 
 .popupMatch {
-    @extend %popup;
     background-color: darkgreen;
     opacity: 0.0;
     z-index: -1;
@@ -323,7 +308,6 @@ li {
 }
 
 .popupNoMatch {
-    @extend %popup;
     background-color: darkred;
     opacity: 0.0;
     z-index: -1;
@@ -332,7 +316,6 @@ li {
 }
 
 .popupNext {
-    @extend %popup;
     color: #34393F;
     background-color: lightblue;
     border: 2px solid darkgrey;
@@ -343,7 +326,6 @@ li {
 }
 
 .popupGameCompleted {
-    @extend %popup;
     background-color: grey;
     opacity: 0.0;
     z-index: -1;
@@ -359,7 +341,6 @@ li {
     }
 }
 
-
 .diagnosis {
     width: 100%;
     height: 30px;
@@ -367,7 +348,6 @@ li {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 
 .diag1,
 .diag2,
@@ -436,7 +416,6 @@ li {
     }
 
     .fieldWrapper {
-
         margin: {
             top: 14px;
             bottom: 2px;
@@ -450,7 +429,6 @@ li {
         margin: {
             bottom: 2px;
         }
-
         width: 70%;
     }
 
@@ -467,8 +445,6 @@ li {
         font-weight: 300;
         color: beige;
     }
-
-
 
     .modal-body {
         padding-bottom: 0;
@@ -524,7 +500,6 @@ li {
         height: 100vh;
     }
 
-
     .outershell {
         /*    outer frame, wrapper of board */
         width: 98vw;
@@ -552,7 +527,6 @@ li {
     }
 
     .fieldWrapper {
-
         margin: {
             top: 2px;
             bottom: 2px;
@@ -569,7 +543,6 @@ li {
         width: 100%;
     }
 
-
     .buttonfield {
         padding: 3px;
         width: 100%;
@@ -583,8 +556,6 @@ li {
         font-weight: 200;
         color: beige;
     }
-
-
 
     .modal-body {
         padding-bottom: 0;
@@ -640,7 +611,6 @@ li {
         height: 100vh;
     }
 
-
     .outershell {
         /*    outer frame, wrapper of board */
         width: 98vw;
@@ -668,7 +638,6 @@ li {
     }
 
     .fieldWrapper {
-
         margin: {
             top: 2px;
             bottom: 2px;
@@ -741,7 +710,6 @@ li {
         height: 100vh;
     }
 
-
     .outershell {
         /*    outer frame, wrapper of board */
         width: 98vw;
@@ -769,7 +737,6 @@ li {
     }
 
     .fieldWrapper {
-
         margin: {
             top: 2px;
             bottom: 2px;
@@ -786,7 +753,6 @@ li {
         width: 100%;
     }
 
-
     .buttonfield {
         padding: 3px;
         width: 100%;
@@ -800,8 +766,6 @@ li {
         font-weight: 300;
         color: beige;
     }
-
-
 
     .modal-body {
         padding-bottom: 0;
@@ -857,7 +821,6 @@ li {
         height: 100vh;
     }
 
-
     .outershell {
         /*    outer frame, wrapper of board */
         width: 98vw;
@@ -885,7 +848,6 @@ li {
     }
 
     .fieldWrapper {
-
         margin: {
             top: 2px;
             bottom: 2px;
@@ -975,8 +937,8 @@ li {
         align-content: space-around;
         flex-wrap: wrap;
         transition: opacity .5s ease-in-out;
-        width: 82vh;
-        height: 82vh;
+        width: 80vh;
+        height: 80vh;
         margin: {
             top: 2px;
             bottom: 2px;
@@ -988,13 +950,12 @@ li {
     }
 
     .fieldWrapper {
-
         margin: {
             top: 2px;
             bottom: 2px;
         }
-        width: 84vh;
-        height: 84vh;
+        width: 82vh;
+        height: 82vh;
     }
 
     .controlPanelWrapper {
@@ -1009,8 +970,6 @@ li {
         margin-bottom: 0;
     }
 
-
-
     .playStatsWrapper {
         width: 98%;
         margin: {
@@ -1019,7 +978,6 @@ li {
         }
         border-radius: 15px;
         overflow: hidden;
-
     }
 
     .playerStats1 {
@@ -1046,17 +1004,17 @@ li {
         border-left: 1px solid #34393F;
     }
 
-    .namePlayer1,
-    .namePlayer2 {}
+    .namePlayer1Field,
+    .namePlayer2Field {}
 
     .scorePlayer1Field,
     .scorePlayer2Field {
+        text-align: center;
         width: 20px;
     }
 
 
     .checkmarkDiv {}
-
 
 
     .formWrapper {
@@ -1074,7 +1032,6 @@ li {
             top: 5px;
             bottom: 5px;
         }
-
         text-align: center;
     }
 }

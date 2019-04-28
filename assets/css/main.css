@@ -9,7 +9,13 @@ body {
   margin-top: 2px;
   text-align: center; }
 
-.modal-font-head-howTo, .modal-font-head-register, .buttonfield, .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn, .playerStats1, .playerStats2 {
+.howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: beige; }
+
+.DosisFont {
   font-family: "Dosis", sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -29,32 +35,32 @@ body {
   line-height: 1.4; }
 
 .modal-font-head-howTo {
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
   color: black;
   font-size: 24px;
   border: 2px solid lightgreen;
   border-radius: 15px;
-  background-color: #FFFF00; }
+  background-color: #FFFF00;
+  text-align: center; }
 
 .modal-font-head-register {
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
   color: black;
   font-size: 24px;
   border: 2px solid lightgreen;
   border-radius: 15px;
-  background-color: #0066FF; }
-
-.front-font {
-  font-family: "Dosis", sans-serif;
-  font-size: 3.5em;
-  font-weight: 400;
-  color: #34393F; }
+  background-color: #0066FF;
+  text-align: center; }
 
 .havefun {
   color: red;
   text-align: center; }
 
-.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
+.popup-font {
   font-family: "Dosis", sans-serif;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 600;
   color: beige; }
 
@@ -64,25 +70,10 @@ body {
   align-items: center;
   flex-wrap: wrap; }
 
-.controlPanelWrapper, .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn, .playStatsWrapper, .playerStats1, .playerStats2, .checkmarkPlayer1Big, .checkmarkPlayer2Big, .fieldWrapper, .front, .back {
+.howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn, .checkmarkPlayer1Big, .checkmarkPlayer2Big {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
-
-.valign {
-  display: flex;
-  align-items: center; }
-
-.halign {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-
-.scorePlayer1Field,
-.scorePlayer2Field {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap; }
 
 .testframe1 {
@@ -203,6 +194,7 @@ body {
 
 .scorePlayer1Field,
 .scorePlayer2Field {
+  text-align: center;
   width: 20px; }
 
 .checkmarkPlayer1 {
@@ -256,7 +248,7 @@ body {
   height: 100%; }
 
 .front {
-  background-image: url(../images/cards/front.jpg);
+  background-image: url(../images/cards/frontface.jpg);
   background-size: cover;
   border: 2px solid lightgreen;
   border-radius: 10px; }
@@ -288,10 +280,10 @@ li {
 .formWrapper {
   width: 80%; }
 
-.popupMatch, .popupNoMatch, .popupNext, .popupGameCompleted {
+.popup {
   position: absolute;
-  width: 200px;
-  height: 120px;
+  width: 250px;
+  height: 150px;
   border: 2px solid lightblue;
   border-radius: 15px; }
 
@@ -845,8 +837,8 @@ li {
     align-content: space-around;
     flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
-    width: 82vh;
-    height: 82vh;
+    width: 80vh;
+    height: 80vh;
     margin-top: 2px;
     margin-bottom: 2px; }
 
@@ -856,8 +848,8 @@ li {
   .fieldWrapper {
     margin-top: 2px;
     margin-bottom: 2px;
-    width: 84vh;
-    height: 84vh; }
+    width: 82vh;
+    height: 82vh; }
 
   .controlPanelWrapper {
     /*wrapper of  controlpanel*/
@@ -898,6 +890,7 @@ li {
 
   .scorePlayer1Field,
   .scorePlayer2Field {
+    text-align: center;
     width: 20px; }
 
   .formWrapper {
