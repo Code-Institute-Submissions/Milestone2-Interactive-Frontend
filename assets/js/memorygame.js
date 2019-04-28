@@ -24,7 +24,7 @@ $(document).ready(function() {
     // $('.diag1').html('c' + currentPlayer);
     // $('.diag2').html('by' + ThisGameOpenedBy);
     // $('.diag3').html(firstAttemptDone);
-    // $('.diag4').html();
+    // $('.diag4').html(chk for entering if statement whoIsNext);
     // $('.diag5').html('VS1' + scorePlayer1);
     // $('.diag6').html('FS1' + $('.scorePlayer1Field').html());
     // $('.diag7').html('VS2' + scorePlayer2);
@@ -46,14 +46,14 @@ $(document).ready(function() {
                     popupMatch();
                     setTimeout(function() { // delay time to wait until popupMatch is vanished
                         // assign player's color to indicate win
-                        if (currentPlayer == "Player1") {
+                        if (currentPlayer == "Player1") { // if match is for Player1, then assign players checkmark
                             $('.taken .back').append("<div class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign'></div>"); // put players color on card backside when match is found
                             scorePlayer1++; // increasing score
                             $('.scorePlayer1Field').html(scorePlayer1); // writing score to related HTML field
                             $('.diag5').html("VS1:" + scorePlayer1); // diag
                             $('.diag6').html("FS1:" + $('.scorePlayer1Field').html()); // diag
                         }
-                        else if (currentPlayer == "Player2") {
+                        else if (currentPlayer == "Player2") { // if match is for Player2, then assign players checkmark
                             $('.taken .back').append("<div class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></div>"); // put players color on card backside when match is found
                             scorePlayer2++; // increasing score
                             $('.scorePlayer2Field').html(scorePlayer2); // writing score to related HTML field
@@ -66,11 +66,11 @@ $(document).ready(function() {
                         $('.dummycardshell').removeClass('taken');
                         // checkup if all cards have been turned / found by comparing amount of cards of .showMe against amount of front faces on the playfield
                         if ($('.showMe').length == $('.front').length) { // if true, call function to display results
-                            gameCompleted();
+                            gameCompleted(); // function to inform with results
                         }
                         else { // otherwise continue to inform who is next
-                            whoIsNext();
-                            setTimeout(function() {
+                            whoIsNext(); //popup who is next
+                            setTimeout(function() { //re-enabling clicks on cards
                                 $(document).on('touchstart click', '.cardshell', function() { //re-enable clicks on cards
                                     $(this).addClass("showMe taken");
                                     checkForMatch();
@@ -294,11 +294,11 @@ $(document).ready(function() {
         setTimeout(function() {
             $(".startBtn").removeClass("btnlocked").on('touchstart click', function() {
                 makeBtnInactive(); // calling function to make buttons visually and haptically inactive
+                whoIsNext();
                 $(document).on('touchstart click', '.cardshell', function() {
                     $(this).addClass("showMe taken");
                     checkForMatch();
                 });
-                whoIsNext();
             });
         }, 2000);
 
@@ -315,48 +315,48 @@ $(document).ready(function() {
         $(".field8Btn").removeClass("btnlocked").on('touchstart click', function() {
             make_field8BtnVisActive();
             fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
-            // start button
+            resetCounters();
+            // start button reimplementation
             $(".startBtn").removeClass("btnlocked").on('touchstart click', function() {
                 makeBtnInactive(); // calling function to make buttons visually and haptically inactive
+                whoIsNext();
                 $(document).on('touchstart click', '.cardshell', function() {
                     $(this).addClass("showMe taken");
                     checkForMatch();
                 });
-                whoIsNext();
             });
-            resetCounters();
         });
 
         // ... for 16-card playfield button
         $(".field16Btn").removeClass("btnlocked").on('touchstart click', function() {
             make_field16BtnVisActive();
             fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
-            // start button
+            resetCounters();
+            // start button reimplementation
             $(".startBtn").removeClass("btnlocked").on('touchstart click', function() {
                 makeBtnInactive(); // calling function to make buttons visually and physically inactive
+                whoIsNext();
                 $(document).on('touchstart click', '.cardshell', function() {
                     $(this).addClass("showMe taken");
                     checkForMatch();
                 });
-                whoIsNext();
             });
-            resetCounters();
         });
 
         // ... for 36-card playfield button
         $(".field36Btn").removeClass("btnlocked").on('touchstart click', function() {
             make_field36BtnVisActive();
             fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
-            // start button
+            resetCounters();
+            // start button reimplementation
             $(".startBtn").removeClass("btnlocked").on('touchstart click', function() {
                 makeBtnInactive(); // calling function to make buttons visually and physically inactive
+                whoIsNext();
                 $(document).on('touchstart click', '.cardshell', function() {
                     $(this).addClass("showMe taken");
                     checkForMatch();
                 });
-                whoIsNext();
             });
-            resetCounters();
         });
 
         // stop button visually and technically deactivated
@@ -413,7 +413,6 @@ $(document).ready(function() {
             playFieldSize2 = 8;
             currentCardArray.splice(playFieldSize2, 28); // reduce working array to first 8 cards
         }
-
         else if (playFieldSize2 == 16) {
             currentCardArray.splice(playFieldSize2, 20); // reduce working array to first 16 cards
         }
@@ -440,6 +439,7 @@ $(document).ready(function() {
     // code executed on startup:
     fieldInit(9); // generating playfield of 3x3 per default on startup
     make_field8BtnVisActive(); // make 8-card button visually active
+    resetCounters();
     $('#enterPlayersModal').modal('show'); // registration modal on startup
     $('.diag1').html("c" + currentPlayer); // diag
     $('.diag2').html("by" + ThisGameOpenedBy); // diag
@@ -470,11 +470,11 @@ $(document).ready(function() {
     // ... for start button
     $(".startBtn").on('touchstart click', function() {
         makeBtnInactive(); // calling function to make buttons visually and haptically inactive
+        whoIsNext();
         $(document).on('touchstart click', '.cardshell', function() { //enabling playfield by defining click rule to make them react.
             $(this).addClass("showMe taken");
             checkForMatch();
         });
-        whoIsNext();
     });
 
     // ... for save button button on registration modal
@@ -492,7 +492,7 @@ $(document).ready(function() {
         else if ($('#nameFieldPlayer1Form').val() == $('#nameFieldPlayer2Form').val()) {
             alert('Please provide different names for each player.');
         }
-        // in any other case, save button functionality is assigned back and string values of textinput fields written to HTML elements
+        // in any other case, save button functionality is assigned back and string values of textinput fields written to HTML elements and internal variables
         else {
             $('#saveBtn').attr("data-dismiss", "modal"); // assigning back .attr('data-dismiss','modal') to make modal closure possible. 
             namePlayer1 = $('#nameFieldPlayer1Form').val();
