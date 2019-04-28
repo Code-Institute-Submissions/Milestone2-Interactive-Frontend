@@ -380,6 +380,20 @@ li {
 
 
 //breakpoints
+@media screen and (min-width: 320px) and (orientation:portrait) {
+
+    .outershell {
+        /*    outer frame, wrapper of board */
+        width: 98vw;
+        height: 95vh;
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+}
+
+
+
+
 @media screen and (min-width: 736px) and (orientation:landscape) {
 
     body {
