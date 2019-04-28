@@ -6,7 +6,7 @@ body {
   max-width: 310px;
   font-size: 1.8em;
   font-family: "Dosis", sans-serif;
-  margin-top: 2px;
+  margin-top: 0px;
   text-align: center; }
 
 .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
@@ -88,13 +88,13 @@ body {
   border: 2px solid lightblue;
   border-radius: 15px; }
 
-.paddingTopHeadline {
-  padding: 5px; }
+.marginOnTop {
+  margin-top: 10px; }
 
 /*playfield structures*/
 body {
   color: beige;
-  height: 92vh; }
+  height: 89vh; }
 
 .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
   border: 2px solid lightgreen;
@@ -118,7 +118,7 @@ body {
   /*    outer frame, wrapper of board */
   width: 98vw;
   height: 89vh;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 2px; }
 
 .controlPanelWrapper {
@@ -229,8 +229,8 @@ body {
   align-content: space-around;
   flex-wrap: wrap;
   transition: opacity .5s ease-in-out;
-  width: 90vw;
-  height: 90vw; }
+  width: 89vw;
+  height: 89vw; }
 
 .cardshell {
   position: relative;
@@ -424,13 +424,18 @@ li {
 .diag8 {
   background-color: grey; }
 
-@media screen and (min-width: 320px) and (orientation: portrait) {
-  .outershell {
-    /*    outer frame, wrapper of board */
-    width: 98vw;
-    height: 95vh;
-    margin-top: 10px;
-    margin-bottom: 2px; } }
+/*
+@media screen and (min-width: 320px) and (orientation:portrait) {
+
+    .outershell {
+        //    outer frame, wrapper of board 
+        width: 98vw;
+        height: 95vh;
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+}
+*/
 @media screen and (min-width: 736px) and (orientation: landscape) {
   body {
     color: beige;
@@ -518,7 +523,7 @@ li {
 @media screen and (min-width: 768px) and (orientation: portrait) {
   body {
     color: beige;
-    height: 100vh; }
+    height: 89vh; }
 
   .outershell {
     /*    outer frame, wrapper of board */
