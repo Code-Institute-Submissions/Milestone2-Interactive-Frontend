@@ -33,7 +33,6 @@ body {
     }
 }
 
-
 .outershell {
     /*    outer frame, wrapper of board */
     width: 98vw;
@@ -155,7 +154,6 @@ body {
     }
     border-radius: 15px;
     overflow: hidden;
-
 }
 
 .playerStats1 {
@@ -179,7 +177,7 @@ body {
 
 .scorePlayer1Field,
 .scorePlayer2Field {
-   text-align: center;
+    text-align: center;
     width: 20px;
 }
 
@@ -403,8 +401,8 @@ li {
         align-content: space-around;
         flex-wrap: wrap;
         transition: opacity .5s ease-in-out;
-        width: 40vh;
-        height: 40vh;
+        width: 42vh;
+        height: 42vh;
         margin: {
             top: 2px;
             bottom: 2px;
@@ -420,7 +418,7 @@ li {
             top: 14px;
             bottom: 2px;
         }
-        width: 42vh;
+        width: 44vh;
 
     }
 
@@ -429,13 +427,13 @@ li {
         margin: {
             bottom: 2px;
         }
-        width: 70%;
+        width: 60%;
     }
 
     .buttonfield {
         padding: 5px;
         width: 98%;
-        height: 125px;
+        height: 100px;
         display: flex;
         justify-content: space-between;
         align-content: space-around;
@@ -452,7 +450,7 @@ li {
     }
 
     .playStatsWrapper {
-        width: 70%;
+        width: 58%;
         margin: {
             top: 2px;
             bottom: 2px;
@@ -523,7 +521,7 @@ li {
     }
 
     .playfieldRowHeight {
-        height: 87vh;
+        height: 95vh;
     }
 
     .fieldWrapper {
@@ -551,10 +549,6 @@ li {
         justify-content: space-between;
         align-content: space-around;
         flex-wrap: wrap;
-        font-family: "Dosis", sans-serif;
-        font-size: 16px;
-        font-weight: 200;
-        color: beige;
     }
 
     .modal-body {
@@ -602,6 +596,13 @@ li {
         margin-top: 5px;
         text-align: center;
     }
+
+    .DosisFont {
+        font-family: "Dosis", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+        color: beige;
+    }
 }
 
 @media screen and (min-width: 768px) and (orientation:landscape) {
@@ -634,7 +635,9 @@ li {
     }
 
     .playfieldRowHeight {
-        height: 86vh;
+        height: 84vh;
+        margin: 0;
+        padding: 0;
     }
 
     .fieldWrapper {
@@ -651,7 +654,18 @@ li {
         margin: {
             bottom: 5px;
         }
-        width:100%;
+        width: 100%;
+    }
+
+    .buttonfield {
+        padding: 3px;
+        width: 100%;
+        height: 125px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-around;
+        flex-wrap: wrap;
+
     }
 
     .modal-body {
@@ -701,6 +715,13 @@ li {
         }
         text-align: center;
     }
+
+    .DosisFont {
+        font-family: "Dosis", sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        color: beige;
+    }
 }
 
 @media screen and (min-width: 992px) and (orientation:portrait) {
@@ -733,7 +754,7 @@ li {
     }
 
     .playfieldRowHeight {
-        height: 87vh;
+        height: 84vh;
     }
 
     .fieldWrapper {
@@ -750,7 +771,7 @@ li {
         margin: {
             bottom: 5px;
         }
-        width: 100%;
+        width: 80%;
     }
 
     .buttonfield {
@@ -844,7 +865,7 @@ li {
     }
 
     .playfieldRowHeight {
-        height: 92vh;
+        height: 90vh;
     }
 
     .fieldWrapper {
@@ -861,6 +882,7 @@ li {
         margin: {
             bottom: 5px;
         }
+        width: 80%;
     }
 
     .modal-body {
@@ -946,7 +968,7 @@ li {
     }
 
     .playfieldRowHeight {
-        height: 92vh;
+        height: 90vh;
     }
 
     .fieldWrapper {
@@ -963,6 +985,7 @@ li {
         margin: {
             bottom: 5px;
         }
+        width: 80%;
     }
 
     .modal-body {
@@ -1034,4 +1057,120 @@ li {
     }
 }
 
-@media screen and (min-width: 1800px) and (orientation:landscape) {}
+@media screen and (min-width: 1800px) and (orientation:landscape) {
+    body {
+        color: beige;
+        height: 100vh;
+    }
+
+    .outershell {
+        /*    outer frame, wrapper of board */
+        width: 98vw;
+        height: 98vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 80vh;
+        height: 80vh;
+        margin: {
+            top: 2px;
+            bottom: 2px;
+        }
+    }
+
+    .playfieldRowHeight {
+        height: 90vh;
+    }
+
+    .fieldWrapper {
+        margin: {
+            top: 2px;
+            bottom: 2px;
+        }
+        width: 82vh;
+        height: 82vh;
+    }
+
+    .controlPanelWrapper {
+        /*wrapper of  controlpanel*/
+        margin: {
+            bottom: 5px;
+        }
+        width: 80%;
+    }
+
+    .modal-body {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .playStatsWrapper {
+        width: 98%;
+        margin: {
+            top: 5px;
+            bottom: 5px;
+        }
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .playerStats1 {
+        width: 50%;
+        height: 40px;
+        padding: 5px;
+        font-family: "Dosis", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: beige;
+        background-color: grey;
+        border-right: 1px solid #34393F;
+    }
+
+    .playerStats2 {
+        width: 50%;
+        height: 40px;
+        padding: 5px;
+        font-family: "Dosis", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: beige;
+        background-color: grey;
+        border-left: 1px solid #34393F;
+    }
+
+    .namePlayer1Field,
+    .namePlayer2Field {}
+
+    .scorePlayer1Field,
+    .scorePlayer2Field {
+        text-align: center;
+        width: 20px;
+    }
+
+    .checkmarkDiv {}
+
+    .formWrapper {
+        width: 80%;
+    }
+
+    .headline {
+        width: 90%;
+        max-width: 310px;
+        font: {
+            size: 2.5em;
+            family: "Dosis", sans-serif;
+        }
+        margin: {
+            top: 5px;
+            bottom: 5px;
+        }
+        text-align: center;
+    }
+}
