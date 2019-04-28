@@ -3,6 +3,8 @@
 body {
     color: beige;
     height: 92vh;
+    // background-image: url(../images/bg-body-drops.jpg);
+    // background-size: cover; 
 }
 
 %greenBorder {
@@ -33,9 +35,6 @@ body {
     }
 }
 
-%padding12 {
-    padding: 6px;
-}
 
 .outershell {
     /*    outer frame, wrapper of board */
@@ -67,7 +66,6 @@ body {
     @extend %height-controlBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding12;
     @extend %DosisFont;
     background-color: $bg-howToBtn;
     color: $bg-body;
@@ -79,7 +77,6 @@ body {
     @extend %height-controlBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding12;
     @extend %DosisFont;
     background-color: $bg-enterPlayersBtn;
 }
@@ -98,7 +95,6 @@ body {
     @extend %width-fieldSizeBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding12;
     @extend %DosisFont;
     cursor: pointer;
 }
@@ -109,7 +105,6 @@ body {
     @extend %width-fieldSizeBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding12;
     @extend %DosisFont;
     cursor: pointer;
 }
@@ -120,7 +115,6 @@ body {
     @extend %width-fieldSizeBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding12;
     @extend %DosisFont;
     cursor: pointer;
 }
@@ -131,7 +125,6 @@ body {
     @extend %height-controlBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding12;
     @extend %DosisFont;
     background-color: $bg-startBtn;
 }
@@ -142,7 +135,6 @@ body {
     @extend %height-controlBtn;
     @extend %vhalign;
     @extend %marginBtn;
-    @extend %padding12;
     @extend %DosisFont;
     background-color: $bg-stopBtn;
 }
@@ -168,7 +160,7 @@ body {
     }
     border-radius: 15px;
     overflow: hidden;
-    
+
 }
 
 .playerStats1 {
@@ -192,10 +184,7 @@ body {
 }
 
 .namePlayer1,
-.namePlayer2 {
-   
-
-}
+.namePlayer2 {}
 
 .scorePlayer1Field,
 .scorePlayer2Field {
@@ -203,10 +192,7 @@ body {
     width: 20px;
 }
 
-
-.checkmarkDiv {
-    
-}
+.checkmarkDiv {}
 
 .checkmarkPlayer1 {
     color: lightgreen;
@@ -222,14 +208,16 @@ body {
 
 .checkmarkPlayer1Big {
     color: lightgreen;
-    font-size: 3.8em;
+    font-size: 4em;
     font-weight: 300;
+    @extend %vhalign;
 }
 
 .checkmarkPlayer2Big {
     color: #0066cc;
-    font-size: 3.8em;
+    font-size: 4em;
     font-weight: 300;
+    @extend %vhalign;
 }
 
 .fieldWrapper {
@@ -271,7 +259,9 @@ body {
 }
 
 .front {
-    background-color: orange;
+    background-image: url(../images/cards/front.jpg);
+    background-size: cover; 
+    //background-color: orange;
     border: 2px solid lightgreen;
     border-radius: 10px;
     @extend %vhalign;
@@ -1021,56 +1011,51 @@ li {
 
 
 
-.playStatsWrapper {
-    width: 98%;
-    margin: {
-        top: 5px;
-        bottom: 5px;
+    .playStatsWrapper {
+        width: 98%;
+        margin: {
+            top: 5px;
+            bottom: 5px;
+        }
+        border-radius: 15px;
+        overflow: hidden;
+
     }
-    border-radius: 15px;
-    overflow: hidden;
-    
-}
 
-.playerStats1 {
-    width: 50%;
-    height: 40px;
-    padding: 5px;
-    font-family: "Dosis", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: beige;
-    background-color: grey;
-    border-right: 1px solid #34393F;
-}
+    .playerStats1 {
+        width: 50%;
+        height: 40px;
+        padding: 5px;
+        font-family: "Dosis", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: beige;
+        background-color: grey;
+        border-right: 1px solid #34393F;
+    }
 
-.playerStats2 {
-    width: 50%;
-    height: 40px;
-    padding: 5px;
-    font-family: "Dosis", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: beige;
-    background-color: grey;
-    border-left: 1px solid #34393F;
-}
+    .playerStats2 {
+        width: 50%;
+        height: 40px;
+        padding: 5px;
+        font-family: "Dosis", sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: beige;
+        background-color: grey;
+        border-left: 1px solid #34393F;
+    }
 
-.namePlayer1,
-.namePlayer2 {
-   
+    .namePlayer1,
+    .namePlayer2 {}
 
-}
-
-.scorePlayer1Field,
-.scorePlayer2Field {
-    width: 20px;
-}
+    .scorePlayer1Field,
+    .scorePlayer2Field {
+        width: 20px;
+    }
 
 
-.checkmarkDiv {
-    
-}
+    .checkmarkDiv {}
 
 
 

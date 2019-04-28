@@ -64,7 +64,7 @@ body {
   align-items: center;
   flex-wrap: wrap; }
 
-.controlPanelWrapper, .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn, .playStatsWrapper, .playerStats1, .playerStats2, .fieldWrapper, .front, .back {
+.controlPanelWrapper, .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn, .playStatsWrapper, .playerStats1, .playerStats2, .checkmarkPlayer1Big, .checkmarkPlayer2Big, .fieldWrapper, .front, .back {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,9 +119,6 @@ body {
   margin-left: 2px;
   margin-right: 2px;
   margin-bottom: 2px; }
-
-.howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
-  padding: 6px; }
 
 .outershell {
   /*    outer frame, wrapper of board */
@@ -220,12 +217,12 @@ body {
 
 .checkmarkPlayer1Big {
   color: lightgreen;
-  font-size: 3.8em;
+  font-size: 4em;
   font-weight: 300; }
 
 .checkmarkPlayer2Big {
   color: #0066cc;
-  font-size: 3.8em;
+  font-size: 4em;
   font-weight: 300; }
 
 .fieldWrapper {
@@ -259,7 +256,8 @@ body {
   height: 100%; }
 
 .front {
-  background-color: orange;
+  background-image: url(../images/cards/front.jpg);
+  background-size: cover;
   border: 2px solid lightgreen;
   border-radius: 10px; }
 
