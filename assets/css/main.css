@@ -94,7 +94,7 @@ body {
 /*playfield structures*/
 body {
   color: beige;
-  height: 89vh; }
+  height: 100vh; }
 
 .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
   border: 2px solid lightgreen;
@@ -427,11 +427,11 @@ li {
 @media screen and (min-width: 320px) and (orientation: portrait) {
   body {
     color: beige;
-    height: 100vh; }
+    height: 89vh; }
 
   .outershell {
     width: 98vw;
-    height: 95vh;
+    height: 89vh;
     margin-top: 5px;
     margin-bottom: 2px; } }
 @media screen and (min-width: 736px) and (orientation: landscape) {
