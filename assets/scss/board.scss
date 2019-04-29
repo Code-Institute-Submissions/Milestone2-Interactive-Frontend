@@ -379,10 +379,9 @@ li {
 
 
 //breakpoints
-
 @media screen and (min-width: 320px) and (orientation:portrait) {
 
- body {
+    body {
         color: beige;
         height: 100vh;
     }
@@ -770,7 +769,7 @@ li {
         }
     }
 
-    .playfieldRowHeight {
+     .playfieldRowHeight {
         height: 84vh;
     }
 
@@ -882,7 +881,7 @@ li {
     }
 
     .playfieldRowHeight {
-        height: 90vh;
+        height: 87vh;
     }
 
     .fieldWrapper {
@@ -948,7 +947,6 @@ li {
             top: 5px;
             bottom: 5px;
         }
-
         text-align: center;
     }
 }
@@ -985,7 +983,7 @@ li {
     }
 
     .playfieldRowHeight {
-        height: 90vh;
+        height: 87vh;
     }
 
     .fieldWrapper {
@@ -1103,7 +1101,7 @@ li {
     }
 
     .playfieldRowHeight {
-        height: 90vh;
+        height: 87vh;
     }
 
     .fieldWrapper {
