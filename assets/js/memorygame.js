@@ -39,6 +39,7 @@ $(document).ready(function() {
             let takenCard2 = $('.taken .back').eq(1); //extracting element with index '1' from $('.taken .back')
             let classesCard1 = takenCard1.attr("class"); // make string of assigned classes card1 to compare
             let classesCard2 = takenCard2.attr("class"); // make string of assigned classes card2 to compare
+            let currentPlayerChkDone=0;
             // chk for match
             if (classesCard1 == classesCard2) {
                 setTimeout(function() {
@@ -88,8 +89,9 @@ $(document).ready(function() {
                         $(".taken").removeClass('showMe taken');
                         if (currentPlayer == "Player1") { // change players if cards do not match
                             currentPlayer = "Player2";
+                            currentPlayerChkDone=1;
                         }
-                        else { // change players if cards do not match
+                        else if (currentPlayer == "Player2" && currentPlayerChkDone==0){ // change players if cards do not match
                             currentPlayer = "Player1";
                         }
                         $('.diag1').html("c" + currentPlayer); // diag
@@ -110,6 +112,7 @@ $(document).ready(function() {
 
     // function for displaying final result of who has won the game
     function gameCompleted() {
+        let OpenedByChkDone=0;
         if (scorePlayer1 > scorePlayer2) { // check if player1 score is higher than player2
             $('.popupGameCompleted').html(namePlayer1 + " has won!"); // popup html text is set accordingly
         }
@@ -122,8 +125,9 @@ $(document).ready(function() {
         $('.popupGameCompleted').css("transform", "translateZ(150px)").css("z-index", "100").css("opacity", "1.0");
         if (ThisGameOpenedBy == "Player1") { // flips starting player, so the next game is started by the other player
             ThisGameOpenedBy = "Player2";
+            OpenedByChkDone=1;
         }
-        else {
+        else if (ThisGameOpenedBy == "Player2" && OpenedByChkDone==0) {
             ThisGameOpenedBy = "Player1";
         }
         firstAttemptDone = 0; // after game is completed this value is set to 0 and back to 1 after first move 
