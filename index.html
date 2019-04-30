@@ -12,7 +12,8 @@
 </head>
 
 <!--
-
+, minimum-scale=1.0, maximum-scale=1.0
+-->
 <!--  
 //diag fields
 // $('.diag1').html('c' + currentPlayer);
@@ -31,7 +32,7 @@
     <div class="container-fluid testframe1 outershell">
         <div class="row marginOnTop">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vhalign">
-                <p class="headline testframe2">The memorygame</p>
+                <div class="headline testframe2">The memorygame</div>
             </div>
         </div>
         <div class="row playfieldRowHeight">
@@ -39,7 +40,7 @@
                 <div class="controlPanelWrapper vhalign">
                     <div class="testframe2 buttonfield DosisFont">
                         <div class="btn btn-primary btn-lg howToBtn" data-toggle="modal" data-target="#howToModal">How to play</div>
-                        <div class="btn btn-primary btn-lg enterPlayersBtn" data-toggle="modal" data-target="#enterPlayersModal">Register players</div>
+                        <div class="btn btn-primary btn-lg enterPlayersBtn" data-toggle="modal" data-target="#enterPlayersModal">SignUp</div>
                         <div class="field8Btn">4 x 2</div>
                         <div class="field16Btn">4 x 4</div>
                         <div class="field36Btn">6 x 6</div>
@@ -72,7 +73,7 @@
                 <div class="controlPanelWrapper vhalign">
                     <div class="testframe2 buttonfield DosisFont">
                         <div class="btn btn-primary btn-lg howToBtn" data-toggle="modal" data-target="#howToModal">How to play</div>
-                        <div class="btn btn-primary btn-lg enterPlayersBtn" data-toggle="modal" data-target="#enterPlayersModal">Register players</div>
+                        <div class="btn btn-primary btn-lg enterPlayersBtn" data-toggle="modal" data-target="#enterPlayersModal">SignUp</div>
                         <div class="field8Btn">4 x 2</div>
                         <div class="field16Btn">4 x 4</div>
                         <div class="field36Btn">6 x 6</div>
@@ -146,7 +147,7 @@ $('.diag8').html('FS2' + $('.scorePlayer2Field').html());
                             <p class="modal-font">This game is intended to train your memory skills. It is being played by two players.</p>
                         </li>
                         <li>
-                            <p class="modal-font">Please register two players via the button "Register players".</p>
+                            <p class="modal-font">Please register two players via the button "SignUp".</p>
                         </li>
                         <li>
                             <p class="modal-font">Select then the size of playfield and hit the start button. By default, it is set to 8 cards. You might also want to try fieldsizes of 16 or 36 cards.</p>
@@ -156,7 +157,7 @@ $('.diag8').html('FS2' + $('.scorePlayer2Field').html());
                                 is next. The player who has found the most pairs, wins the game.</p>
                         </li>
                         <li>
-                            <p class="modal-font">To start over a game, stop the current game and select playfield size.</p>
+                            <p class="modal-font">To start over a game, stop the current game and re-select playfield size.</p>
                             <p class="havefun">Have fun and a good memory! :)</p>
                         </li>
                     </ul>
@@ -173,7 +174,7 @@ $('.diag8').html('FS2' + $('.scorePlayer2Field').html());
         <div class="modal-dialog vhalign" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title modal-font-head-register" id="myModalLabel">Register players</h4>
+                    <h4 class="modal-title modal-font-head-register" id="myModalLabel">SignUp players</h4>
                 </div>
                 <div class="modal-body vhalign">
                     <p class="modal-font">Welcome to the memory game! Please enter player details.</p>
@@ -199,7 +200,7 @@ $('.diag8').html('FS2' + $('.scorePlayer2Field').html());
 
     <!--   -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/memorygame.js"></script>
 
