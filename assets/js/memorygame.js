@@ -16,7 +16,6 @@ $(document).ready(function() {
     let namePlayer2 = "Player2";
     let scorePlayer1 = 0; // score on startup zero
     let scorePlayer2 = 0; // score on startup zero
-    let testname="hello";
     $('#saveBtn').attr("data-dismiss", ""); // removing data-dismiss attribute for registration modal on field validation
  
     // implementations of functions
