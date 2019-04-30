@@ -2,9 +2,7 @@
 $(document);
 */
 
-$(document).ready(function() {
-
-    // let , var declarations, initial conditions on startup
+ // let , var declarations, initial conditions on startup
 
     // predefined array with 18 pairs of cards = 36 cards max. Array will be cut to meet smaller fieldsizes.
     let masterCardArray = ['card1', 'card1', 'card2', 'card2', 'card3', 'card3', 'card4', 'card4', 'card5', 'card5', 'card6', 'card6', 'card7', 'card7', 'card8', 'card8', 'card9', 'card9', 'card10', 'card10', 'card11', 'card11', 'card12', 'card12', 'card13', 'card13', 'card14', 'card14', 'card15', 'card15', 'card16', 'card16', 'card17', 'card17', 'card18', 'card18'];
@@ -16,8 +14,13 @@ $(document).ready(function() {
     let namePlayer2 = "Player2";
     let scorePlayer1 = 0; // score on startup zero
     let scorePlayer2 = 0; // score on startup zero
+    let testname="hello";
     $('#saveBtn').attr("data-dismiss", ""); // removing data-dismiss attribute for registration modal on field validation
 
+
+$(document).ready(function() {
+
+   
     // implementations of functions
 
     //diag fields
@@ -86,7 +89,7 @@ $(document).ready(function() {
                     //popup no match
                     popupNoMatch();
                     setTimeout(function() { // delay of 1500ms to be able to see shown cards
-                        $(".taken").removeClass('showMe taken');
+                        $(".cardshell").removeClass('showMe taken');
                         if (currentPlayer == "Player1") { // change players if cards do not match
                             currentPlayer = "Player2";
                             currentPlayerChkDone = 1;
@@ -138,7 +141,7 @@ $(document).ready(function() {
             makeBtnActiveExceptStart();
             setTimeout(function() {
                 $('.popupGameCompleted').css("transform", "translateZ(-10px)").css("z-index", "-100");
-            }, 1300);
+            }, 1200);
         }, 4000);
     }
 
@@ -157,11 +160,11 @@ $(document).ready(function() {
             $('.popupNext').css("opacity", "1.0");
             setTimeout(function() {
                 $('.popupNext').css("opacity", "0.0");
-            }, 2500);
+            }, 1500);
             setTimeout(function() {
                 $('.popupNext').css("transform", "translateZ(-10px)");
                 $('.popupNext').css("z-index", "-1");
-            }, 3500);
+            }, 2500);
             $('.diag4').html("First P1"); // diag
         }
         else if (firstAttemptDone == 0 && ThisGameOpenedBy == "Player2") {
@@ -173,11 +176,11 @@ $(document).ready(function() {
             $('.popupNext').css("opacity", "1.0");
             setTimeout(function() {
                 $('.popupNext').css("opacity", "0.0");
-            }, 2500);
+            }, 1500);
             setTimeout(function() {
                 $('.popupNext').css("transform", "translateZ(-10px)");
                 $('.popupNext').css("z-index", "-1");
-            }, 3500);
+            }, 2500);
             $('.diag4').html("First P2"); // diag
         }
         else if (firstAttemptDone == 1 && currentPlayer == "Player1") {
@@ -202,7 +205,7 @@ $(document).ready(function() {
         setTimeout(function() {
             $('.popupNext').css("transform", "translateZ(-10px)");
             $('.popupNext').css("z-index", "-1");
-        }, 2200);
+        }, 2500);
     }
 
     // function to provide popup 'match'
@@ -213,7 +216,7 @@ $(document).ready(function() {
         }, 1200);
         setTimeout(function() {
             $('.popupMatch').css("transform", "translateZ(-10px)").css("z-index", "-1");
-        }, 3000);
+        }, 2200);
     }
 
     // function to provide popup 'no match'
@@ -224,7 +227,7 @@ $(document).ready(function() {
         }, 1200);
         setTimeout(function() {
             $('.popupNoMatch').css("transform", "translateZ(-10px)").css("z-index", "-1");
-        }, 3000);
+        }, 2200);
     }
 
     // setting indicator on button for playfield size 8 cards
