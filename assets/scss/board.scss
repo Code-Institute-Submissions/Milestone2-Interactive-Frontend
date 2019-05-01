@@ -58,6 +58,14 @@ body {
     flex-wrap: wrap;
 }
 
+.btn {
+    padding: 0;
+}
+
+#saveBtn {
+    padding: 5px;
+}
+
 .howToBtn {
     width: 48%;
     @extend %greenBorder;
