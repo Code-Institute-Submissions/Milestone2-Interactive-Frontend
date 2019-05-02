@@ -350,7 +350,8 @@ li {
   opacity: 0.0;
   z-index: -1;
   transform: translateZ(-10px);
-  transition: opacity 1s ease-in-out; }
+  transition: opacity 1s ease-in-out;
+  text-align: center; }
 
 .card1 {
   background-image: url(../images/cards/card1.jpg);

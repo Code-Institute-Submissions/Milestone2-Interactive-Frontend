@@ -382,7 +382,10 @@ li {
     z-index: -1;
     transform: translateZ(-10px);
     transition: opacity 1s ease-in-out;
-} // generating card classes
+    text-align: center;
+} 
+
+// generating card classes
 @for $i from 1 through 18 {
     .card#{$i} {
         background-image: url(../images/cards/card#{$i}.jpg);

@@ -20,7 +20,6 @@ $(document).ready(function() {
 
     // implementations of functions
 
-
     // function to check for matching cards
     function checkForMatch() {
         if ($('.taken .back').length == 2) {
@@ -122,7 +121,7 @@ $(document).ready(function() {
             $('.popupGameCompleted').html(namePlayer2 + " has won!"); // popup html text is set accordingly
         }
         else if (scorePlayer1 == scorePlayer2) { // if equal score, popup html text is set accordingly 
-            $('.popupGameCompleted').html("Both players same points!");
+            $('.popupGameCompleted').html(namePlayer1 + " and " + namePlayer2 + " have same points!");
         }
         $('.popupGameCompleted').css("transform", "translateZ(150px)").css("z-index", "100").css("opacity", "1.0");
         changeOpeningPlayer(ThisGameOpenedBy); // call of function to change opening player for next game
