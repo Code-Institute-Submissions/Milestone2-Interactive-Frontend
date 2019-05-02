@@ -23,7 +23,7 @@ $(document).ready(function() {
     // function to check for matching cards
     function checkForMatch() {
         if ($('.taken .back').length == 2) {
-            $(document).off('touchstart click', '.cardshell'); // to make playfield not react to clicks / touches while stopped
+            $(document).off('click', '.cardshell'); // to make playfield not react to clicks / touches while stopped
             let takenCard1 = $('.taken .back').eq(0); //extracting element with index '0' from $('.taken .back')
             let takenCard2 = $('.taken .back').eq(1); //extracting element with index '1' from $('.taken .back')
             let classesCard1 = takenCard1.attr("class"); // make string of assigned classes card1 to compare
@@ -58,7 +58,7 @@ $(document).ready(function() {
                         else { // otherwise continue to inform who is next
                             whoIsNext(); //popup who is next
                             setTimeout(function() { //re-enabling clicks on cards
-                                $(document).on('touchstart click', '.cardshell', function() { //re-enable clicks on cards
+                                $(document).on('click', '.cardshell', function() { //re-enable clicks on cards
                                     $(this).addClass("showMe taken");
                                     checkForMatch();
                                 });
@@ -78,7 +78,7 @@ $(document).ready(function() {
                             console.log('current:', currentPlayer); // diag
                             whoIsNext(); // show who is next, then...
                             setTimeout(function() { // wait some time until who is next pop up is vanished
-                                $(document).on('touchstart click', '.cardshell', function() { //re-enable clicks on cards
+                                $(document).on('click', '.cardshell', function() { //re-enable clicks on cards
                                     $(this).addClass("showMe taken"); // each click turns the card and marks it as taken
                                     checkForMatch(); // checkForMatch is called after every click
                                 });
@@ -128,6 +128,7 @@ $(document).ready(function() {
         setTimeout(function() {
             $('.popupGameCompleted').css("opacity", "0.0");
             makeBtnActiveExceptStart();
+            firstAttemptDone=0;
             console.log('by:', ThisGameOpenedBy); // diag
             setTimeout(function() {
                 $('.popupGameCompleted').css("transform", "translateZ(-10px)").css("z-index", "-100");
@@ -246,15 +247,15 @@ $(document).ready(function() {
         // apply btnlocked class to all buttons except 'how to' and 'stopbutton'
         // also remove the click event to make save button inactive.
         $(".enterPlayersBtn").addClass("btnlocked").attr("data-toggle", "");
-        $(".field8Btn").addClass("btnlocked").off('touchstart click'); // set dimmed state and remove click event
-        $(".field16Btn").addClass("btnlocked").off('touchstart click'); // set dimmed state and remove click event
-        $(".field36Btn").addClass("btnlocked").off('touchstart click'); // set dimmed state and remove click event
-        $(".startBtn").addClass("btnlocked").off('touchstart click'); // set dimmed state and remove click event
+        $(".field8Btn").addClass("btnlocked").off('click'); // set dimmed state and remove click event
+        $(".field16Btn").addClass("btnlocked").off('click'); // set dimmed state and remove click event
+        $(".field36Btn").addClass("btnlocked").off('click'); // set dimmed state and remove click event
+        $(".startBtn").addClass("btnlocked").off('click'); // set dimmed state and remove click event
         // stopBtn becomes active (unlocked) and needs to have on click definition. Due to timing issues this is inside a TimeOut function.
         setTimeout(function() {
-            $(".stopBtn").removeClass("btnlocked").on('touchstart click', function() { // stopbutton will become visually active and has click action defined
+            $(".stopBtn").removeClass("btnlocked").on('click', function() { // stopbutton will become visually active and has click action defined
                 makeBtnActive(); // triggering function to make buttons active again
-                $(document).off('touchstart click', '.cardshell'); // deactivates playfield by removing click event listener while stopped
+                $(document).off('click', '.cardshell'); // deactivates playfield by removing click event listener while stopped
             });
         }, 500);
     }
@@ -265,21 +266,21 @@ $(document).ready(function() {
         $(".enterPlayersBtn").removeClass("btnlocked").attr("data-toggle", "modal"); // make register button work again by adding back data-toggle=modal
 
         // ... for 8-card playfield button
-        $(".field8Btn").removeClass("btnlocked").on('touchstart click', function() {
+        $(".field8Btn").removeClass("btnlocked").on('click', function() {
             make_field8BtnVisActive();
             fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
             resetCounters();
         });
 
         // ... for 16-card playfield button
-        $(".field16Btn").removeClass("btnlocked").on('touchstart click', function() {
+        $(".field16Btn").removeClass("btnlocked").on('click', function() {
             make_field16BtnVisActive();
             fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
             resetCounters();
         });
 
         // ... for 36-card playfield button
-        $(".field36Btn").removeClass("btnlocked").on('touchstart click', function() {
+        $(".field36Btn").removeClass("btnlocked").on('click', function() {
             make_field36BtnVisActive();
             fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
             resetCounters();
@@ -287,10 +288,10 @@ $(document).ready(function() {
 
         // start button
         setTimeout(function() {
-            $(".startBtn").removeClass("btnlocked").on('touchstart click', function() {
+            $(".startBtn").removeClass("btnlocked").on('click', function() {
                 makeBtnInactive(); // calling function to make buttons visually and haptically inactive
                 whoIsNext();
-                $(document).on('touchstart click', '.cardshell', function() {
+                $(document).on('click', '.cardshell', function() {
                     $(this).addClass("showMe taken");
                     checkForMatch();
                 });
@@ -298,7 +299,7 @@ $(document).ready(function() {
         }, 500);
 
         // stop button visually and technically deactivated
-        $(".stopBtn").addClass("btnlocked").off('touchstart click'); // stop button functionality removed and dimmed state when game stopped.
+        $(".stopBtn").addClass("btnlocked").off('click'); // stop button functionality removed and dimmed state when game stopped.
     }
 
     // function for removing dimmed button state and redefinition of on-click events on GAMEEND
@@ -307,15 +308,15 @@ $(document).ready(function() {
         $(".enterPlayersBtn").removeClass("btnlocked").attr("data-toggle", "modal"); // make register button work again by adding back data-toggle=modal
 
         // ... for 8-card playfield button
-        $(".field8Btn").removeClass("btnlocked").on('touchstart click', function() {
+        $(".field8Btn").removeClass("btnlocked").on('click', function() {
             make_field8BtnVisActive();
             fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
             resetCounters();
             // start button reimplementation
-            $(".startBtn").removeClass("btnlocked").on('touchstart click', function() {
+            $(".startBtn").removeClass("btnlocked").on('click', function() {
                 makeBtnInactive(); // calling function to make buttons visually and haptically inactive
                 whoIsNext();
-                $(document).on('touchstart click', '.cardshell', function() {
+                $(document).on('click', '.cardshell', function() {
                     $(this).addClass("showMe taken");
                     checkForMatch();
                 });
@@ -323,15 +324,15 @@ $(document).ready(function() {
         });
 
         // ... for 16-card playfield button
-        $(".field16Btn").removeClass("btnlocked").on('touchstart click', function() {
+        $(".field16Btn").removeClass("btnlocked").on('click', function() {
             make_field16BtnVisActive();
             fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
             resetCounters();
             // start button reimplementation
-            $(".startBtn").removeClass("btnlocked").on('touchstart click', function() {
+            $(".startBtn").removeClass("btnlocked").on('click', function() {
                 makeBtnInactive(); // calling function to make buttons visually and physically inactive
                 whoIsNext();
-                $(document).on('touchstart click', '.cardshell', function() {
+                $(document).on('click', '.cardshell', function() {
                     $(this).addClass("showMe taken");
                     checkForMatch();
                 });
@@ -339,15 +340,15 @@ $(document).ready(function() {
         });
 
         // ... for 36-card playfield button
-        $(".field36Btn").removeClass("btnlocked").on('touchstart click', function() {
+        $(".field36Btn").removeClass("btnlocked").on('click', function() {
             make_field36BtnVisActive();
             fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
             resetCounters();
             // start button reimplementation
-            $(".startBtn").removeClass("btnlocked").on('touchstart click', function() {
+            $(".startBtn").removeClass("btnlocked").on('click', function() {
                 makeBtnInactive(); // calling function to make buttons visually and physically inactive
                 whoIsNext();
-                $(document).on('touchstart click', '.cardshell', function() {
+                $(document).on('click', '.cardshell', function() {
                     $(this).addClass("showMe taken");
                     checkForMatch();
                 });
@@ -355,7 +356,7 @@ $(document).ready(function() {
         });
 
         // stop button visually and technically deactivated
-        $(".stopBtn").addClass("btnlocked").off('touchstart click'); // stop button functionality removed and dimmed state when game stopped.
+        $(".stopBtn").addClass("btnlocked").off('click'); // stop button functionality removed and dimmed state when game stopped.
     }
 
     // function for generating playfield
@@ -431,7 +432,7 @@ $(document).ready(function() {
     // code executed on startup:
     fieldInit(9); // generating playfield of 3x3 per default on startup
     make_field8BtnVisActive(); // make 8-card button visually active
-    resetCounters();
+    // resetCounters();
     $('#enterPlayersModal').modal('show'); // registration modal on startup
     console.log('current:', currentPlayer); // diag
     console.log('by:', ThisGameOpenedBy); // diag
@@ -439,38 +440,38 @@ $(document).ready(function() {
 
     // click actions for ...
     // ... for 8-card playfield button
-    $(".field8Btn").on('touchstart click', function() {
+    $(".field8Btn").on('click', function() {
         make_field8BtnVisActive();
         fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
         resetCounters();
     });
 
     // ... for 16-card playfield button
-    $(".field16Btn").on('touchstart click', function() {
+    $(".field16Btn").on('click', function() {
         make_field16BtnVisActive();
         fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
         resetCounters();
     });
 
     // ... for 36-card playfield button
-    $(".field36Btn").on('touchstart click', function() {
+    $(".field36Btn").on('click', function() {
         make_field36BtnVisActive();
         fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
         resetCounters();
     });
 
     // ... for start button
-    $(".startBtn").on('touchstart click', function() {
+    $(".startBtn").on('click', function() {
         makeBtnInactive(); // calling function to make buttons visually and haptically inactive
         whoIsNext();
-        $(document).on('touchstart click', '.cardshell', function() { //enabling playfield by defining click rule to make them react.
+        $(document).on('click', '.cardshell', function() { //enabling playfield by defining click rule to make them react.
             $(this).addClass("showMe taken");
             checkForMatch();
         });
     });
 
     // ... for save button button on registration modal
-    $('#saveBtn').on('touchstart click', function() {
+    $('#saveBtn').on('click', function() {
 
         //should either field have string length of 0 then user will be informed with alert popup
         if ($('#nameFieldPlayer1Form').val().length == 0 || $('#nameFieldPlayer2Form').val().length == 0) {
