@@ -74,12 +74,12 @@ $(document).ready(function() {
     //function to assign player's color on card and increase points
     function increasePoints() {
         if (currentPlayer == "Player1") { // if match is for Player1, then assign players checkmark
-            $('.taken .back').append("<div class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign'></div>"); // append a div to taken cards on backside with players color
+            $('.taken .back').append("<div class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign vhalign'></div>"); // append a div to taken cards on backside with players color
             scorePlayer1++; // increasing score
             $('.scorePlayer1Field').html(scorePlayer1); // writing score to related HTML field
         }
         else if (currentPlayer == "Player2") { // if match is for Player2, then assign players checkmark
-            $('.taken .back').append("<div class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign'></div>"); // append a div to taken cards on backside with players color
+            $('.taken .back').append("<div class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign vhalign'></div>"); // append a div to taken cards on backside with players color
             scorePlayer2++; // increasing score
             $('.scorePlayer2Field').html(scorePlayer2); // writing score to related HTML field
         }
@@ -151,7 +151,7 @@ $(document).ready(function() {
 
     // function to set the activePlayer
     function setActivePlayer(str) {
-        let player = str
+        let player = str;
         // moving up popup on z axis and start transition to opacity 1
         $('.popupNext').css("transform", "translateZ(150px)");
         $('.popupNext').css("z-index", "150");
@@ -301,8 +301,8 @@ $(document).ready(function() {
             if (playFieldSize == 36) {
                 $(".cardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
                 $(".dummycardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
-                $('.checkmarkPlayer1Big').css('font-size', '2.5em'); // set size of players logo accordingly to card size
-                $('.checkmarkPlayer2Big').css('font-size', '2.5em'); // set size of players logo accordingly to card size
+                $('.checkmarkPlayer1Big').css('font-size', '2.4em'); // set size of players logo accordingly to card size
+                $('.checkmarkPlayer2Big').css('font-size', '2.4em'); // set size of players logo accordingly to card size
             }
             prepAndDeliverCardArray(playFieldSize);
         }, 800);
@@ -324,7 +324,7 @@ $(document).ready(function() {
             currentCardArray.splice(playFieldSize2, 20); // reduce working array to first 16 cards and cut 20 cards
         }
 
-        currentCardArray.sort(function(a, b) { return 0.5 - Math.random() }); // shuffle of card class array
+        currentCardArray.sort(function(a, b) { return 0.5 - Math.random() }); // shuffle class array
 
         for (let i = 0; i < playFieldSize2; i++) { // assigning shuffeled card class array 
             $(playFieldCardArray[i]).addClass(currentCardArray[i]); // each backside of card gets a class added of shuffeled card array

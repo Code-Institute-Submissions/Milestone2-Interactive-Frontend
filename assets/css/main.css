@@ -185,7 +185,7 @@ body {
 .playStatsWrapper {
   width: 100%;
   margin-top: 3px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
   border-radius: 15px;
   overflow: hidden; }
 
@@ -237,13 +237,26 @@ body {
 .checkmarkPlayer1Big {
   color: lightgreen;
   font-size: 4em;
-  font-weight: 300; }
+  font-weight: 300;
+  opacity: 0.0;
+  animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
 
 .checkmarkPlayer2Big {
   color: #0066cc;
   font-size: 4em;
-  font-weight: 300; }
+  font-weight: 300;
+  opacity: 0.0;
+  animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
 
+@keyframes bubble {
+  0% {
+    opacity: 0.0;
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    opacity: 1.0;
+    transform: scale(1); } }
 .fieldWrapper {
   margin-top: 2px;
   margin-bottom: 2px;
@@ -484,7 +497,7 @@ li {
   .playStatsWrapper {
     width: 100%;
     margin-top: 3px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     border-radius: 15px;
     overflow: hidden; }
 
@@ -579,7 +592,7 @@ li {
   .playStatsWrapper {
     width: 100%;
     margin-top: 3px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     border-radius: 15px;
     overflow: hidden; }
 
@@ -875,6 +888,20 @@ li {
     background-color: grey;
     border-left: 1px solid #34393F; }
 
+  .checkmarkPlayer1Big {
+    color: lightgreen;
+    font-size: 4.8em;
+    font-weight: 300;
+    opacity: 0.0;
+    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
+
+  .checkmarkPlayer2Big {
+    color: #0066cc;
+    font-size: 4.8em;
+    font-weight: 300;
+    opacity: 0.0;
+    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
+
   .formWrapper {
     width: 80%; }
 
@@ -1054,6 +1081,20 @@ li {
     background-color: grey;
     border-left: 1px solid #34393F; }
 
+  .checkmarkPlayer1Big {
+    color: lightgreen;
+    font-size: 4.8em;
+    font-weight: 300;
+    opacity: 0.0;
+    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
+
+  .checkmarkPlayer2Big {
+    color: #0066cc;
+    font-size: 4.8em;
+    font-weight: 300;
+    opacity: 0.0;
+    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
+
   .formWrapper {
     width: 80%; }
 
@@ -1150,6 +1191,20 @@ li {
     color: beige;
     background-color: grey;
     border-left: 1px solid #34393F; }
+
+  .checkmarkPlayer1Big {
+    color: lightgreen;
+    font-size: 4.8em;
+    font-weight: 300;
+    opacity: 0.0;
+    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
+
+  .checkmarkPlayer2Big {
+    color: #0066cc;
+    font-size: 4.8em;
+    font-weight: 300;
+    opacity: 0.0;
+    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
 
   .scorePlayer1Field,
   .scorePlayer2Field {
@@ -1252,6 +1307,20 @@ li {
     color: beige;
     background-color: grey;
     border-left: 1px solid #34393F; }
+
+  .checkmarkPlayer1Big {
+    color: lightgreen;
+    font-size: 4.8em;
+    font-weight: 300;
+    opacity: 0.0;
+    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
+
+  .checkmarkPlayer2Big {
+    color: #0066cc;
+    font-size: 4.8em;
+    font-weight: 300;
+    opacity: 0.0;
+    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
 
   .scorePlayer1Field,
   .scorePlayer2Field {
