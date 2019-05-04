@@ -141,6 +141,9 @@ body {
 #saveBtn {
   padding: 5px; }
 
+#gotItBtn {
+  padding: 5px; }
+
 .howToBtn {
   width: 48%;
   background-color: #FFFF00;
@@ -637,8 +640,8 @@ li {
     /*    outer frame, wrapper of board */
     width: 98vw;
     height: 96vh;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-top: 2px;
+    margin-bottom: 2px; }
 
   .playfield {
     display: flex;
@@ -723,7 +726,7 @@ li {
     /*    outer frame, wrapper of board */
     width: 98vw;
     height: 96vh;
-    margin-top: 5px;
+    margin-top: 2px;
     margin-bottom: 2px; }
 
   .playfield {
@@ -817,8 +820,8 @@ li {
     /*    outer frame, wrapper of board */
     width: 98vw;
     height: 98vh;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-top: 2px;
+    margin-bottom: 2px; }
 
   .playfield {
     display: flex;
@@ -927,7 +930,7 @@ li {
     /*    outer frame, wrapper of board */
     width: 98vw;
     height: 98vh;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-bottom: 2px; }
 
   .playfield {
@@ -1012,8 +1015,8 @@ li {
     /*    outer frame, wrapper of board */
     width: 98vw;
     height: 98vh;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-top: 2px;
+    margin-bottom: 2px; }
 
   .playfield {
     display: flex;
@@ -1115,8 +1118,8 @@ li {
     /*    outer frame, wrapper of board */
     width: 98vw;
     height: 98vh;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-top: 2px;
+    margin-bottom: 2px; }
 
   .playfield {
     display: flex;
@@ -1231,8 +1234,8 @@ li {
     /*    outer frame, wrapper of board */
     width: 98vw;
     height: 98vh;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-top: 2px;
+    margin-bottom: 2px; }
 
   .playfield {
     display: flex;
