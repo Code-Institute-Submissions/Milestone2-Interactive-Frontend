@@ -229,7 +229,7 @@ $(document).ready(function() {
         $(".startBtn").addClass("btnlocked"); // set dimmed state
         btnActive = false;
         startBtnActive = false;
-        // stopBtn becomes active (unlocked) and needs to have on click definition. Due to timing issues this is inside a TimeOut function.
+        // stopBtn becomes active
         setTimeout(function() {
             $(".stopBtn").removeClass("btnlocked"); // stopbutton will become visually active
             stopBtnActive = true;
@@ -347,7 +347,7 @@ $(document).ready(function() {
 
     // click actions for ...
     // ... for 8-card playfield button
-    $(".field8Btn").on('click', function() {
+    $(".field8Btn").on('touchstart click', function() {
         if (btnActive == true) {
             make_field8BtnVisActive();
             fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
@@ -358,7 +358,7 @@ $(document).ready(function() {
     });
 
     // ... for 16-card playfield button
-    $(".field16Btn").on('click', function() {
+    $(".field16Btn").on('touchstart click', function() {
         if (btnActive == true) {
             make_field16BtnVisActive();
             fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
@@ -369,7 +369,7 @@ $(document).ready(function() {
     });
 
     // ... for 36-card playfield button
-    $(".field36Btn").on('click', function() {
+    $(".field36Btn").on('touchstart click', function() {
         if (btnActive == true) {
             make_field36BtnVisActive();
             fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
@@ -379,7 +379,8 @@ $(document).ready(function() {
         }
     });
 
-    $(".startBtn").on('click', function() {
+    // ... start button
+    $(".startBtn").on('touchstart click', function() {
         if (startBtnActive == true) {
             makeBtnInactive(); // calling function to make buttons visually and haptically inactive
             whoIsNext();
@@ -389,13 +390,15 @@ $(document).ready(function() {
         }
     });
 
-    $(".stopBtn").on('click', function() { // stopbutton will become visually active and has click action defined
+    // ... stop button
+    $(".stopBtn").on('touchstart click', function() { // stopbutton will become visually active and has click action defined
         if (stopBtnActive == true) {
             makeBtnActive(); // triggering function to make buttons active again
         }
     });
 
-    $(document).on('click', '.cardshell', function() {
+    // ... cards on playfield
+    $(document).on('touchstart click', '.cardshell', function() {
         if (fieldActive == true) {
             $(this).addClass("showMe taken");
             checkForMatch();
@@ -403,7 +406,7 @@ $(document).ready(function() {
     });
 
     // ... for save button button on registration modal
-    $('#saveBtn').on('click', function() {
+    $('#saveBtn').on('touchstart click', function() {
 
         //should either field have string length of 0 then user will be informed with alert popup
         if ($('#nameFieldPlayer1Form').val().length == 0 || $('#nameFieldPlayer2Form').val().length == 0) {
