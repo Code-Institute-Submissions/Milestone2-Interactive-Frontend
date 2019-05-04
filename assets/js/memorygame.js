@@ -48,7 +48,7 @@ $(document).ready(function() {
                             whoIsNext(); //popup who is next
                             setTimeout(function() { // make playfield active
                                 fieldActive = true;
-                            }, 1300);
+                            }, 1000);
                         }
                     }, 1500);
                 }, 500);
@@ -63,7 +63,7 @@ $(document).ready(function() {
                             whoIsNext(); // show who is next, then...
                             setTimeout(function() { // wait some time until who is next pop up is vanished
                                 fieldActive = true;
-                            }, 1300);
+                            }, 1000);
                         }, 500); // makes whoIsNext checkup little more delayed 
                     }, 1500);
                 }, 500); // wait until cards have fully turned 
