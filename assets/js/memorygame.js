@@ -301,8 +301,8 @@ $(document).ready(function() {
             if (playFieldSize == 36) {
                 $(".cardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
                 $(".dummycardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
-                $('.checkmarkPlayer1Big').css('font-size', '2.4em'); // set size of players logo accordingly to card size
-                $('.checkmarkPlayer2Big').css('font-size', '2.4em'); // set size of players logo accordingly to card size
+                $('.checkmarkPlayer1Big').css('font-size', '2.2em'); // set size of players logo accordingly to card size
+                $('.checkmarkPlayer2Big').css('font-size', '2.2em'); // set size of players logo accordingly to card size
             }
             prepAndDeliverCardArray(playFieldSize);
         }, 800);
