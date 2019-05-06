@@ -7,6 +7,13 @@
     flex-wrap: wrap;
 }
 
+.halign {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
 %vhalign {
     display: flex;
     justify-content: center;

@@ -153,8 +153,8 @@ $(document).ready(function() {
     function setActivePlayer(str) {
         let player = str;
         // moving up popup on z axis and start transition to opacity 1
-        $('.popupNext').css("transform", "translateZ(150px)");
-        $('.popupNext').css("z-index", "150");
+        $('.popupNext').css("transform", "translateZ(400px)");
+        $('.popupNext').css("z-index", "400");
         if (player == "Player1") {
             $('.playerStats1').css('background-color', 'red'); // set to red when active
             $('.playerStats2').css('background-color', 'grey'); // set other player to grey
@@ -177,7 +177,7 @@ $(document).ready(function() {
 
     // function to provide popup 'match'
     function popupMatch() {
-        $('.popupMatch').css("transform", "translateZ(150px)").css("z-index", "150").css("opacity", "1.0");
+        $('.popupMatch').css("transform", "translateZ(400px)").css("z-index", "400").css("opacity", "1.0");
         setTimeout(function() {
             $('.popupMatch').css("opacity", "0.0");
         }, 1200);
@@ -188,7 +188,7 @@ $(document).ready(function() {
 
     // function to provide popup 'no match'
     function popupNoMatch() {
-        $('.popupNoMatch').css("transform", "translateZ(150px)").css("z-index", "150").css("opacity", "1.0");
+        $('.popupNoMatch').css("transform", "translateZ(400px)").css("z-index", "400").css("opacity", "1.0");
         setTimeout(function() {
             $('.popupNoMatch').css("opacity", "0.0");
         }, 1200);

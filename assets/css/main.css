@@ -5,7 +5,7 @@ body {
   font-size: 1.8em;
   font-family: "Dosis", sans-serif;
   margin-top: 2px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   margin-left: 0px;
   margin-right: 0px;
   text-align: center; }
@@ -71,6 +71,11 @@ body {
   align-items: center;
   flex-wrap: wrap; }
 
+.halign {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
 .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn, .checkmarkPlayer1Big, .checkmarkPlayer2Big {
   display: flex;
   justify-content: center;
@@ -95,7 +100,7 @@ body {
 /*playfield structures*/
 body {
   color: beige;
-  height: 89vh; }
+  height: 95vh; }
 
 .howToBtn, .enterPlayersBtn, .field8Btn, .field16Btn, .field36Btn, .startBtn, .stopBtn {
   border: 2px solid lightgreen;
@@ -110,14 +115,20 @@ body {
 .outershell {
   /*    outer frame, wrapper of board */
   width: 98vw;
-  height: 88vh;
+  height: 90vh;
   margin-top: 2px;
   margin-bottom: 2px; }
+
+.banner {
+  width: 98%; }
 
 .controlPanelWrapper {
   /*wrapper of  controlpanel*/
   margin-bottom: 2px;
-  width: 100%; }
+  width: 96%; }
+
+.controlPanelRowHeight {
+  height: 23vh; }
 
 .buttonfield {
   padding-top: 8px;
@@ -194,33 +205,39 @@ body {
 
 .playerStats1 {
   width: 50%;
-  height: 27px;
+  height: 30px;
   padding: 4px;
   background-color: grey;
   border-right: 1px solid #34393F; }
 
 .playerStats2 {
   width: 50%;
-  height: 27px;
+  height: 30px;
   padding: 4px;
   background-color: grey;
   border-left: 1px solid #34393F; }
 
 .headline {
-  width: 100%;
+  width: 96%;
   font-size: 2.3em;
   font-family: "Dosis", sans-serif;
   margin-top: 2px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   margin-left: 0px;
   margin-right: 0px;
   text-align: center; }
 
 .DosisFont {
   font-family: "Dosis", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
   color: beige; }
+
+.DosisFontHowTo {
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black; }
 
 .scorePlayer1Field,
 .scorePlayer2Field {
@@ -448,7 +465,7 @@ li {
 
   .outershell {
     width: 98vw;
-    height: 88vh;
+    height: 89vh;
     margin-top: 2px;
     margin-bottom: 2px; }
 
@@ -475,7 +492,10 @@ li {
   .controlPanelWrapper {
     /*wrapper of  controlpanel*/
     margin-bottom: 2px;
-    width: 100%; }
+    width: 96%; }
+
+  .controlPanelRowHeight {
+    height: 22vh; }
 
   .buttonfield {
     padding-top: 8px;
@@ -522,20 +542,26 @@ li {
     width: 80%; }
 
   .headline {
-    width: 100%;
+    width: 96%;
     font-size: 2.5em;
     font-family: "Dosis", sans-serif;
     margin-top: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     margin-left: 0px;
     margin-right: 0px;
     text-align: center; }
 
   .DosisFont {
     font-family: "Dosis", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
-    color: beige; } }
+    color: beige; }
+
+  .DosisFontHowTo {
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: black; } }
 @media screen and (min-width: 414px) and (orientation: portrait) {
   body {
     color: beige;
@@ -546,6 +572,9 @@ li {
     height: 88vh;
     margin-top: 2px;
     margin-bottom: 2px; }
+
+  .banner {
+    width: 98%; }
 
   .playfield {
     display: flex;
@@ -570,7 +599,12 @@ li {
   .controlPanelWrapper {
     /*wrapper of  controlpanel*/
     margin-bottom: 2px;
-    width: 100%; }
+    width: 96%; }
+
+  .controlPanelRowHeight {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 21vh; }
 
   .buttonfield {
     padding-top: 8px;
@@ -617,7 +651,7 @@ li {
     width: 80%; }
 
   .headline {
-    width: 100%;
+    width: 96%;
     font-size: 2.5em;
     font-family: "Dosis", sans-serif;
     margin-top: 2px;
@@ -628,10 +662,16 @@ li {
 
   .DosisFont {
     font-family: "Dosis", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
-    color: beige; } }
-@media screen and (min-width: 736px) and (orientation: landscape) {
+    color: beige; }
+
+  .DosisFontHowTo {
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: black; } }
+@media screen and (min-width: 568px) and (orientation: landscape) {
   body {
     color: beige;
     height: 100vh; }
@@ -643,34 +683,43 @@ li {
     margin-top: 2px;
     margin-bottom: 2px; }
 
+  .banner {
+    width: 98%; }
+
+  .controlPanelWrapper {
+    /*wrapper of  controlpanel*/
+    margin-bottom: 2px;
+    width: 100%; }
+
+  .controlPanelRowHeight {
+    width: 45vw;
+    height: 78vh; }
+
   .playfield {
     display: flex;
     justify-content: space-around;
     align-content: space-around;
     flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
-    width: 42vh;
-    height: 42vh;
+    width: 70vh;
+    height: 70vh;
     margin-top: 2px;
     margin-bottom: 2px; }
 
   .playfieldRowHeight {
-    height: 42vh; }
+    width: 51vw;
+    height: 74vh; }
 
   .fieldWrapper {
-    margin-top: 14px;
+    margin-top: 2px;
     margin-bottom: 2px;
-    width: 44vh; }
-
-  .controlPanelWrapper {
-    /*wrapper of  controlpanel*/
-    margin-bottom: 2px;
-    width: 60%; }
+    width: 72vh;
+    height: 72vh; }
 
   .buttonfield {
     padding: 5px;
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     align-content: space-around;
@@ -685,7 +734,7 @@ li {
     margin-bottom: 0; }
 
   .playStatsWrapper {
-    width: 60%;
+    width: 100%;
     margin-top: 2px;
     margin-bottom: 2px;
     border-radius: 15px;
@@ -693,14 +742,14 @@ li {
 
   .playerStats1 {
     width: 50%;
-    height: 25px;
+    height: 35px;
     padding: 4px;
     background-color: grey;
     border-right: 1px solid #34393F; }
 
   .playerStats2 {
     width: 50%;
-    height: 25px;
+    height: 35px;
     padding: 4px;
     background-color: grey;
     border-left: 1px solid #34393F; }
@@ -709,14 +758,258 @@ li {
     width: 80%; }
 
   .headline {
-    width: 60%;
+    width: 80%;
     font-size: 2.5em;
     font-family: "Dosis", sans-serif;
     margin-top: 2px;
     margin-bottom: 5px;
     margin-left: 0px;
     margin-right: 0px;
-    text-align: center; } }
+    text-align: center; }
+
+  .DosisFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: beige; }
+
+  .DosisFontHowTo {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: black; }
+
+  .playerStatsFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: beige; } }
+@media screen and (min-width: 640px) and (orientation: landscape) {
+  body {
+    color: beige;
+    height: 100vh; }
+
+  .outershell {
+    /*    outer frame, wrapper of board */
+    width: 98vw;
+    height: 96vh;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+
+  .banner {
+    width: 98%; }
+
+  .controlPanelWrapper {
+    /*wrapper of  controlpanel*/
+    margin-bottom: 2px;
+    width: 98%; }
+
+  .controlPanelRowHeight {
+    width: 44vw;
+    height: 78vh; }
+
+  .playfield {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 74vh;
+    height: 74vh;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+
+  .playfieldRowHeight {
+    width: 53vw;
+    height: 78vh; }
+
+  .fieldWrapper {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 76vh;
+    height: 76vh; }
+
+  .buttonfield {
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: beige; }
+
+  .modal-body {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+
+  .playStatsWrapper {
+    width: 98%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 15px;
+    overflow: hidden; }
+
+  .playerStats1 {
+    width: 50%;
+    height: 35px;
+    padding: 4px;
+    background-color: grey;
+    border-right: 1px solid #34393F; }
+
+  .playerStats2 {
+    width: 50%;
+    height: 35px;
+    padding: 4px;
+    background-color: grey;
+    border-left: 1px solid #34393F; }
+
+  .formWrapper {
+    width: 80%; }
+
+  .headline {
+    width: 80%;
+    font-size: 2.5em;
+    font-family: "Dosis", sans-serif;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center; }
+
+  .DosisFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: beige; }
+
+  .DosisFontHowTo {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: black; }
+
+  .playerStatsFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: beige; } }
+@media screen and (min-width: 736px) and (orientation: landscape) {
+  body {
+    color: beige;
+    height: 100vh; }
+
+  .outershell {
+    /*    outer frame, wrapper of board */
+    width: 98vw;
+    height: 96vh;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+
+  .banner {
+    width: 98%; }
+
+  .controlPanelWrapper {
+    /*wrapper of  controlpanel*/
+    margin-bottom: 2px;
+    width: 98%; }
+
+  .controlPanelRowHeight {
+    width: 37vw;
+    height: 78vh; }
+
+  .playfield {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 74vh;
+    height: 74vh;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+
+  .playfieldRowHeight {
+    width: 55vw;
+    height: 78vh; }
+
+  .fieldWrapper {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 76vh;
+    height: 76vh; }
+
+  .buttonfield {
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: beige; }
+
+  .modal-body {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+
+  .playStatsWrapper {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 15px;
+    overflow: hidden; }
+
+  .playerStats1 {
+    width: 50%;
+    height: 35px;
+    padding: 4px;
+    background-color: grey;
+    border-right: 1px solid #34393F; }
+
+  .playerStats2 {
+    width: 50%;
+    height: 35px;
+    padding: 4px;
+    background-color: grey;
+    border-left: 1px solid #34393F; }
+
+  .formWrapper {
+    width: 80%; }
+
+  .headline {
+    width: 80%;
+    font-size: 2.5em;
+    font-family: "Dosis", sans-serif;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center; }
+
+  .DosisFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: beige; }
+
+  .DosisFontHowTo {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: black; }
+
+  .playerStatsFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: beige; } }
 @media screen and (min-width: 768px) and (orientation: portrait) {
   body {
     color: beige;
@@ -735,24 +1028,27 @@ li {
     align-content: space-around;
     flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
-    width: 60vw;
-    height: 60vw;
+    width: 81vw;
+    height: 81vw;
     margin-top: 2px;
     margin-bottom: 2px; }
 
   .playfieldRowHeight {
-    height: 88vh; }
+    height: 85vw; }
 
   .fieldWrapper {
     margin-top: 2px;
     margin-bottom: 2px;
-    width: 62vw;
-    height: 62vw; }
+    width: 83vw;
+    height: 83vw; }
 
   .controlPanelWrapper {
     /*wrapper of  controlpanel*/
     margin-bottom: 5px;
     width: 100%; }
+
+  .controlPanelRowHeight {
+    height: 17vh; }
 
   .buttonfield {
     padding-top: 8px;
@@ -775,7 +1071,7 @@ li {
     margin-bottom: 0; }
 
   .playStatsWrapper {
-    width: 98%;
+    width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 15px;
@@ -803,14 +1099,20 @@ li {
     max-width: 310px;
     font-size: 2.5em;
     font-family: "Dosis", sans-serif;
-    margin-top: 5px;
+    margin-top: 2px;
     text-align: center; }
 
   .DosisFont {
     font-family: "Dosis", sans-serif;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 300;
-    color: beige; } }
+    color: beige; }
+
+  .DosisFontHowTo {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: black; } }
 @media screen and (min-width: 768px) and (orientation: landscape) {
   body {
     color: beige;
@@ -819,9 +1121,21 @@ li {
   .outershell {
     /*    outer frame, wrapper of board */
     width: 98vw;
-    height: 98vh;
+    height: 96vh;
     margin-top: 2px;
     margin-bottom: 2px; }
+
+  .banner {
+    width: 98%; }
+
+  .controlPanelWrapper {
+    /*wrapper of  controlpanel*/
+    margin-bottom: 2px;
+    width: 98%; }
+
+  .controlPanelRowHeight {
+    width: 37vw;
+    height: 78vh; }
 
   .playfield {
     display: flex;
@@ -829,32 +1143,23 @@ li {
     align-content: space-around;
     flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
-    width: 80vh;
-    height: 80vh;
+    width: 74vh;
+    height: 74vh;
     margin-top: 2px;
     margin-bottom: 2px; }
 
   .playfieldRowHeight {
-    height: 84vh;
-    margin: 0;
-    padding: 0; }
+    width: 55vw;
+    height: 78vh; }
 
   .fieldWrapper {
     margin-top: 2px;
     margin-bottom: 2px;
-    width: 82vh;
-    height: 82vh; }
-
-  .controlPanelWrapper {
-    /*wrapper of  controlpanel*/
-    margin-bottom: 5px;
-    width: 100%; }
+    width: 76vh;
+    height: 76vh; }
 
   .buttonfield {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px;
     width: 100%;
     height: 150px;
     display: flex;
@@ -862,7 +1167,7 @@ li {
     align-content: space-around;
     flex-wrap: wrap;
     font-family: "Dosis", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     color: beige; }
 
@@ -872,54 +1177,48 @@ li {
 
   .playStatsWrapper {
     width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     border-radius: 15px;
     overflow: hidden; }
 
   .playerStats1 {
     width: 50%;
-    height: 30px;
+    height: 35px;
     padding: 4px;
     background-color: grey;
     border-right: 1px solid #34393F; }
 
   .playerStats2 {
     width: 50%;
-    height: 30px;
+    height: 35px;
     padding: 4px;
     background-color: grey;
     border-left: 1px solid #34393F; }
-
-  .checkmarkPlayer1Big {
-    color: lightgreen;
-    font-size: 4.8em;
-    font-weight: 300;
-    opacity: 0.0;
-    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
-
-  .checkmarkPlayer2Big {
-    color: #0066cc;
-    font-size: 4.8em;
-    font-weight: 300;
-    opacity: 0.0;
-    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
 
   .formWrapper {
     width: 80%; }
 
   .headline {
-    width: 90%;
-    max-width: 310px;
+    width: 80%;
     font-size: 2.5em;
     font-family: "Dosis", sans-serif;
-    margin-top: 5px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
     text-align: center; }
 
   .DosisFont {
     font-family: "Dosis", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 300;
+    color: beige; }
+
+  .playerStatsFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
     color: beige; } }
 @media screen and (min-width: 992px) and (orientation: portrait) {
   body {
@@ -929,7 +1228,7 @@ li {
   .outershell {
     /*    outer frame, wrapper of board */
     width: 98vw;
-    height: 98vh;
+    height: 96vh;
     margin-top: 2px;
     margin-bottom: 2px; }
 
@@ -939,35 +1238,366 @@ li {
     align-content: space-around;
     flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
-    width: 60vw;
-    height: 60vw;
+    width: 81vw;
+    height: 81vw;
     margin-top: 2px;
     margin-bottom: 2px; }
 
   .playfieldRowHeight {
-    height: 88vh; }
+    height: 85vw; }
 
   .fieldWrapper {
     margin-top: 2px;
     margin-bottom: 2px;
-    width: 62vw;
-    height: 62vw; }
+    width: 83vw;
+    height: 83vw; }
 
   .controlPanelWrapper {
     /*wrapper of  controlpanel*/
     margin-bottom: 5px;
-    width: 80%; }
+    width: 100%; }
+
+  .controlPanelRowHeight {
+    height: 17vh; }
 
   .buttonfield {
-    padding: 3px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 100%;
-    height: 125px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     align-content: space-around;
     flex-wrap: wrap;
     font-family: "Dosis", sans-serif;
     font-size: 14px;
+    font-weight: 300;
+    color: beige; }
+
+  .modal-body {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+
+  .playStatsWrapper {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    overflow: hidden; }
+
+  .playerStats1 {
+    width: 50%;
+    height: 35px;
+    padding: 4px;
+    background-color: grey;
+    border-right: 1px solid #34393F; }
+
+  .playerStats2 {
+    width: 50%;
+    height: 35px;
+    padding: 4px;
+    background-color: grey;
+    border-left: 1px solid #34393F; }
+
+  .formWrapper {
+    width: 80%; }
+
+  .headline {
+    width: 94vw;
+    max-width: 310px;
+    font-size: 2.5em;
+    font-family: "Dosis", sans-serif;
+    margin-top: 2px;
+    text-align: center; }
+
+  .DosisFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: beige; }
+
+  .DosisFontHowTo {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: black; }
+
+  .playerStatsFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: beige; } }
+@media screen and (min-width: 992px) and (orientation: landscape) {
+  body {
+    color: beige;
+    height: 100vh; }
+
+  .outershell {
+    /*    outer frame, wrapper of board */
+    width: 98vw;
+    height: 96vh;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+
+  .banner {
+    width: 98%; }
+
+  .controlPanelWrapper {
+    /*wrapper of  controlpanel*/
+    margin-bottom: 2px;
+    width: 98%; }
+
+  .controlPanelRowHeight {
+    width: 40vw;
+    height: 78vh; }
+
+  .playfield {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 70vh;
+    height: 70vh;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+
+  .playfieldRowHeight {
+    width: 55vw;
+    height: 74vh; }
+
+  .fieldWrapper {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 72vh;
+    height: 72vh; }
+
+  .buttonfield {
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: beige; }
+
+  .modal-body {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+
+  .playStatsWrapper {
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 15px;
+    overflow: hidden; }
+
+  .playerStats1 {
+    width: 50%;
+    height: 35px;
+    padding: 4px;
+    background-color: grey;
+    border-right: 1px solid #34393F; }
+
+  .playerStats2 {
+    width: 50%;
+    height: 35px;
+    padding: 4px;
+    background-color: grey;
+    border-left: 1px solid #34393F; }
+
+  .formWrapper {
+    width: 80%; }
+
+  .headline {
+    width: 80%;
+    font-size: 2.5em;
+    font-family: "Dosis", sans-serif;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center; }
+
+  .DosisFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: beige; }
+
+  .playerStatsFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: beige; } }
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+  body {
+    color: beige;
+    height: 100vh; }
+
+  .outershell {
+    /*    outer frame, wrapper of board */
+    width: 98vw;
+    height: 96vh;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+
+  .banner {
+    width: 98%; }
+
+  .controlPanelWrapper {
+    /*wrapper of  controlpanel*/
+    margin-bottom: 2px;
+    width: 90%; }
+
+  .controlPanelRowHeight {
+    width: 40vw;
+    height: 78vh; }
+
+  .playfield {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 70vh;
+    height: 70vh;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+
+  .playfieldRowHeight {
+    width: 55vw;
+    height: 74vh; }
+
+  .fieldWrapper {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 72vh;
+    height: 72vh; }
+
+  .buttonfield {
+    padding: 5px;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Dosis", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: beige; }
+
+  .modal-body {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+
+  .playStatsWrapper {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    overflow: hidden; }
+
+  .playerStats1 {
+    width: 50%;
+    height: 40px;
+    padding: 4px;
+    background-color: grey;
+    border-right: 1px solid #34393F; }
+
+  .playerStats2 {
+    width: 50%;
+    height: 40px;
+    padding: 4px;
+    background-color: grey;
+    border-left: 1px solid #34393F; }
+
+  .formWrapper {
+    width: 80%; }
+
+  .headline {
+    width: 70%;
+    font-size: 2.5em;
+    font-family: "Dosis", sans-serif;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center; }
+
+  .DosisFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    color: beige; }
+
+  .playerStatsFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: beige; } }
+@media screen and (min-width: 1800px) and (orientation: landscape) {
+  body {
+    color: beige;
+    height: 100vh; }
+
+  .outershell {
+    /*    outer frame, wrapper of board */
+    width: 98vw;
+    height: 96vh;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+
+  .banner {
+    width: 98%; }
+
+  .controlPanelWrapper {
+    /*wrapper of  controlpanel*/
+    margin-bottom: 2px;
+    width: 98%; }
+
+  .controlPanelRowHeight {
+    width: 40vw;
+    height: 78vh; }
+
+  .playfield {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transition: opacity .5s ease-in-out;
+    width: 70vh;
+    height: 70vh;
+    margin-top: 2px;
+    margin-bottom: 2px; }
+
+  .playfieldRowHeight {
+    width: 55vw;
+    height: 74vh; }
+
+  .fieldWrapper {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 72vh;
+    height: 72vh; }
+
+  .buttonfield {
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
     font-weight: 300;
     color: beige; }
 
@@ -977,8 +1607,8 @@ li {
 
   .playStatsWrapper {
     width: 98%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     border-radius: 15px;
     overflow: hidden; }
 
@@ -1000,346 +1630,13 @@ li {
     width: 80%; }
 
   .headline {
-    width: 90%;
-    max-width: 310px;
+    width: 70%;
     font-size: 2.5em;
     font-family: "Dosis", sans-serif;
-    margin-top: 5px;
-    text-align: center; } }
-@media screen and (min-width: 992px) and (orientation: landscape) {
-  body {
-    color: beige;
-    height: 100vh; }
-
-  .outershell {
-    /*    outer frame, wrapper of board */
-    width: 98vw;
-    height: 98vh;
     margin-top: 2px;
-    margin-bottom: 2px; }
-
-  .playfield {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    transition: opacity .5s ease-in-out;
-    width: 82vh;
-    height: 82vh;
-    margin-top: 2px;
-    margin-bottom: 2px; }
-
-  .playfieldRowHeight {
-    height: 87vh; }
-
-  .fieldWrapper {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    width: 84vh;
-    height: 84vh; }
-
-  .controlPanelWrapper {
-    /*wrapper of  controlpanel*/
     margin-bottom: 5px;
-    width: 80%; }
-
-  .buttonfield {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-around;
-    flex-wrap: wrap;
-    font-family: "Dosis", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: beige; }
-
-  .modal-body {
-    padding-bottom: 0;
-    margin-bottom: 0; }
-
-  .playStatsWrapper {
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 15px;
-    overflow: hidden; }
-
-  .playerStats1 {
-    width: 50%;
-    height: 35px;
-    padding: 4px;
-    background-color: grey;
-    border-right: 1px solid #34393F; }
-
-  .playerStats2 {
-    width: 50%;
-    height: 35px;
-    padding: 4px;
-    background-color: grey;
-    border-left: 1px solid #34393F; }
-
-  .checkmarkPlayer1Big {
-    color: lightgreen;
-    font-size: 4.8em;
-    font-weight: 300;
-    opacity: 0.0;
-    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
-
-  .checkmarkPlayer2Big {
-    color: #0066cc;
-    font-size: 4.8em;
-    font-weight: 300;
-    opacity: 0.0;
-    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
-
-  .formWrapper {
-    width: 80%; }
-
-  .headline {
-    width: 90%;
-    max-width: 310px;
-    font-size: 2.5em;
-    font-family: "Dosis", sans-serif;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center; } }
-@media screen and (min-width: 1200px) and (orientation: landscape) {
-  body {
-    color: beige;
-    height: 100vh; }
-
-  .outershell {
-    /*    outer frame, wrapper of board */
-    width: 98vw;
-    height: 98vh;
-    margin-top: 2px;
-    margin-bottom: 2px; }
-
-  .playfield {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    transition: opacity .5s ease-in-out;
-    width: 80vh;
-    height: 80vh;
-    margin-top: 2px;
-    margin-bottom: 2px; }
-
-  .playfieldRowHeight {
-    height: 87vh; }
-
-  .fieldWrapper {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    width: 82vh;
-    height: 82vh; }
-
-  .controlPanelWrapper {
-    /*wrapper of  controlpanel*/
-    margin-bottom: 5px;
-    width: 80%; }
-
-  .buttonfield {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-around;
-    flex-wrap: wrap;
-    font-family: "Dosis", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: beige; }
-
-  .modal-body {
-    padding-bottom: 0;
-    margin-bottom: 0; }
-
-  .playStatsWrapper {
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 15px;
-    overflow: hidden; }
-
-  .playerStats1 {
-    width: 50%;
-    height: 40px;
-    padding: 5px;
-    font-family: "Dosis", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: beige;
-    background-color: grey;
-    border-right: 1px solid #34393F; }
-
-  .playerStats2 {
-    width: 50%;
-    height: 40px;
-    padding: 5px;
-    font-family: "Dosis", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: beige;
-    background-color: grey;
-    border-left: 1px solid #34393F; }
-
-  .checkmarkPlayer1Big {
-    color: lightgreen;
-    font-size: 4.8em;
-    font-weight: 300;
-    opacity: 0.0;
-    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
-
-  .checkmarkPlayer2Big {
-    color: #0066cc;
-    font-size: 4.8em;
-    font-weight: 300;
-    opacity: 0.0;
-    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
-
-  .scorePlayer1Field,
-  .scorePlayer2Field {
-    text-align: center;
-    width: 20px; }
-
-  .formWrapper {
-    width: 80%; }
-
-  .headline {
-    width: 90%;
-    max-width: 310px;
-    font-size: 2.5em;
-    font-family: "Dosis", sans-serif;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center; } }
-@media screen and (min-width: 1800px) and (orientation: landscape) {
-  body {
-    color: beige;
-    height: 100vh; }
-
-  .outershell {
-    /*    outer frame, wrapper of board */
-    width: 98vw;
-    height: 98vh;
-    margin-top: 2px;
-    margin-bottom: 2px; }
-
-  .playfield {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    transition: opacity .5s ease-in-out;
-    width: 80vh;
-    height: 80vh;
-    margin-top: 2px;
-    margin-bottom: 2px; }
-
-  .playfieldRowHeight {
-    height: 87vh; }
-
-  .fieldWrapper {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    width: 82vh;
-    height: 82vh; }
-
-  .controlPanelWrapper {
-    /*wrapper of  controlpanel*/
-    margin-bottom: 5px;
-    width: 80%; }
-
-  .buttonfield {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-around;
-    flex-wrap: wrap;
-    font-family: "Dosis", sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: beige; }
-
-  .modal-body {
-    padding-bottom: 0;
-    margin-bottom: 0; }
-
-  .playStatsWrapper {
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 15px;
-    overflow: hidden; }
-
-  .playerStats1 {
-    width: 50%;
-    height: 40px;
-    padding: 5px;
-    font-family: "Dosis", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: beige;
-    background-color: grey;
-    border-right: 1px solid #34393F; }
-
-  .playerStats2 {
-    width: 50%;
-    height: 40px;
-    padding: 5px;
-    font-family: "Dosis", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: beige;
-    background-color: grey;
-    border-left: 1px solid #34393F; }
-
-  .checkmarkPlayer1Big {
-    color: lightgreen;
-    font-size: 4.8em;
-    font-weight: 300;
-    opacity: 0.0;
-    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
-
-  .checkmarkPlayer2Big {
-    color: #0066cc;
-    font-size: 4.8em;
-    font-weight: 300;
-    opacity: 0.0;
-    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
-
-  .scorePlayer1Field,
-  .scorePlayer2Field {
-    text-align: center;
-    width: 20px; }
-
-  .formWrapper {
-    width: 80%; }
-
-  .headline {
-    width: 90%;
-    max-width: 310px;
-    font-size: 2.5em;
-    font-family: "Dosis", sans-serif;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
     text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
