@@ -11,15 +11,15 @@ $(document).ready(function() {
     let currentCardArray = []; // empty array as a working array, to be reduced to smaller playfield sizes
     let namePlayer1 = "Player1"; // default player1's name
     let namePlayer2 = "Player2"; // default player2's name
-    let scorePlayer1 = 0; // score on startup zero
-    let scorePlayer2 = 0; // score on startup zero
+    let scorePlayer1 = 0; // score player1 on startup zero
+    let scorePlayer2 = 0; // score player2 on startup zero
     let currentPlayer = "Player1"; // per default player1 starts 1st game, 2nd game by Player2, and so on.
-    let firstAttemptDone = 0;
-    let ThisGameOpenedBy = "Player1"; // per default player1 starts 1st game
+    let firstAttemptDone = 0; // indicator if 1st move of game has been done, needed for opening player determination
+    let ThisGameOpenedBy = "Player1"; // per default player1 starts 1st game, needed for opening player determination
     let btnActive = true; // parameter for checking buttons active state
     let fieldActive = false; // parameter for checking playfields active state
-    let startBtnActive = true;
-    let stopBtnActive = false;
+    let startBtnActive = true; // parameter for checking startbutton active state
+    let stopBtnActive = false; // parameter for checking stopbutton active state
     $('#saveBtn').attr("data-dismiss", ""); // removing data-dismiss attribute for registration modal on field validation
 
     // implementations of functions
@@ -28,7 +28,7 @@ $(document).ready(function() {
     function checkForMatch() {
         if ($('.taken .back').length == 2) {
             fieldActive = false;
-            let takenCard1 = $('.taken .back').eq(0); //extracting element with index '0' from $('.taken .back')
+            let takenCard1 = $('.taken .back').eq(0); //extracting element with index '0' from taken cards array $('.taken .back')
             let takenCard2 = $('.taken .back').eq(1); //extracting element with index '1' from $('.taken .back')
             let classesCard1 = takenCard1.attr("class"); // make string of assigned classes card1 to compare
             let classesCard2 = takenCard2.attr("class"); // make string of assigned classes card2 to compare
@@ -36,9 +36,8 @@ $(document).ready(function() {
                 setTimeout(function() { // wait until cards have fully turned prior popup 'match'
                     popupMatch(); // show popup 'match'
                     setTimeout(function() { // delay time to wait until popupMatch is vanished
-                        increasePoints();
-                        $('.taken').addClass('dummycardshell').removeClass('cardshell');
-                        // assigning .dummycardshell and removing .cardshell class from matched cards and so that they will not be assigned with click assignment anymore
+                        increasePoints(); // function to increase points and set players color on card.
+                        $('.taken').addClass('dummycardshell').removeClass('cardshell'); // assigning .dummycardshell and removing .cardshell class from matched cards to disable clicks on cards
                         $('.dummycardshell').removeClass('taken'); // remove taken class
                         // checkup if all cards have been turned / found by comparing amount of cards of .showMe against amount of front faces on the playfield
                         if ($('.showMe').length == $('.front').length) { // if true, call function...
@@ -46,28 +45,28 @@ $(document).ready(function() {
                         }
                         else { // otherwise continue to inform who is next
                             whoIsNext(); //popup who is next
-                            setTimeout(function() { // make playfield active
+                            setTimeout(function() { // wait littlebit and make playfield active
                                 fieldActive = true;
                             }, 1000);
                         }
-                    }, 1500);
-                }, 500);
-            }
-            else if (classesCard1 != classesCard2) {
-                setTimeout(function() {
+                    }, 1500); // delay time to wait until popupMatch is vanished
+                }, 500); // wait until cards have fully turned prior popup 'match'
+            } // end if
+            else if (classesCard1 != classesCard2) { // in case not matched, then
+                setTimeout(function() {  // wait until cards have fully turned 
                     popupNoMatch(); //show popup no match
                     setTimeout(function() { // delay of 1500ms to be able to see shown cards
-                        $(".cardshell").removeClass('showMe taken');
-                        changePlayer(currentPlayer);
-                        setTimeout(function() {
+                        $(".cardshell").removeClass('showMe taken'); // targeting .cardshells on playfield, turn them back by removing class showMe
+                        changePlayer(currentPlayer); // calling function to change players with overloaded currentPlayer
+                        setTimeout(function() { // makes whoIsNext checkup little more delayed 
                             whoIsNext(); // show who is next, then...
                             setTimeout(function() { // wait some time until who is next pop up is vanished
-                                fieldActive = true;
-                            }, 1000);
+                                fieldActive = true; // make cards react to clicks (fieldActive is being checked in on.('click') definition)
+                            }, 1000); // wait some time until who is next pop up is vanished
                         }, 500); // makes whoIsNext checkup little more delayed 
-                    }, 1500);
+                    }, 1500); // delay of 1500ms to be able to see shown cards
                 }, 500); // wait until cards have fully turned 
-            }
+            } // end else if
         }
     }
 
@@ -75,34 +74,34 @@ $(document).ready(function() {
     function increasePoints() {
         if (currentPlayer == "Player1") { // if match is for Player1, then assign players checkmark
             $('.taken .back').append("<div class='checkmarkPlayer1Big glyphicon glyphicon-ok-sign vhalign'></div>"); // append a div to taken cards on backside with players color
-            scorePlayer1++; // increasing score
+            scorePlayer1++; // increment score by 1
             $('.scorePlayer1Field').html(scorePlayer1); // writing score to related HTML field
         }
         else if (currentPlayer == "Player2") { // if match is for Player2, then assign players checkmark
             $('.taken .back').append("<div class='checkmarkPlayer2Big glyphicon glyphicon-ok-sign vhalign'></div>"); // append a div to taken cards on backside with players color
-            scorePlayer2++; // increasing score
+            scorePlayer2++; // increment score by 1
             $('.scorePlayer2Field').html(scorePlayer2); // writing score to related HTML field
         }
     }
 
     // function for changing player
     function changePlayer(str) {
-        let activePlayer = str;
-        if (activePlayer == "Player1") {
+        let activePlayer = str; // overloaded string str is set to dummy let 'activePlayer'
+        if (activePlayer == "Player1") { // if statements check if it is player1 and sets currentPlayer then to the opposite player
             currentPlayer = "Player2";
         }
-        else if (activePlayer == "Player2") {
+        else if (activePlayer == "Player2") { // if statements check if it is player2 and sets currentPlayer then to the opposite player
             currentPlayer = "Player1";
         }
     }
 
     // function for changing opening player
-    function changeOpeningPlayer(str) {
-        let currentGameOpenedBy = str;
-        if (currentGameOpenedBy == "Player1") {
+    function changeOpeningPlayer(str) { 
+        let currentGameOpenedBy = str; // overloaded string str is set to dummy let 'currentGameOpenedBy'
+        if (currentGameOpenedBy == "Player1") { // if statements check if it is player1 and sets 'ThisGameOpenedBy' then to the opposite player
             ThisGameOpenedBy = "Player2";
         }
-        else if (currentGameOpenedBy == "Player2") {
+        else if (currentGameOpenedBy == "Player2") { // if statements check if it is player1 and sets 'ThisGameOpenedBy' then to the opposite player
             ThisGameOpenedBy = "Player1";
         }
     }
@@ -118,23 +117,23 @@ $(document).ready(function() {
         else if (scorePlayer1 == scorePlayer2) { // if equal score, popup html text is set accordingly 
             $('.popupGameCompleted').html(namePlayer1 + " and " + namePlayer2 + " have same points!");
         }
-        $('.popupGameCompleted').css("transform", "translateZ(150px)").css("z-index", "100").css("opacity", "1.0");
+        $('.popupGameCompleted').css("transform", "translateZ(150px)").css("z-index", "100").css("opacity", "1.0"); // setting position on z-axis and show popup by increasing opacity to 1.
         changeOpeningPlayer(ThisGameOpenedBy); // call of function to change opening player for next game
-        setTimeout(function() {
-            $('.popupGameCompleted').css("opacity", "0.0");
-            firstAttemptDone = 0;
-            makeBtnActiveButStart();
-            setTimeout(function() {
+        setTimeout(function() { // have popup for game completion visible for 4 seconds and then ... 
+            $('.popupGameCompleted').css("opacity", "0.0"); // make popup dissappear
+            firstAttemptDone = 0; // resetting indicator for first move of game done.
+            makeBtnActiveButStart(); // make buttons come back online
+            setTimeout(function() { // wait a little until popup for game completion has vanished and move position in z-space.
                 $('.popupGameCompleted').css("transform", "translateZ(-10px)").css("z-index", "-100");
-            }, 1200);
-        }, 4000);
+            }, 1200); // wait a little until popup for game completion has vanished
+        }, 4000); // have popup for game completion visible for 4 seconds
     }
 
     // function to provide popup 'who is next'
     function whoIsNext() {
-        if (firstAttemptDone == 0 && ThisGameOpenedBy == "Player1") {
-            currentPlayer = "Player1";
-            setActivePlayer(currentPlayer);
+        if (firstAttemptDone == 0 && ThisGameOpenedBy == "Player1") { // on 1st move of game, the ThisGameOpenedBy value is being checked to have each player start every other game
+            currentPlayer = "Player1"; // currentPlayer is set to be syncronized accordingly to ThisGameOpenedBy
+            setActivePlayer(currentPlayer); // function called to set the active player
         }
         else if (firstAttemptDone == 0 && ThisGameOpenedBy == "Player2") {
             currentPlayer = "Player2";
@@ -153,25 +152,25 @@ $(document).ready(function() {
     function setActivePlayer(str) {
         let player = str;
         // moving up popup on z axis and start transition to opacity 1
-        $('.popupNext').css("transform", "translateZ(400px)");
-        $('.popupNext').css("z-index", "400");
+        $('.popupNext').css("transform", "translateZ(400px)"); //move popup up on z-scale above playfield 
+        $('.popupNext').css("z-index", "400"); // set z-index also to 400, to make popup show up properly  
         if (player == "Player1") {
             $('.playerStats1').css('background-color', 'red'); // set to red when active
             $('.playerStats2').css('background-color', 'grey'); // set other player to grey
-            $('.popupNext').html(namePlayer1 + " is next!");
+            $('.popupNext').html(namePlayer1 + " is next!"); // set popup text accordingly
         }
         else if (player == "Player2") {
             $('.playerStats1').css('background-color', 'grey'); // set other player to grey 
             $('.playerStats2').css('background-color', 'red'); // set to red when active
-            $('.popupNext').html(namePlayer2 + " is next!");
+            $('.popupNext').html(namePlayer2 + " is next!"); // set popup text accordingly
         }
-        $('.popupNext').css("opacity", "1.0");
+        $('.popupNext').css("opacity", "1.0"); // show popup by raising opacity to 1
         setTimeout(function() {
-            $('.popupNext').css("opacity", "0.0");
+            $('.popupNext').css("opacity", "0.0"); // make popup dissappear
         }, 1500);
         setTimeout(function() {
-            $('.popupNext').css("transform", "translateZ(-10px)");
-            $('.popupNext').css("z-index", "-1");
+            $('.popupNext').css("transform", "translateZ(-10px)"); // move popup below playfield so it is gone and does not block clicks on card
+            $('.popupNext').css("z-index", "-1"); // move popup below playfield so it is gone and does not block clicks on card
         }, 2500);
     }
 
