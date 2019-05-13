@@ -2,7 +2,7 @@
 $(document);
 */
 
-$(document).ready(function() {
+
 
     // let , var declarations / assignments
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
     let fieldActive = false; // parameter for checking playfields active state
     let startBtnActive = true; // parameter for checking startbutton active state
     let stopBtnActive = false; // parameter for checking stopbutton active state
-    $('#saveBtn').attr("data-dismiss", ""); // removing data-dismiss attribute for registration modal on field validation
+    $('#saveBtn').attr("data-dismiss", ""); // removing data-dismiss attribute for registration modal to make it impossible to close modal without conform field inputs.
 
     // implementations of functions
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
         if (activePlayer == "Player1") { // if statements check if it is player1 and sets currentPlayer then to the opposite player
             currentPlayer = "Player2";
         }
-        else if (activePlayer == "Player2") { // if statements check if it is player2 and sets currentPlayer then to the opposite player
+        else if (activePlayer == "Player2") { // if statements check if it is player2 and sets currentPlayer to the opposite player
             currentPlayer = "Player1";
         }
     }
@@ -151,7 +151,7 @@ $(document).ready(function() {
     // function to set the activePlayer
     function setActivePlayer(str) {
         let player = str;
-        // moving up popup on z axis and start transition to opacity 1
+        // moving up popup on z axis
         $('.popupNext').css("transform", "translateZ(400px)"); //move popup up on z-scale above playfield 
         $('.popupNext').css("z-index", "400"); // set z-index also to 400, to make popup show up properly  
         if (player == "Player1") {
@@ -165,9 +165,12 @@ $(document).ready(function() {
             $('.popupNext').html(namePlayer2 + " is next!"); // set popup text accordingly
         }
         $('.popupNext').css("opacity", "1.0"); // show popup by raising opacity to 1
-        setTimeout(function() {
+      
+      
+       setTimeout(function() {
             $('.popupNext').css("opacity", "0.0"); // make popup dissappear
         }, 1500);
+    
         setTimeout(function() {
             $('.popupNext').css("transform", "translateZ(-10px)"); // move popup below playfield so it is gone and does not block clicks on card
             $('.popupNext').css("z-index", "-1"); // move popup below playfield so it is gone and does not block clicks on card
@@ -300,8 +303,8 @@ $(document).ready(function() {
             if (playFieldSize == 36) {
                 $(".cardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
                 $(".dummycardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
-                $('.checkmarkPlayer1Big').css('font-size', '2.2em'); // set size of players logo accordingly to card size
-                $('.checkmarkPlayer2Big').css('font-size', '2.2em'); // set size of players logo accordingly to card size
+                $('.checkmarkPlayer1Big').css('font-size', '1.7em'); // set size of players logo accordingly to card size
+                $('.checkmarkPlayer2Big').css('font-size', '1.7em'); // set size of players logo accordingly to card size
             }
             prepAndDeliverCardArray(playFieldSize);
         }, 800);
@@ -342,7 +345,7 @@ $(document).ready(function() {
     fieldInit(9); // generating playfield of 3x3 per default on startup
     make_field8BtnVisActive(); // make 8-card button visually active
     resetCounters();
-    $('#enterPlayersModal').modal('show'); // registration modal on startup
+    // $('#enterPlayersModal').modal('show'); // registration modal on startup
 
     // click actions for ...
     // ... for 8-card playfield button
@@ -428,4 +431,5 @@ $(document).ready(function() {
             $('.namePlayer2Field').html(namePlayer2 + ": ");
         }
     });
-});
+    
+   // $(document).ready(function() {});
