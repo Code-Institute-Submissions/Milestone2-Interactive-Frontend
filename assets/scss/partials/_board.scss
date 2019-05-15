@@ -208,35 +208,6 @@ body {
     border-left: 1px solid #34393F;
 }
 
-.headline {
-    width: 96%;
-    font: {
-        size: 2.3em;
-        family: "Dosis", sans-serif;
-    }
-    margin: {
-        top: 2px;
-        bottom: 2px;
-        left: 0px;
-        right: 0px;
-    }
-    text-align: center;
-}
-
-.DosisFont {
-    font-family: "Dosis", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: beige;
-}
-
-.DosisFontHowTo {
-    font-family: "Dosis", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: black;
-}
-
 .namePlayer1,
 .namePlayer2 {}
 
@@ -558,17 +529,25 @@ li {
 
     .DosisFont {
         font-family: "Dosis", sans-serif;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 300;
         color: beige;
     }
 
     .DosisFontHowTo {
         font-family: "Dosis", sans-serif;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 300;
         color: black;
     }
+
+    .playerStatsFont {
+        font-family: "Dosis", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: beige;
+    }
+
 }
 
 
@@ -709,17 +688,25 @@ li {
 
     .DosisFont {
         font-family: "Dosis", sans-serif;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 300;
         color: beige;
     }
 
     .DosisFontHowTo {
         font-family: "Dosis", sans-serif;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 300;
         color: black;
     }
+    
+    .playerStatsFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: beige;
+}
+
 
 }
 
@@ -834,7 +821,7 @@ li {
     }
 
     .headline {
-        width: 30%;
+        width: 50%;
         font: {
             size: 2.5em;
             family: "Dosis", sans-serif;
@@ -982,7 +969,7 @@ li {
     }
 
     .headline {
-        width: 30%;
+        width: 50%;
         font: {
             size: 2.5em;
             family: "Dosis", sans-serif;
@@ -1128,7 +1115,7 @@ li {
     }
 
     .headline {
-        width: 30%;
+        width: 50%;
         font: {
             size: 2.5em;
             family: "Dosis", sans-serif;
@@ -1213,7 +1200,7 @@ li {
         margin: {
             bottom: 5px;
         }
-        width: 100%;
+        width: 80%;
     }
 
     .controlPanelRowHeight {
@@ -1257,7 +1244,7 @@ li {
 
     .playerStats1 {
         width: 50%;
-        height: 30px;
+        height: 40px;
         padding: 4px;
         background-color: grey;
         border-right: 1px solid #34393F;
@@ -1265,7 +1252,7 @@ li {
 
     .playerStats2 {
         width: 50%;
-        height: 30px;
+        height: 40px;
         padding: 4px;
         background-color: grey;
         border-left: 1px solid #34393F;
@@ -1276,10 +1263,10 @@ li {
     }
 
     .headline {
-        width: 30%;
+        width: 60%;
         max-width: 310px;
         font: {
-            size: 2.5em;
+            size: 3.0em;
             family: "Dosis", sans-serif;
         }
         margin-top: 2px;
@@ -1288,14 +1275,14 @@ li {
 
     .DosisFont {
         font-family: "Dosis", sans-serif;
-        font-size: 18px;
+        font-size: 26px;
         font-weight: 300;
         color: beige;
     }
 
     .DosisFontHowTo {
         font-family: "Dosis", sans-serif;
-        font-size: 18px;
+        font-size: 26px;
         font-weight: 300;
         color: black;
     }
@@ -1411,7 +1398,7 @@ li {
     }
 
     .headline {
-        width: 30%;
+        width: 50%;
         font: {
             size: 2.5em;
             family: "Dosis", sans-serif;
@@ -1532,7 +1519,7 @@ li {
 
     .playerStats1 {
         width: 50%;
-        height: 35px;
+        height: 40px;
         padding: 4px;
         background-color: grey;
         border-right: 1px solid #34393F;
@@ -1540,7 +1527,7 @@ li {
 
     .playerStats2 {
         width: 50%;
-        height: 35px;
+        height: 40px;
         padding: 4px;
         background-color: grey;
         border-left: 1px solid #34393F;
@@ -1563,21 +1550,21 @@ li {
 
     .DosisFont {
         font-family: "Dosis", sans-serif;
-        font-size: 20px;
+        font-size: 26px;
         font-weight: 300;
         color: beige;
     }
 
     .DosisFontHowTo {
         font-family: "Dosis", sans-serif;
-        font-size: 20px;
+        font-size: 26px;
         font-weight: 300;
         color: black;
     }
 
     .playerStatsFont {
         font-family: "Dosis", sans-serif;
-        font-size: 20px;
+        font-size: 26px;
         font-weight: 400;
         color: beige;
     }
@@ -1855,6 +1842,13 @@ li {
         color: beige;
     }
 
+    .DosisFontHowTo {
+        font-family: "Dosis", sans-serif;
+        font-size: 26px;
+        font-weight: 300;
+        color: black;
+    }
+
     .playerStatsFont {
         font-family: "Dosis", sans-serif;
         font-size: 26px;
@@ -1974,7 +1968,7 @@ li {
     .headline {
         width: 30%;
         font: {
-            size: 2.5em;
+            size: 4.5em;
             family: "Dosis", sans-serif;
         }
         margin: {
@@ -1985,8 +1979,8 @@ li {
         }
         text-align: center;
     }
-    
-      .DosisFont {
+
+    .DosisFont {
         font-family: "Dosis", sans-serif;
         font-size: 26px;
         font-weight: 300;
