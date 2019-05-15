@@ -1,7 +1,46 @@
 /*global $
 global expect
 */
-describe("setActivePlayer", function() {
+
+describe("function checkForMatch", function() {
+    // Specs are defined by calling the global Jasmine function it
+    beforeEach(function() {
+        setFixtures(``);
+        jasmine.clock().install();
+    });
+    
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+    
+    it("should exist", function() {
+        expect(checkForMatch).toBeDefined();
+    });
+
+    it("should handle matching cards correctly", function() {
+         let takenCard1 = $('.taken .back').eq(0); //extracting element with index '0' from taken cards array $('.taken .back')
+            let takenCard2 = $('.taken .back').eq(1); //extracting element with index '1' from $('.taken .back')
+            let classesCard1 = takenCard1.attr("class"); // make string of assigned classes card1 to compare
+            let classesCard2 = takenCard2.attr("class"); // make string of assigned classes card2 to compare
+            
+        
+        if (classesCard1 == classesCard2) {
+            expect(popupMatch).toHaveBeenCalled();
+            jasmine.clock().tick(1500);
+            expect(increasePoints).toHaveBeenCalled();
+        }
+       
+    });
+    /*
+         it("", function() {
+             expect();
+             expect();
+             expect();
+         });
+         */
+});
+
+describe("function setActivePlayer", function() {
     // Specs are defined by calling the global Jasmine function it
     beforeEach(function() {
         setFixtures(`<div class="playerStats1 playerStatsFont vhalign">
@@ -36,10 +75,15 @@ describe("setActivePlayer", function() {
     it("should set player1 to red when called as setActivePlayer('Player1')", function() {
         var namePlayer1 = 'Player1';
         setActivePlayer(namePlayer1);
-        expect($('.popupNext').css('transform')).toBe('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 400, 1)');
-        // expect($('.popupNext').css('z-index')).toBe('400');
         expect($('.playerStats1').css('background-color')).toBe('rgb(255, 0, 0)');
         expect($('.playerStats2').css('background-color')).toBe('rgb(128, 128, 128)');
+    });
+
+    it("should show popupNext when called as setActivePlayer('Player1')", function() {
+        var namePlayer1 = 'Player1';
+        setActivePlayer(namePlayer1);
+        expect($('.popupNext').css('transform')).toBe('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 400, 1)');
+        // expect($('.popupNext').css('z-index')).toBe('400');
         expect($('.popupNext').html()).toEqual(namePlayer1 + " is next!");
         expect($('.popupNext').css('opacity')).toBe('1');
         jasmine.clock().tick(1500);
@@ -52,10 +96,15 @@ describe("setActivePlayer", function() {
     it("should set player2 to red when called as setActivePlayer('Player2')", function() {
         var namePlayer2 = 'Player2';
         setActivePlayer(namePlayer2);
-        expect($('.popupNext').css('transform')).toBe('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 400, 1)');
-        // expect($('.popupNext').css('z-index')).toBe('400');
         expect($('.playerStats1').css('background-color')).toBe('rgb(128, 128, 128)');
         expect($('.playerStats2').css('background-color')).toBe('rgb(255, 0, 0)');
+    });
+
+    it("should show popupNext when called as setActivePlayer('Player2')", function() {
+        var namePlayer2 = 'Player2';
+        setActivePlayer(namePlayer2);
+        expect($('.popupNext').css('transform')).toBe('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 400, 1)');
+        // expect($('.popupNext').css('z-index')).toBe('400');
         expect($('.popupNext').html()).toEqual(namePlayer2 + " is next!");
         expect($('.popupNext').css('opacity')).toBe('1');
         jasmine.clock().tick(1500);
@@ -72,7 +121,13 @@ describe("", function() {
     // Specs are defined by calling the global Jasmine function it
     beforeEach(function() {
         setFixtures(``);
+        jasmine.clock().install();
     });
+    
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+    
     it("should exist", function() {
         expect().toBeDefined();
     });
@@ -98,7 +153,13 @@ describe("", function() {
     // Specs are defined by calling the global Jasmine function it
     beforeEach(function() {
         setFixtures(``);
+        jasmine.clock().install();
     });
+    
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+    
     it("should exist", function() {
         expect().toBeDefined();
     });

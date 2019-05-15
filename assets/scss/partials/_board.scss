@@ -1886,7 +1886,7 @@ li {
         margin: {
             bottom: 2px;
         }
-        width: 98%;
+        width: 80%;
     }
 
     .controlPanelRowHeight {
@@ -1942,7 +1942,7 @@ li {
     }
 
     .playStatsWrapper {
-        width: 98%;
+        width: 100%;
         margin: {
             top: 2px;
             bottom: 2px;
@@ -1953,7 +1953,7 @@ li {
 
     .playerStats1 {
         width: 50%;
-        height: 30px;
+        height: 40px;
         padding: 4px;
         background-color: grey;
         border-right: 1px solid #34393F;
@@ -1961,7 +1961,7 @@ li {
 
     .playerStats2 {
         width: 50%;
-        height: 30px;
+        height: 40px;
         padding: 4px;
         background-color: grey;
         border-left: 1px solid #34393F;
@@ -1984,5 +1984,19 @@ li {
             right: 0px;
         }
         text-align: center;
+    }
+    
+      .DosisFont {
+        font-family: "Dosis", sans-serif;
+        font-size: 26px;
+        font-weight: 300;
+        color: beige;
+    }
+
+    .DosisFontHowTo {
+        font-family: "Dosis", sans-serif;
+        font-size: 26px;
+        font-weight: 300;
+        color: black;
     }
 }

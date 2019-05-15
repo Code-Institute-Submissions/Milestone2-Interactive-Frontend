@@ -2,8 +2,6 @@
 $(document);
 */
 
-
-
     // let , var declarations / assignments
 
     // predefined array with 18 pairs of cards = 36 cards max. Array will be cut to meet smaller fieldsizes.

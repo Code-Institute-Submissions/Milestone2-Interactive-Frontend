@@ -1562,7 +1562,7 @@ li {
   .controlPanelWrapper {
     /*wrapper of  controlpanel*/
     margin-bottom: 2px;
-    width: 98%; }
+    width: 80%; }
 
   .controlPanelRowHeight {
     width: 40vw;
@@ -1607,7 +1607,7 @@ li {
     margin-bottom: 0; }
 
   .playStatsWrapper {
-    width: 98%;
+    width: 100%;
     margin-top: 2px;
     margin-bottom: 2px;
     border-radius: 15px;
@@ -1615,14 +1615,14 @@ li {
 
   .playerStats1 {
     width: 50%;
-    height: 30px;
+    height: 40px;
     padding: 4px;
     background-color: grey;
     border-right: 1px solid #34393F; }
 
   .playerStats2 {
     width: 50%;
-    height: 30px;
+    height: 40px;
     padding: 4px;
     background-color: grey;
     border-left: 1px solid #34393F; }
@@ -1638,6 +1638,18 @@ li {
     margin-bottom: 5px;
     margin-left: 0px;
     margin-right: 0px;
-    text-align: center; } }
+    text-align: center; }
+
+  .DosisFont {
+    font-family: "Dosis", sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    color: beige; }
+
+  .DosisFontHowTo {
+    font-family: "Dosis", sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    color: black; } }
 
 /*# sourceMappingURL=main.css.map */
