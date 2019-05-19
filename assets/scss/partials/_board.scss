@@ -86,10 +86,25 @@ body {
 
 .checkmarkDiv {}
 
-.checkmarkPlayer1,
-.checkmarkPlayer2 {
-    font-size: 22px;
-    font-weight: 400;
+.playerStats1,
+.playerStats2 {
+    width: 50%;
+    padding: 5px;
+    background-color: grey;
+}
+
+.playerStats1 {
+    border-right: 1px solid #34393F;
+}
+
+.playerStats2 {
+    border-left: 1px solid #34393F;
+}
+
+.playStatsWrapper {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .checkmarkPlayer1,
@@ -102,11 +117,16 @@ body {
     color: #0066cc;
 }
 
+.checkmarkPlayer1,
+.checkmarkPlayer2 {
+    font-size: 2.4vh;
+    font-weight: 400;
+}
+
 .checkmarkPlayer1Big,
 .checkmarkPlayer2Big {
     font-size: 4em;
     font-weight: 300;
-    @extend %vhalign;
     opacity: 0.0;
     animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1);
 }
@@ -300,22 +320,15 @@ li {
     }
 
     .playStatsWrapper {
-        width: 100%;
         margin: {
             top: 4px;
             bottom: 0px;
         }
-        border-radius: 15px;
-        overflow: hidden;
     }
 
     .playerStats1,
     .playerStats2 {
-        width: 50%;
         height: 4.5vh;
-        padding: 4px;
-        background-color: grey;
-        border-right: 1px solid #34393F;
     }
 
     .playfieldRowHeight {
@@ -348,7 +361,7 @@ li {
     .DosisFont,
     .playerStatsFont,
     .DosisFontHowTo {
-        font-size: 18px;
+        font-size: 2.4vh;
     }
 }
 
@@ -388,7 +401,7 @@ li {
     }
 
     .controlPanelRowHeight {
-        width: 37vw;
+        width: 38vw;
         height: 78vh;
     }
 
@@ -398,11 +411,16 @@ li {
         }
         width: 100%;
     }
-
+    
     .buttonfield {
-        padding: 5px;
+        padding: {
+            top: 8px;
+            left: 5px;
+            right: 5px;
+            bottom: 8px;
+        }
         width: 100%;
-        height: 16.5vw;
+        height: 17.3vw;
         display: flex;
         justify-content: space-between;
         align-content: space-around;
@@ -410,22 +428,29 @@ li {
     }
 
     .playStatsWrapper {
-        width: 100%;
         margin: {
-            top: 2px;
+            top: 5px;
             bottom: 2px;
         }
-        border-radius: 15px;
-        overflow: hidden;
     }
 
     .playerStats1,
     .playerStats2 {
-        width: 50%;
-        height: 4.5vw;
-        padding: 4px;
-        background-color: grey;
-        border-right: 1px solid #34393F;
+        height: 5.5vw;
+    }
+
+    .checkmarkPlayer1,
+    .checkmarkPlayer2 {
+        font-size: 2.6vw;
+        font-weight: 400;
+    }
+
+    .checkmarkPlayer1Big,
+    .checkmarkPlayer2Big {
+        font-size: 4em;
+        font-weight: 300;
+        opacity: 0.0;
+        animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1);
     }
 
     .playfieldRowHeight {
@@ -459,6 +484,6 @@ li {
     .DosisFont,
     .DosisFontHowTo,
     .playerStatsFont {
-        font-size: 22px;
+        font-size: 2.6vw;
     }
 }
