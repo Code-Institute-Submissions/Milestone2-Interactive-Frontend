@@ -1,18 +1,10 @@
 // helper classes
-
 .vhalign {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-
-.halign {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 
 %vhalign {
     display: flex;
@@ -28,14 +20,10 @@
 
 .testframe2 {
     border: 2px solid grey;
-     border-radius: 15px;
+    border-radius: 15px;
 }
 
 .testframe3 {
     border: 2px solid lightblue;
-     border-radius: 15px;
-}
-
-.marginOnTop {
-    margin-top: 5px;
+    border-radius: 15px;
 }

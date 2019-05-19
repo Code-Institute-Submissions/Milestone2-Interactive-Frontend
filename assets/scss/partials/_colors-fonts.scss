@@ -1,26 +1,9 @@
-$bg-body: #34393F;
+$bg-body: #003553;
 $bg-howToBtn: #FFFF00;
 $bg-enterPlayersBtn: #0066FF;
 $bg-fieldSizeBtn: #666699;
 $bg-startBtn: #00cc00;
 $bg-stopBtn: #e60000;
-
-body {background-color: #1f3d7a;}
-
-.headline {
-width: 80%;
-    font: {
-        size: 1.8em;
-        family: "Dosis", sans-serif;
-    }
-    margin: {
-            top: 2px;
-            bottom: 2px;
-            left: 0px;
-            right: 0px;
-        }
-    text-align: center;
-}
 
 %DosisFont {
     font-family: "Dosis", sans-serif;
@@ -29,26 +12,21 @@ width: 80%;
     color: beige;
 }
 
-.DosisFont {
+.DosisFont,
+.DosisFontHowTo,
+.playerStatsFont {
     font-family: "Dosis", sans-serif;
     font-size: 16px;
     font-weight: 300;
+}
+
+.DosisFont,
+.playerStatsFont {
     color: beige;
 }
 
 .DosisFontHowTo {
-    font-family: "Dosis", sans-serif;
-    font-size: 16px;
-    font-weight: 300;
     color: black;
-}
-
-
-.playerStatsFont {
-    font-family: "Dosis", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: beige;
 }
 
 .modal-font {
@@ -59,26 +37,23 @@ width: 80%;
     line-height: 1.4;
 }
 
-.modal-font-head-howTo {
-   font-family: "Dosis", sans-serif;
-    font-weight: 300;
-   color: black;
-    font-size: 24px;
-    border: 2px solid lightgreen;
-    border-radius: 15px;
-    background-color: $bg-howToBtn;
-    text-align: center;
-}
-
+.modal-font-head-howTo,
 .modal-font-head-register {
-   font-family: "Dosis", sans-serif;
+    font-family: "Dosis", sans-serif;
     font-weight: 300;
     color: black;
     font-size: 24px;
     border: 2px solid lightgreen;
     border-radius: 15px;
-    background-color: $bg-enterPlayersBtn;
     text-align: center;
+}
+
+.modal-font-head-howTo {
+    background-color: $bg-howToBtn;
+}
+
+.modal-font-head-register {
+    background-color: $bg-enterPlayersBtn;
 }
 
 .havefun {
