@@ -263,7 +263,7 @@ li {
         margin-top: 2px;
         margin-bottom: 2px;
         padding-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
     .banner {
@@ -280,7 +280,7 @@ li {
     }
 
     .controlPanelRowHeight {
-        height: 26vh;
+        height: 23.5vh;
         width: $overallWidth;
     }
 
@@ -313,7 +313,7 @@ li {
 
     .playfieldRowHeight {
         width: $overallWidth;
-        height: 61.5vh
+        height: 55vh
     }
 
     .fieldWrapper {
@@ -397,7 +397,7 @@ li {
         align-content: space-evenly;
         flex-wrap: wrap;
     }
-    
+
     .playerStats1,
     .playerStats2 {
         height: 5.5vw;
@@ -455,7 +455,8 @@ li {
 // special breakpoint for 1.33 ratio, ipad and ipad por
 @media screen and (width: 768px) and (height: 1024px) {
 
- .banner, .controlPanelRowHeight {
+    .banner,
+    .controlPanelRowHeight {
         width: 86%;
     }
 
@@ -477,7 +478,8 @@ li {
 // special breakpoint for 1.33 ratio, ipad and ipad por
 @media screen and (width: 1024px) and (height: 1366px) {
 
-     .banner, .controlPanelRowHeight {
+    .banner,
+    .controlPanelRowHeight {
         width: 86%;
     }
 
