@@ -38,14 +38,8 @@ body {
     @extend %vhalign;
     @extend %DosisFont;
     border: 2px solid lightgreen;
-    border-radius: 15px;
-    height: 32%;
-    margin: {
-        top: 2px;
-        left: 2px;
-        right: 2px;
-        bottom: 2px;
-    }
+    border-radius: 30px;
+    height: 28%;
 }
 
 .startBtn,
@@ -262,86 +256,69 @@ li {
 
     .outershell {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-content: space-around;
         flex-wrap: wrap;
         width: 98vw;
-        margin-top: 4px;
-        margin-bottom: 4px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .banner {
-        width: 95%;
-        margin: {
-            top: 4px;
-        }
+        width: $overallWidth;
     }
 
     .headline {
-        width: 96%;
+        width: 100%;
         font: {
             size: 4.9vh;
             family: "Dosis", sans-serif;
-        }
-        margin: {
-            top: 2px;
-            bottom: 2px;
-            left: 0px;
-            right: 0px;
         }
         text-align: center;
     }
 
     .controlPanelRowHeight {
-        margin: {
-            top: 6px;
-            bottom: 4px;
-        }
-        height: 21.0vh;
-        width: 95%;
+        height: 26vh;
+        width: $overallWidth;
     }
 
     .controlPanelWrapper {
-        width: 96%;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
     }
 
     .buttonfield {
         width: 100%;
-        height: 16.5vh;
+        height: 70%;
         display: flex;
-        justify-content: space-between;
-        align-content: space-around;
+        justify-content: space-evenly;
+        align-content: space-evenly;
         flex-wrap: wrap;
-        padding: {
-            top: 8px;
-            bottom: 8px;
-            left: 5px;
-            right: 5px;
-        }
     }
 
     .playStatsWrapper {
-        margin: {
-            top: 4px;
-            bottom: 0px;
-        }
+        height: 20%;
     }
 
     .playerStats1,
     .playerStats2 {
-        height: 4.5vh;
+        height: 100%;
     }
 
     .playfieldRowHeight {
-        height: 92vw;
+        width: $overallWidth;
+        height: 61.5vh
     }
 
     .fieldWrapper {
-        margin: {
-            top: 2px;
-            bottom: 2px;
-        }
-        width: 88.5vw;
-        height: 88.5vw;
+        width: 92.5vw;
+        height: 92.5vw;
     }
 
     .playfield {
@@ -350,12 +327,8 @@ li {
         align-content: space-around;
         flex-wrap: wrap;
         transition: opacity .5s ease-in-out;
-        width: 86.5vw;
-        height: 86.5vw;
-        margin: {
-            top: 2px;
-            bottom: 2px;
-        }
+        width: 90vw;
+        height: 90vw;
     }
 
     .DosisFont,
@@ -406,34 +379,25 @@ li {
     }
 
     .controlPanelWrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        width: 96%;
         margin: {
             bottom: 2px;
         }
-        width: 100%;
     }
-    
+
     .buttonfield {
-        padding: {
-            top: 8px;
-            left: 5px;
-            right: 5px;
-            bottom: 8px;
-        }
         width: 100%;
         height: 17.3vw;
         display: flex;
-        justify-content: space-between;
-        align-content: space-around;
+        justify-content: space-evenly;
+        align-content: space-evenly;
         flex-wrap: wrap;
     }
-
-    .playStatsWrapper {
-        margin: {
-            top: 5px;
-            bottom: 2px;
-        }
-    }
-
+    
     .playerStats1,
     .playerStats2 {
         height: 5.5vw;
@@ -485,5 +449,49 @@ li {
     .DosisFontHowTo,
     .playerStatsFont {
         font-size: 2.6vw;
+    }
+}
+
+// special breakpoint for 1.33 ratio, ipad and ipad por
+@media screen and (width: 768px) and (height: 1024px) {
+
+ .banner, .controlPanelRowHeight {
+        width: 86%;
+    }
+
+    .playfield {
+        width: 81vw;
+        height: 81vw;
+    }
+
+    .fieldWrapper {
+        width: 83.5vw;
+        height: 83.5vw;
+    }
+
+    .playfieldRowHeight {
+        height: 63.5vh;
+    }
+}
+
+// special breakpoint for 1.33 ratio, ipad and ipad por
+@media screen and (width: 1024px) and (height: 1366px) {
+
+     .banner, .controlPanelRowHeight {
+        width: 86%;
+    }
+
+    .playfield {
+        width: 81vw;
+        height: 81vw;
+    }
+
+    .fieldWrapper {
+        width: 83.5vw;
+        height: 83.5vw;
+    }
+
+    .playfieldRowHeight {
+        height: 63.5vh;
     }
 }

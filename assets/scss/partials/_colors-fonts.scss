@@ -5,6 +5,16 @@ $bg-fieldSizeBtn: #666699;
 $bg-startBtn: #00cc00;
 $bg-stopBtn: #e60000;
 
+.startBtn {
+    background-color: $bg-startBtn;
+}
+
+.stopBtn {
+    background-color: $bg-stopBtn;
+}
+
+
+
 %DosisFont {
     font-family: "Dosis", sans-serif;
     font-size: 18px;
