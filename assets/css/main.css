@@ -95,12 +95,7 @@
 
 body {
   color: beige;
-  background-color: #003553;
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-wrap: wrap;
-  height: 100vh; }
+  background-color: #003553; }
 
 .btn {
   padding: 0; }
@@ -371,6 +366,7 @@ li {
   .outershell {
     display: flex;
     justify-content: space-around;
+    align-content: space-around;
     flex-wrap: wrap;
     width: 98vw;
     margin-top: 2px;
