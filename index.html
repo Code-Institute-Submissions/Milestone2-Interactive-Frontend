@@ -13,43 +13,43 @@
 
 <body class="vhalign">
     <div class="outershell testframe1">
-            <div class="banner vhalign">
-                <div class="headline testframe2">The memorygame</div>
-            </div>
-            <div class="controlPanelRowHeight vhalign">
-                <div class="controlPanelWrapper">
-                    <div class="buttonfield DosisFont testframe2">
-                        <div class="btn btn-primary btn-lg howToBtn DosisFontHowTo" data-toggle="modal" data-target="#howToModal">How to play</div>
-                        <div class="btn btn-primary btn-lg enterPlayersBtn DosisFont" data-toggle="modal" data-target="#enterPlayersModal">SignUp</div>
-                        <div class="field8Btn DosisFont">4 x 2</div>
-                        <div class="field16Btn DosisFont">4 x 4</div>
-                        <div class="field36Btn DosisFont">6 x 6</div>
-                        <div class="btn btn-primary btn-lg startBtn DosisFont">start</div>
-                        <div class="btn btn-primary btn-lg stopBtn btnlocked DosisFont">stop</div>
-                    </div>
-                    <div class="playStatsWrapper vhalign testframe2">
-                        <div class="playerStats1 playerStatsFont vhalign">
-                            <div class="namePlayer1Field vhalign">Player1:</div>
-                            <div class="scorePlayer1Field vhalign">0</div>
-                            <div class="checkmarkDiv vhalign">
-                                <span class="checkmarkPlayer1 glyphicon glyphicon-ok-sign"></span>
-                            </div>
+        <div class="banner vhalign">
+            <div class="headline testframe2">The memorygame</div>
+        </div>
+        <div class="controlPanelRowHeight vhalign">
+            <div class="controlPanelWrapper">
+                <div class="buttonfield DosisFont testframe2">
+                    <div class="btn btn-primary btn-lg howToBtn DosisFontHowTo" data-toggle="modal" data-target="#howToModal">How to play</div>
+                    <div class="btn btn-primary btn-lg enterPlayersBtn DosisFont">SignUp</div>
+                    <div class="field8Btn DosisFont">4 x 2</div>
+                    <div class="field16Btn DosisFont">4 x 4</div>
+                    <div class="field36Btn DosisFont">6 x 6</div>
+                    <div class="btn btn-primary btn-lg startBtn DosisFont">start</div>
+                    <div class="btn btn-primary btn-lg stopBtn btnlocked DosisFont">stop</div>
+                </div>
+                <div class="playStatsWrapper vhalign testframe2">
+                    <div class="playerStats1 playerStatsFont vhalign">
+                        <div class="namePlayer1Field vhalign">Player1:</div>
+                        <div class="scorePlayer1Field vhalign">0</div>
+                        <div class="checkmarkDiv vhalign">
+                            <span class="checkmarkPlayer1 glyphicon glyphicon-ok-sign"></span>
                         </div>
-                        <div class="playerStats2 playerStatsFont vhalign">
-                            <div class="namePlayer2Field vhalign">Player2:</div>
-                            <div class="scorePlayer2Field vhalign">0</div>
-                            <div class="checkmarkDiv vhalign">
-                                <span class="checkmarkPlayer2 glyphicon glyphicon-ok-sign"></span>
-                            </div>
+                    </div>
+                    <div class="playerStats2 playerStatsFont vhalign">
+                        <div class="namePlayer2Field vhalign">Player2:</div>
+                        <div class="scorePlayer2Field vhalign">0</div>
+                        <div class="checkmarkDiv vhalign">
+                            <span class="checkmarkPlayer2 glyphicon glyphicon-ok-sign"></span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="playfieldRowHeight vhalign">
-                <div class="fieldWrapper vhalign testframe3">
-                    <div class="playfield vhalign"></div>
-                </div>
+        </div>
+        <div class="playfieldRowHeight vhalign">
+            <div class="fieldWrapper vhalign testframe3">
+                <div class="playfield vhalign"></div>
             </div>
+        </div>
     </div>
 
     <!-- popups -->
@@ -62,7 +62,7 @@
     <div class="modal fade" id="howToModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog vhalign" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header vhalign">
                     <h4 class="modal-title modal-font-head-howTo" id="myModalLabel">How to play this game</h4>
                 </div>
                 <div class="modal-body vhalign">
@@ -77,8 +77,7 @@
                             <p class="modal-font">Select then the size of playfield and hit the start button.</p>
                         </li>
                         <li>
-                            <p class="modal-font">Each player clicks two cards per round. If you succeeded and have found a match, the same player can continue and try next. If no pair was found, the other player
-                                is next. The player who has found the most pairs, wins the game.</p>
+                            <p class="modal-font">Each player clicks two cards per round. If you succeeded and have found a match, the same player can continue and try next. If no pair was found, the other player is next. The player who has found the most pairs, wins the game.</p>
                         </li>
                         <li>
                             <p class="modal-font">To start over a game, stop the current game and re-select playfield size.</p>
@@ -87,38 +86,30 @@
                     </ul>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-success" id="gotItBtn" data-dismiss="modal">Got it!</button>
+                    <button type="button" class="btn btn-default btn-success modal-font" id="gotItBtn" data-dismiss="modal">Got it!</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Modal for entering player details -->
-    <div class="modal fade" id="enterPlayersModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog vhalign" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title modal-font-head-register" id="myModalLabel">SignUp players</h4>
+    <div id="enterPlayersModal">
+        <div class="modal-font-head-register vhalign">SignUp players</div>
+        <div class="modal-fontRegistration">Welcome to the memory game!<br>Please enter player details.</div>
+        <div class="formWrapper">
+            <form>
+                <div class="form-group">
+                    <label class="modal-fontRegistration" for="namePlayer1">Player 1's name</label>
+                    <input type="text" class="form-control modal-fontRegistration" id="nameFieldPlayer1Form" placeholder="Please provide Player 1's name" value="11">
                 </div>
-                <div class="modal-body vhalign">
-                    <p class="modal-font">Welcome to the memory game! Please enter player details.</p>
-                    <div class="formWrapper">
-                        <form>
-                            <div class="form-group">
-                                <label class="modal-font" for="namePlayer1">Player 1's name</label>
-                                <input type="text" class="form-control" id="nameFieldPlayer1Form" placeholder="Please provide Player 1's name" value="">
-                            </div>
-                            <div class="form-group">
-                                <label class="modal-font" for="namePlayer2">Player 2's name</label>
-                                <input type="text" class="form-control" id="nameFieldPlayer2Form" placeholder="Please provide Player 2's name" value="">
-                            </div>
-                        </form>
-                    </div>
+                <div class="form-group">
+                    <label class="modal-fontRegistration" for="namePlayer2">Player 2's name</label>
+                    <input type="text" class="form-control modal-fontRegistration" id="nameFieldPlayer2Form" placeholder="Please provide Player 2's name" value="22">
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-success" id="saveBtn" data-dismiss="modal">Save</button>
-                </div>
-            </div>
+            </form>
+        </div>
+        <div class="saveBtnWrapper">
+            <div class="btn btn-default btn-success modal-fontRegistration" id="saveBtn">Save</div>
         </div>
     </div>
 
