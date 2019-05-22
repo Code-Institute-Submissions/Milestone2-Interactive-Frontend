@@ -10,12 +10,12 @@
 .DosisFont,
 .playerStatsFont {
   color: beige;
-  font-size: 5.5vw; }
+  font-size: 4vw; }
 
 .DosisFontHowTo,
 .HowToRegFont {
   color: black;
-  font-size: 5.5vw; }
+  font-size: 4vw; }
 
 .HowToRegFont, p {
   font-size: 5.0vw; }
@@ -23,7 +23,7 @@
 .headHowTo,
 .headRegister {
   width: 96%;
-  height: 6vh;
+  height: 7.4vh;
   color: black;
   font-size: 6vw;
   border: 2px solid lightgreen;
@@ -42,9 +42,8 @@
 
 .popup-font {
   font-family: "Dosis", sans-serif;
-  font-size: 4vw;
-  font-weight: 600;
-  color: beige; }
+  font-size: 7.5vw;
+  font-weight: 600; }
 
 .vhalign {
   display: flex;
@@ -173,9 +172,10 @@ body {
 
 .checkmarkPlayer1Big,
 .checkmarkPlayer2Big {
-  font-size: 5vw;
+  opacity: 0.0; }
+
+.bubbleIcon {
   font-weight: 300;
-  opacity: 0.0;
   animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
 
 @keyframes bubble {
@@ -244,6 +244,9 @@ body {
 .ruleset {
   width: 90%; }
 
+#howToModal {
+  width: 94vw; }
+
 #enterPlayersModal {
   width: 90vw; }
 
@@ -270,8 +273,8 @@ body {
 
 .popup {
   position: absolute;
-  width: 50vw;
-  height: 30vh;
+  width: 70vw;
+  height: 20vh;
   border: 2px solid lightblue;
   border-radius: 15px; }
 
@@ -284,12 +287,14 @@ body {
   opacity: 0.0;
   z-index: -1;
   transform: translateZ(-10px);
-  transition: opacity .5s ease-in-out; }
+  transition: opacity .8s ease-in-out; }
 
 .popupMatch {
+  color: beige;
   background-color: darkgreen; }
 
 .popupNoMatch {
+  color: beige;
   background-color: darkred; }
 
 .popupNext {
@@ -298,6 +303,7 @@ body {
   border: 2px solid darkgrey; }
 
 .popupGameCompleted {
+  color: #34393F;
   background-color: grey;
   text-align: center; }
 
@@ -503,13 +509,6 @@ body {
     font-size: 2.6vw;
     font-weight: 400; }
 
-  .checkmarkPlayer1Big,
-  .checkmarkPlayer2Big {
-    font-size: 4em;
-    font-weight: 300;
-    opacity: 0.0;
-    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
-
   .playfieldRowHeight {
     display: flex;
     justify-content: space-evenly;
@@ -519,8 +518,8 @@ body {
     height: 78vh; }
 
   .fieldWrapper {
-    width: 37vw;
-    height: 37vw; }
+    width: 74vh;
+    height: 74vh; }
 
   .playfield {
     display: flex;
@@ -528,8 +527,8 @@ body {
     align-content: space-around;
     flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
-    width: 36vw;
-    height: 36vw; }
+    width: 72vh;
+    height: 72vh; }
 
   .bannerPopup {
     width: 96%;
@@ -544,7 +543,7 @@ body {
     align-content: space-evenly;
     flex-wrap: wrap;
     width: 85%;
-    height: 16.5vh; }
+    height: 19vh; }
 
   .DosisFont,
   .DosisFontHowTo,
@@ -568,7 +567,21 @@ body {
   #nameFieldPlayer1Form,
   #nameFieldPlayer2Form {
     height: 8vh;
-    border-radius: 15px; } }
+    border-radius: 15px; }
+
+  .popup-font {
+    font-size: 7.5vh;
+    font-weight: 600; }
+
+  .popup {
+    width: 70vh;
+    height: 20vw; }
+
+  #howToModal {
+    width: 94vw; }
+
+  #enterPlayersModal {
+    width: 90vh; } }
 @media screen and (width: 768px) and (height: 1024px) {
   .banner,
   .controlPanelRowHeight {
@@ -704,13 +717,6 @@ body {
     font-size: 2.6vw;
     font-weight: 400; }
 
-  .checkmarkPlayer1Big,
-  .checkmarkPlayer2Big {
-    font-size: 4em;
-    font-weight: 300;
-    opacity: 0.0;
-    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
-
   .playfieldRowHeight {
     display: flex;
     justify-content: space-evenly;
@@ -799,13 +805,6 @@ body {
   .checkmarkPlayer2 {
     font-size: 2.6vw;
     font-weight: 400; }
-
-  .checkmarkPlayer1Big,
-  .checkmarkPlayer2Big {
-    font-size: 4em;
-    font-weight: 300;
-    opacity: 0.0;
-    animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
 
   .playfieldRowHeight {
     display: flex;

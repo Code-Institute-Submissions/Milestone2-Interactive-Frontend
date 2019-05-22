@@ -118,9 +118,11 @@ body {
 
 .checkmarkPlayer1Big,
 .checkmarkPlayer2Big {
-    font-size: 5vw;
-    font-weight: 300;
     opacity: 0.0;
+}
+
+.bubbleIcon {
+    font-weight: 300;
     animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1);
 }
 
@@ -207,6 +209,10 @@ body {
     width: 90%;
 }
 
+#howToModal {
+    width: 94vw;
+}
+
 #enterPlayersModal {
     width: 90vw;
 }
@@ -240,8 +246,8 @@ body {
 
 .popup {
     position: absolute;
-    width: 50vw;
-    height: 30vh;
+    width: 70vw;
+    height: 20vh;
     border: 2px solid lightblue;
     border-radius: 15px;
 }
@@ -255,14 +261,16 @@ body {
     opacity: 0.0;
     z-index: -1;
     transform: translateZ(-10px);
-    transition: opacity .5s ease-in-out;
+    transition: opacity .8s ease-in-out;
 }
 
 .popupMatch {
+    color: beige;
     background-color: darkgreen;
 }
 
 .popupNoMatch {
+    color: beige;
     background-color: darkred;
 }
 
@@ -273,6 +281,7 @@ body {
 }
 
 .popupGameCompleted {
+    color: #34393F;
     background-color: grey;
     text-align: center;
 }
@@ -445,14 +454,6 @@ body {
         font-weight: 400;
     }
 
-    .checkmarkPlayer1Big,
-    .checkmarkPlayer2Big {
-        font-size: 4em;
-        font-weight: 300;
-        opacity: 0.0;
-        animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1);
-    }
-
     .playfieldRowHeight {
         display: flex;
         justify-content: space-evenly;
@@ -463,8 +464,8 @@ body {
     }
 
     .fieldWrapper {
-        width: 37vw;
-        height: 37vw;
+        width: 74vh;
+        height: 74vh;
     }
 
     .playfield {
@@ -473,8 +474,8 @@ body {
         align-content: space-around;
         flex-wrap: wrap;
         transition: opacity .5s ease-in-out;
-        width: 36vw;
-        height: 36vw;
+        width: 72vh;
+        height: 72vh;
     }
 
     .bannerPopup {
@@ -492,7 +493,7 @@ body {
         align-content: space-evenly;
         flex-wrap: wrap;
         width: 85%;
-        height: 16.5vh;
+        height: 19vh;
     }
 
     .DosisFont,
@@ -522,6 +523,25 @@ body {
         height: 8vh;
         border-radius: 15px;
     }
+
+    .popup-font {
+        font-size: 7.5vh;
+        font-weight: 600;
+    }
+    
+    .popup {
+        width: 70vh;
+        height: 20vw;
+    }
+
+    #howToModal {
+        width: 94vw;
+    }
+
+    #enterPlayersModal {
+        width: 90vh;
+    }
+
 } // special breakpoint for 1.33 ratio, ipad
 @media screen and (width: 768px) and (height: 1024px) {
 
@@ -611,7 +631,6 @@ body {
     .registrationText {
         height: 12vh;
     }
-
 }
 
 @media screen and (width: 1024px) and (height: 768px) {
@@ -691,14 +710,6 @@ body {
     .checkmarkPlayer2 {
         font-size: 2.6vw;
         font-weight: 400;
-    }
-
-    .checkmarkPlayer1Big,
-    .checkmarkPlayer2Big {
-        font-size: 4em;
-        font-weight: 300;
-        opacity: 0.0;
-        animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1);
     }
 
     .playfieldRowHeight {
@@ -807,14 +818,6 @@ body {
     .checkmarkPlayer2 {
         font-size: 2.6vw;
         font-weight: 400;
-    }
-
-    .checkmarkPlayer1Big,
-    .checkmarkPlayer2Big {
-        font-size: 4em;
-        font-weight: 300;
-        opacity: 0.0;
-        animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1);
     }
 
     .playfieldRowHeight {
