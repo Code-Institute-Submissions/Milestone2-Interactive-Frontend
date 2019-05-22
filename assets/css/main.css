@@ -10,12 +10,12 @@
 .DosisFont,
 .playerStatsFont {
   color: beige;
-  font-size: 4vw; }
+  font-size: 4.5vw; }
 
 .DosisFontHowTo,
 .HowToRegFont {
   color: black;
-  font-size: 4vw; }
+  font-size: 4.5vw; }
 
 .HowToRegFont, p {
   font-size: 5.0vw; }
@@ -466,7 +466,7 @@ body {
 
   .headline {
     width: 60%;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     font-family: "Dosis", sans-serif;
     text-align: center; }
 
