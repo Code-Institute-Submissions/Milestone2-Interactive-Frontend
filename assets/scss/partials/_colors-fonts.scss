@@ -7,58 +7,46 @@ $bg-stopBtn: #e60000;
 
 .DosisFont,
 .DosisFontHowTo,
-.playerStatsFont {
+.playerStatsFont,
+.headHowTo,
+.headRegister,
+.HowToRegFont, p {
     font-family: "Dosis", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .DosisFont,
 .playerStatsFont {
     color: beige;
+    font-size: 5.5vw;
 }
 
-.DosisFontHowTo {
+.DosisFontHowTo,
+.HowToRegFont {
     color: black;
+    font-size: 5.5vw;
 }
 
-.modal-font {
-    font-family: "Dosis", sans-serif;
-    font-size: 4.8vw;
-    font-weight: 400;
-    color: black;
-    line-height: 1.4;
+.HowToRegFont, p {
+    font-size: 5.0vw;
 }
 
-.modal-fontHowTo {
-    font-family: "Dosis", sans-serif;
-    font-size: 4.8vw;
-    font-weight: 400;
+.headHowTo,
+.headRegister {
+    width: 96%;
+    height: 6vh;
     color: black;
-    line-height: 1.4;
-}
-
-.modal-fontRegistration {
-    font-family: "Dosis", sans-serif;
-    font-weight: 400;
-    color: black;
-    line-height: 1.4;
-}
-
-.modal-font-head-howTo,
-.modal-font-head-register {
-    font-family: "Dosis", sans-serif;
-    font-weight: 300;
-    color: black;
+    font-size: 6vw;
     border: 2px solid lightgreen;
     border-radius: 15px;
     text-align: center;
 }
 
-.modal-font-head-howTo {
+.headHowTo {
     background-color: $bg-howToBtn;
 }
 
-.modal-font-head-register {
+.headRegister {
     background-color: $bg-enterPlayersBtn;
 }
 
@@ -69,7 +57,7 @@ $bg-stopBtn: #e60000;
 
 .popup-font {
     font-family: "Dosis", sans-serif;
-    font-size: 7vw;
+    font-size: 4vw;
     font-weight: 600;
     color: beige;
 }

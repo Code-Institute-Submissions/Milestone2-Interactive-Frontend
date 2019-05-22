@@ -10,7 +10,7 @@ body {
 #saveBtn,
 #gotItBtn {
     padding: 5px;
-    width: 100%;
+    width: 50%;
     border-radius: 15px;
 }
 
@@ -40,7 +40,7 @@ body {
     @extend %vhalign;
     border: 2px solid lightgreen;
     border-radius: 30px;
-    height: 27%;
+    height: 29%;
 }
 
 .startBtn,
@@ -72,18 +72,18 @@ body {
 
 #nameFieldPlayer1Form,
 #nameFieldPlayer2Form {
-    height: 4.5vh;
+    height: 8vw;
     border-radius: 15px;
 }
 
 .scorePlayer1Field,
 .scorePlayer2Field {
     text-align: center;
-    width: 10%;
+    width: 15%;
 }
 
 .checkmarkDiv {
-    width: 10%;
+    width: 12%;
 }
 
 .playerStats1,
@@ -112,13 +112,13 @@ body {
 
 .checkmarkPlayer1,
 .checkmarkPlayer2 {
-    font-size: 3vw;
+    font-size: 5.5vw;
     font-weight: 400;
 }
 
 .checkmarkPlayer1Big,
 .checkmarkPlayer2Big {
-    font-size: 4em;
+    font-size: 5vw;
     font-weight: 300;
     opacity: 0.0;
     animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1);
@@ -177,113 +177,103 @@ body {
     transform: rotateY(180deg);
 }
 
-li {
-    width: 80vw;
-    padding-right: 25px;
-}
-
-.row {
-    margin-right: -20px;
-    margin-left: -20px;
-}
-
 #howToModal,
 #enterPlayersModal {
-    transform: translateZ(-110px);
-    z-index: -100;
-}
-
-#howToModal {
+    position: absolute;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    width: 70vw;
-    height: 75vh;
     padding: {
         top: 20px;
         left: 5px;
         right: 5px;
         bottom: 10px;
     }
-    background-color: rgba(186, 218, 85, 0.95);
+    background-color: rgba(133, 173, 173, 0.95);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+.bannerPopup {
+    height: 6vh;
+}
+
+#howToModal {
+    width: 94vw;
+}
+
+.ruleset {
+    width: 90%;
 }
 
 #enterPlayersModal {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 92vw;
-    height: 75vh;
-    top: 10.5vh;
-    position: absolute;
-    padding: {
-        top: 25px;
-        left: 5px;
-        right: 5px;
-        bottom: 10px;
-    }
-    border: 2px solid rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
-    background-color: rgba(186, 218, 85, 0.95);
-    opacity: 0.0;
-    transition: opacity .5s ease-in-out;
-    text-align: center;
+    width: 90vw;
 }
 
-.saveBtnWrapper {
-    width: 80%;
-    height: 10vh;
-}
-
-.modal-body {
-    padding-bottom: 0;
-    margin-bottom: 0;
+.registrationText {
+    height: 12vh;
 }
 
 .formWrapper {
-    width: 80%; //height: 25vh;
+    width: 80%;
+    height: 17vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.formItems {
+    width: 46%;
+    margin: 4px;
+}
+
+.saveBtnWrapper,
+.gotItBtnWrapper {
+    width: 80%;
+    margin: {
+        top: 5px;
+        bottom: 5px;
+    }
 }
 
 .popup {
     position: absolute;
-    width: 250px;
-    height: 150px;
+    width: 50vw;
+    height: 30vh;
     border: 2px solid lightblue;
     border-radius: 15px;
 }
 
-.popupMatch {
-    background-color: darkgreen;
+.popupMatch,
+.popupNoMatch,
+.popupNext,
+.popupGameCompleted,
+#howToModal,
+#enterPlayersModal {
     opacity: 0.0;
     z-index: -1;
     transform: translateZ(-10px);
-    transition: opacity 1s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+.popupMatch {
+    background-color: darkgreen;
 }
 
 .popupNoMatch {
     background-color: darkred;
-    opacity: 0.0;
-    z-index: -1;
-    transform: translateZ(-10px);
-    transition: opacity 1s ease-in-out;
 }
 
 .popupNext {
     color: #34393F;
     background-color: lightblue;
     border: 2px solid darkgrey;
-    opacity: 0.0;
-    z-index: -1;
-    transform: translateZ(-10px);
-    transition: opacity 1s ease-in-out;
 }
 
 .popupGameCompleted {
     background-color: grey;
-    opacity: 0.0;
-    z-index: -1;
-    transform: translateZ(-10px);
-    transition: opacity 1s ease-in-out;
     text-align: center;
 }
 
@@ -305,24 +295,32 @@ li {
         margin-top: 2px;
         margin-bottom: 2px;
         padding-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 4px;
     }
 
     .banner {
         width: $overallWidth;
     }
 
+    .bannerPopup {
+        width: $overallWidth;
+        margin: {
+            top: 5px;
+            bottom: 5px;
+        }
+    }
+
     .headline {
         width: 100%;
         font: {
-            size: 4.9vh;
+            size: 6.9vw;
             family: "Dosis", sans-serif;
         }
         text-align: center;
     }
 
     .controlPanelRowHeight {
-        height: 23.5vh;
+        height: 25.3vh;
         width: $overallWidth;
     }
 
@@ -337,7 +335,7 @@ li {
 
     .buttonfield {
         width: 100%;
-        height: 70%;
+        height: 76%;
         display: flex;
         justify-content: space-evenly;
         align-content: space-evenly;
@@ -374,25 +372,249 @@ li {
         width: 90vw;
         height: 90vw;
     }
-
-    .DosisFont,
-    .playerStatsFont,
-    .DosisFontHowTo {
-        font-size: 4.3vw;
-    }
-
-    .modal-fontRegistration {
-        font-size: 4.8vw;
-    }
-
-    .modal-font-head-howTo,
-    .modal-font-head-register {
-        width: 80%; //height: 13vw;
-        font-size: 7vw;
-    }
 }
 
 @media screen and (orientation:landscape) {
+
+    .outershell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 98vw;
+        height: 98vh;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .banner {
+        width: 95%;
+    }
+
+    .headline {
+        width: 60%;
+        font: {
+            size: 3.5vw;
+            family: "Dosis", sans-serif;
+        }
+        text-align: center;
+    }
+
+    .controlPanelRowHeight {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        width: 44vw;
+        height: 78vh;
+    }
+
+    .controlPanelWrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 24vw;
+    }
+
+    .buttonfield {
+        width: 100%;
+        height: 71%;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .playStatsWrapper {
+        width: 100%;
+        height: 18%;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .playerStats1,
+    .playerStats2 {
+        height: 100%;
+    }
+
+    .checkmarkPlayer1,
+    .checkmarkPlayer2 {
+        font-size: 2.6vw;
+        font-weight: 400;
+    }
+
+    .checkmarkPlayer1Big,
+    .checkmarkPlayer2Big {
+        font-size: 4em;
+        font-weight: 300;
+        opacity: 0.0;
+        animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1);
+    }
+
+    .playfieldRowHeight {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        width: 52vw;
+        height: 78vh;
+    }
+
+    .fieldWrapper {
+        width: 37vw;
+        height: 37vw;
+    }
+
+    .playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 36vw;
+        height: 36vw;
+    }
+
+    .bannerPopup {
+        width: 96%;
+        height: 13vh;
+    }
+
+    .registrationText {
+        height: 19.5vh;
+    }
+
+    .formWrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        width: 85%;
+        height: 16.5vh;
+    }
+
+    .DosisFont,
+    .DosisFontHowTo,
+    .playerStatsFont {
+        font-size: 2.6vw;
+    }
+
+    .HowToRegFont,
+    p {
+        font-size: 2.6vw;
+    }
+
+    .headHowTo,
+    .headRegister {
+        width: 96%;
+        height: 10.5vh;
+        color: black;
+        font-size: 6vh;
+        border: 2px solid lightgreen;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    #nameFieldPlayer1Form,
+    #nameFieldPlayer2Form {
+        height: 8vh;
+        border-radius: 15px;
+    }
+} // special breakpoint for 1.33 ratio, ipad
+@media screen and (width: 768px) and (height: 1024px) {
+
+    .banner,
+    .controlPanelRowHeight {
+        width: 86%;
+    }
+
+    .playfield {
+        width: 81vw;
+        height: 81vw;
+    }
+
+    .fieldWrapper {
+        width: 83vw;
+        height: 83vw;
+    }
+
+    .DosisFont,
+    .playerStatsFont {
+        color: beige;
+        font-size: 4.5vw;
+    }
+
+    .DosisFontHowTo,
+    .HowToRegFont {
+        color: black;
+        font-size: 4.5vw;
+    }
+
+    .headHowTo,
+    .headRegister {
+        width: 96%;
+        height: 7vh;
+        color: black;
+        font-size: 6vw;
+        border: 2px solid lightgreen;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .registrationText {
+        height: 12vh;
+    }
+
+} // special breakpoint for 1.33 ratio ipad pro
+@media screen and (width: 1024px) and (height: 1366px) {
+
+    .banner,
+    .controlPanelRowHeight {
+        width: 86%;
+    }
+
+    .playfield {
+        width: 81vw;
+        height: 81vw;
+    }
+
+    .fieldWrapper {
+        width: 83vw;
+        height: 83vw;
+    }
+
+    .DosisFont,
+    .playerStatsFont {
+        color: beige;
+        font-size: 4.5vw;
+    }
+
+    .DosisFontHowTo,
+    .HowToRegFont {
+        color: black;
+        font-size: 4.5vw;
+    }
+
+    .headHowTo,
+    .headRegister {
+        width: 96%;
+        height: 7vh;
+        color: black;
+        font-size: 6vw;
+        border: 2px solid lightgreen;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .registrationText {
+        height: 12vh;
+    }
+
+}
+
+@media screen and (width: 1024px) and (height: 768px) {
 
     .outershell {
         display: flex;
@@ -432,7 +654,131 @@ li {
         justify-content: space-evenly;
         align-content: space-evenly;
         flex-wrap: wrap;
-        width: 80%;
+        width: 90%;
+        height: 24vw;
+    }
+
+    .buttonfield {
+        width: 100%;
+        height: 71%;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .playStatsWrapper {
+        width: 100%;
+        height: 19%;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .playerStats1,
+    .playerStats2 {
+        height: 100%;
+    }
+
+    .playerStats1 {
+        border-right: 1px solid #34393F;
+    }
+
+    .playerStats2 {
+        border-left: 1px solid #34393F;
+    }
+
+    .checkmarkPlayer1,
+    .checkmarkPlayer2 {
+        font-size: 2.6vw;
+        font-weight: 400;
+    }
+
+    .checkmarkPlayer1Big,
+    .checkmarkPlayer2Big {
+        font-size: 4em;
+        font-weight: 300;
+        opacity: 0.0;
+        animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1);
+    }
+
+    .playfieldRowHeight {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        width: 52vw;
+        height: 78vh;
+    }
+
+    .fieldWrapper {
+        width: 49vw;
+        height: 49vw;
+    }
+
+    .playfield {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+        transition: opacity .5s ease-in-out;
+        width: 48vw;
+        height: 48vw;
+    }
+
+    .DosisFont,
+    .DosisFontHowTo,
+    .playerStatsFont {
+        font-size: 2.6vw;
+    }
+
+    #nameFieldPlayer1Form,
+    #nameFieldPlayer2Form {
+        height: 5vh;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (width: 1366px) and (height: 1024px) {
+
+    .outershell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 98vw;
+        height: 98vh;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .banner {
+        width: 95%;
+    }
+
+    .headline {
+        width: 60%;
+        font: {
+            size: 4.9vw;
+            family: "Dosis", sans-serif;
+        }
+        text-align: center;
+    }
+
+    .controlPanelRowHeight {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        width: 44vw;
+        height: 78vh;
+    }
+
+    .controlPanelWrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        width: 90%;
         height: 24vw;
     }
 
@@ -481,8 +827,8 @@ li {
     }
 
     .fieldWrapper {
-        width: 40vw;
-        height: 40vw;
+        width: 49vw;
+        height: 49vw;
     }
 
     .playfield {
@@ -491,8 +837,8 @@ li {
         align-content: space-around;
         flex-wrap: wrap;
         transition: opacity .5s ease-in-out;
-        width: 39vw;
-        height: 39vw;
+        width: 48vw;
+        height: 48vw;
     }
 
     .DosisFont,
@@ -501,98 +847,9 @@ li {
         font-size: 2.6vw;
     }
 
-    .modal-fontRegistration {
-        font-size: 3.0vw;
-    }
-
-    .modal-font-head-howTo,
-    .modal-font-head-register {
-        width: 80%;
-        font-size: 4vw;
-    }
-
     #nameFieldPlayer1Form,
     #nameFieldPlayer2Form {
         height: 5vh;
         border-radius: 15px;
     }
-/*
-    #enterPlayersModal {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 92vw;
-        height: 75vh;
-    }
-    
-    */
 }
-    // special breakpoint for 1.33 ratio, ipad
-    @media screen and (width: 768px) and (height: 1024px) {
-
-        .banner,
-        .controlPanelRowHeight {
-            width: 86%;
-        }
-
-        .playfield {
-            width: 81vw;
-            height: 81vw;
-        }
-
-        .fieldWrapper {
-            width: 83vw;
-            height: 83vw;
-        }
-
-        .modal-font {
-            font-family: "Dosis", sans-serif;
-            font-size: 3.8vw;
-            font-weight: 400;
-            color: black;
-            line-height: 1.4;
-        }
-
-        .modal-fontRegistration {
-            font-family: "Dosis", sans-serif;
-            font-size: 4.8vw;
-            font-weight: 400;
-            color: black;
-            line-height: 1.4;
-        }
-    }
-
-    // special breakpoint for 1.33 ratio ipad pro
-    @media screen and (width: 1024px) and (height: 1366px) {
-
-        .banner,
-        .controlPanelRowHeight {
-            width: 86%;
-        }
-
-        .playfield {
-            width: 81vw;
-            height: 81vw;
-        }
-
-        .fieldWrapper {
-            width: 83vw;
-            height: 83vw;
-        }
-
-        .modal-font {
-            font-family: "Dosis", sans-serif;
-            font-size: 3.8vw;
-            font-weight: 400;
-            color: black;
-            line-height: 1.4;
-        }
-
-        .modal-fontRegistration {
-            font-family: "Dosis", sans-serif;
-            font-size: 4.8vw;
-            font-weight: 400;
-            color: black;
-            line-height: 1.4;
-        }
-    }

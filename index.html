@@ -19,7 +19,7 @@
         <div class="controlPanelRowHeight vhalign">
             <div class="controlPanelWrapper">
                 <div class="buttonfield DosisFont testframe2">
-                    <div class="btn btn-primary btn-lg howToBtn DosisFontHowTo" data-toggle="modal" data-target="#howToModal">How to play</div>
+                    <div class="btn btn-primary btn-lg howToBtn DosisFontHowTo">How to play</div>
                     <div class="btn btn-primary btn-lg enterPlayersBtn DosisFont">SignUp</div>
                     <div class="field8Btn DosisFont">4 x 2</div>
                     <div class="field16Btn DosisFont">4 x 4</div>
@@ -59,57 +59,37 @@
     <div class="popup popupGameCompleted popup-font vhalign"></div>
 
     <!-- Modal for howto instructions -->
-    <div class="modal fade" id="howToModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog vhalign" role="document">
-            <div class="modal-content">
-                <div class="modal-header vhalign">
-                    <h4 class="modal-title modal-font-head-howTo" id="myModalLabel">How to play this game</h4>
-                </div>
-                <div class="modal-body vhalign">
-                    <ul class="modal-font">
-                        <li>
-                            <p class="modal-font">This game is intended to train your memory skills. It is being played by two players.</p>
-                        </li>
-                        <li>
-                            <p class="modal-font">Please register two players via the button "SignUp".</p>
-                        </li>
-                        <li>
-                            <p class="modal-font">Select then the size of playfield and hit the start button.</p>
-                        </li>
-                        <li>
-                            <p class="modal-font">Each player clicks two cards per round. If you succeeded and have found a match, the same player can continue and try next. If no pair was found, the other player is next. The player who has found the most pairs, wins the game.</p>
-                        </li>
-                        <li>
-                            <p class="modal-font">To start over a game, stop the current game and re-select playfield size.</p>
-                            <p class="havefun">Have fun and a good memory! :)</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default btn-success modal-font" id="gotItBtn" data-dismiss="modal">Got it!</button>
-                </div>
-            </div>
+    <div id="howToModal">
+        <div class="bannerPopup vhalign">
+            <div class="headHowTo">How to play this game</div>
+        </div>
+        <div class="ruleset vhalign">
+            <p class="">This game is intended to train your memory skills. It is being played by two players.</p>
+            <p class="">Select then the size of playfield and hit the start button.</p>
+            <p class="">Each player clicks two cards per round. If you succeeded and have found a match, the same player can continue and try next. If no pair was found, the other player is next. The player who has found the most pairs, wins the game.</p>
+            <p class="">To start over a game, stop the current game and re-select playfield size.</p>
+            <p class="havefun">Have fun and a good memory! :)</p>
+        </div>
+        <div class="gotItBtnWrapper vhalign">
+            <div class="btn btn-default btn-success HowToRegFont" id="gotItBtn">Got it!</div>
         </div>
     </div>
-
     <!-- Modal for entering player details -->
     <div id="enterPlayersModal">
-        <div class="modal-font-head-register vhalign">SignUp players</div>
-        <div class="modal-fontRegistration">Welcome to the memory game!<br>Please enter player details.</div>
-        <div class="formWrapper">
-            <form>
-                <div class="form-group">
-                    <label class="modal-fontRegistration" for="namePlayer1">Player 1's name</label>
-                    <input type="text" class="form-control modal-fontRegistration" id="nameFieldPlayer1Form" placeholder="Please provide Player 1's name" value="11">
-                </div>
-                <div class="form-group">
-                    <label class="modal-fontRegistration" for="namePlayer2">Player 2's name</label>
-                    <input type="text" class="form-control modal-fontRegistration" id="nameFieldPlayer2Form" placeholder="Please provide Player 2's name" value="22">
-                </div>
-            </form>
+        <div class="bannerPopup vhalign">
+            <div class="headRegister vhalign">SignUp players</div>
         </div>
-        <div class="saveBtnWrapper">
-            <div class="btn btn-default btn-success modal-fontRegistration" id="saveBtn">Save</div>
+        <div class="registrationText HowToRegFont vhalign">Welcome to the memory game!<br>Please enter player's name.</div>
+        <div class="formWrapper">
+            <div class="formItems HowToRegFont">Player 1's name: </div>
+            <div class="formItems"><input type="text" class="form-control HowToRegFont" id="nameFieldPlayer1Form" placeholder="Please provide Player 1's name" value="11">
+            </div>
+            <div class="formItems HowToRegFont">Player 2's name: </div>
+            <div class="formItems"><input type="text" class="form-control HowToRegFont" id="nameFieldPlayer2Form" placeholder="Please provide Player 2's name" value="22">
+            </div>
+        </div>
+        <div class="saveBtnWrapper vhalign">
+            <div class="btn btn-default btn-success HowToRegFont" id="saveBtn">Save</div>
         </div>
     </div>
 
