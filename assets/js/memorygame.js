@@ -1,7 +1,7 @@
 /*global $
 $(document);
 */
-// $(document).ready(function() {});
+// $(document).ready(function() {}); removed for jasmine testing
 // let , var declarations / assignments
 
 // predefined array with 18 pairs of cards = 36 cards max. Array will be cut to meet smaller fieldsizes.
@@ -14,12 +14,12 @@ let scorePlayer2 = 0; // score player2 on startup zero
 let currentPlayer = "Player1"; // per default player1 starts 1st game, 2nd game by Player2, and so on.
 let firstAttemptDone = 0; // indicator if 1st move of game has been done, needed for opening player determination
 let ThisGameOpenedBy = "Player1"; // per default player1 starts 1st game, needed for opening player determination
-let btnActive = true; // parameter for checking buttons active state
-let fieldActive = false; // parameter for checking playfields active state
-let startBtnActive = true; // parameter for checking startbutton active state
-let stopBtnActive = false; // parameter for checking stopbutton active state
-let saveBtnActive = false;
 let currentPlayfieldSize;
+// switches for active states
+let btnActive = true;
+let fieldActive = false;
+let startBtnActive = true;
+let stopBtnActive = false;
 
 // implementations of functions
 
@@ -306,13 +306,13 @@ function changeFontsizeBigLogo(num) {
         $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
     }
     else if (divider == 4) {
-        result = tmpWidthInt / 4.5; // keep font size smaller than 1/4 of playfieldsize
+        result = tmpWidthInt / 4.5; // keep font size smaller than 1/4 of playfieldsize to fit on card
         sizeBigLogo = result + "px";
         $('.checkmarkPlayer1Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
         $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
     }
     else if (divider == 6) {
-        result = tmpWidthInt / 7; // keep font size smaller than 1/6 of playfieldsize
+        result = tmpWidthInt / 7; // keep font size smaller than 1/6 of playfieldsize  to fit on card
         sizeBigLogo = result + "px";
         $('.checkmarkPlayer1Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
         $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
