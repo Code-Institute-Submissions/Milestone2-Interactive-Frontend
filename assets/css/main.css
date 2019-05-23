@@ -518,8 +518,8 @@ body {
     height: 78vh; }
 
   .fieldWrapper {
-    width: 74vh;
-    height: 74vh; }
+    width: 41.0vw;
+    height: 41.0vw; }
 
   .playfield {
     display: flex;
@@ -527,8 +527,8 @@ body {
     align-content: space-around;
     flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
-    width: 72vh;
-    height: 72vh; }
+    width: 39.5vw;
+    height: 39.5vw; }
 
   .bannerPopup {
     width: 96%;

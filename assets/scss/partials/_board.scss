@@ -464,8 +464,8 @@ body {
     }
 
     .fieldWrapper {
-        width: 74vh;
-        height: 74vh;
+        width: 41.0vw;
+        height: 41.0vw;
     }
 
     .playfield {
@@ -474,8 +474,8 @@ body {
         align-content: space-around;
         flex-wrap: wrap;
         transition: opacity .5s ease-in-out;
-        width: 72vh;
-        height: 72vh;
+        width: 39.5vw;
+        height: 39.5vw;
     }
 
     .bannerPopup {
@@ -633,6 +633,7 @@ body {
     }
 }
 
+// special breakpoint for 1.33 ratio ipad pro
 @media screen and (width: 1024px) and (height: 768px) {
 
     .outershell {
@@ -749,6 +750,7 @@ body {
     }
 }
 
+// special breakpoint for 1.33 ratio ipad pro
 @media screen and (width: 1366px) and (height: 1024px) {
 
     .outershell {
