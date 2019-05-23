@@ -52,7 +52,7 @@ function checkForMatch() {
                     }, 300); // delay time to wait until players logo is on card
                 }, 1000); // delay time to wait until popupMatch is vanished
             }, 500); // wait until cards have fully turned prior popup 'match'
-        } // end if
+        } // end if classes equal
         else if (classesCard1 != classesCard2) { // in case not matched, then
             setTimeout(function() { // wait until cards have fully turned 
                 popupNoMatch(); //show popup no match
@@ -67,7 +67,7 @@ function checkForMatch() {
                     }, 500); // makes whoIsNext checkup little more delayed 
                 }, 1500); // delay of 1500ms to be able to see shown cards
             }, 500); // wait until cards have fully turned 
-        } // end else if
+        } // end else if not matched
     }
 }
 
@@ -326,25 +326,25 @@ function fieldInit(num) {
     setTimeout(function() {
         generateCards(playFieldSize);
         if (playFieldSize == 9) {
-            $(".cardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set to 4 x 4 cards to fit in playfield space
-            $(".dummycardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set to 4 x 4 cards to fit in playfield space
+            $(".cardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set to 3 x 3 cards to fit in playfield space
+            $(".dummycardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set for dummycardshell
             currentPlayfieldSize = 3;
         }
         else if (playFieldSize == 16) {
             $(".cardshell").css("width", "23.7%").css("height", "23.7%"); // dimensions set to 4 x 4 cards to fit in playfield space
-            $(".dummycardshell").css("width", "23.7%").css("height", "23.7%"); // dimensions set to 4 x 4 cards to fit in playfield space
+            $(".dummycardshell").css("width", "23.7%").css("height", "23.7%"); // dimensions set for dummycardshell
             currentPlayfieldSize = 4;
         }
         else if (playFieldSize == 36) {
             $(".cardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
-            $(".dummycardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
+            $(".dummycardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set for dummycardshell
             currentPlayfieldSize = 6;
         }
         prepAndDeliverCardArray(playFieldSize);
     }, 800);
     setTimeout(function() { // playfield is made visible again
         $('.playfield').css('opacity', '1.0');
-    }, 1500);
+    }, 1200);
 }
 
 // function for preparation and delivery of playfield array 
