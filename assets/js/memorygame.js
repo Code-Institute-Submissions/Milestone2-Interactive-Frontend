@@ -115,7 +115,7 @@ function checkForMatch() {
                             whoIsNext(); //popup who is next
                             setTimeout(function() { // wait littlebit and make playfield active
                                 fieldActive = true;
-                            }, 600);
+                            }, 300);
                         }
                     }, 300); // delay time to wait until players logo is on card
                 }, 1000); // delay time to wait until popupMatch is vanished
@@ -162,7 +162,6 @@ function changeFontsizeBigLogo() {
     let tmpWidthInt = parseInt(tmpWidth);
     let result;
     let sizeBigLogo;
-
     if (CardRowlength == 3) {
         result = tmpWidthInt / 4; // keep font size smaller than 1/3 of playfieldsize to fit logo on card
         sizeBigLogo = result + "px";
