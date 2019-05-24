@@ -312,7 +312,8 @@ body {
   width: 80vw !important;
   height: 30vh !important;
   background-color: #ff6600;
-  color: white; }
+  color: white;
+  text-align: center; }
 
 .card1 {
   background-image: url(../images/cards/card1.jpg);
