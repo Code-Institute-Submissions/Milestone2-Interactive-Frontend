@@ -14,7 +14,8 @@ let scorePlayer2 = 0; // score player2 on startup zero
 let currentPlayer = "Player1"; // per default player1 starts 1st game, 2nd game by Player2, and so on.
 let firstAttemptDone = 0; // indicator if 1st move of game has been done, needed for opening player determination
 let ThisGameOpenedBy = "Player1"; // per default player1 starts 1st game, needed for opening player determination
-let currentPlayfieldSize;
+let CardRowlength; // for calculation of big players logo size on card
+
 // switches for active states
 let btnActive = true;
 let fieldActive = false;
@@ -22,6 +23,88 @@ let startBtnActive = true;
 let stopBtnActive = false;
 
 // implementations of functions
+function generateCards(num) {
+    let playFieldSize = num;
+    $(".playfield").empty(); // deleting all elements from playfield container
+    for (var i = 0; i < playFieldSize; i++) {
+        if (playFieldSize == 9 && i == 4) {
+            $(".playfield").append("<div class='dummycardshell'></div>");
+        }
+        else {
+            $(".playfield").append("<div class='cardshell'></div>");
+        }
+    }
+    $(".cardshell").append("<div class='card front vhalign'></div>");
+    $(".cardshell").append("<div class='card back vhalign'></div>");
+}
+
+function setCardshellSize(num) {
+    let playFieldSize = num;
+    if (playFieldSize == 9) {
+        CardRowlength = 3;
+        $(".cardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set to 3 x 3 cards to fit in playfield space
+        $(".dummycardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set for dummycardshell
+    }
+    else if (playFieldSize == 16) {
+        CardRowlength = 4;
+        $(".cardshell").css("width", "23.7%").css("height", "23.7%"); // dimensions set to 4 x 4 cards to fit in playfield space
+        $(".dummycardshell").css("width", "23.7%").css("height", "23.7%"); // dimensions set for dummycardshell
+    }
+    else if (playFieldSize == 36) {
+        CardRowlength = 6;
+        $(".cardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
+        $(".dummycardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set for dummycardshell
+    }
+}
+
+// function for generating playfield
+function fieldInit(num) {
+    let playFieldSize = num;
+    $('.playfield').css('opacity', '0.0'); // playfield is first put to invisibility and after waittime of 1s, the playfield is generated in background
+    setTimeout(function() {
+        generateCards(playFieldSize);
+        // setCardshellSize(playFieldSize);
+        if (playFieldSize == 9) {
+            $(".cardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set to 3 x 3 cards to fit in playfield space
+            $(".dummycardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set for dummycardshell
+            CardRowlength = 3;
+        }
+        else if (playFieldSize == 16) {
+            $(".cardshell").css("width", "23.7%").css("height", "23.7%"); // dimensions set to 4 x 4 cards to fit in playfield space
+            $(".dummycardshell").css("width", "23.7%").css("height", "23.7%"); // dimensions set for dummycardshell
+            CardRowlength = 4;
+        }
+        else if (playFieldSize == 36) {
+            $(".cardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
+            $(".dummycardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set for dummycardshell
+            CardRowlength = 6;
+        }
+        prepAndDeliverCardArray(playFieldSize);
+    }, 800);
+    setTimeout(function() { // playfield is made visible again
+        $('.playfield').css('opacity', '1.0');
+    }, 1200);
+}
+
+// function for preparation and delivery of playfield array 
+function prepAndDeliverCardArray(num) {
+    let playFieldSize2 = num;
+    currentCardArray = masterCardArray.concat(); // copying master array to working array
+    let playFieldCardArray = $(".back").toArray(); // create array of all backsides 
+    if (playFieldSize2 == 9) {
+        playFieldSize2 = 8;
+        currentCardArray.splice(playFieldSize2, 28); // reduce working array to first 8 cards and cut 28 cards
+    }
+    else if (playFieldSize2 == 16) {
+        currentCardArray.splice(playFieldSize2, 20); // reduce working array to first 16 cards and cut 20 cards
+    }
+
+    currentCardArray.sort(function(a, b) { return 0.5 - Math.random() }); // shuffle class array
+
+    for (let i = 0; i < playFieldSize2; i++) { // assigning shuffeled card class array 
+        $(playFieldCardArray[i]).addClass(currentCardArray[i]); // each backside of card gets a class added of shuffeled card array
+    }
+}
 
 // function to check for matching cards
 function checkForMatch() {
@@ -75,17 +158,44 @@ function checkForMatch() {
 function increasePoints() {
     if (currentPlayer == "Player1") { // if match is for Player1, then assign players checkmark
         $('.taken .back').append("<i class='checkmarkPlayer1Big fa fa-check-circle vhalign'></i>"); // append a div to taken cards on backside with players color scorePlayer1++; // increment score by 1
-        changeFontsizeBigLogo(currentPlayfieldSize);
+        changeFontsizeBigLogo(CardRowlength);
         scorePlayer1++; // increment score player1 by 1
         $('.scorePlayer1Field').html(scorePlayer1); // writing score to related HTML field
         $('.checkmarkPlayer1Big').addClass('bubbleIcon');
     }
     else if (currentPlayer == "Player2") { // if match is for Player2, then assign players checkmark
         $('.taken .back').append("<i class='checkmarkPlayer2Big fa fa-check-circle vhalign'></i>"); // append a div to taken cards on backside with players color
-        changeFontsizeBigLogo(currentPlayfieldSize);
+        changeFontsizeBigLogo(CardRowlength);
         scorePlayer2++; // increment score player2 by 1
         $('.scorePlayer2Field').html(scorePlayer2); // writing score to related HTML field
         $('.checkmarkPlayer2Big').addClass('bubbleIcon');
+    }
+}
+
+function changeFontsizeBigLogo(num) {
+    let divider = num;
+    let result;
+    let tmpWidth = $(".playfield").css("width");
+    let tmpWidthInt = parseInt(tmpWidth);
+    let sizeBigLogo;
+
+    if (divider == 3) {
+        result = tmpWidthInt / 4; // keep font size smaller than 1/3 of playfieldsize to fit logo on card
+        sizeBigLogo = result + "px";
+        $('.checkmarkPlayer1Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
+        $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
+    }
+    else if (divider == 4) {
+        result = tmpWidthInt / 4.5; // keep font size smaller than 1/4 of playfieldsize to fit on card
+        sizeBigLogo = result + "px";
+        $('.checkmarkPlayer1Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
+        $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
+    }
+    else if (divider == 6) {
+        result = tmpWidthInt / 7; // keep font size smaller than 1/6 of playfieldsize  to fit on card
+        sizeBigLogo = result + "px";
+        $('.checkmarkPlayer1Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
+        $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
     }
 }
 
@@ -98,6 +208,32 @@ function changePlayer(str) {
     else if (activePlayer == "Player2") { // if statements check if it is player2 and sets currentPlayer to the opposite player
         currentPlayer = "Player1";
     }
+}
+
+// function to set the activePlayer
+function setActivePlayer(str) {
+    let player = str;
+    // moving up popup on z axis
+    $('.popupNext').css("transform", "translateZ(400px)").css("z-index", "400"); //move popup up on z-scale above playfield, set z-index also to 400, to make popup properly show up
+    if (player == "Player1") {
+        $('.playerStats1').css('background-color', 'red'); // set to red when active
+        $('.playerStats2').css('background-color', 'grey'); // set other player to grey
+        $('.popupNext').html(namePlayer1 + " is next!"); // set popup text accordingly
+    }
+    else if (player == "Player2") {
+        $('.playerStats1').css('background-color', 'grey'); // set other player to grey 
+        $('.playerStats2').css('background-color', 'red'); // set to red when active
+        $('.popupNext').html(namePlayer2 + " is next!"); // set popup text accordingly
+    }
+    $('.popupNext').css("opacity", "1.0"); // show popup
+
+    setTimeout(function() {
+        $('.popupNext').css("opacity", "0.0"); // make popup dissappear
+    }, 1000);
+
+    setTimeout(function() {
+        $('.popupNext').css("transform", "translateZ(-10px)").css("z-index", "-1"); // move popup below playfield so it is gone and does not block clicks on card
+    }, 2000);
 }
 
 // function for changing opening player
@@ -151,32 +287,6 @@ function whoIsNext() {
         setActivePlayer(currentPlayer);
     }
     firstAttemptDone = 1; // game has been started / first move is being done
-}
-
-// function to set the activePlayer
-function setActivePlayer(str) {
-    let player = str;
-    // moving up popup on z axis
-    $('.popupNext').css("transform", "translateZ(400px)").css("z-index", "400"); //move popup up on z-scale above playfield, set z-index also to 400, to make popup properly show up
-    if (player == "Player1") {
-        $('.playerStats1').css('background-color', 'red'); // set to red when active
-        $('.playerStats2').css('background-color', 'grey'); // set other player to grey
-        $('.popupNext').html(namePlayer1 + " is next!"); // set popup text accordingly
-    }
-    else if (player == "Player2") {
-        $('.playerStats1').css('background-color', 'grey'); // set other player to grey 
-        $('.playerStats2').css('background-color', 'red'); // set to red when active
-        $('.popupNext').html(namePlayer2 + " is next!"); // set popup text accordingly
-    }
-    $('.popupNext').css("opacity", "1.0"); // show popup
-
-    setTimeout(function() {
-        $('.popupNext').css("opacity", "0.0"); // make popup dissappear
-    }, 1000);
-
-    setTimeout(function() {
-        $('.popupNext').css("transform", "translateZ(-10px)").css("z-index", "-1"); // move popup below playfield so it is gone and does not block clicks on card
-    }, 2000);
 }
 
 // function to provide popup 'match'
@@ -277,96 +387,6 @@ function makeBtnActiveButStart() {
     $(".stopBtn").addClass("btnlocked"); // dimmed state applied when game stopped.
 }
 
-function generateCards(num) {
-    let playFieldSize2 = num;
-    $(".playfield").empty(); // deleting all elements from playfield container
-    for (var i = 0; i < playFieldSize2; i++) {
-        if (playFieldSize2 == 9 && i == 4) {
-            $(".playfield").append("<div class='dummycardshell'></div>");
-        }
-        else {
-            $(".playfield").append("<div class='cardshell'></div>");
-        }
-    }
-    $(".cardshell").append("<div class='card front vhalign'></div>");
-    $(".cardshell").append("<div class='card back vhalign'></div>");
-}
-
-function changeFontsizeBigLogo(num) {
-    let divider = num;
-    let result;
-    let tmpWidth = $(".playfield").css("width");
-    let tmpWidthInt = parseInt(tmpWidth);
-    let sizeBigLogo;
-
-    if (divider == 3) {
-        result = tmpWidthInt / 4; // keep font size smaller than 1/3 of playfieldsize to fit logo on card
-        sizeBigLogo = result + "px";
-        $('.checkmarkPlayer1Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
-        $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
-    }
-    else if (divider == 4) {
-        result = tmpWidthInt / 4.5; // keep font size smaller than 1/4 of playfieldsize to fit on card
-        sizeBigLogo = result + "px";
-        $('.checkmarkPlayer1Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
-        $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
-    }
-    else if (divider == 6) {
-        result = tmpWidthInt / 7; // keep font size smaller than 1/6 of playfieldsize  to fit on card
-        sizeBigLogo = result + "px";
-        $('.checkmarkPlayer1Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
-        $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
-    }
-}
-
-// function for generating playfield
-function fieldInit(num) {
-    let playFieldSize = num;
-    $('.playfield').css('opacity', '0.0'); // playfield is first put to invisibility and after waittime of 1s, the playfield is generated in background
-    setTimeout(function() {
-        generateCards(playFieldSize);
-        if (playFieldSize == 9) {
-            $(".cardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set to 3 x 3 cards to fit in playfield space
-            $(".dummycardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set for dummycardshell
-            currentPlayfieldSize = 3;
-        }
-        else if (playFieldSize == 16) {
-            $(".cardshell").css("width", "23.7%").css("height", "23.7%"); // dimensions set to 4 x 4 cards to fit in playfield space
-            $(".dummycardshell").css("width", "23.7%").css("height", "23.7%"); // dimensions set for dummycardshell
-            currentPlayfieldSize = 4;
-        }
-        else if (playFieldSize == 36) {
-            $(".cardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
-            $(".dummycardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set for dummycardshell
-            currentPlayfieldSize = 6;
-        }
-        prepAndDeliverCardArray(playFieldSize);
-    }, 800);
-    setTimeout(function() { // playfield is made visible again
-        $('.playfield').css('opacity', '1.0');
-    }, 1200);
-}
-
-// function for preparation and delivery of playfield array 
-function prepAndDeliverCardArray(num) {
-    let playFieldSize2 = num;
-    currentCardArray = masterCardArray.concat(); // copying master array to working array
-    let playFieldCardArray = $(".back").toArray(); // create array of all backsides 
-    if (playFieldSize2 == 9) {
-        playFieldSize2 = 8;
-        currentCardArray.splice(playFieldSize2, 28); // reduce working array to first 8 cards and cut 28 cards
-    }
-    else if (playFieldSize2 == 16) {
-        currentCardArray.splice(playFieldSize2, 20); // reduce working array to first 16 cards and cut 20 cards
-    }
-
-    currentCardArray.sort(function(a, b) { return 0.5 - Math.random() }); // shuffle class array
-
-    for (let i = 0; i < playFieldSize2; i++) { // assigning shuffeled card class array 
-        $(playFieldCardArray[i]).addClass(currentCardArray[i]); // each backside of card gets a class added of shuffeled card array
-    }
-}
-
 // function for counter reset on game startup
 function resetCounters() {
     scorePlayer1 = 0; //set playerscores Player1 to zero
@@ -379,6 +399,36 @@ function showRegistrationPopup() {
     $('#enterPlayersModal').css("transform", "translateZ(400px)").css("z-index", "400").css("opacity", "1.0");
 }
 
+function checkNames() {
+    //should either field have string length of 0, the user will be informed with alert popup
+    if ($('#nameFieldPlayer1Form').val().length == 0 || $('#nameFieldPlayer2Form').val().length == 0) {
+        alert('Please fill in names in both fields.');
+    }
+    //should one of the fields have string length of >8, the user will be informed with alert popup
+    else if ($('#nameFieldPlayer1Form').val().length > 8 || $('#nameFieldPlayer2Form').val().length > 8) {
+        alert('Please fill in names with no more than 8 characters.');
+    }
+    //should both fields have same name, the user will be informed with alert popup
+    else if ($('#nameFieldPlayer1Form').val() == $('#nameFieldPlayer2Form').val()) {
+        alert('Please provide different names for each player.');
+    }
+    // in any other case, save button functionality is assigned back and string values of textinput fields written to HTML elements and internal variables
+    else {
+        processNames();
+    }
+}
+
+function processNames() {
+    namePlayer1 = $('#nameFieldPlayer1Form').val();
+    $('.namePlayer1Field').html(namePlayer1 + ": ");
+    namePlayer2 = $('#nameFieldPlayer2Form').val();
+    $('.namePlayer2Field').html(namePlayer2 + ": ");
+    $('#enterPlayersModal').css("opacity", "0.0");
+    setTimeout(function() {
+        $('#enterPlayersModal').css("transform", "translateZ(-10px)").css("z-index", "-1");
+    }, 1000);
+}
+
 function showHowToPopup() {
     $('#howToModal').css("transform", "translateZ(400px)").css("z-index", "400").css("opacity", "1.0");
 }
@@ -387,10 +437,11 @@ function showHowToPopup() {
 fieldInit(9); // generating playfield of 3x3 per default on startup
 make_field8BtnVisActive(); // make 8-card button visually active
 resetCounters();
-setTimeout(function() {
-    showRegistrationPopup();
-}, 500);
-// click actions for ...
+//setTimeout(function() { // wait until playfield is generated
+//  showRegistrationPopup();
+// }, 2000);
+
+// click events for ...
 
 //registration popup button
 $(".enterPlayersBtn").on('click', function() {
@@ -401,6 +452,7 @@ $(".enterPlayersBtn").on('click', function() {
 
 // how-to popup button
 $(".howToBtn").on('click', function() {
+    // Howto button is accessible all the time
     showHowToPopup();
 });
 
@@ -444,7 +496,7 @@ $(".startBtn").on('touchstart click', function() {
         whoIsNext();
         setTimeout(function() {
             fieldActive = true; // set indicator to make playfield active
-        }, 1500);
+        }, 1200);
     }
 });
 
@@ -473,28 +525,5 @@ $('#gotItBtn').on('touchstart click', function() {
 
 // ... for save button button on registration modal
 $('#saveBtn').on('touchstart click', function() {
-
-    //should either field have string length of 0, the user will be informed with alert popup
-    if ($('#nameFieldPlayer1Form').val().length == 0 || $('#nameFieldPlayer2Form').val().length == 0) {
-        alert('Please fill in names in both fields.');
-    }
-    //should one of the fields have string length of >8, the user will be informed with alert popup
-    else if ($('#nameFieldPlayer1Form').val().length > 8 || $('#nameFieldPlayer2Form').val().length > 8) {
-        alert('Please fill in names with no more than 8 characters.');
-    }
-    //should both fields have same name, the user will be informed with alert popup
-    else if ($('#nameFieldPlayer1Form').val() == $('#nameFieldPlayer2Form').val()) {
-        alert('Please provide different names for each player.');
-    }
-    // in any other case, save button functionality is assigned back and string values of textinput fields written to HTML elements and internal variables
-    else {
-        namePlayer1 = $('#nameFieldPlayer1Form').val();
-        $('.namePlayer1Field').html(namePlayer1 + ": ");
-        namePlayer2 = $('#nameFieldPlayer2Form').val();
-        $('.namePlayer2Field').html(namePlayer2 + ": ");
-        $('#enterPlayersModal').css("opacity", "0.0");
-        setTimeout(function() {
-            $('#enterPlayersModal').css("transform", "translateZ(-10px)").css("z-index", "-1");
-        }, 1000);
-    }
+    checkNames();
 });
