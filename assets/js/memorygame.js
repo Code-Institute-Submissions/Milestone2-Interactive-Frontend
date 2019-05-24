@@ -385,17 +385,17 @@ function showRegistrationPopup() {
 function checkNames() {
     //should either field have string length of 0, or...
     if ($('#nameFieldPlayer1Form').val().length == 0 || $('#nameFieldPlayer2Form').val().length == 0) {
-        $('.popupCheckNames').html("Please fill in names in both fields.");
+        $('.popupCheckNames').html(`Please fill in names<br> in both fields.`);
         popupCheckNames();
     }
     //...string length of >8, the user will be informed with alert popup
     else if ($('#nameFieldPlayer1Form').val().length > 8 || $('#nameFieldPlayer2Form').val().length > 8) {
-        $('.popupCheckNames').html("Please fill in names with no more than 8 characters.");
+        $('.popupCheckNames').html("Please fill in names with<br> no more than 8 characters.");
         popupCheckNames();
     }
     //should both fields have same name, the user will be informed with alert popup
     else if ($('#nameFieldPlayer1Form').val() == $('#nameFieldPlayer2Form').val()) {
-        $('.popupCheckNames').html("Please provide different names for each player.");
+        $('.popupCheckNames').html("Please provide different<br> names for each player.");
         popupCheckNames();
     }
     // in any other case
