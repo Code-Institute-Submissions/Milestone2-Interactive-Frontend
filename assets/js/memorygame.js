@@ -143,46 +143,47 @@ function checkForMatch() {
 function increasePoints() {
     if (currentPlayer == "Player1") { // if match is for Player1, then assign players checkmark
         $('.taken .back').append("<i class='checkmarkPlayer1Big fa fa-check-circle vhalign'></i>"); // append a div to taken cards on backside with players color scorePlayer1++; // increment score by 1
-        changeFontsizeBigLogo(CardRowlength);
+        changeFontsizeBigLogo();
         scorePlayer1++; // increment score player1 by 1
         $('.scorePlayer1Field').html(scorePlayer1); // writing score to related HTML field
         $('.checkmarkPlayer1Big').addClass('bubbleIcon');
     }
     else if (currentPlayer == "Player2") { // if match is for Player2, then assign players checkmark
         $('.taken .back').append("<i class='checkmarkPlayer2Big fa fa-check-circle vhalign'></i>"); // append a div to taken cards on backside with players color
-        changeFontsizeBigLogo(CardRowlength);
+        changeFontsizeBigLogo();
         scorePlayer2++; // increment score player2 by 1
         $('.scorePlayer2Field').html(scorePlayer2); // writing score to related HTML field
         $('.checkmarkPlayer2Big').addClass('bubbleIcon');
     }
 }
 
-function changeFontsizeBigLogo(num) {
-    let divider = num;
-    let result;
+function changeFontsizeBigLogo() {
     let tmpWidth = $(".playfield").css("width");
     let tmpWidthInt = parseInt(tmpWidth);
+    let result;
     let sizeBigLogo;
 
-    if (divider == 3) {
+    if (CardRowlength == 3) {
         result = tmpWidthInt / 4; // keep font size smaller than 1/3 of playfieldsize to fit logo on card
         sizeBigLogo = result + "px";
         $('.checkmarkPlayer1Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
         $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
     }
-    else if (divider == 4) {
+    else if (CardRowlength == 4) {
         result = tmpWidthInt / 4.5; // keep font size smaller than 1/4 of playfieldsize to fit on card
         sizeBigLogo = result + "px";
         $('.checkmarkPlayer1Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
         $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
     }
-    else if (divider == 6) {
+    else if (CardRowlength == 6) {
         result = tmpWidthInt / 7; // keep font size smaller than 1/6 of playfieldsize  to fit on card
         sizeBigLogo = result + "px";
         $('.checkmarkPlayer1Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
         $('.checkmarkPlayer2Big').css('font-size', sizeBigLogo); // set size of players logo accordingly to card size
     }
 }
+
+window.onresize = function(){ changeFontsizeBigLogo(); };
 
 // function for changing player
 function changePlayer(str) {
