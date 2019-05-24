@@ -282,6 +282,7 @@ body {
 .popupNoMatch,
 .popupNext,
 .popupGameCompleted,
+.popupCheckNames,
 #howToModal,
 #enterPlayersModal {
   opacity: 0.0;
@@ -306,6 +307,12 @@ body {
   color: #34393F;
   background-color: grey;
   text-align: center; }
+
+.popupCheckNames {
+  width: 80vw !important;
+  height: 30vh !important;
+  background-color: #ff6600;
+  color: white; }
 
 .card1 {
   background-image: url(../images/cards/card1.jpg);
