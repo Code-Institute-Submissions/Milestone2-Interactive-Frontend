@@ -39,18 +39,18 @@ function generateCards(num) {
 }
 
 function setCardshellSize(num) {
-    let playFieldSize = num;
-    if (playFieldSize == 9) {
+    let playFieldSize2 = num;
+    if (playFieldSize2 == 9) {
         CardRowlength = 3;
         $(".cardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set to 3 x 3 cards to fit in playfield space
         $(".dummycardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set for dummycardshell
     }
-    else if (playFieldSize == 16) {
+    else if (playFieldSize2 == 16) {
         CardRowlength = 4;
         $(".cardshell").css("width", "23.7%").css("height", "23.7%"); // dimensions set to 4 x 4 cards to fit in playfield space
         $(".dummycardshell").css("width", "23.7%").css("height", "23.7%"); // dimensions set for dummycardshell
     }
-    else if (playFieldSize == 36) {
+    else if (playFieldSize2 == 36) {
         CardRowlength = 6;
         $(".cardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set to 6 x 6 cards to fit in playfield space
         $(".dummycardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set for dummycardshell
@@ -63,7 +63,8 @@ function fieldInit(num) {
     $('.playfield').css('opacity', '0.0'); // playfield is first put to invisibility and after waittime of 1s, the playfield is generated in background
     setTimeout(function() {
         generateCards(playFieldSize);
-        // setCardshellSize(playFieldSize);
+        setCardshellSize(playFieldSize);
+        /*
         if (playFieldSize == 9) {
             $(".cardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set to 3 x 3 cards to fit in playfield space
             $(".dummycardshell").css("width", "31.7%").css("height", "31.7%"); // dimensions set for dummycardshell
@@ -79,6 +80,7 @@ function fieldInit(num) {
             $(".dummycardshell").css("width", "15.4%").css("height", "15.4%"); // dimensions set for dummycardshell
             CardRowlength = 6;
         }
+        */
         prepAndDeliverCardArray(playFieldSize);
     }, 800);
     setTimeout(function() { // playfield is made visible again
