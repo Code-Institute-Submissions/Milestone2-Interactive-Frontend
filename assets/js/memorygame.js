@@ -422,9 +422,9 @@ function showHowToPopup() {
 fieldInit(9); // generating playfield of 3x3 per default on startup
 make_field8BtnVisActive(); // make 8-card button visually active
 resetCounters();
-//setTimeout(function() { // wait until playfield is generated
-//  showRegistrationPopup();
-// }, 2000);
+setTimeout(function() { // wait until playfield is generated
+    showRegistrationPopup();
+}, 2000);
 
 // click events for ...
 
