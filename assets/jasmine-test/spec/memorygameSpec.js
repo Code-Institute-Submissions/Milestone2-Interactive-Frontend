@@ -234,6 +234,141 @@ describe("function fieldInit(num)", function() {
     });
 });
 
+describe("function prepAndDeliverCardArray(num)", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="playfield vhalign"></div>`);
+        jasmine.clock().install();
+        currentCardArray = [];
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(prepAndDeliverCardArray).toBeDefined();
+    });
+
+    describe("if called as prepAndDeliverCardArray(9)", function() {
+        it("should set currentCardArray = masterCardArray.concat();", function() {
+            currentCardArray = masterCardArray.concat();
+            expect(currentCardArray).toEqual(masterCardArray);
+        });
+
+        it("should create an array with length of 8 out of existent .back elements", function() {
+            let playFieldSize2 = 9;
+            generateCards(playFieldSize2);
+            let playFieldCardArray = $(".back").toArray();
+            expect(playFieldCardArray.length).toBe(8);
+        });
+
+        it("should splice currentCardArray to 8 cards", function() {
+            let playFieldSize2 = 8;
+            currentCardArray = masterCardArray.concat();
+            currentCardArray.splice(playFieldSize2, 28);
+            expect(currentCardArray.length).toBe(8);
+        });
+
+        it("should call function to shuffle card array", function() {
+            let playFieldSize2 = 8;
+            currentCardArray = masterCardArray.concat();
+            currentCardArray.splice(playFieldSize2, 28);
+            let currentCardArrayUnsorted = currentCardArray.concat();
+            currentCardArray.sort(function(a, b) { return 0.5 - Math.random() });
+            expect(currentCardArray).not.toEqual(currentCardArrayUnsorted);
+        });
+
+        it("should assign the shuffeled class array to card array on playfield", function() {
+            let playFieldSize2 = 8;
+            currentCardArray = masterCardArray.concat();
+            currentCardArray.splice(playFieldSize2, 28);
+            generateCards(playFieldSize2);
+            let playFieldCardArray = $(".back").toArray();
+            let playFieldCardArrayBeforeAssingment = playFieldCardArray.concat();
+            for (let i = 0; i < playFieldSize2; i++) {
+                $(playFieldCardArray[i]).addClass(currentCardArray[i]);
+            }
+            expect(playFieldCardArray).not.toBe(playFieldCardArrayBeforeAssingment);
+        });
+    });
+
+    describe("if called as prepAndDeliverCardArray(16)", function() {
+        it("should set currentCardArray = masterCardArray.concat();", function() {
+            currentCardArray = masterCardArray.concat();
+            expect(currentCardArray).toEqual(masterCardArray);
+        });
+
+        it("should create an array with length of 16 out of existent .back elements", function() {
+            let playFieldSize2 = 16;
+            generateCards(playFieldSize2);
+            let playFieldCardArray = $(".back").toArray();
+            expect(playFieldCardArray.length).toBe(16);
+        });
+
+        it("should splice currentCardArray to 16 cards", function() {
+            let playFieldSize2 = 16;
+            currentCardArray = masterCardArray.concat();
+            currentCardArray.splice(playFieldSize2, 20);
+            expect(currentCardArray.length).toBe(16);
+        });
+
+        it("should call function to randomize card array", function() {
+            let playFieldSize2 = 16;
+            currentCardArray = masterCardArray.concat();
+            currentCardArray.splice(playFieldSize2, 28);
+            let currentCardArrayUnsorted = currentCardArray.concat();
+            currentCardArray.sort(function(a, b) { return 0.5 - Math.random() });
+            expect(currentCardArray).not.toEqual(currentCardArrayUnsorted);
+        });
+
+        it("should assign the shuffeled class array to card array on playfield", function() {
+            let playFieldSize2 = 16;
+            currentCardArray = masterCardArray.concat();
+            currentCardArray.splice(playFieldSize2, 20);
+            generateCards(playFieldSize2);
+            let playFieldCardArray = $(".back").toArray();
+            let playFieldCardArrayBeforeAssingment = playFieldCardArray.concat();
+            for (let i = 0; i < playFieldSize2; i++) {
+                $(playFieldCardArray[i]).addClass(currentCardArray[i]);
+            }
+            expect(playFieldCardArray).not.toBe(playFieldCardArrayBeforeAssingment);
+        });
+    });
+
+    describe("if called as prepAndDeliverCardArray(36)", function() {
+        it("should set currentCardArray = masterCardArray.concat();", function() {
+            currentCardArray = masterCardArray.concat();
+            expect(currentCardArray).toEqual(masterCardArray);
+        });
+
+        it("should create an array with length of 36 out of existent .back elements", function() {
+            let playFieldSize2 = 36;
+            generateCards(playFieldSize2);
+            let playFieldCardArray = $(".back").toArray();
+            expect(playFieldCardArray.length).toBe(36);
+        });
+
+        it("should call function to randomize card array", function() {
+            let playFieldSize2 = 36;
+            currentCardArray = masterCardArray.concat();
+            let currentCardArrayUnsorted = currentCardArray.concat();
+            currentCardArray.sort(function(a, b) { return 0.5 - Math.random() });
+            expect(currentCardArray).not.toEqual(currentCardArrayUnsorted);
+        });
+
+        it("should assign the shuffeled class array to card array on playfield", function() {
+            let playFieldSize2 = 36;
+            currentCardArray = masterCardArray.concat();
+            generateCards(playFieldSize2);
+            let playFieldCardArray = $(".back").toArray();
+            let playFieldCardArrayBeforeAssingment = playFieldCardArray.concat();
+            for (let i = 0; i < playFieldSize2; i++) {
+                $(playFieldCardArray[i]).addClass(currentCardArray[i]);
+            }
+            expect(playFieldCardArray).not.toBe(playFieldCardArrayBeforeAssingment);
+        });
+    });
+});
 
 describe("function checkForMatch", function() {
     beforeEach(function() {
@@ -382,7 +517,6 @@ describe("function setActivePlayer", function() {
         expect($('.popupNext').css('z-index')).toBe('-1');
     });
 });
-
 
 /*
 describe("", function() {
