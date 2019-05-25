@@ -28,16 +28,16 @@ describe("function generateCards(num)", function() {
         expect($(".back").length).toBe(8);
         expect($(".dummycardshell").length).toBe(1);
     });
-    
-     it("should generate 16 cards when called as generateCards(16)", function() {
+
+    it("should generate 16 cards when called as generateCards(16)", function() {
         let playFieldSize = 16;
         generateCards(playFieldSize);
         expect($(".cardshell").length).toBe(16);
         expect($(".front").length).toBe(16);
         expect($(".back").length).toBe(16);
     });
-    
-     it("should generate 36 cards when called as generateCards(36)", function() {
+
+    it("should generate 36 cards when called as generateCards(36)", function() {
         let playFieldSize = 36;
         generateCards(playFieldSize);
         expect($(".cardshell").length).toBe(36);
@@ -45,6 +45,195 @@ describe("function generateCards(num)", function() {
         expect($(".back").length).toBe(36);
     });
 });
+
+describe("function setCardshellSize(num)", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="playfield vhalign"></div>`);
+        $(".playfield").css('width', '400px').css('height', '400px');
+        // jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        // jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(setCardshellSize).toBeDefined();
+    });
+
+    it("should set .cardshell dimensions to width 126.8px and height 126.8px when called as setCardshellSize(9)", function() {
+        // given .playfield width and height of 400px
+        let playFieldSize = 9;
+        generateCards(playFieldSize);
+        setCardshellSize(playFieldSize);
+        expect($(".cardshell").css("width")).toBe('126.797px');
+        expect($(".cardshell").css("height")).toBe('126.797px');
+    });
+
+    it("should set CardRowlength to 3 setCardshellSize(9)", function() {
+        let playFieldSize = 9;
+        generateCards(playFieldSize);
+        setCardshellSize(playFieldSize);
+        expect(CardRowlength).toBe(3);
+    });
+
+    it("should set .cardshell dimensions to width 94.8px and height 94.8px when called as setCardshellSize(16)", function() {
+        // given .playfield width and height of 400px
+        let playFieldSize = 16;
+        generateCards(playFieldSize);
+        setCardshellSize(playFieldSize);
+        expect($(".cardshell").css("width")).toBe('94.7969px');
+        expect($(".cardshell").css("height")).toBe('94.7969px');
+    });
+
+    it("should set CardRowlength to 4 setCardshellSize(16)", function() {
+        let playFieldSize = 16;
+        generateCards(playFieldSize);
+        setCardshellSize(playFieldSize);
+        expect(CardRowlength).toBe(4);
+    });
+
+    it("should set .cardshell dimensions to width 61.6px and height 61.6px when called as setCardshellSize(36)", function() {
+        // given .playfield width and height of 400px
+        let playFieldSize = 36;
+        generateCards(playFieldSize);
+        setCardshellSize(playFieldSize);
+        expect($(".cardshell").css("width")).toBe('61.5938px');
+        expect($(".cardshell").css("height")).toBe('61.5938px');
+    });
+
+    it("should set CardRowlength to 6 setCardshellSize(36)", function() {
+        let playFieldSize = 36;
+        generateCards(playFieldSize);
+        setCardshellSize(playFieldSize);
+        expect(CardRowlength).toBe(6);
+    });
+});
+
+describe("function fieldInit(num)", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="playfield vhalign"></div>`);
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(fieldInit).toBeDefined();
+    });
+
+    describe("if called as fieldInit(9)", function() {
+        it("should set $('.playfield').css('opacity') to 0 on begin of fieldInit(9)", function() {
+            let playFieldSize = 9;
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(800);
+            expect($('.playfield').css('opacity')).toBe('0');
+            jasmine.clock().tick(800);
+            jasmine.clock().tick(1200);
+            expect($('.playfield').css('opacity')).toBe('1');
+        });
+
+        it("should call function generateCards(num)", function() {
+            let playFieldSize = 9;
+            spyOn(window, 'generateCards');
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(1000);
+            expect(window.generateCards).toHaveBeenCalled();
+        });
+
+        it("should call function setCardshellSize(num)", function() {
+            let playFieldSize = 9;
+            spyOn(window, 'setCardshellSize');
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(1000);
+            expect(window.setCardshellSize).toHaveBeenCalled();
+        });
+
+        it("should call function prepAndDeliverCardArray(num)", function() {
+            let playFieldSize = 9;
+            spyOn(window, 'prepAndDeliverCardArray');
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(1000);
+            expect(window.prepAndDeliverCardArray).toHaveBeenCalled();
+        });
+
+    });
+
+    describe("if called as fieldInit(16)", function() {
+        it("should set $('.playfield').css('opacity') to 0 on begin of fieldInit(16)", function() {
+            let playFieldSize = 16;
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(800);
+            expect($('.playfield').css('opacity')).toBe('0');
+            jasmine.clock().tick(800);
+            jasmine.clock().tick(1200);
+            expect($('.playfield').css('opacity')).toBe('1');
+        });
+
+        it("should call function generateCards(16)", function() {
+            let playFieldSize = 16;
+            spyOn(window, 'generateCards');
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(1000);
+            expect(window.generateCards).toHaveBeenCalled();
+        });
+
+        it("should call function setCardshellSize(num)", function() {
+            let playFieldSize = 16;
+            spyOn(window, 'setCardshellSize');
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(1000);
+            expect(window.setCardshellSize).toHaveBeenCalled();
+        });
+
+        it("should call function prepAndDeliverCardArray(num)", function() {
+            let playFieldSize = 16;
+            spyOn(window, 'prepAndDeliverCardArray');
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(1000);
+            expect(window.prepAndDeliverCardArray).toHaveBeenCalled();
+        });
+    });
+
+    describe("if called as fieldInit(36)", function() {
+        it("should set $('.playfield').css('opacity') to 0 on begin of fieldInit(36)", function() {
+            let playFieldSize = 36;
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(800);
+            expect($('.playfield').css('opacity')).toBe('0');
+            jasmine.clock().tick(800);
+            jasmine.clock().tick(1200);
+            expect($('.playfield').css('opacity')).toBe('1');
+        });
+
+        it("should call function generateCards(num)", function() {
+            let playFieldSize = 36;
+            spyOn(window, 'generateCards');
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(1000);
+            expect(window.generateCards).toHaveBeenCalled();
+        });
+
+        it("should call function setCardshellSize(num)", function() {
+            let playFieldSize = 36;
+            spyOn(window, 'setCardshellSize');
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(1000);
+            expect(window.setCardshellSize).toHaveBeenCalled();
+        });
+
+        it("should call function prepAndDeliverCardArray(num)", function() {
+            let playFieldSize = 36;
+            spyOn(window, 'prepAndDeliverCardArray');
+            fieldInit(playFieldSize);
+            jasmine.clock().tick(1000);
+            expect(window.prepAndDeliverCardArray).toHaveBeenCalled();
+        });
+    });
+});
+
 
 describe("function checkForMatch", function() {
     beforeEach(function() {
