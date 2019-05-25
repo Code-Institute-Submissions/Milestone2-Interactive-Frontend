@@ -248,7 +248,7 @@ body {
   width: 94vw; }
 
 #enterPlayersModal {
-  width: 90vw; }
+  width: 92vw; }
 
 .registrationText {
   height: 12vh; }
@@ -310,7 +310,7 @@ body {
 
 .popupCheckNames {
   width: 80vw !important;
-  height: 30vh !important;
+  height: 28vh !important;
   background-color: #ff6600;
   color: white;
   text-align: center; }
@@ -543,7 +543,7 @@ body {
     height: 13vh; }
 
   .registrationText {
-    height: 19.5vh; }
+    height: 19.2vh; }
 
   .formWrapper {
     display: flex;
@@ -587,7 +587,7 @@ body {
 
   .popupCheckNames {
     width: 80vh !important;
-    height: 30vw !important;
+    height: 32vw !important;
     background-color: #ff6600;
     color: white;
     text-align: center; }

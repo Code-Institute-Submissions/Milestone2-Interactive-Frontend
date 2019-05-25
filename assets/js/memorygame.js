@@ -124,7 +124,7 @@ function matched() {
                         fieldActive = true;
                     }, 300);
                 }
-            }, 300); // delay time to wait until players logo is on card
+            }, 800); // delay time to wait until players logo is on card
         }, 1000); // delay time to wait until popupMatch is vanished
     }, 500); // wait until cards have fully turned prior popup 'match'
 }
