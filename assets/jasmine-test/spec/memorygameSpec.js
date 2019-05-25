@@ -5,40 +5,101 @@ global expect
 describe("function checkForMatch", function() {
     // Specs are defined by calling the global Jasmine function it
     beforeEach(function() {
-        setFixtures(``);
-        jasmine.clock().install();
+        // jasmine.clock().install();
     });
-    
+
     afterEach(function() {
-        jasmine.clock().uninstall();
+        // jasmine.clock().uninstall();
     });
-    
+
     it("should exist", function() {
         expect(checkForMatch).toBeDefined();
     });
 
-    it("should handle matching cards correctly", function() {
-         let takenCard1 = $('.taken .back').eq(0); //extracting element with index '0' from taken cards array $('.taken .back')
-            let takenCard2 = $('.taken .back').eq(1); //extracting element with index '1' from $('.taken .back')
-            let classesCard1 = takenCard1.attr("class"); // make string of assigned classes card1 to compare
-            let classesCard2 = takenCard2.attr("class"); // make string of assigned classes card2 to compare
-            
-        
-        if (classesCard1 == classesCard2) {
-            expect(popupMatch).toHaveBeenCalled();
-            jasmine.clock().tick(1500);
-            expect(increasePoints).toHaveBeenCalled();
-        }
-       
+    describe("if cards match", function() {
+        beforeEach(function() {
+            setFixtures(`
+                        <div class="playfield vhalign">
+                            <div class='cardshell taken'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card1'></div>
+                            </div>
+                            <div class='cardshell taken'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card1'></div>
+                            </div>
+                        </div>`);
+        });
+
+        it("should have $('.taken .back').length of 2", function() {
+            expect($('.taken .back').length).toBe(2);
+        });
+
+        it("should set fieldActive to false", function() {
+            expect(fieldActive).toBe(false);
+        });
+
+        it("should find classesCard1 =classesCard2", function() {
+            let takenCard1 = $('.taken .back').eq(0);
+            let takenCard2 = $('.taken .back').eq(1);
+            let classesCard1 = takenCard1.attr("class");
+            let classesCard2 = takenCard2.attr("class");
+            expect(classesCard1).toBe(classesCard2);
+        });
+
+        it("should call function matched()", function() {
+            spyOn(window, 'matched');
+            checkForMatch();
+            expect(window.matched).toHaveBeenCalled();
+        });
     });
+
+    describe("if cards do NOT match", function() {
+        beforeEach(function() {
+            setFixtures(`
+             <div class="playfield vhalign">
+                        <div class='cardshell taken'>
+                            <div class='card front vhalign'></div>
+                            <div class='card back vhalign card9'></div>
+                        </div>
+                        <div class='cardshell taken'>
+                            <div class='card front vhalign'></div>
+                            <div class='card back vhalign card1'></div>
+                        </div>
+                    </div>`);
+        });
+
+        it("should call function notMatched()", function() {
+            spyOn(window, 'notMatched');
+            checkForMatch();
+            expect(window.notMatched).toHaveBeenCalled();
+        });
+    });
+
     /*
-         it("", function() {
-             expect();
-             expect();
-             expect();
-         });
-         */
+        it("should handle matching cards correctly", function() {
+             let takenCard1 = $('.taken .back').eq(0); //extracting element with index '0' from taken cards array $('.taken .back')
+                let takenCard2 = $('.taken .back').eq(1); //extracting element with index '1' from $('.taken .back')
+                let classesCard1 = takenCard1.attr("class"); // make string of assigned classes card1 to compare
+                let classesCard2 = takenCard2.attr("class"); // make string of assigned classes card2 to compare
+                
+            
+            if (classesCard1 == classesCard2) {
+                expect(popupMatch).toHaveBeenCalled();
+                jasmine.clock().tick(1500);
+                expect(increasePoints).toHaveBeenCalled();
+            }
+           
+        });
+        
+             it("", function() {
+                 expect();
+                 expect();
+                 expect();
+             });
+             */
 });
+
 
 describe("function setActivePlayer", function() {
     // Specs are defined by calling the global Jasmine function it
