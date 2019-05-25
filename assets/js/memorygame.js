@@ -411,7 +411,7 @@ function popupCheckNames() {
     }, 300);
     setTimeout(function() {
         $('.popupCheckNames').css("opacity", "0.0");
-    }, 2000);
+    }, 2200);
     setTimeout(function() {
         $('.popupCheckNames').css("transform", "translateZ(-10px)").css("z-index", "-1");
     }, 2800);
