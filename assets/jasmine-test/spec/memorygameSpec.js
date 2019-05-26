@@ -1519,6 +1519,51 @@ describe("function resetCounters", function() {
     });
 });
 
+describe("function showRegistrationPopup", function() {
+    beforeEach(function() {
+        setFixtures(`<div id="enterPlayersModal">
+        <div class="bannerPopup vhalign">
+            <div class="headRegister vhalign">SignUp players</div>
+        </div>
+        <div class="registrationText HowToRegFont vhalign">Welcome to the memory game!<br>Please enter player's name.</div>
+        <div class="formWrapper">
+            <div class="formItems HowToRegFont">Player 1's name: </div>
+            <div class="formItems"><input type="text" class="form-control HowToRegFont" id="nameFieldPlayer1Form" placeholder="Pls enter name" value="">
+            </div>
+            <div class="formItems HowToRegFont">Player 2's name: </div>
+            <div class="formItems"><input type="text" class="form-control HowToRegFont" id="nameFieldPlayer2Form" placeholder="Pls enter name" value="">
+            </div>
+        </div>
+        <div class="saveBtnWrapper vhalign">
+            <div class="btn btn-default btn-success HowToRegFont" id="saveBtn">Save</div>
+        </div>
+    </div>`);
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(showRegistrationPopup).toBeDefined();
+    });
+
+    it("should move #enterPlayersModal above playfield before made visible", function() {
+        $('#enterPlayersModal').css({ 'position': 'absolute', 'z-index': 400 });
+        showRegistrationPopup();
+        expect($('#enterPlayersModal').css("transform")).toEqual('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 400, 1)');
+        expect($('#enterPlayersModal').css("z-index")).toEqual("400");
+    });
+
+    it("should set #enterPlayersModal to opacity 1", function() {
+        showRegistrationPopup();
+        jasmine.clock().tick(1000);
+        expect($('#enterPlayersModal').css("opacity")).toEqual("1");
+    });
+});
+
+
 /*
 
 describe("if CardRowlength is equal 4", function() {
