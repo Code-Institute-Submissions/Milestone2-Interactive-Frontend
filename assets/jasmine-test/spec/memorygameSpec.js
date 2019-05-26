@@ -1563,6 +1563,49 @@ describe("function showRegistrationPopup", function() {
     });
 });
 
+describe("function showHowToPopup", function() {
+    beforeEach(function() {
+        setFixtures(`<div id="howToModal">
+        <div class="bannerPopup vhalign">
+            <div class="headHowTo vhalign">How to play this game</div>
+        </div>
+        <div class="ruleset vhalign">
+            <p class="">This game is intended to train your memory skills. It is being played by two players.</p>
+            <p class="">Select then the size of playfield and hit the start button.</p>
+            <p class="">Each player clicks two cards per round. If you succeeded and have found a match, the same player can continue and try next. If no pair was found, the other player is next. The player who has found the most pairs, wins the game.</p>
+            <p class="">To start over a game, stop the current game and re-select playfield size.</p>
+            <p class="havefun">Have fun and a good memory! :)</p>
+        </div>
+        <div class="gotItBtnWrapper vhalign">
+            <div class="btn btn-default btn-success HowToRegFont" id="gotItBtn">Got it!</div>
+        </div>
+    </div>`);
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(showHowToPopup).toBeDefined();
+    });
+
+    it("should move #howToModal above playfield before made visible", function() {
+        $('#howToModal').css({ 'position': 'absolute', 'z-index': 400 });
+        showHowToPopup();
+        expect($('#howToModal').css("transform")).toEqual('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 400, 1)');
+        expect($('#howToModal').css("z-index")).toEqual("400");
+    });
+
+    it("should set #howToModal to opacity 1", function() {
+        showHowToPopup();
+        jasmine.clock().tick(1000);
+        expect($('#howToModal').css("opacity")).toEqual("1");
+    });
+});
+
+
 
 /*
 
