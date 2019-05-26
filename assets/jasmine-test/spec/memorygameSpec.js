@@ -158,7 +158,6 @@ describe("function fieldInit(num)", function() {
             jasmine.clock().tick(1000);
             expect(window.prepAndDeliverCardArray).toHaveBeenCalled();
         });
-
     });
 
     describe("if called as fieldInit(16)", function() {
@@ -237,13 +236,10 @@ describe("function fieldInit(num)", function() {
 describe("function prepAndDeliverCardArray(num)", function() {
     beforeEach(function() {
         setFixtures(`<div class="playfield vhalign"></div>`);
-        jasmine.clock().install();
         currentCardArray = [];
     });
 
-    afterEach(function() {
-        jasmine.clock().uninstall();
-    });
+    afterEach(function() {});
 
     it("should exist", function() {
         expect(prepAndDeliverCardArray).toBeDefined();
@@ -371,13 +367,9 @@ describe("function prepAndDeliverCardArray(num)", function() {
 });
 
 describe("function checkForMatch", function() {
-    beforeEach(function() {
-        // jasmine.clock().install();
-    });
+    beforeEach(function() {});
 
-    afterEach(function() {
-        // jasmine.clock().uninstall();
-    });
+    afterEach(function() {});
 
     it("should exist", function() {
         expect(checkForMatch).toBeDefined();
@@ -440,6 +432,113 @@ describe("function checkForMatch", function() {
             spyOn(window, 'notMatched');
             checkForMatch();
             expect(window.notMatched).toHaveBeenCalled();
+        });
+    });
+});
+
+describe("function matched", function() {
+    beforeEach(function() {
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(matched).toBeDefined();
+    });
+
+    it("should call function popupMatch()", function() {
+        spyOn(window, 'popupMatch');
+        matched();
+        jasmine.clock().tick(500);
+        expect(window.popupMatch).toHaveBeenCalled();
+    });
+
+    it("should call function increasePoints()", function() {
+        spyOn(window, 'increasePoints');
+        matched();
+        jasmine.clock().tick(1500);
+        expect(window.increasePoints).toHaveBeenCalled();
+    });
+
+    describe("if cards match...", function() {
+        beforeEach(function() {
+            setFixtures(`<div class="playfield vhalign">
+                            <div class='cardshell taken'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card1'></div>
+                            </div>
+                            <div class='cardshell taken'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card1'></div>
+                            </div>
+                        </div>`);
+        });
+
+        it("should add .dummycardshell, remove .cardshell, remove .dummycardshell", function() {
+            matched();
+            jasmine.clock().tick(2500);
+            expect($('.taken').length).toBe(0);
+            jasmine.clock().tick(500);
+            expect($('.dummycardshell').length).toBe(2);
+        });
+    });
+
+    describe(" when all cards have been found", function() {
+        beforeEach(function() {
+            setFixtures(`
+                        <div class="playfield vhalign">
+                            <div class='cardshell showMe'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card1'></div>
+                            </div>
+                            <div class='cardshell showMe'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card1'></div>
+                            </div>
+                        </div>`);
+        });
+
+        it("should call function gameCompleted()", function() {
+            spyOn(window, 'gameCompleted');
+            matched();
+            jasmine.clock().tick(2500);
+            expect(window.gameCompleted).toHaveBeenCalled();
+        });
+    });
+
+    describe(" while not all cards have been found", function() {
+        beforeEach(function() {
+            setFixtures(`
+                        <div class="playfield vhalign">
+                            <div class='cardshell showMe'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card1'></div>
+                            </div>
+                            <div class='cardshell showMe'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card1'></div>
+                            </div>
+                             <div class='cardshell'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card2'></div>
+                            </div>
+                            <div class='cardshell'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card2'></div>
+                            </div>
+                        </div>`);
+        });
+
+        it("should call function whoIsNext()", function() {
+            spyOn(window, 'whoIsNext');
+            matched();
+            jasmine.clock().tick(2500);
+            expect(window.whoIsNext).toHaveBeenCalled();
+            jasmine.clock().tick(300);
+            expect(fieldActive).toBe(true);
         });
     });
 });
