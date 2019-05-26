@@ -1088,6 +1088,81 @@ describe("function whoIsNext()", function() {
     });
 });
 
+describe("function popupMatch", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="popup popupMatch popup-font vhalign">Found match!</div>`);
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(popupMatch).toBeDefined();
+    });
+
+    it("should move popupMatch above playfield before made visible", function() {
+        $('.popupMatch').css({ 'position': 'absolute', 'z-index': 400 });
+        popupMatch();
+        jasmine.clock().tick(1000);
+        expect($('.popupMatch').css("transform")).toEqual('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 400, 1)');
+        expect($('.popupMatch').css("z-index")).toEqual("400");
+    });
+
+    it("should set popupMatch to opacity 1", function() {
+        popupMatch();
+        jasmine.clock().tick(1000);
+        expect($('.popupMatch').css("opacity")).toEqual("1");
+    });
+
+    it("should set popupMatch to opacity 0", function() {
+        popupMatch();
+        jasmine.clock().tick(2000);
+        expect($('.popupMatch').css("opacity")).toEqual("0");
+    });
+
+    it("should move popupMatch under playfield", function() {
+        $('.popupMatch').css({ 'position': 'absolute', 'z-index': -1 });
+        popupMatch();
+        jasmine.clock().tick(5000);
+        expect($('.popupMatch').css("transform")).toEqual('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -10, 1)');
+        expect($('.popupMatch').css("z-index")).toEqual("-1");
+    });
+});
+
+/*
+
+describe("if CardRowlength is equal 4", function() {
+    beforeEach(function() {
+        CardRowlength = 4;
+        increasePoints();
+        jasmine.clock().tick(1000);
+    });
+
+    it("should set .checkmarkPlayer1Big font-size to 0.22x400px", function() {
+        changeFontsizeBigLogo();
+        jasmine.clock().tick(1000);
+        expect($('.checkmarkPlayer1Big, .checkmarkPlayer2Big').css('font-size')).toEqual('88.8889px');
+    });
+});
+
+describe("if CardRowlength is equal 6", function() {
+    beforeEach(function() {
+        CardRowlength = 6;
+        increasePoints();
+        jasmine.clock().tick(1000);
+    });
+
+    it("should set .checkmarkPlayer1Big font-size to 0.1428x400px", function() {
+        changeFontsizeBigLogo();
+        jasmine.clock().tick(1000);
+        expect($('.checkmarkPlayer1Big, .checkmarkPlayer2Big').css('font-size')).toEqual('57.1429px');
+    });
+});
+    
+*/
+
 
 
 
