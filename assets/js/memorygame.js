@@ -515,6 +515,7 @@ $(document).on('touchstart click', '.cardshell', function() {
     }
 });
 
+// ack button howTo modal
 $('#gotItBtn').on('touchstart click', function() {
     $('#howToModal').css("opacity", "0.0");
     setTimeout(function() {

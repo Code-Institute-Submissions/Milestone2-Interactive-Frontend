@@ -1173,6 +1173,45 @@ describe("function popupNoMatch", function() {
         expect($('.popupNoMatch').css("z-index")).toEqual("-1");
     });
 });
+
+describe("function make_field8BtnVisActive", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="field8Btn DosisFont">4 x 2</div>
+                    <div class="field16Btn DosisFont">4 x 4</div>
+                    <div class="field36Btn DosisFont">6 x 6</div>`);
+        jasmine.clock().install();
+        make_field8BtnVisActive();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(make_field8BtnVisActive).toBeDefined();
+    });
+
+    it("should assign class .selectedSize to .field8Btn and remove class .bg-fieldSizeBtn from .field8Btn", function() {
+        jasmine.clock().tick(1000);
+        expect($('.field8Btn')).toHaveClass('selectedSize');
+        expect($('.field8Btn')).not.toHaveClass('bg-fieldSizeBtn');
+    });
+
+    it("should remove class .selectedSize of .field16Btn and add class .bg-fieldSizeBtn to .field16Btn", function() {
+        jasmine.clock().tick(1000);
+        expect($('.field16Btn')).not.toHaveClass('selectedSize');
+        expect($('.field16Btn')).toHaveClass('bg-fieldSizeBtn');
+    });
+
+    it("should remove class .selectedSize of .field36Btn and add class .bg-fieldSizeBtn to .field36Btn", function() {
+        jasmine.clock().tick(1000);
+        expect($('.field36Btn')).not.toHaveClass('selectedSize');
+        expect($('.field36Btn')).toHaveClass('bg-fieldSizeBtn');
+    });
+});
+
+
+
 /*
 
 describe("if CardRowlength is equal 4", function() {
