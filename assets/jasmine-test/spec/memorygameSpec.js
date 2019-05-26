@@ -1406,8 +1406,8 @@ describe("function makeBtnActive", function() {
         jasmine.clock().tick(1000);
         expect(btnActive).toEqual(true);
     });
-    
-      it("should set startBtnActive to true", function() {
+
+    it("should set startBtnActive to true", function() {
         jasmine.clock().tick(1000);
         expect(startBtnActive).toEqual(true);
     });
@@ -1428,7 +1428,7 @@ describe("function makeBtnActiveButStart", function() {
         jasmine.clock().install();
         makeBtnActiveButStart();
         let btnActive = false;
-        let fieldActive=true;
+        let fieldActive = true;
         let stopBtnActive = true;
     });
 
@@ -1457,17 +1457,17 @@ describe("function makeBtnActiveButStart", function() {
         jasmine.clock().tick(1000);
         expect($('.field36Btn')).not.toHaveClass('btnlocked');
     });
-    
+
     it("should add class .btnlocked to .stopBtn", function() {
         jasmine.clock().tick(1000);
         expect($('.stopBtn')).toHaveClass('btnlocked');
     });
-    
+
     it("should set btnActive to true", function() {
         jasmine.clock().tick(1000);
         expect(btnActive).toEqual(true);
     });
-    
+
     it("should set fieldActive to false", function() {
         jasmine.clock().tick(1000);
         expect(fieldActive).toEqual(false);
@@ -1476,6 +1476,46 @@ describe("function makeBtnActiveButStart", function() {
     it("should set stopBtnActive to false", function() {
         jasmine.clock().tick(1000);
         expect(stopBtnActive).toEqual(false);
+    });
+});
+
+describe("function resetCounters", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="scorePlayer1Field vhalign">0</div>
+        <div class="scorePlayer2Field vhalign">0</div>`);
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(resetCounters).toBeDefined();
+    });
+
+    it("should set scorePlayer1 to 0", function() {
+        scorePlayer1 = 2;
+        resetCounters();
+        expect(scorePlayer1).not.toEqual(2);
+        expect(scorePlayer1).toEqual(0);
+    });
+
+    it("should set DOM element .scorePlayer1Field to html('0')", function() {
+        resetCounters();
+        expect($('.scorePlayer1Field').html()).toEqual("0");
+    });
+
+    it("should set scorePlayer2 to 0", function() {
+        scorePlayer2 = 2;
+        resetCounters();
+        expect(scorePlayer2).not.toEqual(2);
+        expect(scorePlayer2).toEqual(0);
+    });
+
+    it("should set DOM element .scorePlayer2Field to html('0')", function() {
+        resetCounters();
+        expect($('.scorePlayer2Field').html()).toEqual("0");
     });
 });
 
