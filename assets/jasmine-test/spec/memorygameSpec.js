@@ -707,6 +707,111 @@ describe("function increasePoints", function() {
 
 });
 
+describe("function changeFontsizeBigLogo", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="playfield vhalign">
+                        <div class='cardshell taken'>
+                            <div class='card front vhalign'></div>
+                            <div class='card back vhalign card1'></div>
+                        </div>
+                        <div class='cardshell taken'>
+                            <div class='card front vhalign'></div>
+                            <div class='card back vhalign card1'></div>
+                        </div>
+                    </div>`);
+        jasmine.clock().install();
+        $(".playfield").css("width", "400px");
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(changeFontsizeBigLogo).toBeDefined();
+    });
+
+    describe("if CardRowlength is equal 3", function() {
+        beforeEach(function() {
+            CardRowlength = 3;
+            increasePoints();
+            jasmine.clock().tick(1000);
+        });
+
+        it("should set .checkmarkPlayer1Big font-size to 0.25x400px", function() {
+            changeFontsizeBigLogo();
+            jasmine.clock().tick(1000);
+            expect($('.checkmarkPlayer1Big, .checkmarkPlayer2Big').css('font-size')).toEqual('100px');
+        });
+    });
+
+    describe("if CardRowlength is equal 4", function() {
+        beforeEach(function() {
+            CardRowlength = 4;
+            increasePoints();
+            jasmine.clock().tick(1000);
+        });
+
+        it("should set .checkmarkPlayer1Big font-size to 0.22x400px", function() {
+            changeFontsizeBigLogo();
+            jasmine.clock().tick(1000);
+            expect($('.checkmarkPlayer1Big, .checkmarkPlayer2Big').css('font-size')).toEqual('88.8889px');
+        });
+    });
+
+    describe("if CardRowlength is equal 6", function() {
+        beforeEach(function() {
+            CardRowlength = 6;
+            increasePoints();
+            jasmine.clock().tick(1000);
+        });
+
+        it("should set .checkmarkPlayer1Big font-size to 0.1428x400px", function() {
+            changeFontsizeBigLogo();
+            jasmine.clock().tick(1000);
+            expect($('.checkmarkPlayer1Big, .checkmarkPlayer2Big').css('font-size')).toEqual('57.1429px');
+        });
+    });
+});
+
+describe("function changePlayer()", function() {
+    beforeEach(function() {
+        //jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        //jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(changePlayer).toBeDefined();
+    });
+
+    describe("if currentPlayer is Player1", function() {
+        beforeEach(function() {
+            currentPlayer = "Player1";
+        });
+
+        it("should set currentPlayer to Player2", function() {
+            changePlayer(currentPlayer);
+            expect(currentPlayer).toEqual("Player2");
+        });
+    });
+
+    describe("if currentPlayer is Player2", function() {
+        beforeEach(function() {
+            currentPlayer = "Player2";
+        });
+
+
+        it("should set currentPlayer to Player1", function() {
+            changePlayer(currentPlayer);
+            expect(currentPlayer).toEqual("Player1");
+        });
+    });
+});
+
+
 describe("function setActivePlayer", function() {
     beforeEach(function() {
         setFixtures(`<div class="playerStats1 playerStatsFont vhalign">
