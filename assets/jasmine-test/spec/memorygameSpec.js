@@ -775,11 +775,9 @@ describe("function changeFontsizeBigLogo", function() {
 });
 
 describe("function changePlayer()", function() {
-    beforeEach(function() {
-    });
+    beforeEach(function() {});
 
-    afterEach(function() {
-    });
+    afterEach(function() {});
 
     it("should exist", function() {
         expect(changePlayer).toBeDefined();
@@ -810,11 +808,9 @@ describe("function changePlayer()", function() {
 });
 
 describe("function changeOpeningPlayer()", function() {
-    beforeEach(function() {
-    });
+    beforeEach(function() {});
 
-    afterEach(function() {
-    });
+    afterEach(function() {});
 
     it("should exist", function() {
         expect(changeOpeningPlayer).toBeDefined();
@@ -842,6 +838,171 @@ describe("function changeOpeningPlayer()", function() {
         });
     });
 });
+
+describe("function gameCompleted", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="popup popupGameCompleted popup-font vhalign"></div>`);
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(gameCompleted).toBeDefined();
+    });
+
+    describe("if scorePlayer1 > scorePlayer2", function() {
+        beforeEach(function() {});
+
+        it("should set $('.popupGameCompleted').html() to 'Player1 has won!'", function() {
+            namePlayer1 = "Player1";
+            scorePlayer1 = 4;
+            scorePlayer2 = 2;
+            gameCompleted();
+            jasmine.clock().tick(1000);
+            expect($('.popupGameCompleted').html()).toEqual('Player1 has won!');
+        });
+    });
+
+    describe("if scorePlayer2 > scorePlayer1", function() {
+        beforeEach(function() {});
+
+        it("should set $('.popupGameCompleted').html() to 'Player2 has won!'", function() {
+            scorePlayer1 = 2;
+            scorePlayer2 = 4;
+            gameCompleted();
+            jasmine.clock().tick(1000);
+            expect($('.popupGameCompleted').html()).toEqual('Player2 has won!');
+        });
+    });
+
+    describe("if scorePlayer2 == scorePlayer1", function() {
+        beforeEach(function() {});
+
+        it("should set $('.popupGameCompleted').html() to 'Player2 has won!'", function() {
+            scorePlayer1 = 4;
+            scorePlayer2 = 4;
+            gameCompleted();
+            jasmine.clock().tick(1000);
+            expect($('.popupGameCompleted').html()).toEqual('Player1 and Player2 have same points!');
+        });
+    });
+
+    it("should move popupGameCompleted above playfield before made visible", function() {
+        $('.popupGameCompleted').css({ 'position': 'absolute', 'z-index': 100 });
+        gameCompleted();
+        jasmine.clock().tick(1000);
+        expect($('.popupGameCompleted').css("transform")).toEqual('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 150, 1)');
+        expect($('.popupGameCompleted').css("z-index")).toEqual("100");
+        expect($('.popupGameCompleted').css("opacity")).toEqual("1");
+    });
+
+    it("should call function changeOpeningPlayer()", function() {
+        spyOn(window, 'changeOpeningPlayer');
+        gameCompleted();
+        jasmine.clock().tick(1000);
+        expect(window.changeOpeningPlayer).toHaveBeenCalled();
+    });
+
+    it("should set popupGameCompleted to opacity 0", function() {
+        gameCompleted();
+        jasmine.clock().tick(5000);
+        expect($('.popupGameCompleted').css("opacity")).toEqual("0");
+    });
+
+    it("should set firstAttemptDone to 0", function() {
+        gameCompleted();
+        jasmine.clock().tick(5000);
+        expect(firstAttemptDone).toEqual(0);
+    });
+
+    it("should call function makeBtnActiveButStart()", function() {
+        spyOn(window, 'makeBtnActiveButStart');
+        gameCompleted();
+        jasmine.clock().tick(5000);
+        expect(window.makeBtnActiveButStart).toHaveBeenCalled();
+    });
+
+    it("should move popupGameCompleted under playfield", function() {
+        $('.popupGameCompleted').css({ 'position': 'absolute', 'z-index': -100 });
+        gameCompleted();
+        jasmine.clock().tick(6200);
+        expect($('.popupGameCompleted').css("transform")).toEqual('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -10, 1)');
+        expect($('.popupGameCompleted').css("z-index")).toEqual("-100");
+    });
+
+
+
+    /*
+
+    describe("if CardRowlength is equal 4", function() {
+        beforeEach(function() {
+            CardRowlength = 4;
+            increasePoints();
+            jasmine.clock().tick(1000);
+        });
+
+        it("should set .checkmarkPlayer1Big font-size to 0.22x400px", function() {
+            changeFontsizeBigLogo();
+            jasmine.clock().tick(1000);
+            expect($('.checkmarkPlayer1Big, .checkmarkPlayer2Big').css('font-size')).toEqual('88.8889px');
+        });
+    });
+
+    describe("if CardRowlength is equal 6", function() {
+        beforeEach(function() {
+            CardRowlength = 6;
+            increasePoints();
+            jasmine.clock().tick(1000);
+        });
+
+        it("should set .checkmarkPlayer1Big font-size to 0.1428x400px", function() {
+            changeFontsizeBigLogo();
+            jasmine.clock().tick(1000);
+            expect($('.checkmarkPlayer1Big, .checkmarkPlayer2Big').css('font-size')).toEqual('57.1429px');
+        });
+    });
+    
+    */
+});
+
+
+
+
+
+
+/*
+function gameCompleted() {
+    if (scorePlayer1 > scorePlayer2) {
+        $('.popupGameCompleted').html(namePlayer1 + " has won!");
+    }
+    else if (scorePlayer2 > scorePlayer1) {
+        $('.popupGameCompleted').html(namePlayer2 + " has won!");
+    }
+    else if (scorePlayer1 == scorePlayer2) {
+        $('.popupGameCompleted').html(namePlayer1 + " and " + namePlayer2 + " have same points!");
+    }
+    $('.popupGameCompleted').css("transform", "translateZ(150px)").css("z-index", "100").css("opacity", "1.0");
+    changeOpeningPlayer(ThisGameOpenedBy);
+    setTimeout(function() { // have popup for game completion visible for 4 seconds and then ... 
+        $('.popupGameCompleted').css("opacity", "0.0"); // make popup dissappear
+        firstAttemptDone = 0; // resetting indicator for first move of game done.
+        makeBtnActiveButStart();
+        setTimeout(function() { // wait a little until popup for game completion has vanished and move position in z-space.
+            $('.popupGameCompleted').css("transform", "translateZ(-10px)").css("z-index", "-100");
+        }, 1200); // wait a little until popup for game completion has vanished
+    }, 4000); // have popup for game completion visible for 4 seconds
+}
+
+*/
+
+
+
+
+
+
 
 
 
