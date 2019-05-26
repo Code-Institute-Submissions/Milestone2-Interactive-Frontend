@@ -2,6 +2,44 @@
 global expect
 */
 
+describe("initial startup values and function calls", function() {
+    beforeEach(function() {
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should call function fieldInit(9)", function() {
+        spyOn(window, 'fieldInit');
+        $(document).ready(function() { fieldInit(9); });
+        jasmine.clock().tick(1000);
+        expect(window.fieldInit).toHaveBeenCalled();
+    });
+
+    it("should call function make_field8BtnVisActive()", function() {
+        spyOn(window, 'make_field8BtnVisActive');
+        $(document).ready(function() { make_field8BtnVisActive(); });
+        jasmine.clock().tick(1000);
+        expect(window.make_field8BtnVisActive).toHaveBeenCalled();
+    });
+
+    it("should call function resetCounters()", function() {
+        spyOn(window, 'resetCounters');
+        $(document).ready(function() { resetCounters(); });
+        jasmine.clock().tick(1000);
+        expect(window.resetCounters).toHaveBeenCalled();
+    });
+
+    it("should call function showRegistrationPopup()", function() {
+        spyOn(window, 'showRegistrationPopup');
+        $(document).ready(function() { showRegistrationPopup(); });
+        jasmine.clock().tick(2000);
+        expect(window.showRegistrationPopup).toHaveBeenCalled();
+    });
+});
+
 describe("function generateCards(num)", function() {
     beforeEach(function() {
         setFixtures(`<div class="playfield vhalign"></div>`);
@@ -968,6 +1006,87 @@ describe("function gameCompleted", function() {
     */
 });
 
+describe("function whoIsNext()", function() {
+    beforeEach(function() {
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(whoIsNext).toBeDefined();
+    });
+
+    describe("if first move has not been made and ThisGameOpenedBy is Player1", function() {
+        beforeEach(function() {
+            firstAttemptDone = 0;
+            ThisGameOpenedBy = "Player1";
+        });
+
+        it("should set currentPlayer to Player1", function() {
+            whoIsNext();
+            jasmine.clock().tick(1000);
+            expect(currentPlayer).toEqual("Player1");
+        });
+
+        it("should call function setActivePlayer(currentPlayer)", function() {
+            spyOn(window, 'setActivePlayer');
+            whoIsNext();
+            jasmine.clock().tick(1000);
+            expect(window.setActivePlayer).toHaveBeenCalled();
+        });
+    });
+
+    describe("if first move has not been made and ThisGameOpenedBy is Player2", function() {
+        beforeEach(function() {
+            firstAttemptDone = 0;
+            ThisGameOpenedBy = "Player2";
+        });
+
+        it("should set currentPlayer to Player2", function() {
+            whoIsNext();
+            jasmine.clock().tick(1000);
+            expect(currentPlayer).toEqual("Player2");
+        });
+
+        it("should call function setActivePlayer(currentPlayer)", function() {
+            spyOn(window, 'setActivePlayer');
+            whoIsNext();
+            jasmine.clock().tick(1000);
+            expect(window.setActivePlayer).toHaveBeenCalled();
+        });
+    });
+
+    describe("if first move has been made and currentPlayer is Player1", function() {
+        beforeEach(function() {
+            firstAttemptDone = 1;
+            currentPlayer = "Player1";
+        });
+
+        it("should call function setActivePlayer(currentPlayer)", function() {
+            spyOn(window, 'setActivePlayer');
+            whoIsNext();
+            jasmine.clock().tick(1000);
+            expect(window.setActivePlayer).toHaveBeenCalled();
+        });
+    });
+
+    describe("if first move has been made and currentPlayer is Player2", function() {
+        beforeEach(function() {
+            firstAttemptDone = 1;
+            currentPlayer = "Player2";
+        });
+
+        it("should call function setActivePlayer(currentPlayer)", function() {
+            spyOn(window, 'setActivePlayer');
+            whoIsNext();
+            jasmine.clock().tick(1000);
+            expect(window.setActivePlayer).toHaveBeenCalled();
+        });
+    });
+});
 
 
 
