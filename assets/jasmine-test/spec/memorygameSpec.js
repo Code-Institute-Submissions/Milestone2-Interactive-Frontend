@@ -634,6 +634,7 @@ describe("function increasePoints", function() {
     describe("if currentPlayer is Player1", function() {
         beforeEach(function() {
             scorePlayer1 = 0;
+            currentPlayer = "Player1";
         });
 
         it("should assign player 1's color on matched cards", function() {
@@ -650,14 +651,14 @@ describe("function increasePoints", function() {
 
         it("should increment player 1's points by 1", function() {
             increasePoints();
-            // jasmine.clock().tick(1000);
+            jasmine.clock().tick(1000);
             expect(scorePlayer1).toEqual(1);
         });
 
         it("should write player 1's new points value to DOM element", function() {
             increasePoints();
-            //jasmine.clock().tick(1000);
-            expect($('.scorePlayer1Field').html()).toBe("1");
+            jasmine.clock().tick(1000);
+            expect($('.scorePlayer1Field').html()).toEqual("1");
         });
 
         it("should add class bubbleIcon to .checkmarkPlayer1Big element", function() {
@@ -675,6 +676,7 @@ describe("function increasePoints", function() {
 
         it("should assign player 2's color on matched cards", function() {
             increasePoints();
+            jasmine.clock().tick(1000);
             expect($('.checkmarkPlayer2Big').length).toEqual(2);
         });
 
@@ -686,15 +688,16 @@ describe("function increasePoints", function() {
 
         it("should increment player 2's points by 1", function() {
             increasePoints();
-            // jasmine.clock().tick(1000);
+            jasmine.clock().tick(1000);
             expect(scorePlayer2).toEqual(1);
         });
 
         it("should write player 2's new points value to DOM element", function() {
             increasePoints();
-            //jasmine.clock().tick(1000);
-            expect($('.scorePlayer2Field').html()).toBe("1");
+            jasmine.clock().tick(1000);
+            expect($('.scorePlayer2Field').html()).toEqual("1");
         });
+
         it("should add class bubbleIcon to .checkmarkPlayer2Big element", function() {
             increasePoints();
             jasmine.clock().tick(1000);
@@ -703,7 +706,6 @@ describe("function increasePoints", function() {
     });
 
 });
-
 
 describe("function setActivePlayer", function() {
     beforeEach(function() {
