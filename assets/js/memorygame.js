@@ -350,11 +350,11 @@ function makeBtnActive() {
     $(".field36Btn").removeClass("btnlocked");
     // start button
     $(".startBtn").removeClass("btnlocked");
+    $(".stopBtn").addClass("btnlocked"); // dimmed state applied when game stopped.
     // button states
     btnActive = true;
     startBtnActive = true;
     stopBtnActive = false;
-    $(".stopBtn").addClass("btnlocked"); // dimmed state applied when game stopped.
 }
 
 function makeBtnActiveButStart() {
@@ -363,11 +363,11 @@ function makeBtnActiveButStart() {
     $(".field8Btn").removeClass("btnlocked");
     $(".field16Btn").removeClass("btnlocked");
     $(".field36Btn").removeClass("btnlocked");
+    $(".stopBtn").addClass("btnlocked"); // dimmed state applied when game stopped.
     // button states
     btnActive = true;
     fieldActive = false;
     stopBtnActive = false;
-    $(".stopBtn").addClass("btnlocked"); // dimmed state applied when game stopped.
 }
 
 // function for counter reset on game startup

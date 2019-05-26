@@ -1381,7 +1381,7 @@ describe("function makeBtnActive", function() {
         expect($('.enterPlayersBtn')).not.toHaveClass('btnlocked');
     });
 
-    it("should add remove .btnlocked from .field8Btn", function() {
+    it("should remove .btnlocked from .field8Btn", function() {
         jasmine.clock().tick(1000);
         expect($('.field8Btn')).not.toHaveClass('btnlocked');
     });
@@ -1418,7 +1418,66 @@ describe("function makeBtnActive", function() {
     });
 });
 
+describe("function makeBtnActiveButStart", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="btn btn-primary btn-lg enterPlayersBtn DosisFont">SignUp</div>
+                    <div class="field8Btn DosisFont">4 x 2</div>
+                    <div class="field16Btn DosisFont">4 x 4</div>
+                    <div class="field36Btn DosisFont">6 x 6</div>
+                    <div class="btn btn-primary btn-lg stopBtn btnlocked DosisFont">stop</div>`);
+        jasmine.clock().install();
+        makeBtnActiveButStart();
+        let btnActive = false;
+        let fieldActive=true;
+        let stopBtnActive = true;
+    });
 
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(makeBtnActiveButStart).toBeDefined();
+    });
+
+    it("should remove class .btnlocked from .enterPlayersBtn", function() {
+        jasmine.clock().tick(1000);
+        expect($('.enterPlayersBtn')).not.toHaveClass('btnlocked');
+    });
+
+    it("should remove .btnlocked from .field8Btn", function() {
+        jasmine.clock().tick(1000);
+        expect($('.field8Btn')).not.toHaveClass('btnlocked');
+    });
+    it("should remove class .btnlocked from .field16Btn", function() {
+        jasmine.clock().tick(1000);
+        expect($('.field16Btn')).not.toHaveClass('btnlocked');
+    });
+    it("should remove class .btnlocked from .field36Btn", function() {
+        jasmine.clock().tick(1000);
+        expect($('.field36Btn')).not.toHaveClass('btnlocked');
+    });
+    
+    it("should add class .btnlocked to .stopBtn", function() {
+        jasmine.clock().tick(1000);
+        expect($('.stopBtn')).toHaveClass('btnlocked');
+    });
+    
+    it("should set btnActive to true", function() {
+        jasmine.clock().tick(1000);
+        expect(btnActive).toEqual(true);
+    });
+    
+    it("should set fieldActive to false", function() {
+        jasmine.clock().tick(1000);
+        expect(fieldActive).toEqual(false);
+    });
+
+    it("should set stopBtnActive to false", function() {
+        jasmine.clock().tick(1000);
+        expect(stopBtnActive).toEqual(false);
+    });
+});
 
 /*
 
