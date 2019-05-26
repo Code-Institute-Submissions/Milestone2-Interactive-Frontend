@@ -236,7 +236,6 @@ describe("function fieldInit(num)", function() {
 describe("function prepAndDeliverCardArray(num)", function() {
     beforeEach(function() {
         setFixtures(`<div class="playfield vhalign"></div>`);
-        currentCardArray = [];
     });
 
     afterEach(function() {});
@@ -366,10 +365,14 @@ describe("function prepAndDeliverCardArray(num)", function() {
     });
 });
 
-describe("function checkForMatch", function() {
-    beforeEach(function() {});
+describe("function checkForMatch()", function() {
+    beforeEach(function() {
+        jasmine.clock().install();
+    });
 
-    afterEach(function() {});
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
 
     it("should exist", function() {
         expect(checkForMatch).toBeDefined();
@@ -391,11 +394,14 @@ describe("function checkForMatch", function() {
         });
 
         it("should have $('.taken .back').length of 2", function() {
-            expect($('.taken .back').length).toBe(2);
+            expect($('.taken .back').length).toEqual(2);
         });
 
         it("should set fieldActive to false", function() {
-            expect(fieldActive).toBe(false);
+            fieldActive = true;
+            checkForMatch();
+            jasmine.clock().tick(500);
+            expect(fieldActive).toEqual(false);
         });
 
         it("should find classesCard1 =classesCard2", function() {
@@ -436,7 +442,7 @@ describe("function checkForMatch", function() {
     });
 });
 
-describe("function matched", function() {
+describe("function matched()", function() {
     beforeEach(function() {
         jasmine.clock().install();
     });
@@ -542,6 +548,162 @@ describe("function matched", function() {
         });
     });
 });
+
+describe("function notMatched()", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="playfield vhalign">
+                            <div class='cardshell taken'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card1'></div>
+                            </div>
+                            <div class='cardshell taken'>
+                                <div class='card front vhalign'></div>
+                                <div class='card back vhalign card1'></div>
+                            </div>
+                        </div>`);
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(notMatched).toBeDefined();
+    });
+
+    it("should call function popupNoMatch()", function() {
+        spyOn(window, 'popupNoMatch');
+        notMatched();
+        jasmine.clock().tick(500);
+        expect(window.popupNoMatch).toHaveBeenCalled();
+    });
+
+    it("should remove .showMe and .taken class from .cardshell elements", function() {
+        matched();
+        jasmine.clock().tick(2000);
+        expect($(".cardshell")).not.toHaveClass('showMe taken');
+    });
+
+    it("should call function changePlayer(currentPlayer)", function() {
+        spyOn(window, 'changePlayer');
+        notMatched();
+        jasmine.clock().tick(2000);
+        expect(window.changePlayer).toHaveBeenCalled();
+    });
+
+    it("should call function whoIsNext()", function() {
+        spyOn(window, 'whoIsNext');
+        notMatched();
+        jasmine.clock().tick(2500);
+        expect(window.whoIsNext).toHaveBeenCalled();
+    });
+
+    it("should set fieldActive to true", function() {
+        notMatched();
+        jasmine.clock().tick(3500);
+        expect(fieldActive).toBe(true);
+    });
+});
+
+describe("function increasePoints", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="playfield vhalign">
+                        <div class='cardshell taken'>
+                            <div class='card front vhalign'></div>
+                            <div class='card back vhalign card1'></div>
+                        </div>
+                        <div class='cardshell taken'>
+                            <div class='card front vhalign'></div>
+                            <div class='card back vhalign card1'></div>
+                        </div>
+                    </div>
+                    <div class="scorePlayer1Field vhalign"></div>
+                    <div class="scorePlayer2Field vhalign"></div>`);
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(increasePoints).toBeDefined();
+    });
+
+    describe("if currentPlayer is Player1", function() {
+        beforeEach(function() {
+            scorePlayer1 = 0;
+        });
+
+        it("should assign player 1's color on matched cards", function() {
+            increasePoints();
+            jasmine.clock().tick(1000);
+            expect($('.checkmarkPlayer1Big').length).toEqual(2);
+        });
+
+        it("should call function changeFontsizeBigLogo()", function() {
+            spyOn(window, 'changeFontsizeBigLogo');
+            increasePoints();
+            expect(window.changeFontsizeBigLogo).toHaveBeenCalled();
+        });
+
+        it("should increment player 1's points by 1", function() {
+            increasePoints();
+            // jasmine.clock().tick(1000);
+            expect(scorePlayer1).toEqual(1);
+        });
+
+        it("should write player 1's new points value to DOM element", function() {
+            increasePoints();
+            //jasmine.clock().tick(1000);
+            expect($('.scorePlayer1Field').html()).toBe("1");
+        });
+
+        it("should add class bubbleIcon to .checkmarkPlayer1Big element", function() {
+            increasePoints();
+            jasmine.clock().tick(1000);
+            expect($('.checkmarkPlayer1Big')).toHaveClass('bubbleIcon');
+        });
+    });
+
+    describe("if currentPlayer is Player2", function() {
+        beforeEach(function() {
+            scorePlayer2 = 0;
+            currentPlayer = "Player2";
+        });
+
+        it("should assign player 2's color on matched cards", function() {
+            increasePoints();
+            expect($('.checkmarkPlayer2Big').length).toEqual(2);
+        });
+
+        it("should call function changeFontsizeBigLogo()", function() {
+            spyOn(window, 'changeFontsizeBigLogo');
+            increasePoints();
+            expect(window.changeFontsizeBigLogo).toHaveBeenCalled();
+        });
+
+        it("should increment player 2's points by 1", function() {
+            increasePoints();
+            // jasmine.clock().tick(1000);
+            expect(scorePlayer2).toEqual(1);
+        });
+
+        it("should write player 2's new points value to DOM element", function() {
+            increasePoints();
+            //jasmine.clock().tick(1000);
+            expect($('.scorePlayer2Field').html()).toBe("1");
+        });
+        it("should add class bubbleIcon to .checkmarkPlayer2Big element", function() {
+            increasePoints();
+            jasmine.clock().tick(1000);
+            expect($('.checkmarkPlayer2Big')).toHaveClass('bubbleIcon');
+        });
+    });
+
+});
+
 
 describe("function setActivePlayer", function() {
     beforeEach(function() {
