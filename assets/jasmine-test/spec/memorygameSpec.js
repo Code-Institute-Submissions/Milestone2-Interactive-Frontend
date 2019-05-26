@@ -776,11 +776,9 @@ describe("function changeFontsizeBigLogo", function() {
 
 describe("function changePlayer()", function() {
     beforeEach(function() {
-        //jasmine.clock().install();
     });
 
     afterEach(function() {
-        //jasmine.clock().uninstall();
     });
 
     it("should exist", function() {
@@ -810,6 +808,41 @@ describe("function changePlayer()", function() {
         });
     });
 });
+
+describe("function changeOpeningPlayer()", function() {
+    beforeEach(function() {
+    });
+
+    afterEach(function() {
+    });
+
+    it("should exist", function() {
+        expect(changeOpeningPlayer).toBeDefined();
+    });
+
+    describe("if ThisGameOpenedBy is Player1", function() {
+        beforeEach(function() {
+            ThisGameOpenedBy = "Player1";
+        });
+
+        it("should set ThisGameOpenedBy to Player2", function() {
+            changeOpeningPlayer(ThisGameOpenedBy);
+            expect(ThisGameOpenedBy).toEqual("Player2");
+        });
+    });
+
+    describe("if ThisGameOpenedBy is Player2", function() {
+        beforeEach(function() {
+            ThisGameOpenedBy = "Player2";
+        });
+
+        it("should set ThisGameOpenedBy to Player1", function() {
+            changeOpeningPlayer(ThisGameOpenedBy);
+            expect(ThisGameOpenedBy).toEqual("Player1");
+        });
+    });
+});
+
 
 
 describe("function setActivePlayer", function() {
