@@ -1,0 +1,3102 @@
+%PDF-1.4
+%Óëéá
+1 0 obj
+<</Creator (Mozilla/5.0 \(Macintosh; Intel Mac OS X 10_14_5\) AppleWebKit/537.36 \(KHTML, like Gecko\) Chrome/74.0.3729.169 Safari/537.36)
+/Producer (Skia/PDF m74)
+/CreationDate (D:20190527170509+00'00')
+/ModDate (D:20190527170509+00'00')>>
+endobj
+3 0 obj
+<</ca 1
+/BM /Normal>>
+endobj
+6 0 obj
+<</CA 1
+/ca 1
+/LC 0
+/LJ 0
+/LW 1
+/ML 4
+/SA true
+/BM /Normal>>
+endobj
+7 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [315.99997 481.45996 347.49997 494.95996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=&seed=20102)>>>>
+endobj
+8 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 456.70996 212.5 467.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field16BtnVisActive)>>>>
+endobj
+9 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 446.20996 525.25 456.70996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field16BtnVisActive%20should%20remove%20class%20.selectedSize%20of%20.field36Btn%20and%20add%20class%20.bg-fieldSizeBtn%20to%20.field36Btn)>>>>
+endobj
+10 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 435.70996 118.749992 446.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field16BtnVisActive%20should%20exist)>>>>
+endobj
+11 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 425.20996 535 435.70996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field16BtnVisActive%20should%20add%20class%20.selectedSize%20to%20.field16Btn%20and%20remove%20class%20.bg-fieldSizeBtn%20from%20.field16Btn)>>>>
+endobj
+12 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 414.70996 525.25 425.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field16BtnVisActive%20should%20remove%20class%20.selectedSize%20from%20.field8Btn%20and%20add%20class%20.bg-fieldSizeBtn%20to%20.field8Btn)>>>>
+endobj
+13 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 398.95996 148 409.45996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\))>>>>
+endobj
+14 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 383.20996 371.49997 393.70996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\)%20if%20first%20move%20has%20not%20been%20made%20and%20ThisGameOpenedBy%20is%20Player1)>>>>
+endobj
+15 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 372.70996 322.74997 383.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\)%20if%20first%20move%20has%20not%20been%20made%20and%20ThisGameOpenedBy%20is%20Player1%20should%20call%20function%20setActivePlayer\(currentPlayer\))>>>>
+endobj
+16 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 362.20996 243.25 372.70996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\)%20if%20first%20move%20has%20not%20been%20made%20and%20ThisGameOpenedBy%20is%20Player1%20should%20set%20currentPlayer%20to%20Player1)>>>>
+endobj
+17 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 346.45996 118.749992 356.95996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\)%20should%20exist)>>>>
+endobj
+18 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 330.70999 336.99997 341.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\)%20if%20first%20move%20has%20been%20made%20and%20currentPlayer%20is%20Player1)>>>>
+endobj
+19 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 320.20999 322.74997 330.70999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\)%20if%20first%20move%20has%20been%20made%20and%20currentPlayer%20is%20Player1%20should%20call%20function%20setActivePlayer\(currentPlayer\))>>>>
+endobj
+20 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 304.45999 336.99997 314.95999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\)%20if%20first%20move%20has%20been%20made%20and%20currentPlayer%20is%20Player2)>>>>
+endobj
+21 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 293.95999 322.74997 304.45999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\)%20if%20first%20move%20has%20been%20made%20and%20currentPlayer%20is%20Player2%20should%20call%20function%20setActivePlayer\(currentPlayer\))>>>>
+endobj
+22 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 278.20999 371.49997 288.70999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\)%20if%20first%20move%20has%20not%20been%20made%20and%20ThisGameOpenedBy%20is%20Player2)>>>>
+endobj
+23 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 267.70999 243.25 278.20999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\)%20if%20first%20move%20has%20not%20been%20made%20and%20ThisGameOpenedBy%20is%20Player2%20should%20set%20currentPlayer%20to%20Player2)>>>>
+endobj
+24 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 257.20999 322.74997 267.70999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20whoIsNext\(\)%20if%20first%20move%20has%20not%20been%20made%20and%20ThisGameOpenedBy%20is%20Player2%20should%20call%20function%20setActivePlayer\(currentPlayer\))>>>>
+endobj
+25 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 241.45999 197.5 251.95999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActiveButStart)>>>>
+endobj
+26 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 230.95999 223 241.45999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActiveButStart%20should%20set%20stopBtnActive%20to%20false)>>>>
+endobj
+27 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 220.45999 118.749992 230.95999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActiveButStart%20should%20exist)>>>>
+endobj
+28 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 209.95999 213.25 220.45999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActiveButStart%20should%20set%20fieldActive%20to%20false)>>>>
+endobj
+29 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 199.45999 257.49997 209.95999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActiveButStart%20should%20remove%20.btnlocked%20from%20.field8Btn)>>>>
+endobj
+30 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 188.95999 291.99997 199.45999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActiveButStart%20should%20remove%20class%20.btnlocked%20from%20.field16Btn)>>>>
+endobj
+31 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 178.45999 316.74997 188.95999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActiveButStart%20should%20remove%20class%20.btnlocked%20from%20.enterPlayersBtn)>>>>
+endobj
+32 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 167.95999 252.24998 178.45999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActiveButStart%20should%20add%20class%20.btnlocked%20to%20.stopBtn)>>>>
+endobj
+33 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 157.459991 291.99997 167.95999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActiveButStart%20should%20remove%20class%20.btnlocked%20from%20.field36Btn)>>>>
+endobj
+34 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 146.959991 198.25 157.459991]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActiveButStart%20should%20set%20btnActive%20to%20true)>>>>
+endobj
+35 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 131.209991 142.75 141.709991]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames)>>>>
+endobj
+36 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 115.459991 411.24997 125.959991]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20if%20%23nameFieldPlayer1Form%20or%20%23nameFieldPlayer2Form%20have%20more%20than%208chars)>>>>
+endobj
+37 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 104.959991 258.24997 115.459991]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20if%20%23nameFieldPlayer1Form%20or%20%23nameFieldPlayer2Form%20have%20more%20than%208chars%20should%20call%20function%20popupCheckNames\(\))>>>>
+endobj
+38 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 94.459961 550 104.959991]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20if%20%23nameFieldPlayer1Form%20or%20%23nameFieldPlayer2Form%20have%20more%20than%208chars%20should%20set%20%24\(%27.popupCheckNames%27\).html\(\)%20to%20%27Please%20fill%20in%20names%20with%20no%20more%20than%208%20characters.%27)>>>>
+endobj
+39 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 78.709961 346.74997 89.209961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20if%20%23nameFieldPlayer1Form%20or%20%23nameFieldPlayer2Form%20is%20empty)>>>>
+endobj
+40 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 68.209961 490.74997 78.709961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20if%20%23nameFieldPlayer1Form%20or%20%23nameFieldPlayer2Form%20is%20empty%20should%20set%20%24\(%27.popupCheckNames%27\).html\(\)%20to%20%27Please%20fill%20in%20names%3Cbr%3E%20in%20both%20fields.%27)>>>>
+endobj
+41 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 57.709961 258.24997 68.209961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20if%20%23nameFieldPlayer1Form%20or%20%23nameFieldPlayer2Form%20is%20empty%20should%20call%20function%20popupCheckNames\(\))>>>>
+endobj
+42 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 41.959961 411.24997 52.459961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20if%20%23nameFieldPlayer1Form%20and%20%23nameFieldPlayer2Form%20have%20different%20names)>>>>
+endobj
+43 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 31.459961 243.25 41.959961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20if%20%23nameFieldPlayer1Form%20and%20%23nameFieldPlayer2Form%20have%20different%20names%20should%20call%20function%20processNames\(\))>>>>
+endobj
+44 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [38.499996 533.95996 105.999992 552.70996]
+/A <</Type /Action
+/S /URI
+/URI (http://jasmine.github.io/)>>>>
+endobj
+45 0 obj
+<</Filter /FlateDecode
+/Length 2136>> stream
+xœå\ÛnÛF}×Wð¹@™½_€ €eÇynk Ð6
+¤@Òÿ:³Ü%WmÎ‘­4mPâeöræ¶3«‘Fcsùýÿ8v—>»1ûœÃðû§Ãç?·^ùÁ¸¤†/~ûaø›î»Qú‹¥ƒ“j¦þÿåý0|ùxxóÞÿ)½imô³åÎ>”;ŠI§"=>ÞÜ»!¨£2?=˜0:oµ¡y˜ááÓá­RÚÓqC‡¡ÃÒ‘ê¹¯×ŽŽÛŸ†‡¿ï¶{u&tgÓÒ«¹SÊQKèPt~KïšÞ©wE½ÚXz´fÔ4R°ÔÑÃÃÛ‰ 4Š]£›'‡_@ù˜êøî8uQ;u©ï*2Sç”¦wÏ×tâoy¨:ïú\«ÚžhÜ=uZ'Ü¡±4O“Çà)W¥_ÇÖNæM£‹•ŽŸ=Á»2ŸxÊ¦‹ÚèŽGjÂfL}n'ZÆC·”
+O²?)7®¸¯ÝN‹tÖÂ<ÝB«q-b[“ŸéÿóAë0²ù7t§ÖDVvß¹§b’ål»å®“§UgÓ-•ýtË™š)¶‹4ÝCTaè_©óó›Í|yj'|ÈF1•9«ÜT=wâ¾­*u¬"Œ“¹µç|^Ô–Î5«AfúÉ(MÖÁ²,;zGN‰ØèìHœÌåõVªat6zÕ:MŽª¿±°¶w'ÀéÒ7À)žèÊ-1[LëŒœ–"¦JN› lÀF+@l täõ bàÓ˜€ h4 ÐD9- Ðx  	À„ Ì @« €Ö  ­ R°`D f  S @g €Î Ch@ F` z ô è-²D8  -Ô qD & `P À €Á ƒ  ŒÀ­ò ÀˆÄ0	b"ÅD(ŒAâ˜ˆ2‰dÉ$$’IH$“H&!‘LB"™„D2‰d2Éd$’ÉH$“‘H&#‘LF"Ê‘`ÔÈPÄ´dÛbZ2m1-Y¶˜6Ø2€39±Ðq†"'ö >ÎPäÄ	˜€œ¡È‰¢œ ÈŠœ8  0 9C‘  g(rb äEN€ È
+à¹ €œ¡È‰â@0" 3 39± r†"'v @ÎPäÄ˜ €œ¡È‰5 39± r†"'ŽÀ­ò ÀˆÄ0	b"ÅD(ŒAâ˜ˆ2‰dÉ$$’IH$“H&!‘LB"™„D2‰d2Éd$’ÉH$“‘H&#‘LF"™’¡ 11é´<CÓ’m‹iÉ´Å´dÙbÚ`Ë 6ÎPäÄ@ÇŠœØø8C‘'` r†"'6ˆrZ  g(râ€ LÀ äENl €œ¡È‰= 39qD f  g(€ç r†"'vˆÀˆ Ì @ÎPäÄ ÈŠœØm¼Z‘Ç”ÍCÿZj2Ö7
+š<Þ4í¹,(L5ë²¾V÷K=F©ÑÈS	×jp9Ž¯åCSÙÎžcV£3š’ªe­ÿÒ‡«õ!±–;µ¡»Ó:SïÇ©†¤Í½ÐÌtm.x5ËÊ°“¬í9×Vñ»o£íW´QôÊMÓ¸®vÏL.Œ­õZs™™Y
+d
+sXï*h³Ù”ëZV¦H÷¯uTÔÞ¶b®r«1øYZR¯<­õ­Â©Uò”ÉuÏRíØòR\ÇƒÚ®ÈLÕªŸYš÷6ÆEº6œj†jÅoyéc“áœe.æµëRD÷çêüTÇ]m¹žëzl_µ›÷¾€¢¨ç¸hƒ?s{çSf/èààEÒ–pmCõ·¤}©–>WòÅÌýâë0,»‚¢^¿1… ÿ‡fz”Èp²FþÍ"DSÍÕêÅ„¹âÕðv_3\óAî–ö[5Wû¦![šq\¸\ht¥i’¨ZåÒÆŠ»~VµuIŸW§U¥³å1ìÒoÓ6S+£ç2Ò:/k;¨Òb|«Úß3&qY©ù¹PAÝOÇ¬æ{ÒìJª·—àÇ'ÏR.ô­tÛ/á>m·£:Š|F7ùÆx2+›ºTR¬ÎY_g©³ú¥íäR»¸”Ã/dÖ¼6[`é»ø¤ï÷¥DöõI?½ú5R Yâ¾êr±?i§%kÜ÷¤Îk:Åš«Í…>~T¡©Àm{î*ýµÖ9*5ôUç%]«Ò¼¥ußúßŸì\p÷Â‡‹öƒÚÈE®‰>Åg&–-!k¢*ƒ›jtmC«wYÒ¸Ä+ÉÂöœíˆox-2¬ÿ
+dçÞš;{ÌÍ•Å nDF
+î!HÀ®÷
+÷Rû œÈ!|K*ŠïUz/r(k¯w¯/çu¡Úótüå†å«Ú‚UÓÕÉ·í0æbÙ¡é‚³óÏHÎ¹‘óFä©B¼ëÌlíc=šåMôó÷È«Ûõ‹Œá·Ç˜#á^*j¡ë%5Ó¶/;Æ¶pb‡‰\š¥%vsq×g+-µHúJ´GÇ Ì%6¡Ú&àMõ<Ï™èOtû[øˆsûâ6³v¤Åéô;Àí£Ã™áÝ×¾×Ú7çN[ùéÎ®m:1ÕªQ®÷ÝrÃØÕÍ®É—¾7“íÄyeiÂho|úô´W3mÍåŒ>oãÚ²ÚiöÖ²*ÕFf~¼ênÝ•}_)ÂÝÚy»–9­÷W¾æ*Ø~©¥H</}ôañ¶fíjAÔWÝµ«Qç1V	ÏŸJ=)ùÑZJtûW®É8»ùhµ—RØ¦äºZFÉø})ýðN›a4Þåaô*—‚Œó›¥h&pÑLvy¤Áø%æÁh®Ôùu]Q³ú±“àëØV¾Ñ6àÖ|;ý“²#¸k
+endstream
+endobj
+47 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 556.45996 118.749992 566.95996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20should%20exist)>>>>
+endobj
+48 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 540.70996 375.99997 551.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20if%20%23nameFieldPlayer1Form%20or%20%23nameFieldPlayer2Form%20have%20same%20name)>>>>
+endobj
+49 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 530.20996 545.5 540.70996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20if%20%23nameFieldPlayer1Form%20or%20%23nameFieldPlayer2Form%20have%20same%20name%20should%20set%20%24\(%27.popupCheckNames%27\).html\(\)%20to%20%27Please%20provide%20different%3Cbr%3E%20names%20for%20each%20player.%27)>>>>
+endobj
+50 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 519.70996 258.24997 530.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkNames%20if%20%23nameFieldPlayer1Form%20or%20%23nameFieldPlayer2Form%20have%20same%20name%20should%20call%20function%20popupCheckNames\(\))>>>>
+endobj
+51 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 503.95996 163 514.45996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changePlayer\(\))>>>>
+endobj
+52 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 488.20996 193 498.70996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changePlayer\(\)%20if%20currentPlayer%20is%20Player1)>>>>
+endobj
+53 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 477.70996 243.25 488.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changePlayer\(\)%20if%20currentPlayer%20is%20Player1%20should%20set%20currentPlayer%20to%20Player2)>>>>
+endobj
+54 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 461.95996 193 472.45996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changePlayer\(\)%20if%20currentPlayer%20is%20Player2)>>>>
+endobj
+55 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 451.45996 243.25 461.95996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changePlayer\(\)%20if%20currentPlayer%20is%20Player2%20should%20set%20currentPlayer%20to%20Player1)>>>>
+endobj
+56 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 435.70996 118.749992 446.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changePlayer\(\)%20should%20exist)>>>>
+endobj
+57 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 419.95996 153.25 430.45996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20processNames)>>>>
+endobj
+58 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 409.45996 118.749992 419.95996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20processNames%20should%20exist)>>>>
+endobj
+59 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 393.70996 217.75 404.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20processNames%20steps%20for%20processing%20form%20values)>>>>
+endobj
+60 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 383.20996 396.99997 393.70996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20processNames%20steps%20for%20processing%20form%20values%20should%20assign%20value%20of%20namePlayer2%20to%20%24\(%27namePlayer2Field%27\).html\(\))>>>>
+endobj
+61 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 372.70996 361.74997 383.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20processNames%20steps%20for%20processing%20form%20values%20should%20assign%20value%20of%20%23nameFieldPlayer2Form%20to%20namePlayer2)>>>>
+endobj
+62 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 362.20996 297.99997 372.70996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20processNames%20steps%20for%20processing%20form%20values%20should%20move%20%23enterPlayersModal%20under%20playfield)>>>>
+endobj
+63 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 351.70996 396.99997 362.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20processNames%20steps%20for%20processing%20form%20values%20should%20assign%20value%20of%20namePlayer1%20to%20%24\(%27namePlayer1Field%27\).html\(\))>>>>
+endobj
+64 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 341.20996 361.74997 351.70996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20processNames%20steps%20for%20processing%20form%20values%20should%20assign%20value%20of%20%23nameFieldPlayer1Form%20to%20namePlayer1)>>>>
+endobj
+65 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 330.70996 277.74997 341.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20processNames%20steps%20for%20processing%20form%20values%20should%20set%20%23enterPlayersModal%20to%20opacity%200)>>>>
+endobj
+66 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 314.95996 167.5 325.45996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupCheckNames)>>>>
+endobj
+67 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 304.45996 371.49997 314.95996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupCheckNames%20should%20move%20popupCheckNames%20above%20playfield%20before%20made%20visible)>>>>
+endobj
+68 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 293.95996 252.24998 304.45996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupCheckNames%20should%20set%20popupCheckNames%20to%20opacity%201)>>>>
+endobj
+69 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 283.45996 118.749992 293.95996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupCheckNames%20should%20exist)>>>>
+endobj
+70 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 272.95996 252.24998 283.45996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupCheckNames%20should%20set%20popupCheckNames%20to%20opacity%200)>>>>
+endobj
+71 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 262.45996 272.49997 272.95996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupCheckNames%20should%20move%20popupCheckNames%20under%20playfield)>>>>
+endobj
+72 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 246.70996 167.5 257.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkForMatch\(\))>>>>
+endobj
+73 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 230.95996 163.75 241.45996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkForMatch\(\)%20if%20cards%20do%20NOT%20match)>>>>
+endobj
+74 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 220.45996 233.5 230.95996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkForMatch\(\)%20if%20cards%20do%20NOT%20match%20should%20call%20function%20notMatched\(\))>>>>
+endobj
+75 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 204.70996 128.5 215.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkForMatch\(\)%20if%20cards%20match)>>>>
+endobj
+76 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 194.20996 218.5 204.70996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkForMatch\(\)%20if%20cards%20match%20should%20call%20function%20matched\(\))>>>>
+endobj
+77 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 183.70996 223.75 194.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkForMatch\(\)%20if%20cards%20match%20should%20set%20fieldActive%20to%20false)>>>>
+endobj
+78 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 173.20996 258.24997 183.70996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkForMatch\(\)%20if%20cards%20match%20should%20find%20classesCard1%20%3DclassesCard2)>>>>
+endobj
+79 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 162.709961 273.24997 173.20996]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkForMatch\(\)%20if%20cards%20match%20should%20have%20%24\(%27.taken%20.back%27\).length%20of%202)>>>>
+endobj
+80 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 146.959961 118.749992 157.459961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20checkForMatch\(\)%20should%20exist)>>>>
+endobj
+81 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 131.209961 232 141.709961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\))>>>>
+endobj
+82 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 115.459961 257.49997 125.959961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(36\))>>>>
+endobj
+83 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 104.959961 342.24997 115.459961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(36\)%20should%20set%20currentCardArray%20%3D%20masterCardArray.concat\(\)%3B)>>>>
+endobj
+84 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 94.459961 421.74997 104.959961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(36\)%20should%20create%20an%20array%20with%20length%20of%2036%20out%20of%20existent%20.back%20elements)>>>>
+endobj
+85 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 83.959961 396.99997 94.459961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(36\)%20should%20assign%20the%20shuffeled%20class%20array%20to%20card%20array%20on%20playfield)>>>>
+endobj
+86 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 73.459961 287.49997 83.959961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(36\)%20should%20call%20function%20to%20randomize%20card%20array)>>>>
+endobj
+87 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 57.709961 257.49997 68.209961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(16\))>>>>
+endobj
+88 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 47.209961 277.74997 57.709961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(16\)%20should%20splice%20currentCardArray%20to%2016%20cards)>>>>
+endobj
+89 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 36.709961 421.74997 47.209961]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(16\)%20should%20create%20an%20array%20with%20length%20of%2016%20out%20of%20existent%20.back%20elements)>>>>
+endobj
+90 0 obj
+<</Filter /FlateDecode
+/Length 1433>> stream
+xœÕZmÛ6þž_áÏêŠzPHr¹~Þ`?`kè€¶ÿ(%S2í8–â\®·>;¶D‘ø”|½T!}:ßw=ûi‚îƒ	ÁvÝ}ÛÅçÊÓIíE÷ýÓî¯ßºÿð¾îÁâÇ%“Øºøýóc7\|ÿ²{ÿQu_~$i :Tö9Ý±épMçÝûgÝùîü%ý “¶×FD=dwþºû <öxH<ž®ýÖxïÎÿîNçe©Zz4]+?J•OBhìi,¯x<£tR•K•ìG²
+ÿé>R'Ç:íW‡2ÎÓøú0ˆH‡DÂY&I'?œMüæ‡"½é9êmô3¤Ö¢šqŒ¨2™äÈ¿`“Û9jŸ­`—ôqS˜6õ†‘l“’ž«¡m´o	aWá÷B÷3ôÁTzø‹r½ˆ~>År—?ðûm`ûH«;ºtÚwJºèì†“NõQR¢dºb=ßIPªWø©Aê4ÆÀá–&ßêµ
+ÿøœüF&iT`Æ§Î) 3“‡ÈKýè…‚fÉh¶ÓÌNP\l2Ec'AÂ’»0×—Ú°A•¢kMt!4ˆí•Ä 7ÿ~‘1ÌòœÔ6Œá%ÆÆI÷&c¯elç¬m˜Îßdd<c[±8–cG:ûá,I^æ˜>a×0Qn”!ŽË\McI7Œ‘Æß3 ý
+ŠÀ“Ø‘b=Ïñ-:†#øé;¢l3Ü—°.é¯Ü	²Nš0È:-Nx”½¯O&ÔªG¤{ÏL92Lóœ#‡{°­˜&iÝ é1f®·(”‘Kƒe,6-J`\ðr).$%r›¹ÁÕÕRª¿3ªSëÕnUšóèzª#iÜk#YQ*"éZòÉ«"Y™þˆdH‚È¸ êÆñ˜©3BT»]Ò¾jUî1©=hÏ—ŠO]Æk–Å÷eß’ÞÃT“ 3Û4¯zªLT¤LÉÂÀ¹ÞÈŒ›§¤µºâ"²4~‹œ¥z¦žÆë€¹–8x/`*Ð8°í`ÖA	-y¿,ðXu(²«£‰¹®L":ÉI)rM ¢QœZY@VŒRßOôñD?Œ' Àÿˆrmµ´…(õ*
+—¨-ñöb)ó’,á–Q5]–GzNËPÕü(àÖ¾©†¯æ\¶%›/E¡»V?³,w=òP*èxb/2ÉgKÃ¼\,¬1$¯²–N(ù-åç½ÝäuõrâÆÎC*7yá­ãSae²Bª_Ä…Geák@ë-Ës¦5õŠ˜•úæM¶%:€5WV–I¢ì/ñ/ÂP;…×ÊMù=jQÏ"àZ|tó>Ðo·ŒQÂÓµc…¢nÀjšª³­xÜ‰AÒP¶TC‹þ…|!õLSÎ]ægšWO¶ž’–ºi5˜³Ì°Íìæ/S,E6Ó¹zŠÞÔ¯¾iš–gûÔÛÅ¹n:‰R{¥è­6,:ŸfõòóØ>U³Ž"Ë¬rmØ¾é±?#©~Ã¶KÞÄzœ}é˜2L[Ò³”tm¿”ÑqüÀ´–ˆ¢ ¬D”ÌïÂQ¶ÎxkÀÆ7bmq!¾ÝzÙÍÀ&-‰}“èÆ7ª­Í¯Z³¯”˜^"#¶95  ›üÜŽÖ–xìÙü»^°ØìE©¥2#›ÙšçTº•Úµ»äâtv®FÅüŽ˜Àû5lå²M/*×VÜdýäÝÝd°×PìZˆâ«3ÁóÔÌÏVûÍbÒ½»:Ê5­"¶Ö¼¦Ï–Pœ1ùbŸ'æÇMh4DÈ`ßr„ÔíRCÓÞ¢eqeý¥¢%ŸË¢ýbÛ`‘l­VY´Óo%ÚÅÿ'ù	ƒ—‰°
+endstream
+endobj
+92 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 556.46002 342.24997 566.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(16\)%20should%20set%20currentCardArray%20%3D%20masterCardArray.concat\(\)%3B)>>>>
+endobj
+93 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 545.96002 287.49997 556.46002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(16\)%20should%20call%20function%20to%20randomize%20card%20array)>>>>
+endobj
+94 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 535.46002 396.99997 545.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(16\)%20should%20assign%20the%20shuffeled%20class%20array%20to%20card%20array%20on%20playfield)>>>>
+endobj
+95 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 519.71002 252.24998 530.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(9\))>>>>
+endobj
+96 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 509.20999 273.24997 519.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(9\)%20should%20splice%20currentCardArray%20to%208%20cards)>>>>
+endobj
+97 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 498.70999 277.74997 509.20999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(9\)%20should%20call%20function%20to%20shuffle%20card%20array)>>>>
+endobj
+98 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 488.20999 416.49997 498.70999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(9\)%20should%20create%20an%20array%20with%20length%20of%208%20out%20of%20existent%20.back%20elements)>>>>
+endobj
+99 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 477.70999 342.24997 488.20999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(9\)%20should%20set%20currentCardArray%20%3D%20masterCardArray.concat\(\)%3B)>>>>
+endobj
+100 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 467.20999 396.99997 477.70999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20if%20called%20as%20prepAndDeliverCardArray\(9\)%20should%20assign%20the%20shuffeled%20class%20array%20to%20card%20array%20on%20playfield)>>>>
+endobj
+101 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 451.46002 118.749992 461.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20prepAndDeliverCardArray\(num\)%20should%20exist)>>>>
+endobj
+102 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 435.71002 197.5 446.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeFontsizeBigLogo)>>>>
+endobj
+103 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 419.96002 193 430.46002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeFontsizeBigLogo%20if%20CardRowlength%20is%20equal%204)>>>>
+endobj
+104 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 409.46002 342.24997 419.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeFontsizeBigLogo%20if%20CardRowlength%20is%20equal%204%20should%20set%20.checkmarkPlayer1Big%20font-size%20to%200.22x400px)>>>>
+endobj
+105 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 393.71002 193 404.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeFontsizeBigLogo%20if%20CardRowlength%20is%20equal%206)>>>>
+endobj
+106 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 383.21002 351.99997 393.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeFontsizeBigLogo%20if%20CardRowlength%20is%20equal%206%20should%20set%20.checkmarkPlayer1Big%20font-size%20to%200.1428x400px)>>>>
+endobj
+107 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 367.46002 118.749992 377.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeFontsizeBigLogo%20should%20exist)>>>>
+endobj
+108 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 351.71002 193 362.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeFontsizeBigLogo%20if%20CardRowlength%20is%20equal%203)>>>>
+endobj
+109 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 341.21002 342.24997 351.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeFontsizeBigLogo%20if%20CardRowlength%20is%20equal%203%20should%20set%20.checkmarkPlayer1Big%20font-size%20to%200.25x400px)>>>>
+endobj
+110 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 325.45999 207.25 335.95999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field8BtnVisActive)>>>>
+endobj
+111 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 314.95999 539.5 325.45999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field8BtnVisActive%20should%20assign%20class%20.selectedSize%20to%20.field8Btn%20and%20remove%20class%20.bg-fieldSizeBtn%20from%20.field8Btn)>>>>
+endobj
+112 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 304.45999 118.749992 314.95999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field8BtnVisActive%20should%20exist)>>>>
+endobj
+113 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 293.96002 525.25 304.45999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field8BtnVisActive%20should%20remove%20class%20.selectedSize%20of%20.field36Btn%20and%20add%20class%20.bg-fieldSizeBtn%20to%20.field36Btn)>>>>
+endobj
+114 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 283.46002 525.25 293.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field8BtnVisActive%20should%20remove%20class%20.selectedSize%20of%20.field16Btn%20and%20add%20class%20.bg-fieldSizeBtn%20to%20.field16Btn)>>>>
+endobj
+115 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 267.71002 153.25 278.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupNoMatch)>>>>
+endobj
+116 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 257.21002 238 267.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupNoMatch%20should%20set%20popupNoMatch%20to%20opacity%201)>>>>
+endobj
+117 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 246.71002 356.49997 257.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupNoMatch%20should%20move%20popupNoMatch%20above%20playfield%20before%20made%20visible)>>>>
+endobj
+118 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 236.21002 118.749992 246.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupNoMatch%20should%20exist)>>>>
+endobj
+119 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 225.71002 238 236.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupNoMatch%20should%20set%20popupNoMatch%20to%20opacity%200)>>>>
+endobj
+120 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 215.21002 257.49997 225.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupNoMatch%20should%20move%20popupNoMatch%20under%20playfield)>>>>
+endobj
+121 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 199.46002 163 209.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints)>>>>
+endobj
+122 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 183.71002 193 194.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player1)>>>>
+endobj
+123 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 173.21002 361.74997 183.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player1%20should%20add%20class%20bubbleIcon%20to%20.checkmarkPlayer1Big%20element)>>>>
+endobj
+124 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 162.710022 342.24997 173.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player1%20should%20write%20player%201%27s%20new%20points%20value%20to%20DOM%20element)>>>>
+endobj
+125 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 152.210022 262.74997 162.710022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player1%20should%20increment%20player%201%27s%20points%20by%201)>>>>
+endobj
+126 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 141.710022 287.49997 152.210022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player1%20should%20call%20function%20changeFontsizeBigLogo\(\))>>>>
+endobj
+127 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 131.210022 302.49997 141.710022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player1%20should%20assign%20player%201%27s%20color%20on%20matched%20cards)>>>>
+endobj
+128 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 115.460022 193 125.960022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player2)>>>>
+endobj
+129 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 104.960022 302.49997 115.460022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player2%20should%20assign%20player%202%27s%20color%20on%20matched%20cards)>>>>
+endobj
+130 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 94.460022 361.74997 104.960022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player2%20should%20add%20class%20bubbleIcon%20to%20.checkmarkPlayer2Big%20element)>>>>
+endobj
+131 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 83.960022 342.24997 94.460022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player2%20should%20write%20player%202%27s%20new%20points%20value%20to%20DOM%20element)>>>>
+endobj
+132 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 73.460022 262.74997 83.960022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player2%20should%20increment%20player%202%27s%20points%20by%201)>>>>
+endobj
+133 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 62.960022 287.49997 73.460022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20if%20currentPlayer%20is%20Player2%20should%20call%20function%20changeFontsizeBigLogo\(\))>>>>
+endobj
+134 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 47.210022 118.749992 57.710022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20increasePoints%20should%20exist)>>>>
+endobj
+135 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 31.460022 142.75 41.960022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupMatch)>>>>
+endobj
+136 0 obj
+<</Filter /FlateDecode
+/Length 1439>> stream
+xœíÛªÛ8ð=_áç…ºº%AYHrNú¼K`?`w[XèBÛÿ‡Ž¤[v{âæ¤§Ð'²,æ~KZcc~5
+ßoÚê¢k#ÄØ5Ú}Þ¥ç4ÆÕ|ùw÷×oÍÿ8ïZÝáËg £Ü¦›ôþó}S_>îÞ¾·ÍÇ¯šÖF7>ÚìCžQiiàÒÃy÷öäšÐœ?  ŒŸnL×:°Ú ¦9Ú½SJ^{¼^¯@c {‡×ñ÷æüßîù<Õ™€¤;¨æI)‡;¡ÃKáøˆß¿ºB¨ÖgˆÖ´Oê,:ÿÓ¼+ò&_mÚ/?>ÐùîP@äËú‰(3„S(ßîq ÇtáMÏµ¢ý¸Æð"´FÜÁ³tB3‘P&2| ³5‘Cç÷¼áužÖ¥g¼Ëøø1›6íÑT¡ÍznËÚDN)Õ-²?(×N¸¯×v„‹fy‡VíTÄ:ò–?ðýy§u×&óé\CCP®±Æ'e‡Úèl› e“Ì£jçÔbÛZkaÝ ‘IÓª²À2¥"ðTël4ø©u(ÆYO°‘&FÔB×hšèÌ*r 5ƒ*;VŸtŸD¬v@Ïtyn:R(û«Ö¹¢þ	F¹%µpƒÊ°:Kà°9dœiœŸ%<‘•Ö<D>Ï…\`èyîDs‘8Á˜°?!Œ2…¾Üç1c¯\`'‘ö<ŽËM¨ÏsPæ£„²ÚM{ª±Oû³N(Ôç‹á…	·NcØóT\rIF=í«9m«3„Û±ÂÏ/sÌ™&y\vîaNö#JÝ@°ŒC›JÖÆW˜$yÇÛ´=itrüJ wÐNh×=ÏŽDe¸Ÿ×2MákN¶Ð	¨1áQö9§Ý§ûÛ%8#¤ˆyÏ~­ÇÄ\µ=QK6¬ì@MÉxÆÏrúÇòb¼Ø÷×k2œQûo=¬Ï>šðÊÜ{öö¸¨ñ>‘NàÇ¯È…ëù÷Ûü{”d<—š½”î4Û´Äë8:½ÏöåT‡uœ®×ÙA†æDö˜äiÖiï¬‰mS}µ@ì—½ó¦ç—#>ºÁÿê¾%îœß`ÉlA¬»ì[z«„ro§:CVšJªš—}´¨xŸKš	ÿ/âá’K5(Z£=ÍsFpÈ¦–MÈ&HâÔ«—#™@‰k[eä•}ß‘!÷héb¬·’¼ëÕKJ»i‹Ô“_÷oðëLe¢0SoæâTÑÃDeÆ÷Ú8ÈÍ¸	üƒZäEú¹\‹ê‰,ç>¨òž¬kòÐ2NÔÙm¯cœ«q#-g,áœ3Ï}Ñ—¹³§8_àËÙ\§ËéH+HâÞo”¨«³‘§›ô ®,®ñ/5&ãº.dëòj5½‡üEú{·@BZÒqzur?©„.ð^÷úÁv·x}®T,­Åo«Ëœå¸ç‰‚L#€¤®›FÞÛ°˜é~ÐÞ¾V§Þ×bÚ	0ïD§Þ‚}Ææa-WŠ´Ÿ»+œ_@ƒ#yÕu*JgxÀV&àŒu±¶øû¸%Kqm±ë˜G%êâÜI[z+®º5÷è+$¿¥ú?VÏëÉÈ²G¦u’®Xæ§›«"—º^×²ðiq=[_¯#b'êv
+£F¶÷@¶×Ûzwê`_ëí¾H]rµ‹)àŠéþž0ã>î5WÉ-aªöÇø'ZØmg¬]•‡£:1ã2“É§_2,ÙÙws!Š:˜3ö2íßÌ•.dF=¤"AyÁ_(îß+TÔeP¦EQk©Ã|ƒLØ~aÛ{è™
+»öîé~aB¿i°ü~´ßïá{ëùEÞÃç}¦²ÕÁ¯=:À]£ƒQATÃo‰¹¿âè`ÒŸ\¦\¹ctÐJô/ŒŸ,:$¿©­(zßXÓ`>mtÿÏ¤Íõ÷Õº;ý“ë¹V;+
+endstream
+endobj
+138 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 556.46002 247.74998 566.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupMatch%20should%20move%20popupMatch%20under%20playfield)>>>>
+endobj
+139 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 545.96002 227.5 556.46002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupMatch%20should%20set%20popupMatch%20to%20opacity%200)>>>>
+endobj
+140 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 535.46002 227.5 545.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupMatch%20should%20set%20popupMatch%20to%20opacity%201)>>>>
+endobj
+141 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 524.96002 118.749992 535.46002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupMatch%20should%20exist)>>>>
+endobj
+142 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 514.46002 346.74997 524.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20popupMatch%20should%20move%20popupMatch%20above%20playfield%20before%20made%20visible)>>>>
+endobj
+143 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 498.70999 138.25 509.20999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20matched\(\))>>>>
+endobj
+144 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 482.95999 208 493.45999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20matched\(\)%20%20when%20all%20cards%20have%20been%20found)>>>>
+endobj
+145 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 472.45999 248.49998 482.95999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20matched\(\)%20%20when%20all%20cards%20have%20been%20found%20should%20call%20function%20gameCompleted\(\))>>>>
+endobj
+146 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 456.71002 232.75 467.20999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20matched\(\)%20%20while%20not%20all%20cards%20have%20been%20found)>>>>
+endobj
+147 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 446.21002 228.25 456.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20matched\(\)%20%20while%20not%20all%20cards%20have%20been%20found%20should%20call%20function%20whoIsNext\(\))>>>>
+endobj
+148 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 430.46002 223 440.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20matched\(\)%20should%20call%20function%20popupMatch\(\))>>>>
+endobj
+149 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 414.71002 143.5 425.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20matched\(\)%20if%20cards%20match...)>>>>
+endobj
+150 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 404.21002 411.24997 414.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20matched\(\)%20if%20cards%20match...%20should%20add%20.dummycardshell%2C%20remove%20.cardshell%2C%20remove%20.dummycardshell)>>>>
+endobj
+151 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 388.46002 118.749992 398.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20matched\(\)%20should%20exist)>>>>
+endobj
+152 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 377.96002 242.5 388.46002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20matched\(\)%20should%20call%20function%20increasePoints\(\))>>>>
+endobj
+153 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 362.21002 197.5 372.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeOpeningPlayer\(\))>>>>
+endobj
+154 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 346.46002 208 356.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeOpeningPlayer\(\)%20if%20ThisGameOpenedBy%20is%20Player2)>>>>
+endobj
+155 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 335.95999 258.24997 346.46002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeOpeningPlayer\(\)%20if%20ThisGameOpenedBy%20is%20Player2%20should%20set%20ThisGameOpenedBy%20to%20Player1)>>>>
+endobj
+156 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 320.20999 208 330.70999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeOpeningPlayer\(\)%20if%20ThisGameOpenedBy%20is%20Player1)>>>>
+endobj
+157 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 309.70999 258.24997 320.20999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeOpeningPlayer\(\)%20if%20ThisGameOpenedBy%20is%20Player1%20should%20set%20ThisGameOpenedBy%20to%20Player2)>>>>
+endobj
+158 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 293.96002 118.749992 304.45999]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20changeOpeningPlayer\(\)%20should%20exist)>>>>
+endobj
+159 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 278.21002 163 288.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20showHowToPopup)>>>>
+endobj
+160 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 267.71002 232.75 278.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20showHowToPopup%20should%20set%20%23howToModal%20to%20opacity%201)>>>>
+endobj
+161 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 257.21002 118.749992 267.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20showHowToPopup%20should%20exist)>>>>
+endobj
+162 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 246.71002 351.24997 257.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20showHowToPopup%20should%20move%20%23howToModal%20above%20playfield%20before%20made%20visible)>>>>
+endobj
+163 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 230.96002 197.5 241.46002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20showRegistrationPopup)>>>>
+endobj
+164 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 220.46002 386.49997 230.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20showRegistrationPopup%20should%20move%20%23enterPlayersModal%20above%20playfield%20before%20made%20visible)>>>>
+endobj
+165 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 209.96002 118.749992 220.46002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20showRegistrationPopup%20should%20exist)>>>>
+endobj
+166 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 199.46002 267.24997 209.96002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20showRegistrationPopup%20should%20set%20%23enterPlayersModal%20to%20opacity%201)>>>>
+endobj
+167 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 183.71002 157.75 194.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20resetCounters)>>>>
+endobj
+168 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 173.21002 198.25 183.71002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20resetCounters%20should%20set%20scorePlayer1%20to%200)>>>>
+endobj
+169 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 162.710022 198.25 173.21002]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20resetCounters%20should%20set%20scorePlayer2%20to%200)>>>>
+endobj
+170 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 152.210022 118.749992 162.710022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20resetCounters%20should%20exist)>>>>
+endobj
+171 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 141.710022 326.49997 152.210022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20resetCounters%20should%20set%20DOM%20element%20.scorePlayer1Field%20to%20html\(%270%27\))>>>>
+endobj
+172 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 131.210022 326.49997 141.710022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20resetCounters%20should%20set%20DOM%20element%20.scorePlayer2Field%20to%20html\(%270%27\))>>>>
+endobj
+173 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 115.460022 197.5 125.960022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20setCardshellSize\(num\))>>>>
+endobj
+174 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 104.960022 301.74997 115.460022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20setCardshellSize\(num\)%20should%20set%20CardRowlength%20to%203%20setCardshellSize\(9\))>>>>
+endobj
+175 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 94.460022 306.99997 104.960022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20setCardshellSize\(num\)%20should%20set%20CardRowlength%20to%204%20setCardshellSize\(16\))>>>>
+endobj
+176 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 83.960022 564.25 94.460022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20setCardshellSize\(num\)%20should%20set%20.cardshell%20dimensions%20to%20width%2061.6px%20and%20height%2061.6px%20when%20called%20as%20setCardshellSize\(36\))>>>>
+endobj
+177 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 73.460022 564.25 83.960022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20setCardshellSize\(num\)%20should%20set%20.cardshell%20dimensions%20to%20width%2094.8px%20and%20height%2094.8px%20when%20called%20as%20setCardshellSize\(16\))>>>>
+endobj
+178 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 62.960022 306.99997 73.460022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20setCardshellSize\(num\)%20should%20set%20CardRowlength%20to%206%20setCardshellSize\(36\))>>>>
+endobj
+179 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 52.460022 569.5 62.960022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20setCardshellSize\(num\)%20should%20set%20.cardshell%20dimensions%20to%20width%20126.8px%20and%20height%20126.8px%20when%20called%20as%20setCardshellSize\(9\))>>>>
+endobj
+180 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 41.960022 118.749992 52.460022]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20setCardshellSize\(num\)%20should%20exist)>>>>
+endobj
+181 0 obj
+<</Filter /FlateDecode
+/Length 1293>> stream
+xœÕÙŽÛ6ðÝ_ÁçQ8 (`k»yna Ð&
+¤@ÒÿÊc(Ñ²,SŠv½Ù…V¹/’Û)ôéGÈðû®«>ÉëÎ“÷FüõõðíÇ‘$	¥ß?þüEüúu&üØàâ#,ÿø(rãû—Ãû(¾ü— (Öcö9õÈ857ÂÔÓùðþY'ÎŸ De:M*Ð¡Äùëáƒ”@á9†G…Ãã¸Mü­ÃÓÿ*Îÿ~;ÏCÕÊÖ5ºªz’R‡•dÂ#C»oï ]¨hDTL óßâCžÙjÑqýÈYÇøõ)ƒHfðÄœ)¦Éå7ÅïÐ >¢bºy$¯sôsx˜¬é\ÉŒ8"ÉÌB‚OŒ˜Æ?È¦Ì³</Ž-È.Ñc/Å´iT2’™7¥xóÜÈOè’Ò,ŠßIÝM¤öÎ
+wµB-¯ ÙMU¾,ù=ü~; ˜.ºÑ‚›$µ@e£±SítØEHÉ%S«ZùÎÄé¾!	²òÀÜ%=•®N£Wá/€ËÎYw'LüI(°À|&9±™ºÑ£æëG×*æšÞ.¿Q²yØ¬ÖO–q`³fs-0Íná³Iéÿ…ºæ9pÔÂAå «©·y®¬ÖÄyiNÏã}l 8Dî7D±¾O±l 8Q{b) 4@Vöì/ñNó0–í×÷ù1Œ0g±íÔçG)$xÄðÜ²DTLmzH.¾òœ:W©ÜWc¯9N”FÊ#÷}ƒÌ`ÇBÁx{ÎOú6Œ‘2–Ècê?q%ßAn5¼"Ã!&,SH&PèšìÏÌPÛ Ãi2V†Çee!nLnkd‹!7LdÛ“±Ù·#o÷‚ò.’ˆ}Š½aŒ´F¾ØK7SÚcZ©5²ø6G›%Ïùv,¨òÓ E«[dSbçi*e«äØ8CåmŠ\Y¶%>ÎÅíRÂîk­ºò-uÅ–œ*·—Œf}5^â—ì±e›ÁóÊ– Å†c~Ò(Wä§!'ižwd*JURÖ÷ã8N³r©½LÌxÚ1þF~Õ$ê_QÄ‘^ñ–m-{ç-*î{¦6[jÖ=8¨+Ã›4T„Ú™GÊø…QÆaÚ[–ñ+‰2&Õ²7[¢“VkjÌ{‡ªÚÈ¼–¨2fÊþÈlÐœP3PÀù!å2=ÆÌ½÷Baþår-ùz.®•ÉÏ´2’~ÀV±Pz¬uÁëk[ìØ@Ó~þ–Þ˜£áèŒnGT)ÿä:MÃ—:O0ºé<a.¦ì¤‡=ãM²³ê< TË‡Ã~v†C22ujËy•a*+[ºÏ¯e×r’fü–²Š2ÚF™…—ÊV5e‰	ÏÊæÚ%ZmÁ<œkÈKë/;«µT7"K-»ée@ªéù’#¾[ê{‹-§¯.z	Ä˜`É¯Í‰U,¸·óÆ©ž8ÚŸX2,©&Ù–¥£	uXòÙ±Òï‰+õ+ï4ûq¯Ùš¸u[²Î.ÜÎÀÞÌm¼dôm;Ùto4á¸ùìåpzá›…j5~_å\®ôìJj‘³Ä!ävªðªûr?U|4ÑS®jOpfÏÏ'ç8Ã	rÁ»§½š„-gÕ`Ÿí=Iþô\€óp®ñAµåq—¨ãd³zKVy¨Íjþ'¿ƒÝÞõpÛmÌ–ŽZ²åíÚ8þÆÿî¡e	
+endstream
+endobj
+183 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 556.4599 157.75 566.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActive)>>>>
+endobj
+184 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 545.9599 223 556.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActive%20should%20set%20startBtnActive%20to%20true)>>>>
+endobj
+185 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 535.4599 118.749992 545.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActive%20should%20exist)>>>>
+endobj
+186 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 524.9599 198.25 535.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActive%20should%20set%20btnActive%20to%20true)>>>>
+endobj
+187 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 514.4599 223 524.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActive%20should%20set%20stopBtnActive%20to%20false)>>>>
+endobj
+188 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 503.9599 252.24998 514.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActive%20should%20add%20class%20.btnlocked%20to%20.stopBtn)>>>>
+endobj
+189 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 493.4599 291.99997 503.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActive%20should%20remove%20class%20.btnlocked%20from%20.field16Btn)>>>>
+endobj
+190 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 482.9599 282.24997 493.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActive%20should%20remove%20class%20.btnlocked%20from%20.startBtn)>>>>
+endobj
+191 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 472.4599 291.99997 482.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActive%20should%20remove%20class%20.btnlocked%20from%20.field36Btn)>>>>
+endobj
+192 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 461.9599 316.74997 472.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActive%20should%20remove%20class%20.btnlocked%20from%20.enterPlayersBtn)>>>>
+endobj
+193 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 451.4599 257.49997 461.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnActive%20should%20remove%20.btnlocked%20from%20.field8Btn)>>>>
+endobj
+194 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 435.7099 163 446.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\))>>>>
+endobj
+195 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 419.9599 188.5 430.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(16\))>>>>
+endobj
+196 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 409.4599 277.74997 419.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(16\)%20should%20call%20function%20setCardshellSize\(num\))>>>>
+endobj
+197 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 398.9599 258.24997 409.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(16\)%20should%20call%20function%20generateCards\(16\))>>>>
+endobj
+198 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 388.4599 312.24997 398.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(16\)%20should%20call%20function%20prepAndDeliverCardArray\(num\))>>>>
+endobj
+199 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 377.9599 426.24997 388.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(16\)%20should%20set%20%24\(%27.playfield%27\).css\(%27opacity%27\)%20to%200%20on%20begin%20of%20fieldInit\(16\))>>>>
+endobj
+200 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 362.2099 118.749992 372.7099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20should%20exist)>>>>
+endobj
+201 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 346.4599 183.25 356.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(9\))>>>>
+endobj
+202 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 335.9599 421.74997 346.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(9\)%20should%20set%20%24\(%27.playfield%27\).css\(%27opacity%27\)%20to%200%20on%20begin%20of%20fieldInit\(9\))>>>>
+endobj
+203 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 325.4599 262.74997 335.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(9\)%20should%20call%20function%20generateCards\(num\))>>>>
+endobj
+204 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 314.9599 312.24997 325.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(9\)%20should%20call%20function%20prepAndDeliverCardArray\(num\))>>>>
+endobj
+205 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 304.4599 277.74997 314.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(9\)%20should%20call%20function%20setCardshellSize\(num\))>>>>
+endobj
+206 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 288.7099 188.5 299.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(36\))>>>>
+endobj
+207 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 278.2099 312.24997 288.7099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(36\)%20should%20call%20function%20prepAndDeliverCardArray\(num\))>>>>
+endobj
+208 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 267.7099 426.24997 278.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(36\)%20should%20set%20%24\(%27.playfield%27\).css\(%27opacity%27\)%20to%200%20on%20begin%20of%20fieldInit\(36\))>>>>
+endobj
+209 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 257.2099 277.74997 267.7099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(36\)%20should%20call%20function%20setCardshellSize\(num\))>>>>
+endobj
+210 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 246.7099 262.74997 257.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20fieldInit\(num\)%20if%20called%20as%20fieldInit\(36\)%20should%20call%20function%20generateCards\(num\))>>>>
+endobj
+211 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 230.9599 167.5 241.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive)>>>>
+endobj
+212 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 220.4599 227.5 230.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive%20should%20set%20startBtnActive%20to%20false)>>>>
+endobj
+213 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 209.9599 208 220.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive%20should%20set%20fieldActive%20to%20true)>>>>
+endobj
+214 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 199.4599 202.75 209.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive%20should%20set%20btnActive%20to%20false)>>>>
+endobj
+215 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 188.9599 276.99997 199.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive%20should%20remove%20class%20.btnlocked%20from%20.stopBtn)>>>>
+endobj
+216 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 178.4599 257.49997 188.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive%20should%20add%20class%20.btnlocked%20to%20.startBtn)>>>>
+endobj
+217 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 167.9599 217.75 178.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive%20should%20set%20stopBtnActive%20to%20true)>>>>
+endobj
+218 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 157.4599 262.74997 167.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive%20should%20add%20class%20.btnlocked%20to%20.field8Btn)>>>>
+endobj
+219 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 146.9599 291.99997 157.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive%20should%20add%20class%20.btnlocked%20to%20.enterPlayersBtn)>>>>
+endobj
+220 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 136.4599 267.24997 146.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive%20should%20add%20class%20.btnlocked%20to%20.field36Btn)>>>>
+endobj
+221 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 125.9599 267.24997 136.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive%20should%20add%20class%20.btnlocked%20to%20.field16Btn)>>>>
+endobj
+222 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 115.4599 118.749992 125.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20makeBtnInactive%20should%20exist)>>>>
+endobj
+223 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 99.7099 157.75 110.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted)>>>>
+endobj
+224 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 89.2099 267.24997 99.7099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20should%20set%20popupGameCompleted%20to%20opacity%200)>>>>
+endobj
+225 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 78.7099 217.75 89.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20should%20set%20firstAttemptDone%20to%200)>>>>
+endobj
+226 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 62.9599 208 73.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20if%20scorePlayer2%20%3E%20scorePlayer1)>>>>
+endobj
+227 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 52.4599 386.49997 62.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20if%20scorePlayer2%20%3E%20scorePlayer1%20should%20set%20%24\(%27.popupGameCompleted%27\).html\(\)%20to%20%27Player2%20has%20won!%27)>>>>
+endobj
+228 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 36.7099 386.49997 47.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20should%20move%20popupGameCompleted%20above%20playfield%20before%20made%20visible)>>>>
+endobj
+229 0 obj
+<</Filter /FlateDecode
+/Length 1223>> stream
+xœíÙŽÛ6ðÝ_ÁçQHÎð‚km6Ï-ôÚ$@Húÿ@g¨¡Lk›’eg“Ôa‰âÜ‡cuRþ(MßW]uëvÉ¥äÕŸŸvŸwüœvÊbÔêËûÝ¿¨h;ãé2‚“3Š¿¿¿SÃÅ—»×ï@}ü7c3Æ0²yFóÒá‚–î»×O¨¢:| D™?£¬ïÐ±Ä‡U‡O»7ZGã†¥4¢\;¹Gý¯êð÷îía+ÚH¢#Ä#Vû¨5¤ó44]÷ôkè—°kÂ
+!cÛ¢äþRo†(T@gÉ…r!
+}Ü(ò€¥yÉ¬ð‡_Ç÷táz&%|Ës£žÖàaëD;DË0›LƒY2~'´ˆ#ôGÝ”uAÖñ³3ºËü„S5­‚1•Žô ›µò†µ,MiíÏª?jì&Ú7ñD|aÏCÝMMlRù¾ŸwÆøŽÃÇ£’Ë”¬ØÙ]tÐ1¦’ùª‚|c„ .ÇéH¡ÑU S:¹2Õ!‡Ø¬'JŒ2ýS¦8ŠÉONâQâac`ØaŽ£)[¬oËY'–¥ç'p‰×œhûh•M”¬²î…b<Æ†Sÿ-÷™Šï‡n64Æk'ôZ¸5©ÛÌé^(g.0“/,×ÞCfWX(¯…uÖaŸÌþöTð7pëM‹…Prl¹÷ò¼Ê—<ŸóWÅyæÄÊz‰‚Qç÷u4Hš¢ÂMv—J[H”s‚Üº‚OƒÝ°â'ïPi¡”±%š¾•”çsÌEé¸úxÁÒÍÚÐ/¶!hÓ”¾•”²£u	=¨èõÇy¦»HrhÉ4ç$¿™÷í’P „tA0GÑ–:°—`/zÉuß ÏPâ%cO•wÈG­<zK+W%O]âÈyâ(¶øö”ÃÑZ—ª©jÇ´þ˜g0éÒÐ /8Åƒê˜%¢SÐ%Ê§š²F¢*K%Ñ7'åR›Ó²3®¶I±0T*y=Û(Tö¨ª^?•Ì–=£h _i/Û´CNj/-¾®d'›f¼™Xáµº?ž0ÇL,xJƒR»•˜Ê’	ì³*d®öÑnö•¾Ò¼­b~ãXæìB'éÛTî`‚¹GÞê=&®9Oý4ÓªÅÔtÎ»sž\š=¬i©@”\ií´[sf±ï‘Y|ûîk½ý™<*øÿsé6~“švßï$6Y"Ðøï|òë¶êÿY×€5•îV}àF ·ªc;]·éÜø5Û5=åUú‹×öOîÑý[Ñ½%Wn:£Þ±½¶‡‰úš¨¼¦÷¿Ô×Ñ6ÕºwÐùµ¹,4Õ²÷æ†Tt/å¿š­ºáè_Jäoô`¸Å?ž\{KºÎ“7&¸*9{¬°ãÑO±¡sãLK÷,»•š„kÎp‹¹›Éxçjü\Ï7Hdã5I‰aWÎP¡Š{‘ÄÉY¬Øf.w7qŠiæl›9+º“ÿkÙ†ßakVÀâå
+Ÿ_Úæô·‰·Ô'ÄÉ5™ÞÌ	a.i/Ÿª®+§MÖ*2Ž[Æ¦8š©à¶Œ¥7nžÆÅów}6N§>trò	Õ\‰‰ÕŸy«_ú_êº
+endstream
+endobj
+231 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 556.4599 267.24997 566.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20should%20call%20function%20changeOpeningPlayer\(\))>>>>
+endobj
+232 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 545.9599 287.49997 556.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20should%20move%20popupGameCompleted%20under%20playfield)>>>>
+endobj
+233 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 530.2099 213.25 540.7099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20if%20scorePlayer2%20%3D%3D%20scorePlayer1)>>>>
+endobj
+234 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 519.7099 490.74997 530.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20if%20scorePlayer2%20%3D%3D%20scorePlayer1%20should%20set%20%24\(%27.popupGameCompleted%27\).html\(\)%20to%20%27Player1%20and%20Player2%20have%20same%20points!%27)>>>>
+endobj
+235 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 503.9599 208 514.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20if%20scorePlayer1%20%3E%20scorePlayer2)>>>>
+endobj
+236 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [69.999992 493.4599 386.49997 503.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20if%20scorePlayer1%20%3E%20scorePlayer2%20should%20set%20%24\(%27.popupGameCompleted%27\).html\(\)%20to%20%27Player1%20has%20won!%27)>>>>
+endobj
+237 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 477.7099 276.99997 488.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20should%20call%20function%20makeBtnActiveButStart\(\))>>>>
+endobj
+238 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 467.2099 118.749992 477.7099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20gameCompleted%20should%20exist)>>>>
+endobj
+239 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 451.4599 212.5 461.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field36BtnVisActive)>>>>
+endobj
+240 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 440.9599 118.749992 451.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field36BtnVisActive%20should%20exist)>>>>
+endobj
+241 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 430.4599 525.25 440.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field36BtnVisActive%20should%20remove%20class%20.selectedSize%20from%20.field8Btn%20and%20add%20class%20.bg-fieldSizeBtn%20to%20.field8Btn)>>>>
+endobj
+242 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 419.9599 535 430.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field36BtnVisActive%20should%20add%20class%20.selectedSize%20to%20.field36Btn%20and%20remove%20class%20.bg-fieldSizeBtn%20from%20.field36Btn)>>>>
+endobj
+243 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 409.4599 535 419.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20make_field36BtnVisActive%20should%20remove%20class%20.selectedSize%20from%20.field16Btn%20and%20add%20class%20.bg-fieldSizeBtn%20to%20.field16Btn)>>>>
+endobj
+244 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 393.7099 153.25 404.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20notMatched\(\))>>>>
+endobj
+245 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 383.2099 371.49997 393.7099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20notMatched\(\)%20should%20remove%20.showMe%20and%20.taken%20class%20from%20.cardshell%20elements)>>>>
+endobj
+246 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 372.7099 208 383.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20notMatched\(\)%20should%20set%20fieldActive%20to%20true)>>>>
+endobj
+247 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 362.2099 217.75 372.7099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20notMatched\(\)%20should%20call%20function%20whoIsNext\(\))>>>>
+endobj
+248 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 351.7099 232.75 362.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20notMatched\(\)%20should%20call%20function%20popupNoMatch\(\))>>>>
+endobj
+249 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 341.2099 118.749992 351.7099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20notMatched\(\)%20should%20exist)>>>>
+endobj
+250 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 330.7099 297.24997 341.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20notMatched\(\)%20should%20call%20function%20changePlayer\(currentPlayer\))>>>>
+endobj
+251 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 314.9599 182.5 325.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20generateCards\(num\))>>>>
+endobj
+252 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 304.4599 331.74997 314.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20generateCards\(num\)%20should%20generate%209%20cards%20when%20called%20as%20generateCards\(9\))>>>>
+endobj
+253 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 293.9599 276.99997 304.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20generateCards\(num\)%20should%20clear%20DOM%20elements%20of%20%24\(%27.playfield%27\))>>>>
+endobj
+254 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 283.4599 118.749992 293.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20generateCards\(num\)%20should%20exist)>>>>
+endobj
+255 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 272.9599 341.49997 283.4599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20generateCards\(num\)%20should%20generate%2036%20cards%20when%20called%20as%20generateCards\(36\))>>>>
+endobj
+256 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 262.4599 341.49997 272.9599]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=function%20generateCards\(num\)%20should%20generate%2016%20cards%20when%20called%20as%20generateCards\(16\))>>>>
+endobj
+257 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [48.999996 246.7099 252.24998 257.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=initial%20startup%20values%20and%20function%20calls)>>>>
+endobj
+258 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 236.2099 276.99997 246.7099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=initial%20startup%20values%20and%20function%20calls%20should%20call%20function%20showRegistrationPopup\(\))>>>>
+endobj
+259 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 225.7099 238 236.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=initial%20startup%20values%20and%20function%20calls%20should%20call%20function%20resetCounters\(\))>>>>
+endobj
+260 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 215.2099 287.49997 225.7099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=initial%20startup%20values%20and%20function%20calls%20should%20call%20function%20make_field8BtnVisActive\(\))>>>>
+endobj
+261 0 obj
+<</Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [59.499996 204.7099 223 215.2099]
+/A <</Type /Action
+/S /URI
+/URI (https://memorygame-poldi2018.c9users.io/assets/jasmine-test/jasmine-test.html?spec=initial%20startup%20values%20and%20function%20calls%20should%20call%20function%20fieldInit\(9\))>>>>
+endobj
+262 0 obj
+<</Filter /FlateDecode
+/Length 1238>> stream
+xœÕYÛŠ9}ï¯ðóB*¾_ ,T÷dò¼KÃ~Àî&°…$ÿ‘e¹ÊUí®R÷¤Ãdš¢®’¤#YöÚ$ü~o†æÖ%;$—’>|9ä÷ÆI'´R|ý÷ð×oâxnåá/ ‚Åˆ)‘~åâë§ÃÛF|ú†Ú”ÒJ„d²²øDæOË|z<Þ>[Åù#(B|Jh?Xg”Zœ?ÞI©#G¤kG÷ŽÓïâüßáý¹¯Õê¦[g­úIJ’ÎÃ!áúggÐ.A«	¨ÑèAÁHÞ€¢ó?â]ù …B#4n?åB¤ñí±¨ÀÃ•ê‰,Ó„)–³Ë÷páNy(ÂMï•$yøÆ>ÃA°Þ±T†™ÇÈÉÔïhlEæÐø“oêw¾Ëï6|‡xÂÒMwÉ¨ÆG²Ø¦5½7åÛl<’Òoº?J;¬¼¯ÒŽD¼ÐÛJëÏƒü¿/¥üÓÇ[A—)iatÈdwmÒ™!kÂ”Ä«FòRÊ˜Á³Ÿ€à$a•l2°<’ÉÕGƒ5€a°JÅ’œíƒš¤À*Ÿ„ñùÚ‰9MãLÃœF9D9ìøì™ž%¢ QrÊ$]žMrG¢Œ"ÚƒŒÑsøjhï¡q,¥
+Ñ[‚¹,}‹ÀÓûM	™æbQÏ±œõ*Qµ§o(aQgœ‰?é¯–…ÆÓÈTëR±ÞNøZ_ËiTzlEçÈÏW|©MN;L½[åí6Jç¥—œ84…)ßË@‘Kñøa13{ú©0‹ð„¢±l°1ddxe6áßóø”-ïüÒž–‹53já–yÜ‘Á‘¨^Ê²P«{øÅàGbåé¯ÎoOòcS!™±Ê?°F£•Yî=yË‘•ð^Û•\j¾!šúÞË]£VÃ©èÓ#!ÀÑ¶5ëšÝÄÿ;|`u¯2CTsë”–>2iFÖ÷Ãž“·ú5‡ÄÉ2ÊçÞ¬ˆ¼ª÷3“1û|ãŸØØNY•¹hŸ}‰xBYuuý}\úºWq1na•WðÚlçXZÕÞxk¼ë±ÛìçafDÖVŒØß`å=QaYÖa/"÷²é¥Ñ¹‰Y¶ìG*Êð+ç’åEïÕåÓîýêu¼¥ú+ºeZGKƒœW/µG`ÎjÑêòdâC•	YìÇL©y®sØbÖ‰ßUîÔnÔý®õBÛ[4\¶9¦N•á%ÇéjÖý_!×º”5Ãðš:Î¬«;¹·ïgšftC[)Ž:P6ã¢}$ÒNm(gzùÂFâƒºž¤8øÃw56v.PWÝ¨«™OÙrUnÇ‡¹Ò%cn¨tiÝ²C$5z´RZç~FH)Ï9‘M–3Sî¡ÁŠtZÆj¬É¢‹Š×ÄµÝ—i×b÷z1q¼àÙ{k%†ëîPöÉŒäÔ[ò­[®­”·wžê*˜aYxÔz%EÎz…Åêð^{*®}?ƒ4kmÀñ†}¥Þ°<oè¼á­m³§5íS«(k×°Þ“¨3¾Oó÷¥h,Y÷ÃÜ¡ñ£ÿ±Ò°f¿{çìu÷HsÆé4{h§F‡éÌùÌyÝ‚à#-«³gÓN;|MMlÿ-ÆFîæNÛÕ]¦ã­;L7XÙÓv»óU®^Î ùÿjß(.
+endstream
+endobj
+2 0 obj
+<</Type /Page
+/Resources <</ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState <</G3 3 0 R
+/G6 6 0 R>>
+/Font <</F4 4 0 R
+/F5 5 0 R>>>>
+/MediaBox [0 0 840.95996 594.95996]
+/Annots [7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R 24 0 R 25 0 R 26 0 R 27 0 R 28 0 R 29 0 R 30 0 R 31 0 R 32 0 R 33 0 R 34 0 R 35 0 R 36 0 R 37 0 R 38 0 R 39 0 R 40 0 R 41 0 R 42 0 R 43 0 R 44 0 R]
+/Contents 45 0 R
+/StructParents 0
+/Parent 263 0 R>>
+endobj
+46 0 obj
+<</Type /Page
+/Resources <</ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState <</G3 3 0 R>>
+/Font <</F4 4 0 R
+/F5 5 0 R>>>>
+/MediaBox [0 0 840.95996 594.95996]
+/Annots [47 0 R 48 0 R 49 0 R 50 0 R 51 0 R 52 0 R 53 0 R 54 0 R 55 0 R 56 0 R 57 0 R 58 0 R 59 0 R 60 0 R 61 0 R 62 0 R 63 0 R 64 0 R 65 0 R 66 0 R 67 0 R 68 0 R 69 0 R 70 0 R 71 0 R 72 0 R 73 0 R 74 0 R 75 0 R 76 0 R 77 0 R 78 0 R 79 0 R 80 0 R 81 0 R 82 0 R 83 0 R 84 0 R 85 0 R 86 0 R 87 0 R 88 0 R 89 0 R]
+/Contents 90 0 R
+/StructParents 1
+/Parent 263 0 R>>
+endobj
+91 0 obj
+<</Type /Page
+/Resources <</ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState <</G3 3 0 R>>
+/Font <</F4 4 0 R
+/F5 5 0 R>>>>
+/MediaBox [0 0 840.95996 594.95996]
+/Annots [92 0 R 93 0 R 94 0 R 95 0 R 96 0 R 97 0 R 98 0 R 99 0 R 100 0 R 101 0 R 102 0 R 103 0 R 104 0 R 105 0 R 106 0 R 107 0 R 108 0 R 109 0 R 110 0 R 111 0 R 112 0 R 113 0 R 114 0 R 115 0 R 116 0 R 117 0 R 118 0 R 119 0 R 120 0 R 121 0 R 122 0 R 123 0 R 124 0 R 125 0 R 126 0 R 127 0 R 128 0 R 129 0 R 130 0 R 131 0 R 132 0 R 133 0 R 134 0 R 135 0 R]
+/Contents 136 0 R
+/StructParents 2
+/Parent 263 0 R>>
+endobj
+137 0 obj
+<</Type /Page
+/Resources <</ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState <</G3 3 0 R>>
+/Font <</F4 4 0 R
+/F5 5 0 R>>>>
+/MediaBox [0 0 840.95996 594.95996]
+/Annots [138 0 R 139 0 R 140 0 R 141 0 R 142 0 R 143 0 R 144 0 R 145 0 R 146 0 R 147 0 R 148 0 R 149 0 R 150 0 R 151 0 R 152 0 R 153 0 R 154 0 R 155 0 R 156 0 R 157 0 R 158 0 R 159 0 R 160 0 R 161 0 R 162 0 R 163 0 R 164 0 R 165 0 R 166 0 R 167 0 R 168 0 R 169 0 R 170 0 R 171 0 R 172 0 R 173 0 R 174 0 R 175 0 R 176 0 R 177 0 R 178 0 R 179 0 R 180 0 R]
+/Contents 181 0 R
+/StructParents 3
+/Parent 263 0 R>>
+endobj
+182 0 obj
+<</Type /Page
+/Resources <</ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState <</G3 3 0 R>>
+/Font <</F4 4 0 R
+/F5 5 0 R>>>>
+/MediaBox [0 0 840.95996 594.95996]
+/Annots [183 0 R 184 0 R 185 0 R 186 0 R 187 0 R 188 0 R 189 0 R 190 0 R 191 0 R 192 0 R 193 0 R 194 0 R 195 0 R 196 0 R 197 0 R 198 0 R 199 0 R 200 0 R 201 0 R 202 0 R 203 0 R 204 0 R 205 0 R 206 0 R 207 0 R 208 0 R 209 0 R 210 0 R 211 0 R 212 0 R 213 0 R 214 0 R 215 0 R 216 0 R 217 0 R 218 0 R 219 0 R 220 0 R 221 0 R 222 0 R 223 0 R 224 0 R 225 0 R 226 0 R 227 0 R 228 0 R]
+/Contents 229 0 R
+/StructParents 4
+/Parent 263 0 R>>
+endobj
+230 0 obj
+<</Type /Page
+/Resources <</ProcSets [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState <</G3 3 0 R>>
+/Font <</F4 4 0 R
+/F5 5 0 R>>>>
+/MediaBox [0 0 840.95996 594.95996]
+/Annots [231 0 R 232 0 R 233 0 R 234 0 R 235 0 R 236 0 R 237 0 R 238 0 R 239 0 R 240 0 R 241 0 R 242 0 R 243 0 R 244 0 R 245 0 R 246 0 R 247 0 R 248 0 R 249 0 R 250 0 R 251 0 R 252 0 R 253 0 R 254 0 R 255 0 R 256 0 R 257 0 R 258 0 R 259 0 R 260 0 R 261 0 R]
+/Contents 262 0 R
+/StructParents 5
+/Parent 263 0 R>>
+endobj
+263 0 obj
+<</Type /Pages
+/Count 6
+/Kids [2 0 R 46 0 R 91 0 R 137 0 R 182 0 R 230 0 R]>>
+endobj
+264 0 obj
+<</Type /Catalog
+/Pages 263 0 R>>
+endobj
+265 0 obj
+<</Length1 31296
+/Filter /FlateDecode
+/Length 16448>> stream
+xœí½|TUö8~î½ïMï™ÉL&“)™ÌLêLz”IHè]Z€ j@Q)º"ˆQq-«¸bC€¨ÁÊ*vtÝ]+*6`-duW`-dæwî›™XÜõÿûíÿÿýüÿó8ïœwï}·œ{êI  jXò/m]ü·WV¿P¶@öüÂæöÖ·µ_°|€ðE{óE‹µ_É? 6|Ë½`Ñ¬æ}9p ®;<·½ã¢ò¿²b}9@ò5sç¶6{ô¯`ÛøØr,÷ÕË~
+¡tÎ‚•³¿¿";`Ä€ÀŽÙ‹ç´ßÑq­ à{ qÃ¬îÛÛj* ªëq|ç¬öæÅ7l. X ØÏ®žÁçÓõ•'‰Q!=ßS5EÂïüÙ{ 2ãôÚÛT¹ø¨L´çX$´/DfDfhoë­‰ÿˆ÷ð¼/Á†[ðM
+¼úÈ¿=ñ%ðð–4Û‰’ÕÃS89¬†É²í°JVcÉ˜C·Ã4„R,_/üª°ý»ø<ñ‡´,7!|ŽP…ÐÈˆP‹0!¡×aÛ{¶ó>â`b×Âzù4èÂù8Å	àE(âs>Ç>–éþŒãyXXöñ:yšTÇ¡
+Ûy8Æwù;ã±ÞÏ<òkA‰˜¿—‡å:ìg/­ˆîG\Ïþ u‚´öèqœÇ0¤åˆCˆgb>w¾nÎ;ßÛˆ´€´yãAšC1‚’¿ƒí•8Ç¹XŸç‰ÇÍFìEp`ŸÅì]XCnƒõã¤9:ãk/âëJ¬‰ÏŸÏég Äç×âó;p¡»ÏÜÎÓ9ÐÎŠ`b|’6Ó×¡Šm¾Í÷Qf†:òw¡×wòª[h<ä¿Ršç^hÅçPøZuÂÑYìÌÂ:«löÝCi8i	Xé%à‘ù`'®wŸÎ=û}R’‡–èWX¦Æö™ÂQ”æ5µâs.£½¼ÂqqürÄeDÂú¿c?eƒ°¯'žåóÁ9,á|ç{O&D¶‹'ÀŽukÆ£œÔ ðýoÇ¾çñwøûØ—Žß	sàò‡`@pq:¾GU²±Ð–Ø¯H{±÷a{ôµ8îÁwºbüƒb|>Šúö.¯Ã¾¹<9¹Ü¢ìŒâ2Êå„Ëˆ¤(’ìâ:¸œKüéÎx:Ö#È’Ñè´Ç¡Dˆñª€¿Ëçï{.—1.;	Ìe–¯‘ËÔ¿àsÚJsyûD^pyûO81þ¹8Nóu˜b8ú6Î‘¢Ì¾‰X/É/çu…Ô‡GXŠòzÏuOÒ}Ô?i?*bv Q†cÏïJ:Çíç\§¹*þ<AÚcå¹8Á»8žÄm‹¤ßˆÙºæsæû_Ó/Âq»”Ý»·ñ}ïÅ‰qã¡“âv*®ƒç‘­hw¼î¨TðlLÖPÎ¸ÍŠÉ„§wâ¼KðT²;‰5#Ÿd; ·™yˆ+8Pƒ~!aÎ­m`„\Kq¾¿Œ×!Tñ÷x™‹×aË¥¶.|ß‡~äsäå2X…ce!ž†kž„4/ãÏópn«sÿQ†øÚøþ• =a¶ŸÇ&Äg*ï+>×I¸ÞõÜ×pÙå²CÓáN„¹ä&rÇufpA‚¯gññðþöò:Áÿ×âïuc¼ùõŠýº$ÿ5AZCŠ¸ñç¸æ= ŽCø7œßß¤9f‰-Š6, Ñ/A=Ç’¿› õøŽO<ïŸ†þXž"¾‹mÖAš|dÉgK}¤ÈgJ}gaû*ù*ÄËQFpLœ÷M.ä…Š?£^˜‘yãž™yÿlñv8ïSrœ‡¸Ì¼oŽ±ì|oî¡Ô‡ø­$ŸfÉ~œ–äÐ%ÍËÄ©àBþæ±NP æÍ`ìÛ,u-¨xÎ•â³WÀ±%€8|ÐKWÅ±€í‹ØÃ*ñ'©Ü›h/SÄ ç¦Û±ÿ‡Á‹íë°3Úú ÷Ihï›b~‡¤sßC"3¸ßA¿R"ù–œ7úÉÿÃz8çGqL”ß¹NH6~Æð(–Hz#au*x´/ô–Y[°Ì"ù‹xìÂcn¿¸í’=„P!Å|_|Š¥àS=$Ñ¼Ì‹Ø‹e^®‹	›Ìc_{ÑÃã2U	x”ã¤X¦ ý“Uî@{†ý(Ž€•?óö	»-ù¨Šè¡>öí—Ú¥³ì¿äßÑG÷±ß	;q–ÝäsSÂ¹Í“|IA›{n?‰÷<}Çëã/Îo—Ïà¼x5(î~ŠËˆü<øŒßŠù¹‹©_ã:ÊãÂ>|éãË~Kv¤B².Ä?öáçYølßýè\Ìe‹ï÷¹øç|^üoù-”	|~ˆ~.†ÿrŽ_<OúÿuF]ŒãÿòÉçåKà„ÿüO˜ë(×³>øüþ6¥X?z‹‹Û½rö6Ú‘+ˆqº ÏÅËë6~:ÿK|Â}IG<®¼ðÌ¹õ}b 3ûtO‹Œ”g|ÊKÄ¼}q¼_KŸqR¸}æ6™û'n§¹ÿâv<º›h›hÇ}·éÜ—ñ÷{1ú1nÏ¹OÂöá^q.F_Æm:ú°$nË{e8.kiÜOsLŸ„@"¦ç9'×‘x^“íXl~ÿ-å’Uè_Š…ÕR~™×[ÉöY«äÃz×òbÜ§Åâ)’¼ÄçÚ»¶ø³L/Ù¢L6ÇÑ±}5‚4ÑcyD–ÐïÆß‰Ç ²É£Ñc{yLBÓ£;óò¾´T‹{¹Už#K–3²Ý†íÅd&zúü±mtw¯.Ÿ£[q{ÖG^£GãÏC‘\&ð¿KcrþñýùO¸Ý—öQŠŸâ|NìI"Vå±©—ò”ÇœÛyýË²ù39¥8cÌx|ÀúõÇãJÞÏ$)6ý7 [ýŽƒÜ•òÂèYcô°lB3–7E¿ãcœä_Â1ˆîˆÃañ˜÷gAqîŒAtGÇ ²9àZfóõÄóðÇÁÀAè‚;9ˆ5Ñq8´ñµÿÈïÄ¹^xf\ù«8ßni¾Š)øÎ|g
+ÎqŠdƒ'ý;½ŠãÈðAø‚ÜãØ|hÇÕ8¿8ß|Lð…ûø>&æHìá/ÙGÅ¾èw”—Fw(×áØâ|Ç ì•ÿ§}Q‹pg¢;âp8Íá?­[i†;•ãáNÕÚèŽ8Ždsø·2ˆ2/Á0žËœâ¨´ö™#ÊÛ\('1À¼ùöÂã¤%19!\w8 LÌåpž½éYÒ1Üã¹äÈ‹ó­“+Œ‡ç*¦ÁÎ„½é³~·+’}bã¸øOûøŸ ¾Ö¾°ù<ô;qøcóò}éÿ$÷¿z÷îû~.šÝç9ûœúó•gÇó÷´ÿ
+¼öõ˜-áÀužÃÏíÁYüÀØS/C;É–¿ÃÊÏbX}<†µ§bØ 1lRÅ°ÙŒXìDœ`ËA~6Raµ\ê]Z¬YMŒ$4“Ér=ÙLî&ääCò9é&'I”Zi*uÑ"ZFéSô%úý˜†é™‘™™•¥²Ld…¬œ5°Ql9»˜­fÙ5l»›=È:Ù³l?{…½Á¾ôBH)Ln~'Ü#<"<)<'¼+|,üUøZ8)üà¼Õy»ó}ççÎ£Î¿;pY\i®××DW£kŠ«ÉµÊµ×õ”ë€ë ë/®\»Ž»¾qpvEÜZ·Ùmw;Ýén¿;ßÝÏ]ï¾Ç½ÃÃ<JO²'Ýã÷äxÖ¤ÓtYº>Ý”nOw¦ç¤NŸ‘Þê{õûèO4%º/Ü°•˜ˆ“Ì$‘ë[É.²Ÿ<O>"ÇÈ·ä{
+ÔFÔ¼˜DŸ¤/Ò÷ÀD‰I,yáe¹,yF^tH¼¸yq»ÝÃ¶³ÝÈ‹?°WÙ?B¾0JØ$l~/<,<&ìÞÞ>¾Žß;y±ÕyÈyÄyÌù¸l.·k°ktœÓ]k]¹žv½èzÝõŽë#×'®n×?\§\=nµ;Éms;Ün‰/êÃ‹lÏŒ8/Œ}xÑ"ñ‚ /P8¢'£G¢Ÿ#>pœ3'j¦VDkà~¼oC¸“|káâèøô­Ôf¤Ñóð\äáÈN¸ ‚u‘‘k#ÿÀò`¤?ÊÞ&€žöœ‚z¾9ýAÏßà¢ž—±ä…ž#±Ó†hzGEØ…ðPäÁ#GçíwdÓÑrÄƒŽ6p´öhÍÑê£UG+ö?Z!•"äQÍBœqÔðYÙ'wÅzûdÝ'[.údÀ§uŸV}òÌÇó>^‰å_|R|ø÷‡¯F*ýpÇ'úO}üÖáüCßÈÿ">Ëù@ñ–dÇ è<z‘ôùÐ
+éÞ°ºïY	½”C¬Œ^Ñ§|Â¦8}t¿aË¹g-t£tßFÐW¿C?¡_!Æ ß÷¶9Ãlæ¹oÇË'#ÌŽÓúÜç±…liŸvúÐ-½Ô´óvJ vÀ=p¬#`|WÂup5ü„ml'l„Cð¸þßÁµpl@98‡;a;œ„p
+~;áx	†™06A¼­ð2¼
+„ƒð:¼_Âlø¼	‚]0eêxÞ‚·a.|ÝpÌƒ6˜í° ÂVXK`1,…e°:`\_ÁEp1¬„K`\
+]p7Êëj”ÑËà8üž ”0"‘Èˆz BD‰¶PQDC´d!ð=ü@ì$•¬F[è"nâ!éÄK2ˆøé\ÚF$~„wIÉ&9$—\N~Ã&!’OÖ’ËH)&%¤>ƒÏI)'Wõ¤?©$U¨÷¤šÔ0©%ud tÂnROÈ:r%L†¡dNFÀOpŽÀQx’´V2›ÌcðW¶‹íao±7Ù>ö'z]G¯¤ëézûŠn¦7Ò›èÍÄÉždOÀ{ð)| ÂGð	¼³½d)YF:Ø#d9Yöýò"y	-ÛJr1yd²ûÉ~´ÑÛ…ïH—ð“Ð#*D³èú±µÔHþI~ *'§(J©@T%©–êi»ŒšÈ÷äGôò%TF©’ªÙåTGè9N³§ØÓì´ÿÏ±ç%»÷>;Ä^d/±wÙ{ìeô	¯²×ØìCô¤»ØoÐR¾ÍÞA‘Ï®E‹y=zƒìu¡@(dCÙ0AD6œ`#Ù(A&ÈÙh6†e°ql<›À&
+
+AÉ&±F6™MaSY“ Ôl›Îf°f6“Í4‚–µ°V6›Ít‚žÍem¨óÑÙÖŽú±H0	Il1[Â–²el»]ÄV
+ÙBÚñKØGäv˜}Ì>A_uJø'ûœaG…¨")û”}IžfŸ‘§à1xÀ^x^€Ëá9X/þž¦ƒÈ³´¾UÅTêÜÏ§%-‹+ùùu»OKIYA dèË D_®ú0è10‚	’ÀH+Ø ì
+ôpNp¡—ó@:x!|à‡ dBdCäB!ùBC	”B”CôƒþP	UP5†Z¨ƒP0Á`Ca‡0FÁhcáŒ\ÆÃ˜“ &Ã˜
+M0¦ÃhÆùs;Ð‚6`6jû\Ôíy¨ÝP¿¢n/FíæºÝÚÍuû"Ôë‹Q³/EÝ^zÍµúr´8hÐ­G{sÚ «á´>×Ñb´/7Àf´G7ÁÍh­n¡¥ÈûÛàvÚ-ÖpÚ»Ñ"ÝÛh%ÜG«á´cÛá!´q;ÑBíâú	{àiù~vÁ>xž„§àixž…ýðÜÙçqŸ_€Ñª½Œ¶íU´h1KöGÉŠý­·_ïÀ»¨™ï£…ŒéæaøõóSIØÏH;¯$üùgäáWIøŸø¯J‚áWIø/HÂ×ÿC’ð%FÝeÿ/H‚éWIø©MÀè‘G‡R÷Ëmü¬$$ýJÂ¯qÂù%áH¯$ë#	ôJÂÑ^Iøë9’Ðƒ’=[Hû9’ðg”´Dœ°	åfOIˆÀ+¸)gIfçÚ„ÛQZ¸$¼Œ’“×¯6á¿ 	ÿ_ðþ_mÂÿ-6¡Wˆ@æþ;I "iû?ÉÈ<2ÿ¿1Í"qo“wÈ»ä=ò>9D> ’Èaò1ù„|J>#Ÿ“#ä(9FþJ¾ _’¯È×ä8é&#ßoÉßÉ?Èwä—r2!	äTLÈ?É÷(	?’@~‚[ÈiÒC"$JJ)£©ŒÊÿU¨‚*©Šª©&!	ì!¶%áª¥:ª§ò5RM¢fj¡ÉÔJm4…Úi*uÐ4ê¤.ê¦šN½4ƒú¨Ÿh&Í¢Ù4‡æÒ<¤!šOh!JÔ¿;Oøÿ™wà'|ÐJd1›@äè© SzÐë.–ÎÓ4ÐA´DGôÄ+IRÂ&dbÙb>×&‹dÖð“?â“$ÁO.—lÂç½g~üüŸõ•qI å¤ÿI •¤v‘¤ú\›@j¤ÀÁ’MÂO1.á6á(?Ä8a4ƒ6áü•Lâ„‰d2¼E¦©¤‰L#ÓÑ›'¿!³á32‡¬F› á€ß—áM÷¸]Î4Gª=ÅfM¶˜“LFƒ^§Õ¨UJ…\&
+ŒÈmðœáîôÏèüÞÁƒóø³·šûÌètcÑÀ³ÛtºgHÍÜg·cËÙç´ÇZ†{[ƒ»*órÝ^wçëõ^w™<fÒ×Ö{ÝÝ=B¢7I´i_p7ØæÖ»;ÉwCçÀs76Ì¨Çîö…qÓUy¹h^Q‚Ô¼ãNÐ¼j®oÑÐi÷Ö7t¦xë¥:ækhné=fRC}ªÇÓ˜—ÛIÌòÎìo]§>'þ:ÏMÇNÂ±órÛøüájM‹·åê®0ÌœÁ©æ©“:Ysc'ÁÇ0ætZ½õÖ‹ÚÎ<&¨†kúTvRßÀæÖ‘5WŽ=ÎàOÍ×àÓ°ÜØ-]×8©“¬kŒMBš{l­Þ^2cž»Sé­óÎÝ8oòÆNÚcÛ¼Íõ0zÒž”pŠô—»Ï¶º¿™²/¯6¯–ãþÛêþëobåÞ¯–Úøñ°±½|!|$ïœf§{–4ˆçZÎo­å°qV96ÃŸF‚«lëT˜±ÑÐßê}¯{ãIÀòv?»¤9^"óN'ùvöJÖÇé.äëåèI»	¹®±‹D×uA}Ú>´Hlú4¬ÎäâÐVoãCV.d{ÊÎuÄYäûæÞèÞ8¤e£{ {.n¸à“0V´nlár.˜Ô†÷q“<áÆÔ^²µ±±ö“Ãû¤~66bóâ=Ì“zÀz°Qnî0d‘ô¤1“:×Ö§v†ë‘%(?ûGOêÜ\llÄVy½3E¼ªÍŸsçœ—D(ÖËØvÑ¸qcìÉëéÜ¿qcêF®±ç.ç„ã] u€¢ÒEÖŽ–ªÖz=©¼ÀëñzpZõ8T>ŠWb{» àßs¸°/‡‹p¶…‡‹ÿK.ù%.ýE.;?‡ËqÎeœÃÿÏq¸ßÙÎA9Î	ë•GôãHÍ›Yä®q$\«Å0‚@¾twKwƒtòSXÍ‹6ÉÉ&ù¶v°øÊð¾-6AŠB'RÏRzê]HíBŠÂ]”§Ö ›_C9VÀõH_ôZ*"V O_„%‹°d–,Â¦ãÓhaºÔã(|â£Ž’žòñ©Ÿò¥§ŽÂ§ôä¢Š=D~C«dì£z×sKt®§È02Ãr)Øså(×3ä>Œ
+´äzé~yXçÖvk¹µ×»µkÜÚgÈÕèÔµdt'aÝhí{£µFkkFkûÖ>‰4+XØœ©}:SÛ•©½?S{i¦vE¦6/ßÞá–Ü/Ýo
+»‡jÿ9TûòPío‡j×Õ^<T;{¨Ö3T;Ó¡ÍphSÚ.²ú1ýfý&=(‘Ü»I»y–|¤ äªí"ß=ZäÊÉ-uu‘«öŒËEô›=ãrÕZÈe%\ÑZÈ¢_
+õ^Iò%|É—ê/ÜÊÂ×–í©¾Ñ’=ÕGó!(UÎÛStKË÷Œ›æªU’¢xŸ…P¯à8oOõX½'÷uW­‘ ˆQ†‹d@‘Tí…"©yzËöŒócsq/N4šÕEÈWdC%¹~
+u
+v	Xr2Ø¥@ôiV}hë£¢°ÕõAhšëýê¡®ØÃóãŽ¸ž-p=‘+½ð`ýS¼wx ã˜ÛÂj×½¡]ÛBW¹~_-Uo-’úÛ2NB7gaác®«°›eÁ.2akiAíš=ÎËæš…Å·…õ®`n™ë‚Ð“®1¡¥®Q±‘†ÔKhpè	i9ß…µµi®ÚPš«ªúuWÿz\ÉW}«86xaPZ^AõpW.OxÌ•=®À•ŽC’pžküùtùxy™¼Dž/÷Ë}r§<MnV˜…N¡Q¨
+…L!(Pnæ®è'á›eÒa»LàwA¢4‘9¡2R¢ (ZÜ2v’k“WÔØjLÕÆŠõç¹ÍˆßsÎ÷“Ö¹­Bçö´ÆÎBNDÓ‡u–pG¿s’£õû09AÔˆÏò×†±R¹§¾±Ñ6¬søèI]äXC[V´aÅ+aÆØ`Xç©ÈÂ¢ú}0Ž#ì‡–BïE¶TjvU¬Y{ÁfõñfG $5Ñ#R³×y³Ý²êwgeIMÄ lšlƒ¼	2<6ó||µ~w($µRu’|iÞùªN©£4©£¢"lR]Ä›ì.,Â»‹
+¥êÐ™êÜXõØXõX©zÊ™ê`¬zk¬z+VŸ—Çÿ?­u¿¬Ý#Sn¿ìyÍð6´"Ìè¼z—kgºÝ»/»=’ùgÌœ5—ãæÖÎÛ½­õ—yëÝ»§Üqžê;xõoýn¸£aÜ¤Ýw„[ë÷L	O‘¶G®¼vIÃYc]Õ;Ö’kÏÓÙµ¼³%|¬+ÎSÝÀ«¯äc5ð±øXW†¯”Æâkkh» nÙy~:–/Ÿ¶lÙ4;€ŠÃ ÁÆná'ÑÒ7‚º¾ŠÔðºÈÓÑw˜uf/©©ÄìÏÕoÑK¬‚Ã˜íYÑŽŽ¹Ã6oÂÇ˜ÑMÆg(<Da~5óÀvRäÏ˜6À˜Ya%,Â¶áÌ*÷ÂÑç°¬s©.8…1JæŒ“°—kàÖèØ
+_ÀÉèÝÑ¯0»\‡-ÞŽ~†ùæZ¬¥˜¡ú°Ïy˜ûåÑŽèzÌ4GâÌž€Ã$9Z™l1æŸõR®ÈÏ®Àº§ámx—8p5y˜³Vá&bx#Üð"q‘KÈïetntf¡“±çvØŒ«yþ
+'Fò,y)êˆîFql/æ¸uRýð;éäW/áuºÉd"ó²â¨6Zý	Ûë‘kaÌw§âí˜“®Ã¹¼ ¯áõ1ŽšIJÉx²³Íä%ZÇ’¹82z9ðï¬ùq–U˜!/„e8ÓMp3òðØ‰×óðä¼’xi-]KO0#cÄÑ5Ñ]Ñg¢Ä1·¯ÀQyžÝI9ïf¼ƒçà=Ü«o¡‡È‰Xq{ÉGäk
+ÔH³°·WÙ"¶‘í@¸CøH¬×Gî‹‰Î‰Þ}-ú½ô]!9ò>3ýX®_ƒùû˜³· ¯çKòq+ì‚Ý˜¸½‰?IßÇqâ:ËH™L.&÷ä ù'¥Ô@]8f]OïÂk?=Hßfv–Æ2Y›Æ¶°»ØÂb‹¸D¼IÜ-ûZ¾!2+ÒY¹4òTtXô–èŽè~œgÃ÷”Ÿ,ÇÙŒÃœK¼ÞÈe	çóææ<;ß'ÕÄ¹}*}sé4òA)ñÁ†œÈ'˜ÓWóoñ`þ>ÃžQdîÏD2	“˜ydYM® wàõ;r7®c/^ûÈ“ä5ò&y¯#ä8^ÿ¤"•SõR?ÓaxMÄ«™Îâß2¢íôZ¼î£»è^ÚÅ€U³¬¯N¶Ÿ½ÍÞe³»Ð!\"üA8(ŽÿN‰1_/NÙd²²m²Gäóå;å‡`òøa\SßŸY°’n¡?Âj:õìeôy¯ÒÁ¸«È#drê^”Ûb¼>Ä+ŒW^*¼.GfãÅJû\oœç:N’‘CÏQ7}˜…ÙVa¤ðŽ˜+3ÈöÊNñKžŽ×žó]
+ûy®k~îRv(;TTõ²z®z®f¸æ[ídígÚÏtA½]ÀPi8n8n\hêgº#©4~½óëõëõëõëõëõëõëõëõëõëõ?ua®äÁlúÌ§æ)öR2D”u‘	aò!T¢0„1jWÊäC¤(”_{ŽµåäŒ<Q9¢§r¤áTåCO%ÔTöTNà­ ¿Èè1<âŠ®Ÿ~‡ýøhûà´/ñ90ë‡ðS\x&Ü4ÁA„’ÌVA¯%`tÊRµR&:UšJd`¶ˆBÐ™j·&‹a×~…J­ÓS%I&QTj´£¨¥9RlªM¯v¤©Âªýúd‹É¨{‚|zòÍ£ÇÁÉ4òÍc.…\pyÜ¡ƒ•Þ:`8}Üð'íírÖñÂ•TVÖX+{¬•œ2Ø?´KrÑ`­ìýG–4‘$/ó%yËŠ’Š˜r¯Þ$	hÿ©ïMì<4ýáƒ—¬x¯cå…‡’M=”ünÇ¥âSÇ»ä{2)ò ™<”ìŒ\Àahä¾a1ŠìŒ}‚>š\GQòËVA#vR±‹ìzÄó›	|ŽŽAhDwA~’ÇâMþQRÝZéÝ£_g1‡Wƒ?œ$f«ÕZ«Õ®È¦)íóž‹®“öpDÏÈ†ÖúcPÃ{ü%Å¥E…É³ÌKœuB¡ºÚ|Gu¡Ð ©O!z˜†Ä¹8Ÿê°e¢”P&ÜWªŽÏî	’òÀîßá)|‚6djM%1UT¬ÌYex¡ Ÿ/y­%Ò¶8÷Ç’l˜¢Ýl·8tà„ÍáôäkÍQ3{Þ£À
+ D¬Ð²á
+ÙV§¨Ûš¬¥L]Tñˆ[µÁÞEå»Ý®ÐÁÝ†SÝPÓ]ƒk°2\i¿Ígö+|¿Á'øµVU	€…–yR¢)uŠ®HÞ”©²ÂŒxãçS¤Ï9Üe¸ÛÐ”a2¨7É,fkr‘‰¸-§žô€ßh(+-¢«zª·o¯ñ¤‡;?_ÓZ½<òÉk6L¹$êÃT½à»ˆ.òÕMÿø|CDìÿ÷ç{^êŒ<úÈ³d0¡Oôp¾~Žüó‰Ó …SV˜¯4S¿¹ÔL5=3Ÿ¤³fÊ?ñš?Ñv‘…{’fš»Èê°Q«aTPXD…\cÃ}¥¬‹ä?ªÑhS¬¶§ÈEÈÿ{IÄõ4¾Í•5&kÅˆ“Ý§ÉÉœœ‚|À…%[Œæd«ÅSRMJŒÅ~oºL^â+¢3ÉØÅ=WµeÚ/È ‹4b£¨üiøˆlÁá”•Nfwæ¦Oò¹WáÜ_ã;	ºÂÃ}&² ’¶$ÖB·èOéO™Q/3[ô>³£0{øßyLQ©‰ZÅØ™-Å˜bS«ˆ(3ËæëD‹y›=žTÛ`|*åIªà¿8Š»›æ<b8uw×^uÐfG;SÓmÄ¥£©ÂTÁ)Ã+†WPGí/H{ï
+Ÿ\‹»¬TiÔ¢ž•¥·V0àøör]Olí’2)áK—Ëäj"© %žÂÒ2+óT‘…D¶uÑUãC99…ß\õàŸ>‹\I^›1²À¾èô§Vr)iyð¦Û[Ê–*=òömÛ"oF.	6j"_Æô·1úw¶Bœ!¸9\9$eŠœÊ3’3²äòaòyòyŠ•òK¦¼˜¡¶zl6+°\’nÐÚ¬4ICOf…ÓµžýJ¢T†’’ºÈ²°>UmÈÒæ;Åù[ýÄÿ4å¿¨«%¥K•»òQIMGßŠ)²&ÔTeÿh2ÌÐ“àVç•Ýö
+ª ®¼4¹¨°´¤8 m;.ý\. ™Ì<é’qxçÑšk6”5}¤µèÖ®šŽ–¸2]ëý±3úµGÞŽ¿d–Ç÷ðÒ§Ís¡ö~[.i_:&wªü·=°°yL°"«¬íîg"‡‡dÛócß²¢ü¼„²OAëÂ®‹µ2AI™YfÒjÑ‚†	* L¦}’t ŸÒ[U1Q¥QugX	Û”ùÂ'ºHéãnYX¶UÆdORèAƒ¬Ñë$ñi:ÑTÙsjjÐQ¬4VHüà,YÌÐ*ÒzÎ%ñ$‹,^£×è)¡ã#òuÝô?ýé®žýÂ¦ž¡ìŠÓ—®‹<DÆ¯“ö¸6ú[#®\x#¸2•”(Ì4Ë*šÓÍµF©·Úzý2Sjª=)AÌÊí"…a§O¹-5•ÚSìÛÂÑ ÐS>­8?ý±­–NµpéBJ0/>}i_+íì=•8ÕU!ÛqC7á»^Ì¥Hë1¡­5J;ûlC}ð;2˜Âíqyœž4 “û­]Þde	q¤
+^ŠÆÕB2}Ù—]FâÂað¡HøQ Ê’$ëˆ×Ã¥Âê$(^4€\2þ¼¯pÙŽÈñ[¯HV+(£‡ÈN·×a)dX"«Æo¾jÜà¡‘þ>³²%'ïñË^»‰°¥5L©P‹äp²S·O)îr¤d´{ÖG‘÷’\£y1Ùˆ¼}F¼eÄ›ÂÞ)zä®ReõRÍ£¥’Ô©4¬ò(Åô­TëÛ VbE§°7`pm¹WøQ'zV°!÷$æÙ«^·ÛL+B¶¦ncL${áwgXì ¤øí_	ñ0W	x	R¶äÔâÒK Ò9âžá²Ë.ƒ&@o Fƒ¯ÔcÕd‹¼´LrŸþ€¤D³‰ó=óõS‘‰íGR.®ztÐµ¶ê¼ÑcîzïñìÜ^ä¼zË…ˆ!rˆ%&ÒÜó–Ç:jÐàÃí~“ûÃƒåsvL-]}Oäå×6ÄìI&úH«i`iØq‰j½â9k“w(6Ê¯P
+
+¥BJ…Rzƒ¼°•;gQ¦$: ‚¸4ø¤.Y:P¢bè´\²$¿À£¹˜9µr}àÂdŠiˆ$DÐDšˆ}¶'f(ÊØ-‘‘W›#Ã›Ç×zk])â0ÏÏ/…g¶«“¾Í×Ž{·Aœ…ñ‡ŠHNxûFùmi7;oöÜ’³%ïÖàÍE÷:Ì¹/ïÞ¢ïò´b^rÍª„~²~ý
+ÈY
+NfMÂ¡M¼DX¦Y¡]ž¼ÌºÜÖá»F¸Z\g½Å÷({TxL|Üó~æ)Á•)dØJS	ª@Š6%£Rèç¯L§¤L±O)š'Ìç¥Ì³Ï+2Ô+Šü6QÐ[$¤6mu‰ê­¹ZýüôÇé|ÈÚšE³PˆÂêË|ÇcŠùÏ†HˆËRI1ÊRS72ø=fb%›jÉPav0Íc0+ÑN©ò\X0¾HrZJÀèÖ£ÿ	ª1ÒÈÆ›9ÍTB“ä‰ÎW9tÈè‘2Ð$û:T/Œ3ÊJ%£Œâ”l½!Zf®2/7Ìe¥etÅŠUÏMymûüŒêåN½èÚe‘Ïò‡~°ëîgšËWm¿ñýÇîùrLÉoÒ×Îh_UéŽÑWýžUçhŸ¾®ã‚iwRÕÌè¸¢ëáeË›JV?¹fÓGoZÓ\3)¦ƒUÑ7Ù.ÜGäÀ¾ðèc¶c)'m'S„Ž	i¦^èXŸºÞq›aKêÍŽí†'²^Í:d8”¥*Rl¶”L7#LT§ølœPøFM×ÝM±5G´iÅ`$FÅå©7drçåÆ¢8®¬5Ý\O›lÝÈ_”B‰Ï(ŒÀ¥¹îÏ–´~d§’óT®GS¦	`§ÊR Q3(¤8ŽH¬åÂ¥eÜ½Ñ'‹ìÈ;Š<DaF­Åª2þ 1ÓTDÜ d×¬Ÿ¹rÉMû¿]Ú¾æùöûTs.6oÁ;´¥8gûKÝûhÕp»ê²Ì7‰°g÷æï™?r÷{¿¼xÉuK¦-µ`PëãìåÍßï›˜%>Þý†\Åv¢>X¡$ì Ù
+¹1ÛªNÁèÍœ­Sg‹¢.Å–ò¼çô¢DØÖm8žó b”€öÖ¯hÈÍ¯sî¬‡BëÊ˜¶¦>7X[:ÝYÊPÌÛKø»0ˆÙ¥\/ø¨¬@/'ò.¢	Y“<ŠÞ5žñ³;uèiÂÁ	†ˆ„A?T?"«®¹†üîšk¤~×£]#ÎÁµåÁmá2¿"EO“Ò½Î€3=rš4µ-9)5l²%yhø¥g§ö×ÙCxŠ³S‚¡.¢{ÄsQlìÝÝ˜\Ž¢~«
+Ùm/Û_¶sƒ5=ö75RˆS‘P?{N®Ã­Ñºr=iø§úˆ;Ç™FZ§/ðqËèÃ@SL‰¼Å±ýïU²„NaH?¶./®Ë	(~íÖûÓ2’†ZOÞÂc-ðf†÷ìÉ×ƒ5á<Q»ãÖËÿðç§}ë‹ŠnvKÍü&’›2=…æ<!ÙmKôz
+í¶.	
+–6jW˜<©º¼t¥'U›çe‚Â®4igÐÅôcúè@«NKÅ U©Td%™ž¤8ÀŽÛ‘*Å•<åÆXÀ°â@“-ÉTðˆa0'£('+¦£ˆË-âtÈ!èÕ¹HA÷IçJ<´0FsLê-UÞ†:_¦kh~á Y³6Ï˜¿3ôÐÀ‰ì®¥a™ß/4¯ÇðÆ¬–I¥1?ä ºp=VŒk«e/³Tº‹ì¢ô.r¥ÓÉtJ]ÄE©q(®-]ñ|ž7éåäTjM2‚Œ(F­,)ˆ1’V£Hé¢ª=té"Š°N®È2¹ŒÓww#íaÖ}T	¶Ð‰<z«<q¢×[	ààÃJÒ}7¹	ÝÇy2œä’Ò'µá®7SX§.ÈX´géÐU=]^ºýW¡8,²mÛ¬Ÿ¾¸°Béó©êÖ	0ó^î¿†aì~Û‹2†ZÔ‘Ù_ùòSy` Œj¼·©n«xPõ úíSÊW•¯…^ËÿPùaþ¡‚ãÊî|ýDEnA¶Õá2» H¯'ú!…ÁÒŠ‚\½
+df…¹È'V—ªÕUêZymEÀ Õf‡Vf…²weÓì.
+aÕ [ µ>½N¨wQ²{@7‹'zxXyÜSy$Ä-d,Ì—ì£d*ã>[„þÕ5ÞL•È©Oë—ùM~¢ü ¯œ`É°:!Ùšä78I “iÀOèôbÂ	Æ€ÙÉUFÊ¸èðD)'á¤€;("“Ç²`”¥Œ²R_,ƒÇÔGÞ«dVž[J­Ê,1ëˆYB‡-¶©2_·27L%IæôùEÁ ÊgIËËßyÿs>…6Ëêô¹}åýê«ØðÒ)c'¬&«h¶?Ø¸dJŽchÅüæÊ9ãgg°§†4ŠòdmÿŒ·®n¸"²¨_r@—ZHñOªªs—®l¢Ý1?B5Œí’~SàÁð«­ÛŒïß±}f<æ”—¨ÔÔó”óTm–¶ä‹•+U[.NVg*¬6¹Ê`µQ«-I®ÒŠÚ"\èI$©Ö¡öÒ:¯ËÖEé#>C½‹ï”/#æÀL|ƒº›j*{¢œÆE5KáÖ¤¦yT& ¦4ƒt¼©ŒÎ$?èÝZ¿d­³y†qƒ"RX)9¯B´XÖ„»‚"/½øÑ`¾·³·§téïvÞ8wL°Ÿ£¢få]w|Kd/ç²]—ðTäóK’-/Ý{Ë·õñÆ‹^yê/$Ù1Þ oºÅh½ûÁáößf>˜ùZæ+¹ŸçžÈ•A{ðÒàÕÁÛƒåì>‘ódðõœƒÁË?Ìù øv¹ŽåÏ¢^…ú0ZåPo2:ÝÖÑiçfO!&¤‚UH†¼V&÷LyFR\”'ïWxÔéBÈK;<VYVg6Éæ,¬ì/ÅY<ß‘Î\ÊyR#ù) ƒt‚GCm%™¹%¹e~¨ÈÄ[iN±Ÿ”gõóCÂöÇ"+À´%qÈÁ~,Ÿ±0s\Hõ$P"1–ò8ÀT?áL§ÁªL_j‘Æä›79Ýà“ñ_Âq7¨“Õ²«'/Ï2cû_z_6ãêºÕ×Ü|Ûí¶øHuU2Ec×ˆ:ÚV±²ÿé?Öê¡ùý•—TÙóˆ|çû¤ìôS³ÈÎËç|ÏÝ§ÑîdF¿`ÓØvH’~¿åýpS›bžf‘iåùJÅÅšUÆ5¦UæU–ÓºSzíxÅlÅãá%Ó[Â1ågzEOlL©¢J“aˆq× &s8f¥%É7Ë~/£²Z­:Í¡ui†?ªˆŠK¯‹}`à¬w9ãá—©âDw\~»ã¶¥'aZð_\ˆ³u© Z|v¿Ù$Y“T°9IŠMÔ1?$H¼	z™?ž8%lI<"K¶xœ„óÓ§8Çy@æá‚^Fg¾Õ³NõÌåm›ª¼YŸÞóÔë{vG¥[GîS§,ËcÛŸä‹·¶jÖ¼Gû^!CZKÇ¶L”FêØs¨çI0Xúm7ÃÍCê¸ºîªÛSE1S,S°¨0-(¿Ï|ŸMY›dÎÍ±ÉþôTên¨-Tâ3Ëš SX˜E'veÊz6‹eU4ÑîN‘Óê
+ÝÄ‰þäác6ù·ú©ŸmM£XTênV5’“ºÈŸÃºÊ}Ô’ó“7%oM’»Htwã¤ÐÁ)‰Àßêá¡.p¸3?XYÙ³âÃ¦œÓ¡ž¸Y	¼Ü¬s“`JÚ‚„ÿã†×k°¦?±x¥Cã@zÌN»ù³³Ë5Ô/¥(ü¥ñó.ßì•§/¾ïÍqÅ7øÆ¦'Ï´iBùÖ'¶écŸ¤ÙiRŸÞšR›6}`°œ©·DîÚ»mÑ°:MÐšÙ°ä¤¯²yÉL_ÒŠiŠÈwáeã$k)a”èÄšp)Ü6cùŸØ˜lW¿â¥Ï*gºÜzUZèö;ŸZ7$£¡¾¿Ædteú[ÌÎü§ÿ­©`ðÅÏÑac˜Ð	; '7$“¬Diµ[1r2„\ùÔ[ãpu‘ŸÂýÓY8òÝö‡ÓíÍ©q„ÜÞ„9ÊòæädyíF&ä‹Õy~ÈåTexC)vnz
+œÀøî üWö$â+þA@¯éá¢ñƒSi@,Öòù“mþä'±Ú|Ö€“$b-nmÊúœ¨ò?¾d5JÖ=q˜Æ¥•«-ÚÜËRfÐš‚I³ßß]0<2jbaíä‘›‹ÇG9Ôý²ýå%Œfh}
+§¼ç¶Áé•/ÌV9š~ÉÍÍ-6F’—k1Ûž‰7òQ>h
+û½}ÆásgxÝn›Û0Úê°mv¸]½àð)n¦àû2T)
+q«o.÷Gý>ˆ¾ƒr+E`5#¤È#f‚'Q±òM‰„åŒI‹ÄM-_xbÙTææTUåäV®_®Ôç«-…9»
+ZÖ±‹¥ÕURíOFUÉròQmJ– sé*Ò4rEOáÒ~ŠØš¢#a²[ZS®ûs·etªÃ±Ù£ÑªC¯'Éä‹ñÈu³2u9f¾|\Ó^oFÈlÙG„¤ÕãjÈ•¯¦ÛÐˆ£ûú§/[oÄ]ö|ú,“ô““³u&ùð‰O
+.»¬ïâiÌG—–ôñ55$¹7ÚFUý4Á…?Íò×$k	±‡ty¶ñ®Yy•BîèÏ†.f 3ªsx£þ¹zHîßts}­Jîr¨¼F‹LqºegóžÊBOêŠOÚãK1v[€ ‡Õ‘ì6i	ýÔÍ&“Q`ÚYk²*…óÁh
+1ïª-Æ‡³>ˆogYß-,-+Ll`vSÚ\¥ó¤¬FÎ*§EeÅìOu)Ù2™'£RcþiÌÄ"¹ƒç	 Y1{ FÂaGiJ±›Ý÷ëè¨¬Q•ÔÐß0Â5’Õ”åpd=C~ÂÀ,LxjQ‰Z=<]èŽ‘îŒŒ~ŽL··¬ÆÑßíÒÏ1ÂíÕ¸ÅÑ¸¤ÍúCRËÂC—•æe¤šEAÓ02I_ØPm-¬v¹¬zùÈ•ý³2U£¹0«qçƒ×ç½™Gçu‘AaíÀpiY¨öúð›a:8Œ%’CB¢Ä•Q!É¬8±¢ÉÆ?ÙLÇ$«PÉ?äéy·ÑTqæcˆ¸ÜÄbec³‘Ø¹Ù¹’€r’F8Â`ä|!KËÏ-J”xFÚ3y‹np`(ÒY›†Ï©r[†–MŸuw©«fl¤jb™Å· 6ì+­˜)™^löÌ¯Z‘WÒ©°Ë“Ò&RqhP½6m½J·~rÃ@í°ŒêßÝiT¤°;¥]ÍÁ±9)e3ŽÙíšúuÄv[¿™J{>ÞØ!ö™1ûœ=,ýNíãáÆû;Ý¢»O‡ÆÙå1ºŠBžè«qxÜé\‹ÜŽ~·Û‹qi!ßÂ˜Têƒy>G’ÀäE&}Vµ5 —zÜªby±ß*R¸s—šÁc·Ð¥%ÜB$ÍÓ žñí8ÊkLX#Î~±Iˆè@¦Ížióc0b¤d1ÐMKÎïÂwågtïnß 
+MRe’.ëÖir6µxä¸úòýê#ã‡ôOè_•^nˆ#:”%SQŠí~J½šB—JyãwA`øó‘¼Áaâp¨ªf“‡&,É´–ô¼9¸€:“Š£ŸbÜ²]:/MÍáÜ•G•t‹áÖä­†‡’OªÄd0VëxÕ8ƒØOa+J¡rS‘Bb©OQ‹Æ=–ª¯×«‰šGr©öxmª9Œã$vä‚UëÓ½¬Ìâ'F%RIr¤t`ó“do•ÉfÞÎ|*ù³&;Š,XÌüÔ»zÏ·‹©·¬¸ç¥‰púåý‘S¤±_ËÝ×/^yÛf½…$EN¿÷Rä±¿Mî,žòñžÈÁ7îßI
++¹)¥8m7hPŠ„K•¥ž-)·ú¶ûî	œ(T>10ÔÇîË $]a uÊpöÚÜFÉq¥jÔ*&Á¬¢<—Q£©3UQí•§Êé¬,uQ¡N¬ÇØŒ†U%N"ã~1p1ŠåJž¾›[>nÿ%ê¸zu9–]dd29ËýDž7!@ý ó)ü$ž\ðÌbISF,.‹9tÒÇù—qã®d‰»ÅªyÎÀ·ÞÕ6ôâÈsÓŠ|Eê$Ótñ€(ÖNž¾ñ¥o-Ï
+—Ö-Š;¼»¿ë±)¹eÏC²ú!lÿðÌ,\¤^)[_ç.ÿúàË‘'t–òÈ¾Ö Â;£Q"“wcœÂÃ8IY:qe®YhVp³ªv5&m6¤»œ,'##D–9-É½6¸ÓòÓhÚÍi†€UŽFt­Øs’±Piï.\xvè`“d&4q&Ž8r°{ISüƒ§³™H–ð¬ˆ(Î–øGÜ1ÆC¡2‹G9µÒW ò˜*.²–ÈYøÂpQ¸Àç‘ì=º)’äQŒ&ÏÏ/
+s¶2É¦2lkl©
+f•\R©š0€Æÿ#½¹Ñnú
+ÊXö$AI¦YÚ
+í\M›v¥z¥fƒF•¥Èwü	Õßé"7<‚4zOXŸžms¤ü)œêðØ]¸z^‡^—ã1iA¥ÀkU‚è**4ÉÅ¢lu¡ÞN¾±GíÔ>PQ[ù(Nï"ß…X¬ßªß¯gúPŒY0²nÅ[¶¦#Ý†·eÝ+4-±ÅÕxÆŸTÙÛì'Ž6¤º‘ê–Šì¶G‰Á^ÕDL­™YnÁˆÙS–ÂIÜÆt'È3E'x.ç™ÓO4zIEÉÖ¸”†HôæeEIÞÄù‚‹œÙ¹—ÌóX×›XX³ø’Ž­+KÖ(L™Mî2§W/8zãoï¾¾ò·:I´é¿´jñuÙ#}áº+§,Þ”©RG¾l.m™ÐoêàA·­Ø’iÔ°}(›)¸/ý…»ÑåOg+$5ši…3]V{TƒäÕzuXåQg„H§!sª-lÌ5cÈ~ðCûËö«Ø="ixoPÓ³â-~:\sPú`³$6‹—ÅÏž¤,ùÇ”F¯´džøsÁ£ÊƒTk˜Q’nO.î(]‘mmE¥­¡j‰Vd·îÙ?<ÐîKvì×VÑJ§1™¨R›+ýVÐžJ|_åm´×üïL<9L>Ì5Y>ÙÕ.ow­”ß.¿Ý¥ti]:š¦PõsèÜ^?GŽÛkÆˆ;ÉaÞ”âHñ§TJ1G2´ßÕu®ÜP…ô¹¹>ƒÓqx4$äós{Å?æaz=ž¤O±»¹ëãyáY¦Ê”žAæÒ‰¼Ô‹R ¹¼œØq‰È¡êÅÎ€%mÓtpéþ*"}pFñä²ÄGª’|³êk}þÊÉd@Á¨²â*û$‘Ö—Ÿ>qÄÈôäÁävgÏÚú¬áy)¹4cD¾èé	×1‡^oV¦+ew	TVWm¢òÑ©F¹CÃyæˆ„ÙkÈ3þ79~^89…ÈUV[fvVîPe}êÐÜ	©ss7¨6äþ6w_î»¹ºÁ¹$£ÊÍQ)Uju…É–bS)•˜rssr•j[
+Ö)B>j²°#	dé¾z‡._žŸ¨ËWša­™˜]kQäxr÷NÓÃ‹MÜ4ñÀ¡ç@ÿf”‹yåxST* ñ/†$y,ÒIg²5•H„ˆtl.'\¢zSnÿ¸Õ)àsû
+mA•ö«§˜6Ãá"IYYúÈc·,+ŸÙ?Ï>'¹üR™ÙŸ^TH>d·¸ˆBë×¥¥õü@ÕŠr•ÝF©Ë%³N?óÞsåU™Eèhr•vÝ;4$Å~oÆK¶÷þ•…½C‡€ˆO$þ·Vä°¬÷oëxàâ8-`\q{œA÷Åi–?§å˜Mí‹Ñx³Á_ã4AÓè·‰:N30³Dó¿ôžC2$šÏ œŒ’hþ9S.Y/ÑÒ¥ä‰‘.$_J4ÿ‹/¹4U¢åü]:ß#‚€=Éè‰–!­£ë$ZŽ´†Þ(ÑJ©ü.‰VóÿQ•î”hÔæi‰6Hå¯H´i}_¢MRÿŸKt’ÔæK‰6Kïþ ÑÉœf¢D§ð±˜Q¢Ó¤r§Ò<Y§5*©¼àAwAEE~^E…»vñâ­î‹Ú/ïh]ê²pVÐÍkËÜÃÛ.êX¹¸Õ];ÈíN¼QàÇ‹.X´`yGÛ¢…ËÎ¼¯Ûê¸ha‡»nùÒÖæåRõ¸¶öÖec[ç,_Ð¼T¢Ýcµ7/ìï.(æ·´÷wæ”çåå”öi¨–Šò¤¢XmÛ2w³{iëœ¶e8çÖwÇÒæ–Ööæ¥óÝ‹f÷ví‚|º‹æ,m^<·m–{`ksNk/OÐÃÛæÄäAû¢…îÞçØP­Ë:ÜË¶º±÷%Ë[Ý-×-^´ì:Ä­}ÇIÌªÃÝÚ¶ÃœVœÒœÖ…X:±yiëÂ‹[ÛfÍm]ˆ¯-ý×÷®Çxÿ³æ¶-Š¯jisÇ"wKÛùÆp·b?sZãíZ[—¶¸ç6/li]°¬½°¢yá¿¾µq©»µ£#Ñw+öŽí–.oß¸t~«{ömç™þ[¾°YšUsïœZšÏ»îVÞû™Î[¥Î[ÛŸáw´-˜û,2àì÷æ¥,ÜrÛ[0
+–B´¡i8†ÔHX„÷vh†0Za,Gªù¬^×vž–‹â-[óç?œ4ÿËüÓ/]ú”íàÞ>=µ!uö(}hÁ)Ã„ABÞ+úÖL+¿êÀ¨Îzïw¥J
+endstream
+endobj
+266 0 obj
+<</Type /FontDescriptor
+/FontName /Times-Roman
+/Flags 6
+/Ascent 750
+/Descent 250
+/StemV 108.886719
+/CapHeight 661.62109
+/ItalicAngle 0
+/FontBBox [-203.125 -428.22266 1700.1953 1271.48438]
+/FontFile2 265 0 R>>
+endobj
+267 0 obj
+<</Type /Font
+/FontDescriptor 266 0 R
+/BaseFont /Times-Roman
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo <</Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0>>
+/W [0 [722.16797 0 0 250 0 0 500] 16 [333.00781 250 277.83203] 19 28 500 29 [277.83203 0 0 563.96484 0 443.84766] 45 [389.16016] 55 [610.83984] 68 70 443.84766 71 [500 443.84766 0 500 500] 76 79 277.83203 80 [777.83203] 81 84 500 85 [333.00781 389.16016 277.83203] 88 92 500]
+/DW 0>>
+endobj
+268 0 obj
+<</Filter /FlateDecode
+/Length 312>> stream
+xœ]’Ûnƒ0†ïó¹ì.* œZ	!UT•¸ØAc{ HLi„(¤¼ý‚ÝuÒ"ôÙþí‡¨iÏ­ÑžGon–x>j£,óÍIà\µa‰àJK'|Ë©·,
+ân]<L­gVUœGï!»x·òÝIÍ<±èÕ)pÚ\ùî³éw7k¿aãyÌêš+C§çÞ¾ôðeûV…¼öë>hþ*>V\ 'äFÎ
+ÛKp½¹«âpj^]Â©õ/ Õ0Ê¯ÞauªãXÄ5RA”"‰)=	¢Ñ);!¥%Rž!eR‘ åRyD?÷Éù¯‡í„†%ÔWÐÌŒüdjH¶ÂLReQRðBèsŠ†Fç$y)îhæ¶œí›—7çÂÒñ¦qÛÛžµÇÏ`g»©¶çPÕ O
+endstream
+endobj
+4 0 obj
+<</Type /Font
+/Subtype /Type0
+/BaseFont /Times-Roman
+/Encoding /Identity-H
+/DescendantFonts [267 0 R]
+/ToUnicode 268 0 R>>
+endobj
+269 0 obj
+<</Length1 46560
+/Filter /FlateDecode
+/Length 22849>> stream
+xœì½	xÅö7\§ªº{ö5“Y²ÌL& °Â‘5–°£€€‚ˆ  P—€Š ‹ †°•ÈÐ«¸+z	Š(ŠWT2ùNu÷„õzï÷þ¿ç}Þ÷cÂéªî®®åÔY~çL' „XÉÂHŸISJ&å¬¹[&$j D*¸yØÄ’Õ¿tYLÈÊ5„ðÅ‡Ý>Éö¡l'ÚàS¡	·Œ“sÏru”@þ˜‰Soÿ~É“gñþ`<o3fLÉ0S¾üž'`ût<¹œ”býS¤V£'ÌµõoSF2b!íŒš4zâ‘¢÷Ê°Ž}J¾Ó§†ú•79FHawBØ/#&›$½Ð¾1!I8§àMÃqûßèt”òû°ýàá#‡M55×žgZb»ŽˆµQBö¸ÌCíù?ƒ—…Ÿ›¾|mŽ(ß×dÕ…àÅgä[Œ¯ã©ÛƒÚ #d#ÿäB°zª|‹~½ö#?(®àq±ÞDÂQø“OˆrR*@^“,-±Ô	>Drb½Ò*$ªìÆRÐJ¤5Ú}Xåq,÷aÖŸm–!=Œ”«·¥?3_nŸþl·:ô–>–ègÒt¤2¤ÃÚêùlýÞÍz¿G‘Úè×Eåz¹L¿Ÿ«ß}&ëç-fâø#ôë/Í¢ú\Ðç;én¤uz]ÌçI}o"ÍÐŸ×éÏ‰vç‘ÄúŠ‘ÒÇIÐçÒùð.“zôùµÑÛ„õu®³¦ÙúœþˆÖèó«K+ÿ€ý=T¶âúéã? óp¸ÞöîKr ÊB´ŽŒÐzû'ÏDðô}mqyxWO½ÕÇ(×dO}Ö¨Ï!Î—Ç‘Æ!uàšœÆy%Ú¦_¾‡j¿[5ùºLÆšésÂùÖTà½žH)xî××°µŽ\nå—dñpò°¾÷u)Þÿ€:û§•:¯ðy¸V¯‡´IÓ'X©—Q}¼é:Öë¼›¯ËÕyÔB_‡óû/V,¿Çrñåû¤òqºN›êô=]—ºeX—©úeý¶BÖ§è¼¸û?(§ëíë—St•éëhTgŽuK¡o·ê2 ô}Æ¿)ãýõ@*ªscÐ”BÎ…¾NCz»ÎyœWñRÈnñ”bŒ‡þ‹RØ¡}/C—ö¹¶¬?^œ_ñ5ŠûoêýÅçŠÞ£šqÍ.ª2IÈÅ2¦"@š§Õ«ÃXvEBuq‘~ÿG¤¹ÐOß÷r­HÂÒ§íeMË;ùe²­ÊX]û;[vº>ÿH]ôúý~{„w×Û]È5]ó7 ™´ñ¡¡.7óK2—IÑçÐ©ÎuýùZ^­×çª#qùãŽäš¬¿ ×X»§®yCzS³¿dóËø%1X£­Þæaý~|Íb^} Ý‹”ÔºÎ:»ë|ìÈ5»(lÞü’ët¨§®·×ÛÄý§®?ªMërüz\öÿS™­o¨>¿¸lÆù\_·â~<ÎóúÏ×GÝûñ½ù3—ºAH«î:øƒ²¾û«ò?µqŸ¬«ÃøzþªŒÛ·ø¾ÄùX¿ü+»×FçIýò¯Æÿ+þÆu3^ÆíÍŸ•õmæŸ•fKÿ[›®GqÛúWe®Î£xùg¶8^–éóJÐÛý™¯üoËÿT¾âe\^þjßêëw|}õË?êÿnm½ªíóY§ü#›KÈ‡°iq;[¿m…í‹ë¾*£õüÑÔºþŠk:÷uum¶Jè¯‚Øã´éXÆí/Msø%ý‰pÕÎÖöÓ¢ÅåàÏô$>¦¾VÁƒZþˆùÏªÃë8?„Mˆãó8^/ÖïÇãº{ÕA·Õä¿ çª<¶ 3Åe;îžÔëâú~)¶cx«¿„TþN‰c	«mù‹õÐýN\Fþl×ÇvõeUð®®-©¯ëëþà™?“÷?+ãû¨ÇWêÖ‘©ßaœºýv¯ƒ©ºêñ…³Nìßãøúž¬3n}]³õµ=¤ïÏ`~É'‰qQ¯j¾á¦¼n«É5|¤ÑeûôêŽµ™µòâwXÞ€åvM7~GbßoÐe&îsÛëûyœ_ŠgÎ×«ÿ§6ìÏö÷Ïö(îÃWëô©ÆQÒuâ¦ºt­~ïSÕ¡(®ß®‘ßéz|õä¥²æÃzõ/a¨Ú@Üö×÷Åº,ŠuÎà—b§xœ%Ú$ñKúçÑiº~]ða:îC† þfu8†ë©‰ÇÄÇ‘„ˆüÆ‹d’àËçz]è}®^r$Iö¿iÿ/,Ñ.Æ&èr0Cßçø¾OÑ×ØSÛuj¯ËW’¾wb]Gù%Ô’k±\ž.óq?ño?ºLoü«võž)@zN'ªåtÔ¼Ž·›.ï™uhžfÏ.,Ä5øõzzÝø©_œÄú±ü\÷1û‘ÐêB¶T»XG¯.,Ö®×Èx^‰Ô_·ëPW/.AÚŒTŽ´V¯‹g_GZ…$dbŽÎûxn!]ç]Hße:Åcøxn«…^?ª=§Ê°ØaG’uz“_Âšñ<U|oîÒiŠ.ßÅzû¸Ü¿Ï/a[!'ƒôzGzs->ÔA?Ô¶^=®S›t_×AËõùÖÅs"~Ã5»$r<?<Æ5û°^+Õ¼ËB¤ ×ü¼°µiõHä(“uÂ}…‘ÛÎè:rév¤L¤«‘®×y*ø"ðÎ5ÚÞÔÜÁ5ß-b³o±ŸæHbŸ„i‡´F§áH–? Á:ÅíÕ¦KuµO$H­Gû´yªy¤•:	;w©¢N9õÒùEÁ§Nuóeƒt]Uê”ø%üaæZ.®¯Eê«ç„Å½ëDÎ¸µ.G´	Ù`uÆ{YÏ_u«3¾~O]Sž¾—úúkVóÚØ¶vNñ[›:«®Gêý×OËôsáŸây„?Ê]ù²×±x£nþx¦>Ž8?ª·—¤S§Æs…•·®›»^VgÌd^‹ckžåš¾	¿ãæV(Öû˜Â/á¼£üR®rf¾ã>9\gÜ^uöCŒ}¿”Tg:Ïkž®Ãé#úºýúy2¿<¿Ü¬N]äÕžG:¦Ó—:Ó|ê«„ÿBŸ¤êb¼Ü£·ÿX¿V¦·{D{¼úõGôyþZgÄš…íhR‡Ïñ<‘˜·Ì/Ï;ìãµL¥N¢¿ùÿÕŽ9¯ÅuC?‡iÿžp®ŸÔê—°I»õ~;ë×ª¸¦G×ðßëã@4A#áOkKÿ}¬*•ÄÇ„Äúkß:Ye­´;´ÒÐJwºVzšj¥·•Vú£X*„$õÀ2…”þ„[*Äwrx[!ƒÕ¬xg68!†Ám0î…ûa,Gá	XÏÂØ›aì‚7àSøj¨—&ÑM£4¶¥ô*ÚŸÑát<NçÓRú]B§+èjºŽ¾H+éçìZv=ÎnaSÙl6Ÿ-`«Øz¶íávžÃ{ó¡|ÍÇóÉü6¾”?ËŸç[ø.¾—à‡øçügþ[Š’bO‰¤4OÉOéÒ)¥GÊ)%)·§Ü•úxjYêo!Sè¦ÐˆÐ-¡É¡»B†6„^mC˜…å°1ì§†ÓÂYáìpN¸y¸}¸K¸g¸8<2<6<)<5<#|WxiMSÒi©i‘´Æi­Ó:¤EÓ:§¦uO–V’väåtkzzÉ –GFB†/#9#=£qF‹ŒüŒû2–dÈ8´NYgZç\—xî®s5hMºw•³!ò4¸ †Ãíp7rv!<ËáqXœ]‡œ}¶!g÷À›ðœ£„úh*r6fÒÖ´rö::¥%t"½. ‹³ gŸ¤kéZNwÐc¬»¨åìÃlµÊYÂ<—_Ë‡óQ|ŸÄ§ðÅ|9Ž¿À·ó=ü5~¿Í¿äçRHŠ1Å‘’™’‡œ-H)Lé•2<e|ÊÌT’úDêÓ!2‡††Æ…&…¦†æ„žmmä¬„œMDÎ†Â™á†*gÛ…¯BÎU9;Aåì¬ðä¬œfOKAÎf¥µHËGÎvR9[œ62íîÈÎtã_r–¬3¬3¯s©œä,
+nÍÏ5U5Ç±¼ˆtR°šN£¯Æ+Ž4D½ŠQ6iŒ†%5×àÕé¯5Õxý+úi}œËP;è@­NÅ·Òf!M%o“>¤¹šÓ¡5U
+ÿ_ý0Þñ€>„ƒ`Ôž‰=CÜŠ{<=ÞãÉ
+õøìÉN®9ùÞÉwN¾!Î«òÄñøH¬VuÄZÍñãZûª‡ªW-ªBÔ||†våËâ/oT[#ÊþÒý%Æ_Ê_Ò/IÕÇŸWi-ŽOScŽÁãèÏñþ3W}rä—½Ýylö±iÇ¦»åØ„cc?vÃ±þÇz£_œÿâµO~ZLÈÐ.C[ÚlÊ»Ò«‚« ¯SÓH•ôu•oÐ÷èQ;ýéKz
+gc²Î¹\½lªYÖ‰ugýÙ(6‡Ý‹W›l	[ÁžÄr=;‹vîgRUu®œ—ˆ”*jRH;JÒHiÖ¦HÕ}VZ#½‚ÇÎW¾]\QêÑ§4Rrã­DMÉUZ(­Ô³VJ<æ«õv—úRÚ(í”>XöQ®WÏÕuåzeÌïçýûÒã²S ¨Ôã¬&óÈ|˜F–““ä^ò YHV’dHJÉ'ä²”ü‹üD ’ûÈ>òOò#y’<G~&gÉ/äò<9HþN^ ÃÉ²˜Œ$‡I	y"o‘7È›ää2Š¼‹²z„¼HF“3äaòy¼OÆoÉir?GÆ’ñd"™@n&O“[Èd2‰L!·’id*ÆÉ·‘Säv2“Ì w;É,RIV‘»Èl2‡Ì%ß‘ïÉN À€ƒ2(¤šÄÀ F0™Ô Xa2 9G~ƒ $ÁAAÒ é™è5~,h@Î#‚'àVø&ÀDÖ ²¡1Œƒñ¹Ðš“/ÉqÈƒp3´…ÖÐíYCÖÚA{È‡P I9ÙQ¸
+nIÐ
+¡+tƒîp5¹@.’*r‚ì‚bôdÃaùŠ|Í²ÐvçWKÉÈû°lÖXîÌ‹s_ä½%íãv>ŒÕ°b”×,e·Z’ø"Ö—õc}xWÞMÊ’ž—Êá¶-‚s’GJ”¼’KrK	’]rHNÖ„©‰š©…Z©M2Ifj§ê¤.ê¦	ÔC¥
+i3õJ>É/¨Ri˜¦I/ÀT)CÊD¯8„W³Aü±Á¬©ÔE.”»È]y/‰ñ{ù÷ü$¯‘¿ÀÿÎH~·´…ÝÈ>ŸÏásùl(ÿZ²²yÜÈïá2ŸÇOð¯ø·ü;~šÍá¿ñsì~ÿ•ŸaEì&þÿ‘Íew³{¤ 7ð³ü<ÿI²I Q©Pê*u—ºIWK=¤^Ro©§toËÛ±oØ)žÁÓy&Oãö-ûŽfß“+fñ¼!oÄ›ò&<›7–úKÐçòf¼9Ï“Ú’£äSòù‚|L>—:ó*©tÔWê'’KC¤ë¥¤¥"ÞBº–6“†KÃ¤›¤¡R±t³4Qš —ÆJ%Ò(i´4Fú>¦#*¹fÀL–wÀ,¸“…ÙpÌa?³_X.ßÍš³Øö/ö#»Ÿ•²ì<‰]Ç[±ßØ9ö+"‰›øPba–S`.ÜÍà•üev‘EX:»e°LÖŒ·Aïy/[À„{xK¾ƒÿ±ÇAþ
+oÍ³7ØIö{“¿Îw¢ïÜ§"“ýèCóWÙbiº4Uš$M–n‘nEË4½¯è¾}+¬Aÿþ¼ˆøi¼Ä^°ö0¯ÂZX›Um€`”Cl‡J&!xŽÁ—¬%kÅz±ÞìKvœµfmX[ÖŽU±ì+ö5kÏòåör>û‚cÿdŸÓæìU&3…˜‘™X2Ka{˜™]Íz°¿±½l³°ýÌÊ^c6v€Ù™ƒ9YOvû;{¹˜›%0Kd^æc~vØ!–$m•¶IÛ¥w¤—¤Ji‡´S: ;d§ì’öÊ	²WöIû¤ýÒkÒß¥×e›œ([¥ƒÒ!é°ô†ôéMÙ"½%›e»ô¶tDúPzWzOz_ú@:)}#’¾•²Q6IßI§åæÒ÷ÒÒ9OúZn%·–ÛÈ-ä–¼=Gß¤ÿà&n¦oÑ·éú·p+}½Ðûè‡>¤Ñé'ÜÆíô(ý”~FÿI?§_ ÚqÒcèŽÓ*z‚~Å]ÜM¿¦'é7ôOàú-ýŽž¦ßóDî¥?Ð3ôGú/îã~ú=K¦¿°l{ž½À<‰½ÈÊÙfVA¥çx2Oa[ØV¶mç©<È^b•lÛI£çéz‘‡x˜VÓœá_¼ïÌ)gœ“
+²…KRª”K¶“—È~6‰l%ÛÈkìr7ÙKH³'ùU¼Œ¯à+ù“ü)þ4_ÅŸ ¤F¼=ÏçxïÈ£ügò
+yUšÇWóg¤l©•ÔZj,-”bŒ²…o•HÍ¥<©Æ7ór©‰ÔTj#åð
+©…Ô’¿(-î•æJ÷I÷HwKó¥û¥RÄwñûùBÞã¸þ|Ìá÷ñ!¼/y™ày)¿žßÀoäEð…´ˆ?Â—‘Eä)v­ô üg¥C.æ#JˆMf·³)ìVDžÓØ²ž_Gžž€“äéq©LZ!­”ž–VIÏÀwÒ£d‰´\Z&’Â)iµ´VZ'=)=%m”žƒ*iƒ<X"ß$•¯—oo”‹ä;äYòlù.ù¹·Ü‹ÈÔ¤9ÒúoÞ©¾UûPòï?Ú“Œp"#1bäc&Äè6b'â$.â&	ÄC‰—øˆŸHIFŸJ‚ˆâÃ$DH:É ™$‹4 I#’è²	iJrH.iFš“<Ò‚´$­HkÒ†´%íH{’O:Ò‘DÉU¤éLºBÒ•t#ÝÉÕˆ*{’kH/Ò›\‹ó:Ò—ôÃ8o Had6„\On 7’"rJŠÉ0œ¿ðþ#ÑóB?=ú8ôéÐ«ßŒ}útáÑ§¢Oývôæ3ÑŸÏB>½¹ðåw#Î@‚øc¢Œûy,ÄÝ}€<Uˆ*&K…<B–!Fy¾Â|‚”Á)Ä)O’§5¬B²š¬ïÈZøž¬GôòÙˆÈæyÄ%/
+¯,d^•r!ñ•dÙIv‘Ýäe!¿dùÊý>²Ÿ¼F –yÍ!Ä1~yKÅ.ï †¨åò!ú™ižäŸäsô&ÇTI`"	ì%á?‘‡+’ð¾$8þ+Iø¿Ó&ÿ_–„oÿ7IÂ7sœÆØâ»ÿIp]‘„ÿIøßa0f1¡»ýç6ü‰$p©¹"	ÿã’p¡V¾úCI¸X+	_×“„j”„šz’ðM=Ix% MŸÅ(7uv$öŠ]ÿ!eµµ§U‹¼b®øU2¯Hùÿ/‡‘ÿN@‚’ÿ¼£`ôÿ^lz%†ÄEÌƒùp/,€ûà~(……°€á!XÃX
+À2XÂcð8<e°VÂ“ð<«àX­>,.	°F“xÖ¢$¬ƒõqI€(	_Âs°6Áóð¼å°*`lý½$À6Ø/A%ì¨'	¯ÁNØ»áeø^WaüöÂ>Ø¯Áø;¼á†7àMø¼oÃxÞ…÷à}ø >„àcøŽÂ§ðü>G‰úwÙ„ÿ4†ü¿BÈp‘Õ'% k6ôÓpiÕès'©9t™
+V°\d¸ã6Á«ÙH¨oÀ£Ú„±"Ûª$dÂÕ&¯Íó‹œ¿Èïç	I€ÐºŽ$´ò"t„võm´W³þ]T›P(²ÿ¤Jµ	'Ä7 ä \½Ð&|E¾†¾Â&@?HÞƒA0†Àõpz³ï`"'_Âƒ6D›7ËÍiÚ¤qv£†²23Ò#iáP05%9)à÷y=	n—Óa·Y-f“Ñ ÈgHãÂH×âPyfq9ÏŒtïÞDœG†á…au.—‡ðR×ËÛ”‡ŠÕf¡Ë[F±å¨z-£ZËhmKp„òI~“Æ¡ÂH¨üÍ.‘P%\Ý`¬?Ð%2$T~Z­÷Rë<S=±âI8ŒO„
+}cº„Ê¡8TXÞuú˜ÒÂâ.ØßŽ(
+€©Ic4µ(MfÑs9é<ìÎ1>,D‹Âò@¤Ka¹?ÒE½Ç2
+‡,ïsÝàÂ.Iáð&Ë¡óˆÈðréTnÏÖW{.W:—Ë±ëÐX± ²0´¹ñžÒE•2¼8Û222rØƒËÙ°!bgv¹7Ò¥Ü;³Ê×¤q%¬í?¸ÜØ¹HÿÁ;H fÎfÿœ.]†Ô¶,\¤·>­ËiF×a%¥]‘W»k§ÅâlØ"Á._Ž/&- -¥$R(®•#"cJÇ#ç¥å¤ïŒpE ÝQó	†JûŽ„Ë;&E†ë’¼9”ö±Åù/¿Ó¤ñßìöadÜŽ&W5¹J”íÃ¾ÙZùõ=Úõwö˜Õvû¿À²gßZÞ˜HäjœzyhD'08‚óo#%mHéˆ6Ø?C W>9R\êh'8+e8"¡ÒŸ	nfäôw—_¦_‘3?Q[^+6x?^/ÏÎ.oÔww©7§V ^hÙ¤ñôò¤È$G¨<	YEúÆ§†´ËAf‡ÃbãVFÉp<)ŸsÝ`í<D†'UhNörZ,îì‰ßñwæÄïÔ>^A™ÜªPO¹!³öŸÝ‘è.Ó®ÿÍíõ~%iÞ¸g%1ö¼àÁ!•P3¿’tIÙ6˜½	oç	¡Û×'-ã…Fa¬µlêŠ|ïŠÜ*•^=²4Ô54Åšg¨%Þ()’ƒKï7x,û—G‡$ÕVK†i‡ý´ýpµŸÒ!ØÃ8½‡qjØA56jÝ¸'nrfŸÁ×.ŸÓ%©<Úen*jÉdë”ëJÒ¦v¦XÞ9Ö§Ï¹-Î¹M#¬´Ózé‡}`CJKµ3”Â=¥¥I¥BÝµsÔ™ú¢ú…J¢v€ºP	sú¨·æDÂIâB$	ã´†tÁ¡Ú7îÙ/. Èáìh8§÷]½_lúâhž3>gYîø·Æ¿µìÌx9§Cn‡·:¼ÝáL©ÆU4i|Y|¹‹-g¡ª"-Øçª$¸·ðŒz,†©èL¦’9H_ qÂãb¤3HŒôÁc9…£^CóàuOÐjÎ*r^Ðhhd´Y°ömO÷÷ UBN…ZìÅUV„»Ð ì2 –»õó]íæw#zØž0;*‚-ñ©ÊŠÌ¹X¼TÑ®ÞÜŽ7Ä3Û*‚ñT ÑvkEzSl´¹"]<R¾5knÐÝkQ(Ú’+¡QE“&Á«Ì†^4Ÿ	ëe*‰pØ<Œ·«äM
+~é|[ïˆtVFZŸÅúš&ƒ«ûâýŠà3ÃÕb•V<©,žŒTŠnÊ"…ÁZu~¤}ðf­Í­è§=ß]»ß-Ò-Ø9RiÀ+"ê†Ã+!£"Ø@k©]ÌEÔL‹t†‘RÔóöÁ>£Ï¸ø6eq±²øZeqTY\ ,n¦,ÎUg+‹)‹S•ƒËà0ØƒÉ`0Èn bH¨¬ù"š- Q‚¬&deñöájÝAãø5š‚"J©H% òíÀ0¾fþ‰Ó;ú:º
+œm»vùƒC±~Ì¾ôñ]ªBÏ>3v#Ó' ‚u»üF	öPÄ­žýðÎbõÎbqgñ7ÊbíŽ/¥|9Šzùs)CÊ›‹JMÊžåOöÝ8x¬‡µ…]v ŽÅbÈàl¬/ì+®³5èˆâÍp°õØŒ4…hö	Šf$ÈžÍ¥Z»tX'Úå‰Ûù£$]m—îÖi·yx°°Ëæ`PmãE#©¶îÕÚ´6}›`›&MÔ6Íç¾j›¾Íç¨Ó¦6‰D°I»ˆÚŽˆÚ$GÔn\j“¥µ±Ýoc»ïwmÚþa›ì¿þ”tÚÒáÎñË„¿-Ž– —/œŽ¸bÎðPhóø;uGœY<|ÄQ+)¿3RÒ¥||¤Khs‡ep{™¸Ý!Òe3YVØðæeÑ’.¢
+#ÃºÙÒ´OïÑ—uíX½ûüAg}Dg½ÅXMGÿÁíÑâvS1Öh1Öh1VÓhSu¬Â±ý:ýÙªo:íÖ©¢¼õVBäÞ$ˆÊƒÔ”‰\TÍ¤c¢Œõ®9&O$$¶5b"Æ¯ v¼RY”aä»ý,ü)Ã(·LýÙI¶ vÞ[S)®ðò09[°NÉôšDÿ[±ÍF4ÁM›'`ü±‚xeb$Æ¾®†Í±.¡´!ƒ¨µf2FÉAö¼[„ˆþŒÜW"öv"ÂîŠ‘àškpÌÝ0ŽðC5pœ F%ÝÈãê\öb›ka2F=A±öð(T²©|QÍˆš»kJkÞÆ¸'ˆQH‡«˜­®`+ÆçS=ÄV³C±m±ã5ýjn­™]ƒÖCüà¦ªóxÇXˆ_pá ù×ùüÈJØFÞ•÷­iR3GùÝFJ8#ßL!ÓÈL|n'ÆüÇÉ9r‚}4…Î0 fâj>¤AzíÅ²XWVÁñ Ïá%üybõ±[kl5åÅåáú“r‹žóxXåèNŸ W¼ÐûŒÑïø†ê¥i.½šöVßËü%¨oã‹”ŠXÃØÊØ¹¥¦[Íã5«TëÇ‘SŒ S1Òkˆ±]+Œàº#ÄÜ‡’d™ ¾…5Wÿ®c7þüãÏ›É%gÈ¿´L9p6ÚêZáúa$3æ`T½cá#ó‡oàíI£énz†Ø6•-bÙ!ö1;†?çØEä@gñÒu¥Øc±×c?Ôüw­Îm4™Hæa¿wl§šo¹•/É)œÃò30Œ8ÎB¼¥Õ:Bˆ1ÖŒ®¦Á,˜@Î©#ó#ð#•¨ö ‹è#ô9ú	=†sÊbq/ºâ¼V³8—õM‡>‘Ïã¥|?$M•¾“Ê<åêÆ!ŒÚ÷^o$«•½8Ï•¸KÈ¡ä	”€]êŽM ùrç„)]i+rBäf€…°zÓ4ªî#ÜÎ¨!âsˆTÂ›´HZAÎÓ‰p-¥(ßGh*ö4%xõ…¯/–±ô‹GcóØÝûT—I”¿í~Æ–ð Ù„‘p.ÆïñÏ¤Ë	ô„C[\‡öÂûkï<ÆIêŽ4i¿F
+Þ7Xw´ÀhívBÌÉ„à)±vÑÈv’G®NØÞÙ	-‹‹\"7Î!á=Ô•„$Þ®>çEòFzûùC„æ’„}'÷!$Å Q*¶®@º¨QèÌ_S¸FiS	‰<BHú<B2°LœGò¢¶iˆój4X£l3{AÅFúˆ¦x/Çj–€„kË{Œø\Kl×
+¯µÆ5·A¾´Eµýâÿj×à
+]¡+t…®ÐºBWè
+]¡+t…®ÐºBWè
+]¡+t…®ÐºBÿ?"*þ6QvFR5*r
+p)…ÑJX¿ádâJ
+#£$§PðvBc âËîí8›ß«:¿·ãQŽùŽêüjqh–Ûœa%ì³‰Õ™ô“å±¾ð‚ìX~!Y}Ç>¬9BQÇ³“ë¢ŽbâcFí8Ê*kj^" ”²[L•°/êâf–ß^cÝ£ünpâtäìÿàìô*Ÿ£ZIÇê¯:æC›6ÍraòäÉÀòÌ–Ù²E«¼æ‰ž™:›žË)l?`@ûvÂN>ðÂs1ï€öíû÷ËÏï¯¾sÛ>ç“D‚ä×èD
+®€Â¸= È’- %›ß`’l‰f«dóXÜî±8Áå±$·Çâ%îD³¸ý†$â(ÉàòRÀ•hNåöDsÛý.ˆË¶™S\Åà÷§¸\)Ä]	÷lóØyŠMÂZ4C±˜ÍƒB~b¢Çd·å{†¾jË?@ò•¡hÞ¾l?²Þ×«Ê6YP$JâCöãvÄ©Ö¤¦Ùw:ö/hê8]mÛ
+²×û4Ëu·Ìs‡[†ÝyLPž'ÂÂž0‹¸µ»ÃÝößû˜¶d$Í\rûú·&B~lå”G¦Æ¾¹ù‘[*Á79ö%¬^eaW¬PÐÂXÉ¢X¬„×q·WÕ”ð~òF’N²Is² jkbjœ‘œd–¼rfb@®„—·^/M‡&»ÁHLŠ2`Ü±¸¿TBjÔœàä`Iìì›[	££fw 1Kïì2e2‚çûÚ*Á¸MòçyD•Í^g«ñæW{ó/VOßB‚¬9]Õ±ªºÊq6p™àtyÛºÚ6Ë•Z¦5…¬–©ÔëÌJG©iÝ2ÏÓÜëÉÊÌrzSÁ“`ÅÃœ6¬%‚³ Z¶È¤]:/žÝ·Ó]{ûÐ‘EÓWE-šôä´!kç-*™X0±×5e+m){Òr“eÚ¤Ýê¯ïøÆµvmÃçMŒÕ_Do(1dÝíÞçx{ø‡w\·ÎwÄÇZdMîÚe˜úŽ7ìfÇ˜SîóEÍð¥ØMTâ9ï}PÝ¶-éx÷‡n¼w,`ÇèDdwlÏ•''‰FÉ&ñwd‡ÇäqšíCèÙDœnc†ÁáÌ .ÃLk?îwµ™¥1êôiì³ãi@ÁÀž‹ Ð–-\$Ã#sêIpq/Ï}›wü8ÌÏ‘Ø»›6A“#±Eâõ„O¾ÿ>¯k…û§Ø}~»ï_	Ú{ê+q>Nu>]¢M&£Ùh7:¦€£‡¹‡} (6¶[F+ÎÇóráŒf¿kÂ0mNÕ—ÏÉÍ‰Ë“@‰Ô²Uº«ešžµ<0ëøñØ¼Ø·G ÉóÏÇÞ="OtÅ¾‰e~ÿ},3ö³,á_pû‡Âí?¹‘§ëc½Y:dá|²¢“¡æ«%3\cFØ¦ü®æ=ãÃ:ªpà³‚Å-hËKvÄ†}tïÙ¤hðð«úÏ,~6Ö{–»ÛÄ^có‡><ûæ}¥bÍÇiû–îÅ}D-Bh@"~þò&Ñu•ã+’Ó«Z(ZØsœhVY™Øë}5G˜¼ÄLüQ‹<‰˜71¿%>ÓêfKu­Ù¨ÎÅÃ:uVœSÜ¹ËÐ¡]:k¿Ð­æÚ°ìÇCR!!ºÞoõÛ½‰¾tÚXilÈ…\ÚAé`èQÚCémè×Ñ”¡†0ŒŽSn6ŒµŒIœSèåNÃRº‚¯0,5­µmIÞ—üžáÓû–Ï\ï'ÿ`8a:k8›Ü$ÞudÐq–ÑÖÑ¶Ý¶-Î-¾ÝI¯¹lV‹¥³ËkIðb«…ˆè$[Õ3wJ_¹ûÞe£?¸õCuE½N£éuÚém«î:–M³mh²šåú:ÏˆæúÐ°&I)ÅàW¼QâóÚÁ›Õiv“d(&>C JlÔ—ÉQD}M/Û‘/þeÏE¤BÄé aõÈ )DÒ¨3!Ñ©×ÜålAGc§b¿ÆÎÅ¾oõçÝ]÷‚Î¬þ6{Rá+OË±Î±±{cáe˜	3àå³ÙÕEWÅˆ¿j9u\¬¸újØ ìi¡èSF£O±’»£M`¢ID“XomhWi 4æÃ£ð(]ké/’SF—+Ë8ïì’$EâÀn²v6[,èïÜb0·ŠŠæîÎm„÷ÛvBÑyˆÖ®ª:Åí~Gä jù›å’ÉEh¾”–­Zç9Ñ¨·¤mú?YztÕN˜vq@¡óMÍÖ=r~¡*dÎ;Šr!»¢ý&oð±L)SÎT2]ÝW‡¹‡„Ç%K—:.8!<MºM¾M™‘4+yVÊÌÔ™ÁáÇ|'¯K=ô1Éo%»Œ’”æN´…ŒKK˜ÑFïÞ’(EÒ*aWÔLÀbî˜Kx~É=üéqë]¥ŠÄÙÓÚrN×…›hE³\
+‡×o±ú2¬^s,~[pÃq«q£‹¢™.€Ž€Ü"3’&V_€»,Ì¹l§xæÑ‹Z=6`\è£Â§G¶}`Üm³«ûÎ8<â®ò)Å7L’é©Ý=hBøÌœ‚‘‘VÏæ7¹víMc?}~òM7nºùô0ê[OäS&9½µ‡sPp`Ú8çAþ¦õ`äCþ‰õ½È÷ÖóV‹Ù‚šnk!µSZØz*…žëÆ“‘ž;ÈÊ4Ï4)™ç™ç‚<¡,ól$k<kü•†×ÈkpÐsT:ê9%RRe=Æ”D?E’žbô$x-)v³ù¸ÕhLïæÂJ…WbXD-éV{ßÀt¹o8ÐÀ\	C_òÌ%þ¬ZwX¥êØYÍ°NwµÍñ©\,EGè†e&µn™˜×¼r.i©U"i(>y!a€”Tô	$œ–ùð‰õOü,öëè‡ö½ðàÒg_yåIHúpÊãJ»Å^®!=^LÞ?u×ÒGv–½8~Øü¢ÍÝ>hÜÎ«L}rø'±ªDíwrQÖV¢Žˆ¿9*üÜ[þi¡ïYáqþˆ•Z¬Öá.Æ8S¨µ³ÑèÝQ/±pn%TQì&§d¸d²#l´!Ìw¼'œ½ÃÙ6G,ªcÇ³âT‘ÙüNÇ{hÎ§L&S&#&m	ª8™è¾ê‰té.ÆŽíŠåAÅ
+¶÷bÁŠXoÚ›®¯¬ù1ÜçkqŽRmÑÖÜÞ3‰Nb¥Šðexûº::ÆÛgÚgúJíeöµ†öµ‰Û•žóv‡ÙnðS‡; P$YG‰ßB»ÅNy­VÊX7o_c ™KÃÌµû“j7*_Õ½NOÇ-Ê»…p»N;õ*r«ÈÜICð‚Â- Izx7+©‚kaÜ’Ø/Ë—ŸðÎ!ÏÝ«‰U²,úÍt—'O/ÿ~ÁÕ‡›¶øìÀ‡Š}¥ûÉ ¯E{´÷¶JjŸÚÓÖÛÛ3µgÚH2¦‘i°Œ,ƒµ†×ä×o[Ž[\IölsvRv°mRÿÄƒcí£2æó7ÌGéQþ™½*ÃNB~·GJã-¡C42y„¤:$¿¸1YÝ)Ï8”’«0%E"ŽH(’éé™1DºùÐ"DMkÈškeVf%x7Ç½Eõô7Š|È"¬i¹STíÐV€´ qm'Íè# ËöT6aUp.½ûûsf|<%vâëØ™ØO0ÒW>²véÛU0±çcƒ–Þ÷À¶Íô£ñ¦¿»è³Øø;…y°¯éîkcwÇŽVO²câƒÛß}ô±¿©þw>òp ò0@²H¢Ïµ!ÂÒ_M®'ƒ²¯Ï)oH{ÓûzÒëÉŸyO4þü¿Ñ²ƒ“Ñ—åÌd&efµe]’º&wMéšÑ5³KV×ì®9ý“ú'÷ÏìŸ5 {@NIRIò¸à¸HIfIÖøŽÌ™3¡ÙÄæãó¦š&'MNžœ99kfƒYg5›Õ|VÞ<Si³2û:ë²vÐ5ÿ(ïDò‰”ÍN4ÿ%û—œ‚$ÒÀÎ›„Ãb_©‰Ø—P¢•4 R“ì47=õóôn¹}Ý–éÏðéÝõõû[TBÒf]LOO?ëÓÜ¶¨4-Hóßª‰†²š‚Š]t$­"j9" ÔÙ	¯Âñ¨Ùš,8œÖí¾³»o­Ùô†ý—Ž:{öç³Tz Û¼1“¦ŸÀcç^¸mâ¦#Y¡¿ù¾ieGû=SÜéŽ7w¾ý…	ëýzct¿¸ ç÷vï:«WÕáÍc—Ž.y;¤Æy¸G£t9?”™ÚÒÛ9µoê82f’™°‚¬€çÜ»ämÞOÓN¥‹]ºî–ÒÀeOÊÈ0d˜3’ZZ$µŽ2O0¼fÜg~-éú‰ñmûiã©·›yˆ_úâÐÓBèBÚ+L’&ûVU¦#Ù‘ö‘^‘¢ÈøÈ‘…‘G"k"Æˆbd¹Q%R@ñgnÝqÉ«Ÿn›ƒLv¶-êuºVÔO»jEÍ‘Œà2ÉÓdíA¢@4¦-WÙzMÖ!ékp€5ö\ìSMÖcKã²ÎÚŒ_0í½EŸB·XÛØªØ¬X‡œ]½a6‚¼¥C*o~`û»ËUY§–æ³K§6Ñ Ž¦]“|ŠdNšäÑPõHƒÁãOÕl~/‡@Ö\BÇÓŽ?†×î:(÷2¨ÝZG¼õ!7ÿ¸ƒÃó"‘ÞQ/ÚÖaœ ×j8Àëˆ›ÞI21”c´}¢‚(²H$äçç;QnýgOøêä"^6`ÀÌUøä<ÝxAu€~Eƒ4ø|ì¡ØÂª<AÏg^5oÒhbÊW+è-J%¼ŠH^"£B5Öàø%_àÿ_ÄÊƒ	âó/ìåö2oYYlµ€_õ×qiö—V$ië \‡Ä<Qê:ªþý:ŒÐÿ‰1é×Õ~¬>ö<L†iqaóyôq
+±@«èc21J4Çüé!óC–§LO™Ÿ²¼jzÕüªÅÔ€5ä9¦LËh2ÆÐÑl¿Ož¯Ì3Üo,5-#OHËO7-·l¤Ï²×åÊäcé9%ýL~…ßø9)¤#²Ñl&’DƒÅŒ'&³YRkÒZ3e!f–¤tçŒš	iè f£TFÆ–G;ƒ0|ç Ä€ÂÈ$3oÏÇó;øF¾‹ËüG³¹½y¼ùóFó.³lþñ-ø(ø»YÛ/W'ÓÏùzU.ò	ÔÓ–è“ê"3ÑÍŠŒÉ‚;ÕŒ	ÙN-a²ÀaÛ/åç/Àãþý<Ábÿ~ÝÝLÎ‹@žˆÉ[‡Y–r|/üóM8öþ¸êæÂk»gÉŽßÎÀ€2ÚkÅ
+á+6!¿ÛÈâwµ“Ð‰Þrôˆ´<a´&á€é@ÂÏ¦>ð|m:‘pÂsÁpÁè0ÌFz{%áãÔoS/¤I}i)¦Œ„$wZ‚ÛÄ½É)ÝIRwÈènwCÐýªûs÷nîÆ°—ƒ7OÊ³.ËJJNÖ!+3gu‘HÔUý|õQ”É¨”u„ÝÖ©Aìv,bÈôdð{fZf‚Ñ[ÀüÌ[ ©ŽPDÌ¡–¨¸ˆÑ”àöIÚR
+HØ’^ f“ˆ»²k*×?sUƒ…ð+¤»­ˆ°<¨gƒS5VMÉo‚pî¸±Õ¸’÷Üòú§/¾7zhÎÜ]¼úôãýËw#óú=3¦ïÒ­z|4aôÞ1l@öÐi]ožp!ëÑq½ïé%–9m}TîHüähþÏŠ‰E¡SÈdËdëÿ6¾Íð¦ñ{ö½ÑØÔ`=n±ØÛš˜ÿ8!Þ¶Ôˆá«Ÿ’Üy²?Ða©îëD’×B:¢=v ÆƒÊ #‘=™<Ã™aÈLdîlâ0â!Aòf—bk×—?W[|:¿t‘^IÏÓ0‰,R,h¤[óè¥Ûcÿxn=4¯,}aÕS·ÿ}æìý·=ùŒëª}0÷§aÎ«*‹ÖÄöí|9¶ç©"aÐbðY*~ö[£9ûìÿ”Ž(?HÇ•ã¶\
+ã°Ð¶ÐE³–ãÄÓ]È‚#O^æõ˜ÓQ
+¼‰9ûYÂŸu›¬.'•¹™6ÜoW¦ÕèÈ7Ãƒ]±d§”Pw1ñlž(Ò2r$7Î¥í\LŠý:ëž3±µÞ|±çà5»•›cOü|2¶êåK€U}~f®–#:®ë‘t‹6¥,ƒAQÐÆeQ1×ÅÊÓJ¹²GáÊ80s#NÚoÚ½´nÚ¹WU‘Hë©àXË;kÈ^Ðq6 zíU½Ev¬¨þ±¬ºU™H&OG¯ÞÎ·Þ2~jü¥@–=ð©²ÉÝ¯@Ç ä €@€Ä…Ã×1QŽ$i¥ß—žL©B@R.œUNŽt¬®R%Dh~tÖ:<Ì¨É‰§Žœ$Ö“5~ý31A)qFZbìºæþ½±#›PR^Ò$eÆWçBÍÊ r÷À=g/ÉÊî‹±áœ-Óø=ù-b3ér–e4u3IÍ«A2¤+Š°R!~K‡;/Ïî;Ôô~Çü¶Ó1 ÑøŒœFŠàqö!Zpð`õ^ÙQ=’®øíý¸:KOØ¹:^÷h—(1™­²Â³d‰š ËLò)ƒ1‰¿ëý*Š³ßrÃôˆHOd Õ¦­qà–"‚Ó6yˆmdScÑ´òW¬¸¥¯ó(ŽÆq%Òt‹pžÂq8€H@áŽç—w/©³À¯p ¬tl–›!¢*'_ÜyhãFÙq^ï¯ö·ûs/ÚWb&)‘ùy@Ê@oØHjÃÛH3l÷ÛÊøÃÒc–•Ö2ÛFþ¬´ÉºÑ¶‹o•v[wÛö³ÃÖÃ¶äyÖ…6ê·y>›?Èï³ÉÄá0WÖœ‰Ú˜Ãfkè*D·'™­ÖJØu¹ºp.q«m©ó;‰Qƒ­r£b¬f#ü!å)…*»Ì™:ÎA·X	û£¦9|1š—sÎÅ©ƒts|äìøyŠ¼ˆLæˆ¾ÞÞüîñwi‚;½ºÈwö«é~äúYQsLGÏ¨eÐ7V©ü¸BøÅéÙ>Í3jõ@§ )ˆ8óŒ ¢uDa–ñ]}FÁ¨;%©ñ™C?eI’ì¸HYì·3ì³ûî«B×Ýwßåri#¢YåOXVs¾Œo`ÏòÖVÉÒPäxC—ÙláñÛ¿ŒÊ•0+šŽHÂ ^1+‚»™Œ³=„½6ì†nß^+Êb¡ùûUqÆjþ~-XÉGcž/ªŠpûÜ‘­9ô0.¼yYBÄ!Ëmvn§ù’´sgõ©ž\v\øõ‰'¸Wrnõ*-—q)ÿê%¢Cžµ>ë|Îýœ÷[øVªRªÌçá¼ô³ò³ùW÷¯^Û<ÛBÇÂ„y‰Kl++–$î³vNØ—øý”¿cûÔñiÂ;‰®ÖW[™YÚ£=Ïð{ò˜ß7~Ù%k£‡ªmi^«ˆ<h©…9qKX³™Ðp'R<8®lHà.ÍÈ¨5O&ÕI‰f`Èà "Hv¸è(-ªþ¹u5'ºdß¾%H9ñÌg<ºzBüéÛ+ÇŸmÈ‹rÜÏ›q?-$‘Œ6Øiþ4á»F%h`HìÎ,Ým6Š€ÎàÊö¨a™#qÚÁë8‹îè—¢Ó&‰»¤d)Á”éÈ3ìf±ÉU N£-›¸OÁ%«‰&„5RãLÊ…?RÃËpf‚»¿ÿdêŠØ7?ô´kûðc±´Uõ!Ù1þw-‹Å–Û>îÞ8o‘ûÜŠó¶#j8½ã^ËZÓ~ã~Ó~Ë~÷ûÆ÷Mï»«ŒU¦*÷‰«Ñ;¬/Ù¾²ŸB *ÍF‹ÑjõJÍ¿ßêò;œ.‹ÍnOwY,V‹ƒø»3;Ér:À¨ÍjƒÅ6OÞPØ•Y¡¬$?¤3„³Ô¸~¹f…Qò‹,ÚÃ"_µÈÐ©hUpGxnñ%–þýžøšD 7SµŒyHòš2ÝÈ6—Ùƒ‚!!³ŒÎlb¶¸œ‰Š¯ H]p&øGê²± ä‡u\CÁS‡÷ŒízÇTøÛ™XÉ!HZ”ûÔ‘GéÒê‰ÆÖ»~ûCÑêlºtE‹	3;Lœ['w&r¤oEï¹Æzïz_‰}¦ujpRhåYÃë™§2Í»Á¡¤)‘Ì¤ŒPO>DºÞ:*iTèeGEä¨Ã†‘€×a"ž’L™˜519Lw™L–`²ÅÄYÂñ¨{œ+±­“Áñ(çbmÓê-ÅŸp’4ðçÙf]§ž]Ó”§JOVôì;¸œ†\œ®[7ØTÖ5­¤Øòó‡-_|ÅŒöAÍª–CÅw†z~I¤2‚,QË®<³¿ïò^ã–Œ;óÐµeŸ™ûÔÌ¡½‡õ­‰}~ãºð+S:N/¼îíÛ¯úáÅrŸït_ñÐÙ-sÚç®ønk,TyÏ‘*$³DÑ“mÃÀm^%´ß*+è­±µÞB 5¨T~Cû».w¡Uq¯I!–Ã'ÆšJ%7¢{ƒÚØÏ@DÓ·(ï*_X’E±,)Kn`˜An“,ÃxÍ Y‘*k®+Œ†0º ]â†©éX‘¦…e8V	5#lwÀFØß¢DýhV²•öÊÊFe—ò­¢(?rîàé¼ŸÊ×ð­¼Š¸ß¨jñ8-¦iÚï4ÉÄ?ÉôXã0$oköíÞXÚ›±àûp¡ÙÞÿäJc×”ðùjÖ.µ3’BÁDø¹¬WÅA³\/2Cÿ2œ‹<é1~ŸHHˆÞxÀsB9«0r?ßxÅøI[Dað$úRÍ‰I¸—+èÂHŒ8|©öB_ÄlRÜ.Sj;f&îDWšË=61è°O›äW -©É$d¸÷ì:ßŠ©;Y¥~_­&×BxÛj|0Ü¹¿6‡¯)~ÀŸÂ†ÌžÔŒøIH²”Ú‘¯‘n-a^ÝFÔAj¤žò ÎVX"BÕdˆÌR&‚ÐVB½yÎo$“9E"UË+±~¹èóGÎ½Ôr¼#´«ÑÞDëˆ›NÜÙgÐ;=ø¯_öB³ÍÒ_üöÐìa|ˆýrbí†rÁËjÎðäÞjéåhÏû¥MÞ¼§¤ÓÊoÒy”©-ÆýFÊ?YR†Áí",Écö¹$©Sì&2ÒìSÙ:ÝAGŽýi;µûS›Î¾d;Uæ‰ïNc€ÓQg“þÝQ 1 ¸”hD¶¸¯xO#â—’šÕãRr
+ÐHê!%SW’âú=—Ô\s¢¥eef!rðƒÈ¿iÉMè6ðû‘‹¾Xvî¥¡;KløzvŸAGØp•A±·ƒäÞ[ÇÂ0~µn}¹†‰Ö ¬uã³ˆ¬Œöižj~Ä·‘<kÞå“·ó
+C…c»{kÂìÃQvÔ`”èZ->›Ç²Êl¶EŒŠQ‰§E¸4	û
+\MräWe*ûýMûÔ•-¡XZD[ÝVõ'w’í	ÌÀÅÿŒÄ\ˆÝ€ZØâR¤/¿6P!zœ"RŽ§´jÍ»íÚ°>va	ô<õüßö=1jëð—u˜þT¨c7Ä ÏU[†”|0ùÑØ÷ÎVB¦àz£(.’J¶E;U)¿(´”ï46~œò½Q
+F“Q¯Ü„%&»œ.[¡ÉN#&ÅeJFe²»‚g äor—P `·–¸Êéš	9]û~’*Ž*5š¨#	Þ$!	IÜßŒxþF$ %7#>%±¾¾¤¤M…ä<…º{@ªû2Iœ¸\[tôC]™™®ìú#E«€.Ó“»k¾à× xPO^Š^ÛÕ3À³ÓÂ¤¬ák,"‘±Íy(ñ¨Ù(qhk ÔãNôÙmA‹7±"š„,rG¨Ù·ÊS8É–@Ð¾*Gî(D!µååf¦ª6¿¬‡\Baj3Aý)ÌåÌä¾º˜¹dF¥I6&6")ÉªcAÕIQ’×²!¿6ç—‘LªqÆåô„Ä×U­!¬iÏÿüï~ÿÐ}g—ÿýÇ‹±aO–lý¤ÚO›Ü;iò³=Æ-ïSC`e¬*öQƒ©{Šo‡uI÷?ó¬¦#ëÐwÝ'‹¿eRM1:ÀavXBæ¥•£«c€c›a¿Á(+`±%°J¨Œ¦z(%6]C€˜8ÝfwMèã§M}Ž³Ž‹¸â7ÄêEFDÓ‡5» yýÉa¾óÄËµ²žÂ©ÂSçÎ<²éî{ž4ä¾^âÝ'VRÖâ³÷îKÚœÛiYE÷2ñ?Å
+GßEÿ‘Fš’ß¢™kT)_¥þ¬ðûùËÆ
+ïÆ›ü`ü6õÛà·!Ä“hú³Bƒ»²æ|4Ï—ègÉéÂ2›ÓÚ3…#iŒ‚ŸI´§¥Ýcí\aCMþs.“õkß*MNçQk	ÕL®­îoó¬ì”p‚‡Cá`85ÌdCf6oØŒ¤xÒA‚;ËØ°i$5nFÂ	ÉH%³‘úŽ…úŠEvv£¹sãjÒ¤)Ð¦Ð¸oB#= i¤¾Áü½WqÈÊ¥o1[µFXõoôÆîl;~èðÛ×~=aÀc99ièoNÅ¾º3ºlÓ˜Ý­úµÊË[0	!È%5oV€¶ÆK‰æîWÓ²;h`‰^ îv²âµ™„Y­“Ì‹ÍÔðSorð9¿/n=ãî¦½úˆœuêÆ3m’Ùh6˜™ìÌt)öf(—îfêË	t!Ÿ%w÷¤ÄÄ“ÈY]S"’+ªO_–!"o!^U‘gÙÎ>_Nº2èwíök6üØÕrïê¤¹K†¶¼mgõbº`ÕèN;UOÓâQñž½†º¡7)ˆº'Ì 4“3Y–2b2œ°UÂQ‹|R
+Ò“ÄŸPrPí¢ºêlumæE}ÕLÅŽÎ°âßÎàöÁ{±CpZWŸ˜™5p`Væ@¶·ìbA™t¦cAþ+|ÿ³äZä³‰lÎQäÁòt‰Í—••×IëäO¤SÒ9Ùð¡üž¾.ÃcÒã2ýPþZF³_*mT6vÉ/+‡&^TŒÙ¤P” ?"3™qE	º¨ÜŒKÒqgÜÈÐ_I\¦¨×„d&n &ÿ+QPýƒ«sÎÿ,o8÷{ó
+þšâ²Æ|µ0 æ›"T}
+Ç“§ˆ€<#„ÁùæNê?W}’fÖêcè¯MTª¾P½ž®^¯Ú¢ÈïâZÒ9&*«‰Æjd1;I¸„kÉ-äsD~C%´ÛüÁ%Qr|çø®–çÂØÔ²üï±
+jÀ8½bÅù^e—¾šE2Nï%¥%E³Æ¼qZãÈHe¤a¤}¤c|`|ÒøÈøô©ÊTÃTûTÇ¬À¬¤Y‘Yéó”y†yöyŽ¥ÊRÃRûRÇ³Ê³†MM‘W¯FÞ|ø6p>p>’ždb<#ÜNöµ³ÙÐ‚Ê))ÉÉn“»¶E-Ý!D]pbÖJø¤"¹{Š¸nínL
+%C4nI†dq£;ÍÀÛº£âdöÚCHm&&ú/E“'ççO¯žîPkÓ«}ú1êkšñ˜ø¹VR €
+á«£XËT+ÝV÷šßåºá¢‘WuµÚ’îiq[ÁŠvÞ¼i-yQY=ë®iù£îê9sûÅ­ôÂM…éOUV/£çiQ±°úÍ¨ö@õ±ÅíÓo`	g;±zÅdµMfó$ãb#5¼Ô£ÛƒÄ?·OÇíCq2ì™ÅÚlF§f	²uKàrsÉÍ=$—”Ðƒ¸.·×ïÑ_e¨oF<s•nxÑÙ¹KÆ>÷ÛïlÀ ÄTÓq]ZNjÐrúÂ°ÜÄÀz€*MÍ­mÜ$ðž†ÓjÒê"\”~R~2ûZ\Y±DˆÙÞd’D:ªÉ$Ìïë=ú2ñ»œT#‘“Àk*„´™,DNª‘ÈI59©FurRGIiD…“Ãè,ýí#XÓÑgb_@èÌŠ}ñÃ²òòeËËËQ©jj w¬¢¦&¶¹ìäáC'O:|RÄ±Þü\»À“û£×m5î1¡ï¥ i™ëÛä{Ç÷­ôò•÷‚bÀ#YC–É‰î¿‘%"JÅ)#º4;l~-È¹ìA‡#Çù´“:ýÁKQ†ãR˜¡âË?ƒ—Y‚À˜ ¥Š1ÿ^J^’Ëá¥ú&Ååa†óÿMœë-ÛcêD“ôV1‰ˆÃ*£…*ÏzO öæ¥ˆI{'s³@"ILÂ<If§Ï^(Â/#1³Óæv"_ì Oƒ©¿‡ÞO]†<êÆ`"ü""SÃ/"±?‰Á¸ˆÁà÷1Øï!Å¼û‘•^†Î‹÷ Õwnf£A°:3[M™šL„ZÑ0P™˜Ì¦ Ñh¸©ÝŒßõjŸ?øÞD˜—úRš–VG»¦®Êfç’[{H6ÉÑƒØuU?®÷^Dœš‘;¿sÐ±Ò’’-9Ic^Š_z06±Æ°fMõmª[ºÞçÛG7Ó´’94§a{c{S«ÔVÁ‘i###Óo·ßî¸5|kÚ­‘[Ó—ºŸÈÚ˜µÓUéÞÚð=ã{¦Æ¦³Æ³¦Tá4ÅËÚÆcª`O´{$›4HlàÍ'=Ia¨0|éêž@ÆšÇZÇÚÆÚK‚%¡™d†y†e†u†m†w†oZpZ¨”<A6‘¡áÖ,X3{Ò‚6÷s›ÓLNS¼OMœæ$(P	ÉQ'<ÒÀìÝÖM©„íÛ'e@F Éö¨9Ç	Î±Äß¨éóz¯H77êo T¯êxúbà48EªÈYGÄZ²$wÀœK¤,%Œ<¤Úñ4ÉåÏ9“çCº)¥ÇhJqsIjÐnSwA=Ô†ºD{-R¨-[deæÐÌ,ím•xÞÏ›„D¯†ŽÖO:?èY))·Fç¾Ýªõû?lyºò™éóÛµ;ûù®]?ÿùƒö¯]Ýþ†.MB¡œ@Þu…]†—V´ØÐ©_A~zzNÓŽ=zÜòð.Í/ãž^%í%>2+ê.%¤'È2é9òÿtwöÑQVùÿÝû¼ÏL’!	 %‚«Â„÷¸è>b„ˆQ^DljBˆ‹ÉÉnÜºË˜f@´’–•Ò•j€uk=¢‘µ§sX¤¸«ëö¬êºçàLÕjwäXËdÒï½÷y&ƒKOÿë}“ß½¿ûúyî÷þžg^2F¥MZ…3¦h€ÕE)%¡¶×™¤…©ÅÅ}Ð {Ä+)*­ŠXV‰÷YW.«/xVðóñwùYsþ-€Súèò)Æ£õÒj*3ÇT“’ óÕ5Í‘×$êVu§ßðÃïÌë8¾^¼RpŒ}–+ñ¾}sÏ_\3oôÚçØñ}ìxîú}¹zÚf¯RóÙùÌÔg÷x³aýk¯òF™2ÒF +DÛðh^Å˜øVàqc#EUáPh†³ÍùkGskŸó7Ýh>Ú*aß]0kK¦ØWˆXK"ÖÒ¥b­.b-ûz¬eZ0ÑYj‚sçÒg[û^ë=O{ˆµ±{Þ_¢7\xú?wìh9’áñ¡m_ÙÅ¥àyTÌÍ¤ƒÞ´„Ö«Ð>ÖþK3ó;ø&ÖlôãpÐÈÐ†cŽÉ5ë:ïô¦âBÑÅ…+U•ŠLÃ4«ä»^MC×9g&¶âL7cÌ#y^	¶?æ±ç™Î*­ÄÞ‘'K?ý_ž*µäõ­Ü1/—µ³7sãß`ÛXÏ±ÜX½!»Sk¿ð´:Wå˜Ï æSFoyOß, [äèØJ+C•EãK§8ÓŠ¦×-)Z[´‘­ç›Ã›"lÿslÓÃ¬Ï|²äµ’ÍÁâÁ’¯Œ¯Ì/‹¿,¹Ü.¶KñEÚ;¡Óáw#–>Ê‰êEnZáˆÁÌ²â"\¿G=:Ê´œ¢bÊÚ"Û"<r®¸ª(nU™ñÉVVµ¸¶!|cåÑw>oøÎ§Ù¡¡O+†Ô6+vÚÊ3®›Q!/õÇ.P;‚œú,mVÙØyeêA¾Tii¿xé¹{'ŒáÙ×'ýöî£?}çr£ê˜Þ0´fÿ~ñF`ñxáiþÖþ§†bÁëÁOM˜Nz»-ÍžjL3§Yß°k¬¼YkÖ·j[õ>~ˆ2›‡­ãgæ+ÖëÆãßÂ_Z_„ÇM2æÍ|£ñï6ž1NómgZaþ‰déN˜,-dZbU0á	U•:Žn™¦Ž•r†;î›±xp=VôwŒ±Êˆ•õp®!:(>MqÑÇÂzŒ[óŸÃzPü×—MräzpØ$lø§ÙË¹ÿsüor²7ÿû	¿™—ç¶³ïå†þ–ýƒ\nnº\ï¥ô/^ïvúK:L§5n¦;Å2h;õíÆöÒ>êÓöš{­ÃÚOôÃÆ€öŠþŠñºþºñ[ý·ÆhR ÆKKõHi±¯ña@³T×«Jñ©ÒJ}1”†Š'9%¥¦xÄdß2–wmÆnÃ0Æ•GH@(»u¯O &:Ø Ü*¶)‰±JÅßWoë1¾B½nfŸ°ø/"¨ç¾LRo§¼žÍãs‡²o²}lÍÏrË·ybÕ·.Z»³½â=–=¦-ºp>÷ò™’ƒ‹^¸Aðykä[àãÐÝ^Ù!~Š‹w°YâdrfAþlàEÜ°Ú–xjj´ø¼qK7o²Ç…õ›¨24§Þ¿—ÏÞŒÊÎß!"ÄùÊ/yÌšÃÄk;ì²Ñóç†Ök-ã¯o*Ì~tDž«{(£ßkp¨¸Dü…u {Æ ÑŒXõò£Á›¥‹oÞþéîç·÷œß±ûÓÌÃçÛ‘~ôÑôŽÇÎ‹—Kh<[’ÿî’#ùo#aØóŽø6Çýïßç¿¥dzR¶Ž2oû¶A6½ëÛ&þý^ÙxpèCßfØo>Í[þÑÑŸ#-ì*iŸ@ËË€÷HÛ„]ÌwIÛ‚áû¤íÈüg¥†åG¥‘e^“vTæÿ³´GÁñ÷¥]*Ûÿwi—É2ŸI»\ÔÕ˜´ÇH»HÚ•¢/­RÚ"ó¯¶-Ç©Ív$$ók¹Õ55±kfÆbóÝâñÍMîÍ­ë§»~vÍ<wåñ&wEÛæŽö–¶Ö­äÝÔä.jkmwvliZ×¡ÜîÊ-M²^[Gûæ–Ö&wCÓÖ–æV·m£{k[ëºõmn;¼×­or×£Z{Ó÷žÜ[¶´luëÚ6ß×´Õ]×ºÁ½qÓº-›a/linÚÜöÝéªêíMÍ›×mQ‰oºÕ³¦Ç6T7Íü¦;3V=ïšØÜkªç*_àQ©¥-ÍëÚ1Æ­7¶Ýw_[«[Ž?°¥¥ySû¥A|Íý? ¹D©ÿC0ÿ¦poeë“õ6-§-´Z¨•a-£6<ÞGëh3ÝNMÔL°Ö]ä¾–K”lóK6Å>‰ý4öAì£XöŸ|µâZjuq/¶>Q¯ÖoÑë×á±¦Ðógó·ŸX¾â¢zâ¯û[:öÒt¯8ÒºÅ¸e&ÄA	Ý0È2ë3øG6Ó÷ˆOí»¦Æ¸-Šyˆ?È÷<a{®éh"–+òLcïO¥¼„ËÒÍLŠ‹–h9žìë?•Œ{–ØÌ½”'ßcG]/“OÄlQL$¢±úÞL4ª™DÚÎ{â‰t2™OÀ*L$;í¸g‹ëÀTŠHŒ(!§^žMhf†2*Wd¹¢ˆ_;ƒ’2.äïÁ¬ÑOàIæ=™D"-|A±¾dP,´–çSvÆ/v¦?™ï4yª¿/ŸˆËü‘NGúQcKÚA§q Q‰Œ+;A}=Ì$ffë1óÎd²o“çC4’öd¾˜a§jÝ¶;Æ ?#ò«˜w68o²Iº ¥¤§¦Jrz§÷ÀÙÞ¤kñ<„”+N÷ãHHóùS¨œð»ÃŒ²9¸DÂ-èÎvýòhÆVÓÁÜÓ¶žç¥1¸˜*’”ÓôM@P¦è²ÞÏ­wë“j*I5U1#V£hÛ4ã™L&ÞkëXöJ3½i²}5HÕ@'ø™:5‹Ÿúz
+äHá4Æ|åhJ99býy	¥è°ÌÁÚs£8  Ä°îËEêG+Ð-ä¨ô22å6'9“ð}BA‰‘TL(E¥|EUJ¬Õ¤m§U*æ)õ’ñ‹R@mLØÄˆ„"±T,’Ò¤Ê)“yÈ‰¥Rjp®[_…¯òWj:hVŠÀïëGïÙ‘ÁI®ù’}ùáRJØbR«ÐóëùÊò§Ÿ<£ää§NêïïëKŽLjdŠþòJ¤ô&£AïqQ¥|M¹Ñ`,RUQœ'‚ÏK¥S®7×\ÏiåYéQÂB9ß“§W<â\¤åœDAkX‘…í%]9yäîÙøz¤ä°y~]&RQÙþ¯û¥Â¤­ZHøýü|Pˆök«úgdÛ¯ÓÅ#ûT:«‹©RIY§Î·˜À†Ôê}¹õÉ:{¤Œ—Pµ3råzºŽíº1nL:s¬Œ:QÉÌ9‡iŽÈ-qÎ²(d•—ÿ@È-6XÈ‚Üú…Ü ·AÍ/| ¬qx”Ü„Þe†ŠU2Z
+µY¾Ú˜a)µ‰Ù?)¹!æqÇ
+âÕÙÀk+Áå“œˆMî,-¡¸¬PµòŠUí{EÒ×\ôEWT²ó„ì¬@vØÞlk$~1ÓRñ‹ÛV¿òõ%;Õœ¯=ìðW©/ïMx1P¥¿ °Ô_P89ÒòÈÉR>‘ ¢%ƒº~P+˜äHËy$åjÏC*Q%%º®c‘cuuÕÖÖNŠ”YÄ¬\½)ØøF¦¸Òå‹Qºl¥ÆdgàÊH—ÎÅYò#hD5ˆÓ"hCT,T¼Kä½J’®ÃH¥T/™@“°U#	¿w_“A>¤ì‚Îí”,½ŠË¯#Ã¾ˆO–?à˜*¥4éù¶Ô›´ûUüSùR“ž”WTƒ”«1Pt"b`¤¶Ub%‡™¶ó«€Ãa›ÂviiéðäÉ“‡ëêê†KVd»Bž"Jº¸‚ÔeµºbƒE¤Šò!ÑN<b‹õÅ©±£b)ƒc‘CØ/˜ÅL;¡j2'l¡Ãùµ]ìØóãã]µóÝ°…1B|QuäÜ°‰ŒÎn]—jMdU†Pc4n#7íÊAë‘òÉ“k»‡u]W%²â£€,!zY€Ú¯ïê’½¨F»»ëbuxìtƒqtu=ò=®ëÈàÎVJÜ–Ë»–MŽ­É¨©¥4“Yv–²)™+²Dà”©¨¨ ¼…ðÐCª›:èV*cÈn?™d·:°ÀócOdÕr,¨²³»»Ö¯"‹gå£«Nk^SèÅà§5‘QP»Nž<yøðá={ººü6Nœ8xðàOìÜÙ­2$‹nI¥`èJ×ª—´Œôzò£Š¡˜FL`ÎD%Ã\täPÝúò†¾qò‰PÂ6™m/¨ïlWí ™ª7ß­–Ô‚néFûùòÒ=¿¶;«Ü¢‰˜vÖîáÂÆuÿ‹ÛïîŽÊ™¸DgUù*Cì©¼Ð¼-3Îæ‰Î·m‹lû¥w÷ÈÃ•#šS)…Nq|œ}ñx°mƒ£„Ü	]ÖîìN4VèÝzÈd!;?™	Ê«úÙÙŽÛ¤‚ÝÒ•cÚ³§ôpm-®#à“›D=¶´°ð-\xùäò
+¡Á³¶l(«4”š²Ó,ŽÎnõü•z¶Šè›<Çå™ø=LNŽ¾vh»äS±Ä>),’åÅï¯—7w†B¢¼-,ÉZâ÷päÊk»"Q^Ÿ]X¾ø‚-Ë_¢|q±ü–úü·1æÏçFfEdÒ8²è
+
+Ñl
+Óu¡¥TBwQ·æ£pc]FíTNÑhzŒÆÐ>KýTAG©’ŽÓxz‹&Ð{4‘>+\¦Óe¬ˆ&³qt»’¦°Ùt%»¦±eôv]Å6ÑÕ¬ƒf°.Š±ÝTÍ~D3Ù!šÅ^¢9ìç4—ýšæ±ßQû˜²/©–åè&îÐ">†óË¨ŽO§›y-á‹è¾‚–òFZÆï£åü{TÏ{è6¾‡nçOÑ
+ÞO+ùQZÅÓjþ&ÝÁÏÐþÝÉÓ´–_ »4“þTEÚDêÑ¦k³/f¤Í/`TFÄgºÁèZ0ºŒVQ3ÝF`” £ÇÀèG`tŒÀè$½F¿Gí4å¨ŠEÀh,¹`tÕ€Ñb0ZFëÁè~0ÚF»Àh£—Áè50ú½F £!ªáaZÈ+©–»`t5]F‹Àh%5‚Q+=F;À¨Œž£Á(Fo€Ñ0£ÏiµFt‡¡5Ú8ºS›Bkµ™`t=-£5`´ŒZ/fd>SÀ¨Œ&‚ÑU`´ Œn£Õ—`´ŒöƒÑs`ô*ýŒÞ£À(C™øÅÑ`t9]FóÁh1­£&0j£‚Ñ0ú0zŒþŒ~F¿£OÀèÍå!š65|*Í£ëÁh	Ý	FM`ÔF	0ÚFûÁè90zŒ~	Fï‚Ñ £­—Uà²\î —5šFKÁhm £8m£GÁèÉ‹…0F—ƒÑ,0ª£ÛÀ¨	Œ £nx£ÇÁè £“`tŒ>£¯h<Ñ6Œ®£ëÀh	­ £F0ºŒºÀèq0:FGÁè$£Áè+ª“™|<ÍÂZ™Ã¯£e`t7ÅÁè!0J‚Ñ“`ô,£“`ô6} F_ÐRÍ¢eZ-×¦Q½v-Ý¦ÕÑíÚjZ+µ0zŒž £ƒÑ`”£_Ñ{`ô1] ÝÖGÿ7ÆX‚š
+endstream
+endobj
+270 0 obj
+<</Type /FontDescriptor
+/FontName /Monaco
+/Flags 13
+/Ascent 1000
+/Descent 250
+/StemV 140.136719
+/CapHeight 757.8125
+/ItalicAngle 0
+/FontBBox [-609.86328 -420.89844 804.19922 1222.65625]
+/FontFile2 269 0 R>>
+endobj
+271 0 obj
+<</Type /Font
+/FontDescriptor 270 0 R
+/BaseFont /Monaco
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo <</Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0>>
+/W [0 135 600.09766]
+/DW 0>>
+endobj
+272 0 obj
+<</Filter /FlateDecode
+/Length 347>> stream
+xœ]’Énƒ0†ï<…é!ÂY$„”FâÐE%} b)R1–!Þ¾¶'‹T$°þÏóÏ˜§eu¨L7‘ôÓª†‰´ÑÆáê3\:“0Nt§¦›Š_Õ76I½¹žÇ	úÊ´C’ç„¤_~wœÜL;=œá%I?œ×™Y|—µ×õÕÚ_èÁL„&EA4´>Ó[cß›HmËJûýnš—ÞóŒ8ÍšáiÔ a´×˜$9õOAò£ŠŒþ·/ÐunÕOãB´ØúhJ³U”ä¨ŽQmÖ^qÊyÌtó°GŠgE]TÆ…Óh¦+„k„áa‰pðcËædx<9Ù!ÚÅá+úÐ.öry¯Énï"Ä_æX]`=‰ÕE†íÇæÈ{HXV˜Sbõì€pkö&ô?Ü“ÇpÕÕ9?×x™â@Ã(;ûf\áýÈ³·
+endstream
+endobj
+5 0 obj
+<</Type /Font
+/Subtype /Type0
+/BaseFont /Monaco
+/Encoding /Identity-H
+/DescendantFonts [271 0 R]
+/ToUnicode 272 0 R>>
+endobj
+xref
+0 273
+0000000000 65535 f 
+0000000015 00000 n 
+0000090162 00000 n 
+0000000271 00000 n 
+0000111289 00000 n 
+0000135228 00000 n 
+0000000308 00000 n 
+0000000384 00000 n 
+0000000631 00000 n 
+0000000898 00000 n 
+0000001285 00000 n 
+0000001575 00000 n 
+0000001962 00000 n 
+0000002350 00000 n 
+0000002605 00000 n 
+0000002952 00000 n 
+0000003361 00000 n 
+0000003751 00000 n 
+0000004030 00000 n 
+0000004368 00000 n 
+0000004768 00000 n 
+0000005106 00000 n 
+0000005506 00000 n 
+0000005853 00000 n 
+0000006243 00000 n 
+0000006652 00000 n 
+0000006917 00000 n 
+0000007224 00000 n 
+0000007511 00000 n 
+0000007819 00000 n 
+0000008139 00000 n 
+0000008468 00000 n 
+0000008802 00000 n 
+0000009123 00000 n 
+0000009453 00000 n 
+0000009760 00000 n 
+0000010017 00000 n 
+0000010369 00000 n 
+0000010770 00000 n 
+0000011255 00000 n 
+0000011588 00000 n 
+0000012047 00000 n 
+0000012429 00000 n 
+0000012777 00000 n 
+0000013168 00000 n 
+0000013348 00000 n 
+0000090679 00000 n 
+0000015556 00000 n 
+0000015832 00000 n 
+0000016173 00000 n 
+0000016647 00000 n 
+0000017037 00000 n 
+0000017295 00000 n 
+0000017589 00000 n 
+0000017932 00000 n 
+0000018226 00000 n 
+0000018569 00000 n 
+0000018851 00000 n 
+0000019108 00000 n 
+0000019386 00000 n 
+0000019686 00000 n 
+0000020080 00000 n 
+0000020459 00000 n 
+0000020821 00000 n 
+0000021215 00000 n 
+0000021594 00000 n 
+0000021954 00000 n 
+0000022213 00000 n 
+0000022556 00000 n 
+0000022871 00000 n 
+0000023152 00000 n 
+0000023467 00000 n 
+0000023784 00000 n 
+0000024045 00000 n 
+0000024339 00000 n 
+0000024676 00000 n 
+0000024958 00000 n 
+0000025281 00000 n 
+0000025606 00000 n 
+0000025941 00000 n 
+0000026290 00000 n 
+0000026575 00000 n 
+0000026849 00000 n 
+0000027180 00000 n 
+0000027583 00000 n 
+0000028011 00000 n 
+0000028429 00000 n 
+0000028817 00000 n 
+0000029146 00000 n 
+0000029530 00000 n 
+0000029957 00000 n 
+0000091225 00000 n 
+0000031462 00000 n 
+0000031863 00000 n 
+0000032251 00000 n 
+0000032669 00000 n 
+0000032997 00000 n 
+0000033379 00000 n 
+0000033764 00000 n 
+0000034189 00000 n 
+0000034589 00000 n 
+0000035007 00000 n 
+0000035304 00000 n 
+0000035570 00000 n 
+0000035872 00000 n 
+0000036248 00000 n 
+0000036550 00000 n 
+0000036928 00000 n 
+0000037216 00000 n 
+0000037518 00000 n 
+0000037894 00000 n 
+0000038163 00000 n 
+0000038553 00000 n 
+0000038843 00000 n 
+0000039231 00000 n 
+0000039619 00000 n 
+0000039877 00000 n 
+0000040181 00000 n 
+0000040519 00000 n 
+0000040798 00000 n 
+0000041102 00000 n 
+0000041414 00000 n 
+0000041671 00000 n 
+0000041964 00000 n 
+0000042337 00000 n 
+0000042715 00000 n 
+0000043072 00000 n 
+0000043428 00000 n 
+0000043795 00000 n 
+0000044090 00000 n 
+0000044457 00000 n 
+0000044831 00000 n 
+0000045208 00000 n 
+0000045563 00000 n 
+0000045917 00000 n 
+0000046198 00000 n 
+0000046454 00000 n 
+0000091815 00000 n 
+0000047966 00000 n 
+0000048274 00000 n 
+0000048576 00000 n 
+0000048878 00000 n 
+0000049155 00000 n 
+0000049489 00000 n 
+0000049746 00000 n 
+0000050046 00000 n 
+0000050399 00000 n 
+0000050709 00000 n 
+0000051062 00000 n 
+0000051360 00000 n 
+0000051640 00000 n 
+0000052012 00000 n 
+0000052290 00000 n 
+0000052594 00000 n 
+0000052862 00000 n 
+0000053167 00000 n 
+0000053527 00000 n 
+0000053832 00000 n 
+0000054192 00000 n 
+0000054482 00000 n 
+0000054739 00000 n 
+0000055049 00000 n 
+0000055330 00000 n 
+0000055671 00000 n 
+0000055937 00000 n 
+0000056292 00000 n 
+0000056580 00000 n 
+0000056907 00000 n 
+0000057166 00000 n 
+0000057464 00000 n 
+0000057763 00000 n 
+0000058045 00000 n 
+0000058384 00000 n 
+0000058723 00000 n 
+0000058993 00000 n 
+0000059331 00000 n 
+0000059669 00000 n 
+0000060071 00000 n 
+0000060473 00000 n 
+0000060810 00000 n 
+0000061212 00000 n 
+0000061502 00000 n 
+0000092406 00000 n 
+0000062868 00000 n 
+0000063125 00000 n 
+0000063423 00000 n 
+0000063701 00000 n 
+0000063997 00000 n 
+0000064295 00000 n 
+0000064607 00000 n 
+0000064927 00000 n 
+0000065245 00000 n 
+0000065565 00000 n 
+0000065890 00000 n 
+0000066201 00000 n 
+0000066458 00000 n 
+0000066754 00000 n 
+0000067107 00000 n 
+0000067456 00000 n 
+0000067816 00000 n 
+0000068223 00000 n 
+0000068504 00000 n 
+0000068800 00000 n 
+0000069205 00000 n 
+0000069554 00000 n 
+0000069913 00000 n 
+0000070265 00000 n 
+0000070561 00000 n 
+0000070921 00000 n 
+0000071328 00000 n 
+0000071681 00000 n 
+0000072031 00000 n 
+0000072289 00000 n 
+0000072592 00000 n 
+0000072889 00000 n 
+0000073188 00000 n 
+0000073507 00000 n 
+0000073822 00000 n 
+0000074124 00000 n 
+0000074440 00000 n 
+0000074762 00000 n 
+0000075079 00000 n 
+0000075396 00000 n 
+0000075676 00000 n 
+0000075932 00000 n 
+0000076245 00000 n 
+0000076543 00000 n 
+0000076836 00000 n 
+0000077228 00000 n 
+0000077569 00000 n 
+0000093021 00000 n 
+0000078865 00000 n 
+0000079178 00000 n 
+0000079495 00000 n 
+0000079796 00000 n 
+0000080220 00000 n 
+0000080515 00000 n 
+0000080909 00000 n 
+0000081224 00000 n 
+0000081502 00000 n 
+0000081769 00000 n 
+0000082058 00000 n 
+0000082445 00000 n 
+0000082831 00000 n 
+0000083217 00000 n 
+0000083475 00000 n 
+0000083818 00000 n 
+0000084114 00000 n 
+0000084415 00000 n 
+0000084719 00000 n 
+0000084998 00000 n 
+0000085318 00000 n 
+0000085581 00000 n 
+0000085922 00000 n 
+0000086254 00000 n 
+0000086539 00000 n 
+0000086882 00000 n 
+0000087225 00000 n 
+0000087512 00000 n 
+0000087854 00000 n 
+0000088182 00000 n 
+0000088526 00000 n 
+0000088851 00000 n 
+0000093516 00000 n 
+0000093611 00000 n 
+0000093662 00000 n 
+0000110199 00000 n 
+0000110425 00000 n 
+0000110905 00000 n 
+0000111427 00000 n 
+0000134365 00000 n 
+0000134589 00000 n 
+0000134809 00000 n 
+trailer
+<</Size 273
+/Root 264 0 R
+/Info 1 0 R>>
+startxref
+135361
+%%EOF
