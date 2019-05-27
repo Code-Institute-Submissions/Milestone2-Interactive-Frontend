@@ -43,11 +43,11 @@ describe("initial startup values and function calls", function() {
 describe("function generateCards(num)", function() {
     beforeEach(function() {
         setFixtures(`<div class="playfield vhalign"></div>`);
-        // jasmine.clock().install();
+        jasmine.clock().install();
     });
 
     afterEach(function() {
-        // jasmine.clock().uninstall();
+        jasmine.clock().uninstall();
     });
 
     it("should exist", function() {
@@ -55,12 +55,14 @@ describe("function generateCards(num)", function() {
     });
 
     it("should clear DOM elements of $('.playfield')", function() {
+        jasmine.clock().tick(1000);
         expect($(".playfield").children().length).toBe(0);
     });
 
     it("should generate 9 cards when called as generateCards(9)", function() {
         let playFieldSize = 9;
         generateCards(playFieldSize);
+        jasmine.clock().tick(1000);
         expect($(".cardshell").length).toBe(8);
         expect($(".front").length).toBe(8);
         expect($(".back").length).toBe(8);
@@ -70,6 +72,7 @@ describe("function generateCards(num)", function() {
     it("should generate 16 cards when called as generateCards(16)", function() {
         let playFieldSize = 16;
         generateCards(playFieldSize);
+        jasmine.clock().tick(1000);
         expect($(".cardshell").length).toBe(16);
         expect($(".front").length).toBe(16);
         expect($(".back").length).toBe(16);
@@ -78,6 +81,7 @@ describe("function generateCards(num)", function() {
     it("should generate 36 cards when called as generateCards(36)", function() {
         let playFieldSize = 36;
         generateCards(playFieldSize);
+        jasmine.clock().tick(1000);
         expect($(".cardshell").length).toBe(36);
         expect($(".front").length).toBe(36);
         expect($(".back").length).toBe(36);
@@ -88,11 +92,11 @@ describe("function setCardshellSize(num)", function() {
     beforeEach(function() {
         setFixtures(`<div class="playfield vhalign"></div>`);
         $(".playfield").css('width', '400px').css('height', '400px');
-        // jasmine.clock().install();
+        jasmine.clock().install();
     });
 
     afterEach(function() {
-        // jasmine.clock().uninstall();
+        jasmine.clock().uninstall();
     });
 
     it("should exist", function() {
@@ -104,6 +108,7 @@ describe("function setCardshellSize(num)", function() {
         let playFieldSize = 9;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
+        jasmine.clock().tick(1000);
         expect($(".cardshell").css("width")).toBe('126.797px');
         expect($(".cardshell").css("height")).toBe('126.797px');
     });
@@ -112,6 +117,7 @@ describe("function setCardshellSize(num)", function() {
         let playFieldSize = 9;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
+        jasmine.clock().tick(1000);
         expect(CardRowlength).toBe(3);
     });
 
@@ -120,6 +126,7 @@ describe("function setCardshellSize(num)", function() {
         let playFieldSize = 16;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
+        jasmine.clock().tick(1000);
         expect($(".cardshell").css("width")).toBe('94.7969px');
         expect($(".cardshell").css("height")).toBe('94.7969px');
     });
@@ -128,6 +135,7 @@ describe("function setCardshellSize(num)", function() {
         let playFieldSize = 16;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
+        jasmine.clock().tick(1000);
         expect(CardRowlength).toBe(4);
     });
 
@@ -136,6 +144,7 @@ describe("function setCardshellSize(num)", function() {
         let playFieldSize = 36;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
+        jasmine.clock().tick(1000);
         expect($(".cardshell").css("width")).toBe('61.5938px');
         expect($(".cardshell").css("height")).toBe('61.5938px');
     });
@@ -144,6 +153,7 @@ describe("function setCardshellSize(num)", function() {
         let playFieldSize = 36;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
+        jasmine.clock().tick(1000);
         expect(CardRowlength).toBe(6);
     });
 });
@@ -274,9 +284,12 @@ describe("function fieldInit(num)", function() {
 describe("function prepAndDeliverCardArray(num)", function() {
     beforeEach(function() {
         setFixtures(`<div class="playfield vhalign"></div>`);
+        jasmine.clock().install();
     });
 
-    afterEach(function() {});
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
 
     it("should exist", function() {
         expect(prepAndDeliverCardArray).toBeDefined();
@@ -285,6 +298,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
     describe("if called as prepAndDeliverCardArray(9)", function() {
         it("should set currentCardArray = masterCardArray.concat();", function() {
             currentCardArray = masterCardArray.concat();
+            jasmine.clock().tick(1000);
             expect(currentCardArray).toEqual(masterCardArray);
         });
 
@@ -292,6 +306,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
             let playFieldSize2 = 9;
             generateCards(playFieldSize2);
             let playFieldCardArray = $(".back").toArray();
+            jasmine.clock().tick(1000);
             expect(playFieldCardArray.length).toBe(8);
         });
 
@@ -299,6 +314,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
             let playFieldSize2 = 8;
             currentCardArray = masterCardArray.concat();
             currentCardArray.splice(playFieldSize2, 28);
+            jasmine.clock().tick(1000);
             expect(currentCardArray.length).toBe(8);
         });
 
@@ -308,6 +324,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
             currentCardArray.splice(playFieldSize2, 28);
             let currentCardArrayUnsorted = currentCardArray.concat();
             currentCardArray.sort(function(a, b) { return 0.5 - Math.random() });
+            jasmine.clock().tick(1000);
             expect(currentCardArray).not.toEqual(currentCardArrayUnsorted);
         });
 
@@ -321,6 +338,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
             for (let i = 0; i < playFieldSize2; i++) {
                 $(playFieldCardArray[i]).addClass(currentCardArray[i]);
             }
+            jasmine.clock().tick(1000);
             expect(playFieldCardArray).not.toBe(playFieldCardArrayBeforeAssingment);
         });
     });
@@ -328,6 +346,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
     describe("if called as prepAndDeliverCardArray(16)", function() {
         it("should set currentCardArray = masterCardArray.concat();", function() {
             currentCardArray = masterCardArray.concat();
+            jasmine.clock().tick(1000);
             expect(currentCardArray).toEqual(masterCardArray);
         });
 
@@ -335,6 +354,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
             let playFieldSize2 = 16;
             generateCards(playFieldSize2);
             let playFieldCardArray = $(".back").toArray();
+            jasmine.clock().tick(1000);
             expect(playFieldCardArray.length).toBe(16);
         });
 
@@ -342,6 +362,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
             let playFieldSize2 = 16;
             currentCardArray = masterCardArray.concat();
             currentCardArray.splice(playFieldSize2, 20);
+            jasmine.clock().tick(1000);
             expect(currentCardArray.length).toBe(16);
         });
 
@@ -351,6 +372,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
             currentCardArray.splice(playFieldSize2, 28);
             let currentCardArrayUnsorted = currentCardArray.concat();
             currentCardArray.sort(function(a, b) { return 0.5 - Math.random() });
+            jasmine.clock().tick(1000);
             expect(currentCardArray).not.toEqual(currentCardArrayUnsorted);
         });
 
@@ -364,6 +386,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
             for (let i = 0; i < playFieldSize2; i++) {
                 $(playFieldCardArray[i]).addClass(currentCardArray[i]);
             }
+            jasmine.clock().tick(1000);
             expect(playFieldCardArray).not.toBe(playFieldCardArrayBeforeAssingment);
         });
     });
@@ -371,6 +394,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
     describe("if called as prepAndDeliverCardArray(36)", function() {
         it("should set currentCardArray = masterCardArray.concat();", function() {
             currentCardArray = masterCardArray.concat();
+            jasmine.clock().tick(1000);
             expect(currentCardArray).toEqual(masterCardArray);
         });
 
@@ -378,6 +402,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
             let playFieldSize2 = 36;
             generateCards(playFieldSize2);
             let playFieldCardArray = $(".back").toArray();
+            jasmine.clock().tick(1000);
             expect(playFieldCardArray.length).toBe(36);
         });
 
@@ -386,6 +411,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
             currentCardArray = masterCardArray.concat();
             let currentCardArrayUnsorted = currentCardArray.concat();
             currentCardArray.sort(function(a, b) { return 0.5 - Math.random() });
+            jasmine.clock().tick(1000);
             expect(currentCardArray).not.toEqual(currentCardArrayUnsorted);
         });
 
@@ -398,6 +424,7 @@ describe("function prepAndDeliverCardArray(num)", function() {
             for (let i = 0; i < playFieldSize2; i++) {
                 $(playFieldCardArray[i]).addClass(currentCardArray[i]);
             }
+            jasmine.clock().tick(1000);
             expect(playFieldCardArray).not.toBe(playFieldCardArrayBeforeAssingment);
         });
     });
@@ -447,12 +474,14 @@ describe("function checkForMatch()", function() {
             let takenCard2 = $('.taken .back').eq(1);
             let classesCard1 = takenCard1.attr("class");
             let classesCard2 = takenCard2.attr("class");
+            jasmine.clock().tick(1000);
             expect(classesCard1).toBe(classesCard2);
         });
 
         it("should call function matched()", function() {
             spyOn(window, 'matched');
             checkForMatch();
+            jasmine.clock().tick(1000);
             expect(window.matched).toHaveBeenCalled();
         });
     });
@@ -475,6 +504,7 @@ describe("function checkForMatch()", function() {
         it("should call function notMatched()", function() {
             spyOn(window, 'notMatched');
             checkForMatch();
+            jasmine.clock().tick(1000);
             expect(window.notMatched).toHaveBeenCalled();
         });
     });
@@ -684,6 +714,7 @@ describe("function increasePoints", function() {
         it("should call function changeFontsizeBigLogo()", function() {
             spyOn(window, 'changeFontsizeBigLogo');
             increasePoints();
+            jasmine.clock().tick(1000);
             expect(window.changeFontsizeBigLogo).toHaveBeenCalled();
         });
 
@@ -721,6 +752,7 @@ describe("function increasePoints", function() {
         it("should call function changeFontsizeBigLogo()", function() {
             spyOn(window, 'changeFontsizeBigLogo');
             increasePoints();
+            jasmine.clock().tick(1000);
             expect(window.changeFontsizeBigLogo).toHaveBeenCalled();
         });
 
@@ -892,24 +924,39 @@ describe("function gameCompleted", function() {
     });
 
     describe("if scorePlayer1 > scorePlayer2", function() {
-        beforeEach(function() {});
+        beforeEach(function() {
+            let scorePlayer1;
+            let scorePlayer2;
+            let namePlayer1;
+            let namePlayer2;
+        });
+
+        afterEach(function() {
+
+        });
 
         it("should set $('.popupGameCompleted').html() to 'Player1 has won!'", function() {
             namePlayer1 = "Player1";
             scorePlayer1 = 4;
-            scorePlayer2 = 2;
+            scorePlayer2 = 3;
             gameCompleted();
             jasmine.clock().tick(1000);
-            expect($('.popupGameCompleted').html()).toEqual('Player1 has won!');
+            expect($('.popupGameCompleted').html()).toEqual(namePlayer1 + " has won!");
         });
     });
 
     describe("if scorePlayer2 > scorePlayer1", function() {
-        beforeEach(function() {});
+        beforeEach(function() {
+            let scorePlayer1;
+            let scorePlayer2;
+            let namePlayer1;
+            let namePlayer2;
+        });
 
         it("should set $('.popupGameCompleted').html() to 'Player2 has won!'", function() {
             scorePlayer1 = 2;
             scorePlayer2 = 4;
+            namePlayer2 = "Player2";
             gameCompleted();
             jasmine.clock().tick(1000);
             expect($('.popupGameCompleted').html()).toEqual('Player2 has won!');
@@ -917,11 +964,18 @@ describe("function gameCompleted", function() {
     });
 
     describe("if scorePlayer2 == scorePlayer1", function() {
-        beforeEach(function() {});
+        beforeEach(function() {
+            let scorePlayer1;
+            let scorePlayer2;
+            let namePlayer1;
+            let namePlayer2;
+        });
 
-        it("should set $('.popupGameCompleted').html() to 'Player2 has won!'", function() {
+        it("should set $('.popupGameCompleted').html() to 'Player1 and Player2 have same points!'", function() {
             scorePlayer1 = 4;
             scorePlayer2 = 4;
+            namePlayer1 = "Player1";
+            namePlayer2 = "Player2";
             gameCompleted();
             jasmine.clock().tick(1000);
             expect($('.popupGameCompleted').html()).toEqual('Player1 and Player2 have same points!');
@@ -970,40 +1024,6 @@ describe("function gameCompleted", function() {
         expect($('.popupGameCompleted').css("transform")).toEqual('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -10, 1)');
         expect($('.popupGameCompleted').css("z-index")).toEqual("-100");
     });
-
-
-
-    /*
-
-    describe("if CardRowlength is equal 4", function() {
-        beforeEach(function() {
-            CardRowlength = 4;
-            increasePoints();
-            jasmine.clock().tick(1000);
-        });
-
-        it("should set .checkmarkPlayer1Big font-size to 0.22x400px", function() {
-            changeFontsizeBigLogo();
-            jasmine.clock().tick(1000);
-            expect($('.checkmarkPlayer1Big, .checkmarkPlayer2Big').css('font-size')).toEqual('88.8889px');
-        });
-    });
-
-    describe("if CardRowlength is equal 6", function() {
-        beforeEach(function() {
-            CardRowlength = 6;
-            increasePoints();
-            jasmine.clock().tick(1000);
-        });
-
-        it("should set .checkmarkPlayer1Big font-size to 0.1428x400px", function() {
-            changeFontsizeBigLogo();
-            jasmine.clock().tick(1000);
-            expect($('.checkmarkPlayer1Big, .checkmarkPlayer2Big').css('font-size')).toEqual('57.1429px');
-        });
-    });
-    
-    */
 });
 
 describe("function whoIsNext()", function() {
@@ -1605,94 +1625,8 @@ describe("function showHowToPopup", function() {
     });
 });
 
-
-
-/*
-
-describe("if CardRowlength is equal 4", function() {
+describe("function checkNames", function() {
     beforeEach(function() {
-        CardRowlength = 4;
-        increasePoints();
-        jasmine.clock().tick(1000);
-    });
-
-    it("should set .checkmarkPlayer1Big font-size to 0.22x400px", function() {
-        changeFontsizeBigLogo();
-        jasmine.clock().tick(1000);
-        expect($('.checkmarkPlayer1Big, .checkmarkPlayer2Big').css('font-size')).toEqual('88.8889px');
-    });
-});
-
-describe("if CardRowlength is equal 6", function() {
-    beforeEach(function() {
-        CardRowlength = 6;
-        increasePoints();
-        jasmine.clock().tick(1000);
-    });
-
-    it("should set .checkmarkPlayer1Big font-size to 0.1428x400px", function() {
-        changeFontsizeBigLogo();
-        jasmine.clock().tick(1000);
-        expect($('.checkmarkPlayer1Big, .checkmarkPlayer2Big').css('font-size')).toEqual('57.1429px');
-    });
-});
-    
-*/
-
-
-
-
-
-/*
-function gameCompleted() {
-    if (scorePlayer1 > scorePlayer2) {
-        $('.popupGameCompleted').html(namePlayer1 + " has won!");
-    }
-    else if (scorePlayer2 > scorePlayer1) {
-        $('.popupGameCompleted').html(namePlayer2 + " has won!");
-    }
-    else if (scorePlayer1 == scorePlayer2) {
-        $('.popupGameCompleted').html(namePlayer1 + " and " + namePlayer2 + " have same points!");
-    }
-    $('.popupGameCompleted').css("transform", "translateZ(150px)").css("z-index", "100").css("opacity", "1.0");
-    changeOpeningPlayer(ThisGameOpenedBy);
-    setTimeout(function() { // have popup for game completion visible for 4 seconds and then ... 
-        $('.popupGameCompleted').css("opacity", "0.0"); // make popup dissappear
-        firstAttemptDone = 0; // resetting indicator for first move of game done.
-        makeBtnActiveButStart();
-        setTimeout(function() { // wait a little until popup for game completion has vanished and move position in z-space.
-            $('.popupGameCompleted').css("transform", "translateZ(-10px)").css("z-index", "-100");
-        }, 1200); // wait a little until popup for game completion has vanished
-    }, 4000); // have popup for game completion visible for 4 seconds
-}
-
-*/
-
-
-
-
-
-
-
-
-
-describe("function setActivePlayer", function() {
-    beforeEach(function() {
-        setFixtures(`<div class="playerStats1 playerStatsFont vhalign">
-                <div class="namePlayer1Field vhalign">Player1:</div>
-                <div class="scorePlayer1Field vhalign">0</div>
-                <div class="checkmarkDiv vhalign">
-                    <span class="checkmarkPlayer1 glyphicon glyphicon-ok-sign"></span>
-                </div>
-            </div>
-            <div class="playerStats2 playerStatsFont vhalign">
-                <div class="namePlayer2Field vhalign">Player2:</div>
-                <div class="scorePlayer2Field vhalign">0</div>
-                <div class="checkmarkDiv vhalign">
-                    <span class="checkmarkPlayer2 glyphicon glyphicon-ok-sign"></span>
-                </div>
-            </div>
-            <div class="popup popupNext popup-font vhalign"></div>`);
         jasmine.clock().install();
     });
 
@@ -1701,116 +1635,225 @@ describe("function setActivePlayer", function() {
     });
 
     it("should exist", function() {
-        expect(setActivePlayer).toBeDefined();
+        expect(checkNames).toBeDefined();
     });
 
-    it("should set player1 to red when called as setActivePlayer('Player1')", function() {
-        var namePlayer1 = 'Player1';
-        setActivePlayer(namePlayer1);
-        expect($('.playerStats1').css('background-color')).toBe('rgb(255, 0, 0)');
-        expect($('.playerStats2').css('background-color')).toBe('rgb(128, 128, 128)');
+    describe("if #nameFieldPlayer1Form or #nameFieldPlayer2Form is empty", function() {
+        beforeEach(function() {
+            setFixtures(`<input type="text" class="form-control HowToRegFont" id="nameFieldPlayer1Form" placeholder="Pls enter name" value="">
+        <input type="text" class="form-control HowToRegFont" id="nameFieldPlayer2Form" placeholder="Pls enter name" value="">
+        <div class="popup popupCheckNames popup-font vhalign"></div>`);
+        });
+
+        afterEach(function() {
+            setFixtures(`<input type="text" class="form-control HowToRegFont" id="nameFieldPlayer1Form" placeholder="Pls enter name" value="">
+        <input type="text" class="form-control HowToRegFont" id="nameFieldPlayer2Form" placeholder="Pls enter name" value="">`);
+        });
+
+        it("should set $('.popupCheckNames').html() to 'Please fill in names<br> in both fields.'", function() {
+            checkNames();
+            jasmine.clock().tick(1000);
+            expect($('.popupCheckNames').html()).toEqual('Please fill in names<br> in both fields.');
+        });
+
+        it("should call function popupCheckNames()", function() {
+            spyOn(window, 'popupCheckNames');
+            checkNames();
+            jasmine.clock().tick(1000);
+            expect(window.popupCheckNames).toHaveBeenCalled();
+        });
     });
 
-    it("should show popupNext when called as setActivePlayer('Player1')", function() {
-        var namePlayer1 = 'Player1';
-        setActivePlayer(namePlayer1);
-        expect($('.popupNext').css('transform')).toBe('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 400, 1)');
-        $('.popupNext').css({ 'position': 'absolute', 'z-index': 400 });
-        expect($('.popupNext').css('z-index')).toBe('400');
-        expect($('.popupNext').html()).toEqual(namePlayer1 + " is next!");
-        expect($('.popupNext').css('opacity')).toBe('1');
-        jasmine.clock().tick(1500);
-        expect($('.popupNext').css('opacity')).toBe('0');
+    describe("if #nameFieldPlayer1Form or #nameFieldPlayer2Form have more than 8chars", function() {
+        beforeEach(function() {
+            setFixtures(`<input type="text" class="form-control HowToRegFont" id="nameFieldPlayer1Form" placeholder="Pls enter name" value="Player1TooLong">
+        <input type="text" class="form-control HowToRegFont" id="nameFieldPlayer2Form" placeholder="Pls enter name" value="Player2TooLong">
+        <div class="popup popupCheckNames popup-font vhalign"></div>`);
+        });
+
+        afterEach(function() {
+            setFixtures(`<input type="text" class="form-control HowToRegFont" id="nameFieldPlayer1Form" placeholder="Pls enter name" value="">
+        <input type="text" class="form-control HowToRegFont" id="nameFieldPlayer2Form" placeholder="Pls enter name" value="">`);
+        });
+
+        it("should set $('.popupCheckNames').html() to 'Please fill in names with no more than 8 characters.'", function() {
+            checkNames();
+            jasmine.clock().tick(1000);
+            expect($('.popupCheckNames').html()).toEqual('Please fill in names with no more than 8 characters.');
+        });
+
+        it("should call function popupCheckNames()", function() {
+            spyOn(window, 'popupCheckNames');
+            checkNames();
+            jasmine.clock().tick(1000);
+            expect(window.popupCheckNames).toHaveBeenCalled();
+        });
+    });
+
+    describe("if #nameFieldPlayer1Form or #nameFieldPlayer2Form have same name", function() {
+        beforeEach(function() {
+            setFixtures(`<input type="text" class="form-control HowToRegFont" id="nameFieldPlayer1Form" placeholder="Pls enter name" value="Fred">
+        <input type="text" class="form-control HowToRegFont" id="nameFieldPlayer2Form" placeholder="Pls enter name" value="Fred">
+        <div class="popup popupCheckNames popup-font vhalign"></div>`);
+        });
+
+        afterEach(function() {
+            setFixtures(`<input type="text" class="form-control HowToRegFont" id="nameFieldPlayer1Form" placeholder="Pls enter name" value="">
+        <input type="text" class="form-control HowToRegFont" id="nameFieldPlayer2Form" placeholder="Pls enter name" value="">`);
+        });
+
+        it("should set $('.popupCheckNames').html() to 'Please provide different<br> names for each player.'", function() {
+            checkNames();
+            jasmine.clock().tick(1000);
+            expect($('.popupCheckNames').html()).toEqual('Please provide different<br> names for each player.');
+        });
+
+        it("should call function popupCheckNames()", function() {
+            spyOn(window, 'popupCheckNames');
+            checkNames();
+            jasmine.clock().tick(1000);
+            expect(window.popupCheckNames).toHaveBeenCalled();
+        });
+    });
+
+    describe("if #nameFieldPlayer1Form and #nameFieldPlayer2Form have different names", function() {
+        beforeEach(function() {
+            setFixtures(`<input type="text" class="form-control HowToRegFont" id="nameFieldPlayer1Form" placeholder="Pls enter name" value="Bro">
+        <input type="text" class="form-control HowToRegFont" id="nameFieldPlayer2Form" placeholder="Pls enter name" value="Dude">
+        <div class="popup popupCheckNames popup-font vhalign"></div>`);
+        });
+
+        afterEach(function() {
+            setFixtures(`<input type="text" class="form-control HowToRegFont" id="nameFieldPlayer1Form" placeholder="Pls enter name" value="">
+        <input type="text" class="form-control HowToRegFont" id="nameFieldPlayer2Form" placeholder="Pls enter name" value="">`);
+        });
+
+        it("should call function processNames()", function() {
+            spyOn(window, 'processNames');
+            checkNames();
+            jasmine.clock().tick(1000);
+            expect(window.processNames).toHaveBeenCalled();
+        });
+    });
+});
+
+describe("function popupCheckNames", function() {
+    beforeEach(function() {
+        setFixtures(`<div class="popup popupCheckNames popup-font vhalign"></div>`);
+        jasmine.clock().install();
+    });
+
+    afterEach(function() {
+        jasmine.clock().uninstall();
+    });
+
+    it("should exist", function() {
+        expect(popupCheckNames).toBeDefined();
+    });
+
+    it("should move popupCheckNames above playfield before made visible", function() {
+        $('.popupCheckNames').css({ 'position': 'absolute', 'z-index': 500 });
+        popupCheckNames();
+        jasmine.clock().tick(1000);
+        expect($('.popupCheckNames').css("transform")).toEqual('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 500, 1)');
+        expect($('.popupCheckNames').css("z-index")).toEqual("500");
+    });
+
+    it("should set popupCheckNames to opacity 1", function() {
+        popupCheckNames();
+        jasmine.clock().tick(500);
+        expect($('.popupCheckNames').css("opacity")).toEqual("1");
+    });
+
+    it("should set popupCheckNames to opacity 0", function() {
+        popupCheckNames();
         jasmine.clock().tick(2500);
-        expect($('.popupNext').css('transform')).toBe('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -10, 1)');
-        $('.popupNext').css({ 'position': 'absolute', 'z-index': -1 });
-        expect($('.popupNext').css('z-index')).toBe('-1');
+        expect($('.popupCheckNames').css("opacity")).toEqual("0");
     });
 
-    it("should set player2 to red when called as setActivePlayer('Player2')", function() {
-        var namePlayer2 = 'Player2';
-        setActivePlayer(namePlayer2);
-        expect($('.playerStats1').css('background-color')).toBe('rgb(128, 128, 128)');
-        expect($('.playerStats2').css('background-color')).toBe('rgb(255, 0, 0)');
-    });
-
-    it("should show popupNext when called as setActivePlayer('Player2')", function() {
-        var namePlayer2 = 'Player2';
-        setActivePlayer(namePlayer2);
-        expect($('.popupNext').css('transform')).toBe('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 400, 1)');
-        $('.popupNext').css({ 'position': 'absolute', 'z-index': 400 });
-        expect($('.popupNext').css('z-index')).toBe('400');
-        expect($('.popupNext').html()).toEqual(namePlayer2 + " is next!");
-        expect($('.popupNext').css('opacity')).toBe('1');
-        jasmine.clock().tick(1500);
-        expect($('.popupNext').css('opacity')).toBe('0');
-        jasmine.clock().tick(2500);
-        expect($('.popupNext').css('transform')).toBe('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -10, 1)');
-        expect($('.popupNext').css('z-index')).toBe('-1');
+    it("should move popupCheckNames under playfield", function() {
+        $('.popupCheckNames').css({ 'position': 'absolute', 'z-index': -1 });
+        popupCheckNames();
+        jasmine.clock().tick(3000);
+        expect($('.popupCheckNames').css("transform")).toEqual('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -10, 1)');
+        expect($('.popupCheckNames').css("z-index")).toEqual("-1");
     });
 });
 
-/*
-describe("", function() {
-    // Specs are defined by calling the global Jasmine function it
+describe("function processNames", function() {
+
     beforeEach(function() {
-        setFixtures(``);
         jasmine.clock().install();
     });
-    
+
     afterEach(function() {
         jasmine.clock().uninstall();
     });
-    
+
     it("should exist", function() {
-        expect().toBeDefined();
+        expect(processNames).toBeDefined();
     });
 
-    it("", function() {
-        expect();
-        expect();
-        expect();
-    });
+    describe("steps for processing form values", function() {
+        beforeEach(function() {
+            setFixtures(`<div id="enterPlayersModal">
+        <div class="bannerPopup vhalign">
+            <div class="headRegister vhalign">SignUp players</div>
+        </div>
+        <div class="registrationText HowToRegFont vhalign">Welcome to the memory game!<br>Please enter player's name.</div>
+        <div class="formWrapper">
+            <div class="formItems HowToRegFont">Player 1's name: </div>
+            <div class="formItems"><input type="text" class="form-control HowToRegFont" id="nameFieldPlayer1Form" placeholder="Pls enter name" value="Human1">
+            </div>
+            <div class="formItems HowToRegFont">Player 2's name: </div>
+            <div class="formItems"><input type="text" class="form-control HowToRegFont" id="nameFieldPlayer2Form" placeholder="Pls enter name" value="Human2">
+            </div>
+        </div>
+        <div class="saveBtnWrapper vhalign">
+            <div class="btn btn-default btn-success HowToRegFont" id="saveBtn">Save</div>
+        </div>
+    </div><div class="namePlayer1Field vhalign">Player1:</div>
+    <div class="namePlayer2Field vhalign">Player2:</div>`);
+            let namePlayer1;
+            let namePlayer2;
+        });
 
-    it("", function() {
-        expect();
-        expect();
-        expect();
+        it("should assign value of #nameFieldPlayer1Form to namePlayer1", function() {
+            processNames();
+            jasmine.clock().tick(1000);
+            expect(namePlayer1).toEqual("Human1");
+        });
+
+        it("should assign value of namePlayer1 to $('namePlayer1Field').html()", function() {
+            processNames();
+            jasmine.clock().tick(1000);
+            expect($('.namePlayer1Field').html()).toEqual(namePlayer1 + ": ");
+        });
+        
+        it("should assign value of #nameFieldPlayer2Form to namePlayer2", function() {
+            processNames();
+            jasmine.clock().tick(1000);
+            expect(namePlayer2).toEqual("Human2");
+        });
+
+        it("should assign value of namePlayer2 to $('namePlayer2Field').html()", function() {
+            processNames();
+            jasmine.clock().tick(1000);
+            expect($('.namePlayer2Field').html()).toEqual(namePlayer2 + ": ");
+        });
+  
+        it("should set #enterPlayersModal to opacity 0", function() {
+            processNames();
+            jasmine.clock().tick(2500);
+            expect($('#enterPlayersModal').css("opacity")).toEqual("0");
+        });
+
+        it("should move #enterPlayersModal under playfield", function() {
+            $('#enterPlayersModal').css({ 'position': 'absolute', 'z-index': -1 });
+            processNames();
+            jasmine.clock().tick(1500);
+            expect($('#enterPlayersModal').css("transform")).toEqual('matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, -10, 1)');
+            expect($('#enterPlayersModal').css("z-index")).toEqual("-1");
+        });
     });
 });
-
-*/
-
-
-/*
-describe("", function() {
-    // Specs are defined by calling the global Jasmine function it
-    beforeEach(function() {
-        setFixtures(``);
-        jasmine.clock().install();
-    });
-    
-    afterEach(function() {
-        jasmine.clock().uninstall();
-    });
-    
-    it("should exist", function() {
-        expect().toBeDefined();
-    });
-
-    it("", function() {
-        expect();
-        expect();
-        expect();
-    });
-
-    it("", function() {
-        expect();
-        expect();
-        expect();
-    });
-});
-
-*/
-
-/* */
