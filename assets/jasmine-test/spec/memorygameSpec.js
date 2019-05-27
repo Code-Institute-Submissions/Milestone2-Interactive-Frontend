@@ -1,7 +1,3 @@
-/*global $
-global expect
-*/
-
 describe("initial startup values and function calls", function() {
     beforeEach(function() {
         jasmine.clock().install();
@@ -44,6 +40,7 @@ describe("function generateCards(num)", function() {
     beforeEach(function() {
         setFixtures(`<div class="playfield vhalign"></div>`);
         jasmine.clock().install();
+        let playFieldSize;
     });
 
     afterEach(function() {
@@ -60,7 +57,7 @@ describe("function generateCards(num)", function() {
     });
 
     it("should generate 9 cards when called as generateCards(9)", function() {
-        let playFieldSize = 9;
+        playFieldSize = 9;
         generateCards(playFieldSize);
         jasmine.clock().tick(1000);
         expect($(".cardshell").length).toBe(8);
@@ -70,7 +67,7 @@ describe("function generateCards(num)", function() {
     });
 
     it("should generate 16 cards when called as generateCards(16)", function() {
-        let playFieldSize = 16;
+        playFieldSize = 16;
         generateCards(playFieldSize);
         jasmine.clock().tick(1000);
         expect($(".cardshell").length).toBe(16);
@@ -79,7 +76,7 @@ describe("function generateCards(num)", function() {
     });
 
     it("should generate 36 cards when called as generateCards(36)", function() {
-        let playFieldSize = 36;
+        playFieldSize = 36;
         generateCards(playFieldSize);
         jasmine.clock().tick(1000);
         expect($(".cardshell").length).toBe(36);
@@ -93,6 +90,7 @@ describe("function setCardshellSize(num)", function() {
         setFixtures(`<div class="playfield vhalign"></div>`);
         $(".playfield").css('width', '400px').css('height', '400px');
         jasmine.clock().install();
+        let playFieldSize; 
     });
 
     afterEach(function() {
@@ -105,7 +103,7 @@ describe("function setCardshellSize(num)", function() {
 
     it("should set .cardshell dimensions to width 126.8px and height 126.8px when called as setCardshellSize(9)", function() {
         // given .playfield width and height of 400px
-        let playFieldSize = 9;
+        playFieldSize = 9;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
         jasmine.clock().tick(1000);
@@ -114,7 +112,7 @@ describe("function setCardshellSize(num)", function() {
     });
 
     it("should set CardRowlength to 3 setCardshellSize(9)", function() {
-        let playFieldSize = 9;
+        playFieldSize = 9;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
         jasmine.clock().tick(1000);
@@ -123,7 +121,7 @@ describe("function setCardshellSize(num)", function() {
 
     it("should set .cardshell dimensions to width 94.8px and height 94.8px when called as setCardshellSize(16)", function() {
         // given .playfield width and height of 400px
-        let playFieldSize = 16;
+        playFieldSize = 16;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
         jasmine.clock().tick(1000);
@@ -132,7 +130,7 @@ describe("function setCardshellSize(num)", function() {
     });
 
     it("should set CardRowlength to 4 setCardshellSize(16)", function() {
-        let playFieldSize = 16;
+        playFieldSize = 16;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
         jasmine.clock().tick(1000);
@@ -141,7 +139,7 @@ describe("function setCardshellSize(num)", function() {
 
     it("should set .cardshell dimensions to width 61.6px and height 61.6px when called as setCardshellSize(36)", function() {
         // given .playfield width and height of 400px
-        let playFieldSize = 36;
+        playFieldSize = 36;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
         jasmine.clock().tick(1000);
@@ -150,7 +148,7 @@ describe("function setCardshellSize(num)", function() {
     });
 
     it("should set CardRowlength to 6 setCardshellSize(36)", function() {
-        let playFieldSize = 36;
+        playFieldSize = 36;
         generateCards(playFieldSize);
         setCardshellSize(playFieldSize);
         jasmine.clock().tick(1000);
@@ -162,6 +160,7 @@ describe("function fieldInit(num)", function() {
     beforeEach(function() {
         setFixtures(`<div class="playfield vhalign"></div>`);
         jasmine.clock().install();
+        let playFieldSize;
     });
 
     afterEach(function() {
@@ -174,7 +173,7 @@ describe("function fieldInit(num)", function() {
 
     describe("if called as fieldInit(9)", function() {
         it("should set $('.playfield').css('opacity') to 0 on begin of fieldInit(9)", function() {
-            let playFieldSize = 9;
+            playFieldSize = 9;
             fieldInit(playFieldSize);
             jasmine.clock().tick(800);
             expect($('.playfield').css('opacity')).toBe('0');
@@ -184,7 +183,7 @@ describe("function fieldInit(num)", function() {
         });
 
         it("should call function generateCards(num)", function() {
-            let playFieldSize = 9;
+            playFieldSize = 9;
             spyOn(window, 'generateCards');
             fieldInit(playFieldSize);
             jasmine.clock().tick(1000);
@@ -192,7 +191,7 @@ describe("function fieldInit(num)", function() {
         });
 
         it("should call function setCardshellSize(num)", function() {
-            let playFieldSize = 9;
+            playFieldSize = 9;
             spyOn(window, 'setCardshellSize');
             fieldInit(playFieldSize);
             jasmine.clock().tick(1000);
@@ -200,7 +199,7 @@ describe("function fieldInit(num)", function() {
         });
 
         it("should call function prepAndDeliverCardArray(num)", function() {
-            let playFieldSize = 9;
+            playFieldSize = 9;
             spyOn(window, 'prepAndDeliverCardArray');
             fieldInit(playFieldSize);
             jasmine.clock().tick(1000);
@@ -210,7 +209,7 @@ describe("function fieldInit(num)", function() {
 
     describe("if called as fieldInit(16)", function() {
         it("should set $('.playfield').css('opacity') to 0 on begin of fieldInit(16)", function() {
-            let playFieldSize = 16;
+            playFieldSize = 16;
             fieldInit(playFieldSize);
             jasmine.clock().tick(800);
             expect($('.playfield').css('opacity')).toBe('0');
@@ -220,7 +219,7 @@ describe("function fieldInit(num)", function() {
         });
 
         it("should call function generateCards(16)", function() {
-            let playFieldSize = 16;
+            playFieldSize = 16;
             spyOn(window, 'generateCards');
             fieldInit(playFieldSize);
             jasmine.clock().tick(1000);
@@ -228,7 +227,7 @@ describe("function fieldInit(num)", function() {
         });
 
         it("should call function setCardshellSize(num)", function() {
-            let playFieldSize = 16;
+            playFieldSize = 16;
             spyOn(window, 'setCardshellSize');
             fieldInit(playFieldSize);
             jasmine.clock().tick(1000);
@@ -236,7 +235,7 @@ describe("function fieldInit(num)", function() {
         });
 
         it("should call function prepAndDeliverCardArray(num)", function() {
-            let playFieldSize = 16;
+            playFieldSize = 16;
             spyOn(window, 'prepAndDeliverCardArray');
             fieldInit(playFieldSize);
             jasmine.clock().tick(1000);
@@ -246,7 +245,7 @@ describe("function fieldInit(num)", function() {
 
     describe("if called as fieldInit(36)", function() {
         it("should set $('.playfield').css('opacity') to 0 on begin of fieldInit(36)", function() {
-            let playFieldSize = 36;
+            playFieldSize = 36;
             fieldInit(playFieldSize);
             jasmine.clock().tick(800);
             expect($('.playfield').css('opacity')).toBe('0');
@@ -256,7 +255,7 @@ describe("function fieldInit(num)", function() {
         });
 
         it("should call function generateCards(num)", function() {
-            let playFieldSize = 36;
+            playFieldSize = 36;
             spyOn(window, 'generateCards');
             fieldInit(playFieldSize);
             jasmine.clock().tick(1000);
@@ -264,7 +263,7 @@ describe("function fieldInit(num)", function() {
         });
 
         it("should call function setCardshellSize(num)", function() {
-            let playFieldSize = 36;
+            playFieldSize = 36;
             spyOn(window, 'setCardshellSize');
             fieldInit(playFieldSize);
             jasmine.clock().tick(1000);
@@ -272,7 +271,7 @@ describe("function fieldInit(num)", function() {
         });
 
         it("should call function prepAndDeliverCardArray(num)", function() {
-            let playFieldSize = 36;
+            playFieldSize = 36;
             spyOn(window, 'prepAndDeliverCardArray');
             fieldInit(playFieldSize);
             jasmine.clock().tick(1000);
@@ -285,6 +284,9 @@ describe("function prepAndDeliverCardArray(num)", function() {
     beforeEach(function() {
         setFixtures(`<div class="playfield vhalign"></div>`);
         jasmine.clock().install();
+        let playFieldSize2;
+        let playFieldCardArray;
+        let currentCardArrayUnsorted, playFieldCardArrayBeforeAssingment=[];
     });
 
     afterEach(function() {
@@ -303,15 +305,15 @@ describe("function prepAndDeliverCardArray(num)", function() {
         });
 
         it("should create an array with length of 8 out of existent .back elements", function() {
-            let playFieldSize2 = 9;
+            playFieldSize2 = 9;
             generateCards(playFieldSize2);
-            let playFieldCardArray = $(".back").toArray();
+            playFieldCardArray = $(".back").toArray();
             jasmine.clock().tick(1000);
             expect(playFieldCardArray.length).toBe(8);
         });
 
         it("should splice currentCardArray to 8 cards", function() {
-            let playFieldSize2 = 8;
+            playFieldSize2 = 8;
             currentCardArray = masterCardArray.concat();
             currentCardArray.splice(playFieldSize2, 28);
             jasmine.clock().tick(1000);
@@ -319,22 +321,22 @@ describe("function prepAndDeliverCardArray(num)", function() {
         });
 
         it("should call function to shuffle card array", function() {
-            let playFieldSize2 = 8;
+            playFieldSize2 = 8;
             currentCardArray = masterCardArray.concat();
             currentCardArray.splice(playFieldSize2, 28);
-            let currentCardArrayUnsorted = currentCardArray.concat();
+            currentCardArrayUnsorted = currentCardArray.concat();
             currentCardArray.sort(function(a, b) { return 0.5 - Math.random() });
             jasmine.clock().tick(1000);
             expect(currentCardArray).not.toEqual(currentCardArrayUnsorted);
         });
 
         it("should assign the shuffeled class array to card array on playfield", function() {
-            let playFieldSize2 = 8;
+            playFieldSize2 = 8;
             currentCardArray = masterCardArray.concat();
             currentCardArray.splice(playFieldSize2, 28);
             generateCards(playFieldSize2);
-            let playFieldCardArray = $(".back").toArray();
-            let playFieldCardArrayBeforeAssingment = playFieldCardArray.concat();
+            playFieldCardArray = $(".back").toArray();
+            playFieldCardArrayBeforeAssingment = playFieldCardArray.concat();
             for (let i = 0; i < playFieldSize2; i++) {
                 $(playFieldCardArray[i]).addClass(currentCardArray[i]);
             }
@@ -351,15 +353,15 @@ describe("function prepAndDeliverCardArray(num)", function() {
         });
 
         it("should create an array with length of 16 out of existent .back elements", function() {
-            let playFieldSize2 = 16;
+            playFieldSize2 = 16;
             generateCards(playFieldSize2);
-            let playFieldCardArray = $(".back").toArray();
+            playFieldCardArray = $(".back").toArray();
             jasmine.clock().tick(1000);
             expect(playFieldCardArray.length).toBe(16);
         });
 
         it("should splice currentCardArray to 16 cards", function() {
-            let playFieldSize2 = 16;
+            playFieldSize2 = 16;
             currentCardArray = masterCardArray.concat();
             currentCardArray.splice(playFieldSize2, 20);
             jasmine.clock().tick(1000);
@@ -367,22 +369,22 @@ describe("function prepAndDeliverCardArray(num)", function() {
         });
 
         it("should call function to randomize card array", function() {
-            let playFieldSize2 = 16;
+            playFieldSize2 = 16;
             currentCardArray = masterCardArray.concat();
             currentCardArray.splice(playFieldSize2, 28);
-            let currentCardArrayUnsorted = currentCardArray.concat();
+            currentCardArrayUnsorted = currentCardArray.concat();
             currentCardArray.sort(function(a, b) { return 0.5 - Math.random() });
             jasmine.clock().tick(1000);
             expect(currentCardArray).not.toEqual(currentCardArrayUnsorted);
         });
 
         it("should assign the shuffeled class array to card array on playfield", function() {
-            let playFieldSize2 = 16;
+            playFieldSize2 = 16;
             currentCardArray = masterCardArray.concat();
             currentCardArray.splice(playFieldSize2, 20);
             generateCards(playFieldSize2);
-            let playFieldCardArray = $(".back").toArray();
-            let playFieldCardArrayBeforeAssingment = playFieldCardArray.concat();
+            playFieldCardArray = $(".back").toArray();
+            playFieldCardArrayBeforeAssingment = playFieldCardArray.concat();
             for (let i = 0; i < playFieldSize2; i++) {
                 $(playFieldCardArray[i]).addClass(currentCardArray[i]);
             }
@@ -399,28 +401,28 @@ describe("function prepAndDeliverCardArray(num)", function() {
         });
 
         it("should create an array with length of 36 out of existent .back elements", function() {
-            let playFieldSize2 = 36;
+            playFieldSize2 = 36;
             generateCards(playFieldSize2);
-            let playFieldCardArray = $(".back").toArray();
+            playFieldCardArray = $(".back").toArray();
             jasmine.clock().tick(1000);
             expect(playFieldCardArray.length).toBe(36);
         });
 
         it("should call function to randomize card array", function() {
-            let playFieldSize2 = 36;
+            playFieldSize2 = 36;
             currentCardArray = masterCardArray.concat();
-            let currentCardArrayUnsorted = currentCardArray.concat();
+            currentCardArrayUnsorted = currentCardArray.concat();
             currentCardArray.sort(function(a, b) { return 0.5 - Math.random() });
             jasmine.clock().tick(1000);
             expect(currentCardArray).not.toEqual(currentCardArrayUnsorted);
         });
 
         it("should assign the shuffeled class array to card array on playfield", function() {
-            let playFieldSize2 = 36;
+            playFieldSize2 = 36;
             currentCardArray = masterCardArray.concat();
             generateCards(playFieldSize2);
-            let playFieldCardArray = $(".back").toArray();
-            let playFieldCardArrayBeforeAssingment = playFieldCardArray.concat();
+            playFieldCardArray = $(".back").toArray();
+            playFieldCardArrayBeforeAssingment = playFieldCardArray.concat();
             for (let i = 0; i < playFieldSize2; i++) {
                 $(playFieldCardArray[i]).addClass(currentCardArray[i]);
             }
@@ -456,6 +458,7 @@ describe("function checkForMatch()", function() {
                                 <div class='card back vhalign card1'></div>
                             </div>
                         </div>`);
+            let fieldActive;
         });
 
         it("should have $('.taken .back').length of 2", function() {
@@ -470,10 +473,9 @@ describe("function checkForMatch()", function() {
         });
 
         it("should find classesCard1 =classesCard2", function() {
-            let takenCard1 = $('.taken .back').eq(0);
-            let takenCard2 = $('.taken .back').eq(1);
-            let classesCard1 = takenCard1.attr("class");
-            let classesCard2 = takenCard2.attr("class");
+            let takenCard1, takenCard2;
+            let classesCard1, classesCard2;
+            checkForMatch();
             jasmine.clock().tick(1000);
             expect(classesCard1).toBe(classesCard2);
         });
@@ -688,6 +690,8 @@ describe("function increasePoints", function() {
                     </div>
                     <div class="scorePlayer1Field vhalign"></div>
                     <div class="scorePlayer2Field vhalign"></div>`);
+        let scorePlayer1, scorePlayer2;
+        let currentPlayer;
         jasmine.clock().install();
     });
 
@@ -790,6 +794,7 @@ describe("function changeFontsizeBigLogo", function() {
                         </div>
                     </div>`);
         jasmine.clock().install();
+        let CardRowlength;
         $(".playfield").css("width", "400px");
     });
 
@@ -845,7 +850,9 @@ describe("function changeFontsizeBigLogo", function() {
 });
 
 describe("function changePlayer()", function() {
-    beforeEach(function() {});
+    beforeEach(function() {
+        let currentPlayer;
+    });
 
     afterEach(function() {});
 
@@ -878,7 +885,9 @@ describe("function changePlayer()", function() {
 });
 
 describe("function changeOpeningPlayer()", function() {
-    beforeEach(function() {});
+    beforeEach(function() {
+        let ThisGameOpenedBy;
+    });
 
     afterEach(function() {});
 
@@ -912,6 +921,10 @@ describe("function changeOpeningPlayer()", function() {
 describe("function gameCompleted", function() {
     beforeEach(function() {
         setFixtures(`<div class="popup popupGameCompleted popup-font vhalign"></div>`);
+        let scorePlayer1;
+        let scorePlayer2;
+        let namePlayer1;
+        let namePlayer2;
         jasmine.clock().install();
     });
 
@@ -924,16 +937,9 @@ describe("function gameCompleted", function() {
     });
 
     describe("if scorePlayer1 > scorePlayer2", function() {
-        beforeEach(function() {
-            let scorePlayer1;
-            let scorePlayer2;
-            let namePlayer1;
-            let namePlayer2;
-        });
+        beforeEach(function() {});
 
-        afterEach(function() {
-
-        });
+        afterEach(function() {});
 
         it("should set $('.popupGameCompleted').html() to 'Player1 has won!'", function() {
             namePlayer1 = "Player1";
@@ -946,12 +952,7 @@ describe("function gameCompleted", function() {
     });
 
     describe("if scorePlayer2 > scorePlayer1", function() {
-        beforeEach(function() {
-            let scorePlayer1;
-            let scorePlayer2;
-            let namePlayer1;
-            let namePlayer2;
-        });
+        beforeEach(function() {});
 
         it("should set $('.popupGameCompleted').html() to 'Player2 has won!'", function() {
             scorePlayer1 = 2;
@@ -964,12 +965,7 @@ describe("function gameCompleted", function() {
     });
 
     describe("if scorePlayer2 == scorePlayer1", function() {
-        beforeEach(function() {
-            let scorePlayer1;
-            let scorePlayer2;
-            let namePlayer1;
-            let namePlayer2;
-        });
+        beforeEach(function() {});
 
         it("should set $('.popupGameCompleted').html() to 'Player1 and Player2 have same points!'", function() {
             scorePlayer1 = 4;
@@ -1028,6 +1024,8 @@ describe("function gameCompleted", function() {
 
 describe("function whoIsNext()", function() {
     beforeEach(function() {
+        let firstAttemptDone;
+        let ThisGameOpenedBy;
         jasmine.clock().install();
     });
 
@@ -1504,6 +1502,7 @@ describe("function resetCounters", function() {
         setFixtures(`<div class="scorePlayer1Field vhalign">0</div>
         <div class="scorePlayer2Field vhalign">0</div>`);
         jasmine.clock().install();
+        let scorePlayer1, scorePlayer2;
     });
 
     afterEach(function() {
@@ -1829,7 +1828,7 @@ describe("function processNames", function() {
             jasmine.clock().tick(1000);
             expect($('.namePlayer1Field').html()).toEqual(namePlayer1 + ": ");
         });
-        
+
         it("should assign value of #nameFieldPlayer2Form to namePlayer2", function() {
             processNames();
             jasmine.clock().tick(1000);
@@ -1841,7 +1840,7 @@ describe("function processNames", function() {
             jasmine.clock().tick(1000);
             expect($('.namePlayer2Field').html()).toEqual(namePlayer2 + ": ");
         });
-  
+
         it("should set #enterPlayersModal to opacity 0", function() {
             processNames();
             jasmine.clock().tick(2500);
