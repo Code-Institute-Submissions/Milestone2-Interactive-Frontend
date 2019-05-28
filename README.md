@@ -11,15 +11,15 @@ It is a demonstration of different techniques of HTML 5.0, CSS 3, JQUERY and JAV
 
 <h2> Desktop version </h2>
 
-![alt tag](assets/images/thememorygame.jpg "screenshot of index.html”)
+![alt tag](assets/images/thememorygame.jpg)
 
 <h3> Mobile version, portrait </h3>
 
-![alt tag](assets/images/thememorygame-mobile-portrait.jpg "screenshot of index.html”)
+![alt tag](compliance/wireframing/thememorygame-mobile-portrait.jpg)
 
 <h3> Mobile version, landscape </h3>
 
-![alt tag](assets/images/thememorygame-mobile-landscape.jpg "screenshot of index.html”)
+![alt tag](compliance/wireframing/thememorygame-mobile-landscape.jpg)
 
 
 <h1> UX </h1>
@@ -36,17 +36,17 @@ The game should be loaded quickly, provide an easy to understand layout and rule
 
 <h3> Mobile version, portrait </h3>
 
-![alt tag](assets/images/thememorygame_portrait.png "screenshot of index.html”)
+![alt tag](compliance/wireframing/thememorygame_portrait.png)
 
 
 <h3> Mobile version, landscape </h3>
 
-![alt tag](assets/images/thememorygame_landscape.png "screenshot of index.html”)
+![alt tag](compliance/wireframing/thememorygame_landscape.png)
 
 
 <h3> SignUp dialog </h3>
 
-![alt tag](assets/images/thememorygame_signup dialog.png "screenshot of index.html”)
+![alt tag](compliance/wireframing/thememorygame_signup.png)
 
 The only difference between mobile and desktop landscape are some minor changes in fontsize.
 
