@@ -413,7 +413,7 @@ $(document).ready(function() {
         }, 2200);
         setTimeout(function() {
             $('.popupCheckNames').css("transform", "translateZ(-10px)").css("z-index", "-1");
-        }, 2800);
+        }, 3000);
     }
 
     // string values of textinput fields written to HTML elements and internal variables
