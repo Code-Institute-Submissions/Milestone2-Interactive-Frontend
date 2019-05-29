@@ -135,14 +135,15 @@ All compliance reports for HTML, CSS, JS and JASMINE testing can be viewed under
 
 <h1> Testing </h1>
 
-![alt tag](compliance/wireframing/thememorygame-jasmine-screenshot.png)
+![alt tag](compliance/thememorygame-jasmine-screenshot.png)
 
 All 28 functions have been tested by Jasmine. Once I figured out how to describe the functions in jasmine, it was progressing quickly through entire structure of thememorygame.js file. It took indeed some time to define all 183 specs, but it was helpful to get it waxed.
 
-<em><b>Link to full jasmine report: <a href="https://poldi2018.github.io/Milestone2-Interactive-Frontend/" target=“_blank”></a></b></em>
+<em><b>Link to full jasmine report: <a href="compliance/thememorygame_JasmineReport.pdf" target=“_blank”>thememorygame_JasmineReport.pdf</a></b></em>
+
 All jasmine related files used for testing can be found in dedicated
 
-<em><b>jasmine-test folder: <a href="assets/jasmine-test/" target=“_blank”>jasmine-test</a></b></em>
+<em><b>jasmine-test folder: <a href="assets/jasmine-test/" target=“_blank”>jasmine-test folder</a></b></em>
 
 Test environment can be executed with jasmine-test.html.
 
