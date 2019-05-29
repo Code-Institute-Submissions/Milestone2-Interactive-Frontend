@@ -193,7 +193,7 @@ $(document).ready(function() {
         }
     }
 
-    // function for changing player
+    // changing player
     function changePlayer(str) {
         let activePlayer = str;
         if (activePlayer == "Player1") {
