@@ -123,14 +123,14 @@ Link: https://fonts.googleapis.com/css?family=Dosis
 
 <em><b>Please note: The functions written in JavaScript are described in a separate file:</b></em>
 
-<em><b> Link to description of functions: <a href=“specialremarks-js.md" target=“_blank">specialremarks-js.md</a></b></em>
+<em><b> Link to description of functions: <a href="specialremarks-js.md" target="_blank">specialremarks-js.md</a></b></em>
 
 
 <h1> Compliance reports </h1>
 
 All compliance reports for HTML, CSS, JS and JASMINE testing can be viewed under following
 
-<em><b>Link to compliance folder: <a href=“compliance/" target=“_blank">compliance report folder</a></b></em>
+<em><b>Link to compliance folder: <a href="compliance/" target="_blank">compliance report folder</a></b></em>
 
 
 <h1> Testing </h1>
@@ -139,11 +139,11 @@ All compliance reports for HTML, CSS, JS and JASMINE testing can be viewed under
 
 All 28 functions have been tested by Jasmine. Once I figured out how to describe the functions in jasmine, it was progressing quickly through entire structure of thememorygame.js file. It took indeed some time to define all 183 specs, but it was helpful to get it waxed.
 
-<em><b>Link to full jasmine report: <a href="compliance/thememorygame_JasmineReport.pdf" target=“_blank”>thememorygame_JasmineReport.pdf</a></b></em>
+<em><b>Link to full jasmine report: <a href="compliance/thememorygame_JasmineReport.pdf" target="_blank">thememorygame_JasmineReport.pdf</a></b></em>
 
 All jasmine related files used for testing can be found in dedicated
 
-<em><b>jasmine-test folder: <a href="assets/jasmine-test/" target=“_blank”>jasmine-test folder</a></b></em>
+<em><b>jasmine-test folder: <a href="assets/jasmine-test/" target="_blank">jasmine-test folder</a></b></em>
 
 Test environment can be executed with jasmine-test.html.
 
