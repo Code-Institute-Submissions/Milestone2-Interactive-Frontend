@@ -46,17 +46,10 @@
   font-weight: 600; }
 
 .vhalign {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
 
 .field8Btn,
 .field16Btn,
@@ -65,17 +58,10 @@
 .stopBtn,
 .enterPlayersBtn,
 .howToBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
 
 .testframe1 {
   border: 2px solid darkred;
@@ -190,47 +176,24 @@ body {
 
 .bubbleIcon {
   font-weight: 300;
-  -webkit-animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1);
-          animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
-
-@-webkit-keyframes bubble {
-  0% {
-    opacity: 0.0;
-    -webkit-transform: scale(1);
-            transform: scale(1); }
-  50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
-  100% {
-    opacity: 1.0;
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+  animation: bubble 1s forwards cubic-bezier(0, 0, 0.58, 1); }
 
 @keyframes bubble {
   0% {
     opacity: 0.0;
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    transform: scale(1); }
   50% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
+    transform: scale(1.2); }
   100% {
     opacity: 1.0;
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+    transform: scale(1); } }
 .cardshell {
   position: relative;
   width: 31.7%;
   height: 31.7%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: -webkit-transform 0.6s ease-in-out;
-  -o-transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotateY(0);
   transition: transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
   cursor: pointer; }
 
 .dummycardshell {
@@ -250,29 +213,20 @@ body {
   border-radius: 10px; }
 
 .back {
-  -webkit-transform: rotateY(180deg) translateZ(1px);
-          transform: rotateY(180deg) translateZ(1px);
+  transform: rotateY(180deg) translateZ(1px);
   border: 2px solid lightgreen;
   border-radius: 10px; }
 
 .showMe {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg); }
+  transform: rotateY(180deg); }
 
 #howToModal,
 #enterPlayersModal {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding-top: 20px;
   padding-left: 5px;
   padding-right: 5px;
@@ -302,16 +256,10 @@ body {
 .formWrapper {
   width: 95%;
   height: 17vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  flex-wrap: wrap; }
 
 .formItems {
   width: 46%;
@@ -339,10 +287,7 @@ body {
 #enterPlayersModal {
   opacity: 0.0;
   z-index: -1;
-  -webkit-transform: translateZ(-10px);
-          transform: translateZ(-10px);
-  -webkit-transition: opacity .8s ease-in-out;
-  -o-transition: opacity .8s ease-in-out;
+  transform: translateZ(-10px);
   transition: opacity .8s ease-in-out; }
 
 .popupMatch {
@@ -444,15 +389,10 @@ body {
 
 @media screen and (orientation: portrait) {
   .outershell {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
     width: 98vw;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -478,32 +418,20 @@ body {
     width: 95%; }
 
   .controlPanelWrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%; }
 
   .buttonfield {
     width: 100%;
     height: 76%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap; }
 
   .playStatsWrapper {
     width: 100%;
@@ -523,33 +451,20 @@ body {
     height: 92vw; }
 
   .playfield {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
     width: 90vw;
-    height: 90vw; } }
+    height: 90vw;
+    opacity: 0; } }
 @media screen and (orientation: landscape) {
   .outershell {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 98vw;
     height: 98vh;
     margin-top: 4px;
@@ -565,46 +480,28 @@ body {
     text-align: center; }
 
   .controlPanelRowHeight {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     width: 44vw;
     height: 78vh; }
 
   .controlPanelWrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     width: 90%;
     height: 24vw; }
 
   .buttonfield {
     width: 100%;
     height: 71%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap; }
 
   .playStatsWrapper {
     width: 100%;
@@ -622,16 +519,10 @@ body {
     font-weight: 400; }
 
   .playfieldRowHeight {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     width: 52vw;
     height: 78vh; }
 
@@ -640,20 +531,14 @@ body {
     height: 40.5vw; }
 
   .playfield {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
     width: 39.5vw;
-    height: 39.5vw; }
+    height: 39.5vw;
+    opacity: 0; }
 
   .bannerPopup {
     width: 96%;
@@ -663,16 +548,10 @@ body {
     height: 19.2vh; }
 
   .formWrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     width: 85%;
     height: 19vh; }
 
@@ -792,17 +671,10 @@ body {
     height: 12vh; } }
 @media screen and (width: 1024px) and (height: 768px) {
   .outershell {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 98vw;
     height: 98vh;
     margin-top: 4px;
@@ -818,46 +690,28 @@ body {
     text-align: center; }
 
   .controlPanelRowHeight {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     width: 44vw;
     height: 78vh; }
 
   .controlPanelWrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     width: 90%;
     height: 24vw; }
 
   .buttonfield {
     width: 100%;
     height: 71%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap; }
 
   .playStatsWrapper {
     width: 100%;
@@ -881,16 +735,10 @@ body {
     font-weight: 400; }
 
   .playfieldRowHeight {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     width: 52vw;
     height: 78vh; }
 
@@ -899,20 +747,14 @@ body {
     height: 49vw; }
 
   .playfield {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
     width: 48vw;
-    height: 48vw; }
+    height: 48vw;
+    opacity: 0; }
 
   .DosisFont,
   .DosisFontHowTo,
@@ -925,17 +767,10 @@ body {
     border-radius: 15px; } }
 @media screen and (width: 1366px) and (height: 1024px) {
   .outershell {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 98vw;
     height: 98vh;
     margin-top: 4px;
@@ -951,46 +786,28 @@ body {
     text-align: center; }
 
   .controlPanelRowHeight {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     width: 44vw;
     height: 78vh; }
 
   .controlPanelWrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     width: 90%;
     height: 24vw; }
 
   .buttonfield {
     width: 100%;
     height: 71%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap; }
 
   .playStatsWrapper {
     width: 100%;
@@ -1008,16 +825,10 @@ body {
     font-weight: 400; }
 
   .playfieldRowHeight {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-line-pack: space-evenly;
-        align-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: wrap;
     width: 52vw;
     height: 78vh; }
 
@@ -1026,20 +837,14 @@ body {
     height: 49vw; }
 
   .playfield {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
     transition: opacity .5s ease-in-out;
     width: 48vw;
-    height: 48vw; }
+    height: 48vw;
+    opacity: 0; }
 
   .DosisFont,
   .DosisFontHowTo,
@@ -1050,3 +855,5 @@ body {
   #nameFieldPlayer2Form {
     height: 5vh;
     border-radius: 15px; } }
+
+/*# sourceMappingURL=main.css.map */
