@@ -130,14 +130,12 @@ Link: https://fonts.googleapis.com/css?family=Dosis
 
 All compliance reports for HTML, CSS, JS and JASMINE testing can be viewed under following
 
-<em><b>Link to compliance folder: <a href=“compliance/" target=“_blank"></a></b></em>
-
-![alt tag](compliance/wireframing/thememorygame-jasmine-screenshot.png)
+<em><b>Link to compliance folder: <a href=“compliance/" target=“_blank">compliance report folder</a></b></em>
 
 
 <h1> Testing </h1>
 
-![alt tag](compliance/wireframing/thememorygame-jasmine-screenshot.jpg)
+![alt tag](compliance/wireframing/thememorygame-jasmine-screenshot.png)
 
 All 28 functions have been tested by Jasmine. Once I figured out how to describe the functions in jasmine, it was progressing quickly through entire structure of thememorygame.js file. It took indeed some time to define all 183 specs, but it was helpful to get it waxed.
 
