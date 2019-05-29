@@ -132,7 +132,7 @@ All compliance reports for HTML, CSS, JS and JASMINE testing can be viewed under
 
 <em><b>Link to compliance folder: <a href=“compliance/" target=“_blank"></a></b></em>
 
-![alt tag](compliance/wireframing/thememorygame-jasmine-screenshot.jpg)
+![alt tag](compliance/wireframing/thememorygame-jasmine-screenshot.png)
 
 
 <h1> Testing </h1>
@@ -142,9 +142,9 @@ All compliance reports for HTML, CSS, JS and JASMINE testing can be viewed under
 All 28 functions have been tested by Jasmine. Once I figured out how to describe the functions in jasmine, it was progressing quickly through entire structure of thememorygame.js file. It took indeed some time to define all 183 specs, but it was helpful to get it waxed.
 
 <em><b>Link to full jasmine report: <a href="https://poldi2018.github.io/Milestone2-Interactive-Frontend/" target=“_blank”></a></b></em>
-All jasmine related files used for testing can be found in
+All jasmine related files used for testing can be found in dedicated
 
-<em><b>jasmine-test folder: <a href="assets/jasmine-test" target=“_blank”></a></b></em>
+<em><b>jasmine-test folder: <a href="assets/jasmine-test/" target=“_blank”>jasmine-test</a></b></em>
 
 Test environment can be executed with jasmine-test.html.
 
@@ -259,9 +259,6 @@ w3school: How to use the math functionality for sorting of array.
 balsamiq for creation of wireframes
 fontawesome was used and replaced the bootstrap glyphicons
 Google Dosis font is being used in this project
-
-
-
 
 
 No code has been copied from other creators, everything was conceived by myself.
