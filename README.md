@@ -123,7 +123,9 @@ Link: https://fonts.googleapis.com/css?family=Dosis
 
 <em><b>Please note: The functions written in JavaScript are described in a separate file:</b></em>
 
-<em><b> Link to description of functions: <a href="specialremarks-js.md" target="_blank">specialremarks-js.md</a></b></em>
+<em><b> Link to file with remarks on functions: <a href="specialremarks-js.md" target="_blank">specialremarks-js.md</a></b></em>
+
+There are also some minor remarks in thememorygame.js.
 
 
 <h1> Compliance reports </h1>

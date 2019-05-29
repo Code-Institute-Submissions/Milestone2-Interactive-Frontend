@@ -20,7 +20,21 @@ $(document).ready(function() {
     let stopBtnActive = false;
 
     // implementations of functions
-    
+
+    // major function for generating playfield
+    function fieldInit(num) {
+        let playFieldSize = num;
+        $('.playfield').css('opacity', '0.0');
+        setTimeout(function() {
+            generateCards(playFieldSize);
+            setCardshellSize(playFieldSize);
+            prepAndDeliverCardArray(playFieldSize);
+        }, 800);
+        setTimeout(function() {
+            $('.playfield').css('opacity', '1.0');
+        }, 1200);
+    }
+
     // generating DOM card elements
     function generateCards(num) {
         let playFieldSize = num;
@@ -37,7 +51,7 @@ $(document).ready(function() {
         $(".cardshell").append("<div class='card back vhalign'></div>");
     }
 
-// setting cardshell dimensions accordingly to fit in playfield
+    // setting cardshell dimensions accordingly to fit in playfield
     function setCardshellSize(num) {
         let playFieldSize2 = num;
         if (playFieldSize2 == 9) {
@@ -55,20 +69,6 @@ $(document).ready(function() {
             $(".cardshell").css("width", "15.4%").css("height", "15.4%");
             $(".dummycardshell").css("width", "15.4%").css("height", "15.4%");
         }
-    }
-
-    // major function for generating playfield
-    function fieldInit(num) {
-        let playFieldSize = num;
-        $('.playfield').css('opacity', '0.0');
-        setTimeout(function() {
-            generateCards(playFieldSize);
-            setCardshellSize(playFieldSize);
-            prepAndDeliverCardArray(playFieldSize);
-        }, 800);
-        setTimeout(function() {
-            $('.playfield').css('opacity', '1.0');
-        }, 1200);
     }
 
     // preparation and delivery of playfield array 
@@ -361,7 +361,7 @@ $(document).ready(function() {
         startBtnActive = true;
         stopBtnActive = false;
     }
-    
+
     // reactivate all buttons but start button 
     function makeBtnActiveButStart() {
         // ... remove dimmed state
