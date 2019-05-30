@@ -49,6 +49,11 @@ The game should be loaded quickly, provide an easy to understand layout and rule
 
 ![alt tag](compliance/wireframing/thememorygame_popups.png)
 
+The files of mockups are located hier:
+
+<em><b>Link to wireframing folder: <a href="compliance/wireframing" target="_blank">wireframing folder</a></b></em>
+
+
 The difference between mobile and desktop landscape are some changes in fontsize and altering the proportions of div containers so they are wrapped correctly by flexbox.
 
 So the space in landscape is basically divided into a section for controlpanel and one for the playfield, each using roughly 50% of screen.
@@ -247,6 +252,16 @@ This project can be viewed by following
 <em><b> Livelink: <a href="https://poldi2018.github.io/Milestone2-Interactive-Frontend/" target="_blank">https://poldi2018.github.io/Milestone2-Interactive-Frontend/</a></b></em>
 
 
+<h2> Instructions for cloning this project  </h2>
+
+Please visit the github page to copy this 
+
+<em><b> project: <a href="https://github.com/poldi2018/Milestone2-Interactive-Frontend/" target="_blank">https://github.com/poldi2018/Milestone2-Interactive-Frontend/</a></b></em>
+
+When clicking on the right green button to "clone or download" the project, you will see a field to copy the link to clipboard.
+In local IDE please start the terminal and use "git clone https://github.com/poldi2018/Milestone2-Interactive-Frontend.git" to download project files. It can be accessed in your home directory ~/   
+
+
 <h1> Credits </h1>
 
 <h2> Media </h2>
@@ -263,3 +278,4 @@ Google Dosis font is being used in this project
 
 
 No code has been copied from other creators, everything was conceived by myself.
+This site has been created for educational purposes only.

@@ -9,7 +9,7 @@ The declared, global variables are straight forward and named according to purpo
 
 This is the major function to generate the playfield. Before working on the generation, the cards are made invisible. I saw some flickering on initial startup of the game when the cards are being created. Thats why I have set the entire playfield to opacity 0.
 Those many setTimeout functions are needed to wait for css transition to finish.
-It then calls function to have DOM elements created, set the cardsize and assign class names from mastercard to cards on playfield.
+It then calls function to have the DOM elements created, set the cardsize and assign class names from mastercard to cards on playfield.
 Finally playfield is made visible again.
 
   
