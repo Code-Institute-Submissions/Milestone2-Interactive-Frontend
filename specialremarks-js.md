@@ -7,8 +7,8 @@ The declared, global variables are straight forward and named according to purpo
  
 <h2> function fieldInit(num) </h2>
 
-This is the major function to generate the playfield. Before working on the generation, the cards are made invisible. I saw some flickering on initial startup of the game when the cards are being created. Thats why I have set the entire playfield to opacity 0.
-Those many setTimeout functions are needed to wait for css transition to finish.
+This is the major function to generate the playfield. Before working on content of playfield, is is made invisible. I saw some flickering on initial startup of the game when the cards are being created. Thats why I have set the entire playfield to opacity 0.
+Those many setTimeout functions across the game functions are needed to wait for css transition to finish.
 It then calls function to have the DOM elements created, set the cardsize and assign class names from mastercard to cards on playfield.
 Finally playfield is made visible again.
 
@@ -17,8 +17,8 @@ Finally playfield is made visible again.
     
 Function is called with amount of cards as a parameter.
 It clears first all elements from playfield and then runs through a loop for the amount of cards needed to be generated.
-When generating the playfield for 8-cards there is this special case to have a dummy cardshell element appended after 4 cards have been generated (to keep the grid 3 x 3 cards). This is placed in the middle of playfield and has the same proportions as all other cards.
-Afterwards each generated card gets two elements appended, front and back card face.
+When generating the playfield for 8-cards there is this special case to have a dummy cardshell element appended after 4 cards have been generated (to keep the grid 3 x 3 cards). It hhas the same proportions as the normal cardshell.
+Afterwards each generated card receives two elements appended, front and back card face.
     
 
 <h2> function setCardshellSize(num) </h2>  
@@ -36,7 +36,7 @@ This function copies the master array which contains class names for 18-pairs of
    
 <h2> function checkForMatch() </h2>  
    
-The idea for this logic is, to add a class 'showMe' to make cards turn and a second class 'taken' to mark them for current player's choice, every time when a card is clicked. As per design, the class names from card array have been added to the backsides of cards (class 'back') 
+The idea for this logic is, to add a class 'showMe' to make cards turn and a second class 'taken' to mark them for current player's choice, every time when a card is clicked. As per design, the class names from card array have been added to the backsides of cards (class 'back'). 
 As soon as two cards have been selected, playfield becomes inactive.
 Those two chosen cards, which are part of an array, are being extracted from array and copied into a separate variable to make a comparison.
 The class list of each card element is being compared.
@@ -54,8 +54,8 @@ If not all cards have been found, the popup for announcing another next try is b
 
 <h2> function notMatched() </h2>  
 
-After cards have entirely turned, popup is show to user to inform about no luck.
-Another delay is applied to make it possible to memorize the position of no matching cards.
+After cards have entirely turned, popup is provided to inform about no luck.
+Another delay is applied to make it possible to memorize the position of not matching cards.
 Cards are turned back by removing classes.
 Current player is being changed and whoIsNext popup is called.
 
@@ -232,14 +232,14 @@ It sets the playfield to inactive and calls function to make the button field ac
 
 <h2> Click events on cards </h2>
 
-While set active by fieldActive, it just adds showMe and taken class and call function to checkForMatch.
+While set active by fieldActive, it just adds 'showMe' and 'taken' class and call function checkForMatch.
 
 
-<h2> Got it button on Instruction popup </h2>
+<h2> Got it button on how to popup </h2>
 
 Just makes the popup dissapear by putting opacity to 0 and move below playfield.
 
 
-<h2> Got it button on Instruction popup </h2>
+<h2> Save it button on signup popup </h2>
 
 Calls the function for field validation.

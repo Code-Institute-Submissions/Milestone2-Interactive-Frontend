@@ -28,6 +28,8 @@ It is a demonstration of different techniques I have tried and tested very well 
 
 As a user, I want to test my memory skills and play against another player to have a competition.
 The game should be loaded quickly, provide an easy to understand layout and rules to play. It should allow quick matches. The user interface and controls should provide a good look and feel experience. 
+I want to play on desktop and mobile devices with same convencience.
+
 
 <h2> Wireframes </h2>
 
@@ -45,9 +47,11 @@ The game should be loaded quickly, provide an easy to understand layout and rule
 
 ![alt tag](compliance/wireframing/thememorygame_signup.png)
 
+
 <h3> popups </h3>
 
 ![alt tag](compliance/wireframing/thememorygame_popups.png)
+
 
 The files of mockups are located hier:
 
@@ -56,7 +60,7 @@ The files of mockups are located hier:
 
 The difference between mobile and desktop landscape are some changes in fontsize and altering the proportions of div containers so they are wrapped correctly by flexbox.
 
-So the space in landscape is basically divided into a section for controlpanel and one for the playfield, each using roughly 50% of screen.
+Space in landscape is basically divided into a section for controlpanel and one for the playfield, each using roughly 50% of screen.
 
 In portrait mode, the control and playfield are stacked up and fit nicely in viewport. No scrolling involved.
 
@@ -67,28 +71,36 @@ The target was to cover all mobile and desktop sizes. To achieve this I have cre
 
 <h2> Remarks on controlpanel </h2>
 
+
 <h3> ‘How to’ button</h3>
 
 To display game rules. It initially called a bootstrap modal to inform about the rules which was then replaced by custom popup
+
 
 <h3> ‘SignUp’ button </h3>
 
 To display signup dialog. This dialog is displayed on startup. I moved away from bootstrap modal and created an extra popup. But it was good for future projects to practice using the bootstrap modal. The fields to enter player’s name is being validated when the user pushes the save button. Entered names are checked against minimum string length (no empty fields allowed), maximum string length (max. 8 chars) and different names (this checkup could be removed, as duplicate names is not a problem for game engine anymore)
 
+
 <h3> ‘4 x 2’ button </h3>
+
 To select 4 x 2 playfield, 8-cards
+
 
 <h3> ‘4 x 4’ button </h3>
 
 To select 4 x 4 playfield, 16-cards
 
+
 <h3> ‘6 x 6’ button </h3>
 
 To select 6 x 6 playfield, 36-cards
 
+
 <h3> ‘start’ button </h3>
 
 To start a game.
+
 
 <h3> ‘stop’ button </h3>
 
@@ -103,10 +115,12 @@ The mechanism to disable the playfield / cards right after two cards have been c
 
 <h1> Features Left to Implement </h1>
 
-A single player mode
-different decks of cards
-a version which cannot be cheated, as currently one could just call the DOM structure and check where matching cards are located. But this way it was convenient to test the game efficiently.
-future single player mode with popups removed
+- A single player mode with popups removed.
+- Different decks of cards
+- A version which cannot be cheated, as currently one could just call the DOM structure and check where matching cards are located. But this way it was convenient to test the game efficiently.
+future 
+
+
 
 
 <h1> Technologies Used </h1>
@@ -115,22 +129,22 @@ The entire game engine is written in JavaScript. In combination with JQuery it w
 
 Beside of course HTML for the structure and CSS for applying optical styles, I used fontawesome for player’s checkmark icon. 
 
-Link: https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
-
+<b>Link:</b> https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
 
 Bootstrap was used for buttons and breakpoints.
-Link: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+
+<b>Link:</b> https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
 
 Dosis font from google was used as main font.
    
-Link: https://fonts.googleapis.com/css?family=Dosis    
+<b>Link:</b> https://fonts.googleapis.com/css?family=Dosis    
 
 
 <em><b>Please note: The functions written in JavaScript are described in a separate file:</b></em>
 
 <em><b> Link to file with remarks on functions: <a href="specialremarks-js.md" target="_blank">specialremarks-js.md</a></b></em>
 
-There are also some minor remarks in thememorygame.js.
+There are also some minor remarks in thememorygame.js. <a href="assets/js/thememorygame.js" target="_blank">thememorygame.js</a>
 
 
 <h1> Compliance reports </h1>
@@ -177,9 +191,9 @@ All units have been set to ‘vw’/‘vh’ and percentage values to fit all po
 So for the user it is possible to play short matches against another human player to have a trainings effect for the memory as per objective.
 
 
-<h1> Considerations during project </h1>
+<h1> Considerations during this project </h1>
 
-The usage of flexbox container makes it easier to arrange the content when it comes to handle the portrait and landscape mode. As I removed the modals and made my own to keep the same design, I decided to move away from bootstrap almost entirely and used flexbox.
+The usage of flexbox container makes it easier to arrange the content when it comes to handle the portrait and landscape mode. As I removed the modals and made my own to keep the same design, I decided to move away from bootstrap grid entirely and used flexbox.
 
 <h2> Performance optimizations </h2>
 
@@ -270,7 +284,8 @@ The images on cards have been taken from pexels.com.
 
 <h2> Acknowledgements </h2>
 
-I received inspiration for this project from css-tricks.com and stackoverflow to check on various behaviours of javaScript and jasmine testing.
+I received inspiration for this project from 
+CSS-tricks.com and stackoverflow: to check on various behaviours of javaScript and jasmine testing.
 w3school: How to use the math functionality for sorting of array.
 balsamiq for creation of wireframes
 fontawesome was used and replaced the bootstrap glyphicons
