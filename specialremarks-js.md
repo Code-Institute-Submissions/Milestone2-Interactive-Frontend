@@ -94,300 +94,152 @@ After setting the HTML content of popup accordingly, the popup is displayed by i
 The overloaded parameter of player who opened last game, is copied first to currentGameOpenedBy and then altered to the other player to have him or her to start next game.
 
 
+<h2> function gameCompleted() </h2>
 
-    // displaying final result of who has won the game
-    function gameCompleted() {
-        if (scorePlayer1 > scorePlayer2) {
-            $('.popupGameCompleted').html(namePlayer1 + " has won!");
-        }
-        else if (scorePlayer2 > scorePlayer1) {
-            $('.popupGameCompleted').html(namePlayer2 + " has won!");
-        }
-        else if (scorePlayer1 == scorePlayer2) {
-            $('.popupGameCompleted').html(namePlayer1 + " and " + namePlayer2 + " have same points!");
-        }
-        $('.popupGameCompleted').css("transform", "translateZ(150px)").css("z-index", "100").css("opacity", "1.0");
-        changeOpeningPlayer(ThisGameOpenedBy);
-        setTimeout(function() { // have popup for game completion visible for 4 seconds and then ... 
-            $('.popupGameCompleted').css("opacity", "0.0");
-            firstAttemptDone = 0;
-            makeBtnActiveButStart();
-            setTimeout(function() { // wait a little until popup for game completion has vanished and move position in z-space.
-                $('.popupGameCompleted').css("transform", "translateZ(-10px)").css("z-index", "-100");
-            }, 1200);
-        }, 4000);
-    }
+Depending on who has the most points (or if both player have same points), the html() function of popupGameCompleted sets the text of popup accordingly.
+The popup is then being moved above playfield and made visible by increasing the opacity.
+After popup has vanished, the opening player for next game is then changed to the opposite player.
+Boolean firstAttemptDone is reset again for checkup on first move when next game starts.
+The buttons for selecting playfield size is made active again to select next game size.
+As always when a popup is displayed, the position in z-space, as well as the z-index are set to negative values to have the playfield accessible.
 
-    // show popup 'whoIsNext'
-    function whoIsNext() {
-        if (firstAttemptDone == 0 && ThisGameOpenedBy == "Player1") { // on 1st move of game, the ThisGameOpenedBy value is being checked to have each player start every other game
-            currentPlayer = "Player1"; // currentPlayer is set to be syncronized accordingly to ThisGameOpenedBy
-            setActivePlayer(currentPlayer);
-        }
-        else if (firstAttemptDone == 0 && ThisGameOpenedBy == "Player2") {
-            currentPlayer = "Player2";
-            setActivePlayer(currentPlayer);
-        }
-        else if (firstAttemptDone == 1 && currentPlayer == "Player1") {
-            setActivePlayer(currentPlayer);
-        }
-        else if (firstAttemptDone == 1 && currentPlayer == "Player2") {
-            setActivePlayer(currentPlayer);
-        }
-        firstAttemptDone = 1; // game has been started
-    }
 
-    // show popup 'popupMatch'
-    function popupMatch() {
-        $('.popupMatch').css("transform", "translateZ(400px)").css("z-index", "400");
-        setTimeout(function() {
-            $('.popupMatch').css("opacity", "1.0");
-        }, 300);
-        setTimeout(function() {
-            $('.popupMatch').css("opacity", "0.0");
-        }, 1400);
-        setTimeout(function() {
-            $('.popupMatch').css("transform", "translateZ(-10px)").css("z-index", "-1");
-        }, 2200);
-    }
+<h2> function whoIsNext() </h2>
 
-    // show popup 'popupNoMatch'
-    function popupNoMatch() {
-        $('.popupNoMatch').css("transform", "translateZ(400px)").css("z-index", "400");
-        setTimeout(function() {
-            $('.popupNoMatch').css("opacity", "1.0");
-        }, 300);
-        setTimeout(function() {
-            $('.popupNoMatch').css("opacity", "0.0");
-        }, 1400);
-        setTimeout(function() {
-            $('.popupNoMatch').css("transform", "translateZ(-10px)").css("z-index", "-1");
-        }, 2200);
-    }
+On first move checkup, the value of ThisGameOpenedBy is being checked and current player synchronized accordingly.
+After that, setActivePlayer with the current player is called to set the current player active.
 
-    // setting color indicator on button for playfield size
-    function make_field8BtnVisActive() {
-        $(".field8Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
-        $(".field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-        $(".field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-    }
+When this function has been called, firstAttemptDone is set to 1, so the initial checks of ThisGameOpenedBy is done only once per game.
 
-    function make_field16BtnVisActive() {
-        $(".field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-        $(".field16Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
-        $(".field36Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-    }
+If the first move is done, it sets the active player without the synchronization done in the first two if statements (which is in this case not needed).
 
-    function make_field36BtnVisActive() {
-        $(".field8Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-        $(".field16Btn").removeClass("selectedSize").addClass("bg-fieldSizeBtn"); // removing selected size indicator class
-        $(".field36Btn").addClass("selectedSize").removeClass("bg-fieldSizeBtn"); // indicator for selected size
-    }
 
-    // disabling buttons 
-    function makeBtnInactive() {
-        // set dimmed state to all buttons except 'how to' and 'stopbutton'
-        $(".enterPlayersBtn").addClass("btnlocked");
-        $(".field8Btn").addClass("btnlocked");
-        $(".field16Btn").addClass("btnlocked");
-        $(".field36Btn").addClass("btnlocked");
-        $(".startBtn").addClass("btnlocked");
-        $(".stopBtn").removeClass("btnlocked"); // stopbutton will become visually active
-        // button states
-        stopBtnActive = true;
-        fieldActive = true;
-        btnActive = false;
-        startBtnActive = false;
-    }
+<h2> function popupMatch() </h2>
 
-    // removing dimmed button state and to make buttons active ...
-    function makeBtnActive() {
-        // ... remove dimmed state
-        $(".enterPlayersBtn").removeClass("btnlocked");
-        $(".field8Btn").removeClass("btnlocked");
-        $(".field16Btn").removeClass("btnlocked");
-        $(".field36Btn").removeClass("btnlocked");
-        // start button
-        $(".startBtn").removeClass("btnlocked");
-        $(".stopBtn").addClass("btnlocked"); // dimmed state applied when game stopped.
-        // button states
-        btnActive = true;
-        startBtnActive = true;
-        stopBtnActive = false;
-    }
-    
-    // reactivate all buttons but start button 
-    function makeBtnActiveButStart() {
-        // ... remove dimmed state
-        $(".enterPlayersBtn").removeClass("btnlocked");
-        $(".field8Btn").removeClass("btnlocked");
-        $(".field16Btn").removeClass("btnlocked");
-        $(".field36Btn").removeClass("btnlocked");
-        $(".stopBtn").addClass("btnlocked"); // dimmed state applied when game stopped.
-        // button states
-        btnActive = true;
-        fieldActive = false;
-        stopBtnActive = false;
-    }
+As for all popups, it is being moved above playfield first, then made visible by increasing the opacity and later opacity is set to 0 to have it vanished.
+At the end popup moves back below playfield.
+   
 
-    // reset counters
-    function resetCounters() {
-        scorePlayer1 = 0;
-        $(".scorePlayer1Field").html(scorePlayer1);
-        scorePlayer2 = 0;
-        $(".scorePlayer2Field").html(scorePlayer2);
-    }
+<h2> function popupNoMatch() </h2>
 
-    // show signup dialog
-    function showRegistrationPopup() {
-        $('#enterPlayersModal').css("transform", "translateZ(400px)").css("z-index", "400").css("opacity", "1.0");
-    }
+No specialties on this popup, same as popupMatch();
 
-    // check and validate entered player names 
-    function checkNames() {
-        //should either field have string length of 0, or...
-        if ($('#nameFieldPlayer1Form').val().length == 0 || $('#nameFieldPlayer2Form').val().length == 0) {
-            $('.popupCheckNames').html(`Please fill in names<br> in both fields.`);
-            popupCheckNames();
-        }
-        //...string length of >8, the user will be informed with alert popup
-        else if ($('#nameFieldPlayer1Form').val().length > 8 || $('#nameFieldPlayer2Form').val().length > 8) {
-            $('.popupCheckNames').html(`Please fill in names with no more than 8 characters.`);
-            popupCheckNames();
-        }
-        //should both fields have same name, the user will be informed with alert popup
-        else if ($('#nameFieldPlayer1Form').val() == $('#nameFieldPlayer2Form').val()) {
-            $('.popupCheckNames').html(`Please provide different<br> names for each player.`);
-            popupCheckNames();
-        }
-        // in any other case
-        else {
-            processNames();
-        }
-    }
 
-    // show popup 'popupCheckNames'
-    function popupCheckNames() {
-        $('.popupCheckNames').css("transform", "translateZ(500px)").css("z-index", "500");
-        setTimeout(function() {
-            $('.popupCheckNames').css("opacity", "1.0");
-        }, 300);
-        setTimeout(function() {
-            $('.popupCheckNames').css("opacity", "0.0");
-        }, 2200);
-        setTimeout(function() {
-            $('.popupCheckNames').css("transform", "translateZ(-10px)").css("z-index", "-1");
-        }, 3000);
-    }
+<h2> function make_field8BtnVisActive() </h2>
 
-    // string values of textinput fields written to HTML elements and internal variables
-    function processNames() {
-        namePlayer1 = $('#nameFieldPlayer1Form').val();
-        $('.namePlayer1Field').html(namePlayer1 + ": ");
-        namePlayer2 = $('#nameFieldPlayer2Form').val();
-        $('.namePlayer2Field').html(namePlayer2 + ": ");
-        $('#enterPlayersModal').css("opacity", "0.0");
-        setTimeout(function() {
-            $('#enterPlayersModal').css("transform", "translateZ(-10px)").css("z-index", "-1");
-        }, 1000);
-    }
+The chosen playfieldsize is indicated by red background color, while both other playfield buttons go on grey background color. 
 
-    // show popup with game rules
-    function showHowToPopup() {
-        $('#howToModal').css("transform", "translateZ(400px)").css("z-index", "400").css("opacity", "1.0");
-    }
 
-    // code executed on startup:
-    window.onresize = function() { changeFontsizeBigLogo(); };
-    fieldInit(9);
-    make_field8BtnVisActive();
-    resetCounters();
-    setTimeout(function() { // show registration when playfield is generated
-        showRegistrationPopup();
-    }, 2000);
+<h2> function make_field16BtnVisActive() </h2>
 
-    // click events for registration popup button, ...
-    $(".enterPlayersBtn").on('click', function() {
-        if (btnActive == true) {
-            showRegistrationPopup();
-        }
-    });
+Works the same way as make_field8BtnVisActive(). 
 
-    // ... how-to popup button,
-    $(".howToBtn").on('click', function() {
-        // Howto button is accessible all the time
-        showHowToPopup();
-    });
 
-    // ... 8-card playfield button,
-    $(".field8Btn").on('touchstart click', function() {
-        if (btnActive == true) {
-            make_field8BtnVisActive();
-            fieldInit(9); // initalizing fieldsize 3x3 cards / 4 pairs with one free card in the middle
-            resetCounters();
-            startBtnActive = true;
-            $(".startBtn").removeClass("btnlocked");
-        }
-    });
+<h2> function make_field36BtnVisActive() </h2>
 
-    // ... 16-card playfield button,
-    $(".field16Btn").on('touchstart click', function() {
-        if (btnActive == true) {
-            make_field16BtnVisActive();
-            fieldInit(16); // initalizing fieldsize 4x4 cards / 8 pairs
-            resetCounters();
-            startBtnActive = true;
-            $(".startBtn").removeClass("btnlocked");
-        }
-    });
+Works the same way as make_field8BtnVisActive() 
 
-    // ... 36-card playfield button,
-    $(".field36Btn").on('touchstart click', function() {
-        if (btnActive == true) {
-            make_field36BtnVisActive();
-            fieldInit(36); // initalizing fieldsize 6x6 cards / 18 pairs
-            resetCounters();
-            startBtnActive = true;
-            $(".startBtn").removeClass("btnlocked");
-        }
-    });
 
-    // ... start button
-    $(".startBtn").on('touchstart click', function() {
-        if (startBtnActive == true) {
-            makeBtnInactive();
-            whoIsNext();
-            setTimeout(function() {
-                fieldActive = true;
-            }, 1200);
-        }
-    });
+<h2> function makeBtnInactive() </h2>
 
-    // ... stop button
-    $(".stopBtn").on('touchstart click', function() {
-        if (stopBtnActive == true) {
-            fieldActive = false;
-            makeBtnActive();
-        }
-    });
+After pushing start button, this function adds a dimmed state to all buttons, but stop and How to Play button by adding a class 'btnlocked'. The Howto Play button is accessible all the time. 
+The stop button becomes visually active by have that class removed.
+The active states changes as well. Stop button and playfield are set to active, while common active state of buttons and start button go on false. 
 
-    // ... cards on playfield
-    $(document).on('touchstart click', '.cardshell', function() {
-        if (fieldActive == true) {
-            $(this).addClass("showMe taken");
-            checkForMatch();
-        }
-    });
 
-    // ack button howTo modal
-    $('#gotItBtn').on('touchstart click', function() {
-        $('#howToModal').css("opacity", "0.0");
-        setTimeout(function() {
-            $('#howToModal').css("transform", "translateZ(-10px)").css("z-index", "-1");
-        }, 1000);
-    });
+<h2> function makeBtnActive() </h2> 
 
-    // ... for save button button on registration modal
-    $('#saveBtn').on('touchstart click', function() {
-        checkNames();
-    });
+When game is stopped via stop button, dimmed state is removed for all buttons. Only stop button is set to dimmed state.
+Button states change accordingly.
+
+
+<h2> function makeBtnActiveButStart() </h2>
+
+When game has completed, this function is called, to have all buttons made active, except the start button, which is made active only after playfield size has been selected.
+Playfield is made inaccessible, as game has ended.
+
+
+<h2> function resetCounters() </h2>
+
+Internal variables are set to 0 and written to DOM elements in playerstats fields.
+
+
+<h2> function showRegistrationPopup() </h2>
+
+Shows registration popup by moving above playfield in z-space and increases opacity to 1.
+The dialog is can only be removed by entering valid names into both textfields.
+In case user clicks next to registration popup, the dialog vanishes as well. But this does not break the need for player names, as per default the player names are set to Player1 and Player2. Names can only be altered by clicking the save button.
+
+
+<h2> function checkNames() </h2>
+
+Entered strings are checked against minimum length, maximum length and difference.
+For all three conditions, the text of popup is set first and then popup is displayed.
+If none of the three conditions are met, then entered names are being processed by calling function processNames();
+
+
+<h2> function popupCheckNames() </h2>
+
+Popup is displayed the usual way.
+
+
+<h2> function processNames() </h2>
+
+Both values of textfields are read and put to corresponding internal variables.
+Afterwards popup is made invisible by removing opacity and moved back below playfield.
+
+
+<h2> function showHowToPopup() </h2>
+
+Popup with rules of game are displayed the same way as all other popups and can be removed by clicking the GotIt button to acknowledge. 
+
+
+<h2> functions called on pageload </h2>
+
+Whenever the window is resized, it is necessary to set fontsize of big players checkmark on cards, because when card dimensions change, fontsize of big checkmark will not.
+Function to generate 3x3 playfield is then called and visual selector for size buttons applied, as well the function to reset the counters.
+When playfield has been generated and has shown up, the registration dialog is displayed after a two-second delay request player names.
+
+
+<h2> The buttonfield</h2>
+
+<h3> SignUp button</h3>
+
+This buttons active state, as well as the playfield selector button active state are checked via boolean btnActive. As long as it is set to true, the click event is being processed and the desired function showRegistrationPopup called.
+
+
+<h3> How to play button</h3>
+
+The How to play button is accessible all the time and triggers showHowToPopup();
+
+
+<h3> Field selector buttons</h3>
+
+While button is active, each button triggers call of function to make it visually active and have the playfield generated.
+The counters are set to 0, start button made visually active.
+
+
+<h3> Start button</h3>
+
+It has its own button state boolean. While button active, it triggers function to make the buttons inactive and calls whoIsNext popup. After a delay, playfield is made active.
+
+
+<h3> Stop button</h3>
+
+It too has its own boolean to check for active state.
+It sets the playfield to inactive and calls function to make the button field active again.
+
+
+<h2> Click events on cards </h2>
+
+While set active by fieldActive, it just adds showMe and taken class and call function to checkForMatch.
+
+
+<h2> Got it button on Instruction popup </h2>
+
+Just makes the popup dissapear by putting opacity to 0 and move below playfield.
+
+
+<h2> Got it button on Instruction popup </h2>
+
+Calls the function for field validation.
