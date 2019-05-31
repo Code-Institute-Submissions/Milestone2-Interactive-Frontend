@@ -144,7 +144,7 @@ Dosis font from google was used as main font.
 
 <em><b> Link to file with remarks on functions: <a href="specialremarks-js.md" target="_blank">specialremarks-js.md</a></b></em>
 
-There are also some minor remarks in thememorygame.js. <a href="assets/js/thememorygame.js" target="_blank">thememorygame.js</a>
+There are also some minor remarks in thememorygame.js. <a href="assets/js/memorygame.js" target="_blank">memorygame.js</a>
 
 
 <h1> Compliance reports </h1>
